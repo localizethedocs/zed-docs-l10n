@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/makefile.md:1
+msgid "Makefile"
+msgstr ""
+
+#: src/languages/makefile.md:3
+msgid ""
+"Makefile language support in Zed is provided by the community-maintained "
+"[Make extension](https://github.com/caius/zed-make). Report issues to: "
+"[https://github.com/caius/zed-make/issues](https://github.com/caius/zed-make/"
+"issues)."
+msgstr ""
+
+#: src/languages/makefile.md:6
+msgid ""
+"Tree-sitter: [caius/tree-sitter-make](https://github.com/caius/tree-sitter-"
+"make)"
+msgstr ""

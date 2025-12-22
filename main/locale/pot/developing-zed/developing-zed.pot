@@ -1,0 +1,197 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/development.md:1
+msgid "Developing Zed"
+msgstr ""
+
+#: src/development.md:3
+msgid "See the platform-specific instructions for building Zed from source:"
+msgstr ""
+
+#: src/development.md:5
+msgid "[macOS](./development/macos.md)"
+msgstr ""
+
+#: src/development.md:6
+msgid "[Linux](./development/linux.md)"
+msgstr ""
+
+#: src/development.md:7
+msgid "[Windows](./development/windows.md)"
+msgstr ""
+
+#: src/development.md:9
+msgid "Keychain access"
+msgstr ""
+
+#: src/development.md:11
+msgid "Zed stores secrets in the system keychain."
+msgstr ""
+
+#: src/development.md:13
+msgid ""
+"However, when running a development build of Zed on macOS (and perhaps other "
+"platforms) trying to access the keychain results in a lot of keychain "
+"prompts that require entering your password over and over."
+msgstr ""
+
+#: src/development.md:17
+msgid ""
+"On macOS this is caused by the development build not having a stable "
+"identity. Even if you choose the \"Always Allow\" option, the OS will still "
+"prompt you for your password again the next time something changes in the "
+"binary."
+msgstr ""
+
+#: src/development.md:21
+msgid "This quickly becomes annoying and impedes development speed."
+msgstr ""
+
+#: src/development.md:23
+msgid ""
+"That is why, by default, when running a development build of Zed an "
+"alternative credential provider is used in order to bypass the system "
+"keychain."
+msgstr ""
+
+#: src/development.md:26
+msgid ""
+"Note: This is **only** the case for development builds. For all non-"
+"development release channels the system keychain is always used."
+msgstr ""
+
+#: src/development.md:29
+msgid ""
+"If you need to test something out using the real system keychain in a "
+"development build, run Zed with the following environment variable set:"
+msgstr ""
+
+#: src/development.md:36
+msgid "Performance Measurements"
+msgstr ""
+
+#: src/development.md:38
+msgid ""
+"Zed includes a frame time measurement system that can be used to profile how "
+"long it takes to render each frame. This is particularly useful when "
+"comparing rendering performance between different versions or when "
+"optimizing frame rendering code."
+msgstr ""
+
+#: src/development.md:40
+msgid "Using ZED_MEASUREMENTS"
+msgstr ""
+
+#: src/development.md:42
+msgid ""
+"To enable performance measurements, set the `ZED_MEASUREMENTS` environment "
+"variable:"
+msgstr ""
+
+#: src/development.md:45 src/development.md:57
+msgid "1"
+msgstr ""
+
+#: src/development.md:48
+msgid ""
+"When enabled, Zed will print frame rendering timing information to stderr, "
+"showing how long each frame takes to render."
+msgstr ""
+
+#: src/development.md:50
+msgid "Performance Comparison Workflow"
+msgstr ""
+
+#: src/development.md:52
+msgid ""
+"Here's a typical workflow for comparing frame rendering performance between "
+"different versions:"
+msgstr ""
+
+#: src/development.md:54
+msgid "**Enable measurements:**"
+msgstr ""
+
+#: src/development.md:60
+msgid "**Test the first version:**"
+msgstr ""
+
+#: src/development.md:62
+msgid "Checkout the commit you want to measure"
+msgstr ""
+
+#: src/development.md:63
+msgid ""
+"Run Zed in release mode and use it for 5-10 seconds: `cargo run --release &> "
+"version-a`"
+msgstr ""
+
+#: src/development.md:65
+msgid "**Test the second version:**"
+msgstr ""
+
+#: src/development.md:67
+msgid "Checkout another commit you want to compare"
+msgstr ""
+
+#: src/development.md:68
+msgid ""
+"Run Zed in release mode and use it for 5-10 seconds: `cargo run --release &> "
+"version-b`"
+msgstr ""
+
+#: src/development.md:70
+msgid "**Generate comparison:**"
+msgstr ""
+
+#: src/development.md:76
+msgid ""
+"The `script/histogram` tool can accept as many measurement files as you like "
+"and will generate a histogram visualization comparing the frame rendering "
+"performance data between the provided versions."
+msgstr ""
+
+#: src/development.md:78
+msgid "Using `util_macros::perf`"
+msgstr ""
+
+#: src/development.md:80
+msgid ""
+"For benchmarking unit tests, annotate them with the `#[perf]` attribute from "
+"the `util_macros` crate. Then run `cargo perf-test -p $CRATE` to benchmark "
+"them. See the rustdoc documentation on `crates/util_macros` and `tooling/"
+"perf` for in-depth examples and explanations."
+msgstr ""
+
+#: src/development.md:84
+msgid "Contributor links"
+msgstr ""
+
+#: src/development.md:86
+msgid ""
+"[CONTRIBUTING.md](https://github.com/zed-industries/zed/blob/main/"
+"CONTRIBUTING.md)"
+msgstr ""
+
+#: src/development.md:87
+msgid "[Debugging Crashes](./development/debugging-crashes.md)"
+msgstr ""
+
+#: src/development.md:88
+msgid "[Code of Conduct](https://zed.dev/code-of-conduct)"
+msgstr ""
+
+#: src/development.md:89
+msgid "[Zed Contributor License](https://zed.dev/cla)"
+msgstr ""

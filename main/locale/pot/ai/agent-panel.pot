@@ -1,0 +1,540 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/agent-panel.md:1
+msgid "Agent Panel"
+msgstr ""
+
+#: src/ai/agent-panel.md:3
+msgid ""
+"The Agent Panel allows you to interact with many LLMs and coding agents that "
+"can help with various types of tasks, such as generating code, codebase "
+"understanding, and other general inquiries like writing emails, "
+"documentation, and more."
+msgstr ""
+
+#: src/ai/agent-panel.md:5
+msgid ""
+"To open it, use the `agent: new thread` action in [the Command Palette](../"
+"getting-started.md#command-palette) or click the ✨ (sparkles) icon in the "
+"status bar."
+msgstr ""
+
+#: src/ai/agent-panel.md:7
+msgid "Getting Started"
+msgstr ""
+
+#: src/ai/agent-panel.md:9
+msgid ""
+"If you're using the Agent Panel for the first time, you need to have at "
+"least one LLM provider or external agent configured. You can do that by:"
+msgstr ""
+
+#: src/ai/agent-panel.md:12
+msgid ""
+"[subscribing to our Pro plan](https://zed.dev/pricing), so you have access "
+"to our hosted models"
+msgstr ""
+
+#: src/ai/agent-panel.md:13
+msgid ""
+"[using your own API keys](./llm-providers.md#use-your-own-keys), either from "
+"model providers like Anthropic or model gateways like OpenRouter."
+msgstr ""
+
+#: src/ai/agent-panel.md:14
+msgid ""
+"using an [external agent](./external-agents.md) like [Gemini CLI](./external-"
+"agents.md#gemini-cli) or [Claude Code](./external-agents.md#claude-code)"
+msgstr ""
+
+#: src/ai/agent-panel.md:16
+msgid "Overview"
+msgstr ""
+
+#: src/ai/agent-panel.md:18
+msgid ""
+"With an LLM provider or an external agent configured, type at the message "
+"editor and hit `enter` to submit your prompt. If you need extra room to "
+"type, you can expand the message editor with <kbd class=\"keybinding\">shift-"
+"alt-escape|shift-alt-escape</kbd>."
+msgstr ""
+
+#: src/ai/agent-panel.md:21
+msgid ""
+"You should start to see the responses stream in with indications of [which "
+"tools](./tools.md) the model is using to fulfill your prompt. From this "
+"point on, you can interact with the many supported features outlined below."
+msgstr ""
+
+#: src/ai/agent-panel.md:24
+msgid ""
+"Note that for external agents, like [Gemini CLI](./external-agents.md#gemini-"
+"cli) or [Claude Code](./external-agents.md#claude-code), some of the "
+"features outlined below may _not_ be supported—for example, _restoring "
+"threads from history_, _checkpoints_, _token usage display_, and others. "
+"Their availability varies depending on the agent."
+msgstr ""
+
+#: src/ai/agent-panel.md:26
+msgid "Creating New Threads"
+msgstr ""
+
+#: src/ai/agent-panel.md:28
+msgid "By default, the Agent Panel uses Zed's first-party agent."
+msgstr ""
+
+#: src/ai/agent-panel.md:30
+msgid ""
+"To change that, go to the plus button in the top-right of the Agent Panel "
+"and choose another option. You can choose to create a new [Text Thread](./"
+"text-threads.md) or, if you have [external agents](./external-agents.md) "
+"connected, you can create new threads with them."
+msgstr ""
+
+#: src/ai/agent-panel.md:33
+msgid "Editing Messages"
+msgstr ""
+
+#: src/ai/agent-panel.md:35
+msgid ""
+"Any message that you send to the AI is editable. You can click on the card "
+"that contains your message and re-submit it with an adjusted prompt and/or "
+"new pieces of context."
+msgstr ""
+
+#: src/ai/agent-panel.md:38
+msgid "Checkpoints"
+msgstr ""
+
+#: src/ai/agent-panel.md:40
+msgid ""
+"Every time the AI performs an edit, you should see a \"Restore Checkpoint\" "
+"button at the top of your message, allowing you to return your code base to "
+"the state it was in prior to that message."
+msgstr ""
+
+#: src/ai/agent-panel.md:42
+msgid ""
+"The checkpoint button appears even if you interrupt the thread midway "
+"through an edit attempt, as this is likely a moment when you've identified "
+"that the agent is not heading in the right direction and you want to revert "
+"back."
+msgstr ""
+
+#: src/ai/agent-panel.md:44
+msgid "Navigating History"
+msgstr ""
+
+#: src/ai/agent-panel.md:46
+msgid ""
+"To quickly navigate through recently opened threads, use the <kbd "
+"class=\"keybinding\">cmd-shift-j|ctrl-shift-j</kbd> binding, when focused on "
+"the panel's editor, or click the menu icon button at the top right of the "
+"panel to open the dropdown that shows you the six most recent threads."
+msgstr ""
+
+#: src/ai/agent-panel.md:48
+msgid ""
+"The items in this menu function similarly to tabs, and closing them doesn’t "
+"delete the thread; instead, it simply removes them from the recent list."
+msgstr ""
+
+#: src/ai/agent-panel.md:50
+msgid ""
+"To view all historical conversations, reach for the `View All` option from "
+"within the same menu or via the <kbd class=\"keybinding\">cmd-shift-h|ctrl-"
+"shift-h</kbd> binding."
+msgstr ""
+
+#: src/ai/agent-panel.md:52
+msgid "Following the Agent"
+msgstr ""
+
+#: src/ai/agent-panel.md:54
+msgid ""
+"Zed is built with collaboration natively integrated, and this design pattern "
+"extends to collaboration with AI. To follow the agent as it reads and edits "
+"in your codebase, click on the \"crosshair\" icon button at the bottom left "
+"of the panel."
+msgstr ""
+
+#: src/ai/agent-panel.md:56
+msgid ""
+"You can also do that with the keyboard by pressing the `cmd`/`ctrl` modifier "
+"with `enter` when submitting a message."
+msgstr ""
+
+#: src/ai/agent-panel.md:58
+msgid "Get Notified"
+msgstr ""
+
+#: src/ai/agent-panel.md:60
+msgid ""
+"If you send a prompt to the Agent and then move elsewhere, putting Zed in "
+"the background, you can be notified when its response is finished via:"
+msgstr ""
+
+#: src/ai/agent-panel.md:62
+msgid "a visual notification that appears in the top right of your screen"
+msgstr ""
+
+#: src/ai/agent-panel.md:63
+msgid "a sound notification"
+msgstr ""
+
+#: src/ai/agent-panel.md:65
+msgid ""
+"These notifications can be used together or individually, according to your "
+"preference."
+msgstr ""
+
+#: src/ai/agent-panel.md:67
+msgid ""
+"You can customize their behavior, including turning them off entirely, by "
+"using the `agent.notify_when_agent_waiting` and `agent."
+"play_sound_when_agent_done` settings keys."
+msgstr ""
+
+#: src/ai/agent-panel.md:69
+msgid "Reviewing Changes"
+msgstr ""
+
+#: src/ai/agent-panel.md:71
+msgid ""
+"Once the agent has made changes to your project, the panel will surface "
+"which files, and how many of them, have been edited."
+msgstr ""
+
+#: src/ai/agent-panel.md:73
+msgid ""
+"To see which files specifically have been edited, expand the accordion bar "
+"that shows up right above the message editor or click the `Review Changes` "
+"button (<kbd class=\"keybinding\">shift-ctrl-r|ctrl-shift-r</kbd>), which "
+"opens a multi-buffer tab with all changes."
+msgstr ""
+
+#: src/ai/agent-panel.md:75
+msgid ""
+"You're able to reject or accept each individual change hunk, or the whole "
+"set of changes made by the agent."
+msgstr ""
+
+#: src/ai/agent-panel.md:77
+msgid ""
+"Edit diffs also appear in individual buffers. If your active tab had edits "
+"made by the AI, you'll see diffs with the same accept/reject controls as in "
+"the multi-buffer."
+msgstr ""
+
+#: src/ai/agent-panel.md:79
+msgid "Adding Context"
+msgstr ""
+
+#: src/ai/agent-panel.md:81
+msgid ""
+"Although Zed's agent is very efficient at reading through your code base to "
+"autonomously pick up relevant context, manually adding whatever would be "
+"useful to fulfill your prompt is still very encouraged as a way to not only "
+"improve the AI's response quality but also to speed up its response time."
+msgstr ""
+
+#: src/ai/agent-panel.md:83
+msgid ""
+"In Zed's Agent Panel, all pieces of context are added as mentions in the "
+"panel's message editor. You can type `@` to mention files, directories, "
+"symbols, previous threads, and rules files."
+msgstr ""
+
+#: src/ai/agent-panel.md:86
+msgid ""
+"Copying images and pasting them in the panel's message editor is also "
+"supported."
+msgstr ""
+
+#: src/ai/agent-panel.md:88
+msgid ""
+"When you paste multi-line code selections copied from an editor buffer, Zed "
+"automatically formats them as @mentions with the file context. To paste "
+"content without this automatic formatting, use <kbd class=\"keybinding\">cmd-"
+"shift-v|ctrl-shift-v</kbd> to paste raw text directly."
+msgstr ""
+
+#: src/ai/agent-panel.md:90
+msgid "Selection as Context"
+msgstr ""
+
+#: src/ai/agent-panel.md:92
+msgid ""
+"Additionally, you can also select text in a buffer and add it as context by "
+"using the <kbd class=\"keybinding\">cmd->|ctrl-></kbd> keybinding, running "
+"the <code class=\"hljs\">agent::AddSelectionToThread</code> action, or "
+"choosing the \"Selection\" item in the `@` menu."
+msgstr ""
+
+#: src/ai/agent-panel.md:94
+msgid "Token Usage"
+msgstr ""
+
+#: src/ai/agent-panel.md:96
+msgid ""
+"Zed surfaces how many tokens you are consuming for your currently active "
+"thread near the profile selector in the panel's message editor. Depending on "
+"how many pieces of context you add, your token consumption can grow rapidly."
+msgstr ""
+
+#: src/ai/agent-panel.md:98
+msgid ""
+"Once you approach the model's context window, a banner appears below the "
+"message editor suggesting to start a new thread with the current one "
+"summarized and added as context. You can also do this at any time with an "
+"ongoing thread via the \"Agent Options\" menu on the top right."
+msgstr ""
+
+#: src/ai/agent-panel.md:101
+msgid "Changing Models"
+msgstr ""
+
+#: src/ai/agent-panel.md:103
+msgid ""
+"After you've configured your LLM providers—either via [a custom API key](./"
+"llm-providers.md) or through [Zed's hosted models](./models.md)—you can "
+"switch between them by clicking on the model selector on the message editor "
+"or by using the <kbd class=\"keybinding\">cmd-alt-/|ctrl-alt-/</kbd> "
+"keybinding."
+msgstr ""
+
+#: src/ai/agent-panel.md:105
+msgid ""
+"If you have favorited models configured, you can cycle through them with "
+"<kbd class=\"keybinding\">alt-tab|alt-tab</kbd> without opening the model "
+"selector."
+msgstr ""
+
+#: src/ai/agent-panel.md:107
+msgid ""
+"The same model can be offered via multiple providers - for example, Claude "
+"Sonnet 4 is available via Zed Pro, OpenRouter, Anthropic directly, and more. "
+"Make sure you've selected the correct model **_provider_** for the model "
+"you'd like to use, delineated by the logo to the left of the model in the "
+"model selector."
+msgstr ""
+
+#: src/ai/agent-panel.md:110
+msgid "Using Tools"
+msgstr ""
+
+#: src/ai/agent-panel.md:112
+msgid ""
+"The new Agent Panel supports tool calling, which enables agentic editing. "
+"Zed comes with [several built-in tools](./tools.md) that allow models to "
+"perform tasks such as searching through your codebase, editing files, "
+"running commands, and others."
+msgstr ""
+
+#: src/ai/agent-panel.md:115
+msgid ""
+"You can also extend the set of available tools via [MCP Servers](./mcp.md)."
+msgstr ""
+
+#: src/ai/agent-panel.md:117
+msgid "Profiles"
+msgstr ""
+
+#: src/ai/agent-panel.md:119
+msgid ""
+"Profiles act as a way to group tools. Zed offers three built-in profiles and "
+"you can create as many custom ones as you want."
+msgstr ""
+
+#: src/ai/agent-panel.md:122
+msgid "Built-in Profiles"
+msgstr ""
+
+#: src/ai/agent-panel.md:124
+msgid ""
+"`Write`: A profile with tools to allow the LLM to write to your files and "
+"run terminal commands. This one essentially has all built-in tools turned on."
+msgstr ""
+
+#: src/ai/agent-panel.md:125
+msgid ""
+"`Ask`: A profile with read-only tools. Best for asking questions about your "
+"code base without the concern of the agent making changes."
+msgstr ""
+
+#: src/ai/agent-panel.md:126
+msgid ""
+"`Minimal`: A profile with no tools. Best for general conversations with the "
+"LLM where no knowledge of your code base is necessary."
+msgstr ""
+
+#: src/ai/agent-panel.md:128
+msgid ""
+"You can explore the exact tools enabled in each profile by clicking on the "
+"profile selector button > `Configure` button > the one you want to check out."
+msgstr ""
+
+#: src/ai/agent-panel.md:130
+msgid ""
+"Alternatively, you can also use either the command palette, by running <code "
+"class=\"hljs\">agent::ManageProfiles</code>, or the keybinding directly, "
+"<kbd class=\"keybinding\">cmd-alt-p|ctrl-alt-p</kbd>, to have access to the "
+"profile management modal."
+msgstr ""
+
+#: src/ai/agent-panel.md:132
+msgid "Custom Profiles"
+msgstr ""
+
+#: src/ai/agent-panel.md:134
+msgid ""
+"You can also create a custom profile through the Agent Profile modal. From "
+"there, you can choose to `Add New Profile` or fork an existing one with a "
+"custom name and your preferred set of tools."
+msgstr ""
+
+#: src/ai/agent-panel.md:137
+msgid ""
+"It's also possible to override built-in profiles. In the Agent Profile "
+"modal, select a built-in profile, navigate to `Configure Tools`, and "
+"rearrange the tools you'd like to keep or remove."
+msgstr ""
+
+#: src/ai/agent-panel.md:140
+msgid ""
+"Zed will store this profile in your settings using the same profile name as "
+"the default you overrode."
+msgstr ""
+
+#: src/ai/agent-panel.md:142
+msgid ""
+"All custom profiles can be edited via the UI or by hand under the `agent."
+"profiles` key in your `settings.json` file."
+msgstr ""
+
+#: src/ai/agent-panel.md:144
+msgid "Tool Approval"
+msgstr ""
+
+#: src/ai/agent-panel.md:146
+msgid ""
+"Zed's Agent Panel surfaces the `agent.always_allow_tool_actions` setting "
+"that, if turned to `false`, will require you to give permission to any "
+"editing attempt as well as tool calls coming from MCP servers."
+msgstr ""
+
+#: src/ai/agent-panel.md:148
+msgid ""
+"You can change that by setting this key to `true` in either your `settings."
+"json` or via the Agent Panel's settings view."
+msgstr ""
+
+#: src/ai/agent-panel.md:150
+msgid "Model Support"
+msgstr ""
+
+#: src/ai/agent-panel.md:152
+msgid ""
+"Tool calling needs to be individually supported by each model and model "
+"provider. Therefore, despite the presence of tools, some models may not have "
+"the ability to pick them up yet in Zed. You should see a \"No tools\" label "
+"if you select a model that falls into this case."
+msgstr ""
+
+#: src/ai/agent-panel.md:156
+msgid ""
+"All [Zed's hosted models](./models.md) support tool calling out-of-the-box."
+msgstr ""
+
+#: src/ai/agent-panel.md:158
+msgid "MCP Servers"
+msgstr ""
+
+#: src/ai/agent-panel.md:160
+msgid ""
+"Similarly to the built-in tools, some models may not support all tools "
+"included in a given MCP Server. Zed's UI will inform you about this via a "
+"warning icon that appears close to the model selector."
+msgstr ""
+
+#: src/ai/agent-panel.md:163
+msgid "Text Threads"
+msgstr ""
+
+#: src/ai/agent-panel.md:165
+msgid ""
+"[\"Text Threads\"](./text-threads.md) present your conversation with the LLM "
+"in a different format—as raw text. With text threads, you have full control "
+"over the conversation data. You can remove and edit responses from the LLM, "
+"swap roles, and include more context earlier in the conversation."
+msgstr ""
+
+#: src/ai/agent-panel.md:169
+msgid ""
+"For users who have been with us for some time, you'll notice that text "
+"threads are our original assistant panel—users love it for the control it "
+"offers. We do not plan to deprecate text threads, but it should be noted "
+"that if you want the AI to write to your code base autonomously, that's only "
+"available in the newer, and now default, \"Threads\"."
+msgstr ""
+
+#: src/ai/agent-panel.md:172
+msgid "Errors and Debugging"
+msgstr ""
+
+#: src/ai/agent-panel.md:174
+msgid ""
+"In case of any error or strange LLM response behavior, the best way to help "
+"the Zed team debug is by reaching for the `agent: open thread as markdown` "
+"action and attaching that data as part of your issue on GitHub."
+msgstr ""
+
+#: src/ai/agent-panel.md:176
+msgid ""
+"You can also open threads as Markdown by clicking on the file icon button, "
+"to the right of the thumbs down button, when focused on the panel's editor."
+msgstr ""
+
+#: src/ai/agent-panel.md:178
+msgid "Feedback"
+msgstr ""
+
+#: src/ai/agent-panel.md:180
+msgid ""
+"Zed supports rating responses from the agent for feedback and improvement."
+msgstr ""
+
+#: src/ai/agent-panel.md:182
+msgid ""
+"Note that rating responses will send your data related to that response to "
+"Zed's servers. See [AI Improvement](./ai-improvement.md) and [Privacy and "
+"Security](./privacy-and-security.md) for more information about Zed's "
+"approach to AI improvement, privacy, and security. **_If you don't want data "
+"persisted on Zed's servers, don't rate_**. We will not collect data for "
+"improving our Agentic offering without you explicitly rating responses."
+msgstr ""
+
+#: src/ai/agent-panel.md:186
+msgid ""
+"The best way you can help influence the next change to Zed's system prompt "
+"and tools is by rating the LLM's response via the thumbs up/down buttons at "
+"the end of every response. In case of a thumbs down, a new text area will "
+"show up where you can add more specifics about what happened."
+msgstr ""
+
+#: src/ai/agent-panel.md:188
+msgid ""
+"You can provide feedback on the thread at any point after the agent "
+"responds, and multiple times within the same thread."
+msgstr ""

@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/sql.md:1
+msgid "SQL"
+msgstr ""
+
+#: src/languages/sql.md:3
+msgid ""
+"SQL files are handled by the [SQL Extension](https://github.com/zed-"
+"extensions/sql)."
+msgstr ""
+
+#: src/languages/sql.md:5
+msgid ""
+"Tree-sitter: [nervenes/tree-sitter-sql](https://github.com/nervenes/tree-"
+"sitter-sql)"
+msgstr ""
+
+#: src/languages/sql.md:7
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/sql.md:9
+msgid ""
+"Zed supports auto-formatting SQL using external tools like [`sql-formatter`]"
+"(https://github.com/sql-formatter-org/sql-formatter)."
+msgstr ""
+
+#: src/languages/sql.md:11
+msgid "Install `sql-formatter`:"
+msgstr ""
+
+#: src/languages/sql.md:17
+msgid "Ensure `sql-formatter` is available in your path and check the version:"
+msgstr ""
+
+#: src/languages/sql.md:24
+msgid "Configure Zed to automatically format SQL with `sql-formatter`:"
+msgstr ""
+
+#: src/languages/sql.md:27 src/languages/sql.md:59
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/sql.md:28 src/languages/sql.md:60
+msgid "\"SQL\""
+msgstr ""
+
+#: src/languages/sql.md:29 src/languages/sql.md:61
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/sql.md:30 src/languages/sql.md:62
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/sql.md:31 src/languages/sql.md:63
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/sql.md:31 src/languages/sql.md:63
+msgid "\"sql-formatter\""
+msgstr ""
+
+#: src/languages/sql.md:32
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/sql.md:32
+msgid "\"--language\""
+msgstr ""
+
+#: src/languages/sql.md:32
+msgid "\"mysql\""
+msgstr ""
+
+#: src/languages/sql.md:39
+msgid ""
+"Substitute your preferred \\[SQL Dialect\\] for `mysql` above (`duckdb`, "
+"`hive`, `mariadb`, `postgresql`, `redshift`, `snowflake`, `sqlite`, `spark`, "
+"etc)."
+msgstr ""
+
+#: src/languages/sql.md:41
+msgid ""
+"You can add this to Zed project settings (`.zed/settings.json`) or via your "
+"Zed user settings (`~/.config/zed/settings.json`)."
+msgstr ""
+
+#: src/languages/sql.md:43
+msgid "Advanced Formatting"
+msgstr ""
+
+#: src/languages/sql.md:45
+msgid ""
+"Sql-formatter also allows more precise control by providing [sql-formatter "
+"configuration options](https://github.com/sql-formatter-org/sql-"
+"formatter#configuration-options). To provide these, create a `.sql-formatter."
+"json` file in your project:"
+msgstr ""
+
+#: src/languages/sql.md:49
+msgid "\"language\""
+msgstr ""
+
+#: src/languages/sql.md:49
+msgid "\"postgresql\""
+msgstr ""
+
+#: src/languages/sql.md:50
+msgid "\"tabWidth\""
+msgstr ""
+
+#: src/languages/sql.md:51
+msgid "\"keywordCase\""
+msgstr ""
+
+#: src/languages/sql.md:51
+msgid "\"upper\""
+msgstr ""
+
+#: src/languages/sql.md:52
+msgid "\"linesBetweenQueries\""
+msgstr ""
+
+#: src/languages/sql.md:56
+msgid ""
+"When using a `.sql-formatter.json` file you can use a more simplified set of "
+"Zed settings since the language need not be specified inline:"
+msgstr ""

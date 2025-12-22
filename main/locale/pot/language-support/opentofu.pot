@@ -1,0 +1,70 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/opentofu.md:1
+msgid "OpenTofu"
+msgstr ""
+
+#: src/languages/opentofu.md:3
+msgid ""
+"OpenTofu support is available through the [OpenTofu extension](https://"
+"github.com/ashpool37/zed-extension-opentofu)."
+msgstr ""
+
+#: src/languages/opentofu.md:5
+msgid ""
+"Tree-sitter: [MichaHoffmann/tree-sitter-hcl](https://github.com/"
+"MichaHoffmann/tree-sitter-hcl)"
+msgstr ""
+
+#: src/languages/opentofu.md:6
+msgid ""
+"Language Server: [opentofu/tofu-ls](https://github.com/opentofu/tofu-ls)"
+msgstr ""
+
+#: src/languages/opentofu.md:8
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/opentofu.md:10
+msgid ""
+"In order to automatically use the OpenTofu extension and language server "
+"when editing .tf and .tfvars files, either uninstall the Terraform extension "
+"or add this to your settings.json:"
+msgstr ""
+
+#: src/languages/opentofu.md:14
+msgid "\"file_types\""
+msgstr ""
+
+#: src/languages/opentofu.md:15
+msgid "\"OpenTofu\""
+msgstr ""
+
+#: src/languages/opentofu.md:15
+msgid "\"tf\""
+msgstr ""
+
+#: src/languages/opentofu.md:16
+msgid "\"OpenTofu Vars\""
+msgstr ""
+
+#: src/languages/opentofu.md:16
+msgid "\"tfvars\""
+msgstr ""
+
+#: src/languages/opentofu.md:20
+msgid ""
+"See the [full list of server settings here](https://github.com/opentofu/tofu-"
+"ls/blob/main/docs/SETTINGS.md)."
+msgstr ""

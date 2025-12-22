@@ -1,0 +1,243 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/development/macos.md:1
+msgid "Building Zed for macOS"
+msgstr ""
+
+#: src/development/macos.md:3
+msgid "Repository"
+msgstr ""
+
+#: src/development/macos.md:5
+msgid "Clone down the [Zed repository](https://github.com/zed-industries/zed)."
+msgstr ""
+
+#: src/development/macos.md:7
+msgid "Dependencies"
+msgstr ""
+
+#: src/development/macos.md:9
+msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
+msgstr ""
+
+#: src/development/macos.md:11
+msgid ""
+"Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) from "
+"the macOS App Store, or from the [Apple Developer](https://developer.apple."
+"com/download/all/) website. Note this requires a developer account."
+msgstr ""
+
+#: src/development/macos.md:13
+msgid ""
+"Ensure you launch Xcode after installing, and install the macOS components, "
+"which is the default option."
+msgstr ""
+
+#: src/development/macos.md:15
+msgid ""
+"Install [Xcode command line tools](https://developer.apple.com/xcode/"
+"resources/)"
+msgstr ""
+
+#: src/development/macos.md:21
+msgid ""
+"Ensure that the Xcode command line tools are using your newly installed copy "
+"of Xcode:"
+msgstr ""
+
+#: src/development/macos.md:28
+msgid ""
+"Install `cmake` (required by [a dependency](https://docs.rs/wasmtime-c-api-"
+"impl/latest/wasmtime_c_api/))"
+msgstr ""
+
+#: src/development/macos.md:34
+msgid "Building Zed from Source"
+msgstr ""
+
+#: src/development/macos.md:36
+msgid ""
+"Once you have the dependencies installed, you can build Zed using [Cargo]"
+"(https://doc.rust-lang.org/cargo/)."
+msgstr ""
+
+#: src/development/macos.md:38
+msgid "For a debug build:"
+msgstr ""
+
+#: src/development/macos.md:44
+msgid "For a release build:"
+msgstr ""
+
+#: src/development/macos.md:50
+msgid "And to run the tests:"
+msgstr ""
+
+#: src/development/macos.md:56
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/development/macos.md:58
+msgid "Error compiling metal shaders"
+msgstr ""
+
+#: src/development/macos.md:63
+msgid "\"metal\""
+msgstr ""
+
+#: src/development/macos.md:66
+msgid ""
+"Try `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`"
+msgstr ""
+
+#: src/development/macos.md:68
+msgid ""
+"If you're on macOS 26, try `xcodebuild -downloadComponent MetalToolchain`"
+msgstr ""
+
+#: src/development/macos.md:70
+msgid "Cargo errors claiming that a dependency is using unstable features"
+msgstr ""
+
+#: src/development/macos.md:72
+msgid "Try `cargo clean` and `cargo build`."
+msgstr ""
+
+#: src/development/macos.md:74
+msgid "Error: 'dispatch/dispatch.h' file not found"
+msgstr ""
+
+#: src/development/macos.md:76
+msgid "If you encounter an error similar to:"
+msgstr ""
+
+#: src/development/macos.md:79
+msgid "'dispatch/dispatch.h'"
+msgstr ""
+
+#: src/development/macos.md:82
+msgid ""
+"'t exit successfully\n"
+"\n"
+"  --- stdout\n"
+"  cargo:rustc-link-lib=framework=System\n"
+"  cargo:rerun-if-changed=src/platform/mac/dispatch.h\n"
+"  cargo:rerun-if-env-changed=TARGET\n"
+"  cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_aarch64-apple-darwin\n"
+"  cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS_aarch64_apple_darwin\n"
+"  cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS\n"
+msgstr ""
+
+#: src/development/macos.md:93
+msgid ""
+"This file is part of Xcode. Ensure you have installed the Xcode command line "
+"tools and set the correct path:"
+msgstr ""
+
+#: src/development/macos.md:100
+msgid "Additionally, set the `BINDGEN_EXTRA_CLANG_ARGS` environment variable:"
+msgstr ""
+
+#: src/development/macos.md:103
+msgid "\"--sysroot=$(xcrun --show-sdk-path)\""
+msgstr ""
+
+#: src/development/macos.md:106
+msgid "Then clean and rebuild the project:"
+msgstr ""
+
+#: src/development/macos.md:113
+msgid "Tests failing due to `Too many open files (os error 24)`"
+msgstr ""
+
+#: src/development/macos.md:115
+msgid ""
+"This error seems to be caused by OS resource constraints. Installing and "
+"running tests with `cargo-nextest` should resolve the issue."
+msgstr ""
+
+#: src/development/macos.md:117
+msgid "`cargo install cargo-nextest --locked`"
+msgstr ""
+
+#: src/development/macos.md:118
+msgid "`cargo nextest run --workspace --no-fail-fast`"
+msgstr ""
+
+#: src/development/macos.md:120
+msgid "Tips & Tricks"
+msgstr ""
+
+#: src/development/macos.md:122
+msgid "Avoiding continual rebuilds"
+msgstr ""
+
+#: src/development/macos.md:124
+msgid ""
+"If you are finding that Zed is continually rebuilding root crates, it may be "
+"because you are pointing your development Zed at the codebase itself."
+msgstr ""
+
+#: src/development/macos.md:127
+msgid ""
+"This causes problems because `cargo run` exports a bunch of environment "
+"variables which are picked up by the `rust-analyzer` that runs in the "
+"development build of Zed. These environment variables are in turn passed to "
+"`cargo check`, which invalidates the build cache of some of the crates we "
+"depend on."
+msgstr ""
+
+#: src/development/macos.md:132
+msgid ""
+"You can easily avoid running the built binary on the checked-out Zed "
+"codebase using `cargo run ~/path/to/other/project` to ensure that you don't "
+"hit this."
+msgstr ""
+
+#: src/development/macos.md:135
+msgid "Speeding up verification"
+msgstr ""
+
+#: src/development/macos.md:137
+msgid ""
+"If you are building Zed a lot, you may find that macOS continually verifies "
+"new builds which can add a few seconds to your iteration cycles."
+msgstr ""
+
+#: src/development/macos.md:140
+msgid "To fix this, you can:"
+msgstr ""
+
+#: src/development/macos.md:142
+msgid ""
+"Run `sudo spctl developer-mode enable-terminal` to enable the Developer "
+"Tools panel in System Settings."
+msgstr ""
+
+#: src/development/macos.md:143
+msgid ""
+"In System Settings, search for \"Developer Tools\" and add your terminal (e."
+"g. iTerm or Ghostty) to the list under \"Allow applications to use developer "
+"tools\""
+msgstr ""
+
+#: src/development/macos.md:144
+msgid "Restart your terminal."
+msgstr ""
+
+#: src/development/macos.md:146
+msgid ""
+"Thanks to the nextest developers for publishing [this](https://nexte.st/docs/"
+"installation/macos/#gatekeeper)."
+msgstr ""

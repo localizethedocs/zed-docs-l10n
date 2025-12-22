@@ -1,0 +1,706 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/text-threads.md:1
+msgid "Text Threads"
+msgstr ""
+
+#: src/ai/text-threads.md:3
+msgid "Overview"
+msgstr ""
+
+#: src/ai/text-threads.md:5
+msgid ""
+"Text threads in the [Agent Panel](./agent-panel.md) function similarly to "
+"any other editor. You can use custom key bindings and work with multiple "
+"cursors, allowing for seamless transitions between coding and engaging in "
+"discussions with the language models."
+msgstr ""
+
+#: src/ai/text-threads.md:8
+msgid ""
+"However, the text threads differ in the inclusion of message blocks. These "
+"blocks serve as containers for text that correspond to different roles "
+"within the context. These roles include:"
+msgstr ""
+
+#: src/ai/text-threads.md:12
+msgid "`You`"
+msgstr ""
+
+#: src/ai/text-threads.md:13
+msgid "`Assistant`"
+msgstr ""
+
+#: src/ai/text-threads.md:14
+msgid "`System`"
+msgstr ""
+
+#: src/ai/text-threads.md:16
+msgid "To begin, type a message in a `You` block."
+msgstr ""
+
+#: src/ai/text-threads.md:18
+msgid "![Asking a question](https://zed.dev/img/assistant/ask-a-question.png)"
+msgstr ""
+
+#: src/ai/text-threads.md:20
+msgid ""
+"As you type, the remaining tokens count for the selected model is updated."
+msgstr ""
+
+#: src/ai/text-threads.md:22
+msgid ""
+"Inserting text from an editor is as simple as highlighting the text and "
+"running `agent: add selection to thread` (<kbd class=\"keybinding\">cmd->|"
+"ctrl-></kbd>); Zed will wrap it in a fenced code block if it is code."
+msgstr ""
+
+#: src/ai/text-threads.md:24
+msgid ""
+"![Quoting a selection](https://zed.dev/img/assistant/quoting-a-selection.png)"
+msgstr ""
+
+#: src/ai/text-threads.md:26
+msgid ""
+"To submit a message, use <kbd class=\"keybinding\">cmd-enter|ctrl-enter</"
+"kbd>(`assistant: assist`). Unlike normal threads, where pressing <kbd>enter</"
+"kbd> would submit the message, in text threads, our goal is to make it feel "
+"as close to a regular editor as possible. So, pressing <kbd "
+"class=\"keybinding\">enter|enter</kbd> simply inserts a new line."
+msgstr ""
+
+#: src/ai/text-threads.md:30
+msgid ""
+"After submitting a message, the response will be streamed below, in an "
+"`Assistant` message block."
+msgstr ""
+
+#: src/ai/text-threads.md:32
+msgid ""
+"![Receiving an answer](https://zed.dev/img/assistant/receiving-an-answer.png)"
+msgstr ""
+
+#: src/ai/text-threads.md:34
+msgid ""
+"The stream can be canceled at any point with <kbd>escape</kbd>. This is "
+"useful if you realize early on that the response is not what you were "
+"looking for."
+msgstr ""
+
+#: src/ai/text-threads.md:37
+msgid ""
+"If you want to start a new conversation at any time, you can hit <kbd>cmd-n|"
+"ctrl-n</kbd> or use the `New Chat` menu option in the hamburger menu at the "
+"top left of the panel."
+msgstr ""
+
+#: src/ai/text-threads.md:39
+msgid ""
+"Simple back-and-forth conversations work well with the text threads. "
+"However, there may come a time when you want to modify the previous text in "
+"the conversation and steer it in a different direction."
+msgstr ""
+
+#: src/ai/text-threads.md:42
+msgid "Editing a Text Thread"
+msgstr ""
+
+#: src/ai/text-threads.md:44
+msgid ""
+"Text threads give you the flexibility to have control over the context. You "
+"can freely edit any previous text, including the responses from the LLM. If "
+"you want to remove a message block entirely, simply place your cursor at the "
+"beginning of the block and use the `delete` key. A typical workflow might "
+"involve making edits and adjustments throughout the context to refine your "
+"inquiry or provide additional information. Here's an example:"
+msgstr ""
+
+#: src/ai/text-threads.md:50
+msgid "Write text in a `You` block."
+msgstr ""
+
+#: src/ai/text-threads.md:51 src/ai/text-threads.md:56
+msgid ""
+"Submit the message with <kbd class=\"keybinding\">cmd-enter|ctrl-enter</kbd>."
+msgstr ""
+
+#: src/ai/text-threads.md:52
+msgid "Receive an `Assistant` response that doesn't meet your expectations."
+msgstr ""
+
+#: src/ai/text-threads.md:53
+msgid "Cancel the response with <kbd>escape</kbd>."
+msgstr ""
+
+#: src/ai/text-threads.md:54
+msgid ""
+"Erase the content of the `Assistant` message block and remove the block "
+"entirely."
+msgstr ""
+
+#: src/ai/text-threads.md:55
+msgid "Add additional context to your original message."
+msgstr ""
+
+#: src/ai/text-threads.md:58
+msgid ""
+"Being able to edit previous messages gives you control over how tokens are "
+"used. You don't need to start up a new chat to correct a mistake or to add "
+"additional information, and you don't have to waste tokens by submitting "
+"follow-up corrections."
+msgstr ""
+
+#: src/ai/text-threads.md:61
+msgid ""
+"**Note**: The act of editing past messages is often referred to as "
+"\"Rewriting History\" in the context of the language models."
+msgstr ""
+
+#: src/ai/text-threads.md:63
+msgid "Some additional points to keep in mind:"
+msgstr ""
+
+#: src/ai/text-threads.md:65
+msgid ""
+"You can cycle the role of a message block by clicking on the role, which is "
+"useful when you receive a response in an `Assistant` block that you want to "
+"edit and send back up as a `You` block."
+msgstr ""
+
+#: src/ai/text-threads.md:67
+msgid "Commands Overview"
+msgstr ""
+
+#: src/ai/text-threads.md:69
+msgid ""
+"Slash commands enhance the assistant's capabilities. Begin by typing a `/` "
+"at the beginning of the line to see a list of available commands:"
+msgstr ""
+
+#: src/ai/text-threads.md:72
+msgid "`/default`: Inserts the default rule"
+msgstr ""
+
+#: src/ai/text-threads.md:73
+msgid ""
+"`/diagnostics`: Injects errors reported by the project's language server"
+msgstr ""
+
+#: src/ai/text-threads.md:74
+msgid "`/fetch`: Fetches the content of a webpage and inserts it"
+msgstr ""
+
+#: src/ai/text-threads.md:75
+msgid "`/file`: Inserts a single file or a directory of files"
+msgstr ""
+
+#: src/ai/text-threads.md:76
+msgid "`/now`: Inserts the current date and time"
+msgstr ""
+
+#: src/ai/text-threads.md:77
+msgid ""
+"`/prompt`: Adds a custom-configured prompt to the context ([see Rules "
+"Library](./rules.md#rules-library))"
+msgstr ""
+
+#: src/ai/text-threads.md:78
+msgid "`/symbols`: Inserts the current tab's active symbols"
+msgstr ""
+
+#: src/ai/text-threads.md:79
+msgid "`/tab`: Inserts the content of the active tab or all open tabs"
+msgstr ""
+
+#: src/ai/text-threads.md:80
+msgid ""
+"`/terminal`: Inserts a select number of lines of output from the terminal"
+msgstr ""
+
+#: src/ai/text-threads.md:81
+msgid "`/selection`: Inserts the selected text"
+msgstr ""
+
+#: src/ai/text-threads.md:83
+msgid ""
+"**Note:** Remember, commands are only evaluated when the text thread is "
+"created or when the command is inserted, so a command like `/now` won't "
+"continuously update, or `/file` commands won't keep their contents up to "
+"date."
+msgstr ""
+
+#: src/ai/text-threads.md:85
+msgid "`/default`"
+msgstr ""
+
+#: src/ai/text-threads.md:87
+msgid ""
+"Read more about `/default` in the [Rules: Editing the Default Rules](./rules."
+"md#default-rules) section."
+msgstr ""
+
+#: src/ai/text-threads.md:89
+msgid "Usage: `/default`"
+msgstr ""
+
+#: src/ai/text-threads.md:91
+msgid "`/diagnostics`"
+msgstr ""
+
+#: src/ai/text-threads.md:93
+msgid ""
+"The `/diagnostics` command injects errors reported by the project's language "
+"server into the context. This is useful for getting an overview of current "
+"issues in your project."
+msgstr ""
+
+#: src/ai/text-threads.md:96
+msgid "Usage: `/diagnostics [--include-warnings] [path]`"
+msgstr ""
+
+#: src/ai/text-threads.md:98
+msgid ""
+"`--include-warnings`: Optional flag to include warnings in addition to "
+"errors."
+msgstr ""
+
+#: src/ai/text-threads.md:99
+msgid ""
+"`path`: Optional path to limit diagnostics to a specific file or directory."
+msgstr ""
+
+#: src/ai/text-threads.md:101
+msgid "`/file`"
+msgstr ""
+
+#: src/ai/text-threads.md:103
+msgid ""
+"The `/file` command inserts the content of a single file or a directory of "
+"files into the context. This allows you to reference specific parts of your "
+"project in your conversation with the assistant."
+msgstr ""
+
+#: src/ai/text-threads.md:106
+msgid "Usage: `/file <path>`"
+msgstr ""
+
+#: src/ai/text-threads.md:108
+msgid "You can use glob patterns to match multiple files or directories."
+msgstr ""
+
+#: src/ai/text-threads.md:110 src/ai/text-threads.md:149
+msgid "Examples:"
+msgstr ""
+
+#: src/ai/text-threads.md:112
+msgid ""
+"`/file src/index.js` - Inserts the content of `src/index.js` into the "
+"context."
+msgstr ""
+
+#: src/ai/text-threads.md:113
+msgid ""
+"`/file src/*.js` - Inserts the content of all `.js` files in the `src` "
+"directory."
+msgstr ""
+
+#: src/ai/text-threads.md:114
+msgid "`/file src` - Inserts the content of all files in the `src` directory."
+msgstr ""
+
+#: src/ai/text-threads.md:116
+msgid "`/now`"
+msgstr ""
+
+#: src/ai/text-threads.md:118
+msgid ""
+"The `/now` command inserts the current date and time into the context. This "
+"can be useful for letting the language model know the current time (and by "
+"extension, how old their current knowledge base is)."
+msgstr ""
+
+#: src/ai/text-threads.md:121
+msgid "Usage: `/now`"
+msgstr ""
+
+#: src/ai/text-threads.md:123
+msgid "`/prompt`"
+msgstr ""
+
+#: src/ai/text-threads.md:125
+msgid ""
+"The `/prompt` command inserts a prompt from the prompt library into the "
+"context. It can also be used to nest prompts within prompts."
+msgstr ""
+
+#: src/ai/text-threads.md:128
+msgid "Usage: `/prompt <prompt_name>`"
+msgstr ""
+
+#: src/ai/text-threads.md:130
+msgid "Related: `/default`"
+msgstr ""
+
+#: src/ai/text-threads.md:132
+msgid "`/symbols`"
+msgstr ""
+
+#: src/ai/text-threads.md:134
+msgid ""
+"The `/symbols` command inserts the active symbols (functions, classes, etc.) "
+"from the current tab into the context. This is useful for getting an "
+"overview of the structure of the current file."
+msgstr ""
+
+#: src/ai/text-threads.md:137
+msgid "Usage: `/symbols`"
+msgstr ""
+
+#: src/ai/text-threads.md:139
+msgid "`/tab`"
+msgstr ""
+
+#: src/ai/text-threads.md:141
+msgid ""
+"The `/tab` command inserts the content of the active tab or all open tabs "
+"into the context. This allows you to reference the content you're currently "
+"working on."
+msgstr ""
+
+#: src/ai/text-threads.md:144
+msgid "Usage: `/tab [tab_name|all]`"
+msgstr ""
+
+#: src/ai/text-threads.md:146
+msgid "`tab_name`: Optional name of a specific tab to insert."
+msgstr ""
+
+#: src/ai/text-threads.md:147
+msgid "`all`: Insert content from all open tabs."
+msgstr ""
+
+#: src/ai/text-threads.md:151
+msgid "`/tab` - Inserts the content of the active tab."
+msgstr ""
+
+#: src/ai/text-threads.md:152
+msgid ""
+"`/tab \"index.js\"` - Inserts the content of the tab named \"index.js\"."
+msgstr ""
+
+#: src/ai/text-threads.md:153
+msgid "`/tab all` - Inserts the content of all open tabs."
+msgstr ""
+
+#: src/ai/text-threads.md:155
+msgid "`/terminal`"
+msgstr ""
+
+#: src/ai/text-threads.md:157
+msgid ""
+"The `/terminal` command inserts a select number of lines of output from the "
+"terminal into the context. This is useful for referencing recent command "
+"outputs or logs."
+msgstr ""
+
+#: src/ai/text-threads.md:160
+msgid "Usage: `/terminal [<number>]`"
+msgstr ""
+
+#: src/ai/text-threads.md:162
+msgid ""
+"`<number>`: Optional parameter to specify the number of lines to insert "
+"(default is 50)."
+msgstr ""
+
+#: src/ai/text-threads.md:164
+msgid "`/selection`"
+msgstr ""
+
+#: src/ai/text-threads.md:166
+msgid ""
+"The `/selection` command inserts the selected text in the editor into the "
+"context. This is useful for referencing specific parts of your code."
+msgstr ""
+
+#: src/ai/text-threads.md:169
+msgid ""
+"This is equivalent to the `agent: add selection to thread` command (<kbd "
+"class=\"keybinding\">cmd->|ctrl-></kbd>)."
+msgstr ""
+
+#: src/ai/text-threads.md:171
+msgid "Usage: `/selection`"
+msgstr ""
+
+#: src/ai/text-threads.md:173
+msgid "Commands in the Rules Library"
+msgstr ""
+
+#: src/ai/text-threads.md:175
+msgid ""
+"[Commands](#commands) can be used in rules, in the Rules Library (previously "
+"known as Prompt Library), to insert dynamic content or perform actions. For "
+"example, if you want to create a rule where it is important for the model to "
+"know the date, you can use the `/now` command to insert the current date."
+msgstr ""
+
+#: src/ai/text-threads.md:178
+msgid ""
+"**Warn:** Slash commands in rules **only** work when they are used in text "
+"threads. Using them in non-text threads is not supported."
+msgstr ""
+
+#: src/ai/text-threads.md:180
+msgid "**Note:** Slash commands in rules **must** be on their own line."
+msgstr ""
+
+#: src/ai/text-threads.md:182
+msgid ""
+"See the [list of commands](#commands) above for more information on "
+"commands, and what slash commands are available."
+msgstr ""
+
+#: src/ai/text-threads.md:184 src/ai/text-threads.md:206
+msgid "Example"
+msgstr ""
+
+#: src/ai/text-threads.md:194
+msgid ""
+"In the above example, the `/file` command is used to insert the contents of "
+"the `Cargo.toml` file (or all `Cargo.toml` files present in the project) "
+"into the rule."
+msgstr ""
+
+#: src/ai/text-threads.md:196
+msgid "Nesting Rules"
+msgstr ""
+
+#: src/ai/text-threads.md:198
+msgid ""
+"Similar to adding rules to the default rules, you can nest rules within "
+"other rules with the `/prompt` command (only supported in Text Threads "
+"currently)."
+msgstr ""
+
+#: src/ai/text-threads.md:200
+msgid "You might want to nest rules to:"
+msgstr ""
+
+#: src/ai/text-threads.md:202
+msgid "Create templates on the fly"
+msgstr ""
+
+#: src/ai/text-threads.md:203
+msgid ""
+"Break collections like docs or references into smaller, mix-and-matchable "
+"parts"
+msgstr ""
+
+#: src/ai/text-threads.md:204
+msgid ""
+"Create variants of a similar rule (e.g., `Async Rust - Tokio` vs. `Async "
+"Rust - Async-std`)"
+msgstr ""
+
+#: src/ai/text-threads.md:222
+msgid ""
+"_The text in parentheses above are comments and are not part of the rule._"
+msgstr ""
+
+#: src/ai/text-threads.md:224
+msgid ""
+"**Note:** While you technically _can_ nest a rule within itself, we wouldn't "
+"recommend it (in the strongest of terms.) Use at your own risk!"
+msgstr ""
+
+#: src/ai/text-threads.md:226
+msgid ""
+"By using nested rules, you can create modular and reusable rule components "
+"that can be combined in various ways to suit different scenarios."
+msgstr ""
+
+#: src/ai/text-threads.md:228
+msgid ""
+"**Note:** When using slash commands to bring in additional context, the "
+"injected content can be edited directly inline in the text thread—edits here "
+"will not propagate to the saved rules."
+msgstr ""
+
+#: src/ai/text-threads.md:230
+msgid "Extensibility"
+msgstr ""
+
+#: src/ai/text-threads.md:232
+msgid "Additional slash commands can be provided by extensions."
+msgstr ""
+
+#: src/ai/text-threads.md:234
+msgid ""
+"See [Extension: Slash Commands](../extensions/slash-commands.md) to learn "
+"how to create your own."
+msgstr ""
+
+#: src/ai/text-threads.md:236
+msgid "Text Threads vs. Threads"
+msgstr ""
+
+#: src/ai/text-threads.md:238
+msgid ""
+"For some time, text threads were the only way to interact with AI in Zed. In "
+"May 2025, we introduced a new version of the agent panel, which, as opposed "
+"to being editor-based, is optimized for readability. Visit [the Agent Panel "
+"page](./agent-panel.md) to learn more about it."
+msgstr ""
+
+#: src/ai/text-threads.md:242
+msgid ""
+"More importantly, aside from the many UI differences, the major aspect that "
+"sets one apart from the other is that tool calls don't work in Text Threads. "
+"Due to that, it's accurate to say that Text Threads aren't conceptually "
+"agentic, as they can't perform any action on your behalf (or any action at "
+"all)."
+msgstr ""
+
+#: src/ai/text-threads.md:245
+msgid ""
+"Think of it more like a regular/\"traditional\" AI chat, where the only "
+"thing you can get from the model is simply just text. Consequently, [MCP "
+"servers](./mcp.md) and [external agents](./external-agents.md) are also not "
+"available in Text Threads."
+msgstr ""
+
+#: src/ai/text-threads.md:248
+msgid "Advanced Concepts"
+msgstr ""
+
+#: src/ai/text-threads.md:250
+msgid "Rule Templates"
+msgstr ""
+
+#: src/ai/text-threads.md:252
+msgid ""
+"Zed uses rule templates to power internal assistant features, like the "
+"terminal assistant, or the content rules used in the inline assistant."
+msgstr ""
+
+#: src/ai/text-threads.md:254
+msgid "Zed has the following internal rule templates:"
+msgstr ""
+
+#: src/ai/text-threads.md:256
+msgid "`content_prompt.hbs`: Used for generating content in the editor."
+msgstr ""
+
+#: src/ai/text-threads.md:257
+msgid ""
+"`terminal_assistant_prompt.hbs`: Used for the terminal assistant feature."
+msgstr ""
+
+#: src/ai/text-threads.md:259
+msgid ""
+"At this point it is unknown if we will expand templates further to be user-"
+"creatable."
+msgstr ""
+
+#: src/ai/text-threads.md:261
+msgid "Overriding Templates"
+msgstr ""
+
+#: src/ai/text-threads.md:263
+msgid ""
+"**Note:** It is not recommended to override templates unless you know what "
+"you are doing. Editing templates will break your assistant if done "
+"incorrectly."
+msgstr ""
+
+#: src/ai/text-threads.md:265
+msgid ""
+"Zed allows you to override the default rules used for various assistant "
+"features by placing custom Handlebars (.hbs) templates in your `~/.config/"
+"zed/prompt_overrides` directory."
+msgstr ""
+
+#: src/ai/text-threads.md:267
+msgid "The following templates can be overridden:"
+msgstr ""
+
+#: src/ai/text-threads.md:269
+msgid ""
+"[`content_prompt.hbs`](https://github.com/zed-industries/zed/tree/main/"
+"assets/prompts/content_prompt.hbs): Used for generating content in the "
+"editor."
+msgstr ""
+
+#: src/ai/text-threads.md:271
+msgid ""
+"[`terminal_assistant_prompt.hbs`](https://github.com/zed-industries/zed/tree/"
+"main/assets/prompts/terminal_assistant_prompt.hbs): Used for the terminal "
+"assistant feature."
+msgstr ""
+
+#: src/ai/text-threads.md:273
+msgid ""
+"**Note:** Be sure you want to override these, as you'll miss out on "
+"iteration on our built-in features. This should be primarily used when "
+"developing Zed."
+msgstr ""
+
+#: src/ai/text-threads.md:276
+msgid ""
+"You can customize these templates to better suit your needs while "
+"maintaining the core structure and variables used by Zed. Zed will "
+"automatically reload your prompt overrides when they change on disk."
+msgstr ""
+
+#: src/ai/text-threads.md:279
+msgid ""
+"Consult Zed's [assets/prompts](https://github.com/zed-industries/zed/tree/"
+"main/assets/prompts) directory for current versions you can play with."
+msgstr ""
+
+#: src/ai/text-threads.md:281
+msgid "History"
+msgstr ""
+
+#: src/ai/text-threads.md:283
+msgid ""
+"After you submit your first message in a text thread, a name for your "
+"context is generated by the language model, and the context is automatically "
+"saved to your file system in"
+msgstr ""
+
+#: src/ai/text-threads.md:285
+msgid "`~/.config/zed/conversations` (macOS)"
+msgstr ""
+
+#: src/ai/text-threads.md:286
+msgid "`~/.local/share/zed/conversations` (Linux)"
+msgstr ""
+
+#: src/ai/text-threads.md:287
+msgid "`%LocalAppData%\\Zed\\conversations` (Windows)"
+msgstr ""
+
+#: src/ai/text-threads.md:289
+msgid ""
+"You can access and load previous contexts by clicking on the history button "
+"in the top-left corner of the agent panel."
+msgstr ""
+
+#: src/ai/text-threads.md:291
+msgid ""
+"![Viewing assistant history](https://zed.dev/img/assistant/assistant-history."
+"png)"
+msgstr ""

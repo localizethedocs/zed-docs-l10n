@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/powershell.md:1
+msgid "PowerShell"
+msgstr ""
+
+#: src/languages/powershell.md:3
+msgid ""
+"PowerShell language support in Zed is provided by the community-maintained "
+"[Zed PowerShell extension](https://github.com/wingyplus/zed-powershell). "
+"Please report issues to: [github.com/wingyplus/zed-powershell/issues]"
+"(https://github.com/wingyplus/zed-powershell/issues)"
+msgstr ""
+
+#: src/languages/powershell.md:5
+msgid ""
+"Tree-sitter: [airbus-cert/tree-sitter-powershell](https://github.com/airbus-"
+"cert/tree-sitter-powershell)"
+msgstr ""
+
+#: src/languages/powershell.md:6
+msgid ""
+"Language Server: [PowerShell/PowerShellEditorServices](https://github.com/"
+"PowerShell/PowerShellEditorServices)"
+msgstr ""
+
+#: src/languages/powershell.md:8
+msgid "Setup"
+msgstr ""
+
+#: src/languages/powershell.md:10
+msgid "Install PowerShell 7+"
+msgstr ""
+
+#: src/languages/powershell.md:12
+msgid "macOS: `brew install powershell/tap/powershell`"
+msgstr ""
+
+#: src/languages/powershell.md:13
+msgid ""
+"Alpine: [Installing PowerShell on Alpine Linux](https://learn.microsoft.com/"
+"en-us/powershell/scripting/install/install-alpine)"
+msgstr ""
+
+#: src/languages/powershell.md:14
+msgid ""
+"Debian: [Install PowerShell on Debian Linux](https://learn.microsoft.com/en-"
+"us/powershell/scripting/install/install-debian)"
+msgstr ""
+
+#: src/languages/powershell.md:15
+msgid ""
+"RedHat: [Install PowerShell on RHEL](https://learn.microsoft.com/en-us/"
+"powershell/scripting/install/install-rhel)"
+msgstr ""
+
+#: src/languages/powershell.md:16
+msgid ""
+"Ubuntu: [Install PowerShell on RHEL](https://learn.microsoft.com/en-us/"
+"powershell/scripting/install/install-ubuntu)"
+msgstr ""
+
+#: src/languages/powershell.md:17
+msgid ""
+"Windows: [Install PowerShell on Windows](https://learn.microsoft.com/en-us/"
+"powershell/scripting/install/installing-powershell-on-windows)"
+msgstr ""
+
+#: src/languages/powershell.md:19
+msgid ""
+"The Zed PowerShell extension will default to the `pwsh` executable found in "
+"your path."
+msgstr ""
+
+#: src/languages/powershell.md:21
+msgid "Install PowerShell Editor Services (Optional)"
+msgstr ""
+
+#: src/languages/powershell.md:23
+msgid ""
+"The Zed PowerShell extensions will attempt to download [PowerShell Editor "
+"Services](https://github.com/PowerShell/PowerShellEditorServices) "
+"automatically."
+msgstr ""
+
+#: src/languages/powershell.md:25
+msgid ""
+"If want to use a specific binary, you can specify in your that in your Zed "
+"settings.json:"
+msgstr ""
+
+#: src/languages/powershell.md:28
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/powershell.md:29
+msgid "\"powershell-es\""
+msgstr ""
+
+#: src/languages/powershell.md:30
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/powershell.md:31
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/powershell.md:31
+msgid "\"/path/to/PowerShellEditorServices\""
+msgstr ""

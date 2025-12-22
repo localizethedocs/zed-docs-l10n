@@ -1,0 +1,290 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/elixir.md:1
+msgid "Elixir"
+msgstr ""
+
+#: src/languages/elixir.md:3
+msgid ""
+"Elixir support is available through the [Elixir extension](https://github."
+"com/zed-extensions/elixir)."
+msgstr ""
+
+#: src/languages/elixir.md:5
+msgid "Tree-sitter:"
+msgstr ""
+
+#: src/languages/elixir.md:6
+msgid ""
+"[elixir-lang/tree-sitter-elixir](https://github.com/elixir-lang/tree-sitter-"
+"elixir)"
+msgstr ""
+
+#: src/languages/elixir.md:7
+msgid ""
+"[phoenixframework/tree-sitter-heex](https://github.com/phoenixframework/tree-"
+"sitter-heex)"
+msgstr ""
+
+#: src/languages/elixir.md:8
+msgid "Language servers:"
+msgstr ""
+
+#: src/languages/elixir.md:9
+msgid "[elixir-lang/expert](https://github.com/elixir-lang/expert)"
+msgstr ""
+
+#: src/languages/elixir.md:10
+msgid "[elixir-lsp/elixir-ls](https://github.com/elixir-lsp/elixir-ls)"
+msgstr ""
+
+#: src/languages/elixir.md:11
+msgid "[elixir-tools/next-ls](https://github.com/elixir-tools/next-ls)"
+msgstr ""
+
+#: src/languages/elixir.md:12
+msgid "[lexical-lsp/lexical](https://github.com/lexical-lsp/lexical)"
+msgstr ""
+
+#: src/languages/elixir.md:14
+msgid "Choosing a language server"
+msgstr ""
+
+#: src/languages/elixir.md:16
+msgid ""
+"The Elixir extension offers language server support for `expert`, `elixir-"
+"ls`, `next-ls`, and `lexical`."
+msgstr ""
+
+#: src/languages/elixir.md:18
+msgid "`elixir-ls` is enabled by default."
+msgstr ""
+
+#: src/languages/elixir.md:20
+msgid "Expert"
+msgstr ""
+
+#: src/languages/elixir.md:22
+msgid "To switch to `expert`, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/elixir.md:25 src/languages/elixir.md:40
+#: src/languages/elixir.md:55 src/languages/elixir.md:89
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/elixir.md:26 src/languages/elixir.md:41
+#: src/languages/elixir.md:56 src/languages/elixir.md:90
+msgid "\"Elixir\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+msgid "\"expert\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"!elixir-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"!next-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+msgid "\"!lexical\""
+msgstr ""
+
+#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/elixir.md:29 src/languages/elixir.md:44
+#: src/languages/elixir.md:59
+msgid "\"HEEX\""
+msgstr ""
+
+#: src/languages/elixir.md:35
+msgid "Next LS"
+msgstr ""
+
+#: src/languages/elixir.md:37
+msgid "To switch to `next-ls`, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+msgid "\"next-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"!expert\""
+msgstr ""
+
+#: src/languages/elixir.md:50
+msgid "Lexical"
+msgstr ""
+
+#: src/languages/elixir.md:52
+msgid "To switch to `lexical`, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/elixir.md:57 src/languages/elixir.md:60
+msgid "\"lexical\""
+msgstr ""
+
+#: src/languages/elixir.md:65
+msgid "Setting up `elixir-ls`"
+msgstr ""
+
+#: src/languages/elixir.md:67
+msgid "Install `elixir`:"
+msgstr ""
+
+#: src/languages/elixir.md:73
+msgid "Install `elixir-ls`:"
+msgstr ""
+
+#: src/languages/elixir.md:79
+msgid "Restart Zed"
+msgstr ""
+
+#: src/languages/elixir.md:81
+msgid ""
+"If `elixir-ls` is not running in an elixir project, check the error log via "
+"the command palette action `zed: open log`. If you find an error message "
+"mentioning: `invalid LSP message header \"Shall I install Hex? (if running "
+"non-interactively, use \\\"mix local.hex --force\\\") [Yn]`, you might need "
+"to install [`Hex`](https://hex.pm). You run `elixir-ls` from the command "
+"line and accept the prompt to install `Hex`."
+msgstr ""
+
+#: src/languages/elixir.md:83
+msgid "Formatting with Mix"
+msgstr ""
+
+#: src/languages/elixir.md:85
+msgid ""
+"If you prefer to format your code with [Mix](https://hexdocs.pm/mix/Mix."
+"html), use the following snippet in your `settings.json` file to configure "
+"it as an external formatter. Formatting will occur on file save."
+msgstr ""
+
+#: src/languages/elixir.md:91
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/elixir.md:91
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/elixir.md:92
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/elixir.md:93
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/elixir.md:94
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/elixir.md:94
+msgid "\"mix\""
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "\"format\""
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "\"--stdin-filename\""
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "\"-\""
+msgstr ""
+
+#: src/languages/elixir.md:103
+msgid "Additional workspace configuration options"
+msgstr ""
+
+#: src/languages/elixir.md:105
+msgid ""
+"You can pass additional elixir-ls workspace configuration options via lsp "
+"settings in `settings.json`."
+msgstr ""
+
+#: src/languages/elixir.md:107
+msgid "The following example disables dialyzer:"
+msgstr ""
+
+#: src/languages/elixir.md:110
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/elixir.md:111
+msgid "\"elixir-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:112
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/elixir.md:113
+msgid "\"dialyzerEnabled\""
+msgstr ""
+
+#: src/languages/elixir.md:119
+msgid ""
+"See [ElixirLS configuration settings](https://github.com/elixir-lsp/elixir-"
+"ls#elixirls-configuration-settings) for more options."
+msgstr ""
+
+#: src/languages/elixir.md:121
+msgid "HEEx"
+msgstr ""
+
+#: src/languages/elixir.md:123
+msgid ""
+"Zed also supports HEEx templates. HEEx is a mix of [EEx](https://hexdocs.pm/"
+"eex/1.12.3/EEx.html) (Embedded Elixir) and HTML, and is used in Phoenix "
+"LiveView applications."
+msgstr ""
+
+#: src/languages/elixir.md:125
+msgid ""
+"Tree-sitter: [phoenixframework/tree-sitter-heex](https://github.com/"
+"phoenixframework/tree-sitter-heex)"
+msgstr ""
