@@ -1,0 +1,758 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/git.md:3
+msgid "Git"
+msgstr ""
+
+#: src/git.md:5
+msgid ""
+"Zed currently offers a set of fundamental Git features, with support coming "
+"in the future for more advanced ones, like conflict resolution tools, line "
+"by line staging, and more."
+msgstr ""
+
+#: src/git.md:7
+msgid "Here's an overview of all currently supported features:"
+msgstr ""
+
+#: src/git.md:9 src/git.md:80
+msgid "Committing"
+msgstr ""
+
+#: src/git.md:10
+msgid "Staging, pushing, pulling, and fetching"
+msgstr ""
+
+#: src/git.md:11
+msgid "Project Diff: A multibuffer view of all changes"
+msgstr ""
+
+#: src/git.md:12
+msgid "Diff indicators in buffers and editor scrollbars"
+msgstr ""
+
+#: src/git.md:13
+msgid "Inline diff toggle and reverts in the editor for unstaged changes"
+msgstr ""
+
+#: src/git.md:14
+msgid "Git status in the Project Panel"
+msgstr ""
+
+#: src/git.md:15
+msgid "Branch creating and switching"
+msgstr ""
+
+#: src/git.md:16
+msgid "Git blame viewing"
+msgstr ""
+
+#: src/git.md:17
+msgid "Git stash pop, apply, drop and view"
+msgstr ""
+
+#: src/git.md:19
+msgid "Git Panel"
+msgstr ""
+
+#: src/git.md:21
+msgid ""
+"The Git Panel gives you a birds-eye view of the state of your working tree "
+"and of Git's staging area."
+msgstr ""
+
+#: src/git.md:23
+msgid ""
+"You can open the Git Panel using <code class=\"hljs\">git_panel::"
+"ToggleFocus</code>, or by clicking the Git icon in the status bar."
+msgstr ""
+
+#: src/git.md:25
+msgid ""
+"In the panel you can see the state of your project at a glance—which "
+"repository and branch are active, what files have changed and the current "
+"staging state of each file."
+msgstr ""
+
+#: src/git.md:27
+msgid ""
+"Zed monitors your repository so that changes you make on the command line "
+"are instantly reflected."
+msgstr ""
+
+#: src/git.md:29
+msgid "Configuration"
+msgstr ""
+
+#: src/git.md:31
+msgid ""
+"You can configure how Zed hard wraps commit messages with the `preferred-"
+"line-length` setting of the \"Git Commit\" language. The default is `72`, "
+"but it can be set to any number of characters `0` or more."
+msgstr ""
+
+#: src/git.md:33
+msgid ""
+"The Git Panel also allows configuring the `soft_wrap` setting to adjust how "
+"commit messages display while you are typing them in the Git Panel. The "
+"default setting is `editor_width`, however, `none`, `preferred_line_length`, "
+"and `bounded` are also options."
+msgstr ""
+
+#: src/git.md:35
+msgid "Example"
+msgstr ""
+
+#: src/git.md:38
+msgid "\"languages\""
+msgstr ""
+
+#: src/git.md:39
+msgid "\"Git Commit\""
+msgstr ""
+
+#: src/git.md:40
+msgid "\"soft_wrap\""
+msgstr ""
+
+#: src/git.md:40
+msgid "\"editor_width\""
+msgstr ""
+
+#: src/git.md:41
+msgid "\"preferred_line_length\""
+msgstr ""
+
+#: src/git.md:46
+msgid "Project Diff"
+msgstr ""
+
+#: src/git.md:48
+msgid ""
+"You can see all of the changes captured by Git in Zed by opening the Project "
+"Diff (<kbd class=\"keybinding\">ctrl-g d|ctrl-g d</kbd>), accessible via the "
+"<code class=\"hljs\">git::Diff</code> action in the Command Palette or the "
+"Git Panel."
+msgstr ""
+
+#: src/git.md:50
+msgid ""
+"All of the changes displayed in the Project Diff behave exactly the same as "
+"any other multibuffer: they are all editable excerpts of files."
+msgstr ""
+
+#: src/git.md:52
+msgid ""
+"You can stage or unstage each hunk as well as a whole file by hitting the "
+"buttons on the tab bar or their corresponding keybindings."
+msgstr ""
+
+#: src/git.md:56
+msgid "Fetch, push, and pull"
+msgstr ""
+
+#: src/git.md:58
+msgid ""
+"Fetch, push, or pull from your Git repository in Zed via the buttons "
+"available on the Git Panel or via the Command Palette by looking at the "
+"respective actions: <code class=\"hljs\">git::Fetch</code>, <code "
+"class=\"hljs\">git::Push</code>, and <code class=\"hljs\">git::Pull</code>."
+msgstr ""
+
+#: src/git.md:60
+msgid "Staging Workflow"
+msgstr ""
+
+#: src/git.md:62
+msgid ""
+"Zed has two primary staging workflows, using either the Project Diff or the "
+"panel directly."
+msgstr ""
+
+#: src/git.md:64
+msgid "Using the Project Diff"
+msgstr ""
+
+#: src/git.md:66
+msgid ""
+"In the Project Diff view, you can focus on each hunk and stage them "
+"individually by clicking on the tab bar buttons or via the keybindings <code "
+"class=\"hljs\">git::StageAndNext</code> (<kbd class=\"keybinding\">cmd-y|alt-"
+"y</kbd>)."
+msgstr ""
+
+#: src/git.md:68
+msgid ""
+"Similarly, stage all hunks at the same time with the <code "
+"class=\"hljs\">git::StageAll</code> (<kbd class=\"keybinding\">cmd-ctrl-y|"
+"ctrl-space</kbd>) keybinding and then immediately commit with <code "
+"class=\"hljs\">git::Commit</code> (<kbd class=\"keybinding\">cmd-enter|ctrl-"
+"enter</kbd>)."
+msgstr ""
+
+#: src/git.md:70
+msgid "Using the Git Panel"
+msgstr ""
+
+#: src/git.md:72
+msgid ""
+"From the panel, you can simply type a commit message and hit the commit "
+"button, or <code class=\"hljs\">git::Commit</code>. This will automatically "
+"stage all tracked files (indicated by a `[·]` in the entry's checkbox) and "
+"commit them."
+msgstr ""
+
+#: src/git.md:76
+msgid ""
+"Entries can be staged using each individual entry's checkbox. All changes "
+"can be staged using the button at the top of the panel, or <code "
+"class=\"hljs\">git::StageAll</code>."
+msgstr ""
+
+#: src/git.md:82
+msgid "Zed offers two commit textareas:"
+msgstr ""
+
+#: src/git.md:84
+msgid ""
+"The first one is available right at the bottom of the Git Panel. Hitting "
+"<kbd class=\"keybinding\">cmd-enter|ctrl-enter</kbd> immediately commits all "
+"of your staged changes."
+msgstr ""
+
+#: src/git.md:85
+msgid ""
+"The second is available via the action <code class=\"hljs\">git::"
+"ExpandCommitEditor</code> or via hitting the <kbd class=\"keybinding\">shift-"
+"escape|</kbd> while focused in the Git Panel commit textarea."
+msgstr ""
+
+#: src/git.md:87
+msgid "Undoing a Commit"
+msgstr ""
+
+#: src/git.md:89
+msgid ""
+"As soon as you commit in Zed, in the Git Panel, you'll see a bar right under "
+"the commit textarea, which will show the recently submitted commit. In "
+"there, you can use the \"Uncommit\" button, which performs the `git reset "
+"HEADˆ--soft` command."
+msgstr ""
+
+#: src/git.md:92
+msgid "Configuring Commit Line Length"
+msgstr ""
+
+#: src/git.md:94
+msgid ""
+"By default, Zed sets the commit line length to `72` but it can be configured "
+"in your local `settings.json` file."
+msgstr ""
+
+#: src/git.md:96
+msgid ""
+"Find more information about setting the `preferred-line-length` in the "
+"[Configuration](#configuration) section."
+msgstr ""
+
+#: src/git.md:98
+msgid "Stashing"
+msgstr ""
+
+#: src/git.md:100
+msgid ""
+"Git stash allows you to temporarily save your uncommitted changes and revert "
+"your working directory to a clean state. This is particularly useful when "
+"you need to quickly switch branches or pull updates without committing "
+"incomplete work."
+msgstr ""
+
+#: src/git.md:102
+msgid "Creating Stashes"
+msgstr ""
+
+#: src/git.md:104
+msgid ""
+"To stash all your current changes, use the <code class=\"hljs\">git::"
+"StashAll</code> action. This will save both staged and unstaged changes to a "
+"new stash entry and clean your working directory."
+msgstr ""
+
+#: src/git.md:106
+msgid "Managing Stashes"
+msgstr ""
+
+#: src/git.md:108
+msgid ""
+"Zed provides a comprehensive stash picker accessible via <code "
+"class=\"hljs\">git::ViewStash</code>. From the stash picker, you can:"
+msgstr ""
+
+#: src/git.md:110
+msgid ""
+"**View stash list**: Browse all your saved stashes with their descriptions "
+"and timestamps"
+msgstr ""
+
+#: src/git.md:111
+msgid "**Open diffs**: See exactly what changes are stored in each stash"
+msgstr ""
+
+#: src/git.md:112
+msgid ""
+"**Apply stashes**: Apply stash changes to your working directory while "
+"keeping the stash entry"
+msgstr ""
+
+#: src/git.md:113
+msgid ""
+"**Pop stashes**: Apply stash changes and remove the stash entry from the list"
+msgstr ""
+
+#: src/git.md:114
+msgid "**Drop stashes**: Delete unwanted stash entries without applying them"
+msgstr ""
+
+#: src/git.md:116
+msgid "Quick Stash Operations"
+msgstr ""
+
+#: src/git.md:118
+msgid ""
+"For faster workflows, Zed provides direct actions to work with the most "
+"recent stash:"
+msgstr ""
+
+#: src/git.md:120
+msgid ""
+"**Apply latest stash**: Use <code class=\"hljs\">git::StashApply</code> to "
+"apply the most recent stash without removing it"
+msgstr ""
+
+#: src/git.md:121
+msgid ""
+"**Pop latest stash**: Use <code class=\"hljs\">git::StashPop</code> to apply "
+"and remove the most recent stash"
+msgstr ""
+
+#: src/git.md:123
+msgid "Stash Diff View"
+msgstr ""
+
+#: src/git.md:125
+msgid ""
+"When viewing a specific stash in the diff view, you have additional options "
+"available through the interface:"
+msgstr ""
+
+#: src/git.md:127
+msgid "Apply the current stash to your working directory"
+msgstr ""
+
+#: src/git.md:128
+msgid "Pop the current stash (apply and remove)"
+msgstr ""
+
+#: src/git.md:129
+msgid "Remove the stash without applying changes"
+msgstr ""
+
+#: src/git.md:131
+msgid ""
+"To open the stash diff view, select a stash from the stash picker and use "
+"the <code class=\"hljs\">stash_picker::ShowStashItem</code> (<kbd "
+"class=\"keybinding\">ctrl-shift-v|ctrl-shift-v</kbd>) keybinding."
+msgstr ""
+
+#: src/git.md:133
+msgid "AI Support in Git"
+msgstr ""
+
+#: src/git.md:135
+msgid ""
+"Zed currently supports LLM-powered commit message generation. You can ask AI "
+"to generate a commit message by focusing on the message editor within the "
+"Git Panel and either clicking on the pencil icon in the bottom left, or "
+"reaching for the <code class=\"hljs\">git::GenerateCommitMessage</code> "
+"(<kbd class=\"keybinding\">alt-tab|alt-l</kbd>) keybinding."
+msgstr ""
+
+#: src/git.md:138
+msgid ""
+"Note that you need to have an LLM provider configured for billing purposes, "
+"either via your own API keys or trialing/paying for Zed's hosted AI models. "
+"Visit [the AI configuration page](./ai/configuration.md) to learn how to do "
+"so."
+msgstr ""
+
+#: src/git.md:140
+msgid ""
+"You can specify your preferred model to use by providing a "
+"`commit_message_model` agent setting. See [Feature-specific models](./ai/"
+"agent-settings.md#feature-specific-models) for more information."
+msgstr ""
+
+#: src/git.md:144
+msgid "\"agent\""
+msgstr ""
+
+#: src/git.md:145
+msgid "\"commit_message_model\""
+msgstr ""
+
+#: src/git.md:146 src/git.md:174
+msgid "\"provider\""
+msgstr ""
+
+#: src/git.md:146
+msgid "\"anthropic\""
+msgstr ""
+
+#: src/git.md:147
+msgid "\"model\""
+msgstr ""
+
+#: src/git.md:147
+msgid "\"claude-3-5-haiku\""
+msgstr ""
+
+#: src/git.md:155
+msgid "More advanced AI integration with Git features may come in the future."
+msgstr ""
+
+#: src/git.md:157
+msgid "Git Integrations"
+msgstr ""
+
+#: src/git.md:159
+msgid ""
+"Zed integrates with popular Git hosting services to ensure that Git commit "
+"hashes and references to Issues, Pull Requests, and Merge Requests become "
+"clickable links."
+msgstr ""
+
+#: src/git.md:161
+msgid ""
+"Zed currently supports links to the hosted versions of [GitHub](https://"
+"github.com), [GitLab](https://gitlab.com), [Bitbucket](https://bitbucket."
+"org), [SourceHut](https://sr.ht) and [Codeberg](https://codeberg.org)."
+msgstr ""
+
+#: src/git.md:168
+msgid ""
+"For self-hosted GitHub, GitLab, or Bitbucket instances, add them to the "
+"`git_hosting_providers` setting so commit hashes and permalinks resolve to "
+"your domain:"
+msgstr ""
+
+#: src/git.md:172
+msgid "\"git_hosting_providers\""
+msgstr ""
+
+#: src/git.md:174
+msgid "\"gitlab\""
+msgstr ""
+
+#: src/git.md:175
+msgid "\"name\""
+msgstr ""
+
+#: src/git.md:175
+msgid "\"Corp GitLab\""
+msgstr ""
+
+#: src/git.md:176
+msgid "\"base_url\""
+msgstr ""
+
+#: src/git.md:176
+msgid "\"https://git.example.corp\""
+msgstr ""
+
+#: src/git.md:182
+msgid ""
+"Zed also has a Copy Permalink feature to create a permanent link to a code "
+"snippet on your Git hosting service. These links are useful for sharing a "
+"specific line or range of lines in a file at a specific commit. Trigger this "
+"action via the [Command Palette](./getting-started.md#command-palette) "
+"(search for `permalink`), by creating a [custom key bindings](key-bindings."
+"md#custom-key-bindings) to the `editor::CopyPermalinkToLine` or `editor::"
+"OpenPermalinkToLine` actions or by simply right clicking and selecting `Copy "
+"Permalink` with line(s) selected in your editor."
+msgstr ""
+
+#: src/git.md:189
+msgid "Diff Hunk Keyboard Shortcuts"
+msgstr ""
+
+#: src/git.md:191
+msgid ""
+"When viewing files with changes, Zed displays diff hunks that can be "
+"expanded or collapsed for detailed review:"
+msgstr ""
+
+#: src/git.md:193
+msgid ""
+"**Expand all diff hunks**: <code class=\"hljs\">editor::ExpandAllDiffHunks</"
+"code> (<kbd class=\"keybinding\">cmd-\"|ctrl-\"</kbd>)"
+msgstr ""
+
+#: src/git.md:194
+msgid ""
+"**Collapse all diff hunks**: Press `Escape` (bound to <code "
+"class=\"hljs\">editor::Cancel</code>)"
+msgstr ""
+
+#: src/git.md:195
+msgid ""
+"**Toggle selected diff hunks**: <code class=\"hljs\">editor::"
+"ToggleSelectedDiffHunks</code> (<kbd class=\"keybinding\">cmd-'|ctrl-'</kbd>)"
+msgstr ""
+
+#: src/git.md:196
+msgid ""
+"**Navigate between hunks**: <code class=\"hljs\">editor::GoToHunk</code> and "
+"<code class=\"hljs\">editor::GoToPreviousHunk</code>"
+msgstr ""
+
+#: src/git.md:198
+msgid ""
+"**Tip:** The `Escape` key is the quickest way to collapse all expanded diff "
+"hunks and return to an overview of your changes."
+msgstr ""
+
+#: src/git.md:200
+msgid "Action Reference"
+msgstr ""
+
+#: src/git.md:202
+msgid "Action"
+msgstr ""
+
+#: src/git.md:202
+msgid "Keybinding"
+msgstr ""
+
+#: src/git.md:204
+msgid "<code class=\"hljs\">git::Add</code>"
+msgstr ""
+
+#: src/git.md:204 src/git.md:220 src/git.md:221 src/git.md:222 src/git.md:224
+#: src/git.md:225 src/git.md:226 src/git.md:227 src/git.md:228
+msgid "<div>No default binding</div>"
+msgstr ""
+
+#: src/git.md:205
+msgid "<code class=\"hljs\">git::StageAll</code>"
+msgstr ""
+
+#: src/git.md:205
+msgid "<kbd class=\"keybinding\">cmd-ctrl-y"
+msgstr ""
+
+#: src/git.md:206
+msgid "<code class=\"hljs\">git::UnstageAll</code>"
+msgstr ""
+
+#: src/git.md:206
+msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y"
+msgstr ""
+
+#: src/git.md:207
+msgid "<code class=\"hljs\">git::ToggleStaged</code>"
+msgstr ""
+
+#: src/git.md:207
+msgid "<kbd class=\"keybinding\">space"
+msgstr ""
+
+#: src/git.md:208
+msgid "<code class=\"hljs\">git::StageAndNext</code>"
+msgstr ""
+
+#: src/git.md:208
+msgid "<kbd class=\"keybinding\">cmd-y"
+msgstr ""
+
+#: src/git.md:209
+msgid "<code class=\"hljs\">git::UnstageAndNext</code>"
+msgstr ""
+
+#: src/git.md:209
+msgid "<kbd class=\"keybinding\">cmd-shift-y"
+msgstr ""
+
+#: src/git.md:210
+msgid "<code class=\"hljs\">git::Commit</code>"
+msgstr ""
+
+#: src/git.md:210
+msgid "<kbd class=\"keybinding\">cmd-enter"
+msgstr ""
+
+#: src/git.md:211
+msgid "<code class=\"hljs\">git::ExpandCommitEditor</code>"
+msgstr ""
+
+#: src/git.md:211
+msgid "<kbd class=\"keybinding\">shift-escape"
+msgstr ""
+
+#: src/git.md:212
+msgid "<code class=\"hljs\">git::Push</code>"
+msgstr ""
+
+#: src/git.md:212
+msgid "<kbd class=\"keybinding\">ctrl-g up"
+msgstr ""
+
+#: src/git.md:213
+msgid "<code class=\"hljs\">git::ForcePush</code>"
+msgstr ""
+
+#: src/git.md:213
+msgid "<kbd class=\"keybinding\">ctrl-g shift-up"
+msgstr ""
+
+#: src/git.md:214
+msgid "<code class=\"hljs\">git::Pull</code>"
+msgstr ""
+
+#: src/git.md:214
+msgid "<kbd class=\"keybinding\">ctrl-g down"
+msgstr ""
+
+#: src/git.md:215
+msgid "<code class=\"hljs\">git::PullRebase</code>"
+msgstr ""
+
+#: src/git.md:215
+msgid "<kbd class=\"keybinding\">ctrl-g shift-down"
+msgstr ""
+
+#: src/git.md:216
+msgid "<code class=\"hljs\">git::Fetch</code>"
+msgstr ""
+
+#: src/git.md:216
+msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g"
+msgstr ""
+
+#: src/git.md:217
+msgid "<code class=\"hljs\">git::Diff</code>"
+msgstr ""
+
+#: src/git.md:217
+msgid "<kbd class=\"keybinding\">ctrl-g d"
+msgstr ""
+
+#: src/git.md:218
+msgid "<code class=\"hljs\">git::Restore</code>"
+msgstr ""
+
+#: src/git.md:218
+msgid "<kbd class=\"keybinding\">cmd-alt-z"
+msgstr ""
+
+#: src/git.md:219
+msgid "<code class=\"hljs\">git::RestoreFile</code>"
+msgstr ""
+
+#: src/git.md:219
+msgid "<kbd class=\"keybinding\">cmd-delete"
+msgstr ""
+
+#: src/git.md:220
+msgid "<code class=\"hljs\">git::Branch</code>"
+msgstr ""
+
+#: src/git.md:221
+msgid "<code class=\"hljs\">git::Switch</code>"
+msgstr ""
+
+#: src/git.md:222
+msgid "<code class=\"hljs\">git::CheckoutBranch</code>"
+msgstr ""
+
+#: src/git.md:223
+msgid "<code class=\"hljs\">git::Blame</code>"
+msgstr ""
+
+#: src/git.md:223
+msgid "<kbd class=\"keybinding\">cmd-alt-g b"
+msgstr ""
+
+#: src/git.md:224
+msgid "<code class=\"hljs\">git::StashAll</code>"
+msgstr ""
+
+#: src/git.md:225
+msgid "<code class=\"hljs\">git::StashPop</code>"
+msgstr ""
+
+#: src/git.md:226
+msgid "<code class=\"hljs\">git::StashApply</code>"
+msgstr ""
+
+#: src/git.md:227
+msgid "<code class=\"hljs\">git::ViewStash</code>"
+msgstr ""
+
+#: src/git.md:228
+msgid "<code class=\"hljs\">editor::ToggleGitBlameInline</code>"
+msgstr ""
+
+#: src/git.md:229
+msgid "<code class=\"hljs\">editor::ExpandAllDiffHunks</code>"
+msgstr ""
+
+#: src/git.md:229
+msgid "<kbd class=\"keybinding\">cmd-\""
+msgstr ""
+
+#: src/git.md:230
+msgid "<code class=\"hljs\">editor::ToggleSelectedDiffHunks</code>"
+msgstr ""
+
+#: src/git.md:230
+msgid "<kbd class=\"keybinding\">cmd-'"
+msgstr ""
+
+#: src/git.md:232
+msgid ""
+"Not all actions have default keybindings, but can be bound by [customizing "
+"your keymap](./key-bindings.md#user-keymaps)."
+msgstr ""
+
+#: src/git.md:234
+msgid "Git CLI Configuration"
+msgstr ""
+
+#: src/git.md:236
+msgid ""
+"If you would like to also use Zed for your [git commit message editor]"
+"(https://git-scm.com/book/en/v2/Customizing-Git-Git-"
+"Configuration#_core_editor) when committing from the command line you can "
+"use `zed --wait`:"
+msgstr ""
+
+#: src/git.md:239 src/git.md:245
+msgid "\"zed --wait\""
+msgstr ""
+
+#: src/git.md:242
+msgid ""
+"Or add the following to your shell environment (in `~/.zshrc`, `~/.bashrc`, "
+"etc):"
+msgstr ""

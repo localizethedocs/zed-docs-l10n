@@ -1,0 +1,44 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/command-palette.md:1
+msgid "Command Palette"
+msgstr ""
+
+#: src/command-palette.md:3
+msgid ""
+"The Command Palette is the main way to access pretty much any functionality "
+"that's available in Zed. Its keybinding is the first one you should make "
+"yourself familiar with. To open it, hit: <kbd class=\"keybinding\">cmd-shift-"
+"p|ctrl-shift-p</kbd>."
+msgstr ""
+
+#: src/command-palette.md:5
+msgid ""
+"![The opened Command Palette](https://zed.dev/img/features/command-palette."
+"jpg)"
+msgstr ""
+
+#: src/command-palette.md:7
+msgid ""
+"Try it! Open the Command Palette and type in `new file`. You should see the "
+"list of commands being filtered down to `workspace: new file`. Hit return "
+"and you end up with a new buffer."
+msgstr ""
+
+#: src/command-palette.md:9
+msgid ""
+"Any time you see instructions that include commands of the form `zed: ...` "
+"or `editor: ...` and so on that means you need to execute them in the "
+"Command Palette."
+msgstr ""

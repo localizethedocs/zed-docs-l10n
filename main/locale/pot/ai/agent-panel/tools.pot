@@ -1,0 +1,189 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/tools.md:1
+msgid "Tools"
+msgstr ""
+
+#: src/ai/tools.md:3
+msgid ""
+"Zed's built-in agent has access to a variety of tools that allow it to "
+"interact with your codebase and perform tasks."
+msgstr ""
+
+#: src/ai/tools.md:5
+msgid "Read & Search Tools"
+msgstr ""
+
+#: src/ai/tools.md:7
+msgid "`diagnostics`"
+msgstr ""
+
+#: src/ai/tools.md:9
+msgid ""
+"Gets errors and warnings for either a specific file or the entire project, "
+"useful after making edits to determine if further changes are needed. When a "
+"path is provided, shows all diagnostics for that specific file. When no path "
+"is provided, shows a summary of error and warning counts for all files in "
+"the project."
+msgstr ""
+
+#: src/ai/tools.md:13
+msgid "`fetch`"
+msgstr ""
+
+#: src/ai/tools.md:15
+msgid ""
+"Fetches a URL and returns the content as Markdown. Useful for providing docs "
+"as context."
+msgstr ""
+
+#: src/ai/tools.md:17
+msgid "`find_path`"
+msgstr ""
+
+#: src/ai/tools.md:19
+msgid ""
+"Quickly finds files by matching glob patterns (like \"\\*_/_.js\"), "
+"returning matching file paths alphabetically."
+msgstr ""
+
+#: src/ai/tools.md:21
+msgid "`grep`"
+msgstr ""
+
+#: src/ai/tools.md:23
+msgid ""
+"Searches file contents across the project using regular expressions, "
+"preferred for finding symbols in code without knowing exact file paths."
+msgstr ""
+
+#: src/ai/tools.md:25
+msgid "`list_directory`"
+msgstr ""
+
+#: src/ai/tools.md:27
+msgid ""
+"Lists files and directories in a given path, providing an overview of "
+"filesystem contents."
+msgstr ""
+
+#: src/ai/tools.md:29
+msgid "`now`"
+msgstr ""
+
+#: src/ai/tools.md:31
+msgid "Returns the current date and time."
+msgstr ""
+
+#: src/ai/tools.md:33
+msgid "`open`"
+msgstr ""
+
+#: src/ai/tools.md:35
+msgid ""
+"Opens a file or URL with the default application associated with it on the "
+"user's operating system."
+msgstr ""
+
+#: src/ai/tools.md:37
+msgid "`read_file`"
+msgstr ""
+
+#: src/ai/tools.md:39
+msgid ""
+"Reads the content of a specified file in the project, allowing access to "
+"file contents."
+msgstr ""
+
+#: src/ai/tools.md:41
+msgid "`thinking`"
+msgstr ""
+
+#: src/ai/tools.md:43
+msgid ""
+"Allows the Agent to work through problems, brainstorm ideas, or plan without "
+"executing actions, useful for complex problem-solving."
+msgstr ""
+
+#: src/ai/tools.md:45
+msgid "`web_search`"
+msgstr ""
+
+#: src/ai/tools.md:47
+msgid ""
+"Searches the web for information, providing results with snippets and links "
+"from relevant web pages, useful for accessing real-time information."
+msgstr ""
+
+#: src/ai/tools.md:49
+msgid "Edit Tools"
+msgstr ""
+
+#: src/ai/tools.md:51
+msgid "`copy_path`"
+msgstr ""
+
+#: src/ai/tools.md:53
+msgid ""
+"Copies a file or directory recursively in the project, more efficient than "
+"manually reading and writing files when duplicating content."
+msgstr ""
+
+#: src/ai/tools.md:55
+msgid "`create_directory`"
+msgstr ""
+
+#: src/ai/tools.md:57
+msgid ""
+"Creates a new directory at the specified path within the project, creating "
+"all necessary parent directories (similar to `mkdir -p`)."
+msgstr ""
+
+#: src/ai/tools.md:59
+msgid "`delete_path`"
+msgstr ""
+
+#: src/ai/tools.md:61
+msgid ""
+"Deletes a file or directory (including contents recursively) at the "
+"specified path and confirms the deletion."
+msgstr ""
+
+#: src/ai/tools.md:63
+msgid "`edit_file`"
+msgstr ""
+
+#: src/ai/tools.md:65
+msgid "Edits files by replacing specific text with new content."
+msgstr ""
+
+#: src/ai/tools.md:67
+msgid "`move_path`"
+msgstr ""
+
+#: src/ai/tools.md:69
+msgid ""
+"Moves or renames a file or directory in the project, performing a rename if "
+"only the filename differs."
+msgstr ""
+
+#: src/ai/tools.md:71
+msgid "`terminal`"
+msgstr ""
+
+#: src/ai/tools.md:73
+msgid ""
+"Executes shell commands and returns the combined output, creating a new "
+"shell process for each invocation."
+msgstr ""

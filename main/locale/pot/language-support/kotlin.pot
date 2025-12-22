@@ -1,0 +1,120 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/kotlin.md:1
+msgid "Kotlin"
+msgstr ""
+
+#: src/languages/kotlin.md:3
+msgid ""
+"Kotlin language support in Zed is provided by the community-maintained "
+"[Kotlin extension](https://github.com/zed-extensions/kotlin). Report issues "
+"to: [https://github.com/zed-extensions/kotlin/issues](https://github.com/zed-"
+"extensions/kotlin/issues)"
+msgstr ""
+
+#: src/languages/kotlin.md:6
+msgid ""
+"Tree-sitter: [fwcd/tree-sitter-kotlin](https://github.com/fwcd/tree-sitter-"
+"kotlin)"
+msgstr ""
+
+#: src/languages/kotlin.md:7
+msgid ""
+"Language Server: [fwcd/kotlin-language-server](https://github.com/fwcd/"
+"kotlin-language-server)"
+msgstr ""
+
+#: src/languages/kotlin.md:9
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/kotlin.md:11
+msgid ""
+"Workspace configuration options can be passed to the language server via lsp "
+"settings in `settings.json`."
+msgstr ""
+
+#: src/languages/kotlin.md:14
+msgid ""
+"The full list of lsp `settings` can be found [here](https://github.com/fwcd/"
+"kotlin-language-server/blob/main/server/src/main/kotlin/org/javacs/kt/"
+"Configuration.kt) under `class Configuration` and initialization_options "
+"under `class InitializationOptions`."
+msgstr ""
+
+#: src/languages/kotlin.md:18
+msgid "JVM Target"
+msgstr ""
+
+#: src/languages/kotlin.md:20
+msgid ""
+"The following example changes the JVM target from `default` (which is 1.8) "
+"to `17`:"
+msgstr ""
+
+#: src/languages/kotlin.md:25 src/languages/kotlin.md:45
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/kotlin.md:26 src/languages/kotlin.md:46
+msgid "\"kotlin-language-server\""
+msgstr ""
+
+#: src/languages/kotlin.md:27
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/kotlin.md:28
+msgid "\"compiler\""
+msgstr ""
+
+#: src/languages/kotlin.md:29
+msgid "\"jvm\""
+msgstr ""
+
+#: src/languages/kotlin.md:30
+msgid "\"target\""
+msgstr ""
+
+#: src/languages/kotlin.md:30
+msgid "\"17\""
+msgstr ""
+
+#: src/languages/kotlin.md:39
+msgid "JAVA_HOME"
+msgstr ""
+
+#: src/languages/kotlin.md:41
+msgid ""
+"To use a specific java installation, just specify the `JAVA_HOME` "
+"environment variable with:"
+msgstr ""
+
+#: src/languages/kotlin.md:47
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/kotlin.md:48
+msgid "\"env\""
+msgstr ""
+
+#: src/languages/kotlin.md:49
+msgid "\"JAVA_HOME\""
+msgstr ""
+
+#: src/languages/kotlin.md:49
+msgid ""
+"\"/Users/whatever/Applications/Work/Android Studio.app/Contents/jbr/Contents/"
+"Home\""
+msgstr ""
