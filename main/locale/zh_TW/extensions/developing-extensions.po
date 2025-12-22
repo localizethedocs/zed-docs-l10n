@@ -5,19 +5,19 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/extensions/developing-extensions.md:1
 msgid "Developing Extensions"
-msgstr ""
+msgstr "開發擴充功能"
 
 #: src/extensions/developing-extensions.md:3
 msgid "Extension Features"
-msgstr ""
+msgstr "擴充功能"
 
 #: src/extensions/developing-extensions.md:5
 msgid "Extensions are able to provide the following features to Zed:"
@@ -25,19 +25,19 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:7
 msgid "[Languages](./languages.md)"
-msgstr ""
+msgstr "[語言](./languages.md)"
 
 #: src/extensions/developing-extensions.md:8
 msgid "[Debuggers](./debugger-extensions.md)"
-msgstr ""
+msgstr "[除錯器](./debugger-extensions.md)"
 
 #: src/extensions/developing-extensions.md:9
 msgid "[Themes](./themes.md)"
-msgstr ""
+msgstr "[主題](./themes.md)"
 
 #: src/extensions/developing-extensions.md:10
 msgid "[Icon Themes](./icon-themes.md)"
-msgstr ""
+msgstr "[圖示主題](./icon-themes.md)"
 
 #: src/extensions/developing-extensions.md:11
 msgid "[Slash Commands](./slash-commands.md)"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:12
 msgid "[MCP Servers](./mcp-extensions.md)"
-msgstr ""
+msgstr "[MCP 伺服器](./mcp-extensions.md)"
 
 #: src/extensions/developing-extensions.md:14
 msgid "Developing an Extension Locally"
@@ -94,7 +94,7 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:28
 msgid "Directory Structure of a Zed Extension"
-msgstr ""
+msgstr "Zed 擴充功能的目錄結構"
 
 #: src/extensions/developing-extensions.md:30
 msgid ""
@@ -114,6 +114,15 @@ msgid ""
 "repository = \"https://github.com/your-name/my-zed-extension\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"id = \"my-extension\"\n"
+"name = \"My extension\"\n"
+"version = \"0.0.1\"\n"
+"schema_version = 1\n"
+"authors = [\"Your Name <you@example.com>\"]\n"
+"description = \"My cool extension\"\n"
+"repository = \"https://github.com/your-name/my-zed-extension\"\n"
+"```"
 
 #: src/extensions/developing-extensions.md:43
 msgid ""
