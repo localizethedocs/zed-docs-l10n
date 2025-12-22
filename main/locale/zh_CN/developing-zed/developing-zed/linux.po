@@ -1,0 +1,469 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/development/linux.md:1
+msgid "Building Zed for Linux"
+msgstr ""
+
+#: src/development/linux.md:3
+msgid "Repository"
+msgstr ""
+
+#: src/development/linux.md:5
+msgid "Clone down the [Zed repository](https://github.com/zed-industries/zed)."
+msgstr ""
+
+#: src/development/linux.md:7
+msgid "Dependencies"
+msgstr ""
+
+#: src/development/linux.md:9
+msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
+msgstr ""
+
+#: src/development/linux.md:11
+msgid "Install the necessary system libraries:"
+msgstr ""
+
+#: src/development/linux.md:17
+msgid ""
+"If you prefer to install the system libraries manually, you can find the "
+"list of required packages in the `script/linux` file."
+msgstr ""
+
+#: src/development/linux.md:19
+msgid "Linkers"
+msgstr ""
+
+#: src/development/linux.md:21
+msgid ""
+"On Linux, Rust's default linker is [LLVM's `lld`](https://blog.rust-lang."
+"org/2025/09/18/Rust-1.90.0/). Alternative linkers, especially [Wild](https://"
+"github.com/davidlattimore/wild) and [Mold](https://github.com/rui314/mold) "
+"can significantly improve clean and incremental build time."
+msgstr ""
+
+#: src/development/linux.md:23
+msgid ""
+"At present Zed uses Mold in CI because it's more mature. For local "
+"development Wild is recommended because it's 5-20% faster than Mold."
+msgstr ""
+
+#: src/development/linux.md:25
+msgid ""
+"These linkers can be installed with `script/install-mold` and `script/"
+"install-wild`."
+msgstr ""
+
+#: src/development/linux.md:27
+msgid ""
+"To use Wild as your default, add these lines to your `~/.cargo/config.toml`:"
+msgstr ""
+
+#: src/development/linux.md:29
+msgid ""
+"```toml\n"
+"[target.x86_64-unknown-linux-gnu]\n"
+"linker = \"clang\"\n"
+"rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
+"\n"
+"[target.aarch64-unknown-linux-gnu]\n"
+"linker = \"clang\"\n"
+"rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
+"```"
+msgstr ""
+
+#: src/development/linux.md:39
+msgid "To use Mold as your default:"
+msgstr ""
+
+#: src/development/linux.md:41
+msgid ""
+"```toml\n"
+"[target.'cfg(target_os = \"linux\")']\n"
+"rustflags = [\"-C\", \"link-arg=-fuse-ld=mold\"]\n"
+"```"
+msgstr ""
+
+#: src/development/linux.md:46
+msgid "Building from source"
+msgstr ""
+
+#: src/development/linux.md:48
+msgid ""
+"Once the dependencies are installed, you can build Zed using [Cargo](https://"
+"doc.rust-lang.org/cargo/)."
+msgstr ""
+
+#: src/development/linux.md:50
+msgid "For a debug build of the editor:"
+msgstr ""
+
+#: src/development/linux.md:56
+msgid "And to run the tests:"
+msgstr ""
+
+#: src/development/linux.md:62
+msgid ""
+"In release mode, the primary user interface is the `cli` crate. You can run "
+"it in development with:"
+msgstr ""
+
+#: src/development/linux.md:68
+msgid "Installing a development build"
+msgstr ""
+
+#: src/development/linux.md:70
+msgid "You can install a local build on your machine with:"
+msgstr ""
+
+#: src/development/linux.md:76
+msgid ""
+"This will build zed and the cli in release mode and make them available at "
+"`~/.local/bin/zed`, installing .desktop files to `~/.local/share`."
+msgstr ""
+
+#: src/development/linux.md:78
+msgid "**_Note_**: If you encounter linker errors similar to the following:"
+msgstr ""
+
+#: src/development/linux.md:82 src/development/linux.md:84
+msgid "':\n"
+msgstr ""
+
+#: src/development/linux.md:86
+msgid "'\n"
+msgstr ""
+
+#: src/development/linux.md:91
+msgid "\"remote_server\""
+msgstr ""
+
+#: src/development/linux.md:94
+msgid ""
+"**Cause**: this is caused by known bugs in aws-lc-rs(doesn't support GCC >= "
+"14): [FIPS fails to build with GCC >= 14](https://github.com/aws/aws-lc-rs/"
+"issues/569) & [GCC-14 - build failure for FIPS module](https://github.com/"
+"aws/aws-lc/issues/2010)"
+msgstr ""
+
+#: src/development/linux.md:98
+msgid ""
+"You can refer to [linux: Linker error for remote_server when using script/"
+"install-linux](https://github.com/zed-industries/zed/issues/24880) for more "
+"information."
+msgstr ""
+
+#: src/development/linux.md:100
+msgid ""
+"**Workarounds**: Set the remote server target to `x86_64-unknown-linux-gnu` "
+"like so `export REMOTE_SERVER_TARGET=x86_64-unknown-linux-gnu; script/"
+"install-linux`"
+msgstr ""
+
+#: src/development/linux.md:103
+msgid "Wayland & X11"
+msgstr ""
+
+#: src/development/linux.md:105
+msgid ""
+"Zed supports both X11 and Wayland. By default, we pick whichever we can find "
+"at runtime. If you're on Wayland and want to run in X11 mode, use the "
+"environment variable `WAYLAND_DISPLAY=''`."
+msgstr ""
+
+#: src/development/linux.md:107
+msgid "Notes for packaging Zed"
+msgstr ""
+
+#: src/development/linux.md:109
+msgid "Thank you for taking on the task of packaging Zed!"
+msgstr ""
+
+#: src/development/linux.md:111
+msgid "Technical requirements"
+msgstr ""
+
+#: src/development/linux.md:113
+msgid "Zed has two main binaries:"
+msgstr ""
+
+#: src/development/linux.md:115
+msgid ""
+"You will need to build `crates/cli` and make its binary available in `$PATH` "
+"with the name `zed`."
+msgstr ""
+
+#: src/development/linux.md:116
+msgid ""
+"You will need to build `crates/zed` and put it at `$PATH/to/cli/../../"
+"libexec/zed-editor`. For example, if you are going to put the cli at `~/."
+"local/bin/zed` put zed at `~/.local/libexec/zed-editor`. As some linux "
+"distributions (notably Arch) discourage the use of `libexec`, you can also "
+"put this binary at `$PATH/to/cli/../../lib/zed/zed-editor` (e.g. `~/.local/"
+"lib/zed/zed-editor`) instead."
+msgstr ""
+
+#: src/development/linux.md:117
+msgid ""
+"If you are going to provide a `.desktop` file you can find a template in "
+"`crates/zed/resources/zed.desktop.in`, and use `envsubst` to populate it "
+"with the values required. This file should also be renamed to `$APP_ID."
+"desktop` so that the file [follows the FreeDesktop standards](https://github."
+"com/zed-industries/zed/issues/12707#issuecomment-2168742761). You should "
+"also make this desktop file executable (`chmod 755`)."
+msgstr ""
+
+#: src/development/linux.md:118
+msgid ""
+"You will need to ensure that the necessary libraries are installed. You can "
+"get the current list by [inspecting the built binary](https://github.com/zed-"
+"industries/zed/blob/935cf542aebf55122ce6ed1c91d0fe8711970c82/script/bundle-"
+"linux#L65-L67) on your system."
+msgstr ""
+
+#: src/development/linux.md:119
+msgid ""
+"For an example of a complete build script, see [script/bundle-linux](https://"
+"github.com/zed-industries/zed/blob/935cf542aebf55122ce6ed1c91d0fe8711970c82/"
+"script/bundle-linux)."
+msgstr ""
+
+#: src/development/linux.md:120
+msgid ""
+"You can disable Zed's auto updates and provide instructions for users who "
+"try to update Zed manually by building (or running) Zed with the environment "
+"variable `ZED_UPDATE_EXPLANATION`. For example: "
+"`ZED_UPDATE_EXPLANATION=\"Please use flatpak to update zed.\"`."
+msgstr ""
+
+#: src/development/linux.md:121
+msgid ""
+"Make sure to update the contents of the `crates/zed/RELEASE_CHANNEL` file to "
+"'nightly', 'preview', or 'stable', with no newline. This will cause Zed to "
+"use the credentials manager to remember a user's login."
+msgstr ""
+
+#: src/development/linux.md:123
+msgid "Other things to note"
+msgstr ""
+
+#: src/development/linux.md:125
+msgid ""
+"At Zed, our priority has been to move fast and bring the latest technology "
+"to our users. We've long been frustrated at having software that is slow, "
+"out of date, or hard to configure, and so we've built our editor to those "
+"tastes."
+msgstr ""
+
+#: src/development/linux.md:127
+msgid ""
+"However, we realize that many distros have other priorities. We want to work "
+"with everyone to bring Zed to their favorite platforms. But there is a long "
+"way to go:"
+msgstr ""
+
+#: src/development/linux.md:129
+msgid ""
+"Zed is a fast-moving early-phase project. We typically release 2-3 builds "
+"per week to fix user-reported issues and release major features."
+msgstr ""
+
+#: src/development/linux.md:130
+msgid ""
+"There are a couple of other `zed` binaries that may be present on Linux "
+"systems ([1](https://openzfs.github.io/openzfs-docs/man/v2.2/8/zed.8.html), "
+"[2](https://zed.brimdata.io/docs/commands/zed)). If you want to rename our "
+"CLI binary because of these issues, we suggest `zedit`, `zeditor`, or `zed-"
+"cli`."
+msgstr ""
+
+#: src/development/linux.md:131
+msgid ""
+"Zed automatically installs the correct version of common developer tools in "
+"the same way as rustup/rbenv/pyenv, etc. We understand this is contentious, "
+"[see here](https://github.com/zed-industries/zed/issues/12589)."
+msgstr ""
+
+#: src/development/linux.md:132
+msgid ""
+"We allow users to install extensions locally and from [zed-industries/"
+"extensions](https://github.com/zed-industries/extensions). These extensions "
+"may install further tooling as needed, such as language servers. In the long "
+"run, we would like to make this safer, [see here](https://github.com/zed-"
+"industries/zed/issues/12358)."
+msgstr ""
+
+#: src/development/linux.md:133
+msgid ""
+"Zed connects to several online services by default (AI, telemetry, "
+"collaboration). AI and our telemetry can be disabled by your users with "
+"their zed settings or by patching our [default settings file](https://github."
+"com/zed-industries/zed/blob/main/assets/settings/default.json)."
+msgstr ""
+
+#: src/development/linux.md:134
+msgid ""
+"As a result of the above issues, zed currently does not play nice with "
+"sandboxes, [see here](https://github.com/zed-industries/zed/"
+"pull/12006#issuecomment-2130421220)"
+msgstr ""
+
+#: src/development/linux.md:136
+msgid "Flatpak"
+msgstr ""
+
+#: src/development/linux.md:138
+msgid ""
+"Zed's current Flatpak integration exits the sandbox on startup. Workflows "
+"that rely on Flatpak's sandboxing may not work as expected."
+msgstr ""
+
+#: src/development/linux.md:140
+msgid "To build & install the Flatpak package locally follow the steps below:"
+msgstr ""
+
+#: src/development/linux.md:142
+msgid ""
+"Install Flatpak for your distribution as outlined [here](https://flathub.org/"
+"setup)."
+msgstr ""
+
+#: src/development/linux.md:143
+msgid ""
+"Run the `script/flatpak/deps` script to install the required dependencies."
+msgstr ""
+
+#: src/development/linux.md:144
+msgid "Run `script/flatpak/bundle-flatpak`."
+msgstr ""
+
+#: src/development/linux.md:145
+msgid ""
+"Now the package has been installed and has a bundle available at `target/"
+"release/{app-id}.flatpak`."
+msgstr ""
+
+#: src/development/linux.md:147
+msgid "Memory profiling"
+msgstr ""
+
+#: src/development/linux.md:149
+msgid ""
+"[`heaptrack`](https://github.com/KDE/heaptrack) is quite useful for "
+"diagnosing memory leaks. To install it:"
+msgstr ""
+
+#: src/development/linux.md:156
+msgid "Then, to build and run Zed with the profiler attached:"
+msgstr ""
+
+#: src/development/linux.md:162
+msgid ""
+"When this zed instance is exited, terminal output will include a command to "
+"run `heaptrack_interpret` to convert the `*.raw.zst` profile to a `*.zst` "
+"file which can be passed to `heaptrack_gui` for viewing."
+msgstr ""
+
+#: src/development/linux.md:164
+msgid "Perf recording"
+msgstr ""
+
+#: src/development/linux.md:166
+msgid ""
+"How to get a flamegraph with resolved symbols from a running zed instance. "
+"Use when zed is using a lot of CPU. Not useful for hangs."
+msgstr ""
+
+#: src/development/linux.md:169
+msgid "During the incident"
+msgstr ""
+
+#: src/development/linux.md:171
+msgid ""
+"Find the PID (process ID) using: `ps -eo size,pid,comm | grep zed | sort | "
+"head -n 1 | cut -d ' ' -f 2` Or find the pid of the command zed-editor with "
+"the most ram usage in something like htop/btop/top."
+msgstr ""
+
+#: src/development/linux.md:176
+msgid ""
+"Install perf: On Ubuntu (derivatives) run `sudo apt install linux-tools`."
+msgstr ""
+
+#: src/development/linux.md:179
+msgid ""
+"Perf Record: run `sudo perf record -p <pid you just found>`, wait a few "
+"seconds to gather data then press Ctrl+C. You should now have a perf.data "
+"file"
+msgstr ""
+
+#: src/development/linux.md:182
+msgid "Make the output file user owned: run `sudo chown $USER:$USER perf.data`"
+msgstr ""
+
+#: src/development/linux.md:185
+msgid ""
+"Get build info: Run zed again and type `zed: about` in the command pallet to "
+"get the exact commit."
+msgstr ""
+
+#: src/development/linux.md:188
+msgid "The `data.perf` file can be send to zed together with the exact commit."
+msgstr ""
+
+#: src/development/linux.md:190
+msgid "Later"
+msgstr ""
+
+#: src/development/linux.md:192
+msgid "This can be done by Zed staff."
+msgstr ""
+
+#: src/development/linux.md:194
+msgid ""
+"Build Zed with symbols: Check out the commit found previously and modify "
+"`Cargo.toml`. Apply the following diff then make a release build."
+msgstr ""
+
+#: src/development/linux.md:204
+msgid ""
+"Add the symbols to perf database: `pref buildid-cache -v -a <path to release "
+"zed binary>`"
+msgstr ""
+
+#: src/development/linux.md:207
+msgid ""
+"Resolve the symbols from the db: `perf inject -i perf.data -o "
+"perf_with_symbols.data`"
+msgstr ""
+
+#: src/development/linux.md:210
+msgid "Install flamegraph: `cargo install cargo-flamegraph`"
+msgstr ""
+
+#: src/development/linux.md:213
+msgid "Render the flamegraph: `flamegraph --perfdata perf_with_symbols.data`"
+msgstr ""
+
+#: src/development/linux.md:216
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/development/linux.md:218
+msgid "Cargo errors claiming that a dependency is using unstable features"
+msgstr ""
+
+#: src/development/linux.md:220
+msgid "Try `cargo clean` and `cargo build`."
+msgstr ""

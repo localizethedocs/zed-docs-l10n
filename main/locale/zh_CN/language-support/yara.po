@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/yara.md:1
+msgid "Yara"
+msgstr ""
+
+#: src/languages/yara.md:3
+msgid ""
+"`Yara` language support in Zed is provided by the [Yara language extension]"
+"(https://github.com/egibs/yara.zed). Please report issues to [https://github."
+"com/egibs/yara.zed/issues](https://github.com/egibs/yara.zed/issues)."
+msgstr ""
+
+#: src/languages/yara.md:5
+msgid ""
+"Tree-sitter: [egibs/tree-sitter-yara](https://github.com/egibs/tree-sitter-"
+"yara)"
+msgstr ""
+
+#: src/languages/yara.md:6
+msgid "Language Server: [avast/yls](https://github.com/avast/yls)"
+msgstr ""

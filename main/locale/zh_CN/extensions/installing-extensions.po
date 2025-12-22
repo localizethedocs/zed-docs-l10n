@@ -1,0 +1,74 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/installing-extensions.md:1
+msgid "Installing Extensions"
+msgstr ""
+
+#: src/extensions/installing-extensions.md:3
+msgid ""
+"You can search for extensions by launching the Zed Extension Gallery by "
+"pressing <kbd class=\"keybinding\">cmd-shift-x|ctrl-shift-x</kbd> , opening "
+"the command palette and selecting <code class=\"hljs\">zed::Extensions</"
+"code> or by selecting \"Zed > Extensions\" from the menu bar."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:5
+msgid ""
+"Here you can view the extensions that you currently have installed or search "
+"and install new ones."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:7
+msgid "Installation Location"
+msgstr ""
+
+#: src/extensions/installing-extensions.md:9
+msgid ""
+"On macOS, extensions are installed in `~/Library/Application Support/Zed/"
+"extensions`."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:10
+msgid ""
+"On Linux, they are installed in either `$XDG_DATA_HOME/zed/extensions` or "
+"`~/.local/share/zed/extensions`."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:11
+msgid "On Windows, the directory is `%LOCALAPPDATA%\\Zed\\extensions`."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:13
+msgid "This directory contains two subdirectories:"
+msgstr ""
+
+#: src/extensions/installing-extensions.md:15
+msgid "`installed`, which contains the source code for each extension."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:16
+msgid ""
+"`work` which contains files created by the extension itself, such as "
+"downloaded language servers."
+msgstr ""
+
+#: src/extensions/installing-extensions.md:18
+msgid "Auto installing"
+msgstr ""
+
+#: src/extensions/installing-extensions.md:20
+msgid ""
+"To automate extension installation/uninstallation see the docs for "
+"[auto_install_extensions](../configuring-zed.md#auto-install-extensions)."
+msgstr ""

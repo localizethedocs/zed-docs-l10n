@@ -1,0 +1,395 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/agent-servers.md:1
+msgid "Agent Server Extensions"
+msgstr ""
+
+#: src/extensions/agent-servers.md:3
+msgid ""
+"Agent Servers are programs that provide AI agent implementations through the "
+"[Agent Client Protocol (ACP)](https://agentclientprotocol.com). Agent Server "
+"Extensions let you package up an Agent Server so that users can install the "
+"extension and have your agent easily available to use in Zed."
+msgstr ""
+
+#: src/extensions/agent-servers.md:6
+msgid ""
+"You can see the current Agent Server extensions either by opening the "
+"Extensions tab in Zed (execute the `zed: extensions` command) and changing "
+"the filter from `All` to `Agent Servers`, or by visiting [the Zed website]"
+"(https://zed.dev/extensions?filter=agent-servers)."
+msgstr ""
+
+#: src/extensions/agent-servers.md:8
+msgid "Defining Agent Server Extensions"
+msgstr ""
+
+#: src/extensions/agent-servers.md:10
+msgid ""
+"An extension can register one or more agent servers in the `extension.toml` "
+"like so:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:12
+msgid ""
+"```toml\n"
+"[agent_servers.my-agent]\n"
+"name = \"My Agent\"\n"
+"\n"
+"[agent_servers.my-agent.targets.darwin-aarch64]\n"
+"archive = \"https://github.com/owner/repo/releases/download/v1.0.0/agent-"
+"darwin-arm64.tar.gz\"\n"
+"cmd = \"./agent\"\n"
+"args = [\"--serve\"]\n"
+"\n"
+"[agent_servers.my-agent.targets.linux-x86_64]\n"
+"archive = \"https://github.com/owner/repo/releases/download/v1.0.0/agent-"
+"linux-x64.tar.gz\"\n"
+"cmd = \"./agent\"\n"
+"args = [\"--serve\"]\n"
+"\n"
+"[agent_servers.my-agent.targets.windows-x86_64]\n"
+"archive = \"https://github.com/owner/repo/releases/download/v1.0.0/agent-"
+"windows-x64.zip\"\n"
+"cmd = \"./agent.exe\"\n"
+"args = [\"--serve\"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/agent-servers.md:32
+msgid "Required Fields"
+msgstr ""
+
+#: src/extensions/agent-servers.md:34
+msgid ""
+"`name`: A human-readable display name for the agent server (shown in menus)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:35
+msgid ""
+"`targets`: Platform-specific configurations for downloading and running the "
+"agent"
+msgstr ""
+
+#: src/extensions/agent-servers.md:37
+msgid "Target Configuration"
+msgstr ""
+
+#: src/extensions/agent-servers.md:39
+msgid "Each target key uses the format `{os}-{arch}` where:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:41
+msgid "**os**: `darwin` (macOS), `linux`, or `windows`"
+msgstr ""
+
+#: src/extensions/agent-servers.md:42
+msgid "**arch**: `aarch64` (ARM64) or `x86_64`"
+msgstr ""
+
+#: src/extensions/agent-servers.md:44
+msgid "Each target must specify:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:46
+msgid ""
+"`archive`: URL to download the archive from (supports `.tar.gz`, `.zip`, "
+"etc.)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:47
+msgid ""
+"`cmd`: Command to run the agent server (relative to the extracted archive)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:48
+msgid "`args`: Command-line arguments to pass to the agent server (optional)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:49
+msgid ""
+"`sha256`: SHA-256 hash string of the archive's bytes (optional, but "
+"recommended for security)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:50
+msgid ""
+"`env`: Environment variables specific to this target (optional, overrides "
+"agent-level env vars with the same name)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:52
+msgid "Optional Fields"
+msgstr ""
+
+#: src/extensions/agent-servers.md:54
+msgid "You can also optionally specify at the agent server level:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:56
+msgid ""
+"`env`: Environment variables to set in the agent's spawned process. These "
+"apply to all targets by default."
+msgstr ""
+
+#: src/extensions/agent-servers.md:57
+msgid ""
+"`icon`: Path to an SVG icon (relative to extension root) for display in "
+"menus."
+msgstr ""
+
+#: src/extensions/agent-servers.md:59
+msgid "Environment Variables"
+msgstr ""
+
+#: src/extensions/agent-servers.md:61
+msgid "Environment variables can be configured at two levels:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:63
+msgid ""
+"**Agent-level** (`[agent_servers.my-agent.env]`): Variables that apply to "
+"all platforms"
+msgstr ""
+
+#: src/extensions/agent-servers.md:64
+msgid ""
+"**Target-level** (`[agent_servers.my-agent.targets.{platform}.env]`): "
+"Variables specific to a platform"
+msgstr ""
+
+#: src/extensions/agent-servers.md:66
+msgid ""
+"When both are specified, target-level environment variables override agent-"
+"level variables with the same name. Variables defined only at the agent "
+"level are inherited by all targets."
+msgstr ""
+
+#: src/extensions/agent-servers.md:68
+msgid "Complete Example"
+msgstr ""
+
+#: src/extensions/agent-servers.md:70
+msgid "Here's a more complete example with all optional fields:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:72
+msgid ""
+"```toml\n"
+"[agent_servers.example-agent]\n"
+"name = \"Example Agent\"\n"
+"icon = \"icon/agent.svg\"\n"
+"\n"
+"[agent_servers.example-agent.env]\n"
+"AGENT_LOG_LEVEL = \"info\"\n"
+"AGENT_MODE = \"production\"\n"
+"\n"
+"[agent_servers.example-agent.targets.darwin-aarch64]\n"
+"archive = \"https://github.com/example/agent/releases/download/v2.0.0/agent-"
+"darwin-arm64.tar.gz\"\n"
+"cmd = \"./bin/agent\"\n"
+"args = [\"serve\", \"--port\", \"8080\"]\n"
+"sha256 = \"abc123def456...\"\n"
+"\n"
+"[agent_servers.example-agent.targets.linux-x86_64]\n"
+"archive = \"https://github.com/example/agent/releases/download/v2.0.0/agent-"
+"linux-x64.tar.gz\"\n"
+"cmd = \"./bin/agent\"\n"
+"args = [\"serve\", \"--port\", \"8080\"]\n"
+"sha256 = \"def456abc123...\"\n"
+"\n"
+"[agent_servers.example-agent.targets.linux-x86_64.env]\n"
+"AGENT_MEMORY_LIMIT = \"2GB\"  # Linux-specific override\n"
+"```"
+msgstr ""
+
+#: src/extensions/agent-servers.md:97
+msgid "Installation Process"
+msgstr ""
+
+#: src/extensions/agent-servers.md:99
+msgid "When a user installs your extension and selects the agent server:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:101
+msgid "Zed downloads the appropriate archive for the user's platform"
+msgstr ""
+
+#: src/extensions/agent-servers.md:102
+msgid "The archive is extracted to a cache directory"
+msgstr ""
+
+#: src/extensions/agent-servers.md:103
+msgid "Zed launches the agent using the specified command and arguments"
+msgstr ""
+
+#: src/extensions/agent-servers.md:104
+msgid "Environment variables are set as configured"
+msgstr ""
+
+#: src/extensions/agent-servers.md:105
+msgid "The agent server runs in the background, ready to assist the user"
+msgstr ""
+
+#: src/extensions/agent-servers.md:107
+msgid "Archives are cached locally, so subsequent launches are fast."
+msgstr ""
+
+#: src/extensions/agent-servers.md:109
+msgid "Distribution Best Practices"
+msgstr ""
+
+#: src/extensions/agent-servers.md:111
+msgid "Use GitHub Releases"
+msgstr ""
+
+#: src/extensions/agent-servers.md:113
+msgid "GitHub Releases are a reliable way to distribute agent server binaries:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:115
+msgid ""
+"Build your agent for each platform (macOS ARM64, macOS x86_64, Linux x86_64, "
+"Windows x86_64)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:116
+msgid "Package each build as a compressed archive (`.tar.gz` or `.zip`)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:117
+msgid "Create a GitHub release and upload the archives"
+msgstr ""
+
+#: src/extensions/agent-servers.md:118
+msgid "Use the release URLs in your `extension.toml`"
+msgstr ""
+
+#: src/extensions/agent-servers.md:120
+msgid "SHA-256 Hashes"
+msgstr ""
+
+#: src/extensions/agent-servers.md:122
+msgid ""
+"It's good for security to include SHA-256 hashes of your archives in "
+"`extension.toml`. Here's how to generate it:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:124
+msgid "macOS and Linux"
+msgstr ""
+
+#: src/extensions/agent-servers.md:130
+msgid "Windows"
+msgstr ""
+
+#: src/extensions/agent-servers.md:136
+msgid "Then add that string to your target configuration:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:138
+msgid ""
+"```toml\n"
+"[agent_servers.my-agent.targets.darwin-aarch64]\n"
+"archive = \"https://github.com/owner/repo/releases/download/v1.0.0/agent-"
+"darwin-arm64.tar.gz\"\n"
+"cmd = \"./agent\"\n"
+"sha256 = "
+"\"e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855\"\n"
+"```"
+msgstr ""
+
+#: src/extensions/agent-servers.md:145
+msgid "Testing"
+msgstr ""
+
+#: src/extensions/agent-servers.md:147
+msgid "To test your Agent Server Extension:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:149
+msgid ""
+"[Install it as a dev extension](./developing-extensions.md#developing-an-"
+"extension-locally)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:150
+msgid "Open the [Agent Panel](../ai/agent-panel.md)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:151
+msgid "Select your Agent Server from the list"
+msgstr ""
+
+#: src/extensions/agent-servers.md:152
+msgid "Verify that it downloads, installs, and launches correctly"
+msgstr ""
+
+#: src/extensions/agent-servers.md:153
+msgid ""
+"Test its functionality by conversing with it and watching the [ACP logs](../"
+"ai/external-agents.md#debugging-agents)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:155
+msgid "Icon Guideline"
+msgstr ""
+
+#: src/extensions/agent-servers.md:157
+msgid ""
+"In case your agent server has a logo, we highly recommend adding it as an "
+"SVG icon. For optimal display, follow these guidelines:"
+msgstr ""
+
+#: src/extensions/agent-servers.md:160
+msgid ""
+"Make sure you resize your SVG to fit a 16x16 bounding box, with a padding of "
+"around one or two pixels"
+msgstr ""
+
+#: src/extensions/agent-servers.md:161
+msgid ""
+"Ensure you have a clean SVG code by processing it through [SVGOMG](https://"
+"jakearchibald.github.io/svgomg/)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:162
+msgid ""
+"Avoid including icons with gradients as they will often make the SVG more "
+"complicated and possibly not render perfectly"
+msgstr ""
+
+#: src/extensions/agent-servers.md:164
+msgid ""
+"Note that we'll automatically convert your icon to monochrome to preserve "
+"Zed's design consistency. (You can still use opacity in different paths of "
+"your SVG to add visual layering.)"
+msgstr ""
+
+#: src/extensions/agent-servers.md:169
+msgid ""
+"This is all you need to distribute an agent server through Zed's extension "
+"system!"
+msgstr ""
+
+#: src/extensions/agent-servers.md:171
+msgid "Publishing"
+msgstr ""
+
+#: src/extensions/agent-servers.md:173
+msgid ""
+"Once your extension is ready, see [Publishing your extension](./developing-"
+"extensions.md#publishing-your-extension) to learn how to submit it to the "
+"Zed extension registry."
+msgstr ""

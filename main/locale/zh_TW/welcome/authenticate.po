@@ -1,0 +1,127 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/authentication.md:1
+msgid "Authenticate with Zed"
+msgstr ""
+
+#: src/authentication.md:3
+msgid ""
+"Signing in to Zed is not required. You can use most features you'd expect in "
+"a code editor without ever doing so. We'll outline the few features that do "
+"require signing in, and how to do so, here."
+msgstr ""
+
+#: src/authentication.md:5
+msgid "What Features Require Signing In?"
+msgstr ""
+
+#: src/authentication.md:7
+msgid "All real-time [collaboration features](./collaboration/overview.md)."
+msgstr ""
+
+#: src/authentication.md:8
+msgid ""
+"[LLM-powered features](./ai/overview.md), if you are using Zed as the "
+"provider of your LLM models. To use AI without signing in, you can [bring "
+"and configure your own API keys](./ai/llm-providers.md#use-your-own-keys)."
+msgstr ""
+
+#: src/authentication.md:10
+msgid "Signing In"
+msgstr ""
+
+#: src/authentication.md:12
+msgid ""
+"Zed uses GitHub's OAuth flow to authenticate users, requiring only the `read:"
+"user` GitHub scope, which grants read-only access to your GitHub profile "
+"information."
+msgstr ""
+
+#: src/authentication.md:14
+msgid ""
+"Open Zed and click the `Sign In` button in the top-right corner of the "
+"window, or run the `client: sign in` command from the command palette (`cmd-"
+"shift-p` on macOS or `ctrl-shift-p` on Windows/Linux)."
+msgstr ""
+
+#: src/authentication.md:15
+msgid "Your default web browser will open to the Zed sign-in page."
+msgstr ""
+
+#: src/authentication.md:16
+msgid "Authenticate with your GitHub account when prompted."
+msgstr ""
+
+#: src/authentication.md:17
+msgid ""
+"After successful authentication, your browser will display a confirmation, "
+"and you'll be automatically signed in to Zed."
+msgstr ""
+
+#: src/authentication.md:19
+msgid ""
+"**Note**: If you're behind a corporate firewall, ensure that connections to "
+"`zed.dev` and `collab.zed.dev` are allowed."
+msgstr ""
+
+#: src/authentication.md:21
+msgid "Signing Out"
+msgstr ""
+
+#: src/authentication.md:23
+msgid "To sign out of Zed, you can use either of these methods:"
+msgstr ""
+
+#: src/authentication.md:25
+msgid ""
+"Click on the profile icon in the upper right corner and select `Sign Out` "
+"from the dropdown menu."
+msgstr ""
+
+#: src/authentication.md:26
+msgid "Open the command palette and run the `client: sign out` command."
+msgstr ""
+
+#: src/authentication.md:28
+msgid "Email Addresses"
+msgstr ""
+
+#: src/authentication.md:30
+msgid ""
+"Your Zed account's email address is the address provided by GitHub OAuth. If "
+"you have a public email address then it will be used, otherwise your primary "
+"GitHub email address will be used. Changes to your email address on GitHub "
+"can be synced to your Zed account by [signing in to zed.dev](https://zed.dev/"
+"sign_in)."
+msgstr ""
+
+#: src/authentication.md:32
+msgid ""
+"Stripe is used for billing, and will use your Zed account's email address "
+"when starting a subscription. Changes to your Zed account email address do "
+"not currently update the email address used in Stripe. See [Updating Billing "
+"Information](./ai/billing.md#updating-billing-info) for how to change this "
+"email address."
+msgstr ""
+
+#: src/authentication.md:34
+msgid "Hiding Sign In button from the interface"
+msgstr ""
+
+#: src/authentication.md:36
+msgid ""
+"In case the Sign In feature is not used, it's possible to hide that from the "
+"interface by using `show_sign_in` settings property. Refer to [Visual "
+"Customization page](./visual-customization.md) for more details."
+msgstr ""

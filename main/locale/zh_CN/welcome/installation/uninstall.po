@@ -1,0 +1,247 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/uninstall.md:1
+msgid "Uninstall"
+msgstr ""
+
+#: src/uninstall.md:3
+msgid "This guide covers how to uninstall Zed on different operating systems."
+msgstr ""
+
+#: src/uninstall.md:5
+msgid "macOS"
+msgstr ""
+
+#: src/uninstall.md:7 src/uninstall.md:80
+msgid "Standard Installation"
+msgstr ""
+
+#: src/uninstall.md:9
+msgid "If you installed Zed by downloading it from the website:"
+msgstr ""
+
+#: src/uninstall.md:11 src/uninstall.md:82
+msgid "Quit Zed if it's running"
+msgstr ""
+
+#: src/uninstall.md:12
+msgid "Open Finder and go to your Applications folder"
+msgstr ""
+
+#: src/uninstall.md:13
+msgid "Drag Zed to the Trash (or right-click and select \"Move to Trash\")"
+msgstr ""
+
+#: src/uninstall.md:14
+msgid "Empty the Trash"
+msgstr ""
+
+#: src/uninstall.md:16
+msgid "Homebrew Installation"
+msgstr ""
+
+#: src/uninstall.md:18
+msgid "If you installed Zed using Homebrew, use the following command:"
+msgstr ""
+
+#: src/uninstall.md:24
+msgid "Or for the preview version:"
+msgstr ""
+
+#: src/uninstall.md:30 src/uninstall.md:95
+msgid "Removing User Data (Optional)"
+msgstr ""
+
+#: src/uninstall.md:32 src/uninstall.md:97
+msgid "To completely remove all Zed configuration files and data:"
+msgstr ""
+
+#: src/uninstall.md:34
+msgid "Open Finder"
+msgstr ""
+
+#: src/uninstall.md:35
+msgid "Press `Cmd + Shift + G` to open \"Go to Folder\""
+msgstr ""
+
+#: src/uninstall.md:36
+msgid "Delete the following directories if they exist:"
+msgstr ""
+
+#: src/uninstall.md:37
+msgid "`~/Library/Application Support/Zed`"
+msgstr ""
+
+#: src/uninstall.md:38
+msgid "`~/Library/Saved Application State/dev.zed.Zed.savedState`"
+msgstr ""
+
+#: src/uninstall.md:39
+msgid "`~/Library/Logs/Zed`"
+msgstr ""
+
+#: src/uninstall.md:40
+msgid "`~/Library/Caches/dev.zed.Zed`"
+msgstr ""
+
+#: src/uninstall.md:42
+msgid "Linux"
+msgstr ""
+
+#: src/uninstall.md:44
+msgid "Standard Uninstall"
+msgstr ""
+
+#: src/uninstall.md:46
+msgid "If Zed was installed using the default installation script, run:"
+msgstr ""
+
+#: src/uninstall.md:52
+msgid ""
+"You'll be prompted whether to keep or delete your preferences. After making "
+"a choice, you should see a message that Zed was successfully uninstalled."
+msgstr ""
+
+#: src/uninstall.md:54
+msgid "If the `zed` command is not found in your PATH, try:"
+msgstr ""
+
+#: src/uninstall.md:60
+msgid "or:"
+msgstr ""
+
+#: src/uninstall.md:66
+msgid "Package Manager"
+msgstr ""
+
+#: src/uninstall.md:68
+msgid ""
+"If you installed Zed using a package manager (such as Flatpak, Snap, or a "
+"distribution-specific package manager), consult that package manager's "
+"documentation for uninstallation instructions."
+msgstr ""
+
+#: src/uninstall.md:70
+msgid "Manual Removal"
+msgstr ""
+
+#: src/uninstall.md:72
+msgid ""
+"If the uninstall command fails or Zed was installed to a custom location, "
+"you can manually remove:"
+msgstr ""
+
+#: src/uninstall.md:74
+msgid ""
+"Installation directory: `~/.local/zed.app` (or your custom installation path)"
+msgstr ""
+
+#: src/uninstall.md:75
+msgid "Binary symlink: `~/.local/bin/zed`"
+msgstr ""
+
+#: src/uninstall.md:76
+msgid "Configuration and data: `~/.config/zed`"
+msgstr ""
+
+#: src/uninstall.md:78
+msgid "Windows"
+msgstr ""
+
+#: src/uninstall.md:83
+msgid "Open Settings (Windows key + I)"
+msgstr ""
+
+#: src/uninstall.md:84
+msgid ""
+"Go to \"Apps\" > \"Installed apps\" (or \"Apps & features\" on Windows 10)"
+msgstr ""
+
+#: src/uninstall.md:85
+msgid "Search for \"Zed\""
+msgstr ""
+
+#: src/uninstall.md:86
+msgid "Click the three dots menu next to Zed and select \"Uninstall\""
+msgstr ""
+
+#: src/uninstall.md:87
+msgid "Follow the prompts to complete the uninstallation"
+msgstr ""
+
+#: src/uninstall.md:89
+msgid "Alternatively, you can:"
+msgstr ""
+
+#: src/uninstall.md:91
+msgid "Open the Start menu"
+msgstr ""
+
+#: src/uninstall.md:92
+msgid "Right-click on Zed"
+msgstr ""
+
+#: src/uninstall.md:93
+msgid "Select \"Uninstall\""
+msgstr ""
+
+#: src/uninstall.md:99
+msgid "Press `Windows key + R` to open Run"
+msgstr ""
+
+#: src/uninstall.md:100
+msgid "Type `%APPDATA%` and press Enter"
+msgstr ""
+
+#: src/uninstall.md:101 src/uninstall.md:103
+msgid "Delete the `Zed` folder if it exists"
+msgstr ""
+
+#: src/uninstall.md:102
+msgid "Press `Windows key + R` again, type `%LOCALAPPDATA%` and press Enter"
+msgstr ""
+
+#: src/uninstall.md:105
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/uninstall.md:107
+msgid "If you encounter issues during uninstallation:"
+msgstr ""
+
+#: src/uninstall.md:109
+msgid ""
+"**macOS/Windows**: Ensure Zed is completely quit before attempting to "
+"uninstall. Check Activity Manager (macOS) or Task Manager (Windows) for any "
+"running Zed processes."
+msgstr ""
+
+#: src/uninstall.md:110
+msgid ""
+"**Linux**: If the uninstall script fails, check the error message and "
+"consider manual removal of the directories listed above."
+msgstr ""
+
+#: src/uninstall.md:111
+msgid ""
+"**All platforms**: If you want to start fresh while keeping Zed installed, "
+"you can delete the configuration directories instead of uninstalling the "
+"application entirely."
+msgstr ""
+
+#: src/uninstall.md:113
+msgid ""
+"For additional help, see our [Linux-specific documentation](./linux.md) or "
+"visit the [Zed community](https://zed.dev/community-links)."
+msgstr ""

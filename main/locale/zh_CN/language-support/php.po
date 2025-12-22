@@ -1,0 +1,333 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/php.md:1
+msgid "PHP"
+msgstr ""
+
+#: src/languages/php.md:3
+msgid ""
+"PHP support is available through the [PHP extension](https://github.com/zed-"
+"extensions/php)."
+msgstr ""
+
+#: src/languages/php.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-php](https://github.com/tree-sitter/"
+"tree-sitter-php)"
+msgstr ""
+
+#: src/languages/php.md:6
+msgid ""
+"Language Server: [phpactor/phpactor](https://github.com/phpactor/phpactor)"
+msgstr ""
+
+#: src/languages/php.md:7
+msgid ""
+"Alternate Language Server: [bmewburn/vscode-intelephense](https://github.com/"
+"bmewburn/vscode-intelephense/)"
+msgstr ""
+
+#: src/languages/php.md:9
+msgid "Install PHP"
+msgstr ""
+
+#: src/languages/php.md:11
+msgid ""
+"The PHP extension requires PHP to be installed and available in your `PATH`:"
+msgstr ""
+
+#: src/languages/php.md:14
+msgid "# macOS via Homebrew\n"
+msgstr ""
+
+#: src/languages/php.md:16
+msgid "# Debian/Ubuntu\n"
+msgstr ""
+
+#: src/languages/php.md:19
+msgid "# CentOS 8+/RHEL\n"
+msgstr ""
+
+#: src/languages/php.md:22
+msgid "# Arch Linux\n"
+msgstr ""
+
+#: src/languages/php.md:25
+msgid ""
+"# check PHP path\n"
+"## macOS and Linux\n"
+msgstr ""
+
+#: src/languages/php.md:29
+msgid "## Windows\n"
+msgstr ""
+
+#: src/languages/php.md:34
+msgid "Choosing a language server"
+msgstr ""
+
+#: src/languages/php.md:36
+msgid ""
+"The PHP extension uses [LSP language servers](https://microsoft.github.io/"
+"language-server-protocol) with Phpactor as the default. If you want to use "
+"other language servers that support Zed (e.g. Intelephense or PHP Tools), "
+"make sure to follow the documentation on how to implement it."
+msgstr ""
+
+#: src/languages/php.md:38
+msgid "Intelephense"
+msgstr ""
+
+#: src/languages/php.md:40
+msgid ""
+"[Intelephense](https://intelephense.com/) is a [proprietary](https://github."
+"com/bmewburn/vscode-intelephense/blob/master/LICENSE.txt#L29) language "
+"server for PHP operating under a freemium model. Certain features require "
+"purchase of a [premium license](https://intelephense.com/buy)."
+msgstr ""
+
+#: src/languages/php.md:42
+msgid "To use Intelephense, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/php.md:46 src/languages/php.md:78 src/languages/php.md:114
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/php.md:47 src/languages/php.md:79 src/languages/php.md:115
+msgid "\"PHP\""
+msgstr ""
+
+#: src/languages/php.md:48 src/languages/php.md:80 src/languages/php.md:116
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/php.md:48 src/languages/php.md:61
+msgid "\"intelephense\""
+msgstr ""
+
+#: src/languages/php.md:48 src/languages/php.md:80
+msgid "\"!phpactor\""
+msgstr ""
+
+#: src/languages/php.md:48 src/languages/php.md:116
+msgid "\"!phptools\""
+msgstr ""
+
+#: src/languages/php.md:48 src/languages/php.md:80 src/languages/php.md:116
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/php.md:54
+msgid ""
+"To use the premium features, you can place your license file inside your "
+"home directory at `~/intelephense/licence.txt` for macOS and Linux, or "
+"`%USERPROFILE%/intelephense/licence.txt` on Windows."
+msgstr ""
+
+#: src/languages/php.md:56
+msgid ""
+"Alternatively, you can pass the licence key or a path to a file containing "
+"the licence key as an initialization option. To do this, add the following "
+"to your `settings.json`:"
+msgstr ""
+
+#: src/languages/php.md:60 src/languages/php.md:90
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/php.md:62 src/languages/php.md:92
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/php.md:63
+msgid "\"licenceKey\""
+msgstr ""
+
+#: src/languages/php.md:63
+msgid "\"/path/to/licence.txt\""
+msgstr ""
+
+#: src/languages/php.md:70
+msgid "PHP Tools"
+msgstr ""
+
+#: src/languages/php.md:72
+msgid ""
+"[PHP Tools](https://www.devsense.com/) is a proprietary language server that "
+"offers free and premium features. You need to [purchase a license](https://"
+"www.devsense.com/en/purchase) to activate the premium features."
+msgstr ""
+
+#: src/languages/php.md:74
+msgid "To use PHP Tools, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/php.md:80 src/languages/php.md:91
+msgid "\"phptools\""
+msgstr ""
+
+#: src/languages/php.md:80 src/languages/php.md:116
+msgid "\"!intelephense\""
+msgstr ""
+
+#: src/languages/php.md:86
+msgid ""
+"To use the premium features, you can add your license in "
+"`initialization_options` in your `settings.json`:"
+msgstr ""
+
+#: src/languages/php.md:93
+msgid "\"0\""
+msgstr ""
+
+#: src/languages/php.md:93
+msgid "\"your_license_key\""
+msgstr ""
+
+#: src/languages/php.md:100
+msgid ""
+"or, set environment variable `DEVSENSE_PHP_LS_LICENSE` on `.env` file in "
+"your project."
+msgstr ""
+
+#: src/languages/php.md:102
+msgid ""
+"```env\n"
+"DEVSENSE_PHP_LS_LICENSE=\"your_license_key\"\n"
+"```"
+msgstr ""
+
+#: src/languages/php.md:106
+msgid ""
+"Check out the documentation of [PHP Tools for Zed](https://docs.devsense.com/"
+"other/zed/) for more details."
+msgstr ""
+
+#: src/languages/php.md:108
+msgid "Phpactor"
+msgstr ""
+
+#: src/languages/php.md:110
+msgid ""
+"To use Phpactor instead of Intelephense or any other tools, add the "
+"following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/php.md:116
+msgid "\"phpactor\""
+msgstr ""
+
+#: src/languages/php.md:122
+msgid "PHPDoc"
+msgstr ""
+
+#: src/languages/php.md:124
+msgid "Zed supports syntax highlighting for PHPDoc comments."
+msgstr ""
+
+#: src/languages/php.md:126
+msgid ""
+"Tree-sitter: [claytonrcarter/tree-sitter-phpdoc](https://github.com/"
+"claytonrcarter/tree-sitter-phpdoc)"
+msgstr ""
+
+#: src/languages/php.md:128
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/php.md:130
+msgid ""
+"The PHP extension provides a debug adapter for PHP via Xdebug. There are "
+"several ways to use it:"
+msgstr ""
+
+#: src/languages/php.md:135 src/languages/php.md:141
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/php.md:135
+msgid "\"PHP: Listen to Xdebug\""
+msgstr ""
+
+#: src/languages/php.md:136 src/languages/php.md:142
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/php.md:136 src/languages/php.md:142
+msgid "\"Xdebug\""
+msgstr ""
+
+#: src/languages/php.md:137 src/languages/php.md:143
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/php.md:137 src/languages/php.md:143
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/php.md:138
+msgid "\"port\""
+msgstr ""
+
+#: src/languages/php.md:141
+msgid "\"PHP: Debug this test\""
+msgstr ""
+
+#: src/languages/php.md:144
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/php.md:144
+msgid "\"vendor/bin/phpunit\""
+msgstr ""
+
+#: src/languages/php.md:145
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/php.md:145
+msgid "\"--filter\""
+msgstr ""
+
+#: src/languages/php.md:145
+msgid "\"$ZED_SYMBOL\""
+msgstr ""
+
+#: src/languages/php.md:150
+msgid "These are common troubleshooting tips, in case you run into issues:"
+msgstr ""
+
+#: src/languages/php.md:152
+msgid ""
+"Ensure that you have Xdebug installed for the version of PHP you’re running."
+msgstr ""
+
+#: src/languages/php.md:153
+msgid "Ensure that Xdebug is configured to run in `debug` mode."
+msgstr ""
+
+#: src/languages/php.md:154
+msgid "Ensure that Xdebug is actually starting a debugging session."
+msgstr ""
+
+#: src/languages/php.md:155
+msgid "Ensure that the host and port matches between Xdebug and Zed."
+msgstr ""
+
+#: src/languages/php.md:156
+msgid ""
+"Look at the diagnostics log by using the `xdebug_info()` function in the "
+"page you’re trying to debug."
+msgstr ""

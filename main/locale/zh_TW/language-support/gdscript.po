@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/gdscript.md:1
+msgid "GDScript"
+msgstr ""
+
+#: src/languages/gdscript.md:3
+msgid ""
+"Godot [GDScript](https://gdscript.com/) language support in Zed is provided "
+"by the community-maintained [GDScript extension](https://github.com/GDQuest/"
+"zed-gdscript). Report issues to: [https://github.com/GDQuest/zed-gdscript/"
+"issues](https://github.com/GDQuest/zed-gdscript/issues)"
+msgstr ""
+
+#: src/languages/gdscript.md:6
+msgid ""
+"Tree-sitter: [PrestonKnopp/tree-sitter-gdscript](https://github.com/"
+"PrestonKnopp/tree-sitter-gdscript) and [PrestonKnopp/tree-sitter-godot-"
+"resource](https://github.com/PrestonKnopp/tree-sitter-godot-resource)"
+msgstr ""
+
+#: src/languages/gdscript.md:7
+msgid ""
+"Language Server: [gdscript-language-server](https://github.com/godotengine/"
+"godot)"
+msgstr ""
+
+#: src/languages/gdscript.md:9
+msgid "Pre-requisites"
+msgstr ""
+
+#: src/languages/gdscript.md:11
+msgid "You will need:"
+msgstr ""
+
+#: src/languages/gdscript.md:13
+msgid "[Godot](https://godotengine.org/download/)."
+msgstr ""
+
+#: src/languages/gdscript.md:14
+msgid "netcat (`nc` or `ncat`) on your system PATH."
+msgstr ""
+
+#: src/languages/gdscript.md:16
+msgid "Setup"
+msgstr ""
+
+#: src/languages/gdscript.md:18
+msgid ""
+"Inside your Godot editor, open Editor Settings, look for `Text Editor -> "
+"External` and set the following options:"
+msgstr ""
+
+#: src/languages/gdscript.md:19
+msgid "Exec Path: `/path/to/zed`"
+msgstr ""
+
+#: src/languages/gdscript.md:20
+msgid "Exec Flags: `{project} {file}:{line}:{col}`"
+msgstr ""
+
+#: src/languages/gdscript.md:21
+msgid "Use External Editor: \"✅ On\""
+msgstr ""
+
+#: src/languages/gdscript.md:22
+msgid "Open any \\*.gd file through Godot and Zed will launch."
+msgstr ""
+
+#: src/languages/gdscript.md:24
+msgid "Usage"
+msgstr ""
+
+#: src/languages/gdscript.md:26
+msgid ""
+"When Godot is running, the GDScript extension will connect to the language "
+"server provided by the Godot runtime and will provide `jump to definition`, "
+"hover states when you hold Ctrl/cmd and other language server features."
+msgstr ""

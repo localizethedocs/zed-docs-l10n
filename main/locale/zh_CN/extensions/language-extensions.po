@@ -1,0 +1,1147 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/languages.md:1
+msgid "Language Extensions"
+msgstr ""
+
+#: src/extensions/languages.md:3
+msgid "Language support in Zed has several components:"
+msgstr ""
+
+#: src/extensions/languages.md:5
+msgid "Language metadata and configuration"
+msgstr ""
+
+#: src/extensions/languages.md:6 src/extensions/languages.md:48
+msgid "Grammar"
+msgstr ""
+
+#: src/extensions/languages.md:7
+msgid "Queries"
+msgstr ""
+
+#: src/extensions/languages.md:8
+msgid "Language servers"
+msgstr ""
+
+#: src/extensions/languages.md:10
+msgid "Language Metadata"
+msgstr ""
+
+#: src/extensions/languages.md:12
+msgid ""
+"Each language supported by Zed must be defined in a subdirectory inside the "
+"`languages` directory of your extension."
+msgstr ""
+
+#: src/extensions/languages.md:14
+msgid ""
+"This subdirectory must contain a file called `config.toml` file with the "
+"following structure:"
+msgstr ""
+
+#: src/extensions/languages.md:16
+msgid ""
+"```toml\n"
+"name = \"My Language\"\n"
+"grammar = \"my-language\"\n"
+"path_suffixes = [\"myl\"]\n"
+"line_comments = [\"# \"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:23
+msgid ""
+"`name` (required) is the human readable name that will show up in the Select "
+"Language dropdown."
+msgstr ""
+
+#: src/extensions/languages.md:24
+msgid ""
+"`grammar` (required) is the name of a grammar. Grammars are registered "
+"separately, described below."
+msgstr ""
+
+#: src/extensions/languages.md:25
+msgid ""
+"`path_suffixes` is an array of file suffixes that should be associated with "
+"this language. Unlike `file_types` in settings, this does not support glob "
+"patterns."
+msgstr ""
+
+#: src/extensions/languages.md:26
+msgid ""
+"`line_comments` is an array of strings that are used to identify line "
+"comments in the language. This is used for the `editor::ToggleComments` "
+"keybind: <kbd class=\"keybinding\">cmd-/|ctrl-k ctrl-c</kbd> for toggling "
+"lines of code."
+msgstr ""
+
+#: src/extensions/languages.md:27
+msgid ""
+"`tab_size` defines the indentation/tab size used for this language (default "
+"is `4`)."
+msgstr ""
+
+#: src/extensions/languages.md:28
+msgid ""
+"`hard_tabs` whether to indent with tabs (`true`) or spaces (`false`, the "
+"default)."
+msgstr ""
+
+#: src/extensions/languages.md:29
+msgid ""
+"`first_line_pattern` is a regular expression, that in addition to "
+"`path_suffixes` (above) or `file_types` in settings can be used to match "
+"files which should use this language. For example Zed uses this to identify "
+"Shell Scripts by matching the [shebangs lines](https://github.com/zed-"
+"industries/zed/blob/main/crates/languages/src/bash/config.toml) in the first "
+"line of a script."
+msgstr ""
+
+#: src/extensions/languages.md:30
+msgid ""
+"`debuggers` is an array of strings that are used to identify debuggers in "
+"the language. When launching a debugger's `New Process Modal`, Zed will "
+"order available debuggers by the order of entries in this array."
+msgstr ""
+
+#: src/extensions/languages.md:50
+msgid ""
+"Zed uses the [Tree-sitter](https://tree-sitter.github.io) parsing library to "
+"provide built-in language-specific features. There are grammars available "
+"for many languages, and you can also [develop your own grammar](https://tree-"
+"sitter.github.io/tree-sitter/creating-parsers#writing-the-grammar). A "
+"growing list of Zed features are built using pattern matching over syntax "
+"trees with Tree-sitter queries. As mentioned above, every language that is "
+"defined in an extension must specify the name of a Tree-sitter grammar that "
+"is used for parsing. These grammars are then registered separately in "
+"extensions' `extension.toml` file, like this:"
+msgstr ""
+
+#: src/extensions/languages.md:52
+msgid ""
+"```toml\n"
+"[grammars.gleam]\n"
+"repository = \"https://github.com/gleam-lang/tree-sitter-gleam\"\n"
+"rev = \"58b7cac8fc14c92b0677c542610d8738c373fa81\"\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:58
+msgid ""
+"The `repository` field must specify a repository where the Tree-sitter "
+"grammar should be loaded from, and the `rev` field must contain a Git "
+"revision to use, such as the SHA of a Git commit. If you're developing an "
+"extension locally and want to load a grammar from the local filesystem, you "
+"can use a `file://` URL for `repository`. An extension can provide multiple "
+"grammars by referencing multiple tree-sitter repositories."
+msgstr ""
+
+#: src/extensions/languages.md:60
+msgid "Tree-sitter Queries"
+msgstr ""
+
+#: src/extensions/languages.md:62
+msgid ""
+"Zed uses the syntax tree produced by the [Tree-sitter](https://tree-sitter."
+"github.io) query language to implement several features:"
+msgstr ""
+
+#: src/extensions/languages.md:65 src/extensions/languages.md:78
+msgid "Syntax highlighting"
+msgstr ""
+
+#: src/extensions/languages.md:66 src/extensions/languages.md:138
+msgid "Bracket matching"
+msgstr ""
+
+#: src/extensions/languages.md:67 src/extensions/languages.md:165
+msgid "Code outline/structure"
+msgstr ""
+
+#: src/extensions/languages.md:68 src/extensions/languages.md:188
+msgid "Auto-indentation"
+msgstr ""
+
+#: src/extensions/languages.md:69 src/extensions/languages.md:206
+msgid "Code injections"
+msgstr ""
+
+#: src/extensions/languages.md:70 src/extensions/languages.md:231
+msgid "Syntax overrides"
+msgstr ""
+
+#: src/extensions/languages.md:71 src/extensions/languages.md:312
+msgid "Text redactions"
+msgstr ""
+
+#: src/extensions/languages.md:72 src/extensions/languages.md:331
+msgid "Runnable code detection"
+msgstr ""
+
+#: src/extensions/languages.md:73
+msgid "Selecting classes, functions, etc."
+msgstr ""
+
+#: src/extensions/languages.md:75
+msgid ""
+"The following sections elaborate on how [Tree-sitter queries](https://tree-"
+"sitter.github.io/tree-sitter/using-parsers#query-syntax) enable these "
+"features in Zed, using [JSON syntax](https://www.json.org/json-en.html) as a "
+"guiding example."
+msgstr ""
+
+#: src/extensions/languages.md:80
+msgid ""
+"In Tree-sitter, the `highlights.scm` file defines syntax highlighting rules "
+"for a particular syntax."
+msgstr ""
+
+#: src/extensions/languages.md:82
+msgid "Here's an example from a `highlights.scm` for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:93
+msgid ""
+"This query marks strings, object keys, and numbers for highlighting. The "
+"following is a comprehensive list of captures supported by themes:"
+msgstr ""
+
+#: src/extensions/languages.md:95 src/extensions/languages.md:152
+#: src/extensions/languages.md:178 src/extensions/languages.md:201
+#: src/extensions/languages.md:224 src/extensions/languages.md:286
+#: src/extensions/languages.md:327 src/extensions/languages.md:363
+msgid "Capture"
+msgstr ""
+
+#: src/extensions/languages.md:95 src/extensions/languages.md:152
+#: src/extensions/languages.md:178 src/extensions/languages.md:201
+#: src/extensions/languages.md:224 src/extensions/languages.md:286
+#: src/extensions/languages.md:327 src/extensions/languages.md:363
+msgid "Description"
+msgstr ""
+
+#: src/extensions/languages.md:97
+msgid "@attribute"
+msgstr ""
+
+#: src/extensions/languages.md:97
+msgid "Captures attributes"
+msgstr ""
+
+#: src/extensions/languages.md:98
+msgid "@boolean"
+msgstr ""
+
+#: src/extensions/languages.md:98
+msgid "Captures boolean values"
+msgstr ""
+
+#: src/extensions/languages.md:99
+msgid "@comment"
+msgstr ""
+
+#: src/extensions/languages.md:99
+msgid "Captures comments"
+msgstr ""
+
+#: src/extensions/languages.md:100
+msgid "@comment.doc"
+msgstr ""
+
+#: src/extensions/languages.md:100
+msgid "Captures documentation comments"
+msgstr ""
+
+#: src/extensions/languages.md:101
+msgid "@constant"
+msgstr ""
+
+#: src/extensions/languages.md:101
+msgid "Captures constants"
+msgstr ""
+
+#: src/extensions/languages.md:102
+msgid "@constructor"
+msgstr ""
+
+#: src/extensions/languages.md:102
+msgid "Captures constructors"
+msgstr ""
+
+#: src/extensions/languages.md:103
+msgid "@embedded"
+msgstr ""
+
+#: src/extensions/languages.md:103
+msgid "Captures embedded content"
+msgstr ""
+
+#: src/extensions/languages.md:104
+msgid "@emphasis"
+msgstr ""
+
+#: src/extensions/languages.md:104
+msgid "Captures emphasized text"
+msgstr ""
+
+#: src/extensions/languages.md:105
+msgid "@emphasis.strong"
+msgstr ""
+
+#: src/extensions/languages.md:105
+msgid "Captures strongly emphasized text"
+msgstr ""
+
+#: src/extensions/languages.md:106
+msgid "@enum"
+msgstr ""
+
+#: src/extensions/languages.md:106
+msgid "Captures enumerations"
+msgstr ""
+
+#: src/extensions/languages.md:107
+msgid "@function"
+msgstr ""
+
+#: src/extensions/languages.md:107
+msgid "Captures functions"
+msgstr ""
+
+#: src/extensions/languages.md:108
+msgid "@hint"
+msgstr ""
+
+#: src/extensions/languages.md:108
+msgid "Captures hints"
+msgstr ""
+
+#: src/extensions/languages.md:109
+msgid "@keyword"
+msgstr ""
+
+#: src/extensions/languages.md:109
+msgid "Captures keywords"
+msgstr ""
+
+#: src/extensions/languages.md:110
+msgid "@label"
+msgstr ""
+
+#: src/extensions/languages.md:110
+msgid "Captures labels"
+msgstr ""
+
+#: src/extensions/languages.md:111
+msgid "@link_text"
+msgstr ""
+
+#: src/extensions/languages.md:111
+msgid "Captures link text"
+msgstr ""
+
+#: src/extensions/languages.md:112
+msgid "@link_uri"
+msgstr ""
+
+#: src/extensions/languages.md:112
+msgid "Captures link URIs"
+msgstr ""
+
+#: src/extensions/languages.md:113
+msgid "@number"
+msgstr ""
+
+#: src/extensions/languages.md:113
+msgid "Captures numeric values"
+msgstr ""
+
+#: src/extensions/languages.md:114
+msgid "@operator"
+msgstr ""
+
+#: src/extensions/languages.md:114
+msgid "Captures operators"
+msgstr ""
+
+#: src/extensions/languages.md:115
+msgid "@predictive"
+msgstr ""
+
+#: src/extensions/languages.md:115
+msgid "Captures predictive text"
+msgstr ""
+
+#: src/extensions/languages.md:116
+msgid "@preproc"
+msgstr ""
+
+#: src/extensions/languages.md:116
+msgid "Captures preprocessor directives"
+msgstr ""
+
+#: src/extensions/languages.md:117
+msgid "@primary"
+msgstr ""
+
+#: src/extensions/languages.md:117
+msgid "Captures primary elements"
+msgstr ""
+
+#: src/extensions/languages.md:118
+msgid "@property"
+msgstr ""
+
+#: src/extensions/languages.md:118
+msgid "Captures properties"
+msgstr ""
+
+#: src/extensions/languages.md:119
+msgid "@punctuation"
+msgstr ""
+
+#: src/extensions/languages.md:119
+msgid "Captures punctuation"
+msgstr ""
+
+#: src/extensions/languages.md:120
+msgid "@punctuation.bracket"
+msgstr ""
+
+#: src/extensions/languages.md:120
+msgid "Captures brackets"
+msgstr ""
+
+#: src/extensions/languages.md:121
+msgid "@punctuation.delimiter"
+msgstr ""
+
+#: src/extensions/languages.md:121
+msgid "Captures delimiters"
+msgstr ""
+
+#: src/extensions/languages.md:122
+msgid "@punctuation.list_marker"
+msgstr ""
+
+#: src/extensions/languages.md:122
+msgid "Captures list markers"
+msgstr ""
+
+#: src/extensions/languages.md:123
+msgid "@punctuation.special"
+msgstr ""
+
+#: src/extensions/languages.md:123
+msgid "Captures special punctuation"
+msgstr ""
+
+#: src/extensions/languages.md:124
+msgid "@string"
+msgstr ""
+
+#: src/extensions/languages.md:124
+msgid "Captures string literals"
+msgstr ""
+
+#: src/extensions/languages.md:125
+msgid "@string.escape"
+msgstr ""
+
+#: src/extensions/languages.md:125
+msgid "Captures escaped characters in strings"
+msgstr ""
+
+#: src/extensions/languages.md:126
+msgid "@string.regex"
+msgstr ""
+
+#: src/extensions/languages.md:126
+msgid "Captures regular expressions"
+msgstr ""
+
+#: src/extensions/languages.md:127
+msgid "@string.special"
+msgstr ""
+
+#: src/extensions/languages.md:127
+msgid "Captures special strings"
+msgstr ""
+
+#: src/extensions/languages.md:128
+msgid "@string.special.symbol"
+msgstr ""
+
+#: src/extensions/languages.md:128
+msgid "Captures special symbols"
+msgstr ""
+
+#: src/extensions/languages.md:129
+msgid "@tag"
+msgstr ""
+
+#: src/extensions/languages.md:129
+msgid "Captures tags"
+msgstr ""
+
+#: src/extensions/languages.md:130
+msgid "@tag.doctype"
+msgstr ""
+
+#: src/extensions/languages.md:130
+msgid "Captures doctypes (e.g., in HTML)"
+msgstr ""
+
+#: src/extensions/languages.md:131
+msgid "@text.literal"
+msgstr ""
+
+#: src/extensions/languages.md:131
+msgid "Captures literal text"
+msgstr ""
+
+#: src/extensions/languages.md:132
+msgid "@title"
+msgstr ""
+
+#: src/extensions/languages.md:132
+msgid "Captures titles"
+msgstr ""
+
+#: src/extensions/languages.md:133
+msgid "@type"
+msgstr ""
+
+#: src/extensions/languages.md:133
+msgid "Captures types"
+msgstr ""
+
+#: src/extensions/languages.md:134
+msgid "@variable"
+msgstr ""
+
+#: src/extensions/languages.md:134
+msgid "Captures variables"
+msgstr ""
+
+#: src/extensions/languages.md:135
+msgid "@variable.special"
+msgstr ""
+
+#: src/extensions/languages.md:135
+msgid "Captures special variables"
+msgstr ""
+
+#: src/extensions/languages.md:136
+msgid "@variant"
+msgstr ""
+
+#: src/extensions/languages.md:136
+msgid "Captures variants"
+msgstr ""
+
+#: src/extensions/languages.md:140
+msgid "The `brackets.scm` file defines matching brackets."
+msgstr ""
+
+#: src/extensions/languages.md:142
+msgid "Here's an example from a `brackets.scm` file for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:144
+msgid ""
+"```scheme\n"
+"(\"[\" @open \"]\" @close)\n"
+"(\"{\" @open \"}\" @close)\n"
+"(\"\\\"\" @open \"\\\"\" @close)\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:150
+msgid ""
+"This query identifies opening and closing brackets, braces, and quotation "
+"marks."
+msgstr ""
+
+#: src/extensions/languages.md:154
+msgid "@open"
+msgstr ""
+
+#: src/extensions/languages.md:154
+msgid "Captures opening brackets, braces, and quotes"
+msgstr ""
+
+#: src/extensions/languages.md:155
+msgid "@close"
+msgstr ""
+
+#: src/extensions/languages.md:155
+msgid "Captures closing brackets, braces, and quotes"
+msgstr ""
+
+#: src/extensions/languages.md:157
+msgid ""
+"Zed uses these to highlight matching brackets: painting each bracket pair "
+"with a different color (\"rainbow brackets\") and highlighting the brackets "
+"if the cursor is inside the bracket pair."
+msgstr ""
+
+#: src/extensions/languages.md:159
+msgid ""
+"To opt out of rainbow brackets colorization, add the following to the "
+"corresponding `brackets.scm` entry:"
+msgstr ""
+
+#: src/extensions/languages.md:161
+msgid ""
+"```scheme\n"
+"((\"\\\"\" @open \"\\\"\" @close) (#set! rainbow.exclude))\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:167
+msgid "The `outline.scm` file defines the structure for the code outline."
+msgstr ""
+
+#: src/extensions/languages.md:169
+msgid "Here's an example from an `outline.scm` file for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:176
+msgid "This query captures object keys for the outline structure."
+msgstr ""
+
+#: src/extensions/languages.md:180
+msgid "@name"
+msgstr ""
+
+#: src/extensions/languages.md:180
+msgid "Captures the content of object keys"
+msgstr ""
+
+#: src/extensions/languages.md:181
+msgid "@item"
+msgstr ""
+
+#: src/extensions/languages.md:181
+msgid "Captures the entire key-value pair"
+msgstr ""
+
+#: src/extensions/languages.md:182
+msgid "@context"
+msgstr ""
+
+#: src/extensions/languages.md:182
+msgid "Captures elements that provide context for the outline item"
+msgstr ""
+
+#: src/extensions/languages.md:183
+msgid "@context.extra"
+msgstr ""
+
+#: src/extensions/languages.md:183
+msgid "Captures additional contextual information for the outline item"
+msgstr ""
+
+#: src/extensions/languages.md:184
+msgid "@annotation"
+msgstr ""
+
+#: src/extensions/languages.md:184
+msgid ""
+"Captures nodes that annotate outline item (doc comments, attributes, "
+"decorators)[^1]"
+msgstr ""
+
+#: src/extensions/languages.md:186
+msgid ""
+"These annotations are used by Assistant when generating code modification "
+"steps."
+msgstr ""
+
+#: src/extensions/languages.md:190
+msgid "The `indents.scm` file defines indentation rules."
+msgstr ""
+
+#: src/extensions/languages.md:192
+msgid "Here's an example from an `indents.scm` file for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:194
+msgid ""
+"```scheme\n"
+"(array \"]\" @end) @indent\n"
+"(object \"}\" @end) @indent\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:199
+msgid ""
+"This query marks the end of arrays and objects for indentation purposes."
+msgstr ""
+
+#: src/extensions/languages.md:203
+msgid "@end"
+msgstr ""
+
+#: src/extensions/languages.md:203
+msgid "Captures closing brackets and braces"
+msgstr ""
+
+#: src/extensions/languages.md:204
+msgid "@indent"
+msgstr ""
+
+#: src/extensions/languages.md:204
+msgid "Captures entire arrays and objects for indentation"
+msgstr ""
+
+#: src/extensions/languages.md:208
+msgid ""
+"The `injections.scm` file defines rules for embedding one language within "
+"another, such as code blocks in Markdown or SQL queries in Python strings."
+msgstr ""
+
+#: src/extensions/languages.md:210
+msgid "Here's an example from an `injections.scm` file for Markdown:"
+msgstr ""
+
+#: src/extensions/languages.md:212
+msgid ""
+"```scheme\n"
+"(fenced_code_block\n"
+"  (info_string\n"
+"    (language) @injection.language)\n"
+"  (code_fence_content) @injection.content)\n"
+"\n"
+"((inline) @content\n"
+" (#set! injection.language \"markdown-inline\"))\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:222
+msgid ""
+"This query identifies fenced code blocks, capturing the language specified "
+"in the info string and the content within the block. It also captures inline "
+"content and sets its language to \"markdown-inline\"."
+msgstr ""
+
+#: src/extensions/languages.md:226
+msgid "@injection.language"
+msgstr ""
+
+#: src/extensions/languages.md:226
+msgid "Captures the language identifier for a code block"
+msgstr ""
+
+#: src/extensions/languages.md:227
+msgid "@injection.content"
+msgstr ""
+
+#: src/extensions/languages.md:227
+msgid "Captures the content to be treated as a different language"
+msgstr ""
+
+#: src/extensions/languages.md:229
+msgid ""
+"Note that we couldn't use JSON as an example here because it doesn't support "
+"language injections."
+msgstr ""
+
+#: src/extensions/languages.md:233
+msgid ""
+"The `overrides.scm` file defines syntactic _scopes_ that can be used to "
+"override certain editor settings within specific language constructs."
+msgstr ""
+
+#: src/extensions/languages.md:235
+msgid ""
+"For example, there is a language-specific setting called `word_characters` "
+"that controls which non-alphabetic characters are considered part of a word, "
+"for example when you double click to select a variable. In JavaScript, \"$\" "
+"and \"#\" are considered word characters."
+msgstr ""
+
+#: src/extensions/languages.md:237
+msgid ""
+"There is also a language-specific setting called "
+"`completion_query_characters` that controls which characters trigger "
+"autocomplete suggestions. In JavaScript, when your cursor is within a "
+"_string_, \"-\" is should be considered a completion query character. To "
+"achieve this, the JavaScript `overrides.scm` file contains the following "
+"pattern:"
+msgstr ""
+
+#: src/extensions/languages.md:246
+msgid "And the JavaScript `config.toml` contains this setting:"
+msgstr ""
+
+#: src/extensions/languages.md:248
+msgid ""
+"```toml\n"
+"word_characters = [\"#\", \"$\"]\n"
+"\n"
+"[overrides.string]\n"
+"completion_query_characters = [\"-\"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:255
+msgid ""
+"You can also disable certain auto-closing brackets in a specific scope. For "
+"example, to prevent auto-closing `'` within strings, you could put the "
+"following in the JavaScript `config.toml`:"
+msgstr ""
+
+#: src/extensions/languages.md:257
+msgid ""
+"```toml\n"
+"brackets = [\n"
+"  { start = \"'\", end = \"'\", close = true, newline = false, not_in = "
+"[\"string\"] },\n"
+"  # other pairs...\n"
+"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:264
+msgid "Range inclusivity"
+msgstr ""
+
+#: src/extensions/languages.md:266
+msgid ""
+"By default, the ranges defined in `overrides.scm` are _exclusive_. So in the "
+"case above, if you cursor was _outside_ the quotation marks delimiting the "
+"string, the `string` scope would not take effect. Sometimes, you may want to "
+"make the range _inclusive_. You can do this by adding the `.inclusive` "
+"suffix to the capture name in the query."
+msgstr ""
+
+#: src/extensions/languages.md:268
+msgid ""
+"For example, in JavaScript, we also disable auto-closing of single quotes "
+"within comments. And the comment scope must extend all the way to the "
+"newline after a line comment. To achieve this, the JavaScript `overrides."
+"scm` contains the following pattern:"
+msgstr ""
+
+#: src/extensions/languages.md:274
+msgid "Text objects"
+msgstr ""
+
+#: src/extensions/languages.md:276
+msgid ""
+"The `textobjects.scm` file defines rules for navigating by text objects. "
+"This was added in Zed v0.165 and is currently used only in Vim mode."
+msgstr ""
+
+#: src/extensions/languages.md:278
+msgid ""
+"Vim provides two levels of granularity for navigating around files. Section-"
+"by-section with `[]` etc., and method-by-method with `]m` etc. Even "
+"languages that don't support functions and classes can work well by defining "
+"similar concepts. For example CSS defines a rule-set as a method, and a "
+"media-query as a class."
+msgstr ""
+
+#: src/extensions/languages.md:280
+msgid ""
+"For languages with closures, these typically should not count as functions "
+"in Zed. This is best-effort however, as languages like JavaScript do not "
+"syntactically differentiate syntactically between closures and top-level "
+"function declarations."
+msgstr ""
+
+#: src/extensions/languages.md:282
+msgid ""
+"For languages with declarations like C, provide queries that match `@class."
+"around` or `@function.around`. The `if` and `ic` text objects will default "
+"to these if there is no inside."
+msgstr ""
+
+#: src/extensions/languages.md:284
+msgid ""
+"If you are not sure what to put in textobjects.scm, both [nvim-treesitter-"
+"textobjects](https://github.com/nvim-treesitter/nvim-treesitter-"
+"textobjects), and the [Helix editor](https://github.com/helix-editor/helix) "
+"have queries for many languages. You can refer to the Zed [built-in "
+"languages](https://github.com/zed-industries/zed/tree/main/crates/languages/"
+"src) to see how to adapt these."
+msgstr ""
+
+#: src/extensions/languages.md:286
+msgid "Vim mode"
+msgstr ""
+
+#: src/extensions/languages.md:288
+msgid "@function.around"
+msgstr ""
+
+#: src/extensions/languages.md:288
+msgid "An entire function definition or equivalent small section of a file."
+msgstr ""
+
+#: src/extensions/languages.md:288
+msgid "`[m`, `]m`, `[M`,`]M` motions. `af` text object"
+msgstr ""
+
+#: src/extensions/languages.md:289
+msgid "@function.inside"
+msgstr ""
+
+#: src/extensions/languages.md:289
+msgid "The function body (the stuff within the braces)."
+msgstr ""
+
+#: src/extensions/languages.md:289
+msgid "`if` text object"
+msgstr ""
+
+#: src/extensions/languages.md:290
+msgid "@class.around"
+msgstr ""
+
+#: src/extensions/languages.md:290
+msgid "An entire class definition or equivalent large section of a file."
+msgstr ""
+
+#: src/extensions/languages.md:290
+msgid "`[[`, `]]`, `[]`, `][` motions. `ac` text object"
+msgstr ""
+
+#: src/extensions/languages.md:291
+msgid "@class.inside"
+msgstr ""
+
+#: src/extensions/languages.md:291
+msgid "The contents of a class definition."
+msgstr ""
+
+#: src/extensions/languages.md:291
+msgid "`ic` text object"
+msgstr ""
+
+#: src/extensions/languages.md:292
+msgid "@comment.around"
+msgstr ""
+
+#: src/extensions/languages.md:292
+msgid "An entire comment (e.g. all adjacent line comments, or a block comment)"
+msgstr ""
+
+#: src/extensions/languages.md:292
+msgid "`gc` text object"
+msgstr ""
+
+#: src/extensions/languages.md:293
+msgid "@comment.inside"
+msgstr ""
+
+#: src/extensions/languages.md:293
+msgid "The contents of a comment"
+msgstr ""
+
+#: src/extensions/languages.md:293
+msgid "`igc` text object (rarely supported)"
+msgstr ""
+
+#: src/extensions/languages.md:295
+msgid "For example:"
+msgstr ""
+
+#: src/extensions/languages.md:297
+msgid ""
+"```scheme\n"
+"; include only the content of the method in the function\n"
+"(method_definition\n"
+"    body: (_\n"
+"        \"{\"\n"
+"        (_)* @function.inside\n"
+"        \"}\")) @function.around\n"
+"\n"
+"; match function.around for declarations with no body\n"
+"(function_signature_item) @function.around\n"
+"\n"
+"; join all adjacent comments into one\n"
+"(comment)+ @comment.around\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:314
+msgid ""
+"The `redactions.scm` file defines text redaction rules. When collaborating "
+"and sharing your screen, it makes sure that certain syntax nodes are "
+"rendered in a redacted mode to avoid them from leaking."
+msgstr ""
+
+#: src/extensions/languages.md:316
+msgid "Here's an example from a `redactions.scm` file for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:325
+msgid ""
+"This query marks number and string values in key-value pairs and arrays for "
+"redaction."
+msgstr ""
+
+#: src/extensions/languages.md:329
+msgid "@redact"
+msgstr ""
+
+#: src/extensions/languages.md:329
+msgid "Captures values to be redacted"
+msgstr ""
+
+#: src/extensions/languages.md:333
+msgid "The `runnables.scm` file defines rules for detecting runnable code."
+msgstr ""
+
+#: src/extensions/languages.md:335
+msgid "Here's an example from a `runnables.scm` file for JSON:"
+msgstr ""
+
+#: src/extensions/languages.md:337
+msgid ""
+"```scheme\n"
+"(\n"
+"    (document\n"
+"        (object\n"
+"            (pair\n"
+"                key: (string\n"
+"                    (string_content) @_name\n"
+"                    (#eq? @_name \"scripts\")\n"
+"                )\n"
+"                value: (object\n"
+"                    (pair\n"
+"                        key: (string (string_content) @run @script)\n"
+"                    )\n"
+"                )\n"
+"            )\n"
+"        )\n"
+"    )\n"
+"    (#set! tag package-script)\n"
+"    (#set! tag composer-script)\n"
+")\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:359
+msgid ""
+"This query detects runnable scripts in package.json and composer.json files."
+msgstr ""
+
+#: src/extensions/languages.md:361
+msgid ""
+"The `@run` capture specifies where the run button should appear in the "
+"editor. Other captures, except those prefixed with an underscore, are "
+"exposed as environment variables with a prefix of "
+"`ZED_CUSTOM_$(capture_name)` when running the code."
+msgstr ""
+
+#: src/extensions/languages.md:365
+msgid "@\\_name"
+msgstr ""
+
+#: src/extensions/languages.md:365
+msgid "Captures the \"scripts\" key"
+msgstr ""
+
+#: src/extensions/languages.md:366
+msgid "@run"
+msgstr ""
+
+#: src/extensions/languages.md:366
+msgid "Captures the script name"
+msgstr ""
+
+#: src/extensions/languages.md:367
+msgid "@script"
+msgstr ""
+
+#: src/extensions/languages.md:367
+msgid "Also captures the script name (for different purposes)"
+msgstr ""
+
+#: src/extensions/languages.md:373
+msgid "Language Servers"
+msgstr ""
+
+#: src/extensions/languages.md:375
+msgid ""
+"Zed uses the [Language Server Protocol](https://microsoft.github.io/language-"
+"server-protocol/) to provide advanced language support."
+msgstr ""
+
+#: src/extensions/languages.md:377
+msgid ""
+"An extension may provide any number of language servers. To provide a "
+"language server from your extension, add an entry to your `extension.toml` "
+"with the name of your language server and the language(s) it applies to. The "
+"entry in the list of `languages` has to match the `name` field from the "
+"`config.toml` file for that language:"
+msgstr ""
+
+#: src/extensions/languages.md:379
+msgid ""
+"```toml\n"
+"[language_servers.my-language-server]\n"
+"name = \"My Language LSP\"\n"
+"languages = [\"My Language\"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/languages.md:385
+msgid ""
+"Then, in the Rust code for your extension, implement the "
+"`language_server_command` method on your extension:"
+msgstr ""
+
+#: src/extensions/languages.md:403
+msgid ""
+"You can customize the handling of the language server using several optional "
+"methods in the `Extension` trait. For example, you can control how "
+"completions are styled using the `label_for_completion` method. For a "
+"complete list of methods, see the [API docs for the Zed extension API]"
+"(https://docs.rs/zed_extension_api)."
+msgstr ""
+
+#: src/extensions/languages.md:405
+msgid "Multi-Language Support"
+msgstr ""
+
+#: src/extensions/languages.md:407
+msgid ""
+"If your language server supports additional languages, you can use "
+"`language_ids` to map Zed `languages` to the desired [LSP-specific "
+"`languageId`](https://microsoft.github.io/language-server-protocol/"
+"specifications/lsp/3.17/specification/#textDocumentItem) identifiers:"
+msgstr ""
+
+#: src/extensions/languages.md:409
+msgid ""
+"```toml\n"
+"\n"
+"[language-servers.my-language-server]\n"
+"name = \"Whatever LSP\"\n"
+"languages = [\"JavaScript\", \"HTML\", \"CSS\"]\n"
+"\n"
+"[language-servers.my-language-server.language_ids]\n"
+"\"JavaScript\" = \"javascript\"\n"
+"\"TSX\" = \"typescriptreact\"\n"
+"\"HTML\" = \"html\"\n"
+"\"CSS\" = \"css\"\n"
+"```"
+msgstr ""

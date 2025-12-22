@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/plans-and-usage.md:1
+msgid "Plans and Usage"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:3
+msgid "Available Plans"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:5
+msgid ""
+"For costs and more information on pricing, visit [Zed’s pricing page]"
+"(https://zed.dev/pricing)."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:7
+msgid ""
+"Please note that if you’re interested in just using Zed as the world’s "
+"fastest editor, with no AI or subscription features, you can always do so "
+"for free, without [authentication](../authentication.md)."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:9
+msgid "Usage"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:11
+msgid ""
+"Usage of Zed's hosted models is measured on a token basis, converted to "
+"dollars at the rates lists on [the Models page](./models.md) (list price "
+"from the provider, +10%)."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:13
+msgid ""
+"Zed Pro comes with $5 of monthly dollar credit. A trial of Zed Pro includes "
+"$20 of credit, usable for 14 days. Monthly included credit resets on your "
+"monthly billing date."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:15
+msgid ""
+"To view your current usage, you can visit your account at [dashboard.zed.dev/"
+"account](https://dashboard.zed.dev/account). Information from our metering "
+"and billing provider, Orb, is embedded on that page."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:17
+msgid "Spend Limits"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:19
+msgid ""
+"At the top of [the Account page](https://dashboard.zed.dev/account), you'll "
+"find an input for `Maximum Token Spend`. The dollar amount here specifies "
+"your _monthly_ limit for spend on tokens, _not counting_ the $5/month "
+"included with your Pro subscription."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:21
+msgid ""
+"The default value for all Pro users is $10, for a total monthly spend with "
+"Zed of $20 ($10 for your Pro subscription, $10 in incremental token spend). "
+"This can be set to $0 to limit your spend with Zed to exactly $10/month. If "
+"you adjust this limit _higher_ than $10 and consume more than $10 of "
+"incremental token spend, you'll be billed via [threshold billing](./billing."
+"md#threshold-billing)."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:23
+msgid ""
+"Once the spend limit is hit, we’ll stop any further usage until your token "
+"spend limit resets."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:25
+msgid "Business Usage"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:27
+msgid ""
+"Email [sales@zed.dev](mailto:sales@zed.dev) with any questions on business "
+"plans."
+msgstr ""
+
+#: src/ai/plans-and-usage.md:29
+msgid "Trials"
+msgstr ""
+
+#: src/ai/plans-and-usage.md:31
+msgid ""
+"Note that trials will automatically convert to Zed Free plans on "
+"termination, and no cancellation is needed to prevent conversion to Zed Pro."
+msgstr ""

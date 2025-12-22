@@ -1,0 +1,1453 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/migrate/pycharm.md:1
+msgid "How to Migrate from PyCharm to Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:3
+msgid ""
+"This guide covers how to set up Zed if you're coming from PyCharm, including "
+"keybindings, settings, and the differences you should expect."
+msgstr ""
+
+#: src/migrate/pycharm.md:5
+msgid "Install Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:7
+msgid "Zed is available on macOS, Windows, and Linux."
+msgstr ""
+
+#: src/migrate/pycharm.md:9
+msgid ""
+"For macOS, you can download it from zed.dev/download, or install via "
+"Homebrew:"
+msgstr ""
+
+#: src/migrate/pycharm.md:15
+msgid ""
+"For Windows, download the installer from zed.dev/download, or install via "
+"winget:"
+msgstr ""
+
+#: src/migrate/pycharm.md:21
+msgid ""
+"For most Linux users, the easiest way to install Zed is through our "
+"installation script:"
+msgstr ""
+
+#: src/migrate/pycharm.md:27
+msgid ""
+"After installation, you can launch Zed from your Applications folder "
+"(macOS), Start menu (Windows), or directly from the terminal using: `zed .` "
+"This opens the current directory in Zed."
+msgstr ""
+
+#: src/migrate/pycharm.md:31
+msgid "Set Up the JetBrains Keymap"
+msgstr ""
+
+#: src/migrate/pycharm.md:33
+msgid ""
+"If you're coming from PyCharm, the fastest way to feel at home is to use the "
+"JetBrains keymap. During onboarding, you can select it as your base keymap. "
+"If you missed that step, you can change it anytime:"
+msgstr ""
+
+#: src/migrate/pycharm.md:35 src/migrate/pycharm.md:369
+msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
+msgstr ""
+
+#: src/migrate/pycharm.md:36
+msgid "Search for `Base Keymap`"
+msgstr ""
+
+#: src/migrate/pycharm.md:37
+msgid "Select `JetBrains`"
+msgstr ""
+
+#: src/migrate/pycharm.md:39
+msgid "Or add this directly to your `settings.json`:"
+msgstr ""
+
+#: src/migrate/pycharm.md:43
+msgid "\"base_keymap\""
+msgstr ""
+
+#: src/migrate/pycharm.md:43
+msgid "\"JetBrains\""
+msgstr ""
+
+#: src/migrate/pycharm.md:47
+msgid ""
+"This maps familiar shortcuts like `Shift Shift` for Search Everywhere, "
+"`Cmd+O` for Go to Class, and `Cmd+Shift+A` for Find Action."
+msgstr ""
+
+#: src/migrate/pycharm.md:49
+msgid "Set Up Editor Preferences"
+msgstr ""
+
+#: src/migrate/pycharm.md:51
+msgid "You can configure settings manually in the Settings Editor."
+msgstr ""
+
+#: src/migrate/pycharm.md:53
+msgid "To edit your settings:"
+msgstr ""
+
+#: src/migrate/pycharm.md:55
+msgid "`Cmd+,` to open the Settings Editor."
+msgstr ""
+
+#: src/migrate/pycharm.md:56
+msgid "Run `zed: open settings` in the Command Palette."
+msgstr ""
+
+#: src/migrate/pycharm.md:58
+msgid "Settings PyCharm users typically configure first:"
+msgstr ""
+
+#: src/migrate/pycharm.md:60
+msgid "Zed Setting"
+msgstr ""
+
+#: src/migrate/pycharm.md:60
+msgid "What it does"
+msgstr ""
+
+#: src/migrate/pycharm.md:62
+msgid "`format_on_save`"
+msgstr ""
+
+#: src/migrate/pycharm.md:62
+msgid "Auto-format when saving. Set to `\"on\"` to enable."
+msgstr ""
+
+#: src/migrate/pycharm.md:63
+msgid "`soft_wrap`"
+msgstr ""
+
+#: src/migrate/pycharm.md:63
+msgid ""
+"Wrap long lines. Options: `\"none\"`, `\"editor_width\"`, "
+"`\"preferred_line_length\"`"
+msgstr ""
+
+#: src/migrate/pycharm.md:64
+msgid "`preferred_line_length`"
+msgstr ""
+
+#: src/migrate/pycharm.md:64
+msgid ""
+"Column width for wrapping and rulers. Default is 80, PEP 8 recommends 79."
+msgstr ""
+
+#: src/migrate/pycharm.md:65
+msgid "`inlay_hints`"
+msgstr ""
+
+#: src/migrate/pycharm.md:65
+msgid "Show parameter names and type hints inline, like PyCharm's hints."
+msgstr ""
+
+#: src/migrate/pycharm.md:66
+msgid "`relative_line_numbers`"
+msgstr ""
+
+#: src/migrate/pycharm.md:66
+msgid "Useful if you're coming from IdeaVim."
+msgstr ""
+
+#: src/migrate/pycharm.md:68
+msgid ""
+"Zed also supports per-project settings. Create a `.zed/settings.json` file "
+"in your project root to override global settings for that project, similar "
+"to how you might use `.idea` folders in PyCharm."
+msgstr ""
+
+#: src/migrate/pycharm.md:70
+msgid ""
+"**Tip:** If you're joining an existing project, check `format_on_save` "
+"before making your first commit. Otherwise you might accidentally reformat "
+"an entire file when you only meant to change one line."
+msgstr ""
+
+#: src/migrate/pycharm.md:72
+msgid "Open or Create a Project"
+msgstr ""
+
+#: src/migrate/pycharm.md:74
+msgid ""
+"After setup, press `Cmd+Shift+O` (with JetBrains keymap) to open a folder. "
+"This becomes your workspace in Zed. Unlike PyCharm, there's no project "
+"configuration wizard, no interpreter selection dialog, and no project "
+"structure setup required."
+msgstr ""
+
+#: src/migrate/pycharm.md:76
+msgid ""
+"To start a new project, create a directory using your terminal or file "
+"manager, then open it in Zed. The editor will treat that folder as the root "
+"of your project."
+msgstr ""
+
+#: src/migrate/pycharm.md:78
+msgid ""
+"You can also launch Zed from the terminal inside any folder with: `zed .`"
+msgstr ""
+
+#: src/migrate/pycharm.md:81
+msgid "Once inside a project:"
+msgstr ""
+
+#: src/migrate/pycharm.md:83
+msgid ""
+"Use `Cmd+Shift+O` or `Cmd+E` to jump between files quickly (like PyCharm's "
+"\"Recent Files\")"
+msgstr ""
+
+#: src/migrate/pycharm.md:84
+msgid ""
+"Use `Cmd+Shift+A` or `Shift Shift` to open the Command Palette (like "
+"PyCharm's \"Search Everywhere\")"
+msgstr ""
+
+#: src/migrate/pycharm.md:85
+msgid "Use `Cmd+O` to search for symbols (like PyCharm's \"Go to Symbol\")"
+msgstr ""
+
+#: src/migrate/pycharm.md:87
+msgid ""
+"Open buffers appear as tabs across the top. The sidebar shows your file tree "
+"and Git status. Toggle it with `Cmd+1` (just like PyCharm's Project tool "
+"window)."
+msgstr ""
+
+#: src/migrate/pycharm.md:89
+msgid "Differences in Keybindings"
+msgstr ""
+
+#: src/migrate/pycharm.md:91
+msgid ""
+"If you chose the JetBrains keymap during onboarding, most of your shortcuts "
+"should already feel familiar. Here's a quick reference for how Zed compares "
+"to PyCharm."
+msgstr ""
+
+#: src/migrate/pycharm.md:93
+msgid "Common Shared Keybindings"
+msgstr ""
+
+#: src/migrate/pycharm.md:95 src/migrate/pycharm.md:118
+#: src/migrate/pycharm.md:128
+msgid "Action"
+msgstr ""
+
+#: src/migrate/pycharm.md:95 src/migrate/pycharm.md:128
+msgid "Shortcut"
+msgstr ""
+
+#: src/migrate/pycharm.md:97
+msgid "Search Everywhere"
+msgstr ""
+
+#: src/migrate/pycharm.md:97
+msgid "`Shift Shift`"
+msgstr ""
+
+#: src/migrate/pycharm.md:98
+msgid "Find Action / Command Palette"
+msgstr ""
+
+#: src/migrate/pycharm.md:98
+msgid "`Cmd + Shift + A`"
+msgstr ""
+
+#: src/migrate/pycharm.md:99
+msgid "Go to File"
+msgstr ""
+
+#: src/migrate/pycharm.md:99
+msgid "`Cmd + Shift + O`"
+msgstr ""
+
+#: src/migrate/pycharm.md:100
+msgid "Go to Symbol"
+msgstr ""
+
+#: src/migrate/pycharm.md:100
+msgid "`Cmd + O`"
+msgstr ""
+
+#: src/migrate/pycharm.md:101
+msgid "Recent Files"
+msgstr ""
+
+#: src/migrate/pycharm.md:101
+msgid "`Cmd + E`"
+msgstr ""
+
+#: src/migrate/pycharm.md:102
+msgid "Go to Definition"
+msgstr ""
+
+#: src/migrate/pycharm.md:102
+msgid "`Cmd + B`"
+msgstr ""
+
+#: src/migrate/pycharm.md:103
+msgid "Find Usages"
+msgstr ""
+
+#: src/migrate/pycharm.md:103
+msgid "`Alt + F7`"
+msgstr ""
+
+#: src/migrate/pycharm.md:104
+msgid "Rename Symbol"
+msgstr ""
+
+#: src/migrate/pycharm.md:104
+msgid "`Shift + F6`"
+msgstr ""
+
+#: src/migrate/pycharm.md:105
+msgid "Reformat Code"
+msgstr ""
+
+#: src/migrate/pycharm.md:105
+msgid "`Cmd + Alt + L`"
+msgstr ""
+
+#: src/migrate/pycharm.md:106
+msgid "Toggle Project Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:106 src/migrate/pycharm.md:264
+msgid "`Cmd + 1`"
+msgstr ""
+
+#: src/migrate/pycharm.md:107
+msgid "Toggle Terminal"
+msgstr ""
+
+#: src/migrate/pycharm.md:107 src/migrate/pycharm.md:266
+msgid "`Alt + F12`"
+msgstr ""
+
+#: src/migrate/pycharm.md:108
+msgid "Duplicate Line"
+msgstr ""
+
+#: src/migrate/pycharm.md:108
+msgid "`Cmd + D`"
+msgstr ""
+
+#: src/migrate/pycharm.md:109
+msgid "Delete Line"
+msgstr ""
+
+#: src/migrate/pycharm.md:109
+msgid "`Cmd + Backspace`"
+msgstr ""
+
+#: src/migrate/pycharm.md:110
+msgid "Move Line Up/Down"
+msgstr ""
+
+#: src/migrate/pycharm.md:110
+msgid "`Shift + Alt + Up/Down`"
+msgstr ""
+
+#: src/migrate/pycharm.md:111
+msgid "Expand/Shrink Selection"
+msgstr ""
+
+#: src/migrate/pycharm.md:111
+msgid "`Alt + Up/Down`"
+msgstr ""
+
+#: src/migrate/pycharm.md:112
+msgid "Comment Line"
+msgstr ""
+
+#: src/migrate/pycharm.md:112
+msgid "`Cmd + /`"
+msgstr ""
+
+#: src/migrate/pycharm.md:113
+msgid "Go Back / Forward"
+msgstr ""
+
+#: src/migrate/pycharm.md:113
+msgid "`Cmd + [` / `Cmd + ]`"
+msgstr ""
+
+#: src/migrate/pycharm.md:114
+msgid "Toggle Breakpoint"
+msgstr ""
+
+#: src/migrate/pycharm.md:114
+msgid "`Ctrl + F8`"
+msgstr ""
+
+#: src/migrate/pycharm.md:116
+msgid "Different Keybindings (PyCharm → Zed)"
+msgstr ""
+
+#: src/migrate/pycharm.md:118
+msgid "PyCharm"
+msgstr ""
+
+#: src/migrate/pycharm.md:118
+msgid "Zed (JetBrains keymap)"
+msgstr ""
+
+#: src/migrate/pycharm.md:120
+msgid "File Structure"
+msgstr ""
+
+#: src/migrate/pycharm.md:120
+msgid "`Cmd + F12`"
+msgstr ""
+
+#: src/migrate/pycharm.md:120
+msgid "`Cmd + F12` (outline)"
+msgstr ""
+
+#: src/migrate/pycharm.md:121
+msgid "Navigate to Next Error"
+msgstr ""
+
+#: src/migrate/pycharm.md:121
+msgid "`F2`"
+msgstr ""
+
+#: src/migrate/pycharm.md:122
+msgid "Run"
+msgstr ""
+
+#: src/migrate/pycharm.md:122
+msgid "`Ctrl + R`"
+msgstr ""
+
+#: src/migrate/pycharm.md:122
+msgid "`Ctrl + Alt + R` (tasks)"
+msgstr ""
+
+#: src/migrate/pycharm.md:123
+msgid "Debug"
+msgstr ""
+
+#: src/migrate/pycharm.md:123
+msgid "`Ctrl + D`"
+msgstr ""
+
+#: src/migrate/pycharm.md:123
+msgid "`Alt + Shift + F9`"
+msgstr ""
+
+#: src/migrate/pycharm.md:124
+msgid "Stop"
+msgstr ""
+
+#: src/migrate/pycharm.md:124
+msgid "`Cmd + F2`"
+msgstr ""
+
+#: src/migrate/pycharm.md:124
+msgid "`Ctrl + F2`"
+msgstr ""
+
+#: src/migrate/pycharm.md:126
+msgid "Unique to Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:128
+msgid "Notes"
+msgstr ""
+
+#: src/migrate/pycharm.md:130
+msgid "Toggle Right Dock"
+msgstr ""
+
+#: src/migrate/pycharm.md:130
+msgid "`Cmd + R`"
+msgstr ""
+
+#: src/migrate/pycharm.md:130
+msgid "Assistant panel, notifications"
+msgstr ""
+
+#: src/migrate/pycharm.md:131
+msgid "Split Panes"
+msgstr ""
+
+#: src/migrate/pycharm.md:131
+msgid "`Cmd + K`, then arrow keys"
+msgstr ""
+
+#: src/migrate/pycharm.md:131
+msgid "Create splits in any direction"
+msgstr ""
+
+#: src/migrate/pycharm.md:133
+msgid "How to Customize Keybindings"
+msgstr ""
+
+#: src/migrate/pycharm.md:135
+msgid "Open the Command Palette (`Cmd+Shift+A` or `Shift Shift`)"
+msgstr ""
+
+#: src/migrate/pycharm.md:136
+msgid "Run `Zed: Open Keymap Editor`"
+msgstr ""
+
+#: src/migrate/pycharm.md:138
+msgid ""
+"This opens a list of all available bindings. You can override individual "
+"shortcuts or remove conflicts."
+msgstr ""
+
+#: src/migrate/pycharm.md:140
+msgid "Zed also supports key sequences (multi-key shortcuts)."
+msgstr ""
+
+#: src/migrate/pycharm.md:142
+msgid "Differences in User Interfaces"
+msgstr ""
+
+#: src/migrate/pycharm.md:144
+msgid "No Indexing"
+msgstr ""
+
+#: src/migrate/pycharm.md:146
+msgid ""
+"If you've used PyCharm on large projects, you know the wait: \"Indexing...\" "
+"can take anywhere from 30 seconds to several minutes depending on project "
+"size and dependencies. PyCharm builds a comprehensive index of your entire "
+"codebase to power its code intelligence, and it re-indexes when dependencies "
+"change or when you install new packages."
+msgstr ""
+
+#: src/migrate/pycharm.md:148
+msgid ""
+"Zed doesn't index. You open a folder and start working immediately. File "
+"search and navigation work instantly regardless of project size. For many "
+"PyCharm users, this alone is reason enough to switch—no more waiting, no "
+"more \"Indexing paused\" interruptions."
+msgstr ""
+
+#: src/migrate/pycharm.md:150
+msgid ""
+"PyCharm's index powers features like finding all usages across your entire "
+"codebase, understanding class hierarchies, and detecting unused imports "
+"project-wide. Zed delegates this work to language servers, which may not "
+"analyze as deeply or as broadly."
+msgstr ""
+
+#: src/migrate/pycharm.md:152 src/migrate/pycharm.md:179
+#: src/migrate/pycharm.md:197 src/migrate/pycharm.md:219
+#: src/migrate/pycharm.md:250
+msgid "**How to adapt:**"
+msgstr ""
+
+#: src/migrate/pycharm.md:154
+msgid ""
+"For project-wide symbol search, use `Cmd+O` / Go to Symbol (relies on your "
+"language server)"
+msgstr ""
+
+#: src/migrate/pycharm.md:155
+msgid "For finding files by name, use `Cmd+Shift+O` / Go to File"
+msgstr ""
+
+#: src/migrate/pycharm.md:156
+msgid ""
+"For text search across files, use `Cmd+Shift+F`—this is fast even on large "
+"codebases"
+msgstr ""
+
+#: src/migrate/pycharm.md:157
+msgid ""
+"For deep static analysis, consider running tools like `mypy`, `pylint`, or "
+"`ruff check` from the terminal"
+msgstr ""
+
+#: src/migrate/pycharm.md:159
+msgid "LSP vs. Native Language Intelligence"
+msgstr ""
+
+#: src/migrate/pycharm.md:161
+msgid ""
+"PyCharm has its own language analysis engine built specifically for Python. "
+"This engine understands your code deeply: it resolves types without "
+"annotations, tracks data flow, knows about Django models and Flask routes, "
+"and offers specialized refactorings."
+msgstr ""
+
+#: src/migrate/pycharm.md:163
+msgid ""
+"Zed uses the Language Server Protocol (LSP) for code intelligence. For "
+"Python, Zed provides several language servers out of the box:"
+msgstr ""
+
+#: src/migrate/pycharm.md:165
+msgid "**basedpyright** (default) — Fast type checking and completions"
+msgstr ""
+
+#: src/migrate/pycharm.md:166
+msgid "**Ruff** (default) — Linting and formatting"
+msgstr ""
+
+#: src/migrate/pycharm.md:167
+msgid "**Ty** — Up-and-coming language server from Astral, built for speed"
+msgstr ""
+
+#: src/migrate/pycharm.md:168
+msgid "**Pyright** — Microsoft's type checker"
+msgstr ""
+
+#: src/migrate/pycharm.md:169
+msgid "**PyLSP** — Plugin-based server with tool integrations"
+msgstr ""
+
+#: src/migrate/pycharm.md:171
+msgid ""
+"The LSP experience for Python is strong. basedpyright provides accurate "
+"completions, type checking, and navigation. Ruff handles formatting and "
+"linting with excellent performance."
+msgstr ""
+
+#: src/migrate/pycharm.md:173
+msgid "Where you might notice differences:"
+msgstr ""
+
+#: src/migrate/pycharm.md:175
+msgid ""
+"Framework-specific intelligence (Django ORM, Flask routes) isn't built-in"
+msgstr ""
+
+#: src/migrate/pycharm.md:176
+msgid ""
+"Some complex refactorings (extract method with proper scope analysis) may be "
+"less sophisticated"
+msgstr ""
+
+#: src/migrate/pycharm.md:177
+msgid ""
+"Auto-import suggestions depend on what the language server knows about your "
+"environment"
+msgstr ""
+
+#: src/migrate/pycharm.md:181
+msgid ""
+"Use `Alt+Enter` for available code actions—the list will vary by language "
+"server"
+msgstr ""
+
+#: src/migrate/pycharm.md:182
+msgid ""
+"Ensure your virtual environment is selected so the language server can "
+"resolve your dependencies"
+msgstr ""
+
+#: src/migrate/pycharm.md:183
+msgid "Use Ruff for fast, consistent formatting (it's enabled by default)"
+msgstr ""
+
+#: src/migrate/pycharm.md:184
+msgid ""
+"For code inspection similar to PyCharm's \"Inspect Code,\" run `ruff check ."
+"` or check the Diagnostics panel (`Cmd+6`)—basedpyright and Ruff together "
+"catch many of the same issues"
+msgstr ""
+
+#: src/migrate/pycharm.md:186
+msgid "Virtual Environments and Interpreters"
+msgstr ""
+
+#: src/migrate/pycharm.md:188
+msgid ""
+"In PyCharm, you select a Python interpreter through a GUI, and PyCharm "
+"manages the connection between your project and that interpreter. It shows "
+"available packages, lets you install new ones, and keeps track of which "
+"environment each project uses."
+msgstr ""
+
+#: src/migrate/pycharm.md:190
+msgid "Zed handles virtual environments through its toolchain system:"
+msgstr ""
+
+#: src/migrate/pycharm.md:192
+msgid ""
+"Zed automatically discovers virtual environments in common locations (`."
+"venv`, `venv`, `.env`, `env`)"
+msgstr ""
+
+#: src/migrate/pycharm.md:193
+msgid "When a virtual environment is detected, the terminal auto-activates it"
+msgstr ""
+
+#: src/migrate/pycharm.md:194
+msgid ""
+"Language servers are automatically configured to use the discovered "
+"environment"
+msgstr ""
+
+#: src/migrate/pycharm.md:195
+msgid ""
+"You can manually select a toolchain if auto-detection picks the wrong one"
+msgstr ""
+
+#: src/migrate/pycharm.md:199
+msgid ""
+"Create your virtual environment with `python -m venv .venv` or `uv sync`"
+msgstr ""
+
+#: src/migrate/pycharm.md:200
+msgid "Open the folder in Zed—it will detect the environment automatically"
+msgstr ""
+
+#: src/migrate/pycharm.md:201
+msgid "If you need to switch environments, use the toolchain selector"
+msgstr ""
+
+#: src/migrate/pycharm.md:202
+msgid ""
+"For conda environments, ensure they're activated in your shell before "
+"launching Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:204
+msgid ""
+"**Tip:** If basedpyright shows import errors for packages you've installed, "
+"check that Zed has selected the correct virtual environment. Use the "
+"toolchain selector to verify or change the active environment."
+msgstr ""
+
+#: src/migrate/pycharm.md:206
+msgid "No Project Model"
+msgstr ""
+
+#: src/migrate/pycharm.md:208
+msgid ""
+"PyCharm manages projects through `.idea` folders containing XML "
+"configuration files, interpreter assignments, and run configurations. This "
+"model lets PyCharm remember your interpreter choice, manage dependencies "
+"through the UI, and persist complex run/debug setups."
+msgstr ""
+
+#: src/migrate/pycharm.md:210
+msgid ""
+"Zed has no project model. A project is a folder. There's no wizard, no "
+"interpreter selection screen, no project structure configuration."
+msgstr ""
+
+#: src/migrate/pycharm.md:212
+msgid "This means:"
+msgstr ""
+
+#: src/migrate/pycharm.md:214
+msgid ""
+"Run configurations don't exist. You define tasks or use the terminal. Your "
+"existing PyCharm run configs in `.idea/` won't be read—you'll recreate the "
+"ones you need in `tasks.json`."
+msgstr ""
+
+#: src/migrate/pycharm.md:215
+msgid ""
+"Interpreter management is external. Zed discovers environments but doesn't "
+"create them."
+msgstr ""
+
+#: src/migrate/pycharm.md:216
+msgid ""
+"Dependencies are managed through pip, uv, poetry, or conda—not through the "
+"editor."
+msgstr ""
+
+#: src/migrate/pycharm.md:217
+msgid ""
+"There's no Python Console (interactive REPL) panel. Use `python` or "
+"`ipython` in the terminal instead."
+msgstr ""
+
+#: src/migrate/pycharm.md:221
+msgid ""
+"Create a `.zed/settings.json` in your project root for project-specific "
+"settings"
+msgstr ""
+
+#: src/migrate/pycharm.md:222
+msgid ""
+"Define common commands in `tasks.json` (open via Command Palette: `zed: open "
+"tasks`):"
+msgstr ""
+
+#: src/migrate/pycharm.md:227 src/migrate/pycharm.md:231
+#: src/migrate/pycharm.md:235 src/migrate/pycharm.md:294
+#: src/migrate/pycharm.md:300
+msgid "\"label\""
+msgstr ""
+
+#: src/migrate/pycharm.md:227 src/migrate/pycharm.md:304
+msgid "\"run\""
+msgstr ""
+
+#: src/migrate/pycharm.md:228 src/migrate/pycharm.md:232
+#: src/migrate/pycharm.md:236
+msgid "\"command\""
+msgstr ""
+
+#: src/migrate/pycharm.md:228
+msgid "\"python main.py\""
+msgstr ""
+
+#: src/migrate/pycharm.md:231
+msgid "\"test\""
+msgstr ""
+
+#: src/migrate/pycharm.md:232
+msgid "\"pytest\""
+msgstr ""
+
+#: src/migrate/pycharm.md:235
+msgid "\"test current file\""
+msgstr ""
+
+#: src/migrate/pycharm.md:236
+msgid "\"pytest $ZED_FILE\""
+msgstr ""
+
+#: src/migrate/pycharm.md:241
+msgid "Use `Ctrl+Alt+R` to run tasks quickly"
+msgstr ""
+
+#: src/migrate/pycharm.md:242
+msgid "Lean on your terminal (`Alt+F12`) for anything tasks don't cover"
+msgstr ""
+
+#: src/migrate/pycharm.md:244
+msgid "No Framework Integration"
+msgstr ""
+
+#: src/migrate/pycharm.md:246
+msgid ""
+"PyCharm Professional's value for web development comes largely from its "
+"framework integration. Django templates are understood and navigable. Flask "
+"routes are indexed. SQLAlchemy models get special treatment. Template "
+"variables autocomplete."
+msgstr ""
+
+#: src/migrate/pycharm.md:248
+msgid ""
+"Zed has none of this. The language server sees Python code as Python code—it "
+"doesn't understand that `@app.route` defines an endpoint or that a Django "
+"model class creates database tables."
+msgstr ""
+
+#: src/migrate/pycharm.md:252
+msgid ""
+"Use grep and file search liberally. `Cmd+Shift+F` with a regex can find "
+"route definitions, model classes, or template usages."
+msgstr ""
+
+#: src/migrate/pycharm.md:253
+msgid ""
+"Rely on your language server's \"find references\" (`Alt+F7`) for navigation—"
+"it works, just without framework context"
+msgstr ""
+
+#: src/migrate/pycharm.md:254
+msgid ""
+"Consider using framework-specific CLI tools (`python manage.py`, `flask "
+"routes`) from Zed's terminal"
+msgstr ""
+
+#: src/migrate/pycharm.md:256
+msgid ""
+"**Tip:** For database work, pick up a dedicated tool like DataGrip, DBeaver, "
+"or TablePlus. Many developers who switch to Zed keep DataGrip around "
+"specifically for SQL."
+msgstr ""
+
+#: src/migrate/pycharm.md:258
+msgid "Tool Windows vs. Docks"
+msgstr ""
+
+#: src/migrate/pycharm.md:260
+msgid ""
+"PyCharm organizes auxiliary views into numbered tool windows (Project = 1, "
+"Python Console = 4, Terminal = Alt+F12, etc.). Zed uses a similar concept "
+"called \"docks\":"
+msgstr ""
+
+#: src/migrate/pycharm.md:262
+msgid "PyCharm Tool Window"
+msgstr ""
+
+#: src/migrate/pycharm.md:262
+msgid "Zed Equivalent"
+msgstr ""
+
+#: src/migrate/pycharm.md:262
+msgid "Shortcut (JetBrains keymap)"
+msgstr ""
+
+#: src/migrate/pycharm.md:264
+msgid "Project (1)"
+msgstr ""
+
+#: src/migrate/pycharm.md:264
+msgid "Project Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:265
+msgid "Git (9 or Cmd+0)"
+msgstr ""
+
+#: src/migrate/pycharm.md:265
+msgid "Git Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:265
+msgid "`Cmd + 0`"
+msgstr ""
+
+#: src/migrate/pycharm.md:266
+msgid "Terminal (Alt+F12)"
+msgstr ""
+
+#: src/migrate/pycharm.md:266
+msgid "Terminal Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:267
+msgid "Structure (7)"
+msgstr ""
+
+#: src/migrate/pycharm.md:267
+msgid "Outline Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:267
+msgid "`Cmd + 7`"
+msgstr ""
+
+#: src/migrate/pycharm.md:268
+msgid "Problems (6)"
+msgstr ""
+
+#: src/migrate/pycharm.md:268
+msgid "Diagnostics"
+msgstr ""
+
+#: src/migrate/pycharm.md:268
+msgid "`Cmd + 6`"
+msgstr ""
+
+#: src/migrate/pycharm.md:269
+msgid "Debug (5)"
+msgstr ""
+
+#: src/migrate/pycharm.md:269
+msgid "Debug Panel"
+msgstr ""
+
+#: src/migrate/pycharm.md:269
+msgid "`Cmd + 5`"
+msgstr ""
+
+#: src/migrate/pycharm.md:271
+msgid ""
+"Zed has three dock positions: left, bottom, and right. Panels can be moved "
+"between docks by dragging or through settings."
+msgstr ""
+
+#: src/migrate/pycharm.md:273
+msgid "Debugging"
+msgstr ""
+
+#: src/migrate/pycharm.md:275
+msgid ""
+"Both PyCharm and Zed offer integrated debugging, but the experience differs:"
+msgstr ""
+
+#: src/migrate/pycharm.md:277
+msgid "Zed uses `debugpy` (the same debug adapter that VS Code uses)"
+msgstr ""
+
+#: src/migrate/pycharm.md:278
+msgid "Set breakpoints with `Ctrl+F8`"
+msgstr ""
+
+#: src/migrate/pycharm.md:279
+msgid ""
+"Start debugging with `Alt+Shift+F9` or press `F4` and select a debug target"
+msgstr ""
+
+#: src/migrate/pycharm.md:280
+msgid ""
+"Step through code with `F7` (step into), `F8` (step over), `Shift+F8` (step "
+"out)"
+msgstr ""
+
+#: src/migrate/pycharm.md:281
+msgid "Continue execution with `F9`"
+msgstr ""
+
+#: src/migrate/pycharm.md:283
+msgid ""
+"Zed can automatically detect debuggable entry points. Press `F4` to see "
+"available options, including:"
+msgstr ""
+
+#: src/migrate/pycharm.md:285
+msgid "Python scripts"
+msgstr ""
+
+#: src/migrate/pycharm.md:286
+msgid "Modules"
+msgstr ""
+
+#: src/migrate/pycharm.md:287
+msgid "pytest tests"
+msgstr ""
+
+#: src/migrate/pycharm.md:289
+msgid "For more control, create a `.zed/debug.json` file:"
+msgstr ""
+
+#: src/migrate/pycharm.md:294
+msgid "\"Debug Current File\""
+msgstr ""
+
+#: src/migrate/pycharm.md:295 src/migrate/pycharm.md:301
+msgid "\"adapter\""
+msgstr ""
+
+#: src/migrate/pycharm.md:295 src/migrate/pycharm.md:301
+msgid "\"Debugpy\""
+msgstr ""
+
+#: src/migrate/pycharm.md:296
+msgid "\"program\""
+msgstr ""
+
+#: src/migrate/pycharm.md:296
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/migrate/pycharm.md:297 src/migrate/pycharm.md:302
+msgid "\"request\""
+msgstr ""
+
+#: src/migrate/pycharm.md:297 src/migrate/pycharm.md:302
+msgid "\"launch\""
+msgstr ""
+
+#: src/migrate/pycharm.md:300
+msgid "\"Debug Flask App\""
+msgstr ""
+
+#: src/migrate/pycharm.md:303
+msgid "\"module\""
+msgstr ""
+
+#: src/migrate/pycharm.md:303
+msgid "\"flask\""
+msgstr ""
+
+#: src/migrate/pycharm.md:304
+msgid "\"args\""
+msgstr ""
+
+#: src/migrate/pycharm.md:304
+msgid "\"--debug\""
+msgstr ""
+
+#: src/migrate/pycharm.md:305 src/migrate/pycharm.md:409
+msgid "\"env\""
+msgstr ""
+
+#: src/migrate/pycharm.md:306
+msgid "\"FLASK_APP\""
+msgstr ""
+
+#: src/migrate/pycharm.md:306
+msgid "\"app.py\""
+msgstr ""
+
+#: src/migrate/pycharm.md:312
+msgid "Running Tests"
+msgstr ""
+
+#: src/migrate/pycharm.md:314
+msgid ""
+"PyCharm has a dedicated test runner with a visual interface showing pass/"
+"fail status for each test. Zed provides test running through:"
+msgstr ""
+
+#: src/migrate/pycharm.md:316
+msgid ""
+"**Gutter icons** — Click the play button next to test functions or classes"
+msgstr ""
+
+#: src/migrate/pycharm.md:317
+msgid "**Tasks** — Define pytest or unittest commands in `tasks.json`"
+msgstr ""
+
+#: src/migrate/pycharm.md:318
+msgid "**Terminal** — Run `pytest` directly"
+msgstr ""
+
+#: src/migrate/pycharm.md:320
+msgid ""
+"The test output appears in the terminal panel. For pytest, use `--tb=short` "
+"for concise tracebacks or `-v` for verbose output."
+msgstr ""
+
+#: src/migrate/pycharm.md:322
+msgid "Extensions vs. Plugins"
+msgstr ""
+
+#: src/migrate/pycharm.md:324
+msgid ""
+"PyCharm has a plugin ecosystem covering everything from additional language "
+"support to database tools to deployment integrations."
+msgstr ""
+
+#: src/migrate/pycharm.md:326
+msgid "Zed's extension ecosystem is smaller and more focused:"
+msgstr ""
+
+#: src/migrate/pycharm.md:328
+msgid "Language support and syntax highlighting"
+msgstr ""
+
+#: src/migrate/pycharm.md:329
+msgid "Themes"
+msgstr ""
+
+#: src/migrate/pycharm.md:330
+msgid "Slash commands for AI"
+msgstr ""
+
+#: src/migrate/pycharm.md:331
+msgid "Context servers"
+msgstr ""
+
+#: src/migrate/pycharm.md:333
+msgid "Several features that require plugins in PyCharm are built into Zed:"
+msgstr ""
+
+#: src/migrate/pycharm.md:335
+msgid "Real-time collaboration with voice chat"
+msgstr ""
+
+#: src/migrate/pycharm.md:336
+msgid "AI coding assistance"
+msgstr ""
+
+#: src/migrate/pycharm.md:337
+msgid "Built-in terminal"
+msgstr ""
+
+#: src/migrate/pycharm.md:338
+msgid "Task runner"
+msgstr ""
+
+#: src/migrate/pycharm.md:339
+msgid "LSP-based code intelligence"
+msgstr ""
+
+#: src/migrate/pycharm.md:340
+msgid "Ruff formatting and linting"
+msgstr ""
+
+#: src/migrate/pycharm.md:342
+msgid "What's Not in Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:344
+msgid ""
+"To set expectations clearly, here's what PyCharm offers that Zed doesn't "
+"have:"
+msgstr ""
+
+#: src/migrate/pycharm.md:346
+msgid ""
+"**Scientific Mode / Jupyter integration** — For notebooks and data science "
+"workflows, use JupyterLab or VS Code with the Jupyter extension alongside "
+"Zed for your Python editing"
+msgstr ""
+
+#: src/migrate/pycharm.md:347
+msgid "**Database tools** — Use DataGrip, DBeaver, or TablePlus"
+msgstr ""
+
+#: src/migrate/pycharm.md:348
+msgid "**Django/Flask template navigation** — Use file search and grep"
+msgstr ""
+
+#: src/migrate/pycharm.md:349
+msgid "**Visual package manager** — Use pip, uv, or poetry from the terminal"
+msgstr ""
+
+#: src/migrate/pycharm.md:350
+msgid ""
+"**Remote interpreters** — Zed has remote development, but it works "
+"differently"
+msgstr ""
+
+#: src/migrate/pycharm.md:351
+msgid ""
+"**Profiler integration** — Use cProfile, py-spy, or similar tools externally"
+msgstr ""
+
+#: src/migrate/pycharm.md:353
+msgid "Collaboration in Zed vs. PyCharm"
+msgstr ""
+
+#: src/migrate/pycharm.md:355
+msgid ""
+"PyCharm offers Code With Me as a separate plugin for collaboration. Zed has "
+"collaboration built into the core experience."
+msgstr ""
+
+#: src/migrate/pycharm.md:357
+msgid "Open the Collab Panel in the left dock"
+msgstr ""
+
+#: src/migrate/pycharm.md:358
+msgid ""
+"Create a channel and [invite your collaborators](https://zed.dev/docs/"
+"collaboration#inviting-a-collaborator) to join"
+msgstr ""
+
+#: src/migrate/pycharm.md:359
+msgid ""
+"[Share your screen or your codebase](https://zed.dev/docs/"
+"collaboration#share-a-project) directly"
+msgstr ""
+
+#: src/migrate/pycharm.md:361
+msgid ""
+"Once connected, you'll see each other's cursors, selections, and edits in "
+"real time. Voice chat is included. There's no need for separate tools or "
+"third-party logins."
+msgstr ""
+
+#: src/migrate/pycharm.md:363
+msgid "Using AI in Zed"
+msgstr ""
+
+#: src/migrate/pycharm.md:365
+msgid ""
+"If you're used to AI assistants in PyCharm (like GitHub Copilot or JetBrains "
+"AI Assistant), Zed offers similar capabilities with more flexibility."
+msgstr ""
+
+#: src/migrate/pycharm.md:367
+msgid "Configuring GitHub Copilot"
+msgstr ""
+
+#: src/migrate/pycharm.md:370
+msgid "Navigate to **AI → Edit Predictions**"
+msgstr ""
+
+#: src/migrate/pycharm.md:371
+msgid "Click **Configure** next to \"Configure Providers\""
+msgstr ""
+
+#: src/migrate/pycharm.md:372
+msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
+msgstr ""
+
+#: src/migrate/pycharm.md:374
+msgid ""
+"Once signed in, just start typing. Zed will offer suggestions inline for you "
+"to accept."
+msgstr ""
+
+#: src/migrate/pycharm.md:376
+msgid "Additional AI Options"
+msgstr ""
+
+#: src/migrate/pycharm.md:378
+msgid "To use other AI models in Zed, you have several options:"
+msgstr ""
+
+#: src/migrate/pycharm.md:380
+msgid ""
+"Use Zed's hosted models, with higher rate limits. Requires [authentication]"
+"(https://zed.dev/docs/accounts.html) and subscription to [Zed Pro](https://"
+"zed.dev/docs/ai/subscription.html)."
+msgstr ""
+
+#: src/migrate/pycharm.md:381
+msgid ""
+"Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
+"authentication needed"
+msgstr ""
+
+#: src/migrate/pycharm.md:382
+msgid ""
+"Use [external agents like Claude Code](https://zed.dev/docs/ai/external-"
+"agents.html)"
+msgstr ""
+
+#: src/migrate/pycharm.md:384
+msgid "Advanced Config and Productivity Tweaks"
+msgstr ""
+
+#: src/migrate/pycharm.md:386
+msgid ""
+"Zed exposes advanced settings for power users who want to fine-tune their "
+"environment."
+msgstr ""
+
+#: src/migrate/pycharm.md:388
+msgid "Here are a few useful tweaks:"
+msgstr ""
+
+#: src/migrate/pycharm.md:390
+msgid "**Format on Save:**"
+msgstr ""
+
+#: src/migrate/pycharm.md:393
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/migrate/pycharm.md:393 src/migrate/pycharm.md:408
+msgid "\"on\""
+msgstr ""
+
+#: src/migrate/pycharm.md:396
+msgid "**Enable direnv support (useful for Python projects using direnv):**"
+msgstr ""
+
+#: src/migrate/pycharm.md:399
+msgid "\"load_direnv\""
+msgstr ""
+
+#: src/migrate/pycharm.md:399
+msgid "\"shell_hook\""
+msgstr ""
+
+#: src/migrate/pycharm.md:402
+msgid "**Customize virtual environment detection:**"
+msgstr ""
+
+#: src/migrate/pycharm.md:406
+msgid "\"terminal\""
+msgstr ""
+
+#: src/migrate/pycharm.md:407
+msgid "\"detect_venv\""
+msgstr ""
+
+#: src/migrate/pycharm.md:409
+msgid "\"directories\""
+msgstr ""
+
+#: src/migrate/pycharm.md:409
+msgid "\".venv\""
+msgstr ""
+
+#: src/migrate/pycharm.md:409
+msgid "\"venv\""
+msgstr ""
+
+#: src/migrate/pycharm.md:409
+msgid "\".env\""
+msgstr ""
+
+#: src/migrate/pycharm.md:410
+msgid "\"activate_script\""
+msgstr ""
+
+#: src/migrate/pycharm.md:410
+msgid "\"default\""
+msgstr ""
+
+#: src/migrate/pycharm.md:417
+msgid "**Configure basedpyright type checking strictness:**"
+msgstr ""
+
+#: src/migrate/pycharm.md:419
+msgid ""
+"If you find basedpyright too strict or too lenient, configure it in your "
+"project's `pyrightconfig.json`:"
+msgstr ""
+
+#: src/migrate/pycharm.md:423
+msgid "\"typeCheckingMode\""
+msgstr ""
+
+#: src/migrate/pycharm.md:423
+msgid "\"basic\""
+msgstr ""
+
+#: src/migrate/pycharm.md:427
+msgid ""
+"Options are `\"off\"`, `\"basic\"`, `\"standard\"` (default), `\"strict\"`, "
+"or `\"all\"`."
+msgstr ""
+
+#: src/migrate/pycharm.md:429
+msgid "Next Steps"
+msgstr ""
+
+#: src/migrate/pycharm.md:431
+msgid ""
+"Now that you're set up, here are some resources to help you get the most out "
+"of Zed:"
+msgstr ""
+
+#: src/migrate/pycharm.md:433
+msgid ""
+"[Configuring Zed](../configuring-zed.md) — Customize settings, themes, and "
+"editor behavior"
+msgstr ""
+
+#: src/migrate/pycharm.md:434
+msgid ""
+"[Key Bindings](../key-bindings.md) — Learn how to customize and extend your "
+"keymap"
+msgstr ""
+
+#: src/migrate/pycharm.md:435
+msgid "[Tasks](../tasks.md) — Set up build and run commands for your projects"
+msgstr ""
+
+#: src/migrate/pycharm.md:436
+msgid ""
+"[AI Features](../ai/overview.md) — Explore Zed's AI capabilities beyond code "
+"completion"
+msgstr ""
+
+#: src/migrate/pycharm.md:437
+msgid ""
+"[Collaboration](../collaboration/overview.md) — Share your projects and code "
+"together in real time"
+msgstr ""
+
+#: src/migrate/pycharm.md:438
+msgid ""
+"[Python in Zed](../languages/python.md) — Python-specific setup and "
+"configuration"
+msgstr ""

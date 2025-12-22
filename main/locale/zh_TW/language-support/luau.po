@@ -1,0 +1,110 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/luau.md:1
+msgid "Luau"
+msgstr ""
+
+#: src/languages/luau.md:3
+msgid ""
+"[Luau](https://luau.org/) is a fast, small, safe, gradually typed, "
+"embeddable scripting language derived from Lua. Luau was developed by Roblox "
+"and is available under the MIT license."
+msgstr ""
+
+#: src/languages/luau.md:5
+msgid ""
+"Luau language support in Zed is provided by the community-maintained [Luau "
+"extension](https://github.com/4teapo/zed-luau). Report issues to: [https://"
+"github.com/4teapo/zed-luau/issues](https://github.com/4teapo/zed-luau/issues)"
+msgstr ""
+
+#: src/languages/luau.md:8
+msgid ""
+"Tree-sitter: [4teapo/tree-sitter-luau](https://github.com/4teapo/tree-sitter-"
+"luau)"
+msgstr ""
+
+#: src/languages/luau.md:9
+msgid ""
+"Language Server: [JohnnyMorganz/luau-lsp](https://github.com/JohnnyMorganz/"
+"luau-lsp)"
+msgstr ""
+
+#: src/languages/luau.md:11
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/luau.md:13
+msgid ""
+"Configuration instructions are available in the [Luau Zed Extension README]"
+"(https://github.com/4teapo/zed-luau)."
+msgstr ""
+
+#: src/languages/luau.md:15
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/luau.md:17
+msgid ""
+"To support automatically formatting your code, you can use [JohnnyMorganz/"
+"StyLua](https://github.com/JohnnyMorganz/StyLua), a Lua code formatter."
+msgstr ""
+
+#: src/languages/luau.md:19
+msgid "Install with:"
+msgstr ""
+
+#: src/languages/luau.md:22
+msgid "# macOS via Homebrew\n"
+msgstr ""
+
+#: src/languages/luau.md:23
+msgid "# Or via Cargo\n"
+msgstr ""
+
+#: src/languages/luau.md:28
+msgid "Then add the following to your Zed `settings.json`:"
+msgstr ""
+
+#: src/languages/luau.md:31
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/luau.md:32
+msgid "\"Luau\""
+msgstr ""
+
+#: src/languages/luau.md:33
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/luau.md:34
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/luau.md:35
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/luau.md:35
+msgid "\"stylua\""
+msgstr ""
+
+#: src/languages/luau.md:36
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/luau.md:36
+msgid "\"-\""
+msgstr ""

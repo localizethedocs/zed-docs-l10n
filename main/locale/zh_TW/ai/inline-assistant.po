@@ -1,0 +1,274 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/inline-assistant.md:1
+msgid "Inline Assistant"
+msgstr ""
+
+#: src/ai/inline-assistant.md:3
+msgid "Usage Overview"
+msgstr ""
+
+#: src/ai/inline-assistant.md:5
+msgid ""
+"Use <kbd class=\"keybinding\">ctrl-enter|ctrl-enter</kbd> to open the Inline "
+"Assistant nearly anywhere you can enter text: editors, text threads, the "
+"rules library, channel notes, and even within the terminal panel."
+msgstr ""
+
+#: src/ai/inline-assistant.md:7
+msgid ""
+"The Inline Assistant allows you to send the current selection (or the "
+"current line) to a language model and modify the selection with the language "
+"model's response."
+msgstr ""
+
+#: src/ai/inline-assistant.md:9
+msgid "Getting Started"
+msgstr ""
+
+#: src/ai/inline-assistant.md:11
+msgid ""
+"If you're using the Inline Assistant for the first time, you need to have at "
+"least one LLM provider or external agent configured. You can do that by:"
+msgstr ""
+
+#: src/ai/inline-assistant.md:14
+msgid ""
+"[subscribing to our Pro plan](https://zed.dev/pricing), so you have access "
+"to our hosted models"
+msgstr ""
+
+#: src/ai/inline-assistant.md:15
+msgid ""
+"[using your own API keys](./llm-providers.md#use-your-own-keys), either from "
+"model providers like Anthropic or model gateways like OpenRouter."
+msgstr ""
+
+#: src/ai/inline-assistant.md:17
+msgid ""
+"If you have already set up an LLM provider to interact with [the Agent Panel]"
+"(./agent-panel.md#getting-started), then that will also work for the Inline "
+"Assistant."
+msgstr ""
+
+#: src/ai/inline-assistant.md:19
+msgid ""
+"Unlike the Agent Panel, though, the only exception at the moment is "
+"[external agents](./external-agents.md). They currently can't be used for "
+"generating changes with the Inline Assistant."
+msgstr ""
+
+#: src/ai/inline-assistant.md:22
+msgid "Adding Context"
+msgstr ""
+
+#: src/ai/inline-assistant.md:24
+msgid ""
+"You can add context in the Inline Assistant the same way you can in [the "
+"Agent Panel](./agent-panel.md#adding-context):"
+msgstr ""
+
+#: src/ai/inline-assistant.md:26
+msgid "@-mention files, directories, past threads, rules, and symbols"
+msgstr ""
+
+#: src/ai/inline-assistant.md:27
+msgid "paste images that are copied on your clipboard"
+msgstr ""
+
+#: src/ai/inline-assistant.md:29
+msgid ""
+"Additionally, a useful pattern is to create a thread in the Agent Panel, and "
+"then mention it with `@thread` in the Inline Assistant to include it as "
+"context. That often serves as a way to more quickly iterate over a specific "
+"part of a change that happened in the context of a larger thread."
+msgstr ""
+
+#: src/ai/inline-assistant.md:32
+msgid "Parallel Generations"
+msgstr ""
+
+#: src/ai/inline-assistant.md:34
+msgid ""
+"There are two ways in which you can generate multiple changes at once with "
+"the Inline Assistant:"
+msgstr ""
+
+#: src/ai/inline-assistant.md:36
+msgid "Multiple Cursors"
+msgstr ""
+
+#: src/ai/inline-assistant.md:38
+msgid ""
+"If you have a multiple cursor selection and hit <kbd "
+"class=\"keybinding\">ctrl-enter|ctrl-enter</kbd>, you can shoot the same "
+"prompt for all cursor positions and get a change in all of them."
+msgstr ""
+
+#: src/ai/inline-assistant.md:40
+msgid ""
+"This is particularly useful when working on excerpts in [a multibuffer "
+"context](../multibuffers.md)."
+msgstr ""
+
+#: src/ai/inline-assistant.md:42
+msgid "Multiple Models"
+msgstr ""
+
+#: src/ai/inline-assistant.md:44
+msgid ""
+"You can use the Inline Assistant to send the same prompt to multiple models "
+"at once."
+msgstr ""
+
+#: src/ai/inline-assistant.md:46
+msgid ""
+"Here's how you can customize your `settings.json` to add this functionality:"
+msgstr ""
+
+#: src/ai/inline-assistant.md:50 src/ai/inline-assistant.md:74
+msgid "\"agent\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:51 src/ai/inline-assistant.md:75
+msgid "\"default_model\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:52 src/ai/inline-assistant.md:57
+#: src/ai/inline-assistant.md:76 src/ai/inline-assistant.md:81
+#: src/ai/inline-assistant.md:85
+msgid "\"provider\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:52 src/ai/inline-assistant.md:57
+#: src/ai/inline-assistant.md:76 src/ai/inline-assistant.md:81
+#: src/ai/inline-assistant.md:85
+msgid "\"zed.dev\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:53 src/ai/inline-assistant.md:58
+#: src/ai/inline-assistant.md:77 src/ai/inline-assistant.md:82
+#: src/ai/inline-assistant.md:86
+msgid "\"model\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:53 src/ai/inline-assistant.md:77
+msgid "\"claude-sonnet-4\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:55 src/ai/inline-assistant.md:79
+msgid "\"inline_alternatives\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:58 src/ai/inline-assistant.md:82
+msgid "\"gpt-4-mini\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:65
+msgid ""
+"When multiple models are configured, you'll see in the Inline Assistant UI "
+"buttons that allow you to cycle between outputs generated by each model."
+msgstr ""
+
+#: src/ai/inline-assistant.md:67
+msgid ""
+"The models you specify here are always used in _addition_ to your [default "
+"model](#default-model)."
+msgstr ""
+
+#: src/ai/inline-assistant.md:69
+msgid ""
+"For example, the following configuration will generate three outputs for "
+"every assist. One with Claude Sonnet 4 (the default model), another with "
+"GPT-5-mini, and another one with Gemini 2.5 Flash."
+msgstr ""
+
+#: src/ai/inline-assistant.md:86
+msgid "\"gemini-2.5-flash\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:93
+msgid "Inline Assistant vs. Edit Prediction"
+msgstr ""
+
+#: src/ai/inline-assistant.md:95
+msgid ""
+"Users often ask what's the difference between these two AI-powered features "
+"in Zed, particularly because both of them involve getting inline LLM code "
+"completions."
+msgstr ""
+
+#: src/ai/inline-assistant.md:97
+msgid "Here's how they are different:"
+msgstr ""
+
+#: src/ai/inline-assistant.md:99
+msgid ""
+"The Inline Assistant is more similar to the Agent Panel as in you're still "
+"writing a prompt yourself and crafting context. It works from within the "
+"buffer and is mostly centered around your selections."
+msgstr ""
+
+#: src/ai/inline-assistant.md:100
+msgid ""
+"[Edit Predictions](./edit-prediction.md) is an AI-powered completion "
+"mechanism that intelligently suggests what you likely want to add next, "
+"based on context automatically gathered from your previous edits, recently "
+"visited files, and more."
+msgstr ""
+
+#: src/ai/inline-assistant.md:102
+msgid ""
+"In summary, the key difference is that in the Inline Assistant, you're still "
+"manually prompting, whereas Edit Prediction will _automatically suggest_ "
+"edits to you."
+msgstr ""
+
+#: src/ai/inline-assistant.md:104
+msgid "Prefilling Prompts"
+msgstr ""
+
+#: src/ai/inline-assistant.md:106
+msgid ""
+"To create a custom keybinding that prefills a prompt, you can add the "
+"following format in your keymap:"
+msgstr ""
+
+#: src/ai/inline-assistant.md:111
+msgid "\"context\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:111
+msgid "\"Editor && mode == full\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:112
+msgid "\"bindings\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:113
+msgid "\"ctrl-shift-enter\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:114
+msgid "\"assistant::InlineAssist\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:115
+msgid "\"prompt\""
+msgstr ""
+
+#: src/ai/inline-assistant.md:115
+msgid "\"Build a snake game\""
+msgstr ""

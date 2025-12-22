@@ -1,0 +1,94 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/ocaml.md:1
+msgid "OCaml"
+msgstr ""
+
+#: src/languages/ocaml.md:3
+msgid ""
+"OCaml support is available through the [OCaml extension](https://github.com/"
+"zed-extensions/ocaml)."
+msgstr ""
+
+#: src/languages/ocaml.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-ocaml](https://github.com/tree-sitter/"
+"tree-sitter-ocaml)"
+msgstr ""
+
+#: src/languages/ocaml.md:6
+msgid "Language Server: [ocaml/ocaml-lsp](https://github.com/ocaml/ocaml-lsp)"
+msgstr ""
+
+#: src/languages/ocaml.md:8
+msgid "Setup Instructions"
+msgstr ""
+
+#: src/languages/ocaml.md:10
+msgid ""
+"If you have the development environment already setup, you can skip to "
+"[Launching Zed](#launching-zed)"
+msgstr ""
+
+#: src/languages/ocaml.md:12
+msgid "Using Opam"
+msgstr ""
+
+#: src/languages/ocaml.md:14
+msgid ""
+"Opam is the official package manager for OCaml and is highly recommended for "
+"getting started with OCaml. To get started using Opam, please follow the "
+"instructions provided [here](https://ocaml.org/install)."
+msgstr ""
+
+#: src/languages/ocaml.md:16
+msgid ""
+"Once you install opam and setup a switch with your development environment "
+"as per the instructions, you can proceed."
+msgstr ""
+
+#: src/languages/ocaml.md:18
+msgid "Launching Zed"
+msgstr ""
+
+#: src/languages/ocaml.md:20
+msgid ""
+"By now you should have `ocamllsp` installed, you can verify so by running"
+msgstr ""
+
+#: src/languages/ocaml.md:26
+msgid ""
+"in your terminal. If you get a help message, you're good to go. If not, "
+"please revisit the installation instructions for `ocamllsp` and ensure it's "
+"properly installed."
+msgstr ""
+
+#: src/languages/ocaml.md:28
+msgid ""
+"With that aside, we can now launch Zed. Given how the OCaml package manager "
+"works, we require you to run Zed from the terminal, so please make sure you "
+"install the [Zed cli](https://zed.dev/features#cli) if you haven't already."
+msgstr ""
+
+#: src/languages/ocaml.md:30
+msgid ""
+"Once you have the cli, simply from a terminal, navigate to your project and "
+"run"
+msgstr ""
+
+#: src/languages/ocaml.md:36
+msgid ""
+"Voilà! You should have Zed running with OCaml support, no additional setup "
+"required."
+msgstr ""

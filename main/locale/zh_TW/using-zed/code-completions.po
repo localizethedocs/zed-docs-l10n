@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/completions.md:1
+msgid "Completions"
+msgstr ""
+
+#: src/completions.md:3
+msgid "Zed supports two sources for completions:"
+msgstr ""
+
+#: src/completions.md:5
+msgid ""
+"\"Code Completions\" provided by Language Servers (LSPs) automatically "
+"installed by Zed or via [Zed Language Extensions](languages.md)."
+msgstr ""
+
+#: src/completions.md:6
+msgid ""
+"\"Edit Predictions\" provided by Zed's own Zeta model or by external "
+"providers like [GitHub Copilot](#github-copilot) or [Supermaven]"
+"(#supermaven)."
+msgstr ""
+
+#: src/completions.md:8
+msgid "Language Server Code Completions"
+msgstr ""
+
+#: src/completions.md:10
+msgid ""
+"When there is an appropriate language server available, Zed will provide "
+"completions of variable names, functions, and other symbols in the current "
+"file. You can disable these by adding the following to your Zed `settings."
+"json` file:"
+msgstr ""
+
+#: src/completions.md:13
+msgid "\"show_completions_on_input\""
+msgstr ""
+
+#: src/completions.md:16
+msgid ""
+"You can manually trigger completions with `ctrl-space` or by triggering the "
+"`editor::ShowCompletions` action from the command palette."
+msgstr ""
+
+#: src/completions.md:18
+msgid ""
+"Note: Using `ctrl-space` in Zed requires disabling the macOS global "
+"shortcut. Open **System Settings** > **Keyboard** > **Keyboard Shortcut**s > "
+"**Input Sources** and uncheck **Select the previous input source**."
+msgstr ""
+
+#: src/completions.md:22
+msgid "For more information, see:"
+msgstr ""
+
+#: src/completions.md:24
+msgid "[Configuring Supported Languages](./configuring-languages.md)"
+msgstr ""
+
+#: src/completions.md:25
+msgid "[List of Zed Supported Languages](./languages.md)"
+msgstr ""
+
+#: src/completions.md:27
+msgid "Edit Predictions"
+msgstr ""
+
+#: src/completions.md:29
+msgid ""
+"Zed has built-in support for predicting multiple edits at a time [via Zeta]"
+"(https://huggingface.co/zed-industries/zeta), Zed's open-source and open-"
+"data model. Edit predictions appear as you type, and most of the time, you "
+"can accept them by pressing `tab`."
+msgstr ""
+
+#: src/completions.md:32
+msgid ""
+"See the [edit predictions documentation](./ai/edit-prediction.md) for more "
+"information on how to setup and configure Zed's edit predictions."
+msgstr ""

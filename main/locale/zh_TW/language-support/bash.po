@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/bash.md:1
+msgid "Bash"
+msgstr ""
+
+#: src/languages/bash.md:3
+msgid ""
+"Bash language support in Zed is provided by the community-maintained [Basher "
+"extension](https://github.com/d1y/bash.zed). Report issues to: [https://"
+"github.com/d1y/bash.zed/issues](https://github.com/d1y/bash.zed/issues)"
+msgstr ""
+
+#: src/languages/bash.md:6
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-bash](https://github.com/tree-sitter/"
+"tree-sitter-bash)"
+msgstr ""
+
+#: src/languages/bash.md:7
+msgid ""
+"Language Server: [bash-lsp/bash-language-server](https://github.com/bash-lsp/"
+"bash-language-server)"
+msgstr ""
+
+#: src/languages/bash.md:9
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/bash.md:11
+msgid ""
+"When `shellcheck` is available `bash-language-server` will use it internally "
+"to provide diagnostics."
+msgstr ""
+
+#: src/languages/bash.md:13
+msgid "Install `shellcheck`:"
+msgstr ""
+
+#: src/languages/bash.md:16
+msgid "# macOS (HomeBrew)\n"
+msgstr ""
+
+#: src/languages/bash.md:17
+msgid "# Ubuntu/Debian\n"
+msgstr ""
+
+#: src/languages/bash.md:18
+msgid "# ArchLinux\n"
+msgstr ""
+
+#: src/languages/bash.md:19
+msgid "# Fedora\n"
+msgstr ""
+
+#: src/languages/bash.md:20
+msgid "# CentOS/RHEL\n"
+msgstr ""
+
+#: src/languages/bash.md:21
+msgid "# openSUSE\n"
+msgstr ""
+
+#: src/languages/bash.md:22
+msgid "# Windows (Chocolatey)\n"
+msgstr ""
+
+#: src/languages/bash.md:25
+msgid "And verify it is available from your path:"
+msgstr ""
+
+#: src/languages/bash.md:32
+msgid ""
+"If you wish to customize the warnings/errors reported you just need to "
+"create a `.shellcheckrc` file. You can do this in the root of your project "
+"or in your home directory (`~/.shellcheckrc`). See: [shellcheck "
+"documentation](https://github.com/koalaman/shellcheck/wiki/Ignore#ignoring-"
+"one-or-more-types-of-errors-forever) for more."
+msgstr ""
+
+#: src/languages/bash.md:34
+msgid "See also:"
+msgstr ""
+
+#: src/languages/bash.md:36
+msgid "[Zed Docs: Language Support: Shell Scripts](./sh.md)"
+msgstr ""

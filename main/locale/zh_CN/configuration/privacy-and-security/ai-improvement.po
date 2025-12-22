@@ -1,0 +1,334 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/ai-improvement.md:1
+msgid "Zed AI Improvement"
+msgstr ""
+
+#: src/ai/ai-improvement.md:3
+msgid "Agent Panel"
+msgstr ""
+
+#: src/ai/ai-improvement.md:5
+msgid "Opt-In"
+msgstr ""
+
+#: src/ai/ai-improvement.md:7
+msgid "When you use the Agent Panel through any of these means:"
+msgstr ""
+
+#: src/ai/ai-improvement.md:9
+msgid "[Zed's hosted models](./subscription.md)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:10
+msgid "[connecting a non-Zed AI service via API key](./llm-providers.md)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:11
+msgid "using an [external agent](./external-agents.md)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:13
+msgid ""
+"Zed does not persistently store user content or use user content to evaluate "
+"and/or improve our AI features, unless it is explicitly shared with Zed. "
+"Each share is opt-in, and sharing once will not cause future content or data "
+"to be shared again."
+msgstr ""
+
+#: src/ai/ai-improvement.md:15
+msgid ""
+"Note that rating responses will send your data related to that response to "
+"Zed's servers. **_If you don't want data persisted on Zed's servers, don't "
+"rate_**. We will not collect data for improving our Agentic offering without "
+"you explicitly rating responses."
+msgstr ""
+
+#: src/ai/ai-improvement.md:18
+msgid ""
+"When using upstream services through Zed's hosted models, we require "
+"assurances from our service providers that your user content won't be used "
+"for training models."
+msgstr ""
+
+#: src/ai/ai-improvement.md:20
+msgid "Provider"
+msgstr ""
+
+#: src/ai/ai-improvement.md:20
+msgid "No Training Guarantee"
+msgstr ""
+
+#: src/ai/ai-improvement.md:20
+msgid "Zero-Data Retention (ZDR)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:22
+msgid "Anthropic"
+msgstr ""
+
+#: src/ai/ai-improvement.md:22
+msgid "[Yes](https://www.anthropic.com/legal/commercial-terms)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:22
+msgid ""
+"[Yes](https://privacy.anthropic.com/en/articles/8956058-i-have-a-zero-data-"
+"retention-agreement-with-anthropic-what-products-does-it-apply-to)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:23
+msgid "Google"
+msgstr ""
+
+#: src/ai/ai-improvement.md:23
+msgid "[Yes](https://cloud.google.com/terms/service-terms)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:23
+msgid ""
+"[Yes](https://cloud.google.com/terms/service-terms), see Service Terms "
+"sections 17 and 19h"
+msgstr ""
+
+#: src/ai/ai-improvement.md:24
+msgid "OpenAI"
+msgstr ""
+
+#: src/ai/ai-improvement.md:24
+msgid "[Yes](https://openai.com/enterprise-privacy/)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:24
+msgid "[Yes](https://platform.openai.com/docs/guides/your-data)"
+msgstr ""
+
+#: src/ai/ai-improvement.md:26
+msgid ""
+"When you use your own API keys or external agents, **Zed does not have "
+"control over how your data is used by that service provider.** You should "
+"reference your agreement with each service provider to understand what terms "
+"and conditions apply."
+msgstr ""
+
+#: src/ai/ai-improvement.md:29 src/ai/ai-improvement.md:90
+msgid "Data we collect"
+msgstr ""
+
+#: src/ai/ai-improvement.md:31
+msgid ""
+"For prompts you have explicitly shared with us, Zed may store copies of "
+"those prompts and other data about the specific use of the Agent Panel."
+msgstr ""
+
+#: src/ai/ai-improvement.md:33 src/ai/ai-improvement.md:94
+msgid "This data includes:"
+msgstr ""
+
+#: src/ai/ai-improvement.md:35
+msgid "The prompt given to the Agent"
+msgstr ""
+
+#: src/ai/ai-improvement.md:36
+msgid "Any commentary you include"
+msgstr ""
+
+#: src/ai/ai-improvement.md:37
+msgid "Product telemetry about the agentic thread"
+msgstr ""
+
+#: src/ai/ai-improvement.md:38
+msgid "Metadata about your Zed installation"
+msgstr ""
+
+#: src/ai/ai-improvement.md:40 src/ai/ai-improvement.md:102
+msgid "Data Handling"
+msgstr ""
+
+#: src/ai/ai-improvement.md:42
+msgid ""
+"Collected data is stored in Snowflake, a private database where we track "
+"other metrics. We periodically review this data to improve our overall "
+"agentic approach and refine the product via our system prompt, tool use, "
+"etc. We ensure any included data is anonymized and contains no sensitive "
+"information (access tokens, user IDs, email addresses, etc)."
+msgstr ""
+
+#: src/ai/ai-improvement.md:44
+msgid "Edit Predictions"
+msgstr ""
+
+#: src/ai/ai-improvement.md:46
+msgid ""
+"By default, when using Zed Edit Predictions, Zed does not persistently store "
+"user content or use user content for training of its models."
+msgstr ""
+
+#: src/ai/ai-improvement.md:48
+msgid "Opt-in"
+msgstr ""
+
+#: src/ai/ai-improvement.md:50
+msgid ""
+"Users who are working on open source licensed projects may optionally opt-in "
+"to providing model improvement feedback. This opt-in occurs on a per-project "
+"basis. If you work on multiple open source projects and wish to provide "
+"model improvement feedback you will have to opt-in for each individual "
+"project."
+msgstr ""
+
+#: src/ai/ai-improvement.md:52
+msgid ""
+"When working on other projects where you haven't opted-in, Zed will not "
+"persistently store user content or use user content for training of its "
+"models."
+msgstr ""
+
+#: src/ai/ai-improvement.md:54
+msgid ""
+"You can see exactly how Zed detects open source licenses in: "
+"[license_detection.rs](https://github.com/zed-industries/zed/blob/main/"
+"crates/zeta/src/license_detection.rs)."
+msgstr ""
+
+#: src/ai/ai-improvement.md:56
+msgid "Exclusions"
+msgstr ""
+
+#: src/ai/ai-improvement.md:58
+msgid ""
+"Zed will intentionally exclude certain files from Predictive Edits entirely, "
+"even when you have opted-in to model improvement feedback."
+msgstr ""
+
+#: src/ai/ai-improvement.md:60
+msgid ""
+"You can inspect this exclusion list by opening `zed: open default settings` "
+"from the command palette:"
+msgstr ""
+
+#: src/ai/ai-improvement.md:64 src/ai/ai-improvement.md:84
+msgid "\"edit_predictions\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:65
+msgid ""
+"// A list of globs representing files that edit predictions should be "
+"disabled for.\n"
+"    // There's a sensible default list of globs already included.\n"
+"    // Any addition to this list will be merged with the default list.\n"
+"    \"disabled_globs\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:69
+msgid "\"**/.env*\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:70
+msgid "\"**/*.pem\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:71
+msgid "\"**/*.key\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:72
+msgid "\"**/*.cert\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:73
+msgid "\"**/*.crt\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:74
+msgid "\"**/secrets.yml\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:80
+msgid ""
+"Users may explicitly exclude additional paths and/or file extensions by "
+"adding them to [`edit_predictions.disabled_globs`](https://zed.dev/docs/"
+"configuring-zed#edit-predictions) in their Zed settings.json:"
+msgstr ""
+
+#: src/ai/ai-improvement.md:85
+msgid "\"disabled_globs\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:85
+msgid "\"secret_dir/*\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:85
+msgid "\"**/*.log\""
+msgstr ""
+
+#: src/ai/ai-improvement.md:92
+msgid ""
+"For open source projects where you have opted-in, Zed may store copies of "
+"requests and responses to the Zed AI Prediction service."
+msgstr ""
+
+#: src/ai/ai-improvement.md:96
+msgid "the edit prediction"
+msgstr ""
+
+#: src/ai/ai-improvement.md:97
+msgid "a portion of the buffer content around the cursor"
+msgstr ""
+
+#: src/ai/ai-improvement.md:98
+msgid "a few recent edits"
+msgstr ""
+
+#: src/ai/ai-improvement.md:99
+msgid "the current buffer outline"
+msgstr ""
+
+#: src/ai/ai-improvement.md:100
+msgid "diagnostics (errors, warnings, etc) from language servers"
+msgstr ""
+
+#: src/ai/ai-improvement.md:104
+msgid ""
+"Collected data is stored in Snowflake, a private database where we track "
+"other metrics. We periodically review this data to select training samples "
+"for inclusion in our model training dataset. We ensure any included data is "
+"anonymized and contains no sensitive information (access tokens, user IDs, "
+"email addresses, etc). This training dataset is publicly available at "
+"[huggingface.co/datasets/zed-industries/zeta](https://huggingface.co/"
+"datasets/zed-industries/zeta)."
+msgstr ""
+
+#: src/ai/ai-improvement.md:106
+msgid "Model Output"
+msgstr ""
+
+#: src/ai/ai-improvement.md:108
+msgid ""
+"We then use this training dataset to fine-tune [Qwen2.5-Coder-7B](https://"
+"huggingface.co/Qwen/Qwen2.5-Coder-7B) and make the resulting model available "
+"at [huggingface.co/zed-industries/zeta](https://huggingface.co/zed-"
+"industries/zeta)."
+msgstr ""
+
+#: src/ai/ai-improvement.md:110
+msgid "Applicable terms"
+msgstr ""
+
+#: src/ai/ai-improvement.md:112
+msgid ""
+"Please see the [Zed Terms of Service](https://zed.dev/terms-of-service) for "
+"more."
+msgstr ""

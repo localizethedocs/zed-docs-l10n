@@ -1,0 +1,769 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/ruby.md:1
+msgid "Ruby"
+msgstr ""
+
+#: src/languages/ruby.md:3
+msgid ""
+"Ruby support is available through the [Ruby extension](https://github.com/"
+"zed-extensions/ruby)."
+msgstr ""
+
+#: src/languages/ruby.md:5
+msgid "Tree-sitters:"
+msgstr ""
+
+#: src/languages/ruby.md:6
+msgid "[tree-sitter-ruby](https://github.com/tree-sitter/tree-sitter-ruby)"
+msgstr ""
+
+#: src/languages/ruby.md:7
+msgid ""
+"[tree-sitter-embedded-template](https://github.com/tree-sitter/tree-sitter-"
+"embedded-template)"
+msgstr ""
+
+#: src/languages/ruby.md:8
+msgid "Language Servers:"
+msgstr ""
+
+#: src/languages/ruby.md:9 src/languages/ruby.md:22
+msgid "[ruby-lsp](https://github.com/Shopify/ruby-lsp)"
+msgstr ""
+
+#: src/languages/ruby.md:10 src/languages/ruby.md:21
+msgid "[solargraph](https://github.com/castwide/solargraph)"
+msgstr ""
+
+#: src/languages/ruby.md:11
+msgid "[rubocop](https://github.com/rubocop/rubocop)"
+msgstr ""
+
+#: src/languages/ruby.md:12
+msgid "[Herb](https://herb-tools.dev)"
+msgstr ""
+
+#: src/languages/ruby.md:13
+msgid "Debug Adapter: [`rdbg`](https://github.com/ruby/debug)"
+msgstr ""
+
+#: src/languages/ruby.md:15
+msgid "The Ruby extension also provides support for ERB files."
+msgstr ""
+
+#: src/languages/ruby.md:17
+msgid "Language Servers"
+msgstr ""
+
+#: src/languages/ruby.md:19
+msgid ""
+"There are multiple language servers available for Ruby. Zed supports the two "
+"following:"
+msgstr ""
+
+#: src/languages/ruby.md:24
+msgid ""
+"They both have an overlapping feature set of autocomplete, diagnostics, code "
+"actions, etc. and it's up to you to decide which one you want to use. Note "
+"that you can't use both at the same time."
+msgstr ""
+
+#: src/languages/ruby.md:26
+msgid "In addition to these two language servers, Zed also supports:"
+msgstr ""
+
+#: src/languages/ruby.md:28
+msgid ""
+"[rubocop](https://github.com/rubocop/rubocop) which is a static code "
+"analyzer and linter for Ruby. Under the hood, it's also used by Zed as a "
+"language server, but its functionality is complimentary to that of "
+"solargraph and ruby-lsp."
+msgstr ""
+
+#: src/languages/ruby.md:29
+msgid ""
+"[sorbet](https://sorbet.org/) which is a static type checker for Ruby with a "
+"custom gradual type system."
+msgstr ""
+
+#: src/languages/ruby.md:30
+msgid ""
+"[steep](https://github.com/soutaro/steep) which is a static type checker for "
+"Ruby that leverages Ruby Signature (RBS)."
+msgstr ""
+
+#: src/languages/ruby.md:31
+msgid ""
+"[Herb](https://herb-tools.dev) which is a language server for ERB files."
+msgstr ""
+
+#: src/languages/ruby.md:33
+msgid ""
+"When configuring a language server, it helps to open the LSP Logs window "
+"using the 'dev: Open Language Server Logs' command. You can then choose the "
+"corresponding language instance to see any logged information."
+msgstr ""
+
+#: src/languages/ruby.md:35
+msgid "Configuring a language server"
+msgstr ""
+
+#: src/languages/ruby.md:37
+msgid ""
+"The [Ruby extension](https://github.com/zed-extensions/ruby) offers both "
+"`solargraph` and `ruby-lsp` language server support."
+msgstr ""
+
+#: src/languages/ruby.md:39
+msgid "Language Server Activation"
+msgstr ""
+
+#: src/languages/ruby.md:41
+msgid ""
+"For all supported Ruby language servers (`solargraph`, `ruby-lsp`, "
+"`rubocop`, `sorbet`, and `steep`), the Ruby extension follows this "
+"activation sequence:"
+msgstr ""
+
+#: src/languages/ruby.md:43
+msgid ""
+"If the language server is found in your project's `Gemfile`, it will be used "
+"through `bundle exec`."
+msgstr ""
+
+#: src/languages/ruby.md:44
+msgid ""
+"If not found in the `Gemfile`, the Ruby extension will look for the "
+"executable in your system `PATH`."
+msgstr ""
+
+#: src/languages/ruby.md:45
+msgid ""
+"If the language server is not found in either location, the Ruby extension "
+"will automatically install it as a global gem (note: this will not install "
+"to your current Ruby gemset)."
+msgstr ""
+
+#: src/languages/ruby.md:47
+msgid ""
+"You can skip step 1 and force using the system executable by setting "
+"`use_bundler` to `false` in your settings:"
+msgstr ""
+
+#: src/languages/ruby.md:51 src/languages/ruby.md:127 src/languages/ruby.md:153
+#: src/languages/ruby.md:169 src/languages/ruby.md:192
+#: src/languages/ruby.md:265
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/ruby.md:52
+msgid "\"<SERVER_NAME>\""
+msgstr ""
+
+#: src/languages/ruby.md:53 src/languages/ruby.md:267
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/ruby.md:54
+msgid "\"use_bundler\""
+msgstr ""
+
+#: src/languages/ruby.md:61
+msgid "Using `solargraph`"
+msgstr ""
+
+#: src/languages/ruby.md:63
+msgid "`solargraph` is enabled by default in the Ruby extension."
+msgstr ""
+
+#: src/languages/ruby.md:65
+msgid "Using `ruby-lsp`"
+msgstr ""
+
+#: src/languages/ruby.md:67
+msgid "To switch to `ruby-lsp`, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:71 src/languages/ruby.md:101 src/languages/ruby.md:113
+#: src/languages/ruby.md:148 src/languages/ruby.md:186
+#: src/languages/ruby.md:217 src/languages/ruby.md:241
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/ruby.md:72 src/languages/ruby.md:102 src/languages/ruby.md:114
+#: src/languages/ruby.md:149 src/languages/ruby.md:187
+#: src/languages/ruby.md:218 src/languages/ruby.md:242
+msgid "\"Ruby\""
+msgstr ""
+
+#: src/languages/ruby.md:73 src/languages/ruby.md:77 src/languages/ruby.md:81
+#: src/languages/ruby.md:85 src/languages/ruby.md:103 src/languages/ruby.md:115
+#: src/languages/ruby.md:150 src/languages/ruby.md:219
+#: src/languages/ruby.md:243
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/ruby.md:73 src/languages/ruby.md:77 src/languages/ruby.md:81
+#: src/languages/ruby.md:85 src/languages/ruby.md:103 src/languages/ruby.md:150
+#: src/languages/ruby.md:154 src/languages/ruby.md:170
+#: src/languages/ruby.md:189 src/languages/ruby.md:198
+#: src/languages/ruby.md:220 src/languages/ruby.md:244
+msgid "\"ruby-lsp\""
+msgstr ""
+
+#: src/languages/ruby.md:73 src/languages/ruby.md:103 src/languages/ruby.md:150
+#: src/languages/ruby.md:189 src/languages/ruby.md:223
+#: src/languages/ruby.md:246
+msgid "\"!solargraph\""
+msgstr ""
+
+#: src/languages/ruby.md:73 src/languages/ruby.md:222 src/languages/ruby.md:247
+msgid "\"!rubocop\""
+msgstr ""
+
+#: src/languages/ruby.md:73 src/languages/ruby.md:77 src/languages/ruby.md:81
+#: src/languages/ruby.md:85 src/languages/ruby.md:103 src/languages/ruby.md:115
+#: src/languages/ruby.md:150 src/languages/ruby.md:189
+#: src/languages/ruby.md:224 src/languages/ruby.md:248
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/ruby.md:75
+msgid ""
+"// Enable herb and ruby-lsp for *.html.erb files\n"
+"    \"HTML+ERB\""
+msgstr ""
+
+#: src/languages/ruby.md:77
+msgid "\"herb\""
+msgstr ""
+
+#: src/languages/ruby.md:79
+msgid ""
+"// Enable ruby-lsp for *.js.erb files\n"
+"    \"JS+ERB\""
+msgstr ""
+
+#: src/languages/ruby.md:83
+msgid ""
+"// Enable ruby-lsp for *.yaml.erb files\n"
+"    \"YAML+ERB\""
+msgstr ""
+
+#: src/languages/ruby.md:91
+msgid "That disables `solargraph` and `rubocop` and enables `ruby-lsp`."
+msgstr ""
+
+#: src/languages/ruby.md:93
+msgid "Using `rubocop`"
+msgstr ""
+
+#: src/languages/ruby.md:95
+msgid ""
+"The Ruby extension also provides support for `rubocop` language server for "
+"offense detection and autocorrection."
+msgstr ""
+
+#: src/languages/ruby.md:97
+msgid "To enable it, add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:103 src/languages/ruby.md:115
+#: src/languages/ruby.md:189 src/languages/ruby.md:193
+msgid "\"rubocop\""
+msgstr ""
+
+#: src/languages/ruby.md:109
+msgid ""
+"Or, conversely, you can disable `ruby-lsp` and enable `solargraph` and "
+"`rubocop` by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:115 src/languages/ruby.md:128
+msgid "\"solargraph\""
+msgstr ""
+
+#: src/languages/ruby.md:115
+msgid "\"!ruby-lsp\""
+msgstr ""
+
+#: src/languages/ruby.md:121
+msgid "Setting up `solargraph`"
+msgstr ""
+
+#: src/languages/ruby.md:123
+msgid ""
+"Solargraph has formatting and diagnostics disabled by default. We can tell "
+"Zed to enable them by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:129 src/languages/ruby.md:155
+#: src/languages/ruby.md:171 src/languages/ruby.md:194
+#: src/languages/ruby.md:199
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/ruby.md:130 src/languages/ruby.md:201
+msgid "\"diagnostics\""
+msgstr ""
+
+#: src/languages/ruby.md:131
+msgid "\"formatting\""
+msgstr ""
+
+#: src/languages/ruby.md:138
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/ruby.md:140
+msgid ""
+"Solargraph reads its configuration from a file called `.solargraph.yml` in "
+"the root of your project. For more information about this file, see the "
+"[Solargraph configuration documentation](https://solargraph.org/guides/"
+"configuration)."
+msgstr ""
+
+#: src/languages/ruby.md:142
+msgid "Setting up `ruby-lsp`"
+msgstr ""
+
+#: src/languages/ruby.md:144
+msgid "You can pass Ruby LSP configuration to `initialization_options`, e.g."
+msgstr ""
+
+#: src/languages/ruby.md:156 src/languages/ruby.md:200
+msgid "\"enabledFeatures\""
+msgstr ""
+
+#: src/languages/ruby.md:157
+msgid "// \"someFeature\": false\n"
+msgstr ""
+
+#: src/languages/ruby.md:165
+msgid ""
+"LSP `settings` and `initialization_options` can also be project-specific. "
+"For example to use [standardrb/standard](https://github.com/standardrb/"
+"standard) as a formatter and linter for a particular project, add this to a "
+"`.zed/settings.json` inside your project repo:"
+msgstr ""
+
+#: src/languages/ruby.md:172 src/languages/ruby.md:401
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/ruby.md:172 src/languages/ruby.md:173
+msgid "\"standard\""
+msgstr ""
+
+#: src/languages/ruby.md:173
+msgid "\"linters\""
+msgstr ""
+
+#: src/languages/ruby.md:180
+msgid "Setting up `rubocop` LSP"
+msgstr ""
+
+#: src/languages/ruby.md:182
+msgid ""
+"Rubocop has unsafe autocorrection disabled by default. We can tell Zed to "
+"enable it by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:188
+msgid ""
+"// Use ruby-lsp as the primary language server and rubocop as the "
+"secondary.\n"
+"      \"language_servers\""
+msgstr ""
+
+#: src/languages/ruby.md:195
+msgid "\"safeAutocorrect\""
+msgstr ""
+
+#: src/languages/ruby.md:209
+msgid "Setting up Sorbet"
+msgstr ""
+
+#: src/languages/ruby.md:211
+msgid ""
+"[Sorbet](https://sorbet.org/) is a popular static type checker for Ruby that "
+"includes a language server."
+msgstr ""
+
+#: src/languages/ruby.md:213
+msgid ""
+"To enable Sorbet, add `\\\"sorbet\\\"` to the `language_servers` list for "
+"Ruby in your `settings.json`. You may want to disable other language servers "
+"if Sorbet is intended to be your primary LSP, or if you plan to use it "
+"alongside another LSP for specific features like type checking."
+msgstr ""
+
+#: src/languages/ruby.md:221
+msgid "\"sorbet\""
+msgstr ""
+
+#: src/languages/ruby.md:231
+msgid ""
+"For all aspects of installing Sorbet, setting it up in your project, and "
+"configuring its behavior, please refer to the [official Sorbet documentation]"
+"(https://sorbet.org/docs/overview)."
+msgstr ""
+
+#: src/languages/ruby.md:233
+msgid "Setting up Steep"
+msgstr ""
+
+#: src/languages/ruby.md:235
+msgid ""
+"[Steep](https://github.com/soutaro/steep) is a static type checker for Ruby "
+"that uses RBS files to define types."
+msgstr ""
+
+#: src/languages/ruby.md:237
+msgid ""
+"To enable Steep, add `\\\"steep\\\"` to the `language_servers` list for Ruby "
+"in your `settings.json`. You may need to adjust the order or disable other "
+"LSPs depending on your desired setup."
+msgstr ""
+
+#: src/languages/ruby.md:245
+msgid "\"steep\""
+msgstr ""
+
+#: src/languages/ruby.md:255
+msgid "Setting up Herb"
+msgstr ""
+
+#: src/languages/ruby.md:257
+msgid "`Herb` is enabled by default for the `HTML+ERB` language."
+msgstr ""
+
+#: src/languages/ruby.md:259
+msgid "Using the Tailwind CSS Language Server with Ruby"
+msgstr ""
+
+#: src/languages/ruby.md:261
+msgid ""
+"To get all the features (autocomplete, linting, etc.) from the [Tailwind CSS "
+"language server](https://github.com/tailwindlabs/tailwindcss-intellisense/"
+"tree/HEAD/packages/tailwindcss-language-server#readme) in Ruby/ERB files, "
+"you need to configure the language server so that it knows about where to "
+"look for CSS classes by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/ruby.md:266
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/ruby.md:268
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/ruby.md:269
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/ruby.md:269
+msgid "\"\\\\bclass:\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/ruby.md:277
+msgid ""
+"With these settings, you will get completions for Tailwind CSS classes in "
+"HTML attributes inside ERB files and inside Ruby/ERB strings that are coming "
+"after a `class:` key. Examples:"
+msgstr ""
+
+#: src/languages/ruby.md:280
+msgid "# Ruby file:\n"
+msgstr ""
+
+#: src/languages/ruby.md:282
+msgid "\"pl-2 <completion here>\""
+msgstr ""
+
+#: src/languages/ruby.md:283
+msgid "\"mt-2 <completion here>\""
+msgstr ""
+
+#: src/languages/ruby.md:283
+msgid "\"Hello World\""
+msgstr ""
+
+#: src/languages/ruby.md:286
+msgid "# ERB file:\n"
+msgstr ""
+
+#: src/languages/ruby.md:288
+msgid "\"Hello\""
+msgstr ""
+
+#: src/languages/ruby.md:288
+msgid "\"/hello\""
+msgstr ""
+
+#: src/languages/ruby.md:288
+msgid ""
+"\"pl-2 <completion here>\" %>\n"
+"<a href=\"/hello\" class=\"pl-2 <completion here>\">Hello</a>\n"
+msgstr ""
+
+#: src/languages/ruby.md:292
+msgid "Running tests"
+msgstr ""
+
+#: src/languages/ruby.md:294
+msgid ""
+"To run tests in your Ruby project, you can set up custom tasks in your local "
+"`.zed/tasks.json` configuration file. These tasks can be defined to work "
+"with different test frameworks like Minitest, RSpec, quickdraw, and tldr. "
+"Below are some examples of how to set up these tasks to run your tests from "
+"within your editor."
+msgstr ""
+
+#: src/languages/ruby.md:296
+msgid "Minitest with Rails"
+msgstr ""
+
+#: src/languages/ruby.md:301 src/languages/ruby.md:322
+#: src/languages/ruby.md:343 src/languages/ruby.md:365
+#: src/languages/ruby.md:379
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/ruby.md:301
+msgid "\"test $ZED_RELATIVE_FILE -n /$ZED_CUSTOM_RUBY_TEST_NAME/\""
+msgstr ""
+
+#: src/languages/ruby.md:302 src/languages/ruby.md:323
+#: src/languages/ruby.md:344 src/languages/ruby.md:382
+#: src/languages/ruby.md:403
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/ruby.md:302
+msgid "\"bin/rails\""
+msgstr ""
+
+#: src/languages/ruby.md:303 src/languages/ruby.md:324
+#: src/languages/ruby.md:345 src/languages/ruby.md:383
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/ruby.md:304
+msgid "\"test\""
+msgstr ""
+
+#: src/languages/ruby.md:305 src/languages/ruby.md:328
+msgid "\"$ZED_RELATIVE_FILE\""
+msgstr ""
+
+#: src/languages/ruby.md:306 src/languages/ruby.md:329
+msgid "\"-n\""
+msgstr ""
+
+#: src/languages/ruby.md:307 src/languages/ruby.md:330
+msgid "\"\\\"$ZED_CUSTOM_RUBY_TEST_NAME\\\"\""
+msgstr ""
+
+#: src/languages/ruby.md:309 src/languages/ruby.md:332
+#: src/languages/ruby.md:346 src/languages/ruby.md:369
+#: src/languages/ruby.md:384
+msgid "\"cwd\""
+msgstr ""
+
+#: src/languages/ruby.md:309 src/languages/ruby.md:332
+#: src/languages/ruby.md:346 src/languages/ruby.md:369
+#: src/languages/ruby.md:384
+msgid "\"$ZED_WORKTREE_ROOT\""
+msgstr ""
+
+#: src/languages/ruby.md:310 src/languages/ruby.md:333
+#: src/languages/ruby.md:347
+msgid "\"tags\""
+msgstr ""
+
+#: src/languages/ruby.md:310 src/languages/ruby.md:333
+#: src/languages/ruby.md:347
+msgid "\"ruby-test\""
+msgstr ""
+
+#: src/languages/ruby.md:315
+msgid "Minitest"
+msgstr ""
+
+#: src/languages/ruby.md:317
+msgid ""
+"Plain minitest does not support running tests by line number, only by name, "
+"so we need to use `$ZED_CUSTOM_RUBY_TEST_NAME` instead:"
+msgstr ""
+
+#: src/languages/ruby.md:322
+msgid "\"-Itest $ZED_RELATIVE_FILE -n /$ZED_CUSTOM_RUBY_TEST_NAME/\""
+msgstr ""
+
+#: src/languages/ruby.md:323 src/languages/ruby.md:344
+msgid "\"bundle\""
+msgstr ""
+
+#: src/languages/ruby.md:325 src/languages/ruby.md:345
+msgid "\"exec\""
+msgstr ""
+
+#: src/languages/ruby.md:326
+msgid "\"ruby\""
+msgstr ""
+
+#: src/languages/ruby.md:327
+msgid "\"-Itest\""
+msgstr ""
+
+#: src/languages/ruby.md:338
+msgid "RSpec"
+msgstr ""
+
+#: src/languages/ruby.md:343
+msgid "\"test $ZED_RELATIVE_FILE:$ZED_ROW\""
+msgstr ""
+
+#: src/languages/ruby.md:345
+msgid "\"rspec\""
+msgstr ""
+
+#: src/languages/ruby.md:345
+msgid "\"\\\"$ZED_RELATIVE_FILE:$ZED_ROW\\\"\""
+msgstr ""
+
+#: src/languages/ruby.md:352
+msgid ""
+"Similar task syntax can be used for other test frameworks such as "
+"`quickdraw` or `tldr`."
+msgstr ""
+
+#: src/languages/ruby.md:354
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/ruby.md:356
+msgid ""
+"The Ruby extension provides a debug adapter for debugging Ruby code. Zed's "
+"name for the adapter (in the UI and `debug.json`) is `rdbg`, and under the "
+"hood, it uses the [`debug`](https://github.com/ruby/debug) gem. The "
+"extension uses the [same activation logic](#language-server-activation) as "
+"the language servers."
+msgstr ""
+
+#: src/languages/ruby.md:358
+msgid "Examples"
+msgstr ""
+
+#: src/languages/ruby.md:360
+msgid "Debug a Ruby script"
+msgstr ""
+
+#: src/languages/ruby.md:365
+msgid "\"Debug current file\""
+msgstr ""
+
+#: src/languages/ruby.md:366 src/languages/ruby.md:380
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/ruby.md:366 src/languages/ruby.md:380
+msgid "\"rdbg\""
+msgstr ""
+
+#: src/languages/ruby.md:367 src/languages/ruby.md:381
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/ruby.md:367 src/languages/ruby.md:381
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/ruby.md:368
+msgid "\"script\""
+msgstr ""
+
+#: src/languages/ruby.md:368
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/languages/ruby.md:374
+msgid "Debug Rails server"
+msgstr ""
+
+#: src/languages/ruby.md:379
+msgid "\"Debug Rails server\""
+msgstr ""
+
+#: src/languages/ruby.md:382
+msgid "\"./bin/rails\""
+msgstr ""
+
+#: src/languages/ruby.md:383
+msgid "\"server\""
+msgstr ""
+
+#: src/languages/ruby.md:385
+msgid "\"env\""
+msgstr ""
+
+#: src/languages/ruby.md:386
+msgid "\"RUBY_DEBUG_OPEN\""
+msgstr ""
+
+#: src/languages/ruby.md:386
+msgid "\"true\""
+msgstr ""
+
+#: src/languages/ruby.md:392
+msgid "Formatters"
+msgstr ""
+
+#: src/languages/ruby.md:394
+msgid "`erb-formatter`"
+msgstr ""
+
+#: src/languages/ruby.md:396
+msgid ""
+"To format ERB templates, you can use the `erb-formatter` formatter. This "
+"formatter uses the [`erb-formatter`](https://rubygems.org/gems/erb-"
+"formatter) gem to format ERB templates."
+msgstr ""
+
+#: src/languages/ruby.md:400
+msgid "\"HTML+ERB\""
+msgstr ""
+
+#: src/languages/ruby.md:402
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/ruby.md:403
+msgid "\"erb-formatter\""
+msgstr ""
+
+#: src/languages/ruby.md:404
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/ruby.md:404
+msgid "\"--stdin-filename\""
+msgstr ""
+
+#: src/languages/ruby.md:404
+msgid "\"{buffer_path}\""
+msgstr ""

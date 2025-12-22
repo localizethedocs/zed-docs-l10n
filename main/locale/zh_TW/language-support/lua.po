@@ -1,0 +1,435 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/lua.md:1
+msgid "Lua"
+msgstr ""
+
+#: src/languages/lua.md:3
+msgid ""
+"Lua support is available through the [Lua extension](https://github.com/zed-"
+"extensions/lua)."
+msgstr ""
+
+#: src/languages/lua.md:5
+msgid ""
+"Tree-sitter: [tree-sitter-grammars/tree-sitter-lua](https://github.com/tree-"
+"sitter-grammars/tree-sitter-lua)"
+msgstr ""
+
+#: src/languages/lua.md:6
+msgid ""
+"Language server: [LuaLS/lua-language-server](https://github.com/LuaLS/lua-"
+"language-server)"
+msgstr ""
+
+#: src/languages/lua.md:8
+msgid "luarc.json"
+msgstr ""
+
+#: src/languages/lua.md:10
+msgid ""
+"To configure LuaLS you can create a `.luarc.json` file in the root of your "
+"workspace."
+msgstr ""
+
+#: src/languages/lua.md:14 src/languages/lua.md:60 src/languages/lua.md:116
+msgid "\"$schema\""
+msgstr ""
+
+#: src/languages/lua.md:14 src/languages/lua.md:60
+msgid ""
+"\"https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema."
+"json\""
+msgstr ""
+
+#: src/languages/lua.md:15 src/languages/lua.md:61
+msgid "\"runtime.version\""
+msgstr ""
+
+#: src/languages/lua.md:15 src/languages/lua.md:61
+msgid "\"Lua 5.4\""
+msgstr ""
+
+#: src/languages/lua.md:16 src/languages/lua.md:82 src/languages/lua.md:117
+msgid "\"format.enable\""
+msgstr ""
+
+#: src/languages/lua.md:17 src/languages/lua.md:77
+msgid "\"workspace.library\""
+msgstr ""
+
+#: src/languages/lua.md:17
+msgid "\"../somedir/library\""
+msgstr ""
+
+#: src/languages/lua.md:21
+msgid ""
+"See [LuaLS Settings Documentation](https://luals.github.io/wiki/settings/) "
+"for all available configuration options, or when editing this file in Zed "
+"available settings options will autocomplete, (e.g `runtime.version` will "
+"show `\"Lua 5.1\"`, `\"Lua 5.2\"`, `\"Lua 5.3\"`, `\"Lua 5.4\"` and "
+"`\"LuaJIT\"` as allowed values). Note when importing settings options from "
+"VS Code, remove the `Lua.` prefix. (e.g. `runtime.version` instead of `Lua."
+"runtime.version`)."
+msgstr ""
+
+#: src/languages/lua.md:23
+msgid "LuaCATS Definitions"
+msgstr ""
+
+#: src/languages/lua.md:25
+msgid ""
+"LuaLS can provide enhanced LSP autocompletion suggestions and type "
+"validation with the help of LuaCATS (Lua Comment and Type System) "
+"definitions. These definitions are available for many common Lua libraries, "
+"and local paths containing them can be specified via `workspace.library` in "
+"`luarc.json`. You can do this via relative paths if you checkout your "
+"definitions into the same partent directory of your project (`../playdate-"
+"luacats`, `../love2d`, etc). Alternatively you can create submodule(s) "
+"inside your project for each LuaCATS definition repo."
+msgstr ""
+
+#: src/languages/lua.md:27
+msgid "LÖVE (Love2D)"
+msgstr ""
+
+#: src/languages/lua.md:29
+msgid ""
+"To use [LÖVE (Love2D)](https://love2d.org/) in Zed, checkout [LuaCATS/love2d]"
+"(https://github.com/LuaCATS/love2d) into a folder called `love2d-luacats` "
+"into the parent folder of your project:"
+msgstr ""
+
+#: src/languages/lua.md:35 src/languages/lua.md:56
+msgid "Then in your `.luarc.json`:"
+msgstr ""
+
+#: src/languages/lua.md:37
+msgid ""
+"```\n"
+"{\n"
+"  \"$schema\": \"https://raw.githubusercontent.com/LuaLS/vscode-lua/master/"
+"setting/schema.json\",\n"
+"  \"runtime.version\": \"Lua 5.4\",\n"
+"  \"workspace.library\": [\"../love2d-luacats\"],\n"
+"  \"runtime.special\": {\n"
+"    \"love.filesystem.load\": \"loadfile\"\n"
+"  }\n"
+"}\n"
+"```"
+msgstr ""
+
+#: src/languages/lua.md:48
+msgid "PlaydateSDK"
+msgstr ""
+
+#: src/languages/lua.md:50
+msgid ""
+"To use [Playdate Lua SDK](https://play.date/dev/) in Zed, checkout [playdate-"
+"luacats](https://github.com/notpeter/playdate-luacats) into the parent "
+"folder of your project:"
+msgstr ""
+
+#: src/languages/lua.md:62
+msgid "\"runtime.nonstandardSymbol\""
+msgstr ""
+
+#: src/languages/lua.md:63
+msgid "\"+=\""
+msgstr ""
+
+#: src/languages/lua.md:64
+msgid "\"-=\""
+msgstr ""
+
+#: src/languages/lua.md:65
+msgid "\"*=\""
+msgstr ""
+
+#: src/languages/lua.md:66
+msgid "\"/=\""
+msgstr ""
+
+#: src/languages/lua.md:67
+msgid "\"//=\""
+msgstr ""
+
+#: src/languages/lua.md:68
+msgid "\"%=\""
+msgstr ""
+
+#: src/languages/lua.md:69
+msgid "\"<<=\""
+msgstr ""
+
+#: src/languages/lua.md:70
+msgid "\">>=\""
+msgstr ""
+
+#: src/languages/lua.md:71
+msgid "\"&=\""
+msgstr ""
+
+#: src/languages/lua.md:72
+msgid "\"|=\""
+msgstr ""
+
+#: src/languages/lua.md:73
+msgid "\"^=\""
+msgstr ""
+
+#: src/languages/lua.md:75
+msgid "\"diagnostics.severity\""
+msgstr ""
+
+#: src/languages/lua.md:75
+msgid "\"duplicate-set-field\""
+msgstr ""
+
+#: src/languages/lua.md:75
+msgid "\"Hint\""
+msgstr ""
+
+#: src/languages/lua.md:76
+msgid "\"diagnostics.globals\""
+msgstr ""
+
+#: src/languages/lua.md:76
+msgid "\"import\""
+msgstr ""
+
+#: src/languages/lua.md:77
+msgid "\"../playdate-luacats\""
+msgstr ""
+
+#: src/languages/lua.md:78
+msgid "\"format.defaultConfig\""
+msgstr ""
+
+#: src/languages/lua.md:79
+msgid "\"indent_style\""
+msgstr ""
+
+#: src/languages/lua.md:79
+msgid "\"space\""
+msgstr ""
+
+#: src/languages/lua.md:80
+msgid "\"indent_size\""
+msgstr ""
+
+#: src/languages/lua.md:80
+msgid "\"4\""
+msgstr ""
+
+#: src/languages/lua.md:83
+msgid "\"runtime.builtin\""
+msgstr ""
+
+#: src/languages/lua.md:83
+msgid "\"io\""
+msgstr ""
+
+#: src/languages/lua.md:83
+msgid "\"disable\""
+msgstr ""
+
+#: src/languages/lua.md:83
+msgid "\"os\""
+msgstr ""
+
+#: src/languages/lua.md:83
+msgid "\"package\""
+msgstr ""
+
+#: src/languages/lua.md:87
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/languages/lua.md:89
+msgid ""
+"To enable [Inlay Hints](../configuring-languages.md#inlay-hints) for LuaLS "
+"in Zed"
+msgstr ""
+
+#: src/languages/lua.md:91
+msgid "Add the following to your Zed settings.json:"
+msgstr ""
+
+#: src/languages/lua.md:94 src/languages/lua.md:125 src/languages/lua.md:145
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/lua.md:95 src/languages/lua.md:126 src/languages/lua.md:146
+msgid "\"Lua\""
+msgstr ""
+
+#: src/languages/lua.md:96
+msgid "\"inlay_hints\""
+msgstr ""
+
+#: src/languages/lua.md:97
+msgid "\"enabled\""
+msgstr ""
+
+#: src/languages/lua.md:98
+msgid "\"show_type_hints\""
+msgstr ""
+
+#: src/languages/lua.md:99
+msgid "\"show_parameter_hints\""
+msgstr ""
+
+#: src/languages/lua.md:100
+msgid "\"show_other_hints\""
+msgstr ""
+
+#: src/languages/lua.md:106
+msgid "Add `\"hint.enable\": true` to your `.luarc.json`."
+msgstr ""
+
+#: src/languages/lua.md:108
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/lua.md:110
+msgid "LuaLS Formatting"
+msgstr ""
+
+#: src/languages/lua.md:112
+msgid ""
+"To enable auto-formatting with your LuaLS (provided by [CppCXY/"
+"EmmyLuaCodeStyle](https://github.com/CppCXY/EmmyLuaCodeStyle)) make sure you "
+"have `\"format.enable\": true,` in your .luarc.json:"
+msgstr ""
+
+#: src/languages/lua.md:116
+msgid ""
+"\"https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema."
+"json\""
+msgstr ""
+
+#: src/languages/lua.md:121
+msgid "Then add the following to your Zed `settings.json`:"
+msgstr ""
+
+#: src/languages/lua.md:127 src/languages/lua.md:147
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/lua.md:127 src/languages/lua.md:147
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/lua.md:128 src/languages/lua.md:148
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/lua.md:128
+msgid "\"language_server\""
+msgstr ""
+
+#: src/languages/lua.md:134
+msgid ""
+"You can customize various EmmyLuaCodeStyle style options via `."
+"editorconfig`, see [lua.template.editorconfig](https://github.com/CppCXY/"
+"EmmyLuaCodeStyle/blob/master/lua.template.editorconfig) for all available "
+"options."
+msgstr ""
+
+#: src/languages/lua.md:136
+msgid "StyLua Formatting"
+msgstr ""
+
+#: src/languages/lua.md:138
+msgid ""
+"Alternatively to use [StyLua](https://github.com/JohnnyMorganz/StyLua) for "
+"auto-formatting:"
+msgstr ""
+
+#: src/languages/lua.md:140
+msgid ""
+"Install [StyLua](https://github.com/JohnnyMorganz/StyLua): `brew install "
+"stylua` or `cargo install stylua --features lua52,lua53,lua54,luau,luajit` "
+"(feel free to remove any Lua versions you don't need)."
+msgstr ""
+
+#: src/languages/lua.md:141
+msgid "Add the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/lua.md:149
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/lua.md:150
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/lua.md:150
+msgid "\"stylua\""
+msgstr ""
+
+#: src/languages/lua.md:151
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/lua.md:152
+msgid "\"--syntax=Lua54\""
+msgstr ""
+
+#: src/languages/lua.md:153
+msgid "\"--respect-ignores\""
+msgstr ""
+
+#: src/languages/lua.md:154
+msgid "\"--stdin-filepath\""
+msgstr ""
+
+#: src/languages/lua.md:155
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/languages/lua.md:156
+msgid "\"-\""
+msgstr ""
+
+#: src/languages/lua.md:165
+msgid ""
+"You can specify various options to StyLua either on the command line above "
+"(like `--syntax=Lua54`) or in a `stylua.toml` in your workspace:"
+msgstr ""
+
+#: src/languages/lua.md:167
+msgid ""
+"```toml\n"
+"syntax = \"Lua54\"\n"
+"column_width = 100\n"
+"line_endings = \"Unix\"\n"
+"indent_type = \"Spaces\"\n"
+"indent_width = 4\n"
+"quote_style = \"AutoPreferDouble\"\n"
+"call_parentheses = \"Always\"\n"
+"collapse_simple_statement = \"All\"\n"
+"\n"
+"[sort_requires]\n"
+"enabled = true\n"
+"```"
+msgstr ""
+
+#: src/languages/lua.md:181
+msgid ""
+"For a complete list of available options, see: [StyLua Options](https://"
+"github.com/JohnnyMorganz/StyLua?tab=readme-ov-file#options)."
+msgstr ""

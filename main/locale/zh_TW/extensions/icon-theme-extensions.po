@@ -1,0 +1,225 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/icon-themes.md:1
+msgid "Icon Themes"
+msgstr ""
+
+#: src/extensions/icon-themes.md:3
+msgid ""
+"Extensions may provide icon themes in order to change the icons Zed uses for "
+"folders and files."
+msgstr ""
+
+#: src/extensions/icon-themes.md:5
+msgid "Example extension"
+msgstr ""
+
+#: src/extensions/icon-themes.md:7
+msgid ""
+"The [Material Icon Theme](https://github.com/zed-extensions/material-icon-"
+"theme) serves as an example for the structure of an extension containing an "
+"icon theme."
+msgstr ""
+
+#: src/extensions/icon-themes.md:9
+msgid "Directory structure"
+msgstr ""
+
+#: src/extensions/icon-themes.md:11
+msgid "There are two important directories for an icon theme extension:"
+msgstr ""
+
+#: src/extensions/icon-themes.md:13
+msgid ""
+"`icon_themes`: This directory will contain one or more JSON files containing "
+"the icon theme definitions."
+msgstr ""
+
+#: src/extensions/icon-themes.md:14
+msgid ""
+"`icons`: This directory contains the icon assets that will be distributed "
+"with the extension. You can created subdirectories in this directory, if so "
+"desired."
+msgstr ""
+
+#: src/extensions/icon-themes.md:16
+msgid ""
+"Each icon theme file should adhere to the JSON schema specified at [`https://"
+"zed.dev/schema/icon_themes/v0.3.0.json`](https://zed.dev/schema/icon_themes/"
+"v0.3.0.json)."
+msgstr ""
+
+#: src/extensions/icon-themes.md:18
+msgid "Here is an example of the structure of an icon theme:"
+msgstr ""
+
+#: src/extensions/icon-themes.md:22
+msgid "\"$schema\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:22
+msgid "\"https://zed.dev/schema/icon_themes/v0.3.0.json\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:23 src/extensions/icon-themes.md:27
+msgid "\"name\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:23 src/extensions/icon-themes.md:27
+msgid "\"My Icon Theme\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:24
+msgid "\"author\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:24
+msgid "\"Your Name\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:25
+msgid "\"themes\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:28
+msgid "\"appearance\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:28
+msgid "\"dark\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:29
+msgid "\"directory_icons\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:30 src/extensions/icon-themes.md:35
+#: src/extensions/icon-themes.md:40
+msgid "\"collapsed\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:30
+msgid "\"./icons/folder.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:31 src/extensions/icon-themes.md:36
+#: src/extensions/icon-themes.md:41
+msgid "\"expanded\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:31
+msgid "\"./icons/folder-open.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:33
+msgid "\"named_directory_icons\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:34
+msgid "\"stylesheets\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:35
+msgid "\"./icons/folder-stylesheets.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:36
+msgid "\"./icons/folder-stylesheets-open.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:39
+msgid "\"chevron_icons\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:40
+msgid "\"./icons/chevron-right.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:41
+msgid "\"./icons/chevron-down.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:43
+msgid "\"file_stems\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:44
+msgid "\"Makefile\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:44 src/extensions/icon-themes.md:53
+msgid "\"make\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:46
+msgid "\"file_suffixes\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:47
+msgid "\"mp3\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:47 src/extensions/icon-themes.md:51
+msgid "\"audio\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:48
+msgid "\"rs\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:48 src/extensions/icon-themes.md:54
+msgid "\"rust\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:50
+msgid "\"file_icons\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:51 src/extensions/icon-themes.md:52
+#: src/extensions/icon-themes.md:53 src/extensions/icon-themes.md:54
+msgid "\"path\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:51
+msgid "\"./icons/audio.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:52
+msgid "\"default\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:52
+msgid "\"./icons/file.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:53
+msgid "\"./icons/make.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:54
+msgid "\"./icons/rust.svg\""
+msgstr ""
+
+#: src/extensions/icon-themes.md:55
+msgid "// ...\n"
+msgstr ""
+
+#: src/extensions/icon-themes.md:62
+msgid ""
+"Each icon path is resolved relative to the root of the extension directory."
+msgstr ""
+
+#: src/extensions/icon-themes.md:64
+msgid "In this example, the extension would have a structure like so:"
+msgstr ""

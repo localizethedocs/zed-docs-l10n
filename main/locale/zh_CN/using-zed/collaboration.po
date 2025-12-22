@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/collaboration/overview.md:1
+msgid "Collaboration"
+msgstr ""
+
+#: src/collaboration/overview.md:3
+msgid ""
+"At Zed, we believe that great things are built by great people working "
+"together. We have designed Zed to help individuals work faster and help "
+"teams of people work together more effectively."
+msgstr ""
+
+#: src/collaboration/overview.md:6
+msgid ""
+"In Zed, all collaboration happens in the collaboration panel, which can be "
+"opened via <kbd class=\"keybinding\">cmd-shift-c|ctrl-shift-c</kbd> or "
+"`collab panel: toggle focus` from the command palette."
+msgstr ""
+
+#: src/collaboration/overview.md:8
+msgid ""
+"You will need to [sign in](../authentication.md#signing-in) in order to "
+"access features within the collaboration panel."
+msgstr ""
+
+#: src/collaboration/overview.md:10
+msgid "Collaboration panel"
+msgstr ""
+
+#: src/collaboration/overview.md:12
+msgid "The collaboration panel is broken down into two sections:"
+msgstr ""
+
+#: src/collaboration/overview.md:14
+msgid ""
+"[Channels](./channels.md): Ongoing project rooms where team members can "
+"share projects, collaborate on code, and maintain ambient awareness of what "
+"everyone is working on."
+msgstr ""
+
+#: src/collaboration/overview.md:15
+msgid ""
+"[Contacts and Private Calls](./contacts-and-private-calls.md): Your contacts "
+"list for ad-hoc private collaboration."
+msgstr ""
+
+#: src/collaboration/overview.md:19
+msgid ""
+"Note: Only collaborate with people that you trust. Since sharing a project "
+"gives them access to your local file system, you should not share projects "
+"with people you do not trust; they could potentially do some nasty things."
+msgstr ""
+
+#: src/collaboration/overview.md:22
+msgid ""
+"In the future, we will do more to prevent this type of access beyond the "
+"shared project and add more control over what collaborators can do, but for "
+"now, only collaborate with people you trust."
+msgstr ""
+
+#: src/collaboration/overview.md:24
+msgid ""
+"See our [Data and Privacy FAQs](https://zed.dev/faq#data-and-privacy) for "
+"collaboration."
+msgstr ""

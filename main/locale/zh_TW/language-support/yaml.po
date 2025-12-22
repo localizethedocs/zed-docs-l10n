@@ -1,0 +1,444 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/yaml.md:1
+msgid "YAML"
+msgstr ""
+
+#: src/languages/yaml.md:3
+msgid "YAML support is available natively in Zed."
+msgstr ""
+
+#: src/languages/yaml.md:5
+msgid ""
+"Tree-sitter: [zed-industries/tree-sitter-yaml](https://github.com/zed-"
+"industries/tree-sitter-yaml)"
+msgstr ""
+
+#: src/languages/yaml.md:6
+msgid ""
+"Language Server: [redhat-developer/yaml-language-server](https://github.com/"
+"redhat-developer/yaml-language-server)"
+msgstr ""
+
+#: src/languages/yaml.md:8
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/yaml.md:10
+msgid ""
+"You can configure various [yaml-language-server settings](https://github.com/"
+"redhat-developer/yaml-language-server?tab=readme-ov-file#language-server-"
+"settings) by adding them to your Zed settings.json in a `yaml-language-"
+"server` block under the `lsp` key. For example:"
+msgstr ""
+
+#: src/languages/yaml.md:13 src/languages/yaml.md:83 src/languages/yaml.md:103
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/yaml.md:14 src/languages/yaml.md:84 src/languages/yaml.md:104
+msgid "\"yaml-language-server\""
+msgstr ""
+
+#: src/languages/yaml.md:15 src/languages/yaml.md:85 src/languages/yaml.md:105
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/yaml.md:16 src/languages/yaml.md:86 src/languages/yaml.md:106
+msgid "\"yaml\""
+msgstr ""
+
+#: src/languages/yaml.md:17
+msgid "\"keyOrdering\""
+msgstr ""
+
+#: src/languages/yaml.md:18
+msgid "\"format\""
+msgstr ""
+
+#: src/languages/yaml.md:19 src/languages/yaml.md:47
+msgid "\"singleQuote\""
+msgstr ""
+
+#: src/languages/yaml.md:21
+msgid "\"schemas\""
+msgstr ""
+
+#: src/languages/yaml.md:22
+msgid "\"https://getcomposer.org/schema.json\""
+msgstr ""
+
+#: src/languages/yaml.md:22
+msgid "\"/*\""
+msgstr ""
+
+#: src/languages/yaml.md:23
+msgid "\"../relative/path/schema.json\""
+msgstr ""
+
+#: src/languages/yaml.md:23
+msgid "\"/config*.yaml\""
+msgstr ""
+
+#: src/languages/yaml.md:31
+msgid ""
+"Note, settings keys must be nested, so `yaml.keyOrdering` becomes "
+"`{\"yaml\": { \"keyOrdering\": true }}`."
+msgstr ""
+
+#: src/languages/yaml.md:33
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/yaml.md:35
+msgid "By default, Zed uses Prettier for formatting YAML files."
+msgstr ""
+
+#: src/languages/yaml.md:37
+msgid "Prettier Formatting"
+msgstr ""
+
+#: src/languages/yaml.md:39
+msgid ""
+"You can customize the formatting behavior of Prettier. For example to use "
+"single-quotes in yaml files add the following to your `.prettierrc` "
+"configuration file:"
+msgstr ""
+
+#: src/languages/yaml.md:43
+msgid "\"overrides\""
+msgstr ""
+
+#: src/languages/yaml.md:45
+msgid "\"files\""
+msgstr ""
+
+#: src/languages/yaml.md:45
+msgid "\"*.yaml\""
+msgstr ""
+
+#: src/languages/yaml.md:45
+msgid "\"*.yml\""
+msgstr ""
+
+#: src/languages/yaml.md:46
+msgid "\"options\""
+msgstr ""
+
+#: src/languages/yaml.md:54
+msgid "yaml-language-server Formatting"
+msgstr ""
+
+#: src/languages/yaml.md:56
+msgid ""
+"To use `yaml-language-server` instead of Prettier for YAML formatting, add "
+"the following to your Zed `settings.json`:"
+msgstr ""
+
+#: src/languages/yaml.md:59
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/yaml.md:60
+msgid "\"YAML\""
+msgstr ""
+
+#: src/languages/yaml.md:61
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/yaml.md:61
+msgid "\"language_server\""
+msgstr ""
+
+#: src/languages/yaml.md:66
+msgid "Schemas"
+msgstr ""
+
+#: src/languages/yaml.md:68
+msgid ""
+"By default yaml-language-server will attempt to determine the correct schema "
+"for a given yaml file and retrieve the appropriate JSON Schema from [Json "
+"Schema Store](https://schemastore.org/)."
+msgstr ""
+
+#: src/languages/yaml.md:70
+msgid ""
+"You can override any auto-detected schema via the `schemas` settings key "
+"(demonstrated above) or by providing an [inlined schema](https://github.com/"
+"redhat-developer/yaml-language-server#using-inlined-schema) reference via a "
+"modeline comment at the top of your yaml file:"
+msgstr ""
+
+#: src/languages/yaml.md:73
+msgid ""
+"# yaml-language-server: $schema=https://www.schemastore.org/github-action."
+"json\n"
+"name"
+msgstr ""
+
+#: src/languages/yaml.md:74
+msgid "Issue Assignment"
+msgstr ""
+
+#: src/languages/yaml.md:76
+msgid "issues"
+msgstr ""
+
+#: src/languages/yaml.md:77
+msgid "types"
+msgstr ""
+
+#: src/languages/yaml.md:77
+msgid "opened"
+msgstr ""
+
+#: src/languages/yaml.md:80
+msgid ""
+"You can disable the automatic detection and retrieval of schemas from the "
+"JSON Schema if desired:"
+msgstr ""
+
+#: src/languages/yaml.md:87
+msgid "\"schemaStore\""
+msgstr ""
+
+#: src/languages/yaml.md:88
+msgid "\"enable\""
+msgstr ""
+
+#: src/languages/yaml.md:96
+msgid "Custom Tags"
+msgstr ""
+
+#: src/languages/yaml.md:98
+msgid ""
+"Yaml-language-server supports [custom tags](https://github.com/redhat-"
+"developer/yaml-language-server#adding-custom-tags) which can be used to "
+"inject custom application functionality at runtime into your yaml files."
+msgstr ""
+
+#: src/languages/yaml.md:100
+msgid ""
+"For example Amazon CloudFormation YAML uses a number of custom tags, to "
+"support these you can add the following to your settings.json:"
+msgstr ""
+
+#: src/languages/yaml.md:107
+msgid "\"customTags\""
+msgstr ""
+
+#: src/languages/yaml.md:108
+msgid "\"!And scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:109
+msgid "\"!And mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:110
+msgid "\"!And sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:111
+msgid "\"!If scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:112
+msgid "\"!If mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:113
+msgid "\"!If sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:114
+msgid "\"!Not scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:115
+msgid "\"!Not mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:116
+msgid "\"!Not sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:117
+msgid "\"!Equals scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:118
+msgid "\"!Equals mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:119
+msgid "\"!Equals sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:120
+msgid "\"!Or scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:121
+msgid "\"!Or mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:122
+msgid "\"!Or sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:123
+msgid "\"!FindInMap scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:124
+msgid "\"!FindInMap mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:125
+msgid "\"!FindInMap sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:126
+msgid "\"!Base64 scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:127
+msgid "\"!Base64 mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:128
+msgid "\"!Base64 sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:129
+msgid "\"!Cidr scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:130
+msgid "\"!Cidr mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:131
+msgid "\"!Cidr sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:132
+msgid "\"!Ref scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:133
+msgid "\"!Ref mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:134
+msgid "\"!Ref sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:135
+msgid "\"!Sub scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:136
+msgid "\"!Sub mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:137
+msgid "\"!Sub sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:138
+msgid "\"!GetAtt scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:139
+msgid "\"!GetAtt mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:140
+msgid "\"!GetAtt sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:141
+msgid "\"!GetAZs scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:142
+msgid "\"!GetAZs mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:143
+msgid "\"!GetAZs sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:144
+msgid "\"!ImportValue scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:145
+msgid "\"!ImportValue mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:146
+msgid "\"!ImportValue sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:147
+msgid "\"!Select scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:148
+msgid "\"!Select mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:149
+msgid "\"!Select sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:150
+msgid "\"!Split scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:151
+msgid "\"!Split mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:152
+msgid "\"!Split sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:153
+msgid "\"!Join scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:154
+msgid "\"!Join mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:155
+msgid "\"!Join sequence\""
+msgstr ""
+
+#: src/languages/yaml.md:156
+msgid "\"!Condition scalar\""
+msgstr ""
+
+#: src/languages/yaml.md:157
+msgid "\"!Condition mapping\""
+msgstr ""
+
+#: src/languages/yaml.md:158
+msgid "\"!Condition sequence\""
+msgstr ""

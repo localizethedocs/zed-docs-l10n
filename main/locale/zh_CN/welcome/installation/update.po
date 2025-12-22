@@ -1,0 +1,69 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/update.md:1
+msgid "Update Zed"
+msgstr ""
+
+#: src/update.md:3
+msgid ""
+"Zed is designed to keep itself up to date automatically. You can always "
+"update this behavior in your settings."
+msgstr ""
+
+#: src/update.md:5
+msgid "Auto-updates"
+msgstr ""
+
+#: src/update.md:7
+msgid ""
+"By default, Zed checks for updates and installs them automatically the next "
+"time you restart the app. You’ll always be running the latest version with "
+"no extra steps."
+msgstr ""
+
+#: src/update.md:9
+msgid ""
+"If an update is available, Zed will download it in the background and apply "
+"it on restart."
+msgstr ""
+
+#: src/update.md:11
+msgid "How to check your current version"
+msgstr ""
+
+#: src/update.md:13
+msgid "To check which version of Zed you're using:"
+msgstr ""
+
+#: src/update.md:15
+msgid ""
+"Open the Command Palette (Cmd+Shift+P on macOS, Ctrl+Shift+P on Linux/"
+"Windows)."
+msgstr ""
+
+#: src/update.md:17
+msgid ""
+"Type and select `zed: about`. A modal will appear with your version "
+"information."
+msgstr ""
+
+#: src/update.md:19
+msgid "How to control update behavior"
+msgstr ""
+
+#: src/update.md:21
+msgid ""
+"If you want to turn off auto-updates, open the Settings Editor (Cmd ,) and "
+"find `Auto Update` under General Settings."
+msgstr ""

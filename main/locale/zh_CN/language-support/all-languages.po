@@ -1,0 +1,661 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages.md:1
+msgid "Language Support in Zed"
+msgstr ""
+
+#: src/languages.md:3
+msgid ""
+"Zed supports hundreds of programming languages and text formats. Some work "
+"out-of-the box and others rely on 3rd party extensions."
+msgstr ""
+
+#: src/languages.md:6
+msgid ""
+"The ones included out-of-the-box, natively built into Zed, are marked with "
+"\\*."
+msgstr ""
+
+#: src/languages.md:8
+msgid "Languages with Documentation"
+msgstr ""
+
+#: src/languages.md:10
+msgid "[Ansible](./languages/ansible.md)"
+msgstr ""
+
+#: src/languages.md:11
+msgid "[AsciiDoc](./languages/asciidoc.md)"
+msgstr ""
+
+#: src/languages.md:12
+msgid "[Astro](./languages/astro.md)"
+msgstr ""
+
+#: src/languages.md:13
+msgid "[Bash](./languages/bash.md)"
+msgstr ""
+
+#: src/languages.md:14
+msgid "[Biome](./languages/biome.md)"
+msgstr ""
+
+#: src/languages.md:15
+msgid "[C](./languages/c.md) \\*"
+msgstr ""
+
+#: src/languages.md:16
+msgid "[C++](./languages/cpp.md) \\*"
+msgstr ""
+
+#: src/languages.md:17
+msgid "[C#](./languages/csharp.md)"
+msgstr ""
+
+#: src/languages.md:18
+msgid "[Clojure](./languages/clojure.md)"
+msgstr ""
+
+#: src/languages.md:19
+msgid "[CSS](./languages/css.md) \\*"
+msgstr ""
+
+#: src/languages.md:20
+msgid "[Dart](./languages/dart.md)"
+msgstr ""
+
+#: src/languages.md:21
+msgid "[Deno](./languages/deno.md)"
+msgstr ""
+
+#: src/languages.md:22
+msgid "[Diff](./languages/diff.md) \\*"
+msgstr ""
+
+#: src/languages.md:23
+msgid "[Docker](./languages/docker.md)"
+msgstr ""
+
+#: src/languages.md:24
+msgid "[Elixir](./languages/elixir.md)"
+msgstr ""
+
+#: src/languages.md:25
+msgid "[Elm](./languages/elm.md)"
+msgstr ""
+
+#: src/languages.md:26
+msgid "[Emmet](./languages/emmet.md)"
+msgstr ""
+
+#: src/languages.md:27
+msgid "[Erlang](./languages/erlang.md)"
+msgstr ""
+
+#: src/languages.md:28
+msgid "[Fish](./languages/fish.md)"
+msgstr ""
+
+#: src/languages.md:29
+msgid "[GDScript](./languages/gdscript.md)"
+msgstr ""
+
+#: src/languages.md:30
+msgid "[Gleam](./languages/gleam.md)"
+msgstr ""
+
+#: src/languages.md:31
+msgid "[GLSL](./languages/glsl.md)"
+msgstr ""
+
+#: src/languages.md:32
+msgid "[Go](./languages/go.md) \\*"
+msgstr ""
+
+#: src/languages.md:33
+msgid "[Groovy](./languages/groovy.md)"
+msgstr ""
+
+#: src/languages.md:34
+msgid "[Haskell](./languages/haskell.md)"
+msgstr ""
+
+#: src/languages.md:35
+msgid "[Helm](./languages/helm.md)"
+msgstr ""
+
+#: src/languages.md:36
+msgid "[HTML](./languages/html.md)"
+msgstr ""
+
+#: src/languages.md:37
+msgid "[Java](./languages/java.md)"
+msgstr ""
+
+#: src/languages.md:38
+msgid "[JavaScript](./languages/javascript.md) \\*"
+msgstr ""
+
+#: src/languages.md:39
+msgid "[Julia](./languages/julia.md)"
+msgstr ""
+
+#: src/languages.md:40
+msgid "[JSON](./languages/json.md) \\*"
+msgstr ""
+
+#: src/languages.md:41
+msgid "[Jsonnet](./languages/jsonnet.md)"
+msgstr ""
+
+#: src/languages.md:42
+msgid "[Kotlin](./languages/kotlin.md)"
+msgstr ""
+
+#: src/languages.md:43
+msgid "[Lua](./languages/lua.md)"
+msgstr ""
+
+#: src/languages.md:44
+msgid "[Luau](./languages/luau.md)"
+msgstr ""
+
+#: src/languages.md:45
+msgid "[Makefile](./languages/makefile.md)"
+msgstr ""
+
+#: src/languages.md:46
+msgid "[Markdown](./languages/markdown.md) \\*"
+msgstr ""
+
+#: src/languages.md:47
+msgid "[Nim](./languages/nim.md)"
+msgstr ""
+
+#: src/languages.md:48
+msgid "[OCaml](./languages/ocaml.md)"
+msgstr ""
+
+#: src/languages.md:49
+msgid "[PHP](./languages/php.md)"
+msgstr ""
+
+#: src/languages.md:50
+msgid "[Prisma](./languages/prisma.md)"
+msgstr ""
+
+#: src/languages.md:51
+msgid "[Proto](./languages/proto.md)"
+msgstr ""
+
+#: src/languages.md:52
+msgid "[PureScript](./languages/purescript.md)"
+msgstr ""
+
+#: src/languages.md:53
+msgid "[Python](./languages/python.md) \\*"
+msgstr ""
+
+#: src/languages.md:54
+msgid "[R](./languages/r.md)"
+msgstr ""
+
+#: src/languages.md:55
+msgid "[Rego](./languages/rego.md)"
+msgstr ""
+
+#: src/languages.md:56
+msgid "[ReStructuredText](./languages/rst.md)"
+msgstr ""
+
+#: src/languages.md:57
+msgid "[Racket](./languages/racket.md)"
+msgstr ""
+
+#: src/languages.md:58
+msgid "[Roc](./languages/roc.md)"
+msgstr ""
+
+#: src/languages.md:59
+msgid "[Ruby](./languages/ruby.md)"
+msgstr ""
+
+#: src/languages.md:60
+msgid "[Rust](./languages/rust.md) \\* (Zed's written in Rust)"
+msgstr ""
+
+#: src/languages.md:61
+msgid "[Scala](./languages/scala.md)"
+msgstr ""
+
+#: src/languages.md:62
+msgid "[Scheme](./languages/scheme.md)"
+msgstr ""
+
+#: src/languages.md:63
+msgid "[Shell Script](./languages/sh.md)"
+msgstr ""
+
+#: src/languages.md:64
+msgid "[Svelte](./languages/svelte.md)"
+msgstr ""
+
+#: src/languages.md:65
+msgid "[Swift](./languages/swift.md)"
+msgstr ""
+
+#: src/languages.md:66
+msgid "[Tailwind CSS](./languages/tailwindcss.md) \\*"
+msgstr ""
+
+#: src/languages.md:67
+msgid "[Terraform](./languages/terraform.md)"
+msgstr ""
+
+#: src/languages.md:68
+msgid "[TOML](./languages/toml.md)"
+msgstr ""
+
+#: src/languages.md:69
+msgid "[TypeScript](./languages/typescript.md) \\*"
+msgstr ""
+
+#: src/languages.md:70
+msgid "[Uiua](./languages/uiua.md)"
+msgstr ""
+
+#: src/languages.md:71
+msgid "[Vue](./languages/vue.md)"
+msgstr ""
+
+#: src/languages.md:72
+msgid "[XML](./languages/xml.md)"
+msgstr ""
+
+#: src/languages.md:73
+msgid "[YAML](./languages/yaml.md) \\*"
+msgstr ""
+
+#: src/languages.md:74
+msgid "[Yara](./languages/yarn.md)"
+msgstr ""
+
+#: src/languages.md:75
+msgid "[Yarn](./languages/yarn.md)"
+msgstr ""
+
+#: src/languages.md:76
+msgid "[Zig](./languages/zig.md)"
+msgstr ""
+
+#: src/languages.md:78
+msgid "Additional Community Language Extensions"
+msgstr ""
+
+#: src/languages.md:80
+msgid "[Ada](https://github.com/wisn/zed-ada-language)"
+msgstr ""
+
+#: src/languages.md:81
+msgid "[Aiken](https://github.com/aiken-lang/zed-aiken)"
+msgstr ""
+
+#: src/languages.md:82
+msgid "[Amber](https://github.com/amber-lang/zed-amber-extension)"
+msgstr ""
+
+#: src/languages.md:83
+msgid "[Assembly](https://github.com/DevBlocky/zed-asm)"
+msgstr ""
+
+#: src/languages.md:84
+msgid "[AWK](https://github.com/dangh/zed-awk)"
+msgstr ""
+
+#: src/languages.md:85
+msgid "[Beancount](https://github.com/zed-extensions/beancount)"
+msgstr ""
+
+#: src/languages.md:86
+msgid "[Bend](https://github.com/mrpedrobraga/zed-bend)"
+msgstr ""
+
+#: src/languages.md:87
+msgid "[Blade](https://github.com/bajrangCoder/zed-laravel-blade)"
+msgstr ""
+
+#: src/languages.md:88
+msgid "[Blueprint](https://github.com/tfuxu/zed-blueprint)"
+msgstr ""
+
+#: src/languages.md:89
+msgid "[BQN](https://github.com/DavidZwitser/zed-bqn)"
+msgstr ""
+
+#: src/languages.md:90
+msgid "[Brainfuck](https://github.com/JosephTLyons/zed-brainfuck)"
+msgstr ""
+
+#: src/languages.md:91
+msgid "[Cadence](https://github.com/janezpodhostnik/cadence.zed)"
+msgstr ""
+
+#: src/languages.md:92
+msgid "[Cairo](https://github.com/trbutler4/zed-cairo)"
+msgstr ""
+
+#: src/languages.md:93
+msgid "[Cap'n Proto](https://github.com/cmackenzie1/zed-capnp)"
+msgstr ""
+
+#: src/languages.md:94
+msgid "[Cedar](https://github.com/chrnorm/zed-cedar)"
+msgstr ""
+
+#: src/languages.md:95
+msgid "[CFEngine policy language](https://github.com/olehermanse/zed-cfengine)"
+msgstr ""
+
+#: src/languages.md:96
+msgid "[CSV](https://github.com/huacnlee/zed-csv)"
+msgstr ""
+
+#: src/languages.md:97
+msgid "[Cucumber/Gherkin](https://github.com/thlcodes/zed-extension-cucumber)"
+msgstr ""
+
+#: src/languages.md:98
+msgid "[CUE](https://github.com/jkasky/zed-cue)"
+msgstr ""
+
+#: src/languages.md:99
+msgid "[Curry](https://github.com/fwcd/zed-curry)"
+msgstr ""
+
+#: src/languages.md:100
+msgid "[D](https://github.com/staysail/zed-d)"
+msgstr ""
+
+#: src/languages.md:101
+msgid ""
+"[Database Markup Language (DBML)](https://github.com/shuklaayush/zed-dbml)"
+msgstr ""
+
+#: src/languages.md:102
+msgid "[Earthfile](https://github.com/glehmann/earthfile.zed)"
+msgstr ""
+
+#: src/languages.md:103
+msgid "[EJS template](https://github.com/dangh/zed-ejs)"
+msgstr ""
+
+#: src/languages.md:104
+msgid "[Elisp](https://github.com/JosephTLyons/zed-elisp)"
+msgstr ""
+
+#: src/languages.md:105
+msgid "[Ember](https://github.com/jylamont/zed-ember)"
+msgstr ""
+
+#: src/languages.md:106
+msgid "[Env](https://github.com/zarifpour/zed-env)"
+msgstr ""
+
+#: src/languages.md:107
+msgid "[Exograph](https://github.com/exograph/zed-extension)"
+msgstr ""
+
+#: src/languages.md:108
+msgid "[Fortran](https://github.com/Xavier-Maruff/zed-fortran)"
+msgstr ""
+
+#: src/languages.md:109
+msgid "[F#](https://github.com/nathanjcollins/zed-fsharp)"
+msgstr ""
+
+#: src/languages.md:110
+msgid "[Gemini gemtext](https://github.com/clseibold/gemini-zed)"
+msgstr ""
+
+#: src/languages.md:111
+msgid "[Git Firefly](https://github.com/d1y/git_firefly)"
+msgstr ""
+
+#: src/languages.md:112
+msgid "[GraphQL](https://github.com/11bit/zed-extension-graphql)"
+msgstr ""
+
+#: src/languages.md:113
+msgid "[Groq](https://github.com/juice49/zed-groq)"
+msgstr ""
+
+#: src/languages.md:114
+msgid "[INI](https://github.com/bajrangCoder/zed-ini)"
+msgstr ""
+
+#: src/languages.md:115
+msgid "[Java](https://github.com/zed-extensions/java)"
+msgstr ""
+
+#: src/languages.md:116
+msgid "[Justfiles](https://github.com/jackTabsCode/zed-just)"
+msgstr ""
+
+#: src/languages.md:117
+msgid "[LaTeX](https://github.com/rzukic/zed-latex)"
+msgstr ""
+
+#: src/languages.md:118
+msgid "[Ledger](https://github.com/mrkstwrt/zed-ledger)"
+msgstr ""
+
+#: src/languages.md:119
+msgid "[Less](https://github.com/jimliang/zed-less)"
+msgstr ""
+
+#: src/languages.md:120
+msgid "[LilyPond](https://github.com/nwhetsell/lilypond-zed-extension)"
+msgstr ""
+
+#: src/languages.md:121
+msgid "[Liquid](https://github.com/TheBeyondGroup/zed-shopify-liquid)"
+msgstr ""
+
+#: src/languages.md:122
+msgid "[Log](https://github.com/evrensen467/zed-log)"
+msgstr ""
+
+#: src/languages.md:123
+msgid "[Lox](https://github.com/arian81/zed-lox)"
+msgstr ""
+
+#: src/languages.md:124
+msgid "[Markdown Oxide](https://github.com/Feel-ix-343/markdown-oxide-zed)"
+msgstr ""
+
+#: src/languages.md:125
+msgid "[Marksman](https://github.com/vitallium/zed-marksman)"
+msgstr ""
+
+#: src/languages.md:126
+msgid "[Matlab](https://github.com/rzukic/zed-matlab)"
+msgstr ""
+
+#: src/languages.md:127
+msgid "[Meson](https://github.com/hqnna/zed-meson)"
+msgstr ""
+
+#: src/languages.md:128
+msgid "[Navi](https://github.com/navi-language/zed-navi)"
+msgstr ""
+
+#: src/languages.md:129
+msgid "[NeoCMake](https://github.com/k0tran/zed_neocmake)"
+msgstr ""
+
+#: src/languages.md:130
+msgid "[Nginx](https://github.com/d1y/nginx-zed)"
+msgstr ""
+
+#: src/languages.md:131
+msgid "[Nim](https://github.com/foxoman/zed-nim)"
+msgstr ""
+
+#: src/languages.md:132
+msgid "[Nix](https://github.com/zed-extensions/nix)"
+msgstr ""
+
+#: src/languages.md:133
+msgid "[Noir](https://github.com/shuklaayush/zed-noir)"
+msgstr ""
+
+#: src/languages.md:134
+msgid "[Nu](https://github.com/zed-extensions/nu)"
+msgstr ""
+
+#: src/languages.md:135
+msgid "[Odin](https://github.com/rxptr/zed-odin)"
+msgstr ""
+
+#: src/languages.md:136
+msgid "[Pact](https://github.com/kadena-community/pact-zed)"
+msgstr ""
+
+#: src/languages.md:137
+msgid "[Pest](https://github.com/pest-parser/zed-pest)"
+msgstr ""
+
+#: src/languages.md:138
+msgid "[PICA200 assembly](https://github.com/Squareheron942/zed-pica200)"
+msgstr ""
+
+#: src/languages.md:139
+msgid "[Pkl](https://github.com/Moshyfawn/pkl-zed)"
+msgstr ""
+
+#: src/languages.md:140
+msgid "[PlaydateSDK](https://github.com/notpeter/playdate-zed-extension)"
+msgstr ""
+
+#: src/languages.md:141
+msgid "[QML](https://github.com/lkroll/zed-qml)"
+msgstr ""
+
+#: src/languages.md:142
+msgid "[Rainbow CSV](https://github.com/weartist/zed-rainbow-csv)"
+msgstr ""
+
+#: src/languages.md:143
+msgid "[Rego](https://github.com/StyraInc/zed-rego)"
+msgstr ""
+
+#: src/languages.md:144
+msgid "[Rescript](https://github.com/humaans/rescript-zed)"
+msgstr ""
+
+#: src/languages.md:145
+msgid "[Roclang](https://github.com/h2000/zed-roc)"
+msgstr ""
+
+#: src/languages.md:146
+msgid "[Ron](https://github.com/onbjerg/zed-ron)"
+msgstr ""
+
+#: src/languages.md:147
+msgid "[Metals](https://github.com/scalameta/metals-zed)"
+msgstr ""
+
+#: src/languages.md:148
+msgid "[SCSS](https://github.com/bajrangCoder/zed-scss)"
+msgstr ""
+
+#: src/languages.md:149
+msgid "[Slim](https://github.com/calmyournerves/zed-slim)"
+msgstr ""
+
+#: src/languages.md:150
+msgid "[Slint](https://gitlab.com/flukejones/zed-slint)"
+msgstr ""
+
+#: src/languages.md:151
+msgid "[Smithy](https://github.com/joshrutkowski/zed-smithy)"
+msgstr ""
+
+#: src/languages.md:152
+msgid "[Solidity](https://github.com/zarifpour/zed-solidity)"
+msgstr ""
+
+#: src/languages.md:153
+msgid "[SQL](https://github.com/evrensen467/zed-sql)"
+msgstr ""
+
+#: src/languages.md:154
+msgid "[Strace](https://github.com/sigmaSd/zed-strace)"
+msgstr ""
+
+#: src/languages.md:155
+msgid "[Swift](https://github.com/zed-extensions/swift)"
+msgstr ""
+
+#: src/languages.md:156
+msgid "[Templ](https://github.com/makifdb/zed-templ)"
+msgstr ""
+
+#: src/languages.md:157
+msgid "[Tmux](https://github.com/dangh/zed-tmux)"
+msgstr ""
+
+#: src/languages.md:158
+msgid "[Twig](https://github.com/YussufSassi/zed-twig)"
+msgstr ""
+
+#: src/languages.md:159
+msgid "[Typst](https://github.com/WeetHet/typst.zed)"
+msgstr ""
+
+#: src/languages.md:160
+msgid "[Unison](https://github.com/zetashift/unison-zed)"
+msgstr ""
+
+#: src/languages.md:161
+msgid "[UnoCSS](https://github.com/bajrangCoder/zed-unocss)"
+msgstr ""
+
+#: src/languages.md:162
+msgid "[Vlang](https://github.com/lv37/zed-v)"
+msgstr ""
+
+#: src/languages.md:163
+msgid "[Vala](https://github.com/FyraLabs/zed-vala)"
+msgstr ""
+
+#: src/languages.md:164
+msgid "[Vale](https://github.com/koozz/zed-vale)"
+msgstr ""
+
+#: src/languages.md:165
+msgid "[Verilog](https://github.com/someone13574/zed-verilog-extension)"
+msgstr ""
+
+#: src/languages.md:166
+msgid "[VHS](https://github.com/eth0net/zed-vhs)"
+msgstr ""
+
+#: src/languages.md:167
+msgid "[Wgsl](https://github.com/luan/zed-wgsl)"
+msgstr ""
+
+#: src/languages.md:168
+msgid "[WIT](https://github.com/valentinegb/zed-wit)"
+msgstr ""

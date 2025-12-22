@@ -1,0 +1,616 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/rust.md:1
+msgid "Rust"
+msgstr ""
+
+#: src/languages/rust.md:3
+msgid "Rust support is available natively in Zed."
+msgstr ""
+
+#: src/languages/rust.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-rust](https://github.com/tree-sitter/"
+"tree-sitter-rust)"
+msgstr ""
+
+#: src/languages/rust.md:6
+msgid ""
+"Language Server: [rust-lang/rust-analyzer](https://github.com/rust-lang/rust-"
+"analyzer)"
+msgstr ""
+
+#: src/languages/rust.md:7
+msgid ""
+"Debug Adapter: [CodeLLDB](https://github.com/vadimcn/codelldb) (primary), "
+"[GDB](https://sourceware.org/gdb/) (secondary, not available on Apple "
+"silicon)"
+msgstr ""
+
+#: src/languages/rust.md:15
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/languages/rust.md:17
+msgid ""
+"The following configuration can be used to change the inlay hint settings "
+"for `rust-analyzer` in Rust:"
+msgstr ""
+
+#: src/languages/rust.md:21 src/languages/rust.md:48 src/languages/rust.md:72
+#: src/languages/rust.md:86 src/languages/rust.md:100 src/languages/rust.md:119
+#: src/languages/rust.md:143 src/languages/rust.md:196
+#: src/languages/rust.md:230 src/languages/rust.md:246
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/rust.md:22 src/languages/rust.md:49 src/languages/rust.md:73
+#: src/languages/rust.md:87 src/languages/rust.md:101 src/languages/rust.md:120
+#: src/languages/rust.md:144 src/languages/rust.md:197
+#: src/languages/rust.md:231 src/languages/rust.md:247
+msgid "\"rust-analyzer\""
+msgstr ""
+
+#: src/languages/rust.md:23 src/languages/rust.md:50 src/languages/rust.md:121
+#: src/languages/rust.md:198 src/languages/rust.md:232
+#: src/languages/rust.md:248
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/rust.md:24
+msgid "\"inlayHints\""
+msgstr ""
+
+#: src/languages/rust.md:25
+msgid "\"maxLength\""
+msgstr ""
+
+#: src/languages/rust.md:26
+msgid "\"lifetimeElisionHints\""
+msgstr ""
+
+#: src/languages/rust.md:27 src/languages/rust.md:31 src/languages/rust.md:203
+msgid "\"enable\""
+msgstr ""
+
+#: src/languages/rust.md:27
+msgid "\"skip_trivial\""
+msgstr ""
+
+#: src/languages/rust.md:28
+msgid "\"useParameterNames\""
+msgstr ""
+
+#: src/languages/rust.md:30
+msgid "\"closureReturnTypeHints\""
+msgstr ""
+
+#: src/languages/rust.md:31
+msgid "\"always\""
+msgstr ""
+
+#: src/languages/rust.md:40
+msgid ""
+"See [Inlay Hints](https://rust-analyzer.github.io/book/features.html#inlay-"
+"hints) in the Rust Analyzer Manual for more information."
+msgstr ""
+
+#: src/languages/rust.md:42
+msgid "Target directory"
+msgstr ""
+
+#: src/languages/rust.md:44
+msgid ""
+"The `rust-analyzer` target directory can be set in `initialization_options`:"
+msgstr ""
+
+#: src/languages/rust.md:51 src/languages/rust.md:316 src/languages/rust.md:337
+msgid "\"rust\""
+msgstr ""
+
+#: src/languages/rust.md:52
+msgid "\"analyzerTargetDir\""
+msgstr ""
+
+#: src/languages/rust.md:60
+msgid ""
+"A `true` setting will set the target directory to `target/rust-analyzer`. "
+"You can set a custom directory with a string like `\"target/analyzer\"` "
+"instead of `true`."
+msgstr ""
+
+#: src/languages/rust.md:62
+msgid "Binary"
+msgstr ""
+
+#: src/languages/rust.md:64
+msgid "You can configure which `rust-analyzer` binary Zed should use."
+msgstr ""
+
+#: src/languages/rust.md:66
+msgid ""
+"By default, Zed will try to find a `rust-analyzer` in your `$PATH` and try "
+"to use that. If that binary successfully executes `rust-analyzer --help`, "
+"it's used. Otherwise, Zed will fall back to installing its own stable `rust-"
+"analyzer` version and use that."
+msgstr ""
+
+#: src/languages/rust.md:68
+msgid ""
+"If you want to install pre-release `rust-analyzer` version instead you can "
+"instruct Zed to do so by setting `pre_release` to `true` in your `settings."
+"json`:"
+msgstr ""
+
+#: src/languages/rust.md:74
+msgid "\"fetch\""
+msgstr ""
+
+#: src/languages/rust.md:75
+msgid "\"pre_release\""
+msgstr ""
+
+#: src/languages/rust.md:82
+msgid ""
+"If you want to disable Zed looking for a `rust-analyzer` binary, you can set "
+"`ignore_system_version` to `true` in your `settings.json`:"
+msgstr ""
+
+#: src/languages/rust.md:88 src/languages/rust.md:102
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/rust.md:89
+msgid "\"ignore_system_version\""
+msgstr ""
+
+#: src/languages/rust.md:96
+msgid ""
+"If you want to use a binary in a custom location, you can specify a `path` "
+"and optional `arguments`:"
+msgstr ""
+
+#: src/languages/rust.md:103
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/rust.md:103
+msgid "\"/Users/example/bin/rust-analyzer\""
+msgstr ""
+
+#: src/languages/rust.md:104
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/rust.md:111
+msgid "This `\"path\"` has to be an absolute path."
+msgstr ""
+
+#: src/languages/rust.md:113
+msgid "Alternate Targets"
+msgstr ""
+
+#: src/languages/rust.md:115
+msgid ""
+"If you want rust-analyzer to provide diagnostics for a target other than "
+"your current platform (e.g. for windows when running on macOS) you can use "
+"the following Zed lsp settings:"
+msgstr ""
+
+#: src/languages/rust.md:122 src/languages/rust.md:311
+#: src/languages/rust.md:333
+msgid "\"cargo\""
+msgstr ""
+
+#: src/languages/rust.md:123
+msgid "\"target\""
+msgstr ""
+
+#: src/languages/rust.md:123
+msgid "\"x86_64-pc-windows-msvc\""
+msgstr ""
+
+#: src/languages/rust.md:131
+msgid ""
+"If you are using `rustup`, you can find a list of available target triples "
+"(`aarch64-apple-darwin`, `x86_64-unknown-linux-gnu`, etc) by running:"
+msgstr ""
+
+#: src/languages/rust.md:137
+msgid "LSP tasks"
+msgstr ""
+
+#: src/languages/rust.md:139
+msgid ""
+"Zed provides tasks using tree-sitter, but rust-analyzer has an LSP extension "
+"method for querying file-related tasks via LSP. This is enabled by default "
+"and can be configured as"
+msgstr ""
+
+#: src/languages/rust.md:145
+msgid "\"enable_lsp_tasks\""
+msgstr ""
+
+#: src/languages/rust.md:150
+msgid "Manual Cargo Diagnostics fetch"
+msgstr ""
+
+#: src/languages/rust.md:152
+msgid ""
+"By default, rust-analyzer has `checkOnSave: true` enabled, which causes "
+"every buffer save to trigger a `cargo check --workspace --all-targets` "
+"command. If disabled with `checkOnSave: false` (see the example of the "
+"server configuration json above), it's still possible to fetch the "
+"diagnostics manually, with the `editor: run/clear/cancel flycheck` commands "
+"in Rust files to refresh cargo diagnostics; the project diagnostics editor "
+"will also refresh cargo diagnostics with `editor: run flycheck` command when "
+"the setting is enabled."
+msgstr ""
+
+#: src/languages/rust.md:155
+msgid "More server configuration"
+msgstr ""
+
+#: src/languages/rust.md:161
+msgid ""
+"Rust-analyzer [manual](https://rust-analyzer.github.io/book/) describes "
+"various features and configuration options for rust-analyzer language "
+"server. Rust-analyzer in Zed runs with the default parameters."
+msgstr ""
+
+#: src/languages/rust.md:164
+msgid "Large projects and performance"
+msgstr ""
+
+#: src/languages/rust.md:166
+msgid ""
+"One of the main caveats that might cause extensive resource usage on large "
+"projects, is the combination of the following features:"
+msgstr ""
+
+#: src/languages/rust.md:183
+msgid ""
+"Which would mean that every time Zed saves, a `cargo check --workspace --all-"
+"targets` command is run, checking the entire project (workspace), lib, doc, "
+"test, bin, bench and [other targets](https://doc.rust-lang.org/cargo/"
+"reference/cargo-targets.html)."
+msgstr ""
+
+#: src/languages/rust.md:185
+msgid "While that works fine on small projects, it does not scale well."
+msgstr ""
+
+#: src/languages/rust.md:187
+msgid ""
+"The alternatives would be to use [tasks](../tasks.md), as Zed already "
+"provides a `cargo check --workspace --all-targets` task and the ability to "
+"cmd/ctrl-click on the terminal output to navigate to the error, and limit or "
+"turn off the check on save feature entirely."
+msgstr ""
+
+#: src/languages/rust.md:189
+msgid ""
+"Check on save feature is responsible for returning part of the diagnostics "
+"based on cargo check output, so turning it off will limit rust-analyzer with "
+"its own [diagnostics](https://rust-analyzer.github.io/book/diagnostics.html)."
+msgstr ""
+
+#: src/languages/rust.md:191
+msgid ""
+"Consider more `rust-analyzer.cargo.` and `rust-analyzer.check.` and `rust-"
+"analyzer.diagnostics.` settings from the manual for more fine-grained "
+"configuration. Here's a snippet for Zed settings.json (the language server "
+"will restart automatically after the `lsp.rust-analyzer` section is edited "
+"and saved):"
+msgstr ""
+
+#: src/languages/rust.md:199
+msgid ""
+"// get more cargo-less diagnostics from rust-analyzer,\n"
+"        // which might include false-positives (those can be turned off by "
+"their names)\n"
+"        \"diagnostics\""
+msgstr ""
+
+#: src/languages/rust.md:202
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/rust.md:206
+msgid ""
+"// To disable the checking entirely\n"
+"        // (ignores all cargo and check settings below)\n"
+"        \"checkOnSave\""
+msgstr ""
+
+#: src/languages/rust.md:209
+msgid ""
+"// To check the `lib` target only.\n"
+"        \"cargo\""
+msgstr ""
+
+#: src/languages/rust.md:211
+msgid "\"allTargets\""
+msgstr ""
+
+#: src/languages/rust.md:213
+msgid ""
+"// Use `-p` instead of `--workspace` for cargo check\n"
+"        \"check\""
+msgstr ""
+
+#: src/languages/rust.md:215
+msgid "\"workspace\""
+msgstr ""
+
+#: src/languages/rust.md:223
+msgid "Multi-project workspaces"
+msgstr ""
+
+#: src/languages/rust.md:225
+msgid ""
+"If you want rust-analyzer to analyze multiple Rust projects in the same "
+"folder that are not listed in `[members]` in the Cargo workspace, you can "
+"list them in `linkedProjects` in the local project settings:"
+msgstr ""
+
+#: src/languages/rust.md:233
+msgid "\"linkedProjects\""
+msgstr ""
+
+#: src/languages/rust.md:233
+msgid "\"./path/to/a/Cargo.toml\""
+msgstr ""
+
+#: src/languages/rust.md:233
+msgid "\"./path/to/b/Cargo.toml\""
+msgstr ""
+
+#: src/languages/rust.md:240
+msgid "Snippets"
+msgstr ""
+
+#: src/languages/rust.md:242
+msgid ""
+"There's a way to get custom completion items from rust-analyzer, that will "
+"transform the code according to the snippet body:"
+msgstr ""
+
+#: src/languages/rust.md:249
+msgid "\"completion\""
+msgstr ""
+
+#: src/languages/rust.md:250
+msgid "\"snippets\""
+msgstr ""
+
+#: src/languages/rust.md:251
+msgid "\"custom\""
+msgstr ""
+
+#: src/languages/rust.md:252
+msgid "\"Arc::new\""
+msgstr ""
+
+#: src/languages/rust.md:253 src/languages/rust.md:259
+#: src/languages/rust.md:264 src/languages/rust.md:269
+#: src/languages/rust.md:275 src/languages/rust.md:281
+msgid "\"postfix\""
+msgstr ""
+
+#: src/languages/rust.md:253
+msgid "\"arc\""
+msgstr ""
+
+#: src/languages/rust.md:254 src/languages/rust.md:260
+#: src/languages/rust.md:265 src/languages/rust.md:270
+#: src/languages/rust.md:276 src/languages/rust.md:282
+msgid "\"body\""
+msgstr ""
+
+#: src/languages/rust.md:254
+msgid "\"Arc::new(${receiver})\""
+msgstr ""
+
+#: src/languages/rust.md:255 src/languages/rust.md:271
+#: src/languages/rust.md:277
+msgid "\"requires\""
+msgstr ""
+
+#: src/languages/rust.md:255
+msgid "\"std::sync::Arc\""
+msgstr ""
+
+#: src/languages/rust.md:256 src/languages/rust.md:261
+#: src/languages/rust.md:266 src/languages/rust.md:272
+#: src/languages/rust.md:278 src/languages/rust.md:284
+msgid "\"scope\""
+msgstr ""
+
+#: src/languages/rust.md:256 src/languages/rust.md:261
+#: src/languages/rust.md:266 src/languages/rust.md:272
+#: src/languages/rust.md:278 src/languages/rust.md:284
+msgid "\"expr\""
+msgstr ""
+
+#: src/languages/rust.md:258
+msgid "\"Some\""
+msgstr ""
+
+#: src/languages/rust.md:259
+msgid "\"some\""
+msgstr ""
+
+#: src/languages/rust.md:260
+msgid "\"Some(${receiver})\""
+msgstr ""
+
+#: src/languages/rust.md:263
+msgid "\"Ok\""
+msgstr ""
+
+#: src/languages/rust.md:264
+msgid "\"ok\""
+msgstr ""
+
+#: src/languages/rust.md:265
+msgid "\"Ok(${receiver})\""
+msgstr ""
+
+#: src/languages/rust.md:268
+msgid "\"Rc::new\""
+msgstr ""
+
+#: src/languages/rust.md:269
+msgid "\"rc\""
+msgstr ""
+
+#: src/languages/rust.md:270
+msgid "\"Rc::new(${receiver})\""
+msgstr ""
+
+#: src/languages/rust.md:271
+msgid "\"std::rc::Rc\""
+msgstr ""
+
+#: src/languages/rust.md:274
+msgid "\"Box::pin\""
+msgstr ""
+
+#: src/languages/rust.md:275
+msgid "\"boxpin\""
+msgstr ""
+
+#: src/languages/rust.md:276
+msgid "\"Box::pin(${receiver})\""
+msgstr ""
+
+#: src/languages/rust.md:277
+msgid "\"std::boxed::Box\""
+msgstr ""
+
+#: src/languages/rust.md:280
+msgid "\"vec!\""
+msgstr ""
+
+#: src/languages/rust.md:281
+msgid "\"vec\""
+msgstr ""
+
+#: src/languages/rust.md:282
+msgid "\"vec![${receiver}]\""
+msgstr ""
+
+#: src/languages/rust.md:283
+msgid "\"description\""
+msgstr ""
+
+#: src/languages/rust.md:283
+msgid "\"vec![]\""
+msgstr ""
+
+#: src/languages/rust.md:295
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/rust.md:297
+msgid ""
+"Zed supports debugging Rust binaries and tests out of the box with "
+"`CodeLLDB` and `GDB`. Run <code class=\"hljs\">debugger::Start</code> (<kbd "
+"class=\"keybinding\">f4|f4</kbd>) to launch one of these preconfigured debug "
+"tasks."
+msgstr ""
+
+#: src/languages/rust.md:299
+msgid ""
+"For more control, you can add debug configurations to `.zed/debug.json`. See "
+"the examples below."
+msgstr ""
+
+#: src/languages/rust.md:301
+msgid ""
+"[CodeLLDB configuration documentation](https://github.com/vadimcn/codelldb/"
+"blob/master/MANUAL.md#starting-a-new-debug-session)"
+msgstr ""
+
+#: src/languages/rust.md:302
+msgid ""
+"[GDB configuration documentation](https://sourceware.org/gdb/current/"
+"onlinedocs/gdb.html/Debugger-Adapter-Protocol.html)"
+msgstr ""
+
+#: src/languages/rust.md:304
+msgid "Build binary then debug"
+msgstr ""
+
+#: src/languages/rust.md:309 src/languages/rust.md:330
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/rust.md:309 src/languages/rust.md:330
+msgid "\"Build & Debug native binary\""
+msgstr ""
+
+#: src/languages/rust.md:310 src/languages/rust.md:312
+#: src/languages/rust.md:332 src/languages/rust.md:334
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/rust.md:311 src/languages/rust.md:333
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/rust.md:312 src/languages/rust.md:334
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/rust.md:314
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/rust.md:314
+msgid "\"$ZED_WORKTREE_ROOT/target/debug/binary\""
+msgstr ""
+
+#: src/languages/rust.md:315 src/languages/rust.md:336
+msgid ""
+"// sourceLanguages is required for CodeLLDB (not GDB) when using Rust\n"
+"    \"sourceLanguages\""
+msgstr ""
+
+#: src/languages/rust.md:317
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/rust.md:317
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/rust.md:318 src/languages/rust.md:331
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/rust.md:318 src/languages/rust.md:331
+msgid "\"CodeLLDB\""
+msgstr ""
+
+#: src/languages/rust.md:323
+msgid "Automatically locate a debug target based on build command"
+msgstr ""
+
+#: src/languages/rust.md:325
+msgid ""
+"When you use `cargo build` or `cargo test` as the build command, Zed can "
+"infer the path to the output binary."
+msgstr ""

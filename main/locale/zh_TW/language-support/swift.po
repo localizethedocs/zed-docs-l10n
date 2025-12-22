@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/swift.md:1
+msgid "Swift"
+msgstr ""
+
+#: src/languages/swift.md:3
+msgid ""
+"Swift language support in Zed is provided by the community-maintained [Swift "
+"extension](https://github.com/zed-extensions/swift). Report issues to: "
+"[https://github.com/zed-extensions/swift/issues](https://github.com/zed-"
+"extensions/swift/issues)"
+msgstr ""
+
+#: src/languages/swift.md:6
+msgid ""
+"Tree-sitter: [alex-pinkus/tree-sitter-swift](https://github.com/alex-pinkus/"
+"tree-sitter-swift)"
+msgstr ""
+
+#: src/languages/swift.md:7
+msgid ""
+"Language Server: [swiftlang/sourcekit-lsp](https://github.com/swiftlang/"
+"sourcekit-lsp)"
+msgstr ""
+
+#: src/languages/swift.md:8
+msgid ""
+"Debug Adapter: [`lldb-dap`](https://github.com/swiftlang/llvm-project/blob/"
+"next/lldb/tools/lldb-dap/README.md)"
+msgstr ""
+
+#: src/languages/swift.md:10
+msgid "Language Server Configuration"
+msgstr ""
+
+#: src/languages/swift.md:12
+msgid ""
+"You can modify the behavior of SourceKit LSP by creating a `.sourcekit-lsp/"
+"config.json` under your home directory or in your project root. See "
+"[SourceKit-LSP configuration file](https://github.com/swiftlang/sourcekit-"
+"lsp/blob/main/Documentation/Configuration%20File.md) for complete "
+"documentation."
+msgstr ""
+
+#: src/languages/swift.md:14
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/swift.md:16
+msgid ""
+"The Swift extension provides a debug adapter for debugging Swift code. Zed's "
+"name for the adapter (in the UI and `debug.json`) is `Swift`, and under the "
+"hood it uses [`lldb-dap`](https://github.com/swiftlang/llvm-project/blob/"
+"next/lldb/tools/lldb-dap/README.md), as provided by the Swift toolchain. The "
+"extension tries to find an `lldb-dap` binary using `swiftly`, using `xcrun`, "
+"and by searching `$PATH`, in that order of preference. The extension doesn't "
+"attempt to download `lldb-dap` if it's not found."
+msgstr ""
+
+#: src/languages/swift.md:21
+msgid ""
+"[lldb-dap configuration documentation](https://github.com/llvm/llvm-project/"
+"blob/main/lldb/tools/lldb-dap/README.md#configuration-settings-reference)"
+msgstr ""
+
+#: src/languages/swift.md:23
+msgid "Examples"
+msgstr ""
+
+#: src/languages/swift.md:25
+msgid "Build and debug a Swift binary"
+msgstr ""
+
+#: src/languages/swift.md:30
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/swift.md:30
+msgid "\"Debug Swift\""
+msgstr ""
+
+#: src/languages/swift.md:31 src/languages/swift.md:33
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/swift.md:32
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/swift.md:32
+msgid "\"swift\""
+msgstr ""
+
+#: src/languages/swift.md:33
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/swift.md:35
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/swift.md:35
+msgid ""
+"\"$ZED_WORKTREE_ROOT/swift-app/.build/arm64-apple-macosx/debug/swift-app\""
+msgstr ""
+
+#: src/languages/swift.md:36
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/swift.md:36
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/swift.md:37
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/swift.md:37
+msgid "\"Swift\""
+msgstr ""

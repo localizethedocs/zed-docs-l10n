@@ -1,0 +1,117 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/toolchains.md:1
+msgid "Toolchains"
+msgstr ""
+
+#: src/toolchains.md:3
+msgid ""
+"Zed projects offer a dedicated UI for toolchain selection, which lets you "
+"pick a set of tools for working with a given language in a current project."
+msgstr ""
+
+#: src/toolchains.md:5
+msgid ""
+"Imagine you're working with Python project, which has virtual environments "
+"that encapsulate a set of dependencies of your project along with a suitable "
+"interpreter to run it with. The language server has to know which virtual "
+"environment you're working with, as it uses it to understand your project's "
+"code. With toolchain selector, you don't need to spend time configuring your "
+"language server to point it at the right virtual environment directory—you "
+"can just select the right virtual environment (toolchain) from a dropdown."
+msgstr ""
+
+#: src/toolchains.md:8
+msgid ""
+"You can even select different toolchains for different subprojects within "
+"your Zed project. A definition of a subproject is language-specific. In "
+"collaborative scenarios, only the project owner can see and modify an active "
+"toolchain."
+msgstr ""
+
+#: src/toolchains.md:11
+msgid ""
+"In [remote projects](./remote-development.md), you can use the toolchain "
+"selector to control the active toolchain on the SSH host. When [sharing your "
+"project](./collaboration/overview.md), the toolchain selector is not "
+"available to guests."
+msgstr ""
+
+#: src/toolchains.md:13
+msgid "Why do we need toolchains?"
+msgstr ""
+
+#: src/toolchains.md:15
+msgid ""
+"The active toolchain is relevant for launching language servers, which may "
+"need it to function properly—it may not be able to resolve dependencies, "
+"which in turn may make functionalities like \"Go to definition\" or \"Code "
+"completions\" unavailable."
+msgstr ""
+
+#: src/toolchains.md:17
+msgid ""
+"The active toolchain is also relevant when launching a shell in the terminal "
+"panel: some toolchains provide \"activation scripts\" for shells, which make "
+"those toolchains available in the shell environment for your convenience. "
+"Zed will run these activation scripts automatically when you create a new "
+"terminal."
+msgstr ""
+
+#: src/toolchains.md:19
+msgid ""
+"This also applies to [tasks](./tasks.md)—Zed tasks behave \"as if\" you "
+"opened a new terminal tab and ran a given task invocation yourself, which in "
+"turn means that Zed task execution is affected by the active toolchain and "
+"its activation script."
+msgstr ""
+
+#: src/toolchains.md:21
+msgid "Selecting toolchains"
+msgstr ""
+
+#: src/toolchains.md:23
+msgid ""
+"The active toolchain (if there is one) is displayed in the status bar (on "
+"the right hand side). Click on it to access the toolchain selector—you can "
+"also use an action from a command palette (<code class=\"hljs\">toolchain::"
+"Select</code>)."
+msgstr ""
+
+#: src/toolchains.md:25
+msgid ""
+"Zed will automatically infer a set of toolchains to choose from based on the "
+"project you're working with. A default will also be selected on your behalf "
+"on a best-effort basis when you open a project for the first time."
+msgstr ""
+
+#: src/toolchains.md:27
+msgid ""
+"The toolchain selection applies to a current subproject, which—depending on "
+"the structure of your Zed project—might be your whole project or just a "
+"subset of it. For example, if you have a monorepo with multiple subprojects, "
+"you might want to select a different toolchain for each subproject."
+msgstr ""
+
+#: src/toolchains.md:29
+msgid "Adding toolchains manually"
+msgstr ""
+
+#: src/toolchains.md:31
+msgid ""
+"If automatic detection does not suffice for you, you can add toolchains "
+"manually. To do that, click on the \"Add toolchain\" button in the toolchain "
+"selector. From there you can provide a path to a toolchain and set a name of "
+"your liking for it."
+msgstr ""

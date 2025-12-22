@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/jsonnet.md:1
+msgid "Jsonnet"
+msgstr ""
+
+#: src/languages/jsonnet.md:3
+msgid ""
+"Jsonnet language support in Zed is provided by the community-maintained "
+"[Jsonnet extension](https://github.com/narqo/zed-jsonnet)."
+msgstr ""
+
+#: src/languages/jsonnet.md:5
+msgid ""
+"Tree-sitter: [sourcegraph/tree-sitter-jsonnet](https://github.com/"
+"sourcegraph/tree-sitter-jsonnet)"
+msgstr ""
+
+#: src/languages/jsonnet.md:6
+msgid ""
+"Language Server: [grafana/jsonnet-language-server](https://github.com/"
+"grafana/jsonnet-language-server)"
+msgstr ""
+
+#: src/languages/jsonnet.md:8
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/jsonnet.md:10
+msgid ""
+"Workspace configuration options can be passed to the language server via the "
+"`lsp` settings of the `settings.json`."
+msgstr ""
+
+#: src/languages/jsonnet.md:12
+msgid ""
+"The following example enables support for resolving [tanka](https://tanka."
+"dev) import paths in `jsonnet-language-server`:"
+msgstr ""
+
+#: src/languages/jsonnet.md:16
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/jsonnet.md:17
+msgid "\"jsonnet-language-server\""
+msgstr ""
+
+#: src/languages/jsonnet.md:18
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/jsonnet.md:19
+msgid "\"resolve_paths_with_tanka\""
+msgstr ""

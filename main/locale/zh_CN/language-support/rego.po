@@ -1,0 +1,136 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/rego.md:1
+msgid "Rego"
+msgstr ""
+
+#: src/languages/rego.md:3
+msgid ""
+"Rego language support in Zed is provided by the community-maintained [Rego "
+"extension](https://github.com/StyraInc/zed-rego)."
+msgstr ""
+
+#: src/languages/rego.md:5
+msgid ""
+"Tree-sitter: [FallenAngel97/tree-sitter-rego](https://github.com/"
+"FallenAngel97/tree-sitter-rego)"
+msgstr ""
+
+#: src/languages/rego.md:6
+msgid ""
+"Language Server: [open-policy-agent/regal](https://github.com/open-policy-"
+"agent/regal)"
+msgstr ""
+
+#: src/languages/rego.md:8
+msgid "Installation"
+msgstr ""
+
+#: src/languages/rego.md:10
+msgid ""
+"The extension is largely based on the [Regal](https://docs.styra.com/regal/"
+"language-server) language server which should be installed to make use of "
+"the extension. Read the [getting started](https://docs.styra.com/"
+"regal#getting-started) instructions for more information."
+msgstr ""
+
+#: src/languages/rego.md:12
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/rego.md:14
+msgid ""
+"The extension's behavior is configured in the `.regal/config.yaml` file. The "
+"following is an example configuration which disables the `todo-comment` "
+"rule, customizes the `line-length` rule, and ignores test files for the `opa-"
+"fmt` rule:"
+msgstr ""
+
+#: src/languages/rego.md:17
+msgid "rules"
+msgstr ""
+
+#: src/languages/rego.md:18
+msgid "style"
+msgstr ""
+
+#: src/languages/rego.md:19
+msgid "todo-comment"
+msgstr ""
+
+#: src/languages/rego.md:20
+msgid ""
+"# don't report on todo comments\n"
+"      level"
+msgstr ""
+
+#: src/languages/rego.md:21
+msgid "ignore"
+msgstr ""
+
+#: src/languages/rego.md:22
+msgid "line-length"
+msgstr ""
+
+#: src/languages/rego.md:23
+msgid ""
+"# custom rule configuration\n"
+"      max-line-length"
+msgstr ""
+
+#: src/languages/rego.md:25
+msgid ""
+"# warn on too long lines, but don't fail\n"
+"      level"
+msgstr ""
+
+#: src/languages/rego.md:26
+msgid "warning"
+msgstr ""
+
+#: src/languages/rego.md:27
+msgid "opa-fmt"
+msgstr ""
+
+#: src/languages/rego.md:28
+msgid ""
+"# not needed as error is the default, but\n"
+"      # being explicit won't hurt\n"
+"      level"
+msgstr ""
+
+#: src/languages/rego.md:30
+msgid "error"
+msgstr ""
+
+#: src/languages/rego.md:31
+msgid ""
+"# files can be ignored for any individual rule\n"
+"      # in this example, test files are ignored\n"
+"      ignore"
+msgstr ""
+
+#: src/languages/rego.md:34
+msgid "files"
+msgstr ""
+
+#: src/languages/rego.md:35
+msgid "\"*_test.rego\""
+msgstr ""
+
+#: src/languages/rego.md:38
+msgid ""
+"Read Regal's [configuration documentation](https://docs.styra.com/"
+"regal#configuration) for more information."
+msgstr ""

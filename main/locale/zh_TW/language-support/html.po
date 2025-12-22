@@ -1,0 +1,170 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/html.md:1
+msgid "HTML"
+msgstr ""
+
+#: src/languages/html.md:3
+msgid ""
+"HTML support is available through the [HTML extension](https://github.com/"
+"zed-industries/zed/tree/main/extensions/html)."
+msgstr ""
+
+#: src/languages/html.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-html](https://github.com/tree-sitter/"
+"tree-sitter-html)"
+msgstr ""
+
+#: src/languages/html.md:6
+msgid ""
+"Language Server: [microsoft/vscode-html-languageservice](https://github.com/"
+"microsoft/vscode-html-languageservice)"
+msgstr ""
+
+#: src/languages/html.md:8
+msgid ""
+"This extension is automatically installed, but if you do not want to use it, "
+"you can add the following to your settings:"
+msgstr ""
+
+#: src/languages/html.md:12
+msgid "\"auto_install_extensions\""
+msgstr ""
+
+#: src/languages/html.md:13 src/languages/html.md:52
+msgid "\"html\""
+msgstr ""
+
+#: src/languages/html.md:18
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/html.md:20
+msgid ""
+"By default Zed uses [Prettier](https://prettier.io/) for formatting HTML."
+msgstr ""
+
+#: src/languages/html.md:22
+msgid ""
+"You can disable `format_on_save` by adding the following to your Zed "
+"`settings.json`:"
+msgstr ""
+
+#: src/languages/html.md:25 src/languages/html.md:39
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/html.md:26 src/languages/html.md:40
+msgid "\"HTML\""
+msgstr ""
+
+#: src/languages/html.md:27
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/html.md:27
+msgid "\"off\""
+msgstr ""
+
+#: src/languages/html.md:32
+msgid ""
+"You can still trigger formatting manually with <kbd class=\"keybinding\">cmd-"
+"shift-i|ctrl-shift-i</kbd> or by opening [the Command Palette](..//getting-"
+"started.md#command-palette) (<kbd class=\"keybinding\">cmd-shift-p|ctrl-"
+"shift-p</kbd>) and selecting \"Format Document\"."
+msgstr ""
+
+#: src/languages/html.md:34
+msgid "LSP Formatting"
+msgstr ""
+
+#: src/languages/html.md:36
+msgid ""
+"To use the `vscode-html-language-server` language server auto-formatting "
+"instead of Prettier, add the following to your Zed settings:"
+msgstr ""
+
+#: src/languages/html.md:41
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/html.md:41
+msgid "\"language_server\""
+msgstr ""
+
+#: src/languages/html.md:46
+msgid ""
+"You can customize various [formatting options](https://code.visualstudio.com/"
+"docs/languages/html#_formatting) for `vscode-html-language-server` via your "
+"Zed `settings.json`:"
+msgstr ""
+
+#: src/languages/html.md:49
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/html.md:50
+msgid "\"vscode-html-language-server\""
+msgstr ""
+
+#: src/languages/html.md:51
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/html.md:53
+msgid "\"format\""
+msgstr ""
+
+#: src/languages/html.md:54
+msgid ""
+"// Indent under <html> and <head> (default: false)\n"
+"            \"indentInnerHtml\""
+msgstr ""
+
+#: src/languages/html.md:56
+msgid ""
+"// Disable formatting inside <svg> or <script>\n"
+"            \"contentUnformatted\""
+msgstr ""
+
+#: src/languages/html.md:57
+msgid "\"svg,script\""
+msgstr ""
+
+#: src/languages/html.md:58
+msgid ""
+"// Add an extra newline before <div> and <p>\n"
+"            \"extraLiners\""
+msgstr ""
+
+#: src/languages/html.md:59
+msgid "\"div,p\""
+msgstr ""
+
+#: src/languages/html.md:67
+msgid "See also"
+msgstr ""
+
+#: src/languages/html.md:69
+msgid "[CSS](./css.md)"
+msgstr ""
+
+#: src/languages/html.md:70
+msgid "[JavaScript](./javascript.md)"
+msgstr ""
+
+#: src/languages/html.md:71
+msgid "[TypeScript](./typescript.md)"
+msgstr ""

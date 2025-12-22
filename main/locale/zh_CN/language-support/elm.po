@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/elm.md:1
+msgid "Elm"
+msgstr ""
+
+#: src/languages/elm.md:3
+msgid ""
+"Elm support is available through the [Elm extension](https://github.com/zed-"
+"extensions/elm)."
+msgstr ""
+
+#: src/languages/elm.md:5
+msgid ""
+"Tree-sitter: [elm-tooling/tree-sitter-elm](https://github.com/elm-tooling/"
+"tree-sitter-elm)"
+msgstr ""
+
+#: src/languages/elm.md:6
+msgid ""
+"Language Server: [elm-tooling/elm-language-server](https://github.com/elm-"
+"tooling/elm-language-server)"
+msgstr ""
+
+#: src/languages/elm.md:8
+msgid "Setup"
+msgstr ""
+
+#: src/languages/elm.md:10
+msgid ""
+"Zed support for Elm requires installation of `elm`, `elm-format`, and `elm-"
+"review`."
+msgstr ""
+
+#: src/languages/elm.md:12
+msgid ""
+"[Install Elm](https://guide.elm-lang.org/install/elm.html) (or run `brew "
+"install elm` on macOS)."
+msgstr ""
+
+#: src/languages/elm.md:13
+msgid "Install `elm-review` to support code linting:"
+msgstr ""
+
+#: src/languages/elm.md:17
+msgid "Install `elm-format` to support automatic formatting"
+msgstr ""
+
+#: src/languages/elm.md:22
+msgid "Configuring `elm-language-server`"
+msgstr ""
+
+#: src/languages/elm.md:24
+msgid "Elm language server can be configured in your `settings.json`, e.g.:"
+msgstr ""
+
+#: src/languages/elm.md:28
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/elm.md:29
+msgid "\"elm-language-server\""
+msgstr ""
+
+#: src/languages/elm.md:30
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/elm.md:31
+msgid "\"disableElmLSDiagnostics\""
+msgstr ""
+
+#: src/languages/elm.md:32
+msgid "\"onlyUpdateDiagnosticsOnSave\""
+msgstr ""
+
+#: src/languages/elm.md:33
+msgid "\"elmReviewDiagnostics\""
+msgstr ""
+
+#: src/languages/elm.md:33
+msgid "\"warning\""
+msgstr ""
+
+#: src/languages/elm.md:40
+msgid ""
+"`elm-format`, `elm-review` and `elm` need to be installed and made available "
+"in the environment or configured in the settings. See the [full list of "
+"server settings here](https://github.com/elm-tooling/elm-language-server?"
+"tab=readme-ov-file#server-settings)."
+msgstr ""

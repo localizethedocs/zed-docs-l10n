@@ -1,0 +1,90 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/scala.md:1
+msgid "Scala"
+msgstr ""
+
+#: src/languages/scala.md:3
+msgid ""
+"Scala language support in Zed is provided by the community-maintained [Scala "
+"extension](https://github.com/scalameta/metals-zed). Report issues to: "
+"[https://github.com/scalameta/metals-zed/issues](https://github.com/"
+"scalameta/metals-zed/issues)"
+msgstr ""
+
+#: src/languages/scala.md:6
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-scala](https://github.com/tree-sitter/"
+"tree-sitter-scala)"
+msgstr ""
+
+#: src/languages/scala.md:7
+msgid ""
+"Language Server: [scalameta/metals](https://github.com/scalameta/metals)"
+msgstr ""
+
+#: src/languages/scala.md:9
+msgid "Setup"
+msgstr ""
+
+#: src/languages/scala.md:11
+msgid ""
+"Install Scala with `cs setup` (Coursier): https://www.scala-lang.org/"
+"download/"
+msgstr ""
+
+#: src/languages/scala.md:12 src/languages/scala.md:15
+msgid "`brew install coursier/formulas/coursier && cs setup`"
+msgstr ""
+
+#: src/languages/scala.md:13
+msgid ""
+"REPL (Almond) Setup Instructions https://almond.sh/docs/quick-start-install"
+msgstr ""
+
+#: src/languages/scala.md:14
+msgid ""
+"`brew install --cask temurin` (Eclipse foundation official OpenJDK binaries)"
+msgstr ""
+
+#: src/languages/scala.md:16
+msgid "`coursier launch --use-bootstrap almond -- --install`"
+msgstr ""
+
+#: src/languages/scala.md:18
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/scala.md:20
+msgid "Behavior of the Metals language server can be controlled with:"
+msgstr ""
+
+#: src/languages/scala.md:22
+msgid ""
+"`.scalafix.conf` file - See [Scalafix Configuration](https://scalacenter."
+"github.io/scalafix/docs/users/configuration.html)"
+msgstr ""
+
+#: src/languages/scala.md:23
+msgid ""
+"`.scalafmt.conf` file - See [Scalafmt Configuration](https://scalameta.org/"
+"scalafmt/docs/configuration.html)"
+msgstr ""
+
+#: src/languages/scala.md:25
+msgid ""
+"You can place these files in the root of your project or specifying their "
+"location in the Metals configuration. See [Metals User Configuration]"
+"(https://scalameta.org/metals/docs/editors/user-configuration) for more."
+msgstr ""

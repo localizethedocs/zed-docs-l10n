@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/fish.md:1
+msgid "Fish"
+msgstr ""
+
+#: src/languages/fish.md:3
+msgid ""
+"Fish language support in Zed is provided by the community-maintained [Fish "
+"extension](https://github.com/hasit/zed-fish). Report issues to: [https://"
+"github.com/hasit/zed-fish/issues](https://github.com/hasit/zed-fish/issues)"
+msgstr ""
+
+#: src/languages/fish.md:6
+msgid ""
+"Tree-sitter: [ram02z/tree-sitter-fish](https://github.com/ram02z/tree-sitter-"
+"fish)"
+msgstr ""
+
+#: src/languages/fish.md:8
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/fish.md:10
+msgid ""
+"Zed supports auto-formatting fish code using external tools like "
+"[`fish_indent`](https://fishshell.com/docs/current/cmds/fish_indent.html), "
+"which is included with fish."
+msgstr ""
+
+#: src/languages/fish.md:12
+msgid "Ensure `fish_indent` is available in your path and check the version:"
+msgstr ""
+
+#: src/languages/fish.md:19
+msgid "Configure Zed to automatically format fish code with `fish_indent`:"
+msgstr ""
+
+#: src/languages/fish.md:22
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/fish.md:23
+msgid "\"Fish\""
+msgstr ""
+
+#: src/languages/fish.md:24
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/fish.md:25
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/fish.md:26
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/fish.md:26
+msgid "\"fish_indent\""
+msgstr ""

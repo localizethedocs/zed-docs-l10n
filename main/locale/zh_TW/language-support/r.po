@@ -1,0 +1,215 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/r.md:1
+msgid "R"
+msgstr ""
+
+#: src/languages/r.md:3
+msgid "R support is available via multiple R Zed extensions:"
+msgstr ""
+
+#: src/languages/r.md:5
+msgid "[ocsmit/zed-r](https://github.com/ocsmit/zed-r)"
+msgstr ""
+
+#: src/languages/r.md:7
+msgid ""
+"Tree-sitter: [r-lib/tree-sitter-r](https://github.com/r-lib/tree-sitter-r)"
+msgstr ""
+
+#: src/languages/r.md:8
+msgid ""
+"Language-Server: [REditorSupport/languageserver](https://github.com/"
+"REditorSupport/languageserver)"
+msgstr ""
+
+#: src/languages/r.md:10
+msgid "[posit-dev/air](https://github.com/posit-dev/air/tree/main/editors/zed)"
+msgstr ""
+
+#: src/languages/r.md:11
+msgid "Formatter: [posit-dev/air](https://posit-dev.github.io/air/)"
+msgstr ""
+
+#: src/languages/r.md:13
+msgid "Installation"
+msgstr ""
+
+#: src/languages/r.md:15
+msgid "[Download and Install R](https://cloud.r-project.org/)."
+msgstr ""
+
+#: src/languages/r.md:16
+msgid "Install the R packages `languageserver` and `lintr`:"
+msgstr ""
+
+#: src/languages/r.md:19
+msgid "\"languageserver\""
+msgstr ""
+
+#: src/languages/r.md:20
+msgid "\"lintr\""
+msgstr ""
+
+#: src/languages/r.md:23
+msgid ""
+"Install the [R](https://github.com/ocsmit/zed-r) extension through Zed's "
+"extensions manager for basic R language support (syntax highlighting, tree-"
+"sitter support) and for [REditorSupport/languageserver](https://github.com/"
+"REditorSupport/languageserver) support."
+msgstr ""
+
+#: src/languages/r.md:25
+msgid ""
+"Install the [Air](https://posit-dev.github.io/air/) extension through Zed's "
+"extensions manager for R code formatting via Air."
+msgstr ""
+
+#: src/languages/r.md:27
+msgid "Linting"
+msgstr ""
+
+#: src/languages/r.md:29
+msgid ""
+"`REditorSupport/languageserver` bundles support for [r-lib/lintr](https://"
+"github.com/r-lib/lintr) as a linter. This can be configured via the use of a "
+"`.lintr` inside your project (or in your home directory for global defaults)."
+msgstr ""
+
+#: src/languages/r.md:37
+msgid "\"inst/doc/creating_linters.R\""
+msgstr ""
+
+#: src/languages/r.md:38
+msgid "\"inst/example/bad.R\""
+msgstr ""
+
+#: src/languages/r.md:39
+msgid "\"tests/testthat/exclusions-test\""
+msgstr ""
+
+#: src/languages/r.md:43
+msgid "Or exclude it from linting anything,"
+msgstr ""
+
+#: src/languages/r.md:46
+msgid "\".\""
+msgstr ""
+
+#: src/languages/r.md:49
+msgid ""
+"See [Using lintr](https://lintr.r-lib.org/articles/lintr.html) for a "
+"complete list of options,"
+msgstr ""
+
+#: src/languages/r.md:51
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/r.md:53
+msgid "Air"
+msgstr ""
+
+#: src/languages/r.md:55
+msgid ""
+"[Air](https://posit-dev.github.io/air/) provides code formatting for R, "
+"including support for format-on-save. The [Air documentation for Zed]"
+"(https://posit-dev.github.io/air/editor-zed.html) contains the most up-to-"
+"date advice for running Air in Zed."
+msgstr ""
+
+#: src/languages/r.md:57
+msgid ""
+"Ensure that you have installed both the [ocsmit/zed-r](https://github.com/"
+"ocsmit/zed-r) extension (for general R language awareness in Zed) and the "
+"[Air](https://posit-dev.github.io/air/) extension."
+msgstr ""
+
+#: src/languages/r.md:59
+msgid "Enable Air in your `settings.json`:"
+msgstr ""
+
+#: src/languages/r.md:63 src/languages/r.md:75
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/r.md:64 src/languages/r.md:76
+msgid "\"R\""
+msgstr ""
+
+#: src/languages/r.md:65 src/languages/r.md:77
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/r.md:65 src/languages/r.md:77
+msgid "\"air\""
+msgstr ""
+
+#: src/languages/r.md:71
+msgid ""
+"If you use the `\"r_language_server\"` from `REditorSupport/languageserver`, "
+"but would still like to use Air for formatting, use the following "
+"configuration:"
+msgstr ""
+
+#: src/languages/r.md:77
+msgid "\"r_language_server\""
+msgstr ""
+
+#: src/languages/r.md:78
+msgid "\"use_on_type_format\""
+msgstr ""
+
+#: src/languages/r.md:84
+msgid ""
+"Note that `\"air\"` must come first in this list, otherwise [r-lib/styler]"
+"(https://github.com/r-lib/styler) will be invoked via "
+"`\"r_language_server\"`."
+msgstr ""
+
+#: src/languages/r.md:86
+msgid ""
+"`\"r_language_server\"` provides on-type-formatting that differs from Air's "
+"formatting rules. To avoid this entirely and let Air be fully in charge of "
+"formatting your R files, also set `\"use_on_type_format\": false` as shown "
+"above."
+msgstr ""
+
+#: src/languages/r.md:88
+msgid "Configuring Air"
+msgstr ""
+
+#: src/languages/r.md:90
+msgid ""
+"Air is minimally configurable via an `air.toml` file placed in the root "
+"directory of your project:"
+msgstr ""
+
+#: src/languages/r.md:98
+msgid ""
+"For more details, refer to the Air documentation about [configuration]"
+"(https://posit-dev.github.io/air/configuration.html)."
+msgstr ""
+
+#: src/languages/r.md:100
+msgid "Styler"
+msgstr ""
+
+#: src/languages/r.md:102
+msgid ""
+"`REditorSupport/languageserver` bundles support for [r-lib/styler](https://"
+"github.com/r-lib/styler) as a formatter. See [Customizing Styler](https://"
+"cran.r-project.org/web/packages/styler/vignettes/customizing_styler.html) "
+"for more information on how to customize its behavior."
+msgstr ""

@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/helm.md:1
+msgid "Helm"
+msgstr ""
+
+#: src/languages/helm.md:3
+msgid ""
+"Support for Helm in Zed is provided by the community-maintained [Helm "
+"extension](https://github.com/cabrinha/helm.zed)."
+msgstr ""
+
+#: src/languages/helm.md:5
+msgid ""
+"Tree-sitter: [tree-sitter-go-template](https://github.com/ngalaiko/tree-"
+"sitter-go-template/tree/master)"
+msgstr ""
+
+#: src/languages/helm.md:6
+msgid "Language Server: [mrjosh/helm-ls](https://github.com/mrjosh/helm-ls)"
+msgstr ""
+
+#: src/languages/helm.md:8
+msgid "Setup"
+msgstr ""
+
+#: src/languages/helm.md:10
+msgid ""
+"Enable Helm language for Helm files by editing your `.zed/settings.json` and "
+"adding:"
+msgstr ""
+
+#: src/languages/helm.md:13
+msgid "\"file_types\""
+msgstr ""
+
+#: src/languages/helm.md:14
+msgid "\"Helm\""
+msgstr ""
+
+#: src/languages/helm.md:15
+msgid "\"**/templates/**/*.tpl\""
+msgstr ""
+
+#: src/languages/helm.md:16
+msgid "\"**/templates/**/*.yaml\""
+msgstr ""
+
+#: src/languages/helm.md:17
+msgid "\"**/templates/**/*.yml\""
+msgstr ""
+
+#: src/languages/helm.md:18
+msgid "\"**/helmfile.d/**/*.yaml\""
+msgstr ""
+
+#: src/languages/helm.md:19
+msgid "\"**/helmfile.d/**/*.yml\""
+msgstr ""
+
+#: src/languages/helm.md:20
+msgid "\"**/values*.yaml\""
+msgstr ""
+
+#: src/languages/helm.md:25
+msgid ""
+"This will also mark values.yaml files as the type helm, since helm-ls "
+"supports this."
+msgstr ""
