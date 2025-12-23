@@ -182,7 +182,6 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         COMMAND ${CMAKE_COMMAND} -E env
                 ${ENV_VARS_OF_SYSTEM}
                 ${ENV_VARS_OF_COMMON}
-                --unset=CI
                 ${mdBook_EXECUTABLE} build
                 ${PROJ_OUT_REPO_BOOK_DIR}
                 --dest-dir ${PROJ_OUT_RENDERER_DIR}/${_LANGTAG}/${VERSION}
