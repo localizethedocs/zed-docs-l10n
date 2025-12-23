@@ -170,6 +170,7 @@ jobs:
       ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
+      FREE_SPACE: 'true'
       VERSION: ${{ matrix.VERSION }}
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CREATE_PR: true
