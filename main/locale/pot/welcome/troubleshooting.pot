@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/troubleshooting.md:1
@@ -42,14 +42,14 @@ msgid ""
 msgstr ""
 
 #: src/troubleshooting.md:13
-msgid "<code class=\"hljs\">zed::About</code>: Find your Zed version number"
+msgid "<code class=\"hljs\">zed: about</code>: Find your Zed version number"
 msgstr ""
 
 #: src/troubleshooting.md:14
 msgid ""
-"<code class=\"hljs\">zed::CopySystemSpecsIntoClipboard</code>: Populate your "
-"clipboard with Zed version number, operating system version, and hardware "
-"specs"
+"<code class=\"hljs\">zed: copy system specs into clipboard</code>: Populate "
+"your clipboard with Zed version number, operating system version, and "
+"hardware specs"
 msgstr ""
 
 #: src/troubleshooting.md:16
@@ -61,10 +61,10 @@ msgid ""
 "Often, a good first place to look when troubleshooting any issue in Zed is "
 "the Zed log, which might contain clues about what's going wrong. You can "
 "review the most recent 1000 lines of the log by running the <code "
-"class=\"hljs\">zed::OpenLog</code> action from the command palette. If you "
+"class=\"hljs\">zed: open log</code> action from the command palette. If you "
 "want to view the full file, you can reveal it in your operating system's "
-"native file manager via <code class=\"hljs\">zed::RevealLogInFileManager</"
-"code> from the command palette."
+"native file manager via <code class=\"hljs\">zed: reveal log in file "
+"manager</code> from the command palette."
 msgstr ""
 
 #: src/troubleshooting.md:22
@@ -241,6 +241,6 @@ msgstr ""
 msgid ""
 "If you're experiencing language-server related issues, such as stale "
 "diagnostics or issues jumping to definitions, restarting the language server "
-"via <code class=\"hljs\">editor::RestartLanguageServer</code> from the "
+"via <code class=\"hljs\">editor: restart language server</code> from the "
 "command palette will often resolve the issue."
 msgstr ""

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/configuring-zed.md:1
@@ -77,8 +77,8 @@ msgstr ""
 #: src/configuring-zed.md:30
 msgid ""
 "In the Settings Editor, the values you see set are the default ones. You can "
-"also verify them in JSON by running <code class=\"hljs\">zed::"
-"OpenDefaultSettings</code> from the command palette."
+"also verify them in JSON by running <code class=\"hljs\">zed: open default "
+"settings</code> from the command palette."
 msgstr ""
 
 #: src/configuring-zed.md:33
@@ -94,7 +94,7 @@ msgstr ""
 #: src/configuring-zed.md:37
 msgid ""
 "Similarly to user files, you can open your project settings file by running "
-"<code class=\"hljs\">zed::OpenProjectSettings</code> from the command "
+"<code class=\"hljs\">zed: open project settings</code> from the command "
 "palette. This will create a `.zed` directory containing`.zed/settings.json`."
 msgstr ""
 
@@ -481,7 +481,7 @@ msgstr ""
 
 #: src/configuring-zed.md:161
 msgid ""
-"Description: Controls where the <code class=\"hljs\">editor::Rewrap</code> "
+"Description: Controls where the <code class=\"hljs\">editor: rewrap</code> "
 "action is allowed in the current language scope"
 msgstr ""
 
@@ -3682,8 +3682,8 @@ msgstr ""
 
 #: src/configuring-zed.md:2273
 msgid ""
-"Description: What to do when the <code class=\"hljs\">editor::"
-"GoToDefinition</code> action fails to find a definition"
+"Description: What to do when the <code class=\"hljs\">editor: go to "
+"definition</code> action fails to find a definition"
 msgstr ""
 
 #: src/configuring-zed.md:2274
@@ -3947,7 +3947,7 @@ msgstr ""
 
 #: src/configuring-zed.md:2464 src/configuring-zed.md:2474
 msgid ""
-"Run the <code class=\"hljs\">icon_theme_selector::Toggle</code> action in "
+"Run the <code class=\"hljs\">icon theme selector: toggle</code> action in "
 "the command palette to see a current list of valid icon themes names."
 msgstr ""
 
@@ -4767,7 +4767,7 @@ msgstr ""
 
 #: src/configuring-zed.md:2915
 msgid ""
-"Using the <code class=\"hljs\">project_panel::OpenPermanent</code> action"
+"Using the <code class=\"hljs\">project panel: open permanent</code> action"
 msgstr ""
 
 #: src/configuring-zed.md:2916
@@ -6958,7 +6958,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4356 src/configuring-zed.md:4366
 msgid ""
-"Run the <code class=\"hljs\">theme_selector::Toggle</code> action in the "
+"Run the <code class=\"hljs\">theme selector: toggle</code> action in the "
 "command palette to see a current list of valid themes names."
 msgstr ""
 
