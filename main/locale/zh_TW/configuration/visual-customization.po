@@ -388,7 +388,7 @@ msgstr ""
 
 #: src/visual-customization.md:169
 msgid "Editor"
-msgstr ""
+msgstr "編輯器"
 
 #: src/visual-customization.md:172
 msgid ""

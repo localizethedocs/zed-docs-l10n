@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development.md:1
 msgid "Developing Zed"
-msgstr ""
+msgstr "開發 Zed"
 
 #: src/development.md:3
 msgid "See the platform-specific instructions for building Zed from source:"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: src/development.md:5
 msgid "[macOS](./development/macos.md)"
-msgstr ""
+msgstr "[macOS](./development/macos.md)"
 
 #: src/development.md:6
 msgid "[Linux](./development/linux.md)"
-msgstr ""
+msgstr "[Linux](./development/linux.md)"
 
 #: src/development.md:7
 msgid "[Windows](./development/windows.md)"
-msgstr ""
+msgstr "[Windows](./development/windows.md)"
 
 #: src/development.md:9
 msgid "Keychain access"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/development.md:40
 msgid "Using ZED_MEASUREMENTS"
-msgstr ""
+msgstr "使用 ZED_MEASUREMENTS"
 
 #: src/development.md:42
 msgid ""
@@ -111,7 +111,7 @@ msgstr ""
 
 #: src/development.md:50
 msgid "Performance Comparison Workflow"
-msgstr ""
+msgstr "效能比較工作流"
 
 #: src/development.md:52
 msgid ""
@@ -164,7 +164,7 @@ msgstr ""
 
 #: src/development.md:78
 msgid "Using `util_macros::perf`"
-msgstr ""
+msgstr "使用 `util_macros::perf`"
 
 #: src/development.md:80
 msgid ""
@@ -190,8 +190,8 @@ msgstr ""
 
 #: src/development.md:88
 msgid "[Code of Conduct](https://zed.dev/code-of-conduct)"
-msgstr ""
+msgstr "[行為守則](https://zed.dev/code-of-conduct)"
 
 #: src/development.md:89
 msgid "[Zed Contributor License](https://zed.dev/cla)"
-msgstr ""
+msgstr "[Zed 貢獻者授權條款](https://zed.dev/cla)"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: src/development/windows.md:11
 msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
-msgstr ""
+msgstr "安裝 [rustup](https://www.rust-lang.org/tools/install)"
 
 #: src/development/windows.md:13
 msgid ""
@@ -177,19 +177,19 @@ msgstr ""
 
 #: src/development/windows.md:65
 msgid "Open the Visual Studio Installer"
-msgstr ""
+msgstr "開啟 Visual Studio 安裝程式"
 
 #: src/development/windows.md:66
 msgid "Click on `More` in the `Installed` tab"
-msgstr ""
+msgstr "點擊 `Installed` 頁籤中的 `More`"
 
 #: src/development/windows.md:67
 msgid "Click on `Export configuration`"
-msgstr ""
+msgstr "點擊 `Export configuration`"
 
 #: src/development/windows.md:69
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: src/development/windows.md:71
 msgid ""
@@ -220,7 +220,7 @@ msgstr ""
 
 #: src/development/windows.md:89
 msgid "Building from source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: src/development/windows.md:91
 msgid ""

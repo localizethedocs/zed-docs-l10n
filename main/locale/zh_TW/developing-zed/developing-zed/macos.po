@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/development/macos.md:9
 msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
-msgstr ""
+msgstr "安裝 [rustup](https://www.rust-lang.org/tools/install)"
 
 #: src/development/macos.md:11
 msgid ""
@@ -64,7 +64,7 @@ msgstr ""
 
 #: src/development/macos.md:34
 msgid "Building Zed from Source"
-msgstr ""
+msgstr "從來源碼建置 Zed"
 
 #: src/development/macos.md:36
 msgid ""
@@ -234,7 +234,7 @@ msgstr ""
 
 #: src/development/macos.md:144
 msgid "Restart your terminal."
-msgstr ""
+msgstr "重新啟動終端機。"
 
 #: src/development/macos.md:146
 msgid ""

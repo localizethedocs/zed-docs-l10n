@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development/debuggers.md:1
 msgid "Using a debugger"
-msgstr ""
+msgstr "使用除錯器"
 
 #: src/development/debuggers.md:3
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/development/debuggers.md:6
 msgid "Using Zed's built-in debugger"
-msgstr ""
+msgstr "使用 Zed 的內建除錯器"
 
 #: src/development/debuggers.md:8
 msgid ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/development/linux.md:9
 msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
-msgstr ""
+msgstr "安裝 [rustup](https://www.rust-lang.org/tools/install)"
 
 #: src/development/linux.md:11
 msgid "Install the necessary system libraries:"
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/development/linux.md:19
 msgid "Linkers"
-msgstr ""
+msgstr "連結器"
 
 #: src/development/linux.md:21
 msgid ""
@@ -94,10 +94,14 @@ msgid ""
 "rustflags = [\"-C\", \"link-arg=-fuse-ld=mold\"]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[target.'cfg(target_os = \"linux\")']\n"
+"rustflags = [\"-C\", \"link-arg=-fuse-ld=mold\"]\n"
+"```"
 
 #: src/development/linux.md:46
 msgid "Building from source"
-msgstr ""
+msgstr "從來源碼建置"
 
 #: src/development/linux.md:48
 msgid ""
@@ -321,7 +325,7 @@ msgstr ""
 
 #: src/development/linux.md:136
 msgid "Flatpak"
-msgstr ""
+msgstr "Flatpak"
 
 #: src/development/linux.md:138
 msgid ""
@@ -346,7 +350,7 @@ msgstr ""
 
 #: src/development/linux.md:144
 msgid "Run `script/flatpak/bundle-flatpak`."
-msgstr ""
+msgstr "執行 `script/flatpak/bundle-flatpak`。"
 
 #: src/development/linux.md:145
 msgid ""
