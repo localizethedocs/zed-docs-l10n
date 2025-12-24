@@ -1,0 +1,529 @@
+<!DOCTYPE HTML>
+<html lang="en_US" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Git | Zed Editor Git integration documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="ltd-provenance.js"></script>
+        <script type="text/javascript" src="ltd-current.js"></script>
+        <script type="text/javascript" src="../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Zed is a text editor that supports lots of Git features">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/page-toc.css">
+        <link rel="stylesheet" href="theme/plugins.css">
+        <link rel="stylesheet" href="theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="update.html">Update</a></li><li class="chapter-item expanded "><a href="uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="themes.html">Themes</a></li><li class="chapter-item expanded "><a href="icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="git.html" class="active">Git</a></li><li class="chapter-item expanded "><a href="debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="remote-development.html">Remote Development</a></li><li class="chapter-item expanded "><a href="dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="windows.html">Windows</a></li><li class="chapter-item expanded "><a href="linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="languages/c.html">C</a></li><li class="chapter-item expanded "><a href="languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="languages/r.html">R</a></li><li class="chapter-item expanded "><a href="languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="performance.html">Performance</a></li><li class="chapter-item expanded "><a href="development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      
+<h1 id="git"><a class="header" href="#git">Git</a></h1>
+<p>Zed currently offers a set of fundamental Git features, with support coming in the future for more advanced ones, like conflict resolution tools, line by line staging, and more.</p>
+<p>Here's an overview of all currently supported features:</p>
+<ul>
+<li>Committing</li>
+<li>Staging, pushing, pulling, and fetching</li>
+<li>Project Diff: A multibuffer view of all changes</li>
+<li>Diff indicators in buffers and editor scrollbars</li>
+<li>Inline diff toggle and reverts in the editor for unstaged changes</li>
+<li>Git status in the Project Panel</li>
+<li>Branch creating and switching</li>
+<li>Git blame viewing</li>
+<li>Git stash pop, apply, drop and view</li>
+</ul>
+<h2 id="git-panel"><a class="header" href="#git-panel">Git Panel</a></h2>
+<p>The Git Panel gives you a birds-eye view of the state of your working tree and of Git's staging area.</p>
+<p>You can open the Git Panel using <code class="hljs">git panel: toggle focus</code>, or by clicking the Git icon in the status bar.</p>
+<p>In the panel you can see the state of your project at a glance—which repository and branch are active, what files have changed and the current staging state of each file.</p>
+<p>Zed monitors your repository so that changes you make on the command line are instantly reflected.</p>
+<h3 id="configuration"><a class="header" href="#configuration">Configuration</a></h3>
+<p>You can configure how Zed hard wraps commit messages with the <code>preferred-line-length</code> setting of the "Git Commit" language. The default is <code>72</code>, but it can be set to any number of characters <code>0</code> or more.</p>
+<p>The Git Panel also allows configuring the <code>soft_wrap</code> setting to adjust how commit messages display while you are typing them in the Git Panel. The default setting is <code>editor_width</code>, however, <code>none</code>, <code>preferred_line_length</code>, and <code>bounded</code> are also options.</p>
+<h4 id="example"><a class="header" href="#example">Example</a></h4>
+<pre><code class="language-json">"languages": {
+  "Git Commit": {
+    "soft_wrap": "editor_width",
+    "preferred_line_length": 72
+  },
+}
+</code></pre>
+<h2 id="project-diff"><a class="header" href="#project-diff">Project Diff</a></h2>
+<p>You can see all of the changes captured by Git in Zed by opening the Project Diff (<kbd class="keybinding">ctrl-g d|ctrl-g d</kbd>), accessible via the <code class="hljs">git: diff</code> action in the Command Palette or the Git Panel.</p>
+<p>All of the changes displayed in the Project Diff behave exactly the same as any other multibuffer: they are all editable excerpts of files.</p>
+<p>You can stage or unstage each hunk as well as a whole file by hitting the buttons on the tab bar or their corresponding keybindings.</p>
+<!-- Add media -->
+<h2 id="fetch-push-and-pull"><a class="header" href="#fetch-push-and-pull">Fetch, push, and pull</a></h2>
+<p>Fetch, push, or pull from your Git repository in Zed via the buttons available on the Git Panel or via the Command Palette by looking at the respective actions: <code class="hljs">git: fetch</code>, <code class="hljs">git: push</code>, and <code class="hljs">git: pull</code>.</p>
+<h2 id="staging-workflow"><a class="header" href="#staging-workflow">Staging Workflow</a></h2>
+<p>Zed has two primary staging workflows, using either the Project Diff or the panel directly.</p>
+<h3 id="using-the-project-diff"><a class="header" href="#using-the-project-diff">Using the Project Diff</a></h3>
+<p>In the Project Diff view, you can focus on each hunk and stage them individually by clicking on the tab bar buttons or via the keybindings <code class="hljs">git: stage and next</code> (<kbd class="keybinding">cmd-y|alt-y</kbd>).</p>
+<p>Similarly, stage all hunks at the same time with the <code class="hljs">git: stage all</code> (<kbd class="keybinding">cmd-ctrl-y|ctrl-space</kbd>) keybinding and then immediately commit with <code class="hljs">git: commit</code> (<kbd class="keybinding">cmd-enter|ctrl-enter</kbd>).</p>
+<h3 id="using-the-git-panel"><a class="header" href="#using-the-git-panel">Using the Git Panel</a></h3>
+<p>From the panel, you can simply type a commit message and hit the commit button, or <code class="hljs">git: commit</code>. This will automatically stage all tracked files (indicated by a <code>[·]</code> in the entry's checkbox) and commit them.</p>
+<!-- Show a set of changes with default staged -->
+<p>Entries can be staged using each individual entry's checkbox. All changes can be staged using the button at the top of the panel, or <code class="hljs">git: stage all</code>.</p>
+<!-- Add media -->
+<h2 id="committing"><a class="header" href="#committing">Committing</a></h2>
+<p>Zed offers two commit textareas:</p>
+<ol>
+<li>The first one is available right at the bottom of the Git Panel. Hitting <kbd class="keybinding">cmd-enter|ctrl-enter</kbd> immediately commits all of your staged changes.</li>
+<li>The second is available via the action <code class="hljs">git: expand commit editor</code> or via hitting the <kbd class="keybinding">shift-escape|</kbd> while focused in the Git Panel commit textarea.</li>
+</ol>
+<h3 id="undoing-a-commit"><a class="header" href="#undoing-a-commit">Undoing a Commit</a></h3>
+<p>As soon as you commit in Zed, in the Git Panel, you'll see a bar right under the commit textarea, which will show the recently submitted commit.
+In there, you can use the "Uncommit" button, which performs the <code>git reset HEADˆ--soft</code> command.</p>
+<h3 id="configuring-commit-line-length"><a class="header" href="#configuring-commit-line-length">Configuring Commit Line Length</a></h3>
+<p>By default, Zed sets the commit line length to <code>72</code> but it can be configured in your local <code>settings.json</code> file.</p>
+<p>Find more information about setting the <code>preferred-line-length</code> in the <a href="#configuration">Configuration</a> section.</p>
+<h2 id="stashing"><a class="header" href="#stashing">Stashing</a></h2>
+<p>Git stash allows you to temporarily save your uncommitted changes and revert your working directory to a clean state. This is particularly useful when you need to quickly switch branches or pull updates without committing incomplete work.</p>
+<h3 id="creating-stashes"><a class="header" href="#creating-stashes">Creating Stashes</a></h3>
+<p>To stash all your current changes, use the <code class="hljs">git: stash all</code> action. This will save both staged and unstaged changes to a new stash entry and clean your working directory.</p>
+<h3 id="managing-stashes"><a class="header" href="#managing-stashes">Managing Stashes</a></h3>
+<p>Zed provides a comprehensive stash picker accessible via <code class="hljs">git: view stash</code>. From the stash picker, you can:</p>
+<ul>
+<li><strong>View stash list</strong>: Browse all your saved stashes with their descriptions and timestamps</li>
+<li><strong>Open diffs</strong>: See exactly what changes are stored in each stash</li>
+<li><strong>Apply stashes</strong>: Apply stash changes to your working directory while keeping the stash entry</li>
+<li><strong>Pop stashes</strong>: Apply stash changes and remove the stash entry from the list</li>
+<li><strong>Drop stashes</strong>: Delete unwanted stash entries without applying them</li>
+</ul>
+<h3 id="quick-stash-operations"><a class="header" href="#quick-stash-operations">Quick Stash Operations</a></h3>
+<p>For faster workflows, Zed provides direct actions to work with the most recent stash:</p>
+<ul>
+<li><strong>Apply latest stash</strong>: Use <code class="hljs">git: stash apply</code> to apply the most recent stash without removing it</li>
+<li><strong>Pop latest stash</strong>: Use <code class="hljs">git: stash pop</code> to apply and remove the most recent stash</li>
+</ul>
+<h3 id="stash-diff-view"><a class="header" href="#stash-diff-view">Stash Diff View</a></h3>
+<p>When viewing a specific stash in the diff view, you have additional options available through the interface:</p>
+<ul>
+<li>Apply the current stash to your working directory</li>
+<li>Pop the current stash (apply and remove)</li>
+<li>Remove the stash without applying changes</li>
+</ul>
+<p>To open the stash diff view, select a stash from the stash picker and use the <code class="hljs">stash picker: show stash item</code> (<kbd class="keybinding">ctrl-shift-v|ctrl-shift-v</kbd>) keybinding.</p>
+<h2 id="ai-support-in-git"><a class="header" href="#ai-support-in-git">AI Support in Git</a></h2>
+<p>Zed currently supports LLM-powered commit message generation.
+You can ask AI to generate a commit message by focusing on the message editor within the Git Panel and either clicking on the pencil icon in the bottom left, or reaching for the <code class="hljs">git: generate commit message</code> (<kbd class="keybinding">alt-tab|alt-l</kbd>) keybinding.</p>
+<blockquote>
+<p>Note that you need to have an LLM provider configured for billing purposes, either via your own API keys or trialing/paying for Zed's hosted AI models. Visit <a href="./ai/configuration.html">the AI configuration page</a> to learn how to do so.</p>
+</blockquote>
+<p>You can specify your preferred model to use by providing a <code>commit_message_model</code> agent setting. See <a href="./ai/agent-settings.html#feature-specific-models">Feature-specific models</a> for more information.</p>
+<pre><code class="language-json">{
+  "agent": {
+    "commit_message_model": {
+      "provider": "anthropic",
+      "model": "claude-3-5-haiku"
+    }
+  }
+}
+</code></pre>
+<!-- Add media -->
+<p>More advanced AI integration with Git features may come in the future.</p>
+<h2 id="git-integrations"><a class="header" href="#git-integrations">Git Integrations</a></h2>
+<p>Zed integrates with popular Git hosting services to ensure that Git commit hashes and references to Issues, Pull Requests, and Merge Requests become clickable links.</p>
+<p>Zed currently supports links to the hosted versions of
+<a href="https://github.com">GitHub</a>,
+<a href="https://gitlab.com">GitLab</a>,
+<a href="https://bitbucket.org">Bitbucket</a>,
+<a href="https://sr.ht">SourceHut</a> and
+<a href="https://codeberg.org">Codeberg</a>.</p>
+<p>For self-hosted GitHub, GitLab, or Bitbucket instances, add them to the <code>git_hosting_providers</code> setting so commit hashes and permalinks resolve to your domain:</p>
+<pre><code class="language-json">{
+  "git_hosting_providers": [
+    {
+      "provider": "gitlab",
+      "name": "Corp GitLab",
+      "base_url": "https://git.example.corp"
+    }
+  ]
+}
+</code></pre>
+<p>Zed also has a Copy Permalink feature to create a permanent link to a code snippet on your Git hosting service.
+These links are useful for sharing a specific line or range of lines in a file at a specific commit.
+Trigger this action via the <a href="./getting-started.html#command-palette">Command Palette</a> (search for <code>permalink</code>),
+by creating a <a href="key-bindings.html#custom-key-bindings">custom key bindings</a> to the
+<code>editor::CopyPermalinkToLine</code> or <code>editor::OpenPermalinkToLine</code> actions
+or by simply right clicking and selecting <code>Copy Permalink</code> with line(s) selected in your editor.</p>
+<h2 id="diff-hunk-keyboard-shortcuts"><a class="header" href="#diff-hunk-keyboard-shortcuts">Diff Hunk Keyboard Shortcuts</a></h2>
+<p>When viewing files with changes, Zed displays diff hunks that can be expanded or collapsed for detailed review:</p>
+<ul>
+<li><strong>Expand all diff hunks</strong>: <code class="hljs">editor: expand all diff hunks</code> (<kbd class="keybinding">cmd-"|ctrl-"</kbd>)</li>
+<li><strong>Collapse all diff hunks</strong>: Press <code>Escape</code> (bound to <code class="hljs">editor: cancel</code>)</li>
+<li><strong>Toggle selected diff hunks</strong>: <code class="hljs">editor: toggle selected diff hunks</code> (<kbd class="keybinding">cmd-'|ctrl-'</kbd>)</li>
+<li><strong>Navigate between hunks</strong>: <code class="hljs">editor: go to hunk</code> and <code class="hljs">editor: go to previous hunk</code></li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> The <code>Escape</code> key is the quickest way to collapse all expanded diff hunks and return to an overview of your changes.</p>
+</blockquote>
+<h2 id="action-reference"><a class="header" href="#action-reference">Action Reference</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Keybinding</th></tr></thead><tbody>
+<tr><td><code class="hljs">git: add</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: stage all</code></td><td><kbd class="keybinding">cmd-ctrl-y</td></tr>
+<tr><td><code class="hljs">git: unstage all</code></td><td><kbd class="keybinding">cmd-ctrl-shift-y</td></tr>
+<tr><td><code class="hljs">git: toggle staged</code></td><td><kbd class="keybinding">space</td></tr>
+<tr><td><code class="hljs">git: stage and next</code></td><td><kbd class="keybinding">cmd-y</td></tr>
+<tr><td><code class="hljs">git: unstage and next</code></td><td><kbd class="keybinding">cmd-shift-y</td></tr>
+<tr><td><code class="hljs">git: commit</code></td><td><kbd class="keybinding">cmd-enter</td></tr>
+<tr><td><code class="hljs">git: expand commit editor</code></td><td><kbd class="keybinding">shift-escape</td></tr>
+<tr><td><code class="hljs">git: push</code></td><td><kbd class="keybinding">ctrl-g up</td></tr>
+<tr><td><code class="hljs">git: force push</code></td><td><kbd class="keybinding">ctrl-g shift-up</td></tr>
+<tr><td><code class="hljs">git: pull</code></td><td><kbd class="keybinding">ctrl-g down</td></tr>
+<tr><td><code class="hljs">git: pull rebase</code></td><td><kbd class="keybinding">ctrl-g shift-down</td></tr>
+<tr><td><code class="hljs">git: fetch</code></td><td><kbd class="keybinding">ctrl-g ctrl-g</td></tr>
+<tr><td><code class="hljs">git: diff</code></td><td><kbd class="keybinding">ctrl-g d</td></tr>
+<tr><td><code class="hljs">git: restore</code></td><td><kbd class="keybinding">cmd-alt-z</td></tr>
+<tr><td><code class="hljs">git: restore file</code></td><td><kbd class="keybinding">cmd-delete</td></tr>
+<tr><td><code class="hljs">git: branch</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: switch</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: checkout branch</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: blame</code></td><td><kbd class="keybinding">cmd-alt-g b</td></tr>
+<tr><td><code class="hljs">git: stash all</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: stash pop</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: stash apply</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">git: view stash</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">editor: toggle git blame inline</code></td><td><div>No default binding</div></td></tr>
+<tr><td><code class="hljs">editor: expand all diff hunks</code></td><td><kbd class="keybinding">cmd-"</td></tr>
+<tr><td><code class="hljs">editor: toggle selected diff hunks</code></td><td><kbd class="keybinding">cmd-'</td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>Not all actions have default keybindings, but can be bound by <a href="./key-bindings.html#user-keymaps">customizing your keymap</a>.</p>
+</blockquote>
+<h2 id="git-cli-configuration"><a class="header" href="#git-cli-configuration">Git CLI Configuration</a></h2>
+<p>If you would like to also use Zed for your <a href="https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration#_core_editor">git commit message editor</a> when committing from the command line you can use <code>zed --wait</code>:</p>
+<pre><code class="language-sh">git config --global core.editor "zed --wait"
+</code></pre>
+<p>Or add the following to your shell environment (in <code>~/.zshrc</code>, <code>~/.bashrc</code>, etc):</p>
+<pre><code class="language-sh">export GIT_EDITOR="zed --wait"
+</code></pre>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="collaboration/contacts-and-private-calls.html" class="footer-button" title="Contacts and Private Calls">
+                                <i class="fa fa-angle-left"></i>
+                                Contacts and Private Calls
+                            </a>
+                            <a rel="next" href="debugger.html" class="footer-button" title="Debugger">
+                                Debugger
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/page-toc.js"></script>
+        <script src="theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>

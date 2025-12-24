@@ -1,0 +1,903 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>LLM Providers | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">Update</a></li><li class="chapter-item expanded "><a href="../uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="../troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="../configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../themes.html">Themes</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="../vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="../command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="../command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="../completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="../collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="../remote-development.html">Remote Development</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="../environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="../ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html" class="active">LLM Providers</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="../extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="../development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="llm-providers"><a class="header" href="#llm-providers">LLM Providers</a></h1>
+<p>To use AI in Zed, you need to have at least one large language model provider set up.</p>
+<p>You can do that by either subscribing to <a href="./plans-and-usage.html">one of Zed's plans</a>, or by using API keys you already have for the supported providers.</p>
+<h2 id="use-your-own-keys"><a class="header" href="#use-your-own-keys">Use Your Own Keys</a></h2>
+<p>If you already have an API key for an existing LLM provider, like Anthropic or OpenAI, you can add them to Zed and use the full power of the Agent Panel <strong><em>for free</em></strong>.</p>
+<p>To add an existing API key to a given provider, go to the Agent Panel settings (<code>agent: open settings</code>), look for the desired provider, paste the key into the input, and hit enter.</p>
+<blockquote>
+<p>Note: API keys are <em>not</em> stored as plain text in your <code>settings.json</code>, but rather in your OS's secure credential storage.</p>
+</blockquote>
+<h2 id="supported-providers"><a class="header" href="#supported-providers">Supported Providers</a></h2>
+<p>Zed offers an extensive list of "use your own key" LLM providers</p>
+<ul>
+<li><a href="#amazon-bedrock">Amazon Bedrock</a></li>
+<li><a href="#anthropic">Anthropic</a></li>
+<li><a href="#deepseek">DeepSeek</a></li>
+<li><a href="#github-copilot-chat">GitHub Copilot Chat</a></li>
+<li><a href="#google-ai">Google AI</a></li>
+<li><a href="#lmstudio">LM Studio</a></li>
+<li><a href="#mistral">Mistral</a></li>
+<li><a href="#ollama">Ollama</a></li>
+<li><a href="#openai">OpenAI</a></li>
+<li><a href="#openai-api-compatible">OpenAI API Compatible</a></li>
+<li><a href="#openrouter">OpenRouter</a></li>
+<li><a href="#vercel-v0">Vercel</a></li>
+<li><a href="#xai">xAI</a></li>
+</ul>
+<h3 id="amazon-bedrock"><a class="header" href="#amazon-bedrock">Amazon Bedrock</a></h3>
+<blockquote>
+<p>Supports tool use with models that support streaming tool use. More details can be found in the <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-models-features.html">Amazon Bedrock's Tool Use documentation</a>.</p>
+</blockquote>
+<p>To use Amazon Bedrock's models, an AWS authentication is required. Ensure your credentials have the following permissions set up:</p>
+<ul>
+<li><code>bedrock:InvokeModelWithResponseStream</code></li>
+<li><code>bedrock:InvokeModel</code></li>
+</ul>
+<p>Your IAM policy should look similar to:</p>
+<pre><code class="language-json">{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
+</code></pre>
+<p>With that done, choose one of the two authentication methods:</p>
+<h4 id="authentication-via-named-profile-recommended"><a class="header" href="#authentication-via-named-profile-recommended">Authentication via Named Profile (Recommended)</a></h4>
+<ol>
+<li>Ensure you have the AWS CLI installed and configured with a named profile</li>
+<li>Open your <code>settings.json</code> (<code>zed: open settings file</code>) and include the <code>bedrock</code> key under <code>language_models</code> with the following settings:
+<pre><code class="language-json">{
+  "language_models": {
+    "bedrock": {
+      "authentication_method": "named_profile",
+      "region": "your-aws-region",
+      "profile": "your-profile-name"
+    }
+  }
+}
+</code></pre>
+</li>
+</ol>
+<h4 id="authentication-via-static-credentials"><a class="header" href="#authentication-via-static-credentials">Authentication via Static Credentials</a></h4>
+<p>While it's possible to configure through the Agent Panel settings UI by entering your AWS access key and secret directly, we recommend using named profiles instead for better security practices. To do this:</p>
+<ol>
+<li>Create an IAM User that you can assume in the <a href="https://us-east-1.console.aws.amazon.com/iam/home?region=us-east-1#/users">IAM Console</a>.</li>
+<li>Create security credentials for that User, save them and keep them secure.</li>
+<li>Open the Agent Configuration with (<code>agent: open settings</code>) and go to the Amazon Bedrock section</li>
+<li>Copy the credentials from Step 2 into the respective <strong>Access Key ID</strong>, <strong>Secret Access Key</strong>, and <strong>Region</strong> fields.</li>
+</ol>
+<h4 id="cross-region-inference"><a class="header" href="#cross-region-inference">Cross-Region Inference</a></h4>
+<p>The Zed implementation of Amazon Bedrock uses <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html">Cross-Region inference</a> to improve availability and throughput. With Cross-Region inference, you can distribute traffic across multiple AWS Regions, enabling higher throughput.</p>
+<h5 id="regional-vs-global-inference-profiles"><a class="header" href="#regional-vs-global-inference-profiles">Regional vs Global Inference Profiles</a></h5>
+<p>Bedrock supports two types of cross-region inference profiles:</p>
+<ul>
+<li><strong>Regional profiles</strong> (default): Route requests within a specific geography (US, EU, APAC). For example, <code>us-east-1</code> uses the <code>us.*</code> profile which routes across <code>us-east-1</code>, <code>us-east-2</code>, and <code>us-west-2</code>.</li>
+<li><strong>Global profiles</strong>: Route requests across all commercial AWS Regions for maximum availability and performance.</li>
+</ul>
+<p>By default, Zed uses <strong>regional profiles</strong> which keep your data within the same geography. You can opt into global profiles by adding <code>"allow_global": true</code> to your Bedrock configuration:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "bedrock": {
+      "authentication_method": "named_profile",
+      "region": "your-aws-region",
+      "profile": "your-profile-name",
+      "allow_global": true
+    }
+  }
+}
+</code></pre>
+<p><strong>Note:</strong> Only select newer models support global inference profiles. See the <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html#inference-profiles-support-system">AWS Bedrock supported models documentation</a> for the current list of models that support global inference. If you encounter availability issues with a model in your region, enabling <code>allow_global</code> may resolve them.</p>
+<p>Although the data remains stored only in the source Region, your input prompts and output results might move outside of your source Region during cross-Region inference. All data will be transmitted encrypted across Amazon's secure network.</p>
+<p>We will support Cross-Region inference for each of the models on a best-effort basis, please refer to the <a href="https://github.com/zed-industries/zed/blob/main/crates/bedrock/src/models.rs#L297">Cross-Region Inference method Code</a>.</p>
+<p>For the most up-to-date supported regions and models, refer to the <a href="https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-support.html">Supported Models and Regions for Cross Region inference</a>.</p>
+<h3 id="anthropic"><a class="header" href="#anthropic">Anthropic</a></h3>
+<p>You can use Anthropic models by choosing them via the model dropdown in the Agent Panel.</p>
+<ol>
+<li>Sign up for Anthropic and <a href="https://console.anthropic.com/settings/keys">create an API key</a></li>
+<li>Make sure that your Anthropic account has credits</li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the Anthropic section</li>
+<li>Enter your Anthropic API key</li>
+</ol>
+<p>Even if you pay for Claude Pro, you will still have to <a href="https://console.anthropic.com/settings/plans">pay for additional credits</a> to use it via the API.</p>
+<p>Zed will also use the <code>ANTHROPIC_API_KEY</code> environment variable if it's defined.</p>
+<h4 id="anthropic-custom-models"><a class="header" href="#anthropic-custom-models">Custom Models</a></h4>
+<p>You can add custom models to the Anthropic provider by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "anthropic": {
+      "available_models": [
+        {
+          "name": "claude-3-5-sonnet-20240620",
+          "display_name": "Sonnet 2024-June",
+          "max_tokens": 128000,
+          "max_output_tokens": 2560,
+          "cache_configuration": {
+            "max_cache_anchors": 10,
+            "min_total_token": 10000,
+            "should_speculate": false
+          },
+          "tool_override": "some-model-that-supports-toolcalling"
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>Custom models will be listed in the model dropdown in the Agent Panel.</p>
+<p>You can configure a model to use <a href="https://docs.anthropic.com/en/docs/about-claude/models/extended-thinking-models">extended thinking</a> (if it supports it) by changing the mode in your model's configuration to <code>thinking</code>, for example:</p>
+<pre><code class="language-json">{
+  "name": "claude-sonnet-4-latest",
+  "display_name": "claude-sonnet-4-thinking",
+  "max_tokens": 200000,
+  "mode": {
+    "type": "thinking",
+    "budget_tokens": 4096
+  }
+}
+</code></pre>
+<h3 id="deepseek"><a class="header" href="#deepseek">DeepSeek</a></h3>
+<ol>
+<li>Visit the DeepSeek platform and <a href="https://platform.deepseek.com/api_keys">create an API key</a></li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the DeepSeek section</li>
+<li>Enter your DeepSeek API key</li>
+</ol>
+<p>The DeepSeek API key will be saved in your keychain.</p>
+<p>Zed will also use the <code>DEEPSEEK_API_KEY</code> environment variable if it's defined.</p>
+<h4 id="deepseek-custom-models"><a class="header" href="#deepseek-custom-models">Custom Models</a></h4>
+<p>The Zed agent comes pre-configured to use the latest version for common models (DeepSeek Chat, DeepSeek Reasoner). If you wish to use alternate models or customize the API endpoint, you can do so by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "deepseek": {
+      "api_url": "https://api.deepseek.com",
+      "available_models": [
+        {
+          "name": "deepseek-chat",
+          "display_name": "DeepSeek Chat",
+          "max_tokens": 64000
+        },
+        {
+          "name": "deepseek-reasoner",
+          "display_name": "DeepSeek Reasoner",
+          "max_tokens": 64000,
+          "max_output_tokens": 4096
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>Custom models will be listed in the model dropdown in the Agent Panel. You can also modify the <code>api_url</code> to use a custom endpoint if needed.</p>
+<h3 id="github-copilot-chat"><a class="header" href="#github-copilot-chat">GitHub Copilot Chat</a></h3>
+<p>You can use GitHub Copilot Chat with the Zed agent by choosing it via the model dropdown in the Agent Panel.</p>
+<ol>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the GitHub Copilot Chat section</li>
+<li>Click on <code>Sign in to use GitHub Copilot</code>, follow the steps shown in the modal.</li>
+</ol>
+<p>Alternatively, you can provide an OAuth token via the <code>GH_COPILOT_TOKEN</code> environment variable.</p>
+<blockquote>
+<p><strong>Note</strong>: If you don't see specific models in the dropdown, you may need to enable them in your <a href="https://github.com/settings/copilot/features">GitHub Copilot settings</a>.</p>
+</blockquote>
+<p>To use Copilot Enterprise with Zed (for both agent and completions), you must configure your enterprise endpoint as described in <a href="./edit-prediction.html#github-copilot-enterprise">Configuring GitHub Copilot Enterprise</a>.</p>
+<h3 id="google-ai"><a class="header" href="#google-ai">Google AI</a></h3>
+<p>You can use Gemini models with the Zed agent by choosing it via the model dropdown in the Agent Panel.</p>
+<ol>
+<li>Go to the Google AI Studio site and <a href="https://aistudio.google.com/app/apikey">create an API key</a>.</li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the Google AI section</li>
+<li>Enter your Google AI API key and press enter.</li>
+</ol>
+<p>The Google AI API key will be saved in your keychain.</p>
+<p>Zed will also use the <code>GEMINI_API_KEY</code> environment variable if it's defined. See <a href="https://ai.google.dev/gemini-api/docs/api-key">Using Gemini API keys</a> in the Gemini docs for more.</p>
+<h4 id="google-ai-custom-models"><a class="header" href="#google-ai-custom-models">Custom Models</a></h4>
+<p>By default, Zed will use <code>stable</code> versions of models, but you can use specific versions of models, including <a href="https://ai.google.dev/gemini-api/docs/models/experimental-models">experimental models</a>. You can configure a model to use <a href="https://ai.google.dev/gemini-api/docs/thinking">thinking mode</a> (if it supports it) by adding a <code>mode</code> configuration to your model. This is useful for controlling reasoning token usage and response speed. If not specified, Gemini will automatically choose the thinking budget.</p>
+<p>Here is an example of a custom Google AI model you could add to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "google": {
+      "available_models": [
+        {
+          "name": "gemini-2.5-flash-preview-05-20",
+          "display_name": "Gemini 2.5 Flash (Thinking)",
+          "max_tokens": 1000000,
+          "mode": {
+            "type": "thinking",
+            "budget_tokens": 24000
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>Custom models will be listed in the model dropdown in the Agent Panel.</p>
+<h3 id="lmstudio"><a class="header" href="#lmstudio">LM Studio</a></h3>
+<ol>
+<li>
+<p>Download and install <a href="https://lmstudio.ai/download">the latest version of LM Studio</a></p>
+</li>
+<li>
+<p>In the app press <code>cmd/ctrl-shift-m</code> and download at least one model (e.g., qwen2.5-coder-7b). Alternatively, you can get models via the LM Studio CLI:</p>
+<pre><code class="language-sh">lms get qwen2.5-coder-7b
+</code></pre>
+</li>
+<li>
+<p>Make sure the LM Studio API server is running by executing:</p>
+<pre><code class="language-sh">lms server start
+</code></pre>
+</li>
+</ol>
+<p>Tip: Set <a href="https://lmstudio.ai/docs/advanced/headless#run-the-llm-service-on-machine-login">LM Studio as a login item</a> to automate running the LM Studio server.</p>
+<h3 id="mistral"><a class="header" href="#mistral">Mistral</a></h3>
+<ol>
+<li>Visit the Mistral platform and <a href="https://console.mistral.ai/api-keys/">create an API key</a></li>
+<li>Open the configuration view (<code>agent: open settings</code>) and navigate to the Mistral section</li>
+<li>Enter your Mistral API key</li>
+</ol>
+<p>The Mistral API key will be saved in your keychain.</p>
+<p>Zed will also use the <code>MISTRAL_API_KEY</code> environment variable if it's defined.</p>
+<h4 id="mistral-custom-models"><a class="header" href="#mistral-custom-models">Custom Models</a></h4>
+<p>The Zed agent comes pre-configured with several Mistral models (codestral-latest, mistral-large-latest, mistral-medium-latest, mistral-small-latest, open-mistral-nemo, and open-codestral-mamba). All the default models support tool use. If you wish to use alternate models or customize their parameters, you can do so by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "mistral": {
+      "api_url": "https://api.mistral.ai/v1",
+      "available_models": [
+        {
+          "name": "mistral-tiny-latest",
+          "display_name": "Mistral Tiny",
+          "max_tokens": 32000,
+          "max_output_tokens": 4096,
+          "max_completion_tokens": 1024,
+          "supports_tools": true,
+          "supports_images": false
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>Custom models will be listed in the model dropdown in the Agent Panel.</p>
+<h3 id="ollama"><a class="header" href="#ollama">Ollama</a></h3>
+<p>Download and install Ollama from <a href="https://ollama.com/download">ollama.com/download</a> (Linux or macOS) and ensure it's running with <code>ollama --version</code>.</p>
+<ol>
+<li>
+<p>Download one of the <a href="https://ollama.com/models">available models</a>, for example, for <code>mistral</code>:</p>
+<pre><code class="language-sh">ollama pull mistral
+</code></pre>
+</li>
+<li>
+<p>Make sure that the Ollama server is running. You can start it either via running Ollama.app (macOS) or launching:</p>
+<pre><code class="language-sh">ollama serve
+</code></pre>
+</li>
+<li>
+<p>In the Agent Panel, select one of the Ollama models using the model dropdown.</p>
+</li>
+</ol>
+<h4 id="ollama-autodiscovery"><a class="header" href="#ollama-autodiscovery">Ollama Autodiscovery</a></h4>
+<p>Zed will automatically discover models that Ollama has pulled. You can turn this off by setting the <code>auto_discover</code> field in the Ollama settings. If you do this, you should manually specify which models are available.</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "auto_discover": false,
+      "available_models": [
+        {
+          "name": "qwen2.5-coder",
+          "display_name": "qwen 2.5 coder",
+          "max_tokens": 32768,
+          "supports_tools": true,
+          "supports_thinking": true,
+          "supports_images": true
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<h4 id="ollama-context"><a class="header" href="#ollama-context">Ollama Context Length</a></h4>
+<p>Zed has pre-configured maximum context lengths (<code>max_tokens</code>) to match the capabilities of common models. Zed API requests to Ollama include this as the <code>num_ctx</code> parameter, but the default values do not exceed <code>16384</code> so users with ~16GB of RAM are able to use most models out of the box.</p>
+<p>See <a href="https://github.com/zed-industries/zed/blob/main/crates/ollama/src/ollama.rs">get_max_tokens in ollama.rs</a> for a complete set of defaults.</p>
+<blockquote>
+<p><strong>Note</strong>: Token counts displayed in the Agent Panel are only estimates and will differ from the model's native tokenizer.</p>
+</blockquote>
+<p>Depending on your hardware or use-case you may wish to limit or increase the context length for a specific model via settings.json:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "ollama": {
+      "api_url": "http://localhost:11434",
+      "available_models": [
+        {
+          "name": "qwen2.5-coder",
+          "display_name": "qwen 2.5 coder 32K",
+          "max_tokens": 32768,
+          "supports_tools": true,
+          "supports_thinking": true,
+          "supports_images": true
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>If you specify a context length that is too large for your hardware, Ollama will log an error. You can watch these logs by running: <code>tail -f ~/.ollama/logs/ollama.log</code> (macOS) or <code>journalctl -u ollama -f</code> (Linux). Depending on the memory available on your machine, you may need to adjust the context length to a smaller value.</p>
+<p>You may also optionally specify a value for <code>keep_alive</code> for each available model. This can be an integer (seconds) or alternatively a string duration like "5m", "10m", "1h", "1d", etc. For example, <code>"keep_alive": "120s"</code> will allow the remote server to unload the model (freeing up GPU VRAM) after 120 seconds.</p>
+<p>The <code>supports_tools</code> option controls whether the model will use additional tools. If the model is tagged with <code>tools</code> in the Ollama catalog, this option should be supplied, and the built-in profiles <code>Ask</code> and <code>Write</code> can be used. If the model is not tagged with <code>tools</code> in the Ollama catalog, this option can still be supplied with the value <code>true</code>; however, be aware that only the <code>Minimal</code> built-in profile will work.</p>
+<p>The <code>supports_thinking</code> option controls whether the model will perform an explicit "thinking" (reasoning) pass before producing its final answer. If the model is tagged with <code>thinking</code> in the Ollama catalog, set this option and you can use it in Zed.</p>
+<p>The <code>supports_images</code> option enables the model's vision capabilities, allowing it to process images included in the conversation context. If the model is tagged with <code>vision</code> in the Ollama catalog, set this option and you can use it in Zed.</p>
+<h4 id="ollama-authentication"><a class="header" href="#ollama-authentication">Ollama Authentication</a></h4>
+<p>In addition to running Ollama on your own hardware, which generally does not require authentication, Zed also supports connecting to remote Ollama instances. API keys are required for authentication.</p>
+<p>One such service is [Ollama Turbo])(https://ollama.com/turbo). To configure Zed to use Ollama turbo:</p>
+<ol>
+<li>Sign in to your Ollama account and subscribe to Ollama Turbo</li>
+<li>Visit <a href="https://ollama.com/settings/keys">ollama.com/settings/keys</a> and create an API key</li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the Ollama section</li>
+<li>Paste your API key and press enter.</li>
+<li>For the API URL enter <code>https://ollama.com</code></li>
+</ol>
+<p>Zed will also use the <code>OLLAMA_API_KEY</code> environment variables if defined.</p>
+<h3 id="openai"><a class="header" href="#openai">OpenAI</a></h3>
+<ol>
+<li>Visit the OpenAI platform and <a href="https://platform.openai.com/account/api-keys">create an API key</a></li>
+<li>Make sure that your OpenAI account has credits</li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the OpenAI section</li>
+<li>Enter your OpenAI API key</li>
+</ol>
+<p>The OpenAI API key will be saved in your keychain.</p>
+<p>Zed will also use the <code>OPENAI_API_KEY</code> environment variable if it's defined.</p>
+<h4 id="openai-custom-models"><a class="header" href="#openai-custom-models">Custom Models</a></h4>
+<p>The Zed agent comes pre-configured to use the latest version for common models (GPT-5, GPT-5 mini, o4-mini, GPT-4.1, and others). To use alternate models, perhaps a preview release, or if you wish to control the request parameters, you can do so by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "openai": {
+      "available_models": [
+        {
+          "name": "gpt-5",
+          "display_name": "gpt-5 high",
+          "reasoning_effort": "high",
+          "max_tokens": 272000,
+          "max_completion_tokens": 20000
+        },
+        {
+          "name": "gpt-4o-2024-08-06",
+          "display_name": "GPT 4o Summer 2024",
+          "max_tokens": 128000
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>You must provide the model's context window in the <code>max_tokens</code> parameter; this can be found in the <a href="https://platform.openai.com/docs/models">OpenAI model documentation</a>.</p>
+<p>OpenAI <code>o1</code> models should set <code>max_completion_tokens</code> as well to avoid incurring high reasoning token costs. Custom models will be listed in the model dropdown in the Agent Panel.</p>
+<h3 id="openai-api-compatible"><a class="header" href="#openai-api-compatible">OpenAI API Compatible</a></h3>
+<p>Zed supports using <a href="https://platform.openai.com/docs/api-reference/chat">OpenAI compatible APIs</a> by specifying a custom <code>api_url</code> and <code>available_models</code> for the OpenAI provider. This is useful for connecting to other hosted services (like Together AI, Anyscale, etc.) or local models.</p>
+<p>You can add a custom, OpenAI-compatible model either via the UI or by editing your <code>settings.json</code>.</p>
+<p>To do it via the UI, go to the Agent Panel settings (<code>agent: open settings</code>) and look for the "Add Provider" button to the right of the "LLM Providers" section title. Then, fill up the input fields available in the modal.</p>
+<p>To do it via your <code>settings.json</code>, add the following snippet under <code>language_models</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "openai_compatible": {
+      // Using Together AI as an example
+      "Together AI": {
+        "api_url": "https://api.together.xyz/v1",
+        "available_models": [
+          {
+            "name": "mistralai/Mixtral-8x7B-Instruct-v0.1",
+            "display_name": "Together Mixtral 8x7B",
+            "max_tokens": 32768,
+            "capabilities": {
+              "tools": true,
+              "images": false,
+              "parallel_tool_calls": false,
+              "prompt_cache_key": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}
+</code></pre>
+<p>By default, OpenAI-compatible models inherit the following capabilities:</p>
+<ul>
+<li><code>tools</code>: true (supports tool/function calling)</li>
+<li><code>images</code>: false (does not support image inputs)</li>
+<li><code>parallel_tool_calls</code>: false (does not support <code>parallel_tool_calls</code> parameter)</li>
+<li><code>prompt_cache_key</code>: false (does not support <code>prompt_cache_key</code> parameter)</li>
+</ul>
+<p>Note that LLM API keys aren't stored in your settings file. So, ensure you have it set in your environment variables (<code>&lt;PROVIDER_NAME&gt;_API_KEY=&lt;your api key&gt;</code>) so your settings can pick it up. In the example above, it would be <code>TOGETHER_AI_API_KEY=&lt;your api key&gt;</code>.</p>
+<h3 id="openrouter"><a class="header" href="#openrouter">OpenRouter</a></h3>
+<p>OpenRouter provides access to multiple AI models through a single API. It supports tool use for compatible models.</p>
+<ol>
+<li>Visit <a href="https://openrouter.ai">OpenRouter</a> and create an account</li>
+<li>Generate an API key from your <a href="https://openrouter.ai/keys">OpenRouter keys page</a></li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the OpenRouter section</li>
+<li>Enter your OpenRouter API key</li>
+</ol>
+<p>The OpenRouter API key will be saved in your keychain.</p>
+<p>Zed will also use the <code>OPENROUTER_API_KEY</code> environment variable if it's defined.</p>
+<h4 id="openrouter-custom-models"><a class="header" href="#openrouter-custom-models">Custom Models</a></h4>
+<p>You can add custom models to the OpenRouter provider by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "open_router": {
+      "api_url": "https://openrouter.ai/api/v1",
+      "available_models": [
+        {
+          "name": "google/gemini-2.0-flash-thinking-exp",
+          "display_name": "Gemini 2.0 Flash (Thinking)",
+          "max_tokens": 200000,
+          "max_output_tokens": 8192,
+          "supports_tools": true,
+          "supports_images": true,
+          "mode": {
+            "type": "thinking",
+            "budget_tokens": 8000
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>The available configuration options for each model are:</p>
+<ul>
+<li><code>name</code> (required): The model identifier used by OpenRouter</li>
+<li><code>display_name</code> (optional): A human-readable name shown in the UI</li>
+<li><code>max_tokens</code> (required): The model's context window size</li>
+<li><code>max_output_tokens</code> (optional): Maximum tokens the model can generate</li>
+<li><code>max_completion_tokens</code> (optional): Maximum completion tokens</li>
+<li><code>supports_tools</code> (optional): Whether the model supports tool/function calling</li>
+<li><code>supports_images</code> (optional): Whether the model supports image inputs</li>
+<li><code>mode</code> (optional): Special mode configuration for thinking models</li>
+</ul>
+<p>You can find available models and their specifications on the <a href="https://openrouter.ai/models">OpenRouter models page</a>.</p>
+<p>Custom models will be listed in the model dropdown in the Agent Panel.</p>
+<h4 id="provider-routing"><a class="header" href="#provider-routing">Provider Routing</a></h4>
+<p>You can optionally control how OpenRouter routes a given custom model request among underlying upstream providers via the <code>provider</code> object on each model entry.</p>
+<p>Supported fields (all optional):</p>
+<ul>
+<li><code>order</code>: Array of provider slugs to try first, in order (e.g. <code>["anthropic", "openai"]</code>)</li>
+<li><code>allow_fallbacks</code> (default: <code>true</code>): Whether fallback providers may be used if preferred ones are unavailable</li>
+<li><code>require_parameters</code> (default: <code>false</code>): Only use providers that support every parameter you supplied</li>
+<li><code>data_collection</code> (default: <code>allow</code>): <code>"allow"</code> or <code>"disallow"</code> (controls use of providers that may store data)</li>
+<li><code>only</code>: Whitelist of provider slugs allowed for this request</li>
+<li><code>ignore</code>: Provider slugs to skip</li>
+<li><code>quantizations</code>: Restrict to specific quantization variants (e.g. <code>["int4","int8"]</code>)</li>
+<li><code>sort</code>: Sort strategy for candidate providers (e.g. <code>"price"</code> or <code>"throughput"</code>)</li>
+</ul>
+<p>Example adding routing preferences to a model:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "open_router": {
+      "api_url": "https://openrouter.ai/api/v1",
+      "available_models": [
+        {
+          "name": "openrouter/auto",
+          "display_name": "Auto Router (Tools Preferred)",
+          "max_tokens": 2000000,
+          "supports_tools": true,
+          "provider": {
+            "order": ["anthropic", "openai"],
+            "allow_fallbacks": true,
+            "require_parameters": true,
+            "only": ["anthropic", "openai", "google"],
+            "ignore": ["cohere"],
+            "quantizations": ["int8"],
+            "sort": "price",
+            "data_collection": "allow"
+          }
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<p>These routing controls let you fine‑tune cost, capability, and reliability trade‑offs without changing the model name you select in the UI.</p>
+<h3 id="vercel-v0"><a class="header" href="#vercel-v0">Vercel v0</a></h3>
+<p><a href="https://v0.app/docs/api/model">Vercel v0</a> is an expert model for generating full-stack apps, with framework-aware completions optimized for modern stacks like Next.js and Vercel. It supports text and image inputs and provides fast streaming responses.</p>
+<p>The v0 models are <a href="/#openai-api-compatible">OpenAI-compatible models</a>, but Vercel is listed as first-class provider in the panel's settings view.</p>
+<p>To start using it with Zed, ensure you have first created a <a href="https://v0.dev/chat/settings/keys">v0 API key</a>. Once you have it, paste it directly into the Vercel provider section in the panel's settings view.</p>
+<p>You should then find it as <code>v0-1.5-md</code> in the model dropdown in the Agent Panel.</p>
+<h3 id="xai"><a class="header" href="#xai">xAI</a></h3>
+<p>Zed has first-class support for <a href="https://x.ai/">xAI</a> models. You can use your own API key to access Grok models.</p>
+<ol>
+<li><a href="https://console.x.ai/team/default/api-keys">Create an API key in the xAI Console</a></li>
+<li>Open the settings view (<code>agent: open settings</code>) and go to the <strong>xAI</strong> section</li>
+<li>Enter your xAI API key</li>
+</ol>
+<p>The xAI API key will be saved in your keychain. Zed will also use the <code>XAI_API_KEY</code> environment variable if it's defined.</p>
+<blockquote>
+<p><strong>Note:</strong> While the xAI API is OpenAI-compatible, Zed has first-class support for it as a dedicated provider. For the best experience, we recommend using the dedicated <code>x_ai</code> provider configuration instead of the <a href="#openai-api-compatible">OpenAI API Compatible</a> method.</p>
+</blockquote>
+<h4 id="xai-custom-models"><a class="header" href="#xai-custom-models">Custom Models</a></h4>
+<p>The Zed agent comes pre-configured with common Grok models. If you wish to use alternate models or customize their parameters, you can do so by adding the following to your Zed <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "x_ai": {
+      "api_url": "https://api.x.ai/v1",
+      "available_models": [
+        {
+          "name": "grok-1.5",
+          "display_name": "Grok 1.5",
+          "max_tokens": 131072,
+          "max_output_tokens": 8192
+        },
+        {
+          "name": "grok-1.5v",
+          "display_name": "Grok 1.5V (Vision)",
+          "max_tokens": 131072,
+          "max_output_tokens": 8192,
+          "supports_images": true
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+<h2 id="custom-provider-endpoint"><a class="header" href="#custom-provider-endpoint">Custom Provider Endpoints</a></h2>
+<p>You can use a custom API endpoint for different providers, as long as it's compatible with the provider's API structure. To do so, add the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "language_models": {
+    "some-provider": {
+      "api_url": "http://localhost:11434"
+    }
+  }
+}
+</code></pre>
+<p>Currently, <code>some-provider</code> can be any of the following values: <code>anthropic</code>, <code>google</code>, <code>ollama</code>, <code>openai</code>.</p>
+<p>This is the same infrastructure that powers models that are, for example, <a href="#openai-api-compatible">OpenAI-compatible</a>.</p>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../ai/configuration.html" class="footer-button" title="Configuration">
+                                <i class="fa fa-angle-left"></i>
+                                Configuration
+                            </a>
+                            <a rel="next" href="../ai/agent-settings.html" class="footer-button" title="Agent Settings">
+                                Agent Settings
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>
