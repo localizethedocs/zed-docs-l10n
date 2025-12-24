@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-22 14:06:54 -0300",
-      "hash" : "f9d9721b934ba859928026fc71f74b6c5ff33ab2",
-      "title" : "agent_ui: Expand model favoriting feature to external agents (#45528)"
+      "date" : "2025-12-23 21:23:28 +0000",
+      "hash" : "ca478226677e5f7190a5d8933277522780faaaf7",
+      "title" : "Associate devcontainer.json with JSONC language (#45593)"
     }
   },
   "type" : "branch",

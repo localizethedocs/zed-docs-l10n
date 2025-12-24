@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/languages/typescript.md:1
@@ -358,7 +358,7 @@ msgstr ""
 
 #: src/languages/typescript.md:195
 msgid ""
-"Run <code class=\"hljs\">debugger::Start</code> (<kbd "
+"Run <code class=\"hljs\">debugger: start</code> (<kbd "
 "class=\"keybinding\">f4|f4</kbd>) to see a contextual list of these "
 "predefined debug tasks."
 msgstr ""

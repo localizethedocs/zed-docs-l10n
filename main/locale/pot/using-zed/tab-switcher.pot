@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/tab-switcher.md:1
@@ -35,8 +35,8 @@ msgstr ""
 #: src/tab-switcher.md:11
 msgid ""
 "When the Tab Switcher is opened using <kbd class=\"keybinding\">ctrl-tab|"
-"ctrl-tab</kbd>, instead of running the <code class=\"hljs\">tab_switcher::"
-"Toggle</code> from the command palette, it'll stay active as long as the "
+"ctrl-tab</kbd>, instead of running the <code class=\"hljs\">tab switcher: "
+"toggle</code> from the command palette, it'll stay active as long as the "
 "<kbd class=\"keybinding\">ctrl</kbd> key is held down."
 msgstr ""
 
@@ -56,12 +56,11 @@ msgstr ""
 
 #: src/tab-switcher.md:23
 msgid ""
-"The Tab Switcher can also be opened with either <code "
-"class=\"hljs\">tab_switcher::Toggle</code> or <code "
-"class=\"hljs\">tab_switcher::ToggleAll</code>. Using <kbd "
-"class=\"keybinding\">ctrl-tab|ctrl-tab</kbd> will show only the tabs for the "
-"current pane, while <div>No default binding</div> shows all tabs for all "
-"panes."
+"The Tab Switcher can also be opened with either <code class=\"hljs\">tab "
+"switcher: toggle</code> or <code class=\"hljs\">tab switcher: toggle all</"
+"code>. Using <kbd class=\"keybinding\">ctrl-tab|ctrl-tab</kbd> will show "
+"only the tabs for the current pane, while <div>No default binding</div> "
+"shows all tabs for all panes."
 msgstr ""
 
 #: src/tab-switcher.md:28
@@ -115,7 +114,7 @@ msgid "Description"
 msgstr ""
 
 #: src/tab-switcher.md:44
-msgid "<code class=\"hljs\">tab_switcher::Toggle</code>"
+msgid "<code class=\"hljs\">tab switcher: toggle</code>"
 msgstr ""
 
 #: src/tab-switcher.md:44
@@ -123,7 +122,7 @@ msgid "Open the Tab Switcher for the current pane"
 msgstr ""
 
 #: src/tab-switcher.md:45
-msgid "<code class=\"hljs\">tab_switcher::ToggleAll</code>"
+msgid "<code class=\"hljs\">tab switcher: toggle all</code>"
 msgstr ""
 
 #: src/tab-switcher.md:45
@@ -131,7 +130,7 @@ msgid "Open the Tab Switcher showing tabs from all panes"
 msgstr ""
 
 #: src/tab-switcher.md:46
-msgid "<code class=\"hljs\">tab_switcher::CloseSelectedItem</code>"
+msgid "<code class=\"hljs\">tab switcher: close selected item</code>"
 msgstr ""
 
 #: src/tab-switcher.md:46

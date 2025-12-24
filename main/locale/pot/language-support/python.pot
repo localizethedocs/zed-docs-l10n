@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/languages/python.md:1
@@ -867,7 +867,7 @@ msgstr ""
 
 #: src/languages/python.md:371
 msgid ""
-"Check your Zed log (using the <code class=\"hljs\">zed::OpenLog</code> "
+"Check your Zed log (using the <code class=\"hljs\">zed: open log</code> "
 "action) for errors related to the language server you're trying to use. This "
 "is where you're likely to find useful information if the language server "
 "failed to start up at all."
@@ -877,9 +877,9 @@ msgstr ""
 msgid ""
 "Use the language server logs view to understand the lifecycle of the "
 "affected language server. You can access this view using the <code "
-"class=\"hljs\">dev::OpenLanguageServerLogs</code> action, or by clicking the "
-"lightning bolt icon in the status bar and selecting your language server. "
-"The most useful pieces of data in this view are:"
+"class=\"hljs\">dev: open language server logs</code> action, or by clicking "
+"the lightning bolt icon in the status bar and selecting your language "
+"server. The most useful pieces of data in this view are:"
 msgstr ""
 
 #: src/languages/python.md:373
@@ -900,8 +900,8 @@ msgstr ""
 #: src/languages/python.md:376
 msgid ""
 "Restart Zed to reinitialize language server connections, or try restarting "
-"the language server using the <code class=\"hljs\">editor::"
-"RestartLanguageServer</code>"
+"the language server using the <code class=\"hljs\">editor: restart language "
+"server</code>"
 msgstr ""
 
 #: src/languages/python.md:378

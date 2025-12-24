@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/visual-customization.md:1
@@ -19,8 +19,8 @@ msgstr ""
 msgid ""
 "Various aspects of Zed's visual layout can be configured via either the "
 "settings window or the `settings.json` file, which you can access via <code "
-"class=\"hljs\">zed::OpenSettings</code> (<kbd class=\"keybinding\">cmd-,|"
-"ctrl-,</kbd>) and <code class=\"hljs\">zed::OpenSettingsFile</code> (<kbd "
+"class=\"hljs\">zed: open settings</code> (<kbd class=\"keybinding\">cmd-,|"
+"ctrl-,</kbd>) and <code class=\"hljs\">zed: open settings file</code> (<kbd "
 "class=\"keybinding\">cmd-alt-,|ctrl-alt-,</kbd>) respectively."
 msgstr ""
 
@@ -37,16 +37,16 @@ msgstr ""
 #: src/visual-customization.md:9
 msgid ""
 "You can install many [themes](./themes.md) and [icon themes](./icon-themes."
-"md) in form of extensions by running <code class=\"hljs\">zed::Extensions</"
+"md) in form of extensions by running <code class=\"hljs\">zed: extensions</"
 "code> from the command palette."
 msgstr ""
 
 #: src/visual-customization.md:11
 msgid ""
 "You can preview/choose amongst your installed themes and icon themes with "
-"<code class=\"hljs\">theme_selector::Toggle</code> (<kbd "
+"<code class=\"hljs\">theme selector: toggle</code> (<kbd "
 "class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</kbd>) and <code "
-"class=\"hljs\">icon_theme_selector::Toggle</code> which will modify the "
+"class=\"hljs\">icon theme selector: toggle</code> which will modify the "
 "following settings:"
 msgstr ""
 
@@ -1243,10 +1243,10 @@ msgstr ""
 
 #: src/visual-customization.md:437
 msgid ""
-"Project panel can be shown/hidden with <code class=\"hljs\">project_panel::"
-"ToggleFocus</code> (<kbd class=\"keybinding\">cmd-shift-e|ctrl-shift-e</"
-"kbd>) or with <code class=\"hljs\">pane::RevealInProjectPanel</code> (<kbd "
-"class=\"keybinding\">cmd-shift-e|ctrl-shift-e</kbd>)."
+"Project panel can be shown/hidden with <code class=\"hljs\">project panel: "
+"toggle focus</code> (<kbd class=\"keybinding\">cmd-shift-e|ctrl-shift-e</"
+"kbd>) or with <code class=\"hljs\">pane: reveal in project panel</code> "
+"(<kbd class=\"keybinding\">cmd-shift-e|ctrl-shift-e</kbd>)."
 msgstr ""
 
 #: src/visual-customization.md:440

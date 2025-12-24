@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/ai/edit-prediction.md:1
@@ -168,10 +168,10 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:61
 msgid ""
-"<code class=\"hljs\">editor::AcceptNextWordEditPrediction</code> (<kbd "
+"<code class=\"hljs\">editor: accept next word edit prediction</code> (<kbd "
 "class=\"keybinding\">ctrl-cmd-right|alt-right</kbd>) can be used to accept "
 "the current edit prediction up to the next word boundary. <code "
-"class=\"hljs\">editor::AcceptNextLineEditPrediction</code> (<kbd "
+"class=\"hljs\">editor: accept next line edit prediction</code> (<kbd "
 "class=\"keybinding\">ctrl-cmd-down|alt-down</kbd>) can be used to accept the "
 "current edit prediction up to the new line boundary."
 msgstr ""
@@ -397,8 +397,8 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:204
 msgid ""
-"Zed requires at least one keybinding for the <code class=\"hljs\">editor::"
-"AcceptEditPrediction</code> action in both the `Editor && edit_prediction` "
+"Zed requires at least one keybinding for the <code class=\"hljs\">editor: "
+"accept edit prediction</code> action in both the `Editor && edit_prediction` "
 "and `Editor && edit_prediction_conflict` contexts ([learn more above](#edit-"
 "predictions-keybinding))."
 msgstr ""
@@ -480,8 +480,8 @@ msgid ""
 "This hides every indication that there is a prediction available, regardless "
 "of [the display mode](#switching-modes) you're in (valid only if you have "
 "Zed as your provider). Still, you can trigger edit predictions manually by "
-"executing <code class=\"hljs\">editor::ShowEditPrediction</code> or hitting "
-"<kbd class=\"keybinding\">alt-tab|alt-\\\\</kbd>."
+"executing <code class=\"hljs\">editor: show edit prediction</code> or "
+"hitting <kbd class=\"keybinding\">alt-tab|alt-\\\\</kbd>."
 msgstr ""
 
 #: src/ai/edit-prediction.md:255
@@ -607,14 +607,14 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:332
 msgid ""
-"<code class=\"hljs\">editor::NextEditPrediction</code> (<kbd "
+"<code class=\"hljs\">editor: next edit prediction</code> (<kbd "
 "class=\"keybinding\">alt-tab|alt-\\]</kbd>): To cycle to the next edit "
 "prediction"
 msgstr ""
 
 #: src/ai/edit-prediction.md:333
 msgid ""
-"<code class=\"hljs\">editor::PreviousEditPrediction</code> (<kbd "
+"<code class=\"hljs\">editor: previous edit prediction</code> (<kbd "
 "class=\"keybinding\">alt-shift-tab|alt-\\[</kbd>): To cycle to the previous "
 "edit prediction"
 msgstr ""

@@ -1,14 +1,14 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/snippets.md:1
@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/snippets.md:3
 msgid ""
-"Use the <code class=\"hljs\">snippets::ConfigureSnippets</code> action to "
+"Use the <code class=\"hljs\">snippets: configure snippets</code> action to "
 "create a new snippets file or edit an existing snippets file for a specified "
 "[scope](#scopes)."
 msgstr ""
@@ -25,7 +25,7 @@ msgstr ""
 #: src/snippets.md:5
 msgid ""
 "The snippets are located in `~/.config/zed/snippets` directory to which you "
-"can navigate to with the <code class=\"hljs\">snippets::OpenFolder</code> "
+"can navigate to with the <code class=\"hljs\">snippets: open folder</code> "
 "action."
 msgstr ""
 
