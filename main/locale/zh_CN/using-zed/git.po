@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -74,8 +74,8 @@ msgstr ""
 
 #: src/git.md:23
 msgid ""
-"You can open the Git Panel using <code class=\"hljs\">git_panel::"
-"ToggleFocus</code>, or by clicking the Git icon in the status bar."
+"You can open the Git Panel using <code class=\"hljs\">git panel: toggle "
+"focus</code>, or by clicking the Git icon in the status bar."
 msgstr ""
 
 #: src/git.md:25
@@ -142,7 +142,7 @@ msgstr ""
 msgid ""
 "You can see all of the changes captured by Git in Zed by opening the Project "
 "Diff (<kbd class=\"keybinding\">ctrl-g d|ctrl-g d</kbd>), accessible via the "
-"<code class=\"hljs\">git::Diff</code> action in the Command Palette or the "
+"<code class=\"hljs\">git: diff</code> action in the Command Palette or the "
 "Git Panel."
 msgstr ""
 
@@ -166,8 +166,8 @@ msgstr ""
 msgid ""
 "Fetch, push, or pull from your Git repository in Zed via the buttons "
 "available on the Git Panel or via the Command Palette by looking at the "
-"respective actions: <code class=\"hljs\">git::Fetch</code>, <code "
-"class=\"hljs\">git::Push</code>, and <code class=\"hljs\">git::Pull</code>."
+"respective actions: <code class=\"hljs\">git: fetch</code>, <code "
+"class=\"hljs\">git: push</code>, and <code class=\"hljs\">git: pull</code>."
 msgstr ""
 
 #: src/git.md:60
@@ -188,16 +188,16 @@ msgstr ""
 msgid ""
 "In the Project Diff view, you can focus on each hunk and stage them "
 "individually by clicking on the tab bar buttons or via the keybindings <code "
-"class=\"hljs\">git::StageAndNext</code> (<kbd class=\"keybinding\">cmd-y|alt-"
-"y</kbd>)."
+"class=\"hljs\">git: stage and next</code> (<kbd class=\"keybinding\">cmd-y|"
+"alt-y</kbd>)."
 msgstr ""
 
 #: src/git.md:68
 msgid ""
 "Similarly, stage all hunks at the same time with the <code "
-"class=\"hljs\">git::StageAll</code> (<kbd class=\"keybinding\">cmd-ctrl-y|"
+"class=\"hljs\">git: stage all</code> (<kbd class=\"keybinding\">cmd-ctrl-y|"
 "ctrl-space</kbd>) keybinding and then immediately commit with <code "
-"class=\"hljs\">git::Commit</code> (<kbd class=\"keybinding\">cmd-enter|ctrl-"
+"class=\"hljs\">git: commit</code> (<kbd class=\"keybinding\">cmd-enter|ctrl-"
 "enter</kbd>)."
 msgstr ""
 
@@ -208,7 +208,7 @@ msgstr ""
 #: src/git.md:72
 msgid ""
 "From the panel, you can simply type a commit message and hit the commit "
-"button, or <code class=\"hljs\">git::Commit</code>. This will automatically "
+"button, or <code class=\"hljs\">git: commit</code>. This will automatically "
 "stage all tracked files (indicated by a `[·]` in the entry's checkbox) and "
 "commit them."
 msgstr ""
@@ -217,7 +217,7 @@ msgstr ""
 msgid ""
 "Entries can be staged using each individual entry's checkbox. All changes "
 "can be staged using the button at the top of the panel, or <code "
-"class=\"hljs\">git::StageAll</code>."
+"class=\"hljs\">git: stage all</code>."
 msgstr ""
 
 #: src/git.md:82
@@ -233,8 +233,8 @@ msgstr ""
 
 #: src/git.md:85
 msgid ""
-"The second is available via the action <code class=\"hljs\">git::"
-"ExpandCommitEditor</code> or via hitting the <kbd class=\"keybinding\">shift-"
+"The second is available via the action <code class=\"hljs\">git: expand "
+"commit editor</code> or via hitting the <kbd class=\"keybinding\">shift-"
 "escape|</kbd> while focused in the Git Panel commit textarea."
 msgstr ""
 
@@ -284,9 +284,9 @@ msgstr ""
 
 #: src/git.md:104
 msgid ""
-"To stash all your current changes, use the <code class=\"hljs\">git::"
-"StashAll</code> action. This will save both staged and unstaged changes to a "
-"new stash entry and clean your working directory."
+"To stash all your current changes, use the <code class=\"hljs\">git: stash "
+"all</code> action. This will save both staged and unstaged changes to a new "
+"stash entry and clean your working directory."
 msgstr ""
 
 #: src/git.md:106
@@ -296,7 +296,7 @@ msgstr ""
 #: src/git.md:108
 msgid ""
 "Zed provides a comprehensive stash picker accessible via <code "
-"class=\"hljs\">git::ViewStash</code>. From the stash picker, you can:"
+"class=\"hljs\">git: view stash</code>. From the stash picker, you can:"
 msgstr ""
 
 #: src/git.md:110
@@ -336,14 +336,14 @@ msgstr ""
 
 #: src/git.md:120
 msgid ""
-"**Apply latest stash**: Use <code class=\"hljs\">git::StashApply</code> to "
+"**Apply latest stash**: Use <code class=\"hljs\">git: stash apply</code> to "
 "apply the most recent stash without removing it"
 msgstr ""
 
 #: src/git.md:121
 msgid ""
-"**Pop latest stash**: Use <code class=\"hljs\">git::StashPop</code> to apply "
-"and remove the most recent stash"
+"**Pop latest stash**: Use <code class=\"hljs\">git: stash pop</code> to "
+"apply and remove the most recent stash"
 msgstr ""
 
 #: src/git.md:123
@@ -371,7 +371,7 @@ msgstr ""
 #: src/git.md:131
 msgid ""
 "To open the stash diff view, select a stash from the stash picker and use "
-"the <code class=\"hljs\">stash_picker::ShowStashItem</code> (<kbd "
+"the <code class=\"hljs\">stash picker: show stash item</code> (<kbd "
 "class=\"keybinding\">ctrl-shift-v|ctrl-shift-v</kbd>) keybinding."
 msgstr ""
 
@@ -384,7 +384,7 @@ msgid ""
 "Zed currently supports LLM-powered commit message generation. You can ask AI "
 "to generate a commit message by focusing on the message editor within the "
 "Git Panel and either clicking on the pencil icon in the bottom left, or "
-"reaching for the <code class=\"hljs\">git::GenerateCommitMessage</code> "
+"reaching for the <code class=\"hljs\">git: generate commit message</code> "
 "(<kbd class=\"keybinding\">alt-tab|alt-l</kbd>) keybinding."
 msgstr ""
 
@@ -504,26 +504,26 @@ msgstr ""
 
 #: src/git.md:193
 msgid ""
-"**Expand all diff hunks**: <code class=\"hljs\">editor::ExpandAllDiffHunks</"
-"code> (<kbd class=\"keybinding\">cmd-\"|ctrl-\"</kbd>)"
+"**Expand all diff hunks**: <code class=\"hljs\">editor: expand all diff "
+"hunks</code> (<kbd class=\"keybinding\">cmd-\"|ctrl-\"</kbd>)"
 msgstr ""
 
 #: src/git.md:194
 msgid ""
 "**Collapse all diff hunks**: Press `Escape` (bound to <code "
-"class=\"hljs\">editor::Cancel</code>)"
+"class=\"hljs\">editor: cancel</code>)"
 msgstr ""
 
 #: src/git.md:195
 msgid ""
-"**Toggle selected diff hunks**: <code class=\"hljs\">editor::"
-"ToggleSelectedDiffHunks</code> (<kbd class=\"keybinding\">cmd-'|ctrl-'</kbd>)"
+"**Toggle selected diff hunks**: <code class=\"hljs\">editor: toggle selected "
+"diff hunks</code> (<kbd class=\"keybinding\">cmd-'|ctrl-'</kbd>)"
 msgstr ""
 
 #: src/git.md:196
 msgid ""
-"**Navigate between hunks**: <code class=\"hljs\">editor::GoToHunk</code> and "
-"<code class=\"hljs\">editor::GoToPreviousHunk</code>"
+"**Navigate between hunks**: <code class=\"hljs\">editor: go to hunk</code> "
+"and <code class=\"hljs\">editor: go to previous hunk</code>"
 msgstr ""
 
 #: src/git.md:198
@@ -545,7 +545,7 @@ msgid "Keybinding"
 msgstr ""
 
 #: src/git.md:204
-msgid "<code class=\"hljs\">git::Add</code>"
+msgid "<code class=\"hljs\">git: add</code>"
 msgstr ""
 
 #: src/git.md:204 src/git.md:220 src/git.md:221 src/git.md:222 src/git.md:224
@@ -554,7 +554,7 @@ msgid "<div>No default binding</div>"
 msgstr ""
 
 #: src/git.md:205
-msgid "<code class=\"hljs\">git::StageAll</code>"
+msgid "<code class=\"hljs\">git: stage all</code>"
 msgstr ""
 
 #: src/git.md:205
@@ -562,7 +562,7 @@ msgid "<kbd class=\"keybinding\">cmd-ctrl-y"
 msgstr ""
 
 #: src/git.md:206
-msgid "<code class=\"hljs\">git::UnstageAll</code>"
+msgid "<code class=\"hljs\">git: unstage all</code>"
 msgstr ""
 
 #: src/git.md:206
@@ -570,7 +570,7 @@ msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y"
 msgstr ""
 
 #: src/git.md:207
-msgid "<code class=\"hljs\">git::ToggleStaged</code>"
+msgid "<code class=\"hljs\">git: toggle staged</code>"
 msgstr ""
 
 #: src/git.md:207
@@ -578,7 +578,7 @@ msgid "<kbd class=\"keybinding\">space"
 msgstr ""
 
 #: src/git.md:208
-msgid "<code class=\"hljs\">git::StageAndNext</code>"
+msgid "<code class=\"hljs\">git: stage and next</code>"
 msgstr ""
 
 #: src/git.md:208
@@ -586,7 +586,7 @@ msgid "<kbd class=\"keybinding\">cmd-y"
 msgstr ""
 
 #: src/git.md:209
-msgid "<code class=\"hljs\">git::UnstageAndNext</code>"
+msgid "<code class=\"hljs\">git: unstage and next</code>"
 msgstr ""
 
 #: src/git.md:209
@@ -594,7 +594,7 @@ msgid "<kbd class=\"keybinding\">cmd-shift-y"
 msgstr ""
 
 #: src/git.md:210
-msgid "<code class=\"hljs\">git::Commit</code>"
+msgid "<code class=\"hljs\">git: commit</code>"
 msgstr ""
 
 #: src/git.md:210
@@ -602,7 +602,7 @@ msgid "<kbd class=\"keybinding\">cmd-enter"
 msgstr ""
 
 #: src/git.md:211
-msgid "<code class=\"hljs\">git::ExpandCommitEditor</code>"
+msgid "<code class=\"hljs\">git: expand commit editor</code>"
 msgstr ""
 
 #: src/git.md:211
@@ -610,7 +610,7 @@ msgid "<kbd class=\"keybinding\">shift-escape"
 msgstr ""
 
 #: src/git.md:212
-msgid "<code class=\"hljs\">git::Push</code>"
+msgid "<code class=\"hljs\">git: push</code>"
 msgstr ""
 
 #: src/git.md:212
@@ -618,7 +618,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g up"
 msgstr ""
 
 #: src/git.md:213
-msgid "<code class=\"hljs\">git::ForcePush</code>"
+msgid "<code class=\"hljs\">git: force push</code>"
 msgstr ""
 
 #: src/git.md:213
@@ -626,7 +626,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g shift-up"
 msgstr ""
 
 #: src/git.md:214
-msgid "<code class=\"hljs\">git::Pull</code>"
+msgid "<code class=\"hljs\">git: pull</code>"
 msgstr ""
 
 #: src/git.md:214
@@ -634,7 +634,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g down"
 msgstr ""
 
 #: src/git.md:215
-msgid "<code class=\"hljs\">git::PullRebase</code>"
+msgid "<code class=\"hljs\">git: pull rebase</code>"
 msgstr ""
 
 #: src/git.md:215
@@ -642,7 +642,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g shift-down"
 msgstr ""
 
 #: src/git.md:216
-msgid "<code class=\"hljs\">git::Fetch</code>"
+msgid "<code class=\"hljs\">git: fetch</code>"
 msgstr ""
 
 #: src/git.md:216
@@ -650,7 +650,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g"
 msgstr ""
 
 #: src/git.md:217
-msgid "<code class=\"hljs\">git::Diff</code>"
+msgid "<code class=\"hljs\">git: diff</code>"
 msgstr ""
 
 #: src/git.md:217
@@ -658,7 +658,7 @@ msgid "<kbd class=\"keybinding\">ctrl-g d"
 msgstr ""
 
 #: src/git.md:218
-msgid "<code class=\"hljs\">git::Restore</code>"
+msgid "<code class=\"hljs\">git: restore</code>"
 msgstr ""
 
 #: src/git.md:218
@@ -666,7 +666,7 @@ msgid "<kbd class=\"keybinding\">cmd-alt-z"
 msgstr ""
 
 #: src/git.md:219
-msgid "<code class=\"hljs\">git::RestoreFile</code>"
+msgid "<code class=\"hljs\">git: restore file</code>"
 msgstr ""
 
 #: src/git.md:219
@@ -674,19 +674,19 @@ msgid "<kbd class=\"keybinding\">cmd-delete"
 msgstr ""
 
 #: src/git.md:220
-msgid "<code class=\"hljs\">git::Branch</code>"
+msgid "<code class=\"hljs\">git: branch</code>"
 msgstr ""
 
 #: src/git.md:221
-msgid "<code class=\"hljs\">git::Switch</code>"
+msgid "<code class=\"hljs\">git: switch</code>"
 msgstr ""
 
 #: src/git.md:222
-msgid "<code class=\"hljs\">git::CheckoutBranch</code>"
+msgid "<code class=\"hljs\">git: checkout branch</code>"
 msgstr ""
 
 #: src/git.md:223
-msgid "<code class=\"hljs\">git::Blame</code>"
+msgid "<code class=\"hljs\">git: blame</code>"
 msgstr ""
 
 #: src/git.md:223
@@ -694,27 +694,27 @@ msgid "<kbd class=\"keybinding\">cmd-alt-g b"
 msgstr ""
 
 #: src/git.md:224
-msgid "<code class=\"hljs\">git::StashAll</code>"
+msgid "<code class=\"hljs\">git: stash all</code>"
 msgstr ""
 
 #: src/git.md:225
-msgid "<code class=\"hljs\">git::StashPop</code>"
+msgid "<code class=\"hljs\">git: stash pop</code>"
 msgstr ""
 
 #: src/git.md:226
-msgid "<code class=\"hljs\">git::StashApply</code>"
+msgid "<code class=\"hljs\">git: stash apply</code>"
 msgstr ""
 
 #: src/git.md:227
-msgid "<code class=\"hljs\">git::ViewStash</code>"
+msgid "<code class=\"hljs\">git: view stash</code>"
 msgstr ""
 
 #: src/git.md:228
-msgid "<code class=\"hljs\">editor::ToggleGitBlameInline</code>"
+msgid "<code class=\"hljs\">editor: toggle git blame inline</code>"
 msgstr ""
 
 #: src/git.md:229
-msgid "<code class=\"hljs\">editor::ExpandAllDiffHunks</code>"
+msgid "<code class=\"hljs\">editor: expand all diff hunks</code>"
 msgstr ""
 
 #: src/git.md:229
@@ -722,7 +722,7 @@ msgid "<kbd class=\"keybinding\">cmd-\""
 msgstr ""
 
 #: src/git.md:230
-msgid "<code class=\"hljs\">editor::ToggleSelectedDiffHunks</code>"
+msgid "<code class=\"hljs\">editor: toggle selected diff hunks</code>"
 msgstr ""
 
 #: src/git.md:230

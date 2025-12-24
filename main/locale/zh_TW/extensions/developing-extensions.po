@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -72,16 +72,16 @@ msgstr ""
 #: src/extensions/developing-extensions.md:22
 msgid ""
 "From the extensions page, click the `Install Dev Extension` button (or the "
-"<code class=\"hljs\">zed::InstallDevExtension</code> action) and select the "
-"directory containing your extension."
+"<code class=\"hljs\">zed: install dev extension</code> action) and select "
+"the directory containing your extension."
 msgstr ""
 
 #: src/extensions/developing-extensions.md:24
 msgid ""
 "If you need to troubleshoot, you can check the Zed.log (<code "
-"class=\"hljs\">zed::OpenLog</code>) for additional output. For debug output, "
-"close and relaunch zed with the `zed --foreground` from the command line "
-"which show more verbose INFO level logging."
+"class=\"hljs\">zed: open log</code>) for additional output. For debug "
+"output, close and relaunch zed with the `zed --foreground` from the command "
+"line which show more verbose INFO level logging."
 msgstr ""
 
 #: src/extensions/developing-extensions.md:26

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-22T17:48:26Z\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,9 +63,9 @@ msgstr ""
 #: src/themes.md:19
 msgid ""
 "Your selected theme is stored in your settings file. You can open your "
-"settings file from the command palette with <code class=\"hljs\">zed::"
-"OpenSettingsFile</code> (bound to <kbd class=\"keybinding\">cmd-alt-,|ctrl-"
-"alt-,</kbd>)."
+"settings file from the command palette with <code class=\"hljs\">zed: open "
+"settings file</code> (bound to <kbd class=\"keybinding\">cmd-alt-,|ctrl-alt-,"
+"</kbd>)."
 msgstr ""
 
 #: src/themes.md:22
