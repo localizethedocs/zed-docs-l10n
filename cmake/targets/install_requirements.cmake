@@ -134,7 +134,7 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Replacing 'cargo run -p docs_preprocessor --' with 'docs_preprocessor' in 'book.toml' file...")
-set(MDBOOK_BOOK_TOML_FILE "${PROJ_OUT_REPO_BOOK_DIR}/book.toml")
+set(MDBOOK_BOOK_TOML_FILE "${PROJ_OUT_REPO_DOCS_BOOK_DIR}/book.toml")
 file(READ "${MDBOOK_BOOK_TOML_FILE}" MDBOOK_BOOK_TOML_CNT)
 set(OLD_COMMAND_STRING "cargo run -p docs_preprocessor --")
 set(NEW_COMMAND_STRING "docs_preprocessor")
