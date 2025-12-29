@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/remote-development.md:5
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/remote-development.md:7
 msgid ""
@@ -646,7 +646,7 @@ msgstr ""
 
 #: src/remote-development.md:253
 msgid "Feedback"
-msgstr ""
+msgstr "意見反饋"
 
 #: src/remote-development.md:255
 msgid ""

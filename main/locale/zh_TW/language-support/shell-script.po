@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/languages/sh.md:7
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: src/languages/sh.md:9
 msgid ""

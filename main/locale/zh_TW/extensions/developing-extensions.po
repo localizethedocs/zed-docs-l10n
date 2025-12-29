@@ -41,7 +41,7 @@ msgstr "[圖示主題](./icon-themes.md)"
 
 #: src/extensions/developing-extensions.md:11
 msgid "[Slash Commands](./slash-commands.md)"
-msgstr ""
+msgstr "[斜線命令](./slash-commands.md)"
 
 #: src/extensions/developing-extensions.md:12
 msgid "[MCP Servers](./mcp-extensions.md)"
@@ -49,7 +49,7 @@ msgstr "[MCP 伺服器](./mcp-extensions.md)"
 
 #: src/extensions/developing-extensions.md:14
 msgid "Developing an Extension Locally"
-msgstr ""
+msgstr "本機開發擴充功能"
 
 #: src/extensions/developing-extensions.md:16
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:59
 msgid "WebAssembly"
-msgstr ""
+msgstr "WebAssembly"
 
 #: src/extensions/developing-extensions.md:61
 msgid ""
@@ -158,6 +158,18 @@ msgid ""
 "zed_extension_api = \"0.1.0\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[package]\n"
+"name = \"my-extension\"\n"
+"version = \"0.0.1\"\n"
+"edition = \"2021\"\n"
+"\n"
+"[lib]\n"
+"crate-type = [\"cdylib\"]\n"
+"\n"
+"[dependencies]\n"
+"zed_extension_api = \"0.1.0\"\n"
+"```"
 
 #: src/extensions/developing-extensions.md:76
 msgid ""
@@ -227,19 +239,19 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:117
 msgid "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
-msgstr ""
+msgstr "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
 
 #: src/extensions/developing-extensions.md:118
 msgid "[BSD 3-Clause](https://opensource.org/license/bsd-3-clause)"
-msgstr ""
+msgstr "[BSD 3-Clause](https://opensource.org/license/bsd-3-clause)"
 
 #: src/extensions/developing-extensions.md:119
 msgid "[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)"
-msgstr ""
+msgstr "[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)"
 
 #: src/extensions/developing-extensions.md:120
 msgid "[MIT](https://opensource.org/license/mit)"
-msgstr ""
+msgstr "[MIT](https://opensource.org/license/mit)"
 
 #: src/extensions/developing-extensions.md:122
 msgid ""
@@ -270,7 +282,7 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:131
 msgid "Publishing your extension"
-msgstr ""
+msgstr "發布擴充功能"
 
 #: src/extensions/developing-extensions.md:133
 msgid ""
@@ -307,6 +319,11 @@ msgid ""
 "version = \"0.0.1\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[my-extension]\n"
+"submodule = \"extensions/my-extension\"\n"
+"version = \"0.0.1\"\n"
+"```"
 
 #: src/extensions/developing-extensions.md:154
 msgid ""
@@ -334,7 +351,7 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:162
 msgid "Updating an extension"
-msgstr ""
+msgstr "更新擴充功能"
 
 #: src/extensions/developing-extensions.md:164
 msgid ""

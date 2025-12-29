@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/troubleshooting.md:1
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/troubleshooting.md:3
 msgid ""

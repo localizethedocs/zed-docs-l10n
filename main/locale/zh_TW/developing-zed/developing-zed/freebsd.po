@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development/freebsd.md:1
 msgid "Building Zed for FreeBSD"
-msgstr ""
+msgstr "為 FreeBSD 建置 Zed"
 
 #: src/development/freebsd.md:3
 msgid ""
@@ -87,7 +87,7 @@ msgstr ""
 
 #: src/development/freebsd.md:47
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/development/freebsd.md:49
 msgid "Cargo errors claiming that a dependency is using unstable features"

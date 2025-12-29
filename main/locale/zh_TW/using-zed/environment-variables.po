@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/environment.md:1
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: src/environment.md:3
 msgid "_**Note**: The following only applies to Zed 0.152.0 and later._"

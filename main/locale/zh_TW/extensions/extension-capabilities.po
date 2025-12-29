@@ -82,7 +82,7 @@ msgstr ""
 #: src/extensions/capabilities.md:42 src/extensions/capabilities.md:60
 #: src/extensions/capabilities.md:84
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/extensions/capabilities.md:44
 msgid "To allow any command to be executed with any arguments:"
@@ -94,6 +94,9 @@ msgid ""
 "{ kind = \"process:exec\", command = \"*\", args = [\"**\"] }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"process:exec\", command = \"*\", args = [\"**\"] }\n"
+"```"
 
 #: src/extensions/capabilities.md:50
 msgid ""
@@ -106,10 +109,13 @@ msgid ""
 "{ kind = \"process:exec\", command = \"gem\", args = [\"**\"] }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"process:exec\", command = \"gem\", args = [\"**\"] }\n"
+"```"
 
 #: src/extensions/capabilities.md:56
 msgid "`download_file`"
-msgstr ""
+msgstr "`download_file`"
 
 #: src/extensions/capabilities.md:58
 msgid ""
@@ -128,6 +134,9 @@ msgid ""
 "{ kind = \"download_file\", host = \"*\", path = [\"**\"] }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"download_file\", host = \"*\", path = [\"**\"] }\n"
+"```"
 
 #: src/extensions/capabilities.md:68
 msgid "To allow any file to be downloaded from `github.com`:"
@@ -139,6 +148,9 @@ msgid ""
 "{ kind = \"download_file\", host = \"github.com\", path = [\"**\"] }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"download_file\", host = \"github.com\", path = [\"**\"] }\n"
+"```"
 
 #: src/extensions/capabilities.md:74
 msgid "To allow any file to be downloaded from a specific GitHub repository:"

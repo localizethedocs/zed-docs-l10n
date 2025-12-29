@@ -120,11 +120,11 @@ msgstr ""
 
 #: src/key-bindings.md:38
 msgid "macOS/Linux: `~/.config/zed/keymap.json`"
-msgstr ""
+msgstr "macOS/Linux：`~/.config/zed/keymap.json`"
 
 #: src/key-bindings.md:39
 msgid "Windows: `~\\AppData\\Roaming\\Zed/keymap.json`"
-msgstr ""
+msgstr "Windows：`~\\AppData\\Roaming\\Zed/keymap.json`"
 
 #: src/key-bindings.md:41
 msgid ""

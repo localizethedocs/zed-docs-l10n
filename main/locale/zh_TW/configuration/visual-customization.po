@@ -32,7 +32,7 @@ msgstr ""
 
 #: src/visual-customization.md:7
 msgid "Themes"
-msgstr ""
+msgstr "主題"
 
 #: src/visual-customization.md:9
 msgid ""
@@ -326,7 +326,7 @@ msgstr ""
 
 #: src/visual-customization.md:127
 msgid "Workspace"
-msgstr ""
+msgstr "工作空間"
 
 #: src/visual-customization.md:131
 msgid ""
@@ -1239,7 +1239,7 @@ msgstr ""
 
 #: src/visual-customization.md:435
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/visual-customization.md:437
 msgid ""
@@ -1435,7 +1435,7 @@ msgstr ""
 
 #: src/visual-customization.md:493
 msgid "Terminal Panel"
-msgstr ""
+msgstr "終端機面板"
 
 #: src/visual-customization.md:496
 msgid ""
@@ -1531,7 +1531,7 @@ msgstr ""
 
 #: src/visual-customization.md:530
 msgid "Other Panels"
-msgstr ""
+msgstr "其他面板"
 
 #: src/visual-customization.md:533
 msgid ""

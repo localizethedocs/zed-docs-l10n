@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/themes.md:1
 msgid "Themes"
-msgstr ""
+msgstr "主題"
 
 #: src/themes.md:3
 msgid ""
@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/themes.md:11
 msgid "Installing more Themes"
-msgstr ""
+msgstr "安裝更多主題"
 
 #: src/themes.md:13
 msgid ""
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/themes.md:17
 msgid "Configuring a Theme"
-msgstr ""
+msgstr "組態主題"
 
 #: src/themes.md:19
 msgid ""
@@ -215,8 +215,8 @@ msgstr ""
 
 #: src/themes.md:80
 msgid "Theme Development"
-msgstr ""
+msgstr "主題開發"
 
 #: src/themes.md:82
 msgid "See: [Developing Zed Themes](./extensions/themes.md)"
-msgstr ""
+msgstr "請參見：[開發 Zed 主題](./extensions/themes.md)"

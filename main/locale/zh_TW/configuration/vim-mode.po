@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/vim.md:8
 msgid "Enable or disable vim mode"
-msgstr ""
+msgstr "啟用或停用 vim 模式"
 
 #: src/vim.md:9
 msgid "Make the most of Zed-specific features within vim mode"
@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/vim.md:15
 msgid "Zed's vim mode design"
-msgstr ""
+msgstr "Zed 的 vim 模式設計"
 
 #: src/vim.md:17
 msgid ""
@@ -900,7 +900,7 @@ msgstr ""
 
 #: src/vim.md:218
 msgid "Example Configuration"
-msgstr ""
+msgstr "範例組態"
 
 #: src/vim.md:220
 msgid ""
@@ -1196,43 +1196,43 @@ msgstr ""
 
 #: src/vim.md:288
 msgid "Open the chat panel"
-msgstr ""
+msgstr "開啟聊天面板"
 
 #: src/vim.md:288
 msgid "`:Ch[at]`"
-msgstr ""
+msgstr "`:Ch[at]`"
 
 #: src/vim.md:289
 msgid "Open the AI panel"
-msgstr ""
+msgstr "開啟 AI 面板"
 
 #: src/vim.md:289
 msgid "`:A[I]`"
-msgstr ""
+msgstr "`:A[I]`"
 
 #: src/vim.md:290
 msgid "Open the git panel"
-msgstr ""
+msgstr "開啟 git 面板"
 
 #: src/vim.md:290
 msgid "`:G[it]`"
-msgstr ""
+msgstr "`:G[it]`"
 
 #: src/vim.md:291
 msgid "Open the debug panel"
-msgstr ""
+msgstr "開啟除錯面板"
 
 #: src/vim.md:291
 msgid "`:D[ebug]`"
-msgstr ""
+msgstr "`:D[ebug]`"
 
 #: src/vim.md:292
 msgid "Open the notifications panel"
-msgstr ""
+msgstr "開啟通知面板"
 
 #: src/vim.md:292
 msgid "`:No[tif]`"
-msgstr ""
+msgstr "`:No[tif]`"
 
 #: src/vim.md:293
 msgid "Open the feedback window"
@@ -1252,7 +1252,7 @@ msgstr ""
 
 #: src/vim.md:295
 msgid "Open the terminal"
-msgstr ""
+msgstr "開啟終端機"
 
 #: src/vim.md:295
 msgid "`:te[rm]`"
@@ -1332,7 +1332,7 @@ msgstr ""
 
 #: src/vim.md:323
 msgid "Jump to a line number"
-msgstr ""
+msgstr "跳至行號"
 
 #: src/vim.md:324
 msgid "`:$`"
@@ -1340,7 +1340,7 @@ msgstr ""
 
 #: src/vim.md:324
 msgid "Jump to the end of the file"
-msgstr ""
+msgstr "跳至檔案結尾"
 
 #: src/vim.md:325
 msgid "`:/foo` and `:?foo`"
@@ -1593,7 +1593,7 @@ msgstr ""
 
 #: src/vim.md:408
 msgid "Normal mode"
-msgstr ""
+msgstr "普通模式"
 
 #: src/vim.md:409
 msgid "vim_mode == visual"
@@ -1609,7 +1609,7 @@ msgstr ""
 
 #: src/vim.md:410
 msgid "Insert mode"
-msgstr ""
+msgstr "插入模式"
 
 #: src/vim.md:411
 msgid "vim_mode == replace"
@@ -1617,7 +1617,7 @@ msgstr ""
 
 #: src/vim.md:411
 msgid "Replace mode"
-msgstr ""
+msgstr "取代模式"
 
 #: src/vim.md:412
 msgid "vim_mode == waiting"

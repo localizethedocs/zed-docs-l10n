@@ -21,13 +21,15 @@ msgstr ""
 
 #: src/ai/overview.md:5
 msgid "Setting up AI in Zed"
-msgstr ""
+msgstr "在 Zed 中設定 AI"
 
 #: src/ai/overview.md:7
 msgid ""
 "[Configuration](./configuration.md): Learn how to set up different language "
 "model providers like Anthropic, OpenAI, Ollama, Google AI, and more."
 msgstr ""
+"[組態](./configuration.md)：了解如何設定不同的語言模型供應商，例如 "
+"Anthropic、OpenAI、Ollama、Google AI 等。"
 
 #: src/ai/overview.md:9
 msgid ""
@@ -79,7 +81,7 @@ msgstr ""
 
 #: src/ai/overview.md:27
 msgid "Edit Prediction"
-msgstr ""
+msgstr "編輯預測"
 
 #: src/ai/overview.md:29
 msgid ""

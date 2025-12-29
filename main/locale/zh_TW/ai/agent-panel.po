@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:16
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/ai/agent-panel.md:18
 msgid ""
@@ -104,7 +104,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:33
 msgid "Editing Messages"
-msgstr ""
+msgstr "編輯訊息"
 
 #: src/ai/agent-panel.md:35
 msgid ""
@@ -303,7 +303,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:101
 msgid "Changing Models"
-msgstr ""
+msgstr "變更模型"
 
 #: src/ai/agent-panel.md:103
 msgid ""
@@ -332,7 +332,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:110
 msgid "Using Tools"
-msgstr ""
+msgstr "使用工具"
 
 #: src/ai/agent-panel.md:112
 msgid ""
@@ -491,7 +491,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:172
 msgid "Errors and Debugging"
-msgstr ""
+msgstr "錯誤與除錯"
 
 #: src/ai/agent-panel.md:174
 msgid ""
@@ -508,7 +508,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:178
 msgid "Feedback"
-msgstr ""
+msgstr "意見反饋"
 
 #: src/ai/agent-panel.md:180
 msgid ""

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/tab-switcher.md:1
 msgid "Tab Switcher"
-msgstr ""
+msgstr "頁籤切換器"
 
 #: src/tab-switcher.md:3
 msgid ""

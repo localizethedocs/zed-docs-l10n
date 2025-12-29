@@ -91,7 +91,7 @@ msgstr ""
 
 #: src/telemetry.md:30
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/telemetry.md:32
 msgid ""

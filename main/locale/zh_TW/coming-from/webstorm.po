@@ -98,7 +98,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:49
 msgid "Set Up Editor Preferences"
-msgstr ""
+msgstr "設定編輯器偏好設定"
 
 #: src/migrate/webstorm.md:51
 msgid "You can configure settings manually in the Settings Editor."
@@ -186,7 +186,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:72
 msgid "Open or Create a Project"
-msgstr ""
+msgstr "開啟或建立專案"
 
 #: src/migrate/webstorm.md:74
 msgid ""
@@ -901,7 +901,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:251
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/migrate/webstorm.md:251
 msgid "`Cmd + 6`"
@@ -1119,7 +1119,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:327
 msgid "Language support and syntax highlighting"
-msgstr ""
+msgstr "語言支援與語法標明"
 
 #: src/migrate/webstorm.md:328
 msgid "Themes"
@@ -1131,7 +1131,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:330
 msgid "Context servers"
-msgstr ""
+msgstr "上下文伺服器"
 
 #: src/migrate/webstorm.md:332
 msgid "Several features that require plugins in WebStorm are built into Zed:"
@@ -1241,7 +1241,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:364
 msgid "Using AI in Zed"
-msgstr ""
+msgstr "在 Zed 中使用 AI"
 
 #: src/migrate/webstorm.md:366
 msgid ""

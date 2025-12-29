@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/ai/agent-settings.md:5
 msgid "Model Settings"
-msgstr ""
+msgstr "模型設定"
 
 #: src/ai/agent-settings.md:7
 msgid "Default Model"
@@ -257,7 +257,7 @@ msgstr ""
 
 #: src/ai/agent-settings.md:147
 msgid "Font Size"
-msgstr ""
+msgstr "字型大小"
 
 #: src/ai/agent-settings.md:149
 msgid ""

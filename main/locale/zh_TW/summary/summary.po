@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/SUMMARY.md:11
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/SUMMARY.md:13 src/SUMMARY.md:69
 msgid "Configuration"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: src/SUMMARY.md:36
 msgid "Command Palette"
-msgstr ""
+msgstr "命令選擇區"
 
 #: src/SUMMARY.md:37
 msgid "Command-line Interface"
@@ -153,7 +153,7 @@ msgstr ""
 
 #: src/SUMMARY.md:45
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/SUMMARY.md:46
 msgid "Tasks"
@@ -161,7 +161,7 @@ msgstr ""
 
 #: src/SUMMARY.md:47
 msgid "Tab Switcher"
-msgstr ""
+msgstr "頁籤切換器"
 
 #: src/SUMMARY.md:48
 msgid "Remote Development"
@@ -197,7 +197,7 @@ msgstr ""
 
 #: src/SUMMARY.md:60 src/SUMMARY.md:79
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/SUMMARY.md:61
 msgid "Agent Panel"
@@ -257,11 +257,11 @@ msgstr ""
 
 #: src/SUMMARY.md:77
 msgid "Extensions"
-msgstr ""
+msgstr "擴充功能"
 
 #: src/SUMMARY.md:80
 msgid "Installing Extensions"
-msgstr ""
+msgstr "安裝擴充功能"
 
 #: src/SUMMARY.md:81
 msgid "Developing Extensions"
@@ -273,23 +273,23 @@ msgstr ""
 
 #: src/SUMMARY.md:83
 msgid "Language Extensions"
-msgstr ""
+msgstr "語言擴充功能"
 
 #: src/SUMMARY.md:84
 msgid "Debugger Extensions"
-msgstr ""
+msgstr "除錯器擴充功能"
 
 #: src/SUMMARY.md:85
 msgid "Theme Extensions"
-msgstr ""
+msgstr "主題擴充功能"
 
 #: src/SUMMARY.md:86
 msgid "Icon Theme Extensions"
-msgstr ""
+msgstr "圖示主題擴充功能"
 
 #: src/SUMMARY.md:87
 msgid "Slash Command Extensions"
-msgstr ""
+msgstr "斜線命令擴充功能"
 
 #: src/SUMMARY.md:88
 msgid "Agent Server Extensions"
@@ -297,7 +297,7 @@ msgstr ""
 
 #: src/SUMMARY.md:89
 msgid "MCP Server Extensions"
-msgstr ""
+msgstr "MCP 伺服器擴充功能"
 
 #: src/SUMMARY.md:91
 msgid "Coming From..."

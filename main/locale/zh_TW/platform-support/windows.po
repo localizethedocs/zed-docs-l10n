@@ -83,7 +83,7 @@ msgstr ""
 
 #: src/windows.md:30
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/windows.md:32
 msgid "Zed fails to start or shows a blank window"

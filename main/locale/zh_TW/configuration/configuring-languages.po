@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/configuring-languages.md:1
 msgid "Configuring Supported Languages"
-msgstr ""
+msgstr "組態支援的語言"
 
 #: src/configuring-languages.md:3
 msgid ""
@@ -48,11 +48,11 @@ msgstr ""
 
 #: src/configuring-languages.md:14
 msgid "Language-specific settings"
-msgstr ""
+msgstr "語言專用的設定"
 
 #: src/configuring-languages.md:15
 msgid "File associations"
-msgstr ""
+msgstr "檔案關聯"
 
 #: src/configuring-languages.md:16
 msgid "Working with language servers"
@@ -60,7 +60,7 @@ msgstr ""
 
 #: src/configuring-languages.md:17
 msgid "Formatting and linting configuration"
-msgstr ""
+msgstr "格式化與梳理組態"
 
 #: src/configuring-languages.md:18
 msgid "Customizing syntax highlighting and themes"
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/configuring-languages.md:25
 msgid "Language-specific Settings"
-msgstr ""
+msgstr "語言專用的設定"
 
 #: src/configuring-languages.md:27
 msgid ""
@@ -246,7 +246,7 @@ msgstr ""
 
 #: src/configuring-languages.md:65
 msgid "File Associations"
-msgstr ""
+msgstr "檔案關聯"
 
 #: src/configuring-languages.md:67
 msgid ""
@@ -323,7 +323,7 @@ msgstr ""
 
 #: src/configuring-languages.md:91
 msgid "What are Language Servers?"
-msgstr ""
+msgstr "什麼是語言伺服器？"
 
 #: src/configuring-languages.md:93
 msgid ""
@@ -339,7 +339,7 @@ msgstr ""
 
 #: src/configuring-languages.md:97
 msgid "Code completion"
-msgstr ""
+msgstr "程式碼補全"
 
 #: src/configuring-languages.md:98
 msgid "Error checking and diagnostics"
@@ -359,11 +359,11 @@ msgstr ""
 
 #: src/configuring-languages.md:102
 msgid "Workspace symbol search"
-msgstr ""
+msgstr "工作空間符號搜尋"
 
 #: src/configuring-languages.md:104
 msgid "Managing Language Servers"
-msgstr ""
+msgstr "管理語言伺服器"
 
 #: src/configuring-languages.md:106
 msgid "Zed simplifies language server management for users:"
@@ -382,13 +382,15 @@ msgstr ""
 
 #: src/configuring-languages.md:112
 msgid "macOS: `~/Library/Application Support/Zed/languages`"
-msgstr ""
+msgstr "macOS：`~/Library/Application Support/Zed/languages`"
 
 #: src/configuring-languages.md:113
 msgid ""
 "Linux: `$XDG_DATA_HOME/zed/languages`, `$FLATPAK_XDG_DATA_HOME/zed/"
 "languages`, or `$HOME/.local/share/zed/languages`"
 msgstr ""
+"Linux：`$XDG_DATA_HOME/zed/languages`、`$FLATPAK_XDG_DATA_HOME/zed/"
+"languages` 或 `$HOME/.local/share/zed/languages`"
 
 #: src/configuring-languages.md:115
 msgid ""
@@ -398,7 +400,7 @@ msgstr ""
 
 #: src/configuring-languages.md:117
 msgid "Choosing Language Servers"
-msgstr ""
+msgstr "選擇語言伺服器"
 
 #: src/configuring-languages.md:119
 msgid ""
@@ -480,7 +482,7 @@ msgstr ""
 
 #: src/configuring-languages.md:145
 msgid "Configuring Language Servers"
-msgstr ""
+msgstr "組態語言伺服器"
 
 #: src/configuring-languages.md:147
 msgid ""
@@ -802,7 +804,7 @@ msgstr ""
 
 #: src/configuring-languages.md:354
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/configuring-languages.md:356
 msgid "If you encounter issues with formatting or linting:"
@@ -828,7 +830,7 @@ msgstr ""
 
 #: src/configuring-languages.md:362
 msgid "Syntax Highlighting and Themes"
-msgstr ""
+msgstr "語法標明與主題"
 
 #: src/configuring-languages.md:364
 msgid ""
@@ -838,7 +840,7 @@ msgstr ""
 
 #: src/configuring-languages.md:366
 msgid "Customizing Syntax Highlighting"
-msgstr ""
+msgstr "自訂語法標明"
 
 #: src/configuring-languages.md:368
 msgid ""
@@ -892,7 +894,7 @@ msgstr ""
 
 #: src/configuring-languages.md:389
 msgid "Change your theme:"
-msgstr ""
+msgstr "變更主題："
 
 #: src/configuring-languages.md:391
 msgid ""
@@ -932,7 +934,7 @@ msgstr ""
 
 #: src/configuring-languages.md:404
 msgid "Using Theme Extensions"
-msgstr ""
+msgstr "使用主題擴充"
 
 #: src/configuring-languages.md:406
 msgid ""
@@ -1020,7 +1022,7 @@ msgstr ""
 
 #: src/configuring-languages.md:439
 msgid "Rename Symbol"
-msgstr ""
+msgstr "重新命名符號"
 
 #: src/configuring-languages.md:441
 msgid "To rename a symbol across your project:"
@@ -1088,7 +1090,7 @@ msgstr ""
 
 #: src/configuring-languages.md:463
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/configuring-languages.md:465
 msgid ""

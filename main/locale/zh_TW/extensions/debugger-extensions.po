@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:1
 msgid "Debugger Extensions"
-msgstr ""
+msgstr "除錯器擴充功能"
 
 #: src/extensions/debugger-extensions.md:3
 msgid ""
@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:5
 msgid "Defining Debugger Extensions"
-msgstr ""
+msgstr "定義除錯器擴充功能"
 
 #: src/extensions/debugger-extensions.md:7
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:63
 msgid "Defining Debug Locators"
-msgstr ""
+msgstr "定義除錯定位器"
 
 #: src/extensions/debugger-extensions.md:65
 msgid ""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:109
 msgid "Available Extensions"
-msgstr ""
+msgstr "可用的擴充功能"
 
 #: src/extensions/debugger-extensions.md:111
 msgid ""
@@ -173,7 +173,7 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:115
 msgid "Testing"
-msgstr ""
+msgstr "測試"
 
 #: src/extensions/debugger-extensions.md:117
 msgid ""

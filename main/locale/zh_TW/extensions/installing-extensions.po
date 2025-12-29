@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/extensions/installing-extensions.md:1
 msgid "Installing Extensions"
-msgstr ""
+msgstr "安裝擴充功能"
 
 #: src/extensions/installing-extensions.md:3
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/extensions/installing-extensions.md:7
 msgid "Installation Location"
-msgstr ""
+msgstr "安裝位置"
 
 #: src/extensions/installing-extensions.md:9
 msgid ""

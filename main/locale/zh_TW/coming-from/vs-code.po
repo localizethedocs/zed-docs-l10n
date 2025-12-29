@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:27
 msgid "Settings Imported from VS Code"
-msgstr ""
+msgstr "從 VS Code 匯入的設定"
 
 #: src/migrate/vs-code.md:29
 msgid ""
@@ -242,203 +242,203 @@ msgstr ""
 
 #: src/migrate/vs-code.md:53
 msgid "`editor.scrollbar.vertical`"
-msgstr ""
+msgstr "`editor.scrollbar.vertical`"
 
 #: src/migrate/vs-code.md:53
 msgid "`scrollbar.axes.vertical`"
-msgstr ""
+msgstr "`scrollbar.axes.vertical`"
 
 #: src/migrate/vs-code.md:54
 msgid "`editor.mouseWheelScrollSensitivity`"
-msgstr ""
+msgstr "`editor.mouseWheelScrollSensitivity`"
 
 #: src/migrate/vs-code.md:54
 msgid "`scroll_sensitivity`"
-msgstr ""
+msgstr "`scroll_sensitivity`"
 
 #: src/migrate/vs-code.md:55
 msgid "`editor.fastScrollSensitivity`"
-msgstr ""
+msgstr "`editor.fastScrollSensitivity`"
 
 #: src/migrate/vs-code.md:55
 msgid "`fast_scroll_sensitivity`"
-msgstr ""
+msgstr "`fast_scroll_sensitivity`"
 
 #: src/migrate/vs-code.md:56
 msgid "`editor.cursorSurroundingLines`"
-msgstr ""
+msgstr "`editor.cursorSurroundingLines`"
 
 #: src/migrate/vs-code.md:56
 msgid "`vertical_scroll_margin`"
-msgstr ""
+msgstr "`vertical_scroll_margin`"
 
 #: src/migrate/vs-code.md:57
 msgid "`editor.hover.enabled`"
-msgstr ""
+msgstr "`editor.hover.enabled`"
 
 #: src/migrate/vs-code.md:57
 msgid "`hover_popover_enabled`"
-msgstr ""
+msgstr "`hover_popover_enabled`"
 
 #: src/migrate/vs-code.md:58
 msgid "`editor.hover.delay`"
-msgstr ""
+msgstr "`editor.hover.delay`"
 
 #: src/migrate/vs-code.md:58
 msgid "`hover_popover_delay`"
-msgstr ""
+msgstr "`hover_popover_delay`"
 
 #: src/migrate/vs-code.md:59
 msgid "`editor.parameterHints.enabled`"
-msgstr ""
+msgstr "`editor.parameterHints.enabled`"
 
 #: src/migrate/vs-code.md:59
 msgid "`auto_signature_help`"
-msgstr ""
+msgstr "`auto_signature_help`"
 
 #: src/migrate/vs-code.md:60
 msgid "`editor.multiCursorModifier`"
-msgstr ""
+msgstr "`editor.multiCursorModifier`"
 
 #: src/migrate/vs-code.md:60
 msgid "`multi_cursor_modifier`"
-msgstr ""
+msgstr "`multi_cursor_modifier`"
 
 #: src/migrate/vs-code.md:61
 msgid "`editor.selectionHighlight`"
-msgstr ""
+msgstr "`editor.selectionHighlight`"
 
 #: src/migrate/vs-code.md:61
 msgid "`selection_highlight`"
-msgstr ""
+msgstr "`selection_highlight`"
 
 #: src/migrate/vs-code.md:62
 msgid "`editor.roundedSelection`"
-msgstr ""
+msgstr "`editor.roundedSelection`"
 
 #: src/migrate/vs-code.md:62
 msgid "`rounded_selection`"
-msgstr ""
+msgstr "`rounded_selection`"
 
 #: src/migrate/vs-code.md:63
 msgid "`editor.find.seedSearchStringFromSelection`"
-msgstr ""
+msgstr "`editor.find.seedSearchStringFromSelection`"
 
 #: src/migrate/vs-code.md:63
 msgid "`seed_search_query_from_cursor`"
-msgstr ""
+msgstr "`seed_search_query_from_cursor`"
 
 #: src/migrate/vs-code.md:64
 msgid "`editor.rulers`"
-msgstr ""
+msgstr "`editor.rulers`"
 
 #: src/migrate/vs-code.md:64
 msgid "`wrap_guides`"
-msgstr ""
+msgstr "`wrap_guides`"
 
 #: src/migrate/vs-code.md:65
 msgid "`editor.renderWhitespace`"
-msgstr ""
+msgstr "`editor.renderWhitespace`"
 
 #: src/migrate/vs-code.md:65
 msgid "`show_whitespaces`"
-msgstr ""
+msgstr "`show_whitespaces`"
 
 #: src/migrate/vs-code.md:66
 msgid "`editor.guides.indentation`"
-msgstr ""
+msgstr "`editor.guides.indentation`"
 
 #: src/migrate/vs-code.md:66
 msgid "`indent_guides.enabled`"
-msgstr ""
+msgstr "`indent_guides.enabled`"
 
 #: src/migrate/vs-code.md:67
 msgid "`editor.linkedEditing`"
-msgstr ""
+msgstr "`editor.linkedEditing`"
 
 #: src/migrate/vs-code.md:67
 msgid "`linked_edits`"
-msgstr ""
+msgstr "`editor.linkedEditing`"
 
 #: src/migrate/vs-code.md:68
 msgid "`editor.autoSurround`"
-msgstr ""
+msgstr "`editor.autoSurround`"
 
 #: src/migrate/vs-code.md:68
 msgid "`use_auto_surround`"
-msgstr ""
+msgstr "`use_auto_surround`"
 
 #: src/migrate/vs-code.md:69
 msgid "`editor.formatOnSave`"
-msgstr ""
+msgstr "`editor.formatOnSave`"
 
 #: src/migrate/vs-code.md:69
 msgid "`format_on_save`"
-msgstr ""
+msgstr "`format_on_save`"
 
 #: src/migrate/vs-code.md:70
 msgid "`editor.formatOnPaste`"
-msgstr ""
+msgstr "`editor.formatOnPaste`"
 
 #: src/migrate/vs-code.md:70
 msgid "`auto_indent_on_paste`"
-msgstr ""
+msgstr "`auto_indent_on_paste`"
 
 #: src/migrate/vs-code.md:71
 msgid "`editor.formatOnType`"
-msgstr ""
+msgstr "`editor.formatOnType`"
 
 #: src/migrate/vs-code.md:71
 msgid "`use_on_type_format`"
-msgstr ""
+msgstr "`use_on_type_format`"
 
 #: src/migrate/vs-code.md:72
 msgid "`editor.trimAutoWhitespace`"
-msgstr ""
+msgstr "`editor.trimAutoWhitespace`"
 
 #: src/migrate/vs-code.md:72
 msgid "`remove_trailing_whitespace_on_save`"
-msgstr ""
+msgstr "`remove_trailing_whitespace_on_save`"
 
 #: src/migrate/vs-code.md:73
 msgid "`editor.suggestOnTriggerCharacters`"
-msgstr ""
+msgstr "`editor.suggestOnTriggerCharacters`"
 
 #: src/migrate/vs-code.md:73
 msgid "`show_completions_on_input`"
-msgstr ""
+msgstr "`show_completions_on_input`"
 
 #: src/migrate/vs-code.md:74
 msgid "`editor.suggest.showWords`"
-msgstr ""
+msgstr "`editor.suggest.showWords`"
 
 #: src/migrate/vs-code.md:74
 msgid "`completions.words`"
-msgstr ""
+msgstr "`completions.words`"
 
 #: src/migrate/vs-code.md:75
 msgid "`editor.inlineSuggest.enabled`"
-msgstr ""
+msgstr "`editor.inlineSuggest.enabled`"
 
 #: src/migrate/vs-code.md:75
 msgid "`show_edit_predictions`"
-msgstr ""
+msgstr "`show_edit_predictions`"
 
 #: src/migrate/vs-code.md:77
 msgid "**Files & Workspace**"
-msgstr ""
+msgstr "**檔案與工作空間**"
 
 #: src/migrate/vs-code.md:81
 msgid "`files.autoSave`"
-msgstr ""
+msgstr "`files.autoSave`"
 
 #: src/migrate/vs-code.md:81
 msgid "`autosave`"
-msgstr ""
+msgstr "`autosave`"
 
 #: src/migrate/vs-code.md:82
 msgid "`files.autoSaveDelay`"
-msgstr ""
+msgstr "`files.autoSaveDelay`"
 
 #: src/migrate/vs-code.md:82
 msgid "`autosave.milliseconds`"
@@ -642,115 +642,115 @@ msgstr ""
 
 #: src/migrate/vs-code.md:116
 msgid "`preview_tabs.enable_preview_from_file_finder`"
-msgstr ""
+msgstr "`preview_tabs.enable_preview_from_file_finder`"
 
 #: src/migrate/vs-code.md:117
 msgid "`workbench.editor.enablePreviewFromCodeNavigation`"
-msgstr ""
+msgstr "`workbench.editor.enablePreviewFromCodeNavigation`"
 
 #: src/migrate/vs-code.md:117
 msgid "`preview_tabs.enable_preview_from_code_navigation`"
-msgstr ""
+msgstr "`preview_tabs.enable_preview_from_code_navigation`"
 
 #: src/migrate/vs-code.md:118
 msgid "`workbench.editor.editorActionsLocation`"
-msgstr ""
+msgstr "`workbench.editor.editorActionsLocation`"
 
 #: src/migrate/vs-code.md:118
 msgid "`tab_bar.show_tab_bar_buttons`"
-msgstr ""
+msgstr "`tab_bar.show_tab_bar_buttons`"
 
 #: src/migrate/vs-code.md:119
 msgid "`workbench.editor.limit.enabled` / `value`"
-msgstr ""
+msgstr "`workbench.editor.limit.enabled` / `value`"
 
 #: src/migrate/vs-code.md:119
 msgid "`max_tabs`"
-msgstr ""
+msgstr "`max_tabs`"
 
 #: src/migrate/vs-code.md:120
 msgid "`workbench.editor.restoreViewState`"
-msgstr ""
+msgstr "`workbench.editor.restoreViewState`"
 
 #: src/migrate/vs-code.md:120
 msgid "`restore_on_file_reopen`"
-msgstr ""
+msgstr "`restore_on_file_reopen`"
 
 #: src/migrate/vs-code.md:121
 msgid "`workbench.statusBar.visible`"
-msgstr ""
+msgstr "`workbench.statusBar.visible`"
 
 #: src/migrate/vs-code.md:121
 msgid "`status_bar.show`"
-msgstr ""
+msgstr "`status_bar.show`"
 
 #: src/migrate/vs-code.md:123
 msgid "**Project Panel (File Explorer)**"
-msgstr ""
+msgstr "**專案面板（檔案總管）**"
 
 #: src/migrate/vs-code.md:127
 msgid "`explorer.compactFolders`"
-msgstr ""
+msgstr "`explorer.compactFolders`"
 
 #: src/migrate/vs-code.md:127
 msgid "`project_panel.auto_fold_dirs`"
-msgstr ""
+msgstr "`project_panel.auto_fold_dirs`"
 
 #: src/migrate/vs-code.md:128
 msgid "`explorer.autoReveal`"
-msgstr ""
+msgstr "`explorer.autoReveal`"
 
 #: src/migrate/vs-code.md:128
 msgid "`project_panel.auto_reveal_entries`"
-msgstr ""
+msgstr "`project_panel.auto_reveal_entries`"
 
 #: src/migrate/vs-code.md:129
 msgid "`explorer.excludeGitIgnore`"
-msgstr ""
+msgstr "`explorer.excludeGitIgnore`"
 
 #: src/migrate/vs-code.md:129
 msgid "`project_panel.hide_gitignore`"
-msgstr ""
+msgstr "`project_panel.hide_gitignore`"
 
 #: src/migrate/vs-code.md:130
 msgid "`problems.decorations.enabled`"
-msgstr ""
+msgstr "`project_panel.hide_gitignore`"
 
 #: src/migrate/vs-code.md:130
 msgid "`project_panel.show_diagnostics`"
-msgstr ""
+msgstr "`project_panel.show_diagnostics`"
 
 #: src/migrate/vs-code.md:131
 msgid "`explorer.decorations.badges`"
-msgstr ""
+msgstr "`explorer.decorations.badges`"
 
 #: src/migrate/vs-code.md:131
 msgid "`project_panel.git_status`"
-msgstr ""
+msgstr "`project_panel.git_status`"
 
 #: src/migrate/vs-code.md:133
 msgid "**Git**"
-msgstr ""
+msgstr "**Git**"
 
 #: src/migrate/vs-code.md:137
 msgid "`git.enabled`"
-msgstr ""
+msgstr "`git.enabled`"
 
 #: src/migrate/vs-code.md:137
 msgid "`git_panel.button`"
-msgstr ""
+msgstr "`git_panel.button`"
 
 #: src/migrate/vs-code.md:138
 msgid "`git.defaultBranchName`"
-msgstr ""
+msgstr "`git.defaultBranchName`"
 
 #: src/migrate/vs-code.md:138
 msgid "`git_panel.fallback_branch_name`"
-msgstr ""
+msgstr "`git_panel.fallback_branch_name`"
 
 #: src/migrate/vs-code.md:139
 msgid "`git.decorations.enabled`"
-msgstr ""
+msgstr "`git.decorations.enabled`"
 
 #: src/migrate/vs-code.md:139
 msgid "`git.inline_blame`, `project_panel.git_status`"
@@ -758,87 +758,87 @@ msgstr ""
 
 #: src/migrate/vs-code.md:140
 msgid "`git.blame.editorDecoration.enabled`"
-msgstr ""
+msgstr "`git.blame.editorDecoration.enabled`"
 
 #: src/migrate/vs-code.md:140
 msgid "`git.inline_blame.enabled`"
-msgstr ""
+msgstr "`git.inline_blame.enabled`"
 
 #: src/migrate/vs-code.md:142
 msgid "**Window & Behavior**"
-msgstr ""
+msgstr "**視窗與行為**"
 
 #: src/migrate/vs-code.md:146
 msgid "`window.confirmBeforeClose`"
-msgstr ""
+msgstr "`window.confirmBeforeClose`"
 
 #: src/migrate/vs-code.md:146
 msgid "`confirm_quit`"
-msgstr ""
+msgstr "`confirm_quit`"
 
 #: src/migrate/vs-code.md:147
 msgid "`window.nativeTabs`"
-msgstr ""
+msgstr "`window.nativeTabs`"
 
 #: src/migrate/vs-code.md:147
 msgid "`use_system_window_tabs`"
-msgstr ""
+msgstr "`use_system_window_tabs`"
 
 #: src/migrate/vs-code.md:148
 msgid "`window.closeWhenEmpty`"
-msgstr ""
+msgstr "`window.closeWhenEmpty`"
 
 #: src/migrate/vs-code.md:148
 msgid "`when_closing_with_no_tabs`"
-msgstr ""
+msgstr "`when_closing_with_no_tabs`"
 
 #: src/migrate/vs-code.md:149
 msgid "`accessibility.dimUnfocused.enabled` / `opacity`"
-msgstr ""
+msgstr "`accessibility.dimUnfocused.enabled` / `opacity`"
 
 #: src/migrate/vs-code.md:149
 msgid "`active_pane_modifiers.inactive_opacity`"
-msgstr ""
+msgstr "`active_pane_modifiers.inactive_opacity`"
 
 #: src/migrate/vs-code.md:151
 msgid "**Other**"
-msgstr ""
+msgstr "**其他**"
 
 #: src/migrate/vs-code.md:155
 msgid "`http.proxy`"
-msgstr ""
+msgstr "`http.proxy`"
 
 #: src/migrate/vs-code.md:155
 msgid "`proxy`"
-msgstr ""
+msgstr "`proxy`"
 
 #: src/migrate/vs-code.md:156
 msgid "`npm.packageManager`"
-msgstr ""
+msgstr "`npm.packageManager`"
 
 #: src/migrate/vs-code.md:156
 msgid "`node.npm_path`"
-msgstr ""
+msgstr "`node.npm_path`"
 
 #: src/migrate/vs-code.md:157
 msgid "`telemetry.telemetryLevel`"
-msgstr ""
+msgstr "`telemetry.telemetryLevel`"
 
 #: src/migrate/vs-code.md:157
 msgid "`telemetry.metrics`, `telemetry.diagnostics`"
-msgstr ""
+msgstr "`telemetry.metrics`, `telemetry.diagnostics`"
 
 #: src/migrate/vs-code.md:158
 msgid "`outline.icons`"
-msgstr ""
+msgstr "`outline.icons`"
 
 #: src/migrate/vs-code.md:158
 msgid "`outline_panel.file_icons`, `outline_panel.folder_icons`"
-msgstr ""
+msgstr "`outline_panel.file_icons`, `outline_panel.folder_icons`"
 
 #: src/migrate/vs-code.md:159
 msgid "`chat.agent.enabled`"
-msgstr ""
+msgstr "`chat.agent.enabled`"
 
 #: src/migrate/vs-code.md:159
 msgid "`agent.enabled`"
@@ -865,7 +865,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:166
 msgid "Set Up Editor Preferences"
-msgstr ""
+msgstr "設定編輯器偏好設定"
 
 #: src/migrate/vs-code.md:168
 msgid "You can also configure settings manually in the Settings Editor."
@@ -979,7 +979,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:187
 msgid "Open or Create a Project"
-msgstr ""
+msgstr "開啟或建立專案"
 
 #: src/migrate/vs-code.md:189
 msgid ""
@@ -1275,7 +1275,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:255
 msgid "No Workspace"
-msgstr ""
+msgstr "無工作空間"
 
 #: src/migrate/vs-code.md:257
 msgid ""
@@ -1404,7 +1404,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:297
 msgid "Built-in terminal panel"
-msgstr ""
+msgstr "內建的終端機面板"
 
 #: src/migrate/vs-code.md:298
 msgid "Project-wide fuzzy search"
@@ -1468,7 +1468,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:316
 msgid "Using AI in Zed"
-msgstr ""
+msgstr "在 Zed 中使用 AI"
 
 #: src/migrate/vs-code.md:318
 msgid ""

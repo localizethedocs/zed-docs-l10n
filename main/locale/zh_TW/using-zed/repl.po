@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/repl.md:1
 msgid "REPL"
-msgstr ""
+msgstr "REPL"
 
 #: src/repl.md:3
 msgid "Getting started"

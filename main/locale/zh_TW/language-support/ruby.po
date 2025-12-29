@@ -667,7 +667,7 @@ msgstr ""
 
 #: src/languages/ruby.md:358
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/languages/ruby.md:360
 msgid "Debug a Ruby script"

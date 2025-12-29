@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/extensions/languages.md:1
 msgid "Language Extensions"
-msgstr ""
+msgstr "語言擴充功能"
 
 #: src/extensions/languages.md:3
 msgid "Language support in Zed has several components:"
@@ -29,11 +29,11 @@ msgstr ""
 
 #: src/extensions/languages.md:7
 msgid "Queries"
-msgstr ""
+msgstr "查詢"
 
 #: src/extensions/languages.md:8
 msgid "Language servers"
-msgstr ""
+msgstr "語言伺服器"
 
 #: src/extensions/languages.md:10
 msgid "Language Metadata"
@@ -60,6 +60,12 @@ msgid ""
 "line_comments = [\"# \"]\n"
 "```"
 msgstr ""
+"```toml\n"
+"name = \"My Language\"\n"
+"grammar = \"my-language\"\n"
+"path_suffixes = [\"myl\"]\n"
+"line_comments = [\"# \"]\n"
+"```"
 
 #: src/extensions/languages.md:23
 msgid ""
@@ -151,7 +157,7 @@ msgstr ""
 
 #: src/extensions/languages.md:60
 msgid "Tree-sitter Queries"
-msgstr ""
+msgstr "Tree-sitter 查詢"
 
 #: src/extensions/languages.md:62
 msgid ""
@@ -161,7 +167,7 @@ msgstr ""
 
 #: src/extensions/languages.md:65 src/extensions/languages.md:78
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "語法標明"
 
 #: src/extensions/languages.md:66 src/extensions/languages.md:138
 msgid "Bracket matching"
@@ -169,11 +175,11 @@ msgstr ""
 
 #: src/extensions/languages.md:67 src/extensions/languages.md:165
 msgid "Code outline/structure"
-msgstr ""
+msgstr "程式碼大綱/結構"
 
 #: src/extensions/languages.md:68 src/extensions/languages.md:188
 msgid "Auto-indentation"
-msgstr ""
+msgstr "自動縮排"
 
 #: src/extensions/languages.md:69 src/extensions/languages.md:206
 msgid "Code injections"

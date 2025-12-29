@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/multibuffers.md:32
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/multibuffers.md:34
 msgid ""

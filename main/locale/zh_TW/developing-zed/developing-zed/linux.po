@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development/linux.md:1
 msgid "Building Zed for Linux"
-msgstr ""
+msgstr "為 Linux 建置 Zed"
 
 #: src/development/linux.md:3
 msgid "Repository"
@@ -462,7 +462,7 @@ msgstr ""
 
 #: src/development/linux.md:216
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/development/linux.md:218
 msgid "Cargo errors claiming that a dependency is using unstable features"

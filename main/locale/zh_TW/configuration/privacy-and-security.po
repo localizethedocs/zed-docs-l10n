@@ -86,11 +86,11 @@ msgstr ""
 
 #: src/ai/privacy-and-security.md:27
 msgid "[Terms of Service](https://zed.dev/terms-of-service)"
-msgstr ""
+msgstr "[服務條款](https://zed.dev/terms-of-service)"
 
 #: src/ai/privacy-and-security.md:28
 msgid "[Terms of Use](https://zed.dev/terms)"
-msgstr ""
+msgstr "[使用條款](https://zed.dev/terms)"
 
 #: src/ai/privacy-and-security.md:29
 msgid "[Privacy Policy](https://zed.dev/privacy-policy)"

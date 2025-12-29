@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/toolchains.md:13
 msgid "Why do we need toolchains?"
-msgstr ""
+msgstr "我們為什麼需要工具鏈？"
 
 #: src/toolchains.md:15
 msgid ""

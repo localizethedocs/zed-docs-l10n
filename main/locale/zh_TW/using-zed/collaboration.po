@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/collaboration/overview.md:1
 msgid "Collaboration"
-msgstr ""
+msgstr "協作"
 
 #: src/collaboration/overview.md:3
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/collaboration/overview.md:10
 msgid "Collaboration panel"
-msgstr ""
+msgstr "協作面板"
 
 #: src/collaboration/overview.md:12
 msgid "The collaboration panel is broken down into two sections:"

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/command-palette.md:1
 msgid "Command Palette"
-msgstr ""
+msgstr "命令選擇區"
 
 #: src/command-palette.md:3
 msgid ""

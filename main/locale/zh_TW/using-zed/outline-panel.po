@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/outline-panel.md:1
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/outline-panel.md:3
 msgid ""
@@ -51,7 +51,7 @@ msgstr ""
 
 #: src/outline-panel.md:13
 msgid "Project Search Results"
-msgstr ""
+msgstr "專案搜尋結果"
 
 #: src/outline-panel.md:15
 msgid "Get an overview of search results across your project."
@@ -80,7 +80,7 @@ msgstr ""
 
 #: src/outline-panel.md:25
 msgid "Find All References"
-msgstr ""
+msgstr "尋找所有參考"
 
 #: src/outline-panel.md:27
 msgid ""

@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/languages/javascript.md:6
 msgid "Language Server: [yioneko/vtsls](https://github.com/yioneko/vtsls)"
-msgstr ""
+msgstr "語言伺服器：[yioneko/vtsls](https://github.com/yioneko/vtsls)"
 
 #: src/languages/javascript.md:7
 msgid ""
@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/languages/javascript.md:10
 msgid "Code formatting"
-msgstr ""
+msgstr "程式碼格式化"
 
 #: src/languages/javascript.md:12
 msgid ""

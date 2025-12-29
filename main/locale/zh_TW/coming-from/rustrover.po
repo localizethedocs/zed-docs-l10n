@@ -98,7 +98,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:49
 msgid "Set Up Editor Preferences"
-msgstr ""
+msgstr "設定編輯器偏好設定"
 
 #: src/migrate/rustrover.md:51
 msgid "You can configure settings manually in the Settings Editor."
@@ -187,7 +187,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:72
 msgid "Open or Create a Project"
-msgstr ""
+msgstr "開啟或建立專案"
 
 #: src/migrate/rustrover.md:74
 msgid ""
@@ -868,7 +868,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:267
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/migrate/rustrover.md:267
 msgid "`Cmd + 6`"
@@ -1086,7 +1086,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:343
 msgid "Language support and syntax highlighting"
-msgstr ""
+msgstr "語言支援與語法標明"
 
 #: src/migrate/rustrover.md:344
 msgid "Themes"
@@ -1098,7 +1098,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:346
 msgid "Context servers"
-msgstr ""
+msgstr "上下文伺服器"
 
 #: src/migrate/rustrover.md:348
 msgid ""
@@ -1233,7 +1233,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:386
 msgid "Using AI in Zed"
-msgstr ""
+msgstr "在 Zed 中使用 AI"
 
 #: src/migrate/rustrover.md:388
 msgid ""

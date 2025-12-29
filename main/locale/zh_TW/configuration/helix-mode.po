@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/helix.md:1
 msgid "Helix Mode"
-msgstr ""
+msgstr "Helix 模式"
 
 #: src/helix.md:3
 msgid "_Work in progress! Not all Helix keybindings are implemented yet._"

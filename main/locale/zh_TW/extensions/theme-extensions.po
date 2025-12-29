@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/extensions/themes.md:1
 msgid "Themes"
-msgstr ""
+msgstr "主題"
 
 #: src/extensions/themes.md:3
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 
 #: src/extensions/themes.md:9
 msgid "Theme JSON Structure"
-msgstr ""
+msgstr "主題 JSON 結構"
 
 #: src/extensions/themes.md:11
 msgid ""
@@ -93,7 +93,7 @@ msgstr ""
 
 #: src/extensions/themes.md:32
 msgid "Syntax Highlighting:"
-msgstr ""
+msgstr "語法標明："
 
 #: src/extensions/themes.md:34
 msgid ""
@@ -103,7 +103,7 @@ msgstr ""
 
 #: src/extensions/themes.md:36
 msgid "UI Elements:"
-msgstr ""
+msgstr "UI 元素："
 
 #: src/extensions/themes.md:38
 msgid "Colors for various UI components such as:"

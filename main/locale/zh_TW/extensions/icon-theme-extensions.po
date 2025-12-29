@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/extensions/icon-themes.md:5
 msgid "Example extension"
-msgstr ""
+msgstr "範例擴充功能"
 
 #: src/extensions/icon-themes.md:7
 msgid ""
@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/extensions/icon-themes.md:9
 msgid "Directory structure"
-msgstr ""
+msgstr "目錄結構"
 
 #: src/extensions/icon-themes.md:11
 msgid "There are two important directories for an icon theme extension:"

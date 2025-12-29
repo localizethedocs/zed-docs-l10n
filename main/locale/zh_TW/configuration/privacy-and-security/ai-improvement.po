@@ -124,7 +124,7 @@ msgstr ""
 
 #: src/ai/ai-improvement.md:29 src/ai/ai-improvement.md:90
 msgid "Data we collect"
-msgstr ""
+msgstr "我們收集的資料"
 
 #: src/ai/ai-improvement.md:31
 msgid ""
@@ -313,7 +313,7 @@ msgstr ""
 
 #: src/ai/ai-improvement.md:106
 msgid "Model Output"
-msgstr ""
+msgstr "模型輸出"
 
 #: src/ai/ai-improvement.md:108
 msgid ""

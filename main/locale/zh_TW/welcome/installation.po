@@ -17,11 +17,11 @@ msgstr "安裝 Zed"
 
 #: src/installation.md:3
 msgid "Download Zed"
-msgstr ""
+msgstr "下載 Zed"
 
 #: src/installation.md:5 src/installation.md:53
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: src/installation.md:7 src/installation.md:23
 msgid ""
@@ -103,19 +103,19 @@ msgstr ""
 
 #: src/installation.md:57
 msgid "Codename"
-msgstr ""
+msgstr "代號"
 
 #: src/installation.md:57
 msgid "Apple Status"
-msgstr ""
+msgstr "Apple 狀態"
 
 #: src/installation.md:57 src/installation.md:95
 msgid "Zed Status"
-msgstr ""
+msgstr "Zed 狀態"
 
 #: src/installation.md:59
 msgid "macOS 26.x"
-msgstr ""
+msgstr "macOS 26.x"
 
 #: src/installation.md:59
 msgid "Tahoe"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: src/installation.md:102
 msgid "Windows Hardware"
-msgstr ""
+msgstr "Windows 硬體"
 
 #: src/installation.md:104
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 
 #: src/installation.md:109
 msgid "FreeBSD"
-msgstr ""
+msgstr "FreeBSD"
 
 #: src/installation.md:111
 msgid ""

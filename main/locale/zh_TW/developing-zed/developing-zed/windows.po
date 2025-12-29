@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development/windows.md:1
 msgid "Building Zed for Windows"
-msgstr ""
+msgstr "為 Windows 建置 Zed"
 
 #: src/development/windows.md:3
 msgid "The following commands may be executed in any shell."
@@ -260,7 +260,7 @@ msgstr ""
 
 #: src/development/windows.md:117
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/development/windows.md:119
 msgid "Setting `RUSTFLAGS` env var breaks builds"

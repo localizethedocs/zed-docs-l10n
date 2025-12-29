@@ -176,13 +176,15 @@ msgstr ""
 
 #: src/development.md:84
 msgid "Contributor links"
-msgstr ""
+msgstr "貢獻者連結"
 
 #: src/development.md:86
 msgid ""
 "[CONTRIBUTING.md](https://github.com/zed-industries/zed/blob/main/"
 "CONTRIBUTING.md)"
 msgstr ""
+"[CONTRIBUTING.md](https://github.com/zed-industries/zed/blob/main/"
+"CONTRIBUTING.md)"
 
 #: src/development.md:87
 msgid "[Debugging Crashes](./development/debugging-crashes.md)"

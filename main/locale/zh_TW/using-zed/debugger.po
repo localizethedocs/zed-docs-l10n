@@ -442,7 +442,7 @@ msgstr ""
 
 #: src/debugger.md:161
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: src/debugger.md:163
 msgid ""
@@ -788,7 +788,7 @@ msgstr ""
 
 #: src/debugger.md:365
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/debugger.md:367
 msgid ""

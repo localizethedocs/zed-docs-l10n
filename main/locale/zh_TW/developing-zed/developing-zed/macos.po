@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/development/macos.md:1
 msgid "Building Zed for macOS"
-msgstr ""
+msgstr "為 macOS 建置 Zed"
 
 #: src/development/macos.md:3
 msgid "Repository"
@@ -86,7 +86,7 @@ msgstr ""
 
 #: src/development/macos.md:56
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/development/macos.md:58
 msgid "Error compiling metal shaders"

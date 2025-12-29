@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/uninstall.md:7 src/uninstall.md:80
 msgid "Standard Installation"
-msgstr ""
+msgstr "標準安裝"
 
 #: src/uninstall.md:9
 msgid "If you installed Zed by downloading it from the website:"
@@ -45,11 +45,11 @@ msgstr ""
 
 #: src/uninstall.md:14
 msgid "Empty the Trash"
-msgstr ""
+msgstr "清空垃圾桶"
 
 #: src/uninstall.md:16
 msgid "Homebrew Installation"
-msgstr ""
+msgstr "Homebrew 安裝"
 
 #: src/uninstall.md:18
 msgid "If you installed Zed using Homebrew, use the following command:"
@@ -61,7 +61,7 @@ msgstr ""
 
 #: src/uninstall.md:30 src/uninstall.md:95
 msgid "Removing User Data (Optional)"
-msgstr ""
+msgstr "移除使用者資料（選用）"
 
 #: src/uninstall.md:32 src/uninstall.md:97
 msgid "To completely remove all Zed configuration files and data:"
@@ -81,27 +81,27 @@ msgstr ""
 
 #: src/uninstall.md:37
 msgid "`~/Library/Application Support/Zed`"
-msgstr ""
+msgstr "`~/Library/Application Support/Zed`"
 
 #: src/uninstall.md:38
 msgid "`~/Library/Saved Application State/dev.zed.Zed.savedState`"
-msgstr ""
+msgstr "`~/Library/Saved Application State/dev.zed.Zed.savedState`"
 
 #: src/uninstall.md:39
 msgid "`~/Library/Logs/Zed`"
-msgstr ""
+msgstr "`~/Library/Logs/Zed`"
 
 #: src/uninstall.md:40
 msgid "`~/Library/Caches/dev.zed.Zed`"
-msgstr ""
+msgstr "`~/Library/Caches/dev.zed.Zed`"
 
 #: src/uninstall.md:42
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: src/uninstall.md:44
 msgid "Standard Uninstall"
-msgstr ""
+msgstr "標準解除安裝"
 
 #: src/uninstall.md:46
 msgid "If Zed was installed using the default installation script, run:"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: src/uninstall.md:66
 msgid "Package Manager"
-msgstr ""
+msgstr "軟體包管理器"
 
 #: src/uninstall.md:68
 msgid ""
@@ -134,7 +134,7 @@ msgstr ""
 
 #: src/uninstall.md:70
 msgid "Manual Removal"
-msgstr ""
+msgstr "手動移除"
 
 #: src/uninstall.md:72
 msgid ""
@@ -170,7 +170,7 @@ msgstr ""
 
 #: src/uninstall.md:85
 msgid "Search for \"Zed\""
-msgstr ""
+msgstr "搜尋「Zed」"
 
 #: src/uninstall.md:86
 msgid "Click the three dots menu next to Zed and select \"Uninstall\""
@@ -214,7 +214,7 @@ msgstr ""
 
 #: src/uninstall.md:105
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/uninstall.md:107
 msgid "If you encounter issues during uninstallation:"

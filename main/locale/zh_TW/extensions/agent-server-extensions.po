@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:37
 msgid "Target Configuration"
-msgstr ""
+msgstr "目標組態"
 
 #: src/extensions/agent-servers.md:39
 msgid "Each target key uses the format `{os}-{arch}` where:"
@@ -151,7 +151,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:59
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: src/extensions/agent-servers.md:61
 msgid "Environment variables can be configured at two levels:"
@@ -178,7 +178,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:68
 msgid "Complete Example"
-msgstr ""
+msgstr "完整範例"
 
 #: src/extensions/agent-servers.md:70
 msgid "Here's a more complete example with all optional fields:"
@@ -216,7 +216,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:97
 msgid "Installation Process"
-msgstr ""
+msgstr "安裝過程"
 
 #: src/extensions/agent-servers.md:99
 msgid "When a user installs your extension and selects the agent server:"
@@ -252,7 +252,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:111
 msgid "Use GitHub Releases"
-msgstr ""
+msgstr "使用 GitHub 發行版"
 
 #: src/extensions/agent-servers.md:113
 msgid "GitHub Releases are a reliable way to distribute agent server binaries:"
@@ -312,7 +312,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:145
 msgid "Testing"
-msgstr ""
+msgstr "測試"
 
 #: src/extensions/agent-servers.md:147
 msgid "To test your Agent Server Extension:"

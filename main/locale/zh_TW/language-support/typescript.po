@@ -27,7 +27,7 @@ msgstr ""
 
 #: src/languages/typescript.md:6
 msgid "Language Server: [yioneko/vtsls](https://github.com/yioneko/vtsls)"
-msgstr ""
+msgstr "語言伺服器：[yioneko/vtsls](https://github.com/yioneko/vtsls)"
 
 #: src/languages/typescript.md:7
 msgid ""

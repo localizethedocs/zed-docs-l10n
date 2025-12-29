@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/completions.md:1
 msgid "Completions"
-msgstr ""
+msgstr "補全"
 
 #: src/completions.md:3
 msgid "Zed supports two sources for completions:"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/completions.md:8
 msgid "Language Server Code Completions"
-msgstr ""
+msgstr "語言伺服器程式碼補全"
 
 #: src/completions.md:10
 msgid ""

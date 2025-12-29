@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:49
 msgid "Set Up Editor Preferences"
-msgstr ""
+msgstr "設定編輯器偏好設定"
 
 #: src/migrate/intellij.md:51
 msgid "You can configure settings manually in the Settings Editor."
@@ -185,7 +185,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:72
 msgid "Open or Create a Project"
-msgstr ""
+msgstr "開啟或建立專案"
 
 #: src/migrate/intellij.md:74
 msgid ""
@@ -876,7 +876,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:245
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/migrate/intellij.md:245
 msgid "`Cmd + 6`"
@@ -963,7 +963,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:270
 msgid "Language support and syntax highlighting"
-msgstr ""
+msgstr "語言支援與語法標明"
 
 #: src/migrate/intellij.md:271
 msgid "Themes"
@@ -975,7 +975,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:273
 msgid "Context servers"
-msgstr ""
+msgstr "上下文伺服器"
 
 #: src/migrate/intellij.md:275
 msgid ""
@@ -1045,7 +1045,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:295
 msgid "Using AI in Zed"
-msgstr ""
+msgstr "在 Zed 中使用 AI"
 
 #: src/migrate/intellij.md:297
 msgid ""

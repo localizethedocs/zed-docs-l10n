@@ -232,7 +232,7 @@ msgstr ""
 
 #: src/languages/cpp.md:114
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/languages/cpp.md:116
 msgid "MissingIncludes"
@@ -373,7 +373,7 @@ msgstr ""
 
 #: src/languages/cpp.md:162
 msgid "Protocol Extensions"
-msgstr ""
+msgstr "協定擴充功能"
 
 #: src/languages/cpp.md:164
 msgid ""

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/diagnostics.md:1
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/diagnostics.md:3
 msgid ""

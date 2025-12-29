@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/ai/text-threads.md:3
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/ai/text-threads.md:5
 msgid ""
@@ -301,7 +301,7 @@ msgstr ""
 
 #: src/ai/text-threads.md:110 src/ai/text-threads.md:149
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: src/ai/text-threads.md:112
 msgid ""
@@ -474,7 +474,7 @@ msgstr ""
 
 #: src/ai/text-threads.md:184 src/ai/text-threads.md:206
 msgid "Example"
-msgstr ""
+msgstr "範例"
 
 #: src/ai/text-threads.md:194
 msgid ""
