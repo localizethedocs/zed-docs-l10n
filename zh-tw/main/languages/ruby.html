@@ -1,0 +1,673 @@
+<!DOCTYPE HTML>
+<html lang="zh_TW" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Ruby | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../installation.html">安裝</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">更新</a></li><li class="chapter-item expanded "><a href="../uninstall.html">解除安裝</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="../troubleshooting.html">疑難排解</a></li><li class="chapter-item expanded affix "><li class="part-title">組態</li><li class="chapter-item expanded "><a href="../configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">工具鏈</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../themes.html">主題</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">圖示主題</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="../vim.html">Vim 模式</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix 模式</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">使用 Zed</li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="../command-palette.html">命令選擇區</a></li><li class="chapter-item expanded "><a href="../command-line-interface.html">命令行介面</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">大綱面板</a></li><li class="chapter-item expanded "><a href="../completions.html">程式碼補全</a></li><li class="chapter-item expanded "><a href="../collaboration/overview.html">協作</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../debugger.html">除錯器</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">診斷</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">頁籤切換器</a></li><li class="chapter-item expanded "><a href="../remote-development.html">遠端開發</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="../environment.html">環境變數</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">平臺支援</li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">概覽</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">工具</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html">編輯預測</a></li><li class="chapter-item expanded "><a href="../ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">組態</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html">LLM 供應商</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">擴充功能</li><li class="chapter-item expanded "><a href="../extensions.html">概覽</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">安裝擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">開發擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">語言擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">除錯器擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">圖示主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/slash-commands.html">斜線命令擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP 伺服器擴充功能</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">所有語言</a></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html" class="active">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">開發 Zed</li><li class="chapter-item expanded "><a href="../development.html">開發 Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">發行備註</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="ruby"><a class="header" href="#ruby">Ruby</a></h1>
+<p>Ruby support is available through the <a href="https://github.com/zed-extensions/ruby">Ruby extension</a>.</p>
+<ul>
+<li>Tree-sitters:
+<ul>
+<li><a href="https://github.com/tree-sitter/tree-sitter-ruby">tree-sitter-ruby</a></li>
+<li><a href="https://github.com/tree-sitter/tree-sitter-embedded-template">tree-sitter-embedded-template</a></li>
+</ul>
+</li>
+<li>Language Servers:
+<ul>
+<li><a href="https://github.com/Shopify/ruby-lsp">ruby-lsp</a></li>
+<li><a href="https://github.com/castwide/solargraph">solargraph</a></li>
+<li><a href="https://github.com/rubocop/rubocop">rubocop</a></li>
+<li><a href="https://herb-tools.dev">Herb</a></li>
+</ul>
+</li>
+<li>Debug Adapter: <a href="https://github.com/ruby/debug"><code>rdbg</code></a></li>
+</ul>
+<p>The Ruby extension also provides support for ERB files.</p>
+<h2 id="language-servers"><a class="header" href="#language-servers">Language Servers</a></h2>
+<p>There are multiple language servers available for Ruby. Zed supports the two following:</p>
+<ul>
+<li><a href="https://github.com/castwide/solargraph">solargraph</a></li>
+<li><a href="https://github.com/Shopify/ruby-lsp">ruby-lsp</a></li>
+</ul>
+<p>They both have an overlapping feature set of autocomplete, diagnostics, code actions, etc. and it's up to you to decide which one you want to use. Note that you can't use both at the same time.</p>
+<p>In addition to these two language servers, Zed also supports:</p>
+<ul>
+<li><a href="https://github.com/rubocop/rubocop">rubocop</a> which is a static code analyzer and linter for Ruby. Under the hood, it's also used by Zed as a language server, but its functionality is complimentary to that of solargraph and ruby-lsp.</li>
+<li><a href="https://sorbet.org/">sorbet</a> which is a static type checker for Ruby with a custom gradual type system.</li>
+<li><a href="https://github.com/soutaro/steep">steep</a> which is a static type checker for Ruby that leverages Ruby Signature (RBS).</li>
+<li><a href="https://herb-tools.dev">Herb</a> which is a language server for ERB files.</li>
+</ul>
+<p>When configuring a language server, it helps to open the LSP Logs window using the 'dev: Open Language Server Logs' command. You can then choose the corresponding language instance to see any logged information.</p>
+<h2 id="configuring-a-language-server"><a class="header" href="#configuring-a-language-server">Configuring a language server</a></h2>
+<p>The <a href="https://github.com/zed-extensions/ruby">Ruby extension</a> offers both <code>solargraph</code> and <code>ruby-lsp</code> language server support.</p>
+<h3 id="language-server-activation"><a class="header" href="#language-server-activation">Language Server Activation</a></h3>
+<p>For all supported Ruby language servers (<code>solargraph</code>, <code>ruby-lsp</code>, <code>rubocop</code>, <code>sorbet</code>, and <code>steep</code>), the Ruby extension follows this activation sequence:</p>
+<ol>
+<li>If the language server is found in your project's <code>Gemfile</code>, it will be used through <code>bundle exec</code>.</li>
+<li>If not found in the <code>Gemfile</code>, the Ruby extension will look for the executable in your system <code>PATH</code>.</li>
+<li>If the language server is not found in either location, the Ruby extension will automatically install it as a global gem (note: this will not install to your current Ruby gemset).</li>
+</ol>
+<p>You can skip step 1 and force using the system executable by setting <code>use_bundler</code> to <code>false</code> in your settings:</p>
+<pre><code class="language-json">{
+  "lsp": {
+    "&lt;SERVER_NAME&gt;": {
+      "settings": {
+        "use_bundler": false
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="using-solargraph"><a class="header" href="#using-solargraph">Using <code>solargraph</code></a></h3>
+<p><code>solargraph</code> is enabled by default in the Ruby extension.</p>
+<h3 id="using-ruby-lsp"><a class="header" href="#using-ruby-lsp">Using <code>ruby-lsp</code></a></h3>
+<p>To switch to <code>ruby-lsp</code>, add the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph", "!rubocop", "..."]
+    },
+    // Enable herb and ruby-lsp for *.html.erb files
+    "HTML+ERB": {
+      "language_servers": ["herb", "ruby-lsp", "..."]
+    },
+    // Enable ruby-lsp for *.js.erb files
+    "JS+ERB": {
+      "language_servers": ["ruby-lsp", "..."]
+    },
+    // Enable ruby-lsp for *.yaml.erb files
+    "YAML+ERB": {
+      "language_servers": ["ruby-lsp", "..."]
+    }
+  }
+}
+</code></pre>
+<p>That disables <code>solargraph</code> and <code>rubocop</code> and enables <code>ruby-lsp</code>.</p>
+<h3 id="using-rubocop"><a class="header" href="#using-rubocop">Using <code>rubocop</code></a></h3>
+<p>The Ruby extension also provides support for <code>rubocop</code> language server for offense detection and autocorrection.</p>
+<p>To enable it, add the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+    }
+  }
+}
+</code></pre>
+<p>Or, conversely, you can disable <code>ruby-lsp</code> and enable <code>solargraph</code> and <code>rubocop</code> by adding the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": ["solargraph", "rubocop", "!ruby-lsp", "..."]
+    }
+  }
+}
+</code></pre>
+<h2 id="setting-up-solargraph"><a class="header" href="#setting-up-solargraph">Setting up <code>solargraph</code></a></h2>
+<p>Solargraph has formatting and diagnostics disabled by default. We can tell Zed to enable them by adding the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "lsp": {
+    "solargraph": {
+      "initialization_options": {
+        "diagnostics": true,
+        "formatting": true
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="組態"><a class="header" href="#組態">組態</a></h3>
+<p>Solargraph reads its configuration from a file called <code>.solargraph.yml</code> in the root of your project. For more information about this file, see the <a href="https://solargraph.org/guides/configuration">Solargraph configuration documentation</a>.</p>
+<h2 id="setting-up-ruby-lsp"><a class="header" href="#setting-up-ruby-lsp">Setting up <code>ruby-lsp</code></a></h2>
+<p>You can pass Ruby LSP configuration to <code>initialization_options</code>, e.g.</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": ["ruby-lsp", "!solargraph", "..."]
+    }
+  },
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          // "someFeature": false
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p>LSP <code>settings</code> and <code>initialization_options</code> can also be project-specific. For example to use <a href="https://github.com/standardrb/standard">standardrb/standard</a> as a formatter and linter for a particular project, add this to a <code>.zed/settings.json</code> inside your project repo:</p>
+<pre><code class="language-json">{
+  "lsp": {
+    "ruby-lsp": {
+      "initialization_options": {
+        "formatter": "standard",
+        "linters": ["standard"]
+      }
+    }
+  }
+}
+</code></pre>
+<h2 id="setting-up-rubocop-lsp"><a class="header" href="#setting-up-rubocop-lsp">Setting up <code>rubocop</code> LSP</a></h2>
+<p>Rubocop has unsafe autocorrection disabled by default. We can tell Zed to enable it by adding the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      // Use ruby-lsp as the primary language server and rubocop as the secondary.
+      "language_servers": ["ruby-lsp", "rubocop", "!solargraph", "..."]
+    }
+  },
+  "lsp": {
+    "rubocop": {
+      "initialization_options": {
+        "safeAutocorrect": false
+      }
+    },
+    "ruby-lsp": {
+      "initialization_options": {
+        "enabledFeatures": {
+          "diagnostics": false
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<h2 id="setting-up-sorbet"><a class="header" href="#setting-up-sorbet">Setting up Sorbet</a></h2>
+<p><a href="https://sorbet.org/">Sorbet</a> is a popular static type checker for Ruby that includes a language server.</p>
+<p>To enable Sorbet, add <code>\"sorbet\"</code> to the <code>language_servers</code> list for Ruby in your <code>settings.json</code>. You may want to disable other language servers if Sorbet is intended to be your primary LSP, or if you plan to use it alongside another LSP for specific features like type checking.</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "sorbet",
+        "!rubocop",
+        "!solargraph",
+        "..."
+      ]
+    }
+  }
+}
+</code></pre>
+<p>For all aspects of installing Sorbet, setting it up in your project, and configuring its behavior, please refer to the <a href="https://sorbet.org/docs/overview">official Sorbet documentation</a>.</p>
+<h2 id="setting-up-steep"><a class="header" href="#setting-up-steep">Setting up Steep</a></h2>
+<p><a href="https://github.com/soutaro/steep">Steep</a> is a static type checker for Ruby that uses RBS files to define types.</p>
+<p>To enable Steep, add <code>\"steep\"</code> to the <code>language_servers</code> list for Ruby in your <code>settings.json</code>. You may need to adjust the order or disable other LSPs depending on your desired setup.</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Ruby": {
+      "language_servers": [
+        "ruby-lsp",
+        "steep",
+        "!solargraph",
+        "!rubocop",
+        "..."
+      ]
+    }
+  }
+}
+</code></pre>
+<h2 id="setting-up-herb"><a class="header" href="#setting-up-herb">Setting up Herb</a></h2>
+<p><code>Herb</code> is enabled by default for the <code>HTML+ERB</code> language.</p>
+<h2 id="using-the-tailwind-css-language-server-with-ruby"><a class="header" href="#using-the-tailwind-css-language-server-with-ruby">Using the Tailwind CSS Language Server with Ruby</a></h2>
+<p>To get all the features (autocomplete, linting, etc.) from the <a href="https://github.com/tailwindlabs/tailwindcss-intellisense/tree/HEAD/packages/tailwindcss-language-server#readme">Tailwind CSS language server</a> in Ruby/ERB files, you need to configure the language server so that it knows about where to look for CSS classes by adding the following to your <code>settings.json</code>:</p>
+<pre><code class="language-json">{
+  "lsp": {
+    "tailwindcss-language-server": {
+      "settings": {
+        "experimental": {
+          "classRegex": ["\\bclass:\\s*['\"]([^'\"]*)['\"]"]
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p>With these settings, you will get completions for Tailwind CSS classes in HTML attributes inside ERB files and inside Ruby/ERB strings that are coming after a <code>class:</code> key. Examples:</p>
+<pre><code class="language-rb"># Ruby file:
+def method
+  div(class: "pl-2 &lt;completion here&gt;") do
+    p(class: "mt-2 &lt;completion here&gt;") { "Hello World" }
+  end
+end
+
+# ERB file:
+&lt;%= link_to "Hello", "/hello", class: "pl-2 &lt;completion here&gt;" %&gt;
+&lt;a href="/hello" class="pl-2 &lt;completion here&gt;"&gt;Hello&lt;/a&gt;
+</code></pre>
+<h2 id="running-tests"><a class="header" href="#running-tests">Running tests</a></h2>
+<p>To run tests in your Ruby project, you can set up custom tasks in your local <code>.zed/tasks.json</code> configuration file. These tasks can be defined to work with different test frameworks like Minitest, RSpec, quickdraw, and tldr. Below are some examples of how to set up these tasks to run your tests from within your editor.</p>
+<h3 id="minitest-with-rails"><a class="header" href="#minitest-with-rails">Minitest with Rails</a></h3>
+<pre><code class="language-json">[
+  {
+    "label": "test $ZED_RELATIVE_FILE -n /$ZED_CUSTOM_RUBY_TEST_NAME/",
+    "command": "bin/rails",
+    "args": [
+      "test",
+      "$ZED_RELATIVE_FILE",
+      "-n",
+      "\"$ZED_CUSTOM_RUBY_TEST_NAME\""
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["ruby-test"]
+  }
+]
+</code></pre>
+<h3 id="minitest"><a class="header" href="#minitest">Minitest</a></h3>
+<p>Plain minitest does not support running tests by line number, only by name, so we need to use <code>$ZED_CUSTOM_RUBY_TEST_NAME</code> instead:</p>
+<pre><code class="language-json">[
+  {
+    "label": "-Itest $ZED_RELATIVE_FILE -n /$ZED_CUSTOM_RUBY_TEST_NAME/",
+    "command": "bundle",
+    "args": [
+      "exec",
+      "ruby",
+      "-Itest",
+      "$ZED_RELATIVE_FILE",
+      "-n",
+      "\"$ZED_CUSTOM_RUBY_TEST_NAME\""
+    ],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["ruby-test"]
+  }
+]
+</code></pre>
+<h3 id="rspec"><a class="header" href="#rspec">RSpec</a></h3>
+<pre><code class="language-json">[
+  {
+    "label": "test $ZED_RELATIVE_FILE:$ZED_ROW",
+    "command": "bundle",
+    "args": ["exec", "rspec", "\"$ZED_RELATIVE_FILE:$ZED_ROW\""],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "tags": ["ruby-test"]
+  }
+]
+</code></pre>
+<p>Similar task syntax can be used for other test frameworks such as <code>quickdraw</code> or <code>tldr</code>.</p>
+<h2 id="debugging"><a class="header" href="#debugging">Debugging</a></h2>
+<p>The Ruby extension provides a debug adapter for debugging Ruby code. Zed's name for the adapter (in the UI and <code>debug.json</code>) is <code>rdbg</code>, and under the hood, it uses the <a href="https://github.com/ruby/debug"><code>debug</code></a> gem. The extension uses the <a href="#language-server-activation">same activation logic</a> as the language servers.</p>
+<h3 id="範例"><a class="header" href="#範例">範例</a></h3>
+<h4 id="debug-a-ruby-script"><a class="header" href="#debug-a-ruby-script">Debug a Ruby script</a></h4>
+<pre><code class="language-json">[
+  {
+    "label": "Debug current file",
+    "adapter": "rdbg",
+    "request": "launch",
+    "script": "$ZED_FILE",
+    "cwd": "$ZED_WORKTREE_ROOT"
+  }
+]
+</code></pre>
+<h4 id="debug-rails-server"><a class="header" href="#debug-rails-server">Debug Rails server</a></h4>
+<pre><code class="language-json">[
+  {
+    "label": "Debug Rails server",
+    "adapter": "rdbg",
+    "request": "launch",
+    "command": "./bin/rails",
+    "args": ["server"],
+    "cwd": "$ZED_WORKTREE_ROOT",
+    "env": {
+      "RUBY_DEBUG_OPEN": "true"
+    }
+  }
+]
+</code></pre>
+<h2 id="formatters"><a class="header" href="#formatters">Formatters</a></h2>
+<h3 id="erb-formatter"><a class="header" href="#erb-formatter"><code>erb-formatter</code></a></h3>
+<p>To format ERB templates, you can use the <code>erb-formatter</code> formatter. This formatter uses the <a href="https://rubygems.org/gems/erb-formatter"><code>erb-formatter</code></a> gem to format ERB templates.</p>
+<pre><code class="language-json">{
+  "HTML+ERB": {
+    "formatter": {
+      "external": {
+        "command": "erb-formatter",
+        "arguments": ["--stdin-filename", "{buffer_path}"]
+      }
+    }
+  }
+}
+</code></pre>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../languages/roc.html" class="footer-button" title="Roc">
+                                <i class="fa fa-angle-left"></i>
+                                Roc
+                            </a>
+                            <a rel="next" href="../languages/rust.html" class="footer-button" title="Rust">
+                                Rust
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>

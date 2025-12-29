@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Debugger | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="ltd-provenance.js"></script>
+        <script type="text/javascript" src="ltd-current.js"></script>
+        <script type="text/javascript" src="../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/page-toc.css">
+        <link rel="stylesheet" href="theme/plugins.css">
+        <link rel="stylesheet" href="theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="update.html">Update</a></li><li class="chapter-item expanded "><a href="uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="themes.html">Themes</a></li><li class="chapter-item expanded "><a href="icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="git.html">Git</a></li><li class="chapter-item expanded "><a href="debugger.html" class="active">Debugger</a></li><li class="chapter-item expanded "><a href="diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="remote-development.html">Remote Development</a></li><li class="chapter-item expanded "><a href="dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="windows.html">Windows</a></li><li class="chapter-item expanded "><a href="linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="languages/c.html">C</a></li><li class="chapter-item expanded "><a href="languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="languages/r.html">R</a></li><li class="chapter-item expanded "><a href="languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="performance.html">Performance</a></li><li class="chapter-item expanded "><a href="development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="debugger"><a class="header" href="#debugger">Debugger</a></h1>
+<p>Zed uses the <a href="https://microsoft.github.io/debug-adapter-protocol/">Debug Adapter Protocol (DAP)</a> to provide debugging functionality across multiple programming languages. DAP is a standardized protocol that defines how debuggers, editors, and IDEs communicate with each other. It allows Zed to support various debuggers without needing to implement language-specific debugging logic. Zed implements the client side of the protocol, and various <em>debug adapters</em> implement the server side.</p>
+<p>This protocol enables features like setting breakpoints, stepping through code, inspecting variables, and more, in a consistent manner across different programming languages and runtime environments.</p>
+<h2 id="supported-languages"><a class="header" href="#supported-languages">Supported Languages</a></h2>
+<p>To debug code written in a specific language, Zed needs to find a debug adapter for that language. Some debug adapters are provided by Zed without additional setup, and some are provided by <a href="./extensions/debugger-extensions.html">language extensions</a>. The following languages currently have debug adapters available:</p>
+<!-- keep this sorted -->
+<ul>
+<li><a href="./languages/c.html#debugging">C</a> (built-in)</li>
+<li><a href="./languages/cpp.html#debugging">C++</a> (built-in)</li>
+<li><a href="./languages/go.html#debugging">Go</a> (built-in)</li>
+<li><a href="./languages/java.html#debugging">Java</a> (provided by extension)</li>
+<li><a href="./languages/javascript.html#debugging">JavaScript</a> (built-in)</li>
+<li><a href="./languages/php.html#debugging">PHP</a> (built-in)</li>
+<li><a href="./languages/python.html#debugging">Python</a> (built-in)</li>
+<li><a href="./languages/ruby.html#debugging">Ruby</a> (provided by extension)</li>
+<li><a href="./languages/rust.html#debugging">Rust</a> (built-in)</li>
+<li><a href="./languages/swift.html#debugging">Swift</a> (provided by extension)</li>
+<li><a href="./languages/typescript.html#debugging">TypeScript</a> (built-in)</li>
+</ul>
+<blockquote>
+<p>If your language isn't listed, you can contribute by adding a debug adapter for it. Check out our <a href="./extensions/debugger-extensions.html">debugger extensions</a> documentation for more information.</p>
+</blockquote>
+<p>Follow those links for language- and adapter-specific information and examples, or read on for more about Zed's general debugging features that apply to all adapters.</p>
+<h2 id="getting-started"><a class="header" href="#getting-started">Getting Started</a></h2>
+<p>For most languages, the fastest way to get started is to run <code class="hljs">debugger: start</code> (<kbd class="keybinding">f4|f4</kbd>). This opens the <em>new process modal</em>, which shows you a contextual list of preconfigured debug tasks for the current project. Debug tasks are created from tests, entry points (like a <code>main</code> function), and from other sources — consult the documentation for your language for full information about what's supported.</p>
+<p>You can open the same modal by clicking the "plus" button at the top right of the debug panel.</p>
+<p>For languages that don't provide preconfigured debug tasks (this includes C, C++, and some extension-supported languages), you can define debug configurations in the <code>.zed/debug.json</code> file in your project root. This file should be an array of configuration objects:</p>
+<pre><code class="language-json">[
+  {
+    "adapter": "CodeLLDB",
+    "label": "First configuration"
+    // ...
+  },
+  {
+    "adapter": "Debugpy",
+    "label": "Second configuration"
+    // ...
+  }
+]
+</code></pre>
+<p>Check the documentation for your language for example configurations covering typical use-cases. Once you've added configurations to <code>.zed/debug.json</code>, they'll appear in the list in the new process modal.</p>
+<p>Zed will also load debug configurations from <code>.vscode/launch.json</code>, and show them in the new process modal if no configurations are found in <code>.zed/debug.json</code>.</p>
+<h4 id="global-debug-configurations"><a class="header" href="#global-debug-configurations">Global debug configurations</a></h4>
+<p>If you run the same launch profiles across multiple projects, you can store them once in your user configuration. Invoke <code class="hljs">zed: open debug tasks</code> from the command palette to open the global <code>debug.json</code> file; Zed creates it next to your user <code>settings.json</code> and keeps it in sync with the debugger UI. The file lives at:</p>
+<ul>
+<li><strong>macOS:</strong> <code>~/Library/Application Support/Zed/debug.json</code></li>
+<li><strong>Linux/BSD:</strong> <code>$XDG_CONFIG_HOME/zed/debug.json</code> (falls back to <code>~/.config/zed/debug.json</code>)</li>
+<li><strong>Windows:</strong> <code>%APPDATA%\Zed\debug.json</code></li>
+</ul>
+<p>Populate this file with the same array of objects you would place in <code>.zed/debug.json</code>. Any scenarios defined there are merged into every workspace, so your favorite launch presets appear automatically in the "New Debug Session" dialog.</p>
+<h3 id="launching--attaching"><a class="header" href="#launching--attaching">Launching &amp; Attaching</a></h3>
+<p>Zed debugger offers two ways to debug your program; you can either <em>launch</em> a new instance of your program or <em>attach</em> to an existing process. Which one you choose depends on what you are trying to achieve.</p>
+<p>When launching a new instance, Zed (and the underlying debug adapter) can often do a better job at picking up the debug information compared to attaching to an existing process, since it controls the lifetime of a whole program. Running unit tests or a debug build of your application is a good use case for launching.</p>
+<p>Compared to launching, attaching to an existing process might seem inferior, but that's far from truth; there are cases where you cannot afford to restart your program, because for example, the bug is not reproducible outside of a production environment or some other circumstances.</p>
+<h2 id="configuration"><a class="header" href="#configuration">Configuration</a></h2>
+<p>Zed requires the <code>adapter</code> and <code>label</code> fields for all debug tasks. In addition, Zed will use the <code>build</code> field to run any necessary setup steps before the debugger starts <a href="#build-tasks">(see below)</a>, and can accept a <code>tcp_connection</code> field to connect to an existing process.</p>
+<p>All other fields are provided by the debug adapter and can contain <a href="./tasks.html#variables">task variables</a>. Most adapters support <code>request</code>, <code>program</code>, and <code>cwd</code>:</p>
+<pre><code class="language-json">[
+  {
+    // The label for the debug configuration and used to identify the debug session inside the debug panel &amp; new process modal
+    "label": "Example Start debugger config",
+    // The debug adapter that Zed should use to debug the program
+    "adapter": "Example adapter name",
+    // Request:
+    //  - launch: Zed will launch the program if specified, or show a debug terminal with the right configuration
+    //  - attach: Zed will attach to a running program to debug it, or when the process_id is not specified, will show a process picker (only supported for node currently)
+    "request": "launch",
+    // The program to debug. This field supports path resolution with ~ or . symbols.
+    "program": "path_to_program",
+    // cwd: defaults to the current working directory of your project ($ZED_WORKTREE_ROOT)
+    "cwd": "$ZED_WORKTREE_ROOT"
+  }
+]
+</code></pre>
+<p>Check your debug adapter's documentation for more information on the fields it supports.</p>
+<h3 id="build-tasks"><a class="header" href="#build-tasks">Build tasks</a></h3>
+<p>Zed allows embedding a Zed task in the <code>build</code> field that is run before the debugger starts. This is useful for setting up the environment or running any necessary setup steps before the debugger starts.</p>
+<pre><code class="language-json">[
+  {
+    "label": "Build Binary",
+    "adapter": "CodeLLDB",
+    "program": "path_to_program",
+    "request": "launch",
+    "build": {
+      "command": "make",
+      "args": ["build", "-j8"]
+    }
+  }
+]
+</code></pre>
+<p>Build tasks can also refer to the existing tasks by unsubstituted label:</p>
+<pre><code class="language-json">[
+  {
+    "label": "Build Binary",
+    "adapter": "CodeLLDB",
+    "program": "path_to_program",
+    "request": "launch",
+    "build": "my build task" // Or "my build task for $ZED_FILE"
+  }
+]
+</code></pre>
+<h3 id="automatic-scenario-creation"><a class="header" href="#automatic-scenario-creation">Automatic scenario creation</a></h3>
+<p>Given a Zed task, Zed can automatically create a scenario for you. Automatic scenario creation also powers our scenario creation from gutter. Automatic scenario creation is currently supported for Rust, Go, Python, JavaScript, and TypeScript.</p>
+<h2 id="breakpoints"><a class="header" href="#breakpoints">Breakpoints</a></h2>
+<p>To set a breakpoint, simply click next to the line number in the editor gutter. Breakpoints can be tweaked depending on your needs; to access additional options of a given breakpoint, right-click on the breakpoint icon in the gutter and select the desired option. At present, you can:</p>
+<ul>
+<li>Add a log to a breakpoint, which will output a log message whenever that breakpoint is hit.</li>
+<li>Make the breakpoint conditional, which will only stop at the breakpoint when the condition is met. The syntax for conditions is adapter-specific.</li>
+<li>Add a hit count to a breakpoint, which will only stop at the breakpoint after it's hit a certain number of times.</li>
+<li>Disable a breakpoint, which will prevent it from being hit while leaving it visible in the gutter.</li>
+</ul>
+<p>Some debug adapters (e.g. CodeLLDB and JavaScript) will also <em>verify</em> whether your breakpoints can be hit; breakpoints that cannot be hit are surfaced more prominently in the UI.</p>
+<p>All breakpoints enabled for a given project are also listed in "Breakpoints" item in your debugging session UI. From "Breakpoints" item in your UI you can also manage exception breakpoints. The debug adapter will then stop whenever an exception of a given kind occurs. Which exception types are supported depends on the debug adapter.</p>
+<h2 id="settings"><a class="header" href="#settings">Settings</a></h2>
+<p>The settings for the debugger are grouped under the <code>debugger</code> key in <code>settings.json</code>:</p>
+<ul>
+<li><code>dock</code>: Determines the position of the debug panel in the UI.</li>
+<li><code>stepping_granularity</code>: Determines the stepping granularity.</li>
+<li><code>save_breakpoints</code>: Whether the breakpoints should be reused across Zed sessions.</li>
+<li><code>button</code>: Whether to show the debug button in the status bar.</li>
+<li><code>timeout</code>: Time in milliseconds until timeout error when connecting to a TCP debug adapter.</li>
+<li><code>log_dap_communications</code>: Whether to log messages between active debug adapters and Zed.</li>
+<li><code>format_dap_log_messages</code>: Whether to format DAP messages when adding them to the debug adapter logger.</li>
+</ul>
+<h3 id="dock"><a class="header" href="#dock">Dock</a></h3>
+<ul>
+<li>Description: The position of the debug panel in the UI.</li>
+<li>Default: <code>bottom</code></li>
+<li>Setting: debugger.dock</li>
+</ul>
+<p><strong>Options</strong></p>
+<ol>
+<li><code>left</code> - The debug panel will be docked to the left side of the UI.</li>
+<li><code>right</code> - The debug panel will be docked to the right side of the UI.</li>
+<li><code>bottom</code> - The debug panel will be docked to the bottom of the UI.</li>
+</ol>
+<pre><code class="language-json">"debugger": {
+  "dock": "bottom"
+},
+</code></pre>
+<h3 id="stepping-granularity"><a class="header" href="#stepping-granularity">Stepping granularity</a></h3>
+<ul>
+<li>Description: The Step granularity that the debugger will use</li>
+<li>Default: <code>line</code></li>
+<li>Setting: <code>debugger.stepping_granularity</code></li>
+</ul>
+<p><strong>Options</strong></p>
+<ol>
+<li>Statement - The step should allow the program to run until the current statement has finished executing. The meaning of a statement is determined by the adapter and it may be considered equivalent to a line. For example 'for(int i = 0; i &lt; 10; i++)' could be considered to have 3 statements 'int i = 0', 'i &lt; 10', and 'i++'.</li>
+</ol>
+<pre><code class="language-json">{
+  "debugger": {
+    "stepping_granularity": "statement"
+  }
+}
+</code></pre>
+<ol start="2">
+<li>Line - The step should allow the program to run until the current source line has executed.</li>
+</ol>
+<pre><code class="language-json">{
+  "debugger": {
+    "stepping_granularity": "line"
+  }
+}
+</code></pre>
+<ol start="3">
+<li>Instruction - The step should allow one instruction to execute (e.g. one x86 instruction).</li>
+</ol>
+<pre><code class="language-json">{
+  "debugger": {
+    "stepping_granularity": "instruction"
+  }
+}
+</code></pre>
+<h3 id="save-breakpoints"><a class="header" href="#save-breakpoints">Save Breakpoints</a></h3>
+<ul>
+<li>Description: Whether the breakpoints should be saved across Zed sessions.</li>
+<li>Default: <code>true</code></li>
+<li>Setting: <code>debugger.save_breakpoints</code></li>
+</ul>
+<p><strong>Options</strong></p>
+<p><code>boolean</code> values</p>
+<pre><code class="language-json">{
+  "debugger": {
+    "save_breakpoints": true
+  }
+}
+</code></pre>
+<h3 id="button"><a class="header" href="#button">Button</a></h3>
+<ul>
+<li>Description: Whether the button should be displayed in the debugger toolbar.</li>
+<li>Default: <code>true</code></li>
+<li>Setting: <code>debugger.show_button</code></li>
+</ul>
+<p><strong>Options</strong></p>
+<p><code>boolean</code> values</p>
+<pre><code class="language-json">{
+  "debugger": {
+    "show_button": true
+  }
+}
+</code></pre>
+<h3 id="timeout"><a class="header" href="#timeout">Timeout</a></h3>
+<ul>
+<li>Description: Time in milliseconds until timeout error when connecting to a TCP debug adapter.</li>
+<li>Default: <code>2000</code></li>
+<li>Setting: <code>debugger.timeout</code></li>
+</ul>
+<p><strong>Options</strong></p>
+<p><code>integer</code> values</p>
+<pre><code class="language-json">{
+  "debugger": {
+    "timeout": 3000
+  }
+}
+</code></pre>
+<h3 id="inline-values"><a class="header" href="#inline-values">Inline Values</a></h3>
+<ul>
+<li>Description: Whether to enable editor inlay hints showing the values of variables in your code during debugging sessions.</li>
+<li>Default: <code>true</code></li>
+<li>Setting: <code>inlay_hints.show_value_hints</code></li>
+</ul>
+<p><strong>Options</strong></p>
+<pre><code class="language-json">{
+  "inlay_hints": {
+    "show_value_hints": false
+  }
+}
+</code></pre>
+<p>Inline value hints can also be toggled from the Editor Controls menu in the editor toolbar.</p>
+<h3 id="log-dap-communications"><a class="header" href="#log-dap-communications">Log Dap Communications</a></h3>
+<ul>
+<li>Description: Whether to log messages between active debug adapters and Zed. (Used for DAP development)</li>
+<li>Default: false</li>
+<li>Setting: debugger.log_dap_communications</li>
+</ul>
+<p><strong>Options</strong></p>
+<p><code>boolean</code> values</p>
+<pre><code class="language-json">{
+  "debugger": {
+    "log_dap_communications": true
+  }
+}
+</code></pre>
+<h3 id="format-dap-log-messages"><a class="header" href="#format-dap-log-messages">Format Dap Log Messages</a></h3>
+<ul>
+<li>Description: Whether to format DAP messages when adding them to the debug adapter logger. (Used for DAP development)</li>
+<li>Default: false</li>
+<li>Setting: debugger.format_dap_log_messages</li>
+</ul>
+<p><strong>Options</strong></p>
+<p><code>boolean</code> values</p>
+<pre><code class="language-json">{
+  "debugger": {
+    "format_dap_log_messages": true
+  }
+}
+</code></pre>
+<h3 id="customizing-debug-adapters"><a class="header" href="#customizing-debug-adapters">Customizing Debug Adapters</a></h3>
+<ul>
+<li>Description: Custom program path and arguments to override how Zed launches a specific debug adapter.</li>
+<li>Default: Adapter-specific</li>
+<li>Setting: <code>dap.$ADAPTER.binary</code> and <code>dap.$ADAPTER.args</code></li>
+</ul>
+<p>You can pass <code>binary</code>, <code>args</code>, or both. <code>binary</code> should be a path to a <em>debug adapter</em> (like <code>lldb-dap</code>) not a <em>debugger</em> (like <code>lldb</code> itself). The <code>args</code> setting overrides any arguments that Zed would otherwise pass to the adapter.</p>
+<pre><code class="language-json">{
+  "dap": {
+    "CodeLLDB": {
+      "binary": "/Users/name/bin/lldb-dap",
+      "args": ["--wait-for-debugger"]
+    }
+  }
+}
+</code></pre>
+<h2 id="theme"><a class="header" href="#theme">Theme</a></h2>
+<p>The Debugger supports the following theme options:</p>
+<ul>
+<li><code>debugger.accent</code>: Color used to accent breakpoint &amp; breakpoint-related symbols</li>
+<li><code>editor.debugger_active_line.background</code>: Background color of active debug line</li>
+</ul>
+<h2 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h2>
+<p>If you're running into problems with the debugger, please <a href="https://github.com/zed-industries/zed/issues/new?template=04_bug_debugger.yml">open a GitHub issue</a>, providing as much context as possible. There are also some features you can use to gather more information about the problem:</p>
+<ul>
+<li>When you have a session running in the debug panel, you can run the <code class="hljs">dev: copy debug adapter arguments</code> action to copy a JSON blob to the clipboard that describes how Zed initialized the session. This is especially useful when the session failed to start, and is great context to add if you open a GitHub issue.</li>
+<li>You can also use the <code class="hljs">dev: open debug adapter logs</code> action to see a trace of all of Zed's communications with debug adapters during the most recent debug sessions.</li>
+</ul>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="git.html" class="footer-button" title="Git">
+                                <i class="fa fa-angle-left"></i>
+                                Git
+                            </a>
+                            <a rel="next" href="diagnostics.html" class="footer-button" title="Diagnostics">
+                                Diagnostics
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/page-toc.js"></script>
+        <script src="theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>

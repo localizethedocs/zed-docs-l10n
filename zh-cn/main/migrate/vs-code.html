@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>VS Code | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">Update</a></li><li class="chapter-item expanded "><a href="../uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="../troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="../configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../themes.html">Themes</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="../vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="../command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="../command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="../completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="../collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="../remote-development.html">Remote Development</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="../environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="../ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="../extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html" class="active">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="../development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="how-to-migrate-from-vs-code-to-zed"><a class="header" href="#how-to-migrate-from-vs-code-to-zed">How to Migrate from VS Code to Zed</a></h1>
+<p>This guide is for developers who spent serious time in VS Code and want to try Zed without starting from scratch.</p>
+<p>If you’re here, you might be looking for a faster editor. Or something less cluttered. Or you’re curious about built-in collaboration. Whatever brought you here, this guide helps you move over your habits, shortcuts, and settings.</p>
+<p>We’ll cover what to bring, what to change, and what’s different. You can ease in gradually or switch all at once. Either way, you’ll stay productive.</p>
+<h2 id="install-zed"><a class="header" href="#install-zed">Install Zed</a></h2>
+<p>Zed is available on macOS, Windows, and Linux.</p>
+<p>For macOS, you can download it from zed.dev/download, or install via Homebrew: <code>brew install zed-editor/zed/zed</code></p>
+<p>For most Linux users, the easiest way to install Zed is through our installation script: <code>curl -f https://zed.dev/install.sh | sh</code></p>
+<p>After installation, you can launch Zed from your Applications folder (macOS) or directly from the terminal (Linux) using: <code>zed .</code> This opens the current directory in Zed.</p>
+<h2 id="import-settings-from-vs-code"><a class="header" href="#import-settings-from-vs-code">Import Settings from VS Code</a></h2>
+<p>During setup, you have the option to import key settings from VS Code. Zed imports the following settings:</p>
+<h3 id="settings-imported-from-vs-code"><a class="header" href="#settings-imported-from-vs-code">Settings Imported from VS Code</a></h3>
+<p>The following VS Code settings are automatically imported when you use <strong>Import Settings from VS Code</strong>:</p>
+<p><strong>Editor</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>editor.fontFamily</code></td><td><code>buffer_font_family</code></td></tr>
+<tr><td><code>editor.fontSize</code></td><td><code>buffer_font_size</code></td></tr>
+<tr><td><code>editor.fontWeight</code></td><td><code>buffer_font_weight</code></td></tr>
+<tr><td><code>editor.tabSize</code></td><td><code>tab_size</code></td></tr>
+<tr><td><code>editor.insertSpaces</code></td><td><code>hard_tabs</code> (inverted)</td></tr>
+<tr><td><code>editor.wordWrap</code></td><td><code>soft_wrap</code></td></tr>
+<tr><td><code>editor.wordWrapColumn</code></td><td><code>preferred_line_length</code></td></tr>
+<tr><td><code>editor.cursorStyle</code></td><td><code>cursor_shape</code></td></tr>
+<tr><td><code>editor.cursorBlinking</code></td><td><code>cursor_blink</code></td></tr>
+<tr><td><code>editor.renderLineHighlight</code></td><td><code>current_line_highlight</code></td></tr>
+<tr><td><code>editor.lineNumbers</code></td><td><code>gutter.line_numbers</code>, <code>relative_line_numbers</code></td></tr>
+<tr><td><code>editor.showFoldingControls</code></td><td><code>gutter.folds</code></td></tr>
+<tr><td><code>editor.minimap.enabled</code></td><td><code>minimap.show</code></td></tr>
+<tr><td><code>editor.minimap.autohide</code></td><td><code>minimap.show</code></td></tr>
+<tr><td><code>editor.minimap.showSlider</code></td><td><code>minimap.thumb</code></td></tr>
+<tr><td><code>editor.minimap.maxColumn</code></td><td><code>minimap.max_width_columns</code></td></tr>
+<tr><td><code>editor.stickyScroll.enabled</code></td><td><code>sticky_scroll.enabled</code></td></tr>
+<tr><td><code>editor.scrollbar.horizontal</code></td><td><code>scrollbar.axes.horizontal</code></td></tr>
+<tr><td><code>editor.scrollbar.vertical</code></td><td><code>scrollbar.axes.vertical</code></td></tr>
+<tr><td><code>editor.mouseWheelScrollSensitivity</code></td><td><code>scroll_sensitivity</code></td></tr>
+<tr><td><code>editor.fastScrollSensitivity</code></td><td><code>fast_scroll_sensitivity</code></td></tr>
+<tr><td><code>editor.cursorSurroundingLines</code></td><td><code>vertical_scroll_margin</code></td></tr>
+<tr><td><code>editor.hover.enabled</code></td><td><code>hover_popover_enabled</code></td></tr>
+<tr><td><code>editor.hover.delay</code></td><td><code>hover_popover_delay</code></td></tr>
+<tr><td><code>editor.parameterHints.enabled</code></td><td><code>auto_signature_help</code></td></tr>
+<tr><td><code>editor.multiCursorModifier</code></td><td><code>multi_cursor_modifier</code></td></tr>
+<tr><td><code>editor.selectionHighlight</code></td><td><code>selection_highlight</code></td></tr>
+<tr><td><code>editor.roundedSelection</code></td><td><code>rounded_selection</code></td></tr>
+<tr><td><code>editor.find.seedSearchStringFromSelection</code></td><td><code>seed_search_query_from_cursor</code></td></tr>
+<tr><td><code>editor.rulers</code></td><td><code>wrap_guides</code></td></tr>
+<tr><td><code>editor.renderWhitespace</code></td><td><code>show_whitespaces</code></td></tr>
+<tr><td><code>editor.guides.indentation</code></td><td><code>indent_guides.enabled</code></td></tr>
+<tr><td><code>editor.linkedEditing</code></td><td><code>linked_edits</code></td></tr>
+<tr><td><code>editor.autoSurround</code></td><td><code>use_auto_surround</code></td></tr>
+<tr><td><code>editor.formatOnSave</code></td><td><code>format_on_save</code></td></tr>
+<tr><td><code>editor.formatOnPaste</code></td><td><code>auto_indent_on_paste</code></td></tr>
+<tr><td><code>editor.formatOnType</code></td><td><code>use_on_type_format</code></td></tr>
+<tr><td><code>editor.trimAutoWhitespace</code></td><td><code>remove_trailing_whitespace_on_save</code></td></tr>
+<tr><td><code>editor.suggestOnTriggerCharacters</code></td><td><code>show_completions_on_input</code></td></tr>
+<tr><td><code>editor.suggest.showWords</code></td><td><code>completions.words</code></td></tr>
+<tr><td><code>editor.inlineSuggest.enabled</code></td><td><code>show_edit_predictions</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Files &amp; Workspace</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>files.autoSave</code></td><td><code>autosave</code></td></tr>
+<tr><td><code>files.autoSaveDelay</code></td><td><code>autosave.milliseconds</code></td></tr>
+<tr><td><code>files.insertFinalNewline</code></td><td><code>ensure_final_newline_on_save</code></td></tr>
+<tr><td><code>files.associations</code></td><td><code>file_types</code></td></tr>
+<tr><td><code>files.watcherExclude</code></td><td><code>file_scan_exclusions</code></td></tr>
+<tr><td><code>files.watcherInclude</code></td><td><code>file_scan_inclusions</code></td></tr>
+<tr><td><code>files.simpleDialog.enable</code></td><td><code>use_system_path_prompts</code></td></tr>
+<tr><td><code>search.smartCase</code></td><td><code>use_smartcase_search</code></td></tr>
+<tr><td><code>search.useIgnoreFiles</code></td><td><code>search.include_ignored</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Terminal</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>terminal.integrated.fontFamily</code></td><td><code>terminal.font_family</code></td></tr>
+<tr><td><code>terminal.integrated.fontSize</code></td><td><code>terminal.font_size</code></td></tr>
+<tr><td><code>terminal.integrated.lineHeight</code></td><td><code>terminal.line_height</code></td></tr>
+<tr><td><code>terminal.integrated.cursorStyle</code></td><td><code>terminal.cursor_shape</code></td></tr>
+<tr><td><code>terminal.integrated.cursorBlinking</code></td><td><code>terminal.blinking</code></td></tr>
+<tr><td><code>terminal.integrated.copyOnSelection</code></td><td><code>terminal.copy_on_select</code></td></tr>
+<tr><td><code>terminal.integrated.scrollback</code></td><td><code>terminal.max_scroll_history_lines</code></td></tr>
+<tr><td><code>terminal.integrated.macOptionIsMeta</code></td><td><code>terminal.option_as_meta</code></td></tr>
+<tr><td><code>terminal.integrated.{platform}Exec</code></td><td><code>terminal.shell</code></td></tr>
+<tr><td><code>terminal.integrated.env.{platform}</code></td><td><code>terminal.env</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Tabs &amp; Panels</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>workbench.editor.showTabs</code></td><td><code>tab_bar.show</code></td></tr>
+<tr><td><code>workbench.editor.showIcons</code></td><td><code>tabs.file_icons</code></td></tr>
+<tr><td><code>workbench.editor.tabActionLocation</code></td><td><code>tabs.close_position</code></td></tr>
+<tr><td><code>workbench.editor.tabActionCloseVisibility</code></td><td><code>tabs.show_close_button</code></td></tr>
+<tr><td><code>workbench.editor.focusRecentEditorAfterClose</code></td><td><code>tabs.activate_on_close</code></td></tr>
+<tr><td><code>workbench.editor.enablePreview</code></td><td><code>preview_tabs.enabled</code></td></tr>
+<tr><td><code>workbench.editor.enablePreviewFromQuickOpen</code></td><td><code>preview_tabs.enable_preview_from_file_finder</code></td></tr>
+<tr><td><code>workbench.editor.enablePreviewFromCodeNavigation</code></td><td><code>preview_tabs.enable_preview_from_code_navigation</code></td></tr>
+<tr><td><code>workbench.editor.editorActionsLocation</code></td><td><code>tab_bar.show_tab_bar_buttons</code></td></tr>
+<tr><td><code>workbench.editor.limit.enabled</code> / <code>value</code></td><td><code>max_tabs</code></td></tr>
+<tr><td><code>workbench.editor.restoreViewState</code></td><td><code>restore_on_file_reopen</code></td></tr>
+<tr><td><code>workbench.statusBar.visible</code></td><td><code>status_bar.show</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Project Panel (File Explorer)</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>explorer.compactFolders</code></td><td><code>project_panel.auto_fold_dirs</code></td></tr>
+<tr><td><code>explorer.autoReveal</code></td><td><code>project_panel.auto_reveal_entries</code></td></tr>
+<tr><td><code>explorer.excludeGitIgnore</code></td><td><code>project_panel.hide_gitignore</code></td></tr>
+<tr><td><code>problems.decorations.enabled</code></td><td><code>project_panel.show_diagnostics</code></td></tr>
+<tr><td><code>explorer.decorations.badges</code></td><td><code>project_panel.git_status</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Git</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>git.enabled</code></td><td><code>git_panel.button</code></td></tr>
+<tr><td><code>git.defaultBranchName</code></td><td><code>git_panel.fallback_branch_name</code></td></tr>
+<tr><td><code>git.decorations.enabled</code></td><td><code>git.inline_blame</code>, <code>project_panel.git_status</code></td></tr>
+<tr><td><code>git.blame.editorDecoration.enabled</code></td><td><code>git.inline_blame.enabled</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Window &amp; Behavior</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>window.confirmBeforeClose</code></td><td><code>confirm_quit</code></td></tr>
+<tr><td><code>window.nativeTabs</code></td><td><code>use_system_window_tabs</code></td></tr>
+<tr><td><code>window.closeWhenEmpty</code></td><td><code>when_closing_with_no_tabs</code></td></tr>
+<tr><td><code>accessibility.dimUnfocused.enabled</code> / <code>opacity</code></td><td><code>active_pane_modifiers.inactive_opacity</code></td></tr>
+</tbody></table>
+</div>
+<p><strong>Other</strong></p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code Setting</th><th>Zed Setting</th></tr></thead><tbody>
+<tr><td><code>http.proxy</code></td><td><code>proxy</code></td></tr>
+<tr><td><code>npm.packageManager</code></td><td><code>node.npm_path</code></td></tr>
+<tr><td><code>telemetry.telemetryLevel</code></td><td><code>telemetry.metrics</code>, <code>telemetry.diagnostics</code></td></tr>
+<tr><td><code>outline.icons</code></td><td><code>outline_panel.file_icons</code>, <code>outline_panel.folder_icons</code></td></tr>
+<tr><td><code>chat.agent.enabled</code></td><td><code>agent.enabled</code></td></tr>
+<tr><td><code>mcp</code></td><td><code>context_servers</code></td></tr>
+</tbody></table>
+</div>
+<p>Zed doesn’t import extensions or keybindings, but this is the fastest way to get a familiar feel while trying something new. If you skip that step during setup, you can still import settings manually later via the command palette:</p>
+<p><code>Cmd+Shift+P → Zed: Import VS Code Settings</code></p>
+<h2 id="set-up-editor-preferences"><a class="header" href="#set-up-editor-preferences">Set Up Editor Preferences</a></h2>
+<p>You can also configure settings manually in the Settings Editor.</p>
+<p>To edit your settings:</p>
+<ol>
+<li><code>Cmd+,</code> to open the Settings Editor.</li>
+<li>Run <code>zed: open settings</code> in the Command Palette.</li>
+</ol>
+<p>Here’s how common VS Code settings translate:</p>
+<div class="table-wrapper"><table><thead><tr><th>VS Code</th><th>Zed</th><th>Notes</th></tr></thead><tbody>
+<tr><td>editor.fontFamily</td><td>buffer_font_family</td><td>Zed uses Zed Mono by default</td></tr>
+<tr><td>editor.fontSize</td><td>buffer_font_size</td><td>Set in pixels</td></tr>
+<tr><td>editor.tabSize</td><td>tab_size</td><td>Can override per language</td></tr>
+<tr><td>editor.insertSpaces</td><td>insert_spaces</td><td>Boolean</td></tr>
+<tr><td>editor.formatOnSave</td><td>format_on_save</td><td>Works with formatter enabled</td></tr>
+<tr><td>editor.wordWrap</td><td>soft_wrap</td><td>Supports optional wrap column</td></tr>
+</tbody></table>
+</div>
+<p>Zed also supports per-project settings. You can find these in the Settings Editor as well.</p>
+<h2 id="open-or-create-a-project"><a class="header" href="#open-or-create-a-project">Open or Create a Project</a></h2>
+<p>After setup, press <code>Cmd+O</code> (<code>Ctrl+O</code> on Linux) to open a folder. This becomes your workspace in Zed. There's no support for multi-root workspaces or <code>.code-workspace</code> files like in VS Code. Zed keeps it simple: one folder, one workspace.</p>
+<p>To start a new project, create a directory using your terminal or file manager, then open it in Zed. The editor will treat that folder as the root of your project.</p>
+<p>You can also launch Zed from the terminal inside any folder with: <code>zed .</code></p>
+<p>Once inside a project, use <code>Cmd+P</code> to jump between files quickly. <code>Cmd+Shift+P</code> (<code>Ctrl+Shift+P</code> on Linux) opens the command palette for running actions / tasks, toggling settings, or starting a collaboration session.</p>
+<p>Open buffers appear as tabs across the top. The sidebar shows your file tree and Git status. Collapse it with <code>Cmd+B</code> for a distraction-free view.</p>
+<h2 id="differences-in-keybindings"><a class="header" href="#differences-in-keybindings">Differences in Keybindings</a></h2>
+<p>If you chose the VS Code keymap during onboarding, you're likely good to go, and most of your shortcuts should already feel familiar. Here’s a quick reference guide for how our keybindings compare to what you’re used to coming from VS Code.</p>
+<h3 id="common-shared-keybindings-zed--vs-code"><a class="header" href="#common-shared-keybindings-zed--vs-code">Common Shared Keybindings (Zed &lt;&gt; VS Code)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Shortcut</th></tr></thead><tbody>
+<tr><td>Find files</td><td><code>Cmd + P</code></td></tr>
+<tr><td>Run a command</td><td><code>Cmd + Shift + P</code></td></tr>
+<tr><td>Search text (project-wide)</td><td><code>Cmd + Shift + F</code></td></tr>
+<tr><td>Find symbols (project-wide)</td><td><code>Cmd + T</code></td></tr>
+<tr><td>Find symbols (file-wide)</td><td><code>Cmd + Shift + O</code></td></tr>
+<tr><td>Toggle left dock</td><td><code>Cmd + B</code></td></tr>
+<tr><td>Toggle bottom dock</td><td><code>Cmd + J</code></td></tr>
+<tr><td>Open terminal</td><td><code>Ctrl + ~</code></td></tr>
+<tr><td>Open file tree explorer</td><td><code>Cmd + Shift + E</code></td></tr>
+<tr><td>Close current buffer</td><td><code>Cmd + W</code></td></tr>
+<tr><td>Close whole project</td><td><code>Cmd + Shift + W</code></td></tr>
+<tr><td>Refactor: rename symbol</td><td><code>F2</code></td></tr>
+<tr><td>Change theme</td><td><code>Cmd + K, Cmd + T</code></td></tr>
+<tr><td>Wrap text</td><td><code>Opt + Z</code></td></tr>
+<tr><td>Navigate open tabs</td><td><code>Cmd + Opt + Arrow</code></td></tr>
+<tr><td>Syntactic fold / unfold</td><td><code>Cmd + Opt + {</code> or <code>}</code></td></tr>
+</tbody></table>
+</div>
+<h3 id="different-keybindings-zed--vs-code"><a class="header" href="#different-keybindings-zed--vs-code">Different Keybindings (Zed &lt;&gt; VS Code)</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>VS Code</th><th>Zed</th></tr></thead><tbody>
+<tr><td>Open recent project</td><td><code>Ctrl + R</code></td><td><code>Cmd + Opt + O</code></td></tr>
+<tr><td>Move lines up/down</td><td><code>Opt + Up/Down</code></td><td><code>Cmd + Ctrl + Up/Down</code></td></tr>
+<tr><td>Split panes</td><td><code>Cmd + \</code></td><td><code>Cmd + K, Arrow Keys</code></td></tr>
+<tr><td>Expand Selection</td><td><code>Shift + Alt + Right</code></td><td><code>Opt + Up</code></td></tr>
+</tbody></table>
+</div>
+<h3 id="unique-to-zed"><a class="header" href="#unique-to-zed">Unique to Zed</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Shortcut</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Toggle right dock</td><td><code>Cmd + R</code> or <code>Cmd + Alt + B</code></td><td></td></tr>
+<tr><td>Syntactic selection</td><td><code>Opt + Up/Down</code></td><td>Selects code by structure (e.g., inside braces).</td></tr>
+</tbody></table>
+</div>
+<h3 id="how-to-customize-keybindings"><a class="header" href="#how-to-customize-keybindings">How to Customize Keybindings</a></h3>
+<p>To edit your keybindings:</p>
+<ul>
+<li>Open the command palette (<code>Cmd+Shift+P</code>)</li>
+<li>Run <code>Zed: Open Keymap Editor</code></li>
+</ul>
+<p>This opens a list of all available bindings. You can override individual shortcuts, remove conflicts, or build a layout that works better for your setup.</p>
+<p>Zed also supports chords (multi-key sequences) like <code>Cmd+K Cmd+C</code>, like VS Code does.</p>
+<h2 id="differences-in-user-interfaces"><a class="header" href="#differences-in-user-interfaces">Differences in User Interfaces</a></h2>
+<h3 id="no-workspace"><a class="header" href="#no-workspace">No Workspace</a></h3>
+<p>VS Code uses a dedicated Workspace concept, with multi-root folders, <code>.code-workspace</code> files, and a clear distinction between “a window” and “a workspace.” Zed simplifies this model.</p>
+<p>In Zed:</p>
+<ul>
+<li>
+<p>There is no workspace file format. Opening a folder is your project context.</p>
+</li>
+<li>
+<p>Zed does not support multi-root workspaces. You can only open one folder at a time in a window.</p>
+</li>
+<li>
+<p>Most project-level behavior is scoped to the folder you open. Search, Git integration, tasks, and environment detection all treat the opened directory as the project root.</p>
+</li>
+<li>
+<p>Per-project settings are optional. You can add a <code>.zed/settings.json</code> file inside a project to override global settings, but Zed does not use <code>.code-workspace</code> files and won’t import them.</p>
+</li>
+<li>
+<p>You can start from a single file or an empty window. Zed doesn’t require you to open a folder to begin editing.</p>
+</li>
+</ul>
+<p>The result is a simpler model: Open a folder → work inside that folder → no additional workspace layer.</p>
+<h3 id="navigating-in-a-project"><a class="header" href="#navigating-in-a-project">Navigating in a Project</a></h3>
+<p>In VS Code, the standard entry point is opening a folder. From there, the left-hand sidebar is central to your navigation. Zed takes a different approach:</p>
+<ul>
+<li>You can still open folders, but you don’t need to. Opening a single file or even starting with an empty workspace is valid.</li>
+<li>The Command Palette (<code>Cmd+Shift+P</code>) and File Finder (<code>Cmd+P</code>) are your primary navigation tools. The File Finder searches across the entire workspace instantly; files, symbols, commands, even teammates if you're collaborating.</li>
+<li>Instead of a persistent sidebar, Zed encourages you to:
+<ul>
+<li>Fuzzy-find files by name (<code>Cmd+P</code>)</li>
+<li>Jump directly to symbols (<code>Cmd+Shift+O</code>)</li>
+<li>Use split panes and tabs for context, rather than keeping a large file tree open (though you can do this with the Project Panel if you prefer).</li>
+</ul>
+</li>
+</ul>
+<p>The UI is intentionally minimal. Panels slide in only when needed, then get out of your way. The focus is on flowing between code instead of managing panes.</p>
+<h3 id="extensions-vs-marketplace"><a class="header" href="#extensions-vs-marketplace">Extensions vs. Marketplace</a></h3>
+<p>Zed does not offer as many extensions as VS Code. The available extensions are focused on language support, themes, syntax highlighting, and other core editing enhancements.</p>
+<p>However there are several features that typically require extensions in VS Code which we built directly into Zed:</p>
+<ul>
+<li>Real-time collaboration with voice and cursor sharing (no Live Share required)</li>
+<li>AI coding assistance (no Copilot extension needed)</li>
+<li>Built-in terminal panel</li>
+<li>Project-wide fuzzy search</li>
+<li>Task runner with JSON config</li>
+<li>Inline diagnostics and code actions via LSP</li>
+</ul>
+<p>You won’t find one-to-one replacements for every VS Code extension, especially if you rely on tools for DevOps, containers, or test runners. Zed's extension ecosystem is still growing, and the catalog is smaller by design.</p>
+<h3 id="collaboration-in-zed-vs-vs-code"><a class="header" href="#collaboration-in-zed-vs-vs-code">Collaboration in Zed vs. VS Code</a></h3>
+<p>Unlike VS Code, Zed doesn’t require an extension to collaborate. It’s built into the core experience.</p>
+<ul>
+<li>Open the Collab Panel in the left dock.</li>
+<li>Create a channel and <a href="https://zed.dev/docs/collaboration#inviting-a-collaborator">invite your collaborators</a> to join.</li>
+<li><a href="https://zed.dev/docs/collaboration#share-a-project">Share your screen or your codebase</a> directly.</li>
+</ul>
+<p>Once connected, you’ll see each other's cursors, selections, and edits in real time. Voice chat is included, so you can talk as you work. There’s no need for separate tools or third-party logins. Zed’s collaboration is designed for everything from quick pair programming to longer team sessions.</p>
+<p>Learn how <a href="https://zed.dev/blog/zed-is-our-office">Zed uses Zed</a> to plan work and collaborate.</p>
+<h3 id="using-ai-in-zed"><a class="header" href="#using-ai-in-zed">Using AI in Zed</a></h3>
+<p>If you’re used to GitHub Copilot in VS Code, you can do the same in Zed. You can also explore other agents through Zed Pro, or bring your own keys and connect without authentication. Zed is designed to enable many options for using AI, including disabling it entirely.</p>
+<h4 id="configuring-github-copilot"><a class="header" href="#configuring-github-copilot">Configuring GitHub Copilot</a></h4>
+<p>You should be able to sign-in to GitHub Copilot by clicking on the Zeta icon in the status bar and following the setup instructions. You can also add this to your settings:</p>
+<pre><code class="language-json">{
+  "features": {
+    "edit_prediction_provider": "copilot"
+  }
+}
+</code></pre>
+<p>To invoke completions, just start typing. Zed will offer suggestions inline for you to accept.</p>
+<h4 id="additional-ai-options"><a class="header" href="#additional-ai-options">Additional AI Options</a></h4>
+<p>To use other AI models in Zed, you have several options:</p>
+<ul>
+<li>Use Zed’s hosted models, with higher rate limits. Requires <a href="https://zed.dev/docs/accounts.html">authentication</a> and subscription to <a href="https://zed.dev/docs/ai/subscription.html">Zed Pro</a>.</li>
+<li>Bring your own <a href="https://zed.dev/docs/ai/llm-providers.html">API keys</a>, no authentication needed</li>
+<li>Use <a href="https://zed.dev/docs/ai/external-agents.html">external agents like Claude Code</a>.</li>
+</ul>
+<h3 id="advanced-config-and-productivity-tweaks"><a class="header" href="#advanced-config-and-productivity-tweaks">Advanced Config and Productivity Tweaks</a></h3>
+<p>Zed exposes advanced settings for power users who want to fine-tune their environment.</p>
+<p>Here are a few useful tweaks:</p>
+<p><strong>Format on Save:</strong></p>
+<pre><code class="language-json">"format_on_save": "on"
+</code></pre>
+<p><strong>Enable direnv support:</strong></p>
+<pre><code class="language-json">"load_direnv": "shell_hook"
+</code></pre>
+<p><strong>Custom Tasks</strong>: Define build or run commands in your <code>tasks.json</code> (accessed via command palette: <code>zed: open tasks</code>):</p>
+<pre><code class="language-json">[
+  {
+    "label": "build",
+    "command": "cargo build"
+  }
+]
+</code></pre>
+<p><strong>Bring over custom snippets</strong> Copy your VS Code snippet JSON directly into Zed's snippets folder (<code>zed: configure snippets</code>).</p>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../extensions/mcp-extensions.html" class="footer-button" title="MCP Server Extensions">
+                                <i class="fa fa-angle-left"></i>
+                                MCP Server Extensions
+                            </a>
+                            <a rel="next" href="../migrate/intellij.html" class="footer-button" title="IntelliJ IDEA">
+                                IntelliJ IDEA
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>

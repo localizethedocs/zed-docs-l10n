@@ -1,0 +1,574 @@
+<!DOCTYPE HTML>
+<html lang="en_US" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Text Threads | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="../installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">Update</a></li><li class="chapter-item expanded "><a href="../uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="../troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="../configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../themes.html">Themes</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="../vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="../command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="../command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="../completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="../collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="../remote-development.html">Remote Development</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="../environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="../ai/text-threads.html" class="active">Text Threads</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="../extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="../development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="text-threads"><a class="header" href="#text-threads">Text Threads</a></h1>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>Text threads in the <a href="./agent-panel.html">Agent Panel</a> function similarly to any other editor.
+You can use custom key bindings and work with multiple cursors, allowing for seamless transitions between coding and engaging in discussions with the language models.</p>
+<p>However, the text threads differ in the inclusion of message blocks.
+These blocks serve as containers for text that correspond to different roles within the context.
+These roles include:</p>
+<ul>
+<li><code>You</code></li>
+<li><code>Assistant</code></li>
+<li><code>System</code></li>
+</ul>
+<p>To begin, type a message in a <code>You</code> block.</p>
+<p><img src="https://zed.dev/img/assistant/ask-a-question.png" alt="Asking a question" /></p>
+<p>As you type, the remaining tokens count for the selected model is updated.</p>
+<p>Inserting text from an editor is as simple as highlighting the text and running <code>agent: add selection to thread</code> (<kbd class="keybinding">cmd-&gt;|ctrl-&gt;</kbd>); Zed will wrap it in a fenced code block if it is code.</p>
+<p><img src="https://zed.dev/img/assistant/quoting-a-selection.png" alt="Quoting a selection" /></p>
+<p>To submit a message, use <kbd class="keybinding">cmd-enter|ctrl-enter</kbd>(<code>assistant: assist</code>).
+Unlike normal threads, where pressing <kbd>enter</kbd> would submit the message, in text threads, our goal is to make it feel as close to a regular editor as possible.
+So, pressing <kbd class="keybinding">enter|enter</kbd> simply inserts a new line.</p>
+<p>After submitting a message, the response will be streamed below, in an <code>Assistant</code> message block.</p>
+<p><img src="https://zed.dev/img/assistant/receiving-an-answer.png" alt="Receiving an answer" /></p>
+<p>The stream can be canceled at any point with <kbd>escape</kbd>.
+This is useful if you realize early on that the response is not what you were looking for.</p>
+<p>If you want to start a new conversation at any time, you can hit <kbd>cmd-n|ctrl-n</kbd> or use the <code>New Chat</code> menu option in the hamburger menu at the top left of the panel.</p>
+<p>Simple back-and-forth conversations work well with the text threads.
+However, there may come a time when you want to modify the previous text in the conversation and steer it in a different direction.</p>
+<h2 id="edit-text-thread"><a class="header" href="#edit-text-thread">Editing a Text Thread</a></h2>
+<p>Text threads give you the flexibility to have control over the context.
+You can freely edit any previous text, including the responses from the LLM.
+If you want to remove a message block entirely, simply place your cursor at the beginning of the block and use the <code>delete</code> key.
+A typical workflow might involve making edits and adjustments throughout the context to refine your inquiry or provide additional information.
+Here's an example:</p>
+<ol>
+<li>Write text in a <code>You</code> block.</li>
+<li>Submit the message with <kbd class="keybinding">cmd-enter|ctrl-enter</kbd>.</li>
+<li>Receive an <code>Assistant</code> response that doesn't meet your expectations.</li>
+<li>Cancel the response with <kbd>escape</kbd>.</li>
+<li>Erase the content of the <code>Assistant</code> message block and remove the block entirely.</li>
+<li>Add additional context to your original message.</li>
+<li>Submit the message with <kbd class="keybinding">cmd-enter|ctrl-enter</kbd>.</li>
+</ol>
+<p>Being able to edit previous messages gives you control over how tokens are used.
+You don't need to start up a new chat to correct a mistake or to add additional information, and you don't have to waste tokens by submitting follow-up corrections.</p>
+<blockquote>
+<p><strong>Note</strong>: The act of editing past messages is often referred to as "Rewriting History" in the context of the language models.</p>
+</blockquote>
+<p>Some additional points to keep in mind:</p>
+<ul>
+<li>You can cycle the role of a message block by clicking on the role, which is useful when you receive a response in an <code>Assistant</code> block that you want to edit and send back up as a <code>You</code> block.</li>
+</ul>
+<h2 id="commands"><a class="header" href="#commands">Commands Overview</a></h2>
+<p>Slash commands enhance the assistant's capabilities.
+Begin by typing a <code>/</code> at the beginning of the line to see a list of available commands:</p>
+<ul>
+<li><code>/default</code>: Inserts the default rule</li>
+<li><code>/diagnostics</code>: Injects errors reported by the project's language server</li>
+<li><code>/fetch</code>: Fetches the content of a webpage and inserts it</li>
+<li><code>/file</code>: Inserts a single file or a directory of files</li>
+<li><code>/now</code>: Inserts the current date and time</li>
+<li><code>/prompt</code>: Adds a custom-configured prompt to the context (<a href="./rules.html#rules-library">see Rules Library</a>)</li>
+<li><code>/symbols</code>: Inserts the current tab's active symbols</li>
+<li><code>/tab</code>: Inserts the content of the active tab or all open tabs</li>
+<li><code>/terminal</code>: Inserts a select number of lines of output from the terminal</li>
+<li><code>/selection</code>: Inserts the selected text</li>
+</ul>
+<blockquote>
+<p><strong>Note:</strong> Remember, commands are only evaluated when the text thread is created or when the command is inserted, so a command like <code>/now</code> won't continuously update, or <code>/file</code> commands won't keep their contents up to date.</p>
+</blockquote>
+<h3 id="default"><a class="header" href="#default"><code>/default</code></a></h3>
+<p>Read more about <code>/default</code> in the <a href="./rules.html#default-rules">Rules: Editing the Default Rules</a> section.</p>
+<p>Usage: <code>/default</code></p>
+<h3 id="diagnostics"><a class="header" href="#diagnostics"><code>/diagnostics</code></a></h3>
+<p>The <code>/diagnostics</code> command injects errors reported by the project's language server into the context.
+This is useful for getting an overview of current issues in your project.</p>
+<p>Usage: <code>/diagnostics [--include-warnings] [path]</code></p>
+<ul>
+<li><code>--include-warnings</code>: Optional flag to include warnings in addition to errors.</li>
+<li><code>path</code>: Optional path to limit diagnostics to a specific file or directory.</li>
+</ul>
+<h3 id="file"><a class="header" href="#file"><code>/file</code></a></h3>
+<p>The <code>/file</code> command inserts the content of a single file or a directory of files into the context.
+This allows you to reference specific parts of your project in your conversation with the assistant.</p>
+<p>Usage: <code>/file &lt;path&gt;</code></p>
+<p>You can use glob patterns to match multiple files or directories.</p>
+<p>Examples:</p>
+<ul>
+<li><code>/file src/index.js</code> - Inserts the content of <code>src/index.js</code> into the context.</li>
+<li><code>/file src/*.js</code> - Inserts the content of all <code>.js</code> files in the <code>src</code> directory.</li>
+<li><code>/file src</code> - Inserts the content of all files in the <code>src</code> directory.</li>
+</ul>
+<h3 id="now"><a class="header" href="#now"><code>/now</code></a></h3>
+<p>The <code>/now</code> command inserts the current date and time into the context.
+This can be useful for letting the language model know the current time (and by extension, how old their current knowledge base is).</p>
+<p>Usage: <code>/now</code></p>
+<h3 id="prompt"><a class="header" href="#prompt"><code>/prompt</code></a></h3>
+<p>The <code>/prompt</code> command inserts a prompt from the prompt library into the context.
+It can also be used to nest prompts within prompts.</p>
+<p>Usage: <code>/prompt &lt;prompt_name&gt;</code></p>
+<p>Related: <code>/default</code></p>
+<h3 id="symbols"><a class="header" href="#symbols"><code>/symbols</code></a></h3>
+<p>The <code>/symbols</code> command inserts the active symbols (functions, classes, etc.) from the current tab into the context.
+This is useful for getting an overview of the structure of the current file.</p>
+<p>Usage: <code>/symbols</code></p>
+<h3 id="tab"><a class="header" href="#tab"><code>/tab</code></a></h3>
+<p>The <code>/tab</code> command inserts the content of the active tab or all open tabs into the context.
+This allows you to reference the content you're currently working on.</p>
+<p>Usage: <code>/tab [tab_name|all]</code></p>
+<ul>
+<li><code>tab_name</code>: Optional name of a specific tab to insert.</li>
+<li><code>all</code>: Insert content from all open tabs.</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li><code>/tab</code> - Inserts the content of the active tab.</li>
+<li><code>/tab "index.js"</code> - Inserts the content of the tab named "index.js".</li>
+<li><code>/tab all</code> - Inserts the content of all open tabs.</li>
+</ul>
+<h3 id="terminal"><a class="header" href="#terminal"><code>/terminal</code></a></h3>
+<p>The <code>/terminal</code> command inserts a select number of lines of output from the terminal into the context.
+This is useful for referencing recent command outputs or logs.</p>
+<p>Usage: <code>/terminal [&lt;number&gt;]</code></p>
+<ul>
+<li><code>&lt;number&gt;</code>: Optional parameter to specify the number of lines to insert (default is 50).</li>
+</ul>
+<h3 id="selection"><a class="header" href="#selection"><code>/selection</code></a></h3>
+<p>The <code>/selection</code> command inserts the selected text in the editor into the context.
+This is useful for referencing specific parts of your code.</p>
+<p>This is equivalent to the <code>agent: add selection to thread</code> command (<kbd class="keybinding">cmd-&gt;|ctrl-&gt;</kbd>).</p>
+<p>Usage: <code>/selection</code></p>
+<h2 id="slash-commands-in-rules"><a class="header" href="#slash-commands-in-rules">Commands in the Rules Library</a></h2>
+<p><a href="#commands">Commands</a> can be used in rules, in the Rules Library (previously known as Prompt Library), to insert dynamic content or perform actions.
+For example, if you want to create a rule where it is important for the model to know the date, you can use the <code>/now</code> command to insert the current date.</p>
+<blockquote>
+<p><strong>Warn:</strong> Slash commands in rules <strong>only</strong> work when they are used in text threads. Using them in non-text threads is not supported.</p>
+</blockquote>
+<blockquote>
+<p><strong>Note:</strong> Slash commands in rules <strong>must</strong> be on their own line.</p>
+</blockquote>
+<p>See the <a href="#commands">list of commands</a> above for more information on commands, and what slash commands are available.</p>
+<h3 id="example"><a class="header" href="#example">Example</a></h3>
+<pre><code class="language-plaintext">You are an expert Rust engineer. The user has asked you to review their project and answer some questions.
+
+Here is some information about their project:
+
+/file Cargo.toml
+</code></pre>
+<p>In the above example, the <code>/file</code> command is used to insert the contents of the <code>Cargo.toml</code> file (or all <code>Cargo.toml</code> files present in the project) into the rule.</p>
+<h2 id="nesting-rules"><a class="header" href="#nesting-rules">Nesting Rules</a></h2>
+<p>Similar to adding rules to the default rules, you can nest rules within other rules with the <code>/prompt</code> command (only supported in Text Threads currently).</p>
+<p>You might want to nest rules to:</p>
+<ul>
+<li>Create templates on the fly</li>
+<li>Break collections like docs or references into smaller, mix-and-matchable parts</li>
+<li>Create variants of a similar rule (e.g., <code>Async Rust - Tokio</code> vs. <code>Async Rust - Async-std</code>)</li>
+</ul>
+<h3 id="example-1"><a class="header" href="#example-1">Example</a></h3>
+<pre><code class="language-plaintext">Title: Zed-Flavored Rust
+
+## About Zed
+
+/prompt Zed: Zed (a rule about what Zed is)
+
+## Rust - Zed Style
+
+/prompt Rust: Async - Async-std (zed doesn't use tokio)
+/prompt Rust: Zed-style Crates (we have some unique conventions)
+/prompt Rust - Workspace deps (bias towards reusing deps from the workspace)
+</code></pre>
+<p><em>The text in parentheses above are comments and are not part of the rule.</em></p>
+<blockquote>
+<p><strong>Note:</strong> While you technically <em>can</em> nest a rule within itself, we wouldn't recommend it (in the strongest of terms.) Use at your own risk!</p>
+</blockquote>
+<p>By using nested rules, you can create modular and reusable rule components that can be combined in various ways to suit different scenarios.</p>
+<blockquote>
+<p><strong>Note:</strong> When using slash commands to bring in additional context, the injected content can be edited directly inline in the text thread—edits here will not propagate to the saved rules.</p>
+</blockquote>
+<h2 id="extensibility"><a class="header" href="#extensibility">Extensibility</a></h2>
+<p>Additional slash commands can be provided by extensions.</p>
+<p>See <a href="../extensions/slash-commands.html">Extension: Slash Commands</a> to learn how to create your own.</p>
+<h2 id="text-threads-vs-threads"><a class="header" href="#text-threads-vs-threads">Text Threads vs. Threads</a></h2>
+<p>For some time, text threads were the only way to interact with AI in Zed.
+In May 2025, we introduced a new version of the agent panel, which, as opposed to being editor-based, is optimized for readability.
+Visit <a href="./agent-panel.html">the Agent Panel page</a> to learn more about it.</p>
+<p>More importantly, aside from the many UI differences, the major aspect that sets one apart from the other is that tool calls don't work in Text Threads.
+Due to that, it's accurate to say that Text Threads aren't conceptually agentic, as they can't perform any action on your behalf (or any action at all).</p>
+<p>Think of it more like a regular/"traditional" AI chat, where the only thing you can get from the model is simply just text.
+Consequently, <a href="./mcp.html">MCP servers</a> and <a href="./external-agents.html">external agents</a> are also not available in Text Threads.</p>
+<h2 id="advanced-concepts"><a class="header" href="#advanced-concepts">Advanced Concepts</a></h2>
+<h3 id="rule-templates"><a class="header" href="#rule-templates">Rule Templates</a></h3>
+<p>Zed uses rule templates to power internal assistant features, like the terminal assistant, or the content rules used in the inline assistant.</p>
+<p>Zed has the following internal rule templates:</p>
+<ul>
+<li><code>content_prompt.hbs</code>: Used for generating content in the editor.</li>
+<li><code>terminal_assistant_prompt.hbs</code>: Used for the terminal assistant feature.</li>
+</ul>
+<p>At this point it is unknown if we will expand templates further to be user-creatable.</p>
+<h3 id="overriding-templates"><a class="header" href="#overriding-templates">Overriding Templates</a></h3>
+<blockquote>
+<p><strong>Note:</strong> It is not recommended to override templates unless you know what you are doing. Editing templates will break your assistant if done incorrectly.</p>
+</blockquote>
+<p>Zed allows you to override the default rules used for various assistant features by placing custom Handlebars (.hbs) templates in your <code>~/.config/zed/prompt_overrides</code> directory.</p>
+<p>The following templates can be overridden:</p>
+<ol>
+<li>
+<p><a href="https://github.com/zed-industries/zed/tree/main/assets/prompts/content_prompt.hbs"><code>content_prompt.hbs</code></a>: Used for generating content in the editor.</p>
+</li>
+<li>
+<p><a href="https://github.com/zed-industries/zed/tree/main/assets/prompts/terminal_assistant_prompt.hbs"><code>terminal_assistant_prompt.hbs</code></a>: Used for the terminal assistant feature.</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Note:</strong> Be sure you want to override these, as you'll miss out on iteration on our built-in features.
+This should be primarily used when developing Zed.</p>
+</blockquote>
+<p>You can customize these templates to better suit your needs while maintaining the core structure and variables used by Zed.
+Zed will automatically reload your prompt overrides when they change on disk.</p>
+<p>Consult Zed's <a href="https://github.com/zed-industries/zed/tree/main/assets/prompts">assets/prompts</a> directory for current versions you can play with.</p>
+<h3 id="history"><a class="header" href="#history">History</a></h3>
+<p>After you submit your first message in a text thread, a name for your context is generated by the language model, and the context is automatically saved to your file system in</p>
+<ul>
+<li><code>~/.config/zed/conversations</code> (macOS)</li>
+<li><code>~/.local/share/zed/conversations</code> (Linux)</li>
+<li><code>%LocalAppData%\Zed\conversations</code> (Windows)</li>
+</ul>
+<p>You can access and load previous contexts by clicking on the history button in the top-left corner of the agent panel.</p>
+<p><img src="https://zed.dev/img/assistant/assistant-history.png" alt="Viewing assistant history" /></p>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../ai/edit-prediction.html" class="footer-button" title="Edit Prediction">
+                                <i class="fa fa-angle-left"></i>
+                                Edit Prediction
+                            </a>
+                            <a rel="next" href="../ai/rules.html" class="footer-button" title="Rules">
+                                Rules
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>

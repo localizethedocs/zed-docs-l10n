@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html lang="zh_CN" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Remote Development | Zed Code Editor Documentation</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="ltd-provenance.js"></script>
+        <script type="text/javascript" src="ltd-current.js"></script>
+        <script type="text/javascript" src="../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Learn how to use and customize Zed, the fast, collaborative code editor. Official docs on features, configuration, AI tools, and workflows.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/page-toc.css">
+        <link rel="stylesheet" href="theme/plugins.css">
+        <link rel="stylesheet" href="theme/highlight.css">
+
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="update.html">Update</a></li><li class="chapter-item expanded "><a href="uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="telemetry.html">Telemetry</a></li><li class="chapter-item expanded "><a href="troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">Configuration</li><li class="chapter-item expanded "><a href="configuring-zed.html">Configuring Zed</a></li><li class="chapter-item expanded "><a href="configuring-languages.html">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="toolchains.html">Toolchains</a></li></ol></li><li class="chapter-item expanded "><a href="key-bindings.html">Key bindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="all-actions.html">All Actions</a></li></ol></li><li class="chapter-item expanded "><a href="snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="themes.html">Themes</a></li><li class="chapter-item expanded "><a href="icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="visual-customization.html">Visual Customization</a></li><li class="chapter-item expanded "><a href="vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="helix.html">Helix Mode</a></li><li class="chapter-item expanded "><a href="ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Using Zed</li><li class="chapter-item expanded "><a href="multibuffers.html">Multibuffers</a></li><li class="chapter-item expanded "><a href="command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="command-line-interface.html">Command-line Interface</a></li><li class="chapter-item expanded "><a href="outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="collaboration/overview.html">Collaboration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><a href="git.html">Git</a></li><li class="chapter-item expanded "><a href="debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="diagnostics.html">Diagnostics</a></li><li class="chapter-item expanded "><a href="tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="tab-switcher.html">Tab Switcher</a></li><li class="chapter-item expanded "><a href="remote-development.html" class="active">Remote Development</a></li><li class="chapter-item expanded "><a href="dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded "><a href="environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="repl.html">REPL</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="windows.html">Windows</a></li><li class="chapter-item expanded "><a href="linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="ai/text-threads.html">Text Threads</a></li><li class="chapter-item expanded "><a href="ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/slash-commands.html">Slash Command Extensions</a></li><li class="chapter-item expanded "><a href="extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From...</li><li class="chapter-item expanded "><a href="migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="languages/c.html">C</a></li><li class="chapter-item expanded "><a href="languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="languages/r.html">R</a></li><li class="chapter-item expanded "><a href="languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="performance.html">Performance</a></li><li class="chapter-item expanded "><a href="development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      <h1 id="remote-development"><a class="header" href="#remote-development">Remote Development</a></h1>
+<p>Remote Development allows you to code at the speed of thought, even when your codebase is not on your local machine. You use Zed locally so the UI is immediately responsive, but offload heavy computation to the development server so that you can work effectively.</p>
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p>Remote development requires two computers, your local machine that runs the Zed UI and the remote server which runs a Zed headless server. The two communicate over SSH, so you will need to be able to SSH from your local machine into the remote server to use this feature.</p>
+<p><img src="https://zed.dev/img/remote-development/diagram.png" alt="Architectural overview of Zed Remote Development" /></p>
+<p>On your local machine, Zed runs its UI, talks to language models, uses Tree-sitter to parse and syntax-highlight code, and store unsaved changes and recent projects. The source code, language servers, tasks, and the terminal all run on the remote server.</p>
+<blockquote>
+<p><strong>Note:</strong> The original version of remote development sent traffic via Zed's servers. As of Zed v0.157 you can no-longer use that mode.</p>
+</blockquote>
+<h2 id="setup"><a class="header" href="#setup">Setup</a></h2>
+<ol>
+<li>Download and install the latest <a href="https://zed.dev/releases">Zed</a>. You need at least Zed v0.159.</li>
+<li>Use <kbd class="keybinding">ctrl-cmd-shift-o|alt-ctrl-shift-o</kbd> to open the "Remote Projects" dialog.</li>
+<li>Click "Connect New Server" and enter the command you use to SSH into the server. See <a href="#supported-ssh-options">Supported SSH options</a> for options you can pass.</li>
+<li>Your local machine will attempt to connect to the remote server using the <code>ssh</code> binary on your path. Assuming the connection is successful, Zed will download the server on the remote host and start it.</li>
+<li>Once the Zed server is running, you will be prompted to choose a path to open on the remote server.
+<blockquote>
+<p><strong>Note:</strong> Zed does not currently handle opening very large directories (for example, <code>/</code> or <code>~</code> that may have &gt;100,000 files) very well. We are working on improving this, but suggest in the meantime opening only specific projects, or subfolders of very large mono-repos.</p>
+</blockquote>
+</li>
+</ol>
+<p>For simple cases where you don't need any SSH arguments, you can run <code>zed ssh://[&lt;user&gt;@]&lt;host&gt;[:&lt;port&gt;]/&lt;path&gt;</code> to open a remote folder/file directly. If you'd like to hotlink into an SSH project, use a link of the format: <code>zed://ssh/[&lt;user&gt;@]&lt;host&gt;[:&lt;port&gt;]/&lt;path&gt;</code>.</p>
+<h2 id="supported-platforms"><a class="header" href="#supported-platforms">Supported platforms</a></h2>
+<p>The remote machine must be able to run Zed's server. The following platforms should work, though note that we have not exhaustively tested every Linux distribution:</p>
+<ul>
+<li>macOS Catalina or later (Intel or Apple Silicon)</li>
+<li>Linux (x86_64 or arm64, we do not yet support 32-bit platforms)</li>
+<li>Windows is not yet supported as a remote server, but Windows can be used as a local machine to connect to remote servers.</li>
+</ul>
+<h2 id="configuration"><a class="header" href="#configuration">Configuration</a></h2>
+<p>The list of remote servers is stored in your settings file <kbd class="keybinding">cmd-,|ctrl-,</kbd>. You can edit this list using the Remote Projects dialog <kbd class="keybinding">ctrl-cmd-shift-o|alt-ctrl-shift-o</kbd>, which provides some robustness - for example it checks that the connection can be established before writing it to the settings file.</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "projects": [{ "paths": ["~/code/zed/zed"] }]
+    }
+  ]
+}
+</code></pre>
+<p>Zed shells out to the <code>ssh</code> on your path, and so it will inherit any configuration you have in <code>~/.ssh/config</code> for the given host. That said, if you need to override anything you can configure the following additional options on each connection:</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "projects": [{ "paths": ["~/code/zed/zed"] }],
+      // any argument to pass to the ssh master process
+      "args": ["-i", "~/.ssh/work_id_file"],
+      "port": 22, // defaults to 22
+      // defaults to your username on your local machine
+      "username": "me"
+    }
+  ]
+}
+</code></pre>
+<p>There are two additional Zed-specific options per connection, <code>upload_binary_over_ssh</code> and <code>nickname</code>:</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "projects": [{ "paths": ["~/code/zed/zed"] }],
+      // by default Zed will download the server binary from the internet on the remote.
+      // When this is true, it'll be downloaded to your laptop and uploaded over SSH.
+      // This is useful when your remote server has restricted internet access.
+      "upload_binary_over_ssh": true,
+      // Shown in the Zed UI to help distinguish multiple hosts.
+      "nickname": "lil-linux"
+    }
+  ]
+}
+</code></pre>
+<p>If you use the command line to open a connection to a host by doing <code>zed ssh://192.168.1.10/~/.vimrc</code>, then extra options are read from your settings file by finding the first connection that matches the host/username/port of the URL on the command line.</p>
+<p>Additionally it's worth noting that while you can pass a password on the command line <code>zed ssh://user:password@host/~</code>, we do not support writing a password to your settings file. If you're connecting repeatedly to the same host, you should configure key-based authentication.</p>
+<h2 id="remote-development-on-windows-ssh"><a class="header" href="#remote-development-on-windows-ssh">Remote Development on Windows (SSH)</a></h2>
+<p>Zed on Windows supports SSH remoting and will prompt for credentials when needed.</p>
+<p>If you encounter authentication issues, confirm that your SSH key agent is running (e.g., ssh-agent or your Git client's agent) and that ssh.exe is on PATH.</p>
+<h3 id="troubleshooting-ssh-on-windows"><a class="header" href="#troubleshooting-ssh-on-windows">Troubleshooting SSH on Windows</a></h3>
+<p>When prompted for credentials, use the graphical askpass dialog. If it doesn't appear, check for credential manager conflicts and that GUI prompts aren't blocked by your terminal.</p>
+<h2 id="wsl-support"><a class="header" href="#wsl-support">WSL Support</a></h2>
+<p>Zed supports opening folders inside of WSL natively on Windows.</p>
+<h3 id="opening-a-local-folder-in-wsl"><a class="header" href="#opening-a-local-folder-in-wsl">Opening a local folder in WSL</a></h3>
+<p>To open a local folder inside a WSL container, use the <code>projects: open in wsl</code> action and select the folder you want to open. You will be presented with a list of available WSL distributions to open the folder in.</p>
+<h3 id="opening-a-folder-already-in-wsl"><a class="header" href="#opening-a-folder-already-in-wsl">Opening a folder already in WSL</a></h3>
+<p>To open a folder that's already located inside of a WSL container, use the <code>projects: open wsl</code> action and select the WSL distribution. The distribution will be added to the <code>Remote Projects</code> window where you will be able to open the folder.</p>
+<h2 id="port-forwarding"><a class="header" href="#port-forwarding">Port forwarding</a></h2>
+<p>If you'd like to be able to connect to ports on your remote server from your local machine, you can configure port forwarding in your settings file. This is particularly useful for developing websites so you can load the site in your browser while working.</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "port_forwards": [{ "local_port": 8080, "remote_port": 80 }]
+    }
+  ]
+}
+</code></pre>
+<p>This will cause requests from your local machine to <code>localhost:8080</code> to be forwarded to the remote machine's port 80. Under the hood this uses the <code>-L</code> argument to ssh.</p>
+<p>By default these ports are bound to localhost, so other computers in the same network as your development machine cannot access them. You can set the local_host to bind to a different interface, for example, 0.0.0.0 will bind to all local interfaces.</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "port_forwards": [
+        {
+          "local_port": 8080,
+          "remote_port": 80,
+          "local_host": "0.0.0.0"
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<p>These ports also default to the <code>localhost</code> interface on the remote host. If you need to change this, you can also set the remote host:</p>
+<pre><code class="language-json">{
+  "ssh_connections": [
+    {
+      "host": "192.168.1.10",
+      "port_forwards": [
+        {
+          "local_port": 8080,
+          "remote_port": 80,
+          "remote_host": "docker-host"
+        }
+      ]
+    }
+  ]
+}
+</code></pre>
+<h2 id="zed-settings"><a class="header" href="#zed-settings">Zed settings</a></h2>
+<p>When opening a remote project there are three relevant settings locations:</p>
+<ul>
+<li>The local Zed settings (in <code>~/.zed/settings.json</code> on macOS or <code>~/.config/zed/settings.json</code> on Linux) on your local machine.</li>
+<li>The server Zed settings (in the same place) on the remote server.</li>
+<li>The project settings (in <code>.zed/settings.json</code> or <code>.editorconfig</code> of your project)</li>
+</ul>
+<p>Both the local Zed and the server Zed read the project settings, but they are not aware of the other's main <code>settings.json</code>.</p>
+<p>Which settings file you should use depends on the kind of setting you want to make:</p>
+<ul>
+<li>Project settings should be used for things that affect the project: indentation settings, which formatter / language server to use, etc.</li>
+<li>Server settings should be used for things that affect the server: paths to language servers, proxy settings, etc.</li>
+<li>Local settings should be used for things that affect the UI: font size, etc.</li>
+</ul>
+<p>In addition any extensions you have installed locally will be propagated to the remote server. This means that language servers, etc. will run correctly.</p>
+<h2 id="proxy-configuration"><a class="header" href="#proxy-configuration">Proxy Configuration</a></h2>
+<p>The remote server will not use your local machine's proxy configuration because they may be under different network policies. If your remote server requires a proxy to access the internet, you must configure it on the remote server itself.</p>
+<p>In most cases, your remote server will already have proxy environment variables configured. Zed will automatically use them when downloading language servers, communicating with LLM models, etc.</p>
+<p>If needed, you can set these environment variables in the server's shell configuration (e.g., <code>~/.bashrc</code>):</p>
+<pre><code class="language-bash">export http_proxy="http://proxy.example.com:8080"
+export https_proxy="http://proxy.example.com:8080"
+export no_proxy="localhost,127.0.0.1"
+</code></pre>
+<p>Alternatively, you can configure the proxy in the remote machine's <code>~/.config/zed/settings.json</code> (Linux) or <code>~/.zed/settings.json</code> (macOS):</p>
+<pre><code class="language-json">{
+  "proxy": "http://proxy.example.com:8080"
+}
+</code></pre>
+<p>See the <a href="./configuring-zed.html#network-proxy">proxy documentation</a> for supported proxy types and additional configuration options.</p>
+<h2 id="initializing-the-remote-server"><a class="header" href="#initializing-the-remote-server">Initializing the remote server</a></h2>
+<p>Once you provide the SSH options, Zed shells out to <code>ssh</code> on your local machine to create a ControlMaster connection with the options you provide.</p>
+<p>Any prompts that SSH needs will be shown in the UI, so you can verify host keys, type key passwords, etc.</p>
+<p>Once the master connection is established, Zed will check to see if the remote server binary is present in <code>~/.zed_server</code> on the remote, and that its version matches the current version of Zed that you're using.</p>
+<p>If it is not there or the version mismatches, Zed will try to download the latest version. By default, it will download from <code>https://zed.dev</code> directly, but if you set: <code>{"upload_binary_over_ssh":true}</code> in your settings for that server, it will download the binary to your local machine and then upload it to the remote server.</p>
+<p>If you'd like to maintain the server binary yourself you can. You can either download our prebuilt versions from <a href="https://github.com/zed-industries/zed/releases">GitHub</a>, or <a href="https://zed.dev/docs/development">build your own</a> with <code>cargo build -p remote_server --release</code>. If you do this, you must upload it to <code>~/.zed_server/zed-remote-server-{RELEASE_CHANNEL}-{VERSION}</code> on the server, for example <code>~/.zed_server/zed-remote-server-stable-0.217.3+stable.105.80433cb239e868271457ac376673a5f75bc4adb1</code>. The version must exactly match the version of Zed itself you are using.</p>
+<h2 id="maintaining-the-ssh-connection"><a class="header" href="#maintaining-the-ssh-connection">Maintaining the SSH connection</a></h2>
+<p>Once the server is initialized. Zed will create new SSH connections (reusing the existing ControlMaster) to run the remote development server.</p>
+<p>Each connection tries to run the development server in proxy mode. This mode will start the daemon if it is not running, and reconnect to it if it is. This way when your connection drops and is restarted, you can continue to work without interruption.</p>
+<p>In the case that reconnecting fails, the daemon will not be re-used. That said, unsaved changes are by default persisted locally, so that you do not lose work. You can always reconnect to the project at a later date and Zed will restore unsaved changes.</p>
+<p>If you are struggling with connection issues, you should be able to see more information in the Zed log <code>cmd-shift-p Open Log</code>. If you are seeing things that are unexpected, please file a <a href="https://github.com/zed-industries/zed/issues/new">GitHub issue</a> or reach out in the #remoting-feedback channel in the <a href="https://zed.dev/community-links">Zed Discord</a>.</p>
+<h2 id="supported-ssh-options"><a class="header" href="#supported-ssh-options">Supported SSH Options</a></h2>
+<p>Under the hood, Zed shells out to the <code>ssh</code> binary to connect to the remote server. We create one SSH control master per project, and then use that to multiplex SSH connections for the Zed protocol itself, any terminals you open and tasks you run. We read settings from your SSH config file, but if you want to specify additional options to the SSH control master you can configure Zed to set them.</p>
+<p>When typing in the "Connect New Server" dialog, you can use bash-style quoting to pass options containing a space. Once you have created a server it will be added to the <code>"ssh_connections": []</code> array in your settings file. You can edit the settings file directly to make changes to SSH connections.</p>
+<p>Supported options:</p>
+<ul>
+<li><code>-p</code> / <code>-l</code> - these are equivalent to passing the port and the username in the host string.</li>
+<li><code>-L</code> / <code>-R</code> for port forwarding</li>
+<li><code>-i</code> - to use a specific key file</li>
+<li><code>-o</code> - to set custom options</li>
+<li><code>-J</code> / <code>-w</code> - to proxy the SSH connection</li>
+<li><code>-F</code> for specifying an <code>ssh_config</code></li>
+<li>And also... <code>-4</code>, <code>-6</code>, <code>-A</code>, <code>-B</code>, <code>-C</code>, <code>-D</code>, <code>-I</code>, <code>-K</code>, <code>-P</code>, <code>-X</code>, <code>-Y</code>, <code>-a</code>, <code>-b</code>, <code>-c</code>, <code>-i</code>, <code>-k</code>, <code>-l</code>, <code>-m</code>, <code>-o</code>, <code>-p</code>, <code>-w</code>, <code>-x</code>, <code>-y</code></li>
+</ul>
+<p>Note that we deliberately disallow some options (for example <code>-t</code> or <code>-T</code>) that Zed will set for you.</p>
+<h2 id="known-limitations"><a class="header" href="#known-limitations">Known Limitations</a></h2>
+<ul>
+<li>You can't open files from the remote Terminal by typing the <code>zed</code> command.</li>
+</ul>
+<h2 id="feedback"><a class="header" href="#feedback">Feedback</a></h2>
+<p>Please join the #remoting-feedback channel in the <a href="https://zed.dev/community-links">Zed Discord</a>.</p>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="tab-switcher.html" class="footer-button" title="Tab Switcher">
+                                <i class="fa fa-angle-left"></i>
+                                Tab Switcher
+                            </a>
+                            <a rel="next" href="dev-containers.html" class="footer-button" title="Dev Containers">
+                                Dev Containers
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/page-toc.js"></script>
+        <script src="theme/plugins.js"></script>
+
+
+        <!-- Amplitude Analytics -->
+        <script>
+          (function() {
+            var amplitudeKey = '';
+            if (amplitudeKey && amplitudeKey.indexOf('#') === -1) {
+              var script = document.createElement('script');
+              script.src = 'https://cdn.amplitude.com/script/' + amplitudeKey + '.js';
+              script.onload = function() {
+                window.amplitude.init(amplitudeKey, {
+                  fetchRemoteConfig: true,
+                  autocapture: true
+                });
+              };
+              document.head.appendChild(script);
+            }
+          })();
+        </script>
+    </div>
+    </body>
+</html>
