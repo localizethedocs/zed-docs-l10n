@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2025-12-29T09:05:53Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -617,45 +617,49 @@ msgid "[Tmux](https://github.com/dangh/zed-tmux)"
 msgstr ""
 
 #: src/languages.md:158
-msgid "[Twig](https://github.com/YussufSassi/zed-twig)"
+msgid "[Tree-sitter Query](https://github.com/vitallium/zed-tree-sitter-query)"
 msgstr ""
 
 #: src/languages.md:159
-msgid "[Typst](https://github.com/WeetHet/typst.zed)"
+msgid "[Twig](https://github.com/YussufSassi/zed-twig)"
 msgstr ""
 
 #: src/languages.md:160
-msgid "[Unison](https://github.com/zetashift/unison-zed)"
+msgid "[Typst](https://github.com/WeetHet/typst.zed)"
 msgstr ""
 
 #: src/languages.md:161
-msgid "[UnoCSS](https://github.com/bajrangCoder/zed-unocss)"
+msgid "[Unison](https://github.com/zetashift/unison-zed)"
 msgstr ""
 
 #: src/languages.md:162
-msgid "[Vlang](https://github.com/lv37/zed-v)"
+msgid "[UnoCSS](https://github.com/bajrangCoder/zed-unocss)"
 msgstr ""
 
 #: src/languages.md:163
-msgid "[Vala](https://github.com/FyraLabs/zed-vala)"
+msgid "[Vlang](https://github.com/lv37/zed-v)"
 msgstr ""
 
 #: src/languages.md:164
-msgid "[Vale](https://github.com/koozz/zed-vale)"
+msgid "[Vala](https://github.com/FyraLabs/zed-vala)"
 msgstr ""
 
 #: src/languages.md:165
-msgid "[Verilog](https://github.com/someone13574/zed-verilog-extension)"
+msgid "[Vale](https://github.com/koozz/zed-vale)"
 msgstr ""
 
 #: src/languages.md:166
-msgid "[VHS](https://github.com/eth0net/zed-vhs)"
+msgid "[Verilog](https://github.com/someone13574/zed-verilog-extension)"
 msgstr ""
 
 #: src/languages.md:167
-msgid "[Wgsl](https://github.com/luan/zed-wgsl)"
+msgid "[VHS](https://github.com/eth0net/zed-vhs)"
 msgstr ""
 
 #: src/languages.md:168
+msgid "[Wgsl](https://github.com/luan/zed-wgsl)"
+msgstr ""
+
+#: src/languages.md:169
 msgid "[WIT](https://github.com/valentinegb/zed-wit)"
 msgstr ""

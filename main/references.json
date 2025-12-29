@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-23 21:23:28 +0000",
-        "hash" : "ca478226677e5f7190a5d8933277522780faaaf7",
-        "title" : "Associate devcontainer.json with JSONC language (#45593)"
+        "date" : "2025-12-27 23:29:36 +0000",
+        "hash" : "2cad6c8ef1bc4b3d92c6f787339d469e7817ee3b",
+        "title" : "svg_preview: Detect SVG in single-file mode by checking file name (#45747)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2025-12-23 21:23:28 +0000",
-        "hash" : "ca478226677e5f7190a5d8933277522780faaaf7",
-        "title" : "Associate devcontainer.json with JSONC language (#45593)"
+        "date" : "2025-12-27 23:29:36 +0000",
+        "hash" : "2cad6c8ef1bc4b3d92c6f787339d469e7817ee3b",
+        "title" : "svg_preview: Detect SVG in single-file mode by checking file name (#45747)"
       }
     }
   },
