@@ -1,0 +1,511 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/typescript.md:1
+msgid "TypeScript"
+msgstr ""
+
+#: src/languages/typescript.md:3
+msgid "TypeScript and TSX support are available natively in Zed."
+msgstr ""
+
+#: src/languages/typescript.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-typescript](https://github.com/tree-"
+"sitter/tree-sitter-typescript)"
+msgstr ""
+
+#: src/languages/typescript.md:6
+msgid "Language Server: [yioneko/vtsls](https://github.com/yioneko/vtsls)"
+msgstr ""
+
+#: src/languages/typescript.md:7
+msgid ""
+"Alternate Language Server: [typescript-language-server/typescript-language-"
+"server](https://github.com/typescript-language-server/typescript-language-"
+"server)"
+msgstr ""
+
+#: src/languages/typescript.md:8
+msgid ""
+"Debug Adapter: [vscode-js-debug](https://github.com/microsoft/vscode-js-"
+"debug)"
+msgstr ""
+
+#: src/languages/typescript.md:14
+msgid "Language servers"
+msgstr ""
+
+#: src/languages/typescript.md:16
+msgid ""
+"By default Zed uses [vtsls](https://github.com/yioneko/vtsls) for "
+"TypeScript, TSX, and JavaScript files. You can configure the use of "
+"[typescript-language-server](https://github.com/typescript-language-server/"
+"typescript-language-server) per language in your settings file:"
+msgstr ""
+
+#: src/languages/typescript.md:21 src/languages/typescript.md:39
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/typescript.md:22 src/languages/typescript.md:40
+msgid "\"TypeScript\""
+msgstr ""
+
+#: src/languages/typescript.md:23 src/languages/typescript.md:26
+#: src/languages/typescript.md:29
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/typescript.md:23 src/languages/typescript.md:26
+#: src/languages/typescript.md:29 src/languages/typescript.md:104
+msgid "\"typescript-language-server\""
+msgstr ""
+
+#: src/languages/typescript.md:23 src/languages/typescript.md:26
+#: src/languages/typescript.md:29
+msgid "\"!vtsls\""
+msgstr ""
+
+#: src/languages/typescript.md:23 src/languages/typescript.md:26
+#: src/languages/typescript.md:29
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/typescript.md:25
+msgid "\"TSX\""
+msgstr ""
+
+#: src/languages/typescript.md:28 src/languages/typescript.md:219
+msgid "\"JavaScript\""
+msgstr ""
+
+#: src/languages/typescript.md:35
+msgid ""
+"Prettier will also be used for TypeScript files by default. To disable this:"
+msgstr ""
+
+#: src/languages/typescript.md:41
+msgid "\"prettier\""
+msgstr ""
+
+#: src/languages/typescript.md:41
+msgid "\"allowed\""
+msgstr ""
+
+#: src/languages/typescript.md:43
+msgid "//...\n"
+msgstr ""
+
+#: src/languages/typescript.md:48
+msgid "Using the Tailwind CSS Language Server with TypeScript"
+msgstr ""
+
+#: src/languages/typescript.md:50
+msgid ""
+"To get all the features (autocomplete, linting, etc.) from the [Tailwind CSS "
+"language server](https://github.com/tailwindlabs/tailwindcss-intellisense/"
+"tree/HEAD/packages/tailwindcss-language-server#readme) in vanilla TypeScript "
+"files (`.ts`), you can customize the `classRegex` field under it in your "
+"`settings.json`:"
+msgstr ""
+
+#: src/languages/typescript.md:54 src/languages/typescript.md:82
+#: src/languages/typescript.md:103 src/languages/typescript.md:128
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/typescript.md:55
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/typescript.md:56 src/languages/typescript.md:84
+#: src/languages/typescript.md:130
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/typescript.md:57
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/typescript.md:58
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/typescript.md:59
+msgid "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:60
+msgid ""
+"\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
+"\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:61
+msgid ""
+"\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:62
+msgid "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:63
+msgid "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:64
+msgid "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:65
+msgid "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:66
+msgid "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:67
+msgid ""
+"\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
+msgstr ""
+
+#: src/languages/typescript.md:76
+msgid "Large projects"
+msgstr ""
+
+#: src/languages/typescript.md:78
+msgid ""
+"`vtsls` may run out of memory on very large projects. We default the limit "
+"to 8092 (8 GiB) vs. the default of 3072 but this may not be sufficient for "
+"you:"
+msgstr ""
+
+#: src/languages/typescript.md:83 src/languages/typescript.md:129
+msgid "\"vtsls\""
+msgstr ""
+
+#: src/languages/typescript.md:85 src/languages/typescript.md:156
+msgid ""
+"// For TypeScript:\n"
+"        \"typescript\""
+msgstr ""
+
+#: src/languages/typescript.md:86 src/languages/typescript.md:88
+msgid "\"tsserver\""
+msgstr ""
+
+#: src/languages/typescript.md:86 src/languages/typescript.md:88
+msgid "\"maxTsServerMemory\""
+msgstr ""
+
+#: src/languages/typescript.md:87 src/languages/typescript.md:131
+msgid ""
+"// For JavaScript:\n"
+"        \"javascript\""
+msgstr ""
+
+#: src/languages/typescript.md:95
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/languages/typescript.md:97
+msgid ""
+"Zed sets the following initialization options to make the language server "
+"send back inlay hints (that is, when Zed has inlay hints enabled in the "
+"settings)."
+msgstr ""
+
+#: src/languages/typescript.md:99
+msgid ""
+"You can override these settings in your Zed `settings.json` when using "
+"`typescript-language-server`:"
+msgstr ""
+
+#: src/languages/typescript.md:105
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/typescript.md:106
+msgid "\"preferences\""
+msgstr ""
+
+#: src/languages/typescript.md:107
+msgid "\"includeInlayParameterNameHints\""
+msgstr ""
+
+#: src/languages/typescript.md:107 src/languages/typescript.md:135
+#: src/languages/typescript.md:160
+msgid "\"all\""
+msgstr ""
+
+#: src/languages/typescript.md:108
+msgid "\"includeInlayParameterNameHintsWhenArgumentMatchesName\""
+msgstr ""
+
+#: src/languages/typescript.md:109
+msgid "\"includeInlayFunctionParameterTypeHints\""
+msgstr ""
+
+#: src/languages/typescript.md:110
+msgid "\"includeInlayVariableTypeHints\""
+msgstr ""
+
+#: src/languages/typescript.md:111
+msgid "\"includeInlayVariableTypeHintsWhenTypeMatchesName\""
+msgstr ""
+
+#: src/languages/typescript.md:112
+msgid "\"includeInlayPropertyDeclarationTypeHints\""
+msgstr ""
+
+#: src/languages/typescript.md:113
+msgid "\"includeInlayFunctionLikeReturnTypeHints\""
+msgstr ""
+
+#: src/languages/typescript.md:114
+msgid "\"includeInlayEnumMemberValueHints\""
+msgstr ""
+
+#: src/languages/typescript.md:122
+msgid ""
+"See [typescript-language-server inlayhints documentation](https://github.com/"
+"typescript-language-server/typescript-language-server?tab=readme-ov-"
+"file#inlay-hints-textdocumentinlayhint) for more information."
+msgstr ""
+
+#: src/languages/typescript.md:124
+msgid "When using `vtsls`:"
+msgstr ""
+
+#: src/languages/typescript.md:133 src/languages/typescript.md:158
+msgid "\"inlayHints\""
+msgstr ""
+
+#: src/languages/typescript.md:134 src/languages/typescript.md:159
+msgid "\"parameterNames\""
+msgstr ""
+
+#: src/languages/typescript.md:135 src/languages/typescript.md:139
+#: src/languages/typescript.md:142 src/languages/typescript.md:146
+#: src/languages/typescript.md:149 src/languages/typescript.md:152
+#: src/languages/typescript.md:160 src/languages/typescript.md:164
+#: src/languages/typescript.md:167 src/languages/typescript.md:171
+#: src/languages/typescript.md:174 src/languages/typescript.md:177
+msgid "\"enabled\""
+msgstr ""
+
+#: src/languages/typescript.md:136 src/languages/typescript.md:161
+msgid "\"suppressWhenArgumentMatchesName\""
+msgstr ""
+
+#: src/languages/typescript.md:138 src/languages/typescript.md:163
+msgid "\"parameterTypes\""
+msgstr ""
+
+#: src/languages/typescript.md:141 src/languages/typescript.md:166
+msgid "\"variableTypes\""
+msgstr ""
+
+#: src/languages/typescript.md:143 src/languages/typescript.md:168
+msgid "\"suppressWhenTypeMatchesName\""
+msgstr ""
+
+#: src/languages/typescript.md:145 src/languages/typescript.md:170
+msgid "\"propertyDeclarationTypes\""
+msgstr ""
+
+#: src/languages/typescript.md:148 src/languages/typescript.md:173
+msgid "\"functionLikeReturnTypes\""
+msgstr ""
+
+#: src/languages/typescript.md:151 src/languages/typescript.md:176
+msgid "\"enumMemberValues\""
+msgstr ""
+
+#: src/languages/typescript.md:187
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/typescript.md:189
+msgid ""
+"Zed supports debugging TypeScript code out of the box with `vscode-js-"
+"debug`. The following can be debugged without writing additional "
+"configuration:"
+msgstr ""
+
+#: src/languages/typescript.md:192
+msgid "Tasks from `package.json`"
+msgstr ""
+
+#: src/languages/typescript.md:193
+msgid ""
+"Tests written using several popular frameworks (Jest, Mocha, Vitest, "
+"Jasmine, Bun, Node)"
+msgstr ""
+
+#: src/languages/typescript.md:195
+msgid ""
+"Run <code class=\"hljs\">debugger: start</code> (<kbd "
+"class=\"keybinding\">f4|f4</kbd>) to see a contextual list of these "
+"predefined debug tasks."
+msgstr ""
+
+#: src/languages/typescript.md:197
+msgid ""
+"**Note:** Bun test is automatically detected when `@types/bun` is present in "
+"`package.json`."
+msgstr ""
+
+#: src/languages/typescript.md:199
+msgid ""
+"**Note:** Node test is automatically detected when `@types/node` is present "
+"in `package.json` (requires Node.js 20+)."
+msgstr ""
+
+#: src/languages/typescript.md:201
+msgid ""
+"As for all languages, configurations from `.vscode/launch.json` are also "
+"available for debugging in Zed."
+msgstr ""
+
+#: src/languages/typescript.md:203
+msgid ""
+"If your use-case isn't covered by any of these, you can take full control by "
+"adding debug configurations to `.zed/debug.json`. See below for example "
+"configurations."
+msgstr ""
+
+#: src/languages/typescript.md:205
+msgid "Configuring JavaScript debug tasks"
+msgstr ""
+
+#: src/languages/typescript.md:207
+msgid ""
+"JavaScript debugging is more complicated than other languages because there "
+"are two different environments: Node.js and the browser. `vscode-js-debug` "
+"exposes a `type` field, that you can use to specify the environment, either "
+"`node` or `chrome`."
+msgstr ""
+
+#: src/languages/typescript.md:209
+msgid ""
+"[vscode-js-debug configuration documentation](https://github.com/microsoft/"
+"vscode-js-debug/blob/main/OPTIONS.md)"
+msgstr ""
+
+#: src/languages/typescript.md:211
+msgid "Attach debugger to a server running in web browser (`npx serve`)"
+msgstr ""
+
+#: src/languages/typescript.md:213
+msgid ""
+"Given an externally-ran web server (e.g., with `npx serve` or `npx live-"
+"server`) one can attach to it and open it with a browser."
+msgstr ""
+
+#: src/languages/typescript.md:218
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/typescript.md:218
+msgid "\"Launch Chrome (TypeScript)\""
+msgstr ""
+
+#: src/languages/typescript.md:219
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/typescript.md:220
+msgid "\"type\""
+msgstr ""
+
+#: src/languages/typescript.md:220
+msgid "\"chrome\""
+msgstr ""
+
+#: src/languages/typescript.md:221
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/typescript.md:221
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/typescript.md:222
+msgid "\"url\""
+msgstr ""
+
+#: src/languages/typescript.md:222
+msgid "\"http://localhost:5500\""
+msgstr ""
+
+#: src/languages/typescript.md:223
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/typescript.md:223
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/languages/typescript.md:224
+msgid "\"webRoot\""
+msgstr ""
+
+#: src/languages/typescript.md:224
+msgid "\"${ZED_WORKTREE_ROOT}\""
+msgstr ""
+
+#: src/languages/typescript.md:225
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/typescript.md:226
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/typescript.md:226
+msgid "\"npx\""
+msgstr ""
+
+#: src/languages/typescript.md:227
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/typescript.md:227
+msgid "\"tsc\""
+msgstr ""
+
+#: src/languages/typescript.md:229
+msgid "\"skipFiles\""
+msgstr ""
+
+#: src/languages/typescript.md:229
+msgid "\"<node_internals>/**\""
+msgstr ""
+
+#: src/languages/typescript.md:234
+msgid "See also"
+msgstr ""
+
+#: src/languages/typescript.md:236
+msgid ""
+"[Zed Yarn documentation](./yarn.md) for a walkthrough of configuring your "
+"project to use Yarn."
+msgstr ""
+
+#: src/languages/typescript.md:237
+msgid "[Zed Deno documentation](./deno.md)"
+msgstr ""

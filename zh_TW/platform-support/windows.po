@@ -1,0 +1,165 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/windows.md:1
+msgid "Zed on Windows"
+msgstr ""
+
+#: src/windows.md:3
+msgid "Installing Zed"
+msgstr ""
+
+#: src/windows.md:5
+msgid ""
+"Get the latest stable builds via [the download page](https://zed.dev/"
+"download). If you want to download our preview build, you can find it on its "
+"[releases page](https://zed.dev/releases/preview). After the first manual "
+"installation, Zed will periodically check for install updates."
+msgstr ""
+
+#: src/windows.md:7
+msgid ""
+"You can also build zed from source, see [these docs](https://zed.dev/docs/"
+"development/windows) for instructions."
+msgstr ""
+
+#: src/windows.md:9
+msgid "Package managers"
+msgstr ""
+
+#: src/windows.md:11
+msgid "Additionally, you can install Zed using winget:"
+msgstr ""
+
+#: src/windows.md:17
+msgid "Uninstall"
+msgstr "解除安裝"
+
+#: src/windows.md:19
+msgid ""
+"Installed via installer: Use `Settings` → `Apps` → `Installed apps`, search "
+"for Zed, and click Uninstall."
+msgstr ""
+
+#: src/windows.md:20
+msgid ""
+"Built from source: Remove the build output directory you created (e.g., your "
+"target/install folder)."
+msgstr ""
+
+#: src/windows.md:22
+msgid ""
+"Your settings and extensions live in your user profile. When uninstalling, "
+"you can choose to keep or remove them."
+msgstr ""
+
+#: src/windows.md:24
+msgid "Remote Development (SSH)"
+msgstr ""
+
+#: src/windows.md:26
+msgid ""
+"Zed supports remote development on Windows through both SSH and WSL. You can "
+"connect to remote servers via SSH or work with files inside WSL "
+"distributions directly from Zed."
+msgstr ""
+
+#: src/windows.md:28
+msgid ""
+"For detailed instructions on setting up and using remote development "
+"features, including SSH configuration, WSL setup, and troubleshooting, see "
+"the [Remote Development documentation](./remote-development.md)."
+msgstr ""
+
+#: src/windows.md:30
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/windows.md:32
+msgid "Zed fails to start or shows a blank window"
+msgstr ""
+
+#: src/windows.md:34
+msgid ""
+"Check that your hardware and operating system version are compatible with "
+"Zed. See our [installation guide](./installation.md) for more information."
+msgstr ""
+
+#: src/windows.md:35
+msgid ""
+"Update your GPU drivers from your GPU vendor (Intel/AMD/NVIDIA/Qualcomm)."
+msgstr ""
+
+#: src/windows.md:36
+msgid ""
+"Ensure hardware acceleration is enabled in Windows and not blocked by "
+"third‑party software."
+msgstr ""
+
+#: src/windows.md:37
+msgid ""
+"Try launching Zed with no extensions or custom settings to isolate conflicts."
+msgstr ""
+
+#: src/windows.md:39
+msgid "Terminal issues"
+msgstr ""
+
+#: src/windows.md:41
+msgid ""
+"If activation scripts don’t run, update to the latest version and verify "
+"your shell profile files are not exiting early. For Git operations, confirm "
+"Git Bash or PowerShell is available and on PATH."
+msgstr ""
+
+#: src/windows.md:43
+msgid "SSH remoting problems"
+msgstr ""
+
+#: src/windows.md:45
+msgid ""
+"When prompted for credentials, use the graphical askpass dialog. If it "
+"doesn’t appear, check for credential manager conflicts and that GUI prompts "
+"aren’t blocked by your terminal."
+msgstr ""
+
+#: src/windows.md:47
+msgid "Graphics issues"
+msgstr ""
+
+#: src/windows.md:49
+msgid "Zed fails to open / degraded performance"
+msgstr ""
+
+#: src/windows.md:51
+msgid ""
+"Zed requires a DirectX 11 compatible GPU to run. If Zed fails to open, your "
+"GPU may not meet the minimum requirements."
+msgstr ""
+
+#: src/windows.md:53
+msgid "To check if your GPU supports DirectX 11, run the following command:"
+msgstr ""
+
+#: src/windows.md:59
+msgid ""
+"This will open the DirectX Diagnostic Tool, which shows the DirectX version "
+"your GPU supports under `System` → `System Information` → `DirectX Version`."
+msgstr ""
+
+#: src/windows.md:61
+msgid ""
+"If you're running Zed inside a virtual machine, it will use the emulated "
+"adapter provided by your VM. While Zed will work in this environment, "
+"performance may be degraded."
+msgstr ""

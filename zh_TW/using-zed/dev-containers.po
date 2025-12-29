@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/dev-containers.md:1
+msgid "Dev Containers"
+msgstr ""
+
+#: src/dev-containers.md:3
+msgid ""
+"Dev Containers provide a consistent, reproducible development environment by "
+"defining your project's dependencies, tools, and settings in a container "
+"configuration."
+msgstr ""
+
+#: src/dev-containers.md:5
+msgid ""
+"If your repository includes a `.devcontainer/devcontainer.json` file, Zed "
+"can open a project inside a development container."
+msgstr ""
+
+#: src/dev-containers.md:7
+msgid "Requirements"
+msgstr ""
+
+#: src/dev-containers.md:9
+msgid ""
+"Docker must be installed and available in your `PATH`. Zed requires the "
+"`docker` command to be present. If you use Podman, you can alias it to "
+"`docker` (e.g., `alias docker=podman`)."
+msgstr ""
+
+#: src/dev-containers.md:10
+msgid ""
+"Your project must contain a `.devcontainer/devcontainer.json` directory/file."
+msgstr ""
+
+#: src/dev-containers.md:12
+msgid "Using Dev Containers in Zed"
+msgstr ""
+
+#: src/dev-containers.md:14
+msgid "Automatic prompt"
+msgstr ""
+
+#: src/dev-containers.md:16
+msgid ""
+"When you open a project that contains the `.devcontainer/devcontainer.json` "
+"directory/file, Zed will display a prompt asking whether to open the project "
+"inside the dev container. Choosing \"Open in Container\" will:"
+msgstr ""
+
+#: src/dev-containers.md:18
+msgid "Build the dev container image (if needed)."
+msgstr ""
+
+#: src/dev-containers.md:19
+msgid "Launch the container."
+msgstr ""
+
+#: src/dev-containers.md:20
+msgid "Reopen the project connected to the container environment."
+msgstr ""
+
+#: src/dev-containers.md:22
+msgid "Manual open"
+msgstr ""
+
+#: src/dev-containers.md:24
+msgid ""
+"If you dismiss the prompt or want to reopen the project inside a container "
+"later, you can use Zed's command palette to run the \"Project: Open Remote\" "
+"command and select the option to open the project in a dev container. "
+"Alternatively, you can reach for the Remote Projects modal (through the <kbd "
+"class=\"keybinding\">ctrl-cmd-shift-o|alt-ctrl-shift-o</kbd> binding) and "
+"choose the \"Connect Dev Container\" option."
+msgstr ""
+
+#: src/dev-containers.md:27
+msgid "Editing the dev container configuration"
+msgstr ""
+
+#: src/dev-containers.md:29
+msgid ""
+"If you modify `.devcontainer/devcontainer.json`, Zed does not currently "
+"rebuild or reload the container automatically. After changing configuration:"
+msgstr ""
+
+#: src/dev-containers.md:31
+msgid ""
+"Stop or kill the existing container manually (e.g., via `docker kill "
+"<container>`)."
+msgstr ""
+
+#: src/dev-containers.md:32
+msgid "Reopen the project in the container."
+msgstr ""
+
+#: src/dev-containers.md:34
+msgid "Working in a Dev Container"
+msgstr ""
+
+#: src/dev-containers.md:36
+msgid ""
+"Once connected, Zed operates inside the container environment for tasks, "
+"terminals, and language servers. Files are linked from your workspace into "
+"the container according to the dev container specification."
+msgstr ""
+
+#: src/dev-containers.md:39
+msgid "Known Limitations"
+msgstr ""
+
+#: src/dev-containers.md:41
+msgid "**Note:** This feature is still in development."
+msgstr ""
+
+#: src/dev-containers.md:43
+msgid ""
+"**Extensions:** Zed does not yet manage extensions separately for container "
+"environments. The host's extensions are used as-is."
+msgstr ""
+
+#: src/dev-containers.md:44
+msgid ""
+"**Port forwarding:** Only the `appPort` field is supported. `forwardPorts` "
+"and other advanced port-forwarding features are not implemented."
+msgstr ""
+
+#: src/dev-containers.md:45
+msgid ""
+"**Configuration changes:** Updates to `devcontainer.json` do not trigger "
+"automatic rebuilds or reloads; containers must be manually restarted."
+msgstr ""
+
+#: src/dev-containers.md:47
+msgid "See also"
+msgstr ""
+
+#: src/dev-containers.md:49
+msgid ""
+"[Remote Development](./remote-development.md) for connecting to remote "
+"servers over SSH."
+msgstr ""
+
+#: src/dev-containers.md:50
+msgid "[Tasks](./tasks.md) for running commands in the integrated terminal."
+msgstr ""

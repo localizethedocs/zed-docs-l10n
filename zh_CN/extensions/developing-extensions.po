@@ -1,0 +1,377 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/developing-extensions.md:1
+msgid "Developing Extensions"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:3
+msgid "Extension Features"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:5
+msgid "Extensions are able to provide the following features to Zed:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:7
+msgid "[Languages](./languages.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:8
+msgid "[Debuggers](./debugger-extensions.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:9
+msgid "[Themes](./themes.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:10
+msgid "[Icon Themes](./icon-themes.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:11
+msgid "[Slash Commands](./slash-commands.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:12
+msgid "[MCP Servers](./mcp-extensions.md)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:14
+msgid "Developing an Extension Locally"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:16
+msgid ""
+"Before starting to develop an extension for Zed, be sure to [install Rust "
+"via rustup](https://www.rust-lang.org/tools/install)."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:18
+msgid ""
+"Rust must be installed via rustup. If you have Rust installed via homebrew "
+"or otherwise, installing dev extensions will not work."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:20
+msgid ""
+"When developing an extension, you can use it in Zed without needing to "
+"publish it by installing it as a _dev extension_."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:22
+msgid ""
+"From the extensions page, click the `Install Dev Extension` button (or the "
+"<code class=\"hljs\">zed: install dev extension</code> action) and select "
+"the directory containing your extension."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:24
+msgid ""
+"If you need to troubleshoot, you can check the Zed.log (<code "
+"class=\"hljs\">zed: open log</code>) for additional output. For debug "
+"output, close and relaunch zed with the `zed --foreground` from the command "
+"line which show more verbose INFO level logging."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:26
+msgid ""
+"If you already have the published version of the extension installed, the "
+"published version will be uninstalled prior to the installation of the dev "
+"extension. After successful installation, the `Extensions` page will "
+"indicate that the upstream extension is \"Overridden by dev extension\"."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:28
+msgid "Directory Structure of a Zed Extension"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:30
+msgid ""
+"A Zed extension is a Git repository that contains an `extension.toml`. This "
+"file must contain some basic information about the extension:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:33
+msgid ""
+"```toml\n"
+"id = \"my-extension\"\n"
+"name = \"My extension\"\n"
+"version = \"0.0.1\"\n"
+"schema_version = 1\n"
+"authors = [\"Your Name <you@example.com>\"]\n"
+"description = \"My cool extension\"\n"
+"repository = \"https://github.com/your-name/my-zed-extension\"\n"
+"```"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:43
+msgid ""
+"In addition to this, there are several other optional files and directories "
+"that can be used to add functionality to a Zed extension. An example "
+"directory structure of an extension that provides all capabilities is as "
+"follows:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:59
+msgid "WebAssembly"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:61
+msgid ""
+"Procedural parts of extensions are written in Rust and compiled to "
+"WebAssembly. To develop an extension that includes custom code, include a "
+"`Cargo.toml` like this:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:63
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"my-extension\"\n"
+"version = \"0.0.1\"\n"
+"edition = \"2021\"\n"
+"\n"
+"[lib]\n"
+"crate-type = [\"cdylib\"]\n"
+"\n"
+"[dependencies]\n"
+"zed_extension_api = \"0.1.0\"\n"
+"```"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:76
+msgid ""
+"Use the latest version of the [`zed_extension_api`](https://crates.io/crates/"
+"zed_extension_api) available on crates.io. Make sure it's still [compatible "
+"with Zed versions](https://github.com/zed-industries/zed/blob/main/crates/"
+"extension_api#compatible-zed-versions) you want to support."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:78
+msgid ""
+"In the `src/lib.rs` file in your Rust crate you will need to define a struct "
+"for your extension and implement the `Extension` trait, as well as use the "
+"`register_extension!` macro to register your extension:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:84
+msgid "// ... state\n"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:88
+msgid "// ...\n"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:94
+msgid ""
+"`stdout`/`stderr` is forwarded directly to the Zed process. In order to see "
+"`println!`/`dbg!` output from your extension, you can start Zed in your "
+"terminal with a `--foreground` flag."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:96
+msgid "Forking and cloning the repo"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:98
+msgid "Fork the repo"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:100
+msgid ""
+"Note: It is very helpful if you fork the `zed-industries/extensions` repo to "
+"a personal GitHub account instead of a GitHub organization, as this allows "
+"Zed staff to push any needed changes to your PR to expedite the publishing "
+"process."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:102
+msgid "Clone the repo to your local machine"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:105
+msgid ""
+"# Substitute the url of your fork here:\n"
+"# git clone https://github.com/zed-industries/extensions\n"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:112
+msgid "Extension License Requirements"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:114
+msgid ""
+"As of October 1st, 2025, extension repositories must include a license. The "
+"following licenses are accepted:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:117
+msgid "[Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:118
+msgid "[BSD 3-Clause](https://opensource.org/license/bsd-3-clause)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:119
+msgid "[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:120
+msgid "[MIT](https://opensource.org/license/mit)"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:122
+msgid ""
+"This allows us to distribute the resulting binary produced from your "
+"extension code to our users. Without a valid license, the pull request to "
+"add or update your extension in the following steps will fail CI."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:125
+msgid ""
+"Your license file should be at the root of your extension repository. Any "
+"filename that has `LICENCE` or `LICENSE` as a prefix (case insensitive) will "
+"be inspected to ensure it matches one of the accepted licenses. See the "
+"[license validation source code](https://github.com/zed-industries/"
+"extensions/blob/main/src/lib/license.js)."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:127
+msgid ""
+"This license requirement applies only to your extension code itself (the "
+"code that gets compiled into the extension binary). It does not apply to any "
+"tools your extension may download or interact with, such as language servers "
+"or other external dependencies. If your repository contains both extension "
+"code and other projects (like a language server), you are not required to "
+"relicense those other projects—only the extension code needs to be one of "
+"the aforementioned accepted licenses."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:131
+msgid "Publishing your extension"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:133
+msgid ""
+"To publish an extension, open a PR to [the `zed-industries/extensions` repo]"
+"(https://github.com/zed-industries/extensions)."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:135
+msgid "In your PR, do the following:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:137
+msgid ""
+"Add your extension as a Git submodule within the `extensions/` directory"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:144
+msgid ""
+"All extension submodules must use HTTPS URLs and not SSH URLS (`git@github."
+"com`)."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:146
+msgid ""
+"Add a new entry to the top-level `extensions.toml` file containing your "
+"extension:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:148
+msgid ""
+"```toml\n"
+"[my-extension]\n"
+"submodule = \"extensions/my-extension\"\n"
+"version = \"0.0.1\"\n"
+"```"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:154
+msgid ""
+"If your extension is in a subdirectory within the submodule you can use the "
+"`path` field to point to where the extension resides."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:156
+msgid ""
+"Run `pnpm sort-extensions` to ensure `extensions.toml` and `.gitmodules` are "
+"sorted"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:158
+msgid ""
+"Once your PR is merged, the extension will be packaged and published to the "
+"Zed extension registry."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:160
+msgid ""
+"Extension IDs and names should not contain `zed` or `Zed`, since they are "
+"all Zed extensions."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:162
+msgid "Updating an extension"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:164
+msgid ""
+"To update an extension, open a PR to [the `zed-industries/extensions` repo]"
+"(https://github.com/zed-industries/extensions)."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:166
+msgid "In your PR do the following:"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:168
+msgid ""
+"Update the extension's submodule to the commit of the new version. For this, "
+"you can run"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:171
+msgid "# From the root of the repository:\n"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:175
+msgid ""
+"to update your extension to the latest commit available in your remote "
+"repository."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:177
+msgid "Update the `version` field for the extension in `extensions.toml`"
+msgstr ""
+
+#: src/extensions/developing-extensions.md:178
+msgid ""
+"Make sure the `version` matches the one set in `extension.toml` at the "
+"particular commit."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:180
+msgid ""
+"If you'd like to automate this process, there is a [community GitHub Action]"
+"(https://github.com/huacnlee/zed-extension-action) you can use."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:182
+msgid ""
+"**Note:** If your extension repository has a different license, you'll need "
+"to update it to be one of the [accepted extension licenses](#extension-"
+"license-requirements) before publishing your update."
+msgstr ""

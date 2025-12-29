@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/development/release-notes.md:1
+msgid "Release Notes"
+msgstr ""
+
+#: src/development/release-notes.md:3
+msgid ""
+"Whenever you open a pull request, the body is automatically populated based "
+"on this [pull request template](https://github.com/zed-industries/zed/blob/"
+"main/.github/pull_request_template.md)."
+msgstr ""
+
+#: src/development/release-notes.md:13
+msgid ""
+"On Wednesdays, we run a [`get-preview-channel-changes`](https://github.com/"
+"zed-industries/zed/blob/main/script/get-preview-channel-changes) script that "
+"scrapes `Release Notes` lines from pull requests landing in preview, as "
+"documented in our [Release](https://zed.dev/docs/development/release-notes) "
+"docs."
+msgstr ""
+
+#: src/development/release-notes.md:15
+msgid ""
+"The script outputs everything below the `Release Notes` line, including "
+"additional data such as the pull request author (if not a Zed team member) "
+"and a link to the pull request. If you use `N/A`, the script skips your pull "
+"request entirely."
+msgstr ""
+
+#: src/development/release-notes.md:18
+msgid "Guidelines for crafting your `Release Notes` line(s)"
+msgstr ""
+
+#: src/development/release-notes.md:20
+msgid ""
+"A `Release Notes` line should only be written if the user can see or feel "
+"the difference in Zed."
+msgstr ""
+
+#: src/development/release-notes.md:21
+msgid ""
+"A `Release Notes` line should be written such that a Zed user can understand "
+"what the change is. Don't assume a user knows technical editor developer "
+"lingo; phrase your change in language they understand as a user of a text "
+"editor."
+msgstr ""
+
+#: src/development/release-notes.md:23
+msgid ""
+"If you want to include technical details about your pull request for other "
+"team members to see, do so above the `Release Notes` line."
+msgstr ""
+
+#: src/development/release-notes.md:24
+msgid "Changes to docs should be labeled as `N/A`."
+msgstr ""
+
+#: src/development/release-notes.md:25
+msgid ""
+"If your pull request adds/changes a setting or a keybinding, always mention "
+"that setting or keybinding. Don't make the user dig into docs or the pull "
+"request to find this information (although it should be included in docs as "
+"well)."
+msgstr ""
+
+#: src/development/release-notes.md:27
+msgid "For pull requests that are reverts:"
+msgstr ""
+
+#: src/development/release-notes.md:28
+msgid ""
+"If the item being reverted **has already been shipped**, include a `Release "
+"Notes` line explaining why we reverted, as this is a breaking change."
+msgstr ""
+
+#: src/development/release-notes.md:29
+msgid ""
+"If the item being reverted **hasn't been shipped**, edit the original PR's "
+"`Release Notes` line to be `N/A`; otherwise, it will be included and the "
+"compiler of the release notes may not know to skip it, leading to a "
+"potentially-awkward situation where we are stating we shipped something we "
+"actually didn't."
+msgstr ""

@@ -1,0 +1,86 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/csharp.md:1
+msgid "C\\#"
+msgstr ""
+
+#: src/languages/csharp.md:3
+msgid "Note language name is \"CSharp\" for settings not \"C#'"
+msgstr ""
+
+#: src/languages/csharp.md:5
+msgid ""
+"C# support is available through the [C# extension](https://github.com/zed-"
+"extensions/csharp)."
+msgstr ""
+
+#: src/languages/csharp.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-c-sharp](https://github.com/tree-"
+"sitter/tree-sitter-c-sharp)"
+msgstr ""
+
+#: src/languages/csharp.md:8
+msgid ""
+"Language Server: [OmniSharp/omnisharp-roslyn](https://github.com/OmniSharp/"
+"omnisharp-roslyn)"
+msgstr ""
+
+#: src/languages/csharp.md:10
+msgid "Configuration"
+msgstr "組態"
+
+#: src/languages/csharp.md:12
+msgid "The `OmniSharp` binary can be configured in a Zed settings file with:"
+msgstr ""
+
+#: src/languages/csharp.md:16
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/csharp.md:17
+msgid "\"omnisharp\""
+msgstr ""
+
+#: src/languages/csharp.md:18
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/csharp.md:19
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/csharp.md:19
+msgid "\"/path/to/OmniSharp\""
+msgstr ""
+
+#: src/languages/csharp.md:20
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/csharp.md:20
+msgid "\"optional\""
+msgstr ""
+
+#: src/languages/csharp.md:20
+msgid "\"additional\""
+msgstr ""
+
+#: src/languages/csharp.md:20
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/csharp.md:20
+msgid "\"-lsp\""
+msgstr ""

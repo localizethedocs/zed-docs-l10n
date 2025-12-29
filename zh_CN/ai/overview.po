@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/overview.md:1
+msgid "AI"
+msgstr ""
+
+#: src/ai/overview.md:3
+msgid "Learn how to get started using AI with Zed and all its capabilities."
+msgstr ""
+
+#: src/ai/overview.md:5
+msgid "Setting up AI in Zed"
+msgstr ""
+
+#: src/ai/overview.md:7
+msgid ""
+"[Configuration](./configuration.md): Learn how to set up different language "
+"model providers like Anthropic, OpenAI, Ollama, Google AI, and more."
+msgstr ""
+
+#: src/ai/overview.md:9
+msgid ""
+"[External Agents](./external-agents.md): Learn how to plug in your favorite "
+"agent into Zed."
+msgstr ""
+
+#: src/ai/overview.md:11
+msgid ""
+"[Subscription](./subscription.md): Learn about Zed's hosted models and other "
+"billing-related information."
+msgstr ""
+
+#: src/ai/overview.md:13
+msgid ""
+"[Privacy and Security](./privacy-and-security.md): Understand how Zed "
+"handles privacy and security with AI features."
+msgstr ""
+
+#: src/ai/overview.md:15
+msgid "Agentic Editing"
+msgstr ""
+
+#: src/ai/overview.md:17
+msgid ""
+"[Agent Panel](./agent-panel.md): Create and manage interactions with LLM "
+"agents."
+msgstr ""
+
+#: src/ai/overview.md:19
+msgid "[Rules](./rules.md): How to define rules for AI interactions."
+msgstr ""
+
+#: src/ai/overview.md:21
+msgid "[Tools](./tools.md): Explore the tools that power Zed's built-in agent."
+msgstr ""
+
+#: src/ai/overview.md:23
+msgid ""
+"[Model Context Protocol](./mcp.md): Learn about how to configure and use MCP "
+"servers."
+msgstr ""
+
+#: src/ai/overview.md:25
+msgid ""
+"[Inline Assistant](./inline-assistant.md): Discover how to use AI to "
+"generate inline transformations directly within a file or terminal."
+msgstr ""
+
+#: src/ai/overview.md:27
+msgid "Edit Prediction"
+msgstr ""
+
+#: src/ai/overview.md:29
+msgid ""
+"[Edit Prediction](./edit-prediction.md): Learn about Zed's AI prediction "
+"feature that helps autocomplete your code."
+msgstr ""
+
+#: src/ai/overview.md:31
+msgid "Text Threads"
+msgstr ""
+
+#: src/ai/overview.md:33
+msgid ""
+"[Text Threads](./text-threads.md): Learn about an editor-based interface for "
+"interacting with language models."
+msgstr ""

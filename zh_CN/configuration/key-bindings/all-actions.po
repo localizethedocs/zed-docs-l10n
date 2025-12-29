@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/all-actions.md:1
+msgid "All Actions"
+msgstr ""
+
+#: src/all-actions.md:8
+msgid ""
+"NOTE: This does **not** wait for asynchronous actions to complete before "
+"running the next action.<br> Keymap Name: <code>action::Sequence</code><br>"
+msgstr ""
+
+#: src/all-actions.md:356
+msgid ""
+"Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
+"<code>app_menu::ActivateMenuLeft</code><br>"
+msgstr ""
+
+#: src/all-actions.md:364
+msgid ""
+"Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
+"<code>app_menu::ActivateMenuRight</code><br>"
+msgstr ""
+
+#: src/all-actions.md:372
+msgid ""
+"Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
+"<code>app_menu::OpenApplicationMenu</code><br>"
+msgstr ""
+
+#: src/all-actions.md:582
+msgid ""
+"Use `collab_panel::OpenSelectedChannelNotes` to open the channel notes for "
+"the selected channel in the collab panel."
+msgstr ""
+
+#: src/all-actions.md:585
+msgid ""
+"If you want to open a specific channel, use `zed::OpenZedUrl` with a channel "
+"notes URL - can be copied via \"Copy link to section\" in the context menu "
+"of the channel notes buffer. These URLs look like `https://zed.dev/channel/"
+"channel-name-CHANNEL_ID/notes`.<br> Keymap Name: <code>collab::"
+"OpenChannelNotes</code><br>"
+msgstr ""
+
+#: src/all-actions.md:661
+msgid ""
+"Use `collab::OpenChannelNotes` to open the channel notes for the current "
+"call.<br> Keymap Name: <code>collab_panel::OpenSelectedChannelNotes</"
+"code><br>"
+msgstr ""

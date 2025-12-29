@@ -1,0 +1,644 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/SUMMARY.md:1
+msgid "Summary"
+msgstr ""
+
+#: src/SUMMARY.md:3
+msgid "Welcome"
+msgstr ""
+
+#: src/SUMMARY.md:5
+msgid "Getting Started"
+msgstr ""
+
+#: src/SUMMARY.md:6
+msgid "Installation"
+msgstr "安裝"
+
+#: src/SUMMARY.md:7
+msgid "Update"
+msgstr "更新"
+
+#: src/SUMMARY.md:8
+msgid "Uninstall"
+msgstr "解除安裝"
+
+#: src/SUMMARY.md:9
+msgid "Authenticate"
+msgstr ""
+
+#: src/SUMMARY.md:10
+msgid "Telemetry"
+msgstr ""
+
+#: src/SUMMARY.md:11
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/SUMMARY.md:13 src/SUMMARY.md:69
+msgid "Configuration"
+msgstr "組態"
+
+#: src/SUMMARY.md:15
+msgid "Configuring Zed"
+msgstr ""
+
+#: src/SUMMARY.md:16
+msgid "Configuring Languages"
+msgstr ""
+
+#: src/SUMMARY.md:17
+msgid "Toolchains"
+msgstr "工具鏈"
+
+#: src/SUMMARY.md:18
+msgid "Key bindings"
+msgstr ""
+
+#: src/SUMMARY.md:19
+msgid "All Actions"
+msgstr ""
+
+#: src/SUMMARY.md:20
+msgid "Snippets"
+msgstr ""
+
+#: src/SUMMARY.md:21
+msgid "Themes"
+msgstr "主題"
+
+#: src/SUMMARY.md:22
+msgid "Icon Themes"
+msgstr "圖示主題"
+
+#: src/SUMMARY.md:23
+msgid "Visual Customization"
+msgstr ""
+
+#: src/SUMMARY.md:24
+msgid "Vim Mode"
+msgstr "Vim 模式"
+
+#: src/SUMMARY.md:25
+msgid "Helix Mode"
+msgstr "Helix 模式"
+
+#: src/SUMMARY.md:26
+msgid "Privacy and Security"
+msgstr ""
+
+#: src/SUMMARY.md:27
+msgid "Worktree Trust"
+msgstr ""
+
+#: src/SUMMARY.md:28
+msgid "AI Improvement"
+msgstr ""
+
+#: src/SUMMARY.md:33
+msgid "Using Zed"
+msgstr "使用 Zed"
+
+#: src/SUMMARY.md:35
+msgid "Multibuffers"
+msgstr ""
+
+#: src/SUMMARY.md:36
+msgid "Command Palette"
+msgstr "命令選擇區"
+
+#: src/SUMMARY.md:37
+msgid "Command-line Interface"
+msgstr ""
+
+#: src/SUMMARY.md:38
+msgid "Outline Panel"
+msgstr "大綱面板"
+
+#: src/SUMMARY.md:39
+msgid "Code Completions"
+msgstr "程式碼補全"
+
+#: src/SUMMARY.md:40
+msgid "Collaboration"
+msgstr ""
+
+#: src/SUMMARY.md:41
+msgid "Channels"
+msgstr ""
+
+#: src/SUMMARY.md:42
+msgid "Contacts and Private Calls"
+msgstr ""
+
+#: src/SUMMARY.md:43
+msgid "Git"
+msgstr ""
+
+#: src/SUMMARY.md:44
+msgid "Debugger"
+msgstr ""
+
+#: src/SUMMARY.md:45
+msgid "Diagnostics"
+msgstr "診斷"
+
+#: src/SUMMARY.md:46
+msgid "Tasks"
+msgstr ""
+
+#: src/SUMMARY.md:47
+msgid "Tab Switcher"
+msgstr "頁籤切換器"
+
+#: src/SUMMARY.md:48
+msgid "Remote Development"
+msgstr "遠端開發"
+
+#: src/SUMMARY.md:49
+msgid "Dev Containers"
+msgstr ""
+
+#: src/SUMMARY.md:50
+msgid "Environment Variables"
+msgstr "環境變數"
+
+#: src/SUMMARY.md:51
+msgid "REPL"
+msgstr ""
+
+#: src/SUMMARY.md:53
+msgid "Platform Support"
+msgstr "平臺支援"
+
+#: src/SUMMARY.md:55 src/SUMMARY.md:178
+msgid "Windows"
+msgstr ""
+
+#: src/SUMMARY.md:56 src/SUMMARY.md:177
+msgid "Linux"
+msgstr ""
+
+#: src/SUMMARY.md:58
+msgid "AI"
+msgstr ""
+
+#: src/SUMMARY.md:60 src/SUMMARY.md:79
+msgid "Overview"
+msgstr "概覽"
+
+#: src/SUMMARY.md:61
+msgid "Agent Panel"
+msgstr ""
+
+#: src/SUMMARY.md:62
+msgid "Tools"
+msgstr ""
+
+#: src/SUMMARY.md:63
+msgid "External Agents"
+msgstr ""
+
+#: src/SUMMARY.md:64
+msgid "Inline Assistant"
+msgstr ""
+
+#: src/SUMMARY.md:65
+msgid "Edit Prediction"
+msgstr ""
+
+#: src/SUMMARY.md:66
+msgid "Text Threads"
+msgstr ""
+
+#: src/SUMMARY.md:67
+msgid "Rules"
+msgstr ""
+
+#: src/SUMMARY.md:68
+msgid "Model Context Protocol"
+msgstr ""
+
+#: src/SUMMARY.md:70
+msgid "LLM Providers"
+msgstr ""
+
+#: src/SUMMARY.md:71
+msgid "Agent Settings"
+msgstr ""
+
+#: src/SUMMARY.md:72
+msgid "Subscription"
+msgstr ""
+
+#: src/SUMMARY.md:73
+msgid "Models"
+msgstr ""
+
+#: src/SUMMARY.md:74
+msgid "Plans and Usage"
+msgstr ""
+
+#: src/SUMMARY.md:75
+msgid "Billing"
+msgstr ""
+
+#: src/SUMMARY.md:77
+msgid "Extensions"
+msgstr "擴充功能"
+
+#: src/SUMMARY.md:80
+msgid "Installing Extensions"
+msgstr "安裝擴充功能"
+
+#: src/SUMMARY.md:81
+msgid "Developing Extensions"
+msgstr "開發擴充功能"
+
+#: src/SUMMARY.md:82
+msgid "Extension Capabilities"
+msgstr ""
+
+#: src/SUMMARY.md:83
+msgid "Language Extensions"
+msgstr "語言擴充功能"
+
+#: src/SUMMARY.md:84
+msgid "Debugger Extensions"
+msgstr "除錯器擴充功能"
+
+#: src/SUMMARY.md:85
+msgid "Theme Extensions"
+msgstr "主題擴充功能"
+
+#: src/SUMMARY.md:86
+msgid "Icon Theme Extensions"
+msgstr "圖示主題擴充功能"
+
+#: src/SUMMARY.md:87
+msgid "Slash Command Extensions"
+msgstr "斜線命令擴充功能"
+
+#: src/SUMMARY.md:88
+msgid "Agent Server Extensions"
+msgstr ""
+
+#: src/SUMMARY.md:89
+msgid "MCP Server Extensions"
+msgstr "MCP 伺服器擴充功能"
+
+#: src/SUMMARY.md:91
+msgid "Coming From..."
+msgstr ""
+
+#: src/SUMMARY.md:93
+msgid "VS Code"
+msgstr "VS Code"
+
+#: src/SUMMARY.md:94
+msgid "IntelliJ IDEA"
+msgstr "IntelliJ IDEA"
+
+#: src/SUMMARY.md:95
+msgid "PyCharm"
+msgstr "PyCharm"
+
+#: src/SUMMARY.md:96
+msgid "WebStorm"
+msgstr "WebStorm"
+
+#: src/SUMMARY.md:97
+msgid "RustRover"
+msgstr "RustRover"
+
+#: src/SUMMARY.md:99
+msgid "Language Support"
+msgstr ""
+
+#: src/SUMMARY.md:101
+msgid "All Languages"
+msgstr "所有語言"
+
+#: src/SUMMARY.md:102
+msgid "Ansible"
+msgstr ""
+
+#: src/SUMMARY.md:103
+msgid "AsciiDoc"
+msgstr ""
+
+#: src/SUMMARY.md:104
+msgid "Astro"
+msgstr ""
+
+#: src/SUMMARY.md:105
+msgid "Bash"
+msgstr ""
+
+#: src/SUMMARY.md:106
+msgid "Biome"
+msgstr ""
+
+#: src/SUMMARY.md:107
+msgid "C"
+msgstr ""
+
+#: src/SUMMARY.md:108
+msgid "C++"
+msgstr ""
+
+#: src/SUMMARY.md:109
+msgid "C#"
+msgstr ""
+
+#: src/SUMMARY.md:110
+msgid "Clojure"
+msgstr ""
+
+#: src/SUMMARY.md:111
+msgid "CSS"
+msgstr ""
+
+#: src/SUMMARY.md:112
+msgid "Dart"
+msgstr ""
+
+#: src/SUMMARY.md:113
+msgid "Deno"
+msgstr ""
+
+#: src/SUMMARY.md:114
+msgid "Diff"
+msgstr ""
+
+#: src/SUMMARY.md:115
+msgid "Docker"
+msgstr ""
+
+#: src/SUMMARY.md:116
+msgid "Elixir"
+msgstr ""
+
+#: src/SUMMARY.md:117
+msgid "Elm"
+msgstr ""
+
+#: src/SUMMARY.md:118
+msgid "Emmet"
+msgstr ""
+
+#: src/SUMMARY.md:119
+msgid "Erlang"
+msgstr ""
+
+#: src/SUMMARY.md:120
+msgid "Fish"
+msgstr ""
+
+#: src/SUMMARY.md:121
+msgid "GDScript"
+msgstr ""
+
+#: src/SUMMARY.md:122
+msgid "Gleam"
+msgstr ""
+
+#: src/SUMMARY.md:123
+msgid "GLSL"
+msgstr ""
+
+#: src/SUMMARY.md:124
+msgid "Go"
+msgstr ""
+
+#: src/SUMMARY.md:125
+msgid "Groovy"
+msgstr ""
+
+#: src/SUMMARY.md:126
+msgid "Haskell"
+msgstr ""
+
+#: src/SUMMARY.md:127
+msgid "Helm"
+msgstr ""
+
+#: src/SUMMARY.md:128
+msgid "HTML"
+msgstr ""
+
+#: src/SUMMARY.md:129
+msgid "Java"
+msgstr ""
+
+#: src/SUMMARY.md:130
+msgid "JavaScript"
+msgstr ""
+
+#: src/SUMMARY.md:131
+msgid "Julia"
+msgstr ""
+
+#: src/SUMMARY.md:132
+msgid "JSON"
+msgstr ""
+
+#: src/SUMMARY.md:133
+msgid "Jsonnet"
+msgstr ""
+
+#: src/SUMMARY.md:134
+msgid "Kotlin"
+msgstr ""
+
+#: src/SUMMARY.md:135
+msgid "Lua"
+msgstr ""
+
+#: src/SUMMARY.md:136
+msgid "Luau"
+msgstr ""
+
+#: src/SUMMARY.md:137
+msgid "Makefile"
+msgstr ""
+
+#: src/SUMMARY.md:138
+msgid "Markdown"
+msgstr ""
+
+#: src/SUMMARY.md:139
+msgid "Nim"
+msgstr ""
+
+#: src/SUMMARY.md:140
+msgid "OCaml"
+msgstr ""
+
+#: src/SUMMARY.md:141
+msgid "OpenTofu"
+msgstr ""
+
+#: src/SUMMARY.md:142
+msgid "PHP"
+msgstr ""
+
+#: src/SUMMARY.md:143
+msgid "PowerShell"
+msgstr ""
+
+#: src/SUMMARY.md:144
+msgid "Prisma"
+msgstr ""
+
+#: src/SUMMARY.md:145
+msgid "Proto"
+msgstr ""
+
+#: src/SUMMARY.md:146
+msgid "PureScript"
+msgstr ""
+
+#: src/SUMMARY.md:147
+msgid "Python"
+msgstr ""
+
+#: src/SUMMARY.md:148
+msgid "R"
+msgstr ""
+
+#: src/SUMMARY.md:149
+msgid "Rego"
+msgstr ""
+
+#: src/SUMMARY.md:150
+msgid "ReStructuredText"
+msgstr ""
+
+#: src/SUMMARY.md:151
+msgid "Racket"
+msgstr ""
+
+#: src/SUMMARY.md:152
+msgid "Roc"
+msgstr ""
+
+#: src/SUMMARY.md:153
+msgid "Ruby"
+msgstr ""
+
+#: src/SUMMARY.md:154
+msgid "Rust"
+msgstr ""
+
+#: src/SUMMARY.md:155
+msgid "Scala"
+msgstr ""
+
+#: src/SUMMARY.md:156
+msgid "Scheme"
+msgstr ""
+
+#: src/SUMMARY.md:157
+msgid "Shell Script"
+msgstr ""
+
+#: src/SUMMARY.md:158
+msgid "SQL"
+msgstr ""
+
+#: src/SUMMARY.md:159
+msgid "Svelte"
+msgstr ""
+
+#: src/SUMMARY.md:160
+msgid "Swift"
+msgstr ""
+
+#: src/SUMMARY.md:161
+msgid "Tailwind CSS"
+msgstr ""
+
+#: src/SUMMARY.md:162
+msgid "Terraform"
+msgstr ""
+
+#: src/SUMMARY.md:163
+msgid "TOML"
+msgstr ""
+
+#: src/SUMMARY.md:164
+msgid "TypeScript"
+msgstr ""
+
+#: src/SUMMARY.md:165
+msgid "Uiua"
+msgstr ""
+
+#: src/SUMMARY.md:166
+msgid "Vue"
+msgstr ""
+
+#: src/SUMMARY.md:167
+msgid "XML"
+msgstr ""
+
+#: src/SUMMARY.md:168
+msgid "YAML"
+msgstr ""
+
+#: src/SUMMARY.md:169
+msgid "Yara"
+msgstr ""
+
+#: src/SUMMARY.md:170
+msgid "Yarn"
+msgstr ""
+
+#: src/SUMMARY.md:171
+msgid "Zig"
+msgstr ""
+
+#: src/SUMMARY.md:173 src/SUMMARY.md:175
+msgid "Developing Zed"
+msgstr "開發 Zed"
+
+#: src/SUMMARY.md:176
+msgid "macOS"
+msgstr ""
+
+#: src/SUMMARY.md:179
+msgid "FreeBSD"
+msgstr ""
+
+#: src/SUMMARY.md:180
+msgid "Using Debuggers"
+msgstr ""
+
+#: src/SUMMARY.md:181
+msgid "Performance"
+msgstr ""
+
+#: src/SUMMARY.md:182
+msgid "Glossary"
+msgstr ""
+
+#: src/SUMMARY.md:183
+msgid "Release Notes"
+msgstr ""
+
+#: src/SUMMARY.md:184
+msgid "Debugging Crashes"
+msgstr ""

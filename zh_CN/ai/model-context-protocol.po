@@ -1,0 +1,423 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/mcp.md:1
+msgid "Model Context Protocol"
+msgstr ""
+
+#: src/ai/mcp.md:3
+msgid ""
+"Zed uses the [Model Context Protocol](https://modelcontextprotocol.io/) to "
+"interact with context servers."
+msgstr ""
+
+#: src/ai/mcp.md:5
+msgid ""
+"The Model Context Protocol (MCP) is an open protocol that enables seamless "
+"integration between LLM applications and external data sources and tools. "
+"Whether you're building an AI-powered IDE, enhancing a chat interface, or "
+"creating custom AI workflows, MCP provides a standardized way to connect "
+"LLMs with the context they need."
+msgstr ""
+
+#: src/ai/mcp.md:7
+msgid ""
+"Check out the [Anthropic news post](https://www.anthropic.com/news/model-"
+"context-protocol) and the [Zed blog post](https://zed.dev/blog/mcp) for a "
+"general intro to MCP."
+msgstr ""
+
+#: src/ai/mcp.md:9
+msgid "Installing MCP Servers"
+msgstr ""
+
+#: src/ai/mcp.md:11
+msgid "As Extensions"
+msgstr ""
+
+#: src/ai/mcp.md:13
+msgid ""
+"One of the ways you can use MCP servers in Zed is by exposing them as an "
+"extension. Check out the [MCP Server Extensions](../extensions/mcp-"
+"extensions.md) page to learn how to create your own."
+msgstr ""
+
+#: src/ai/mcp.md:16
+msgid ""
+"Thanks to our awesome community, many MCP servers have already been added as "
+"extensions. You can check which ones are available via any of these routes:"
+msgstr ""
+
+#: src/ai/mcp.md:19
+msgid "[the Zed website](https://zed.dev/extensions?filter=context-servers)"
+msgstr ""
+
+#: src/ai/mcp.md:20
+msgid ""
+"in the app, open the Command Palette and run the `zed: extensions` action"
+msgstr ""
+
+#: src/ai/mcp.md:21
+msgid ""
+"in the app, go to the Agent Panel's top-right menu and look for the \"View "
+"Server Extensions\" menu item"
+msgstr ""
+
+#: src/ai/mcp.md:23
+msgid "In any case, here are some popular available servers:"
+msgstr ""
+
+#: src/ai/mcp.md:25
+msgid "[Context7](https://zed.dev/extensions/context7-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:26
+msgid "[GitHub](https://zed.dev/extensions/github-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:27
+msgid "[Puppeteer](https://zed.dev/extensions/puppeteer-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:28
+msgid "[Gem](https://zed.dev/extensions/gem)"
+msgstr ""
+
+#: src/ai/mcp.md:29
+msgid "[Brave Search](https://zed.dev/extensions/brave-search-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:30
+msgid "[Prisma](https://github.com/aqrln/prisma-mcp-zed)"
+msgstr ""
+
+#: src/ai/mcp.md:31
+msgid ""
+"[Framelink Figma](https://zed.dev/extensions/framelink-figma-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:32
+msgid "[Linear](https://zed.dev/extensions/linear-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:33
+msgid "[Resend](https://zed.dev/extensions/resend-mcp-server)"
+msgstr ""
+
+#: src/ai/mcp.md:35
+msgid "As Custom Servers"
+msgstr ""
+
+#: src/ai/mcp.md:37
+msgid ""
+"Creating an extension is not the only way to use MCP servers in Zed. You can "
+"connect them by adding their commands directly to your `settings.json`, like "
+"so:"
+msgstr ""
+
+#: src/ai/mcp.md:42 src/ai/mcp.md:107
+msgid "\"context_servers\""
+msgstr ""
+
+#: src/ai/mcp.md:43
+msgid "\"local-mcp-server\""
+msgstr ""
+
+#: src/ai/mcp.md:44
+msgid "\"command\""
+msgstr ""
+
+#: src/ai/mcp.md:44
+msgid "\"some-command\""
+msgstr ""
+
+#: src/ai/mcp.md:45
+msgid "\"args\""
+msgstr ""
+
+#: src/ai/mcp.md:45
+msgid "\"arg-1\""
+msgstr ""
+
+#: src/ai/mcp.md:45
+msgid "\"arg-2\""
+msgstr ""
+
+#: src/ai/mcp.md:46
+msgid "\"env\""
+msgstr ""
+
+#: src/ai/mcp.md:48
+msgid "\"remote-mcp-server\""
+msgstr ""
+
+#: src/ai/mcp.md:49
+msgid "\"url\""
+msgstr ""
+
+#: src/ai/mcp.md:49
+msgid "\"custom\""
+msgstr ""
+
+#: src/ai/mcp.md:50
+msgid "\"headers\""
+msgstr ""
+
+#: src/ai/mcp.md:50
+msgid "\"Authorization\""
+msgstr ""
+
+#: src/ai/mcp.md:50
+msgid "\"Bearer <token>\""
+msgstr ""
+
+#: src/ai/mcp.md:56
+msgid ""
+"Alternatively, you can also add a custom server by accessing the Agent "
+"Panel's Settings view (also accessible via the `agent: open settings` "
+"action). From there, you can add it through the modal that appears when you "
+"click the \"Add Custom Server\" button."
+msgstr ""
+
+#: src/ai/mcp.md:59
+msgid "Using MCP Servers"
+msgstr ""
+
+#: src/ai/mcp.md:61
+msgid "Configuration Check"
+msgstr ""
+
+#: src/ai/mcp.md:63
+msgid ""
+"Regardless of how you've installed MCP servers, whether as an extension or "
+"adding them directly, most servers out there still require some sort of "
+"configuration as part of the setup process."
+msgstr ""
+
+#: src/ai/mcp.md:65
+msgid ""
+"In the case of extensions, after installing it, Zed will pop up a modal "
+"displaying what is required for you to properly set it up. For example, the "
+"GitHub MCP extension requires you to add a [Personal Access Token](https://"
+"docs.github.com/en/authentication/keeping-your-account-and-data-secure/"
+"managing-your-personal-access-tokens)."
+msgstr ""
+
+#: src/ai/mcp.md:68
+msgid ""
+"In the case of custom servers, make sure you check the provider "
+"documentation to determine what type of command, arguments, and environment "
+"variables need to be added to the JSON."
+msgstr ""
+
+#: src/ai/mcp.md:70
+msgid ""
+"To check if your MCP server is properly configured, go to the Agent Panel's "
+"settings view and watch the indicator dot next to its name. If they're "
+"running correctly, the indicator will be green and its tooltip will say "
+"\"Server is active\". If not, other colors and tooltip messages will "
+"indicate what is happening."
+msgstr ""
+
+#: src/ai/mcp.md:74
+msgid "Agent Panel Usage"
+msgstr ""
+
+#: src/ai/mcp.md:76
+msgid ""
+"Once installation is complete, you can return to the Agent Panel and start "
+"prompting."
+msgstr ""
+
+#: src/ai/mcp.md:78
+msgid ""
+"Some models are better than others when it comes to picking up tools from "
+"MCP servers. Mentioning your server by name always helps the model to pick "
+"it up."
+msgstr ""
+
+#: src/ai/mcp.md:81
+msgid ""
+"However, if you want to _ensure_ a given MCP server will be used, you can "
+"create [a custom profile](./agent-panel.md#custom-profiles) where all built-"
+"in tools (or the ones that could cause conflicts with the server's tools) "
+"are turned off and only the tools coming from the MCP server are turned on."
+msgstr ""
+
+#: src/ai/mcp.md:83
+msgid ""
+"As an example, [the Dagger team suggests](https://container-use.com/agent-"
+"integrations#zed) doing that with their [Container Use MCP server](https://"
+"zed.dev/extensions/mcp-server-container-use):"
+msgstr ""
+
+#: src/ai/mcp.md:86
+msgid "\"agent\""
+msgstr ""
+
+#: src/ai/mcp.md:87
+msgid "\"profiles\""
+msgstr ""
+
+#: src/ai/mcp.md:88 src/ai/mcp.md:108
+msgid "\"container-use\""
+msgstr ""
+
+#: src/ai/mcp.md:89
+msgid "\"name\""
+msgstr ""
+
+#: src/ai/mcp.md:89
+msgid "\"Container Use\""
+msgstr ""
+
+#: src/ai/mcp.md:90 src/ai/mcp.md:109
+msgid "\"tools\""
+msgstr ""
+
+#: src/ai/mcp.md:91
+msgid "\"fetch\""
+msgstr ""
+
+#: src/ai/mcp.md:92
+msgid "\"thinking\""
+msgstr ""
+
+#: src/ai/mcp.md:93
+msgid "\"copy_path\""
+msgstr ""
+
+#: src/ai/mcp.md:94
+msgid "\"find_path\""
+msgstr ""
+
+#: src/ai/mcp.md:95
+msgid "\"delete_path\""
+msgstr ""
+
+#: src/ai/mcp.md:96
+msgid "\"create_directory\""
+msgstr ""
+
+#: src/ai/mcp.md:97
+msgid "\"list_directory\""
+msgstr ""
+
+#: src/ai/mcp.md:98
+msgid "\"diagnostics\""
+msgstr ""
+
+#: src/ai/mcp.md:99
+msgid "\"read_file\""
+msgstr ""
+
+#: src/ai/mcp.md:100
+msgid "\"open\""
+msgstr ""
+
+#: src/ai/mcp.md:101
+msgid "\"move_path\""
+msgstr ""
+
+#: src/ai/mcp.md:102
+msgid "\"grep\""
+msgstr ""
+
+#: src/ai/mcp.md:103
+msgid "\"edit_file\""
+msgstr ""
+
+#: src/ai/mcp.md:104
+msgid "\"terminal\""
+msgstr ""
+
+#: src/ai/mcp.md:106
+msgid "\"enable_all_context_servers\""
+msgstr ""
+
+#: src/ai/mcp.md:110
+msgid "\"environment_create\""
+msgstr ""
+
+#: src/ai/mcp.md:111
+msgid "\"environment_add_service\""
+msgstr ""
+
+#: src/ai/mcp.md:112
+msgid "\"environment_update\""
+msgstr ""
+
+#: src/ai/mcp.md:113
+msgid "\"environment_run_cmd\""
+msgstr ""
+
+#: src/ai/mcp.md:114
+msgid "\"environment_open\""
+msgstr ""
+
+#: src/ai/mcp.md:115
+msgid "\"environment_file_write\""
+msgstr ""
+
+#: src/ai/mcp.md:116
+msgid "\"environment_file_read\""
+msgstr ""
+
+#: src/ai/mcp.md:117
+msgid "\"environment_file_list\""
+msgstr ""
+
+#: src/ai/mcp.md:118
+msgid "\"environment_file_delete\""
+msgstr ""
+
+#: src/ai/mcp.md:119
+msgid "\"environment_checkpoint\""
+msgstr ""
+
+#: src/ai/mcp.md:128
+msgid "Tool Approval"
+msgstr ""
+
+#: src/ai/mcp.md:130
+msgid ""
+"Zed's Agent Panel includes the `agent.always_allow_tool_actions` setting "
+"that, if set to `false`, will require you to give permission for any editing "
+"attempt as well as tool calls coming from MCP servers."
+msgstr ""
+
+#: src/ai/mcp.md:132
+msgid ""
+"You can change this by setting this key to `true` in either your `settings."
+"json` or through the Agent Panel's settings view."
+msgstr ""
+
+#: src/ai/mcp.md:134
+msgid "External Agents"
+msgstr ""
+
+#: src/ai/mcp.md:136
+msgid ""
+"Note that for [external agents](./external-agents.md) connected through the "
+"[Agent Client Protocol](https://agentclientprotocol.com/), access to MCP "
+"servers installed from Zed may vary depending on the ACP agent "
+"implementation."
+msgstr ""
+
+#: src/ai/mcp.md:138
+msgid ""
+"Regarding the built-in ones, Claude Code and Codex both support it, and "
+"Gemini CLI does not yet. In the meantime, learn how to add MCP server "
+"support to Gemini CLI through [their documentation](https://github.com/"
+"google-gemini/gemini-cli?tab=readme-ov-file#using-mcp-servers)."
+msgstr ""

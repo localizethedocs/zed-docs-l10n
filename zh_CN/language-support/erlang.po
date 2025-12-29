@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/erlang.md:1
+msgid "Erlang"
+msgstr ""
+
+#: src/languages/erlang.md:3
+msgid ""
+"Erlang support is available through the [Erlang extension](https://github."
+"com/zed-extensions/erlang)."
+msgstr ""
+
+#: src/languages/erlang.md:5
+msgid ""
+"Tree-sitter: [WhatsApp/tree-sitter-erlang](https://github.com/WhatsApp/tree-"
+"sitter-erlang)"
+msgstr ""
+
+#: src/languages/erlang.md:6
+msgid "Language Servers:"
+msgstr ""
+
+#: src/languages/erlang.md:7
+msgid "[erlang-ls/erlang_ls](https://github.com/erlang-ls/erlang_ls)"
+msgstr ""
+
+#: src/languages/erlang.md:8
+msgid ""
+"[WhatsApp/erlang-language-platform](https://github.com/WhatsApp/erlang-"
+"language-platform)"
+msgstr ""
+
+#: src/languages/erlang.md:10
+msgid "Choosing a language server"
+msgstr ""
+
+#: src/languages/erlang.md:12
+msgid ""
+"The Erlang extension offers language server support for `erlang_ls` and "
+"`erlang-language-platform`."
+msgstr ""
+
+#: src/languages/erlang.md:14
+msgid "`erlang_ls` is enabled by default."
+msgstr ""
+
+#: src/languages/erlang.md:16
+msgid ""
+"To switch to `erlang-language-platform`, add the following to your `settings."
+"json`:"
+msgstr ""
+
+#: src/languages/erlang.md:20
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/erlang.md:21
+msgid "\"Erlang\""
+msgstr ""
+
+#: src/languages/erlang.md:22
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/erlang.md:22
+msgid "\"elp\""
+msgstr ""
+
+#: src/languages/erlang.md:22
+msgid "\"!erlang-ls\""
+msgstr ""
+
+#: src/languages/erlang.md:22
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/erlang.md:28
+msgid "See also:"
+msgstr ""
+
+#: src/languages/erlang.md:30
+msgid "[Elixir](./elixir.md)"
+msgstr ""
+
+#: src/languages/erlang.md:31
+msgid "[Gleam](./gleam.md)"
+msgstr ""

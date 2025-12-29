@@ -1,0 +1,177 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/snippets.md:1
+msgid "Snippets"
+msgstr ""
+
+#: src/snippets.md:3
+msgid ""
+"Use the <code class=\"hljs\">snippets: configure snippets</code> action to "
+"create a new snippets file or edit an existing snippets file for a specified "
+"[scope](#scopes)."
+msgstr ""
+
+#: src/snippets.md:5
+msgid ""
+"The snippets are located in `~/.config/zed/snippets` directory to which you "
+"can navigate to with the <code class=\"hljs\">snippets: open folder</code> "
+"action."
+msgstr ""
+
+#: src/snippets.md:7
+msgid "Example configuration"
+msgstr ""
+
+#: src/snippets.md:11
+msgid ""
+"// Each snippet must have a name and body, but the prefix and description "
+"are optional.\n"
+"  // The prefix is used to trigger the snippet, but when omitted then the "
+"name is used.\n"
+"  // Use placeholders like $1, $2 or ${1:defaultValue} to define tab stops.\n"
+"  // The $0 determines the final cursor position.\n"
+"  // Placeholders with the same value are linked.\n"
+"  \"Log to console\""
+msgstr ""
+
+#: src/snippets.md:17
+msgid "\"prefix\""
+msgstr ""
+
+#: src/snippets.md:17
+msgid "\"log\""
+msgstr ""
+
+#: src/snippets.md:18
+msgid "\"body\""
+msgstr ""
+
+#: src/snippets.md:18
+msgid "\"console.info(\\\"Hello, ${1:World}!\\\")\""
+msgstr ""
+
+#: src/snippets.md:18
+msgid "\"$0\""
+msgstr ""
+
+#: src/snippets.md:19
+msgid "\"description\""
+msgstr ""
+
+#: src/snippets.md:19
+msgid "\"Logs to console\""
+msgstr ""
+
+#: src/snippets.md:24
+msgid "Scopes"
+msgstr ""
+
+#: src/snippets.md:26
+msgid ""
+"The scope is determined by the language name in lowercase e.g. `python.json` "
+"for Python, `shell script.json` for Shell Script, but there are some "
+"exceptions to this rule:"
+msgstr ""
+
+#: src/snippets.md:28
+msgid "Scope"
+msgstr ""
+
+#: src/snippets.md:28
+msgid "Filename"
+msgstr ""
+
+#: src/snippets.md:30
+msgid "Global"
+msgstr ""
+
+#: src/snippets.md:30
+msgid "snippets.json"
+msgstr ""
+
+#: src/snippets.md:31
+msgid "JSX"
+msgstr ""
+
+#: src/snippets.md:31
+msgid "javascript.json"
+msgstr ""
+
+#: src/snippets.md:32
+msgid "Plain Text"
+msgstr ""
+
+#: src/snippets.md:32
+msgid "plaintext.json"
+msgstr ""
+
+#: src/snippets.md:34
+msgid ""
+"To create JSX snippets you have to use `javascript.json` snippets file, "
+"instead of `jsx.json`, but this does not apply to TSX and TypeScript which "
+"follow the above rule."
+msgstr ""
+
+#: src/snippets.md:36
+msgid "Known Limitations"
+msgstr ""
+
+#: src/snippets.md:38
+msgid "Only the first prefix is used when a list of prefixes is passed in."
+msgstr ""
+
+#: src/snippets.md:39
+msgid ""
+"Currently only the `json` snippet file format is supported, even though the "
+"`simple-completion-language-server` supports both `json` and `toml` file "
+"formats."
+msgstr ""
+
+#: src/snippets.md:41
+msgid "See also"
+msgstr ""
+
+#: src/snippets.md:43
+msgid ""
+"The `feature_paths` option in `simple-completion-language-server` is "
+"disabled by default."
+msgstr ""
+
+#: src/snippets.md:45
+msgid ""
+"If you want to enable it you can add the following to your `settings.json`:"
+msgstr ""
+
+#: src/snippets.md:49
+msgid "\"lsp\""
+msgstr ""
+
+#: src/snippets.md:50
+msgid "\"snippet-completion-server\""
+msgstr ""
+
+#: src/snippets.md:51
+msgid "\"settings\""
+msgstr ""
+
+#: src/snippets.md:52
+msgid "\"feature_paths\""
+msgstr ""
+
+#: src/snippets.md:59
+msgid ""
+"For more configuration information, see the [`simple-completion-language-"
+"server` instructions](https://github.com/zed-industries/simple-completion-"
+"language-server/tree/main)."
+msgstr ""

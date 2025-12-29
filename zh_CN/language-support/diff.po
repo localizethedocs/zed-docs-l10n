@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/diff.md:1
+msgid "Diff"
+msgstr ""
+
+#: src/languages/diff.md:3
+msgid "Diff support is available natively in Zed."
+msgstr ""
+
+#: src/languages/diff.md:5
+msgid ""
+"Tree-sitter: [zed-industries/the-mikedavis/tree-sitter-diff](https://github."
+"com/the-mikedavis/tree-sitter-diff)"
+msgstr ""
+
+#: src/languages/diff.md:7
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/diff.md:9
+msgid ""
+"Zed will not attempt to format diff files and has "
+"[`remove_trailing_whitespace_on_save`](https://zed.dev/docs/configuring-"
+"zed#remove-trailing-whitespace-on-save) and [`ensure-final-newline-on-save`]"
+"(https://zed.dev/docs/configuring-zed#ensure-final-newline-on-save) set to "
+"false."
+msgstr ""
+
+#: src/languages/diff.md:11
+msgid ""
+"Zed will automatically recognize files with `patch` and `diff` extensions as "
+"Diff files. To recognize other extensions, add them to `file_types` in your "
+"Zed settings.json:"
+msgstr ""
+
+#: src/languages/diff.md:14
+msgid "\"file_types\""
+msgstr ""
+
+#: src/languages/diff.md:15
+msgid "\"Diff\""
+msgstr ""
+
+#: src/languages/diff.md:15
+msgid "\"dif\""
+msgstr ""

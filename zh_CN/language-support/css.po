@@ -1,0 +1,68 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/css.md:1
+msgid "CSS"
+msgstr ""
+
+#: src/languages/css.md:3
+msgid "Zed has built-in support for CSS."
+msgstr ""
+
+#: src/languages/css.md:5
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-css](https://github.com/tree-sitter/"
+"tree-sitter-css)"
+msgstr ""
+
+#: src/languages/css.md:6
+msgid "Language Servers:"
+msgstr ""
+
+#: src/languages/css.md:7
+msgid ""
+"[microsoft/vscode-css-languageservice](https://github.com/microsoft/vscode-"
+"css-languageservice)"
+msgstr ""
+
+#: src/languages/css.md:8
+msgid ""
+"[tailwindcss-language-server](https://github.com/tailwindlabs/tailwindcss-"
+"intellisense)"
+msgstr ""
+
+#: src/languages/css.md:10
+msgid "Tailwind CSS"
+msgstr ""
+
+#: src/languages/css.md:12
+msgid ""
+"Zed also supports [Tailwind CSS](./tailwindcss.md) out-of-the-box for "
+"languages and frameworks like JavaScript, Astro, Svelte, and more."
+msgstr ""
+
+#: src/languages/css.md:16
+msgid "Recommended Reading"
+msgstr ""
+
+#: src/languages/css.md:18
+msgid "[HTML](./html.md)"
+msgstr ""
+
+#: src/languages/css.md:19
+msgid "[TypeScript](./typescript.md)"
+msgstr ""
+
+#: src/languages/css.md:20
+msgid "[JavaScript](./javascript.md)"
+msgstr ""

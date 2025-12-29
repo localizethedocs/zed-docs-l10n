@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/subscription.md:1
+msgid "Subscription"
+msgstr ""
+
+#: src/ai/subscription.md:3
+msgid ""
+"Zed's hosted models are offered via subscription to Zed Pro or Zed Business."
+msgstr ""
+
+#: src/ai/subscription.md:5
+msgid ""
+"Using [your own API keys](./llm-providers.md), and [external agents](./"
+"external-agents.md), is _free_ — you do not need to subscribe to a Zed plan "
+"to use AI features."
+msgstr ""
+
+#: src/ai/subscription.md:7
+msgid ""
+"See the following pages for specific aspects of our subscription offering:"
+msgstr ""
+
+#: src/ai/subscription.md:9
+msgid ""
+"[Models](./models.md): Overview of the models offered by Zed's subscriptions."
+msgstr ""
+
+#: src/ai/subscription.md:11
+msgid ""
+"[Plans and Usage](./plans-and-usage.md): Outlines Zed's plans and how usage "
+"is measured."
+msgstr ""
+
+#: src/ai/subscription.md:13
+msgid ""
+"[Billing](./billing.md): Billing policies and procedures, and how to update "
+"or view various billing settings."
+msgstr ""

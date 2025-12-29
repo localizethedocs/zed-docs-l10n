@@ -1,0 +1,154 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/tailwindcss.md:1
+msgid "Tailwind CSS"
+msgstr ""
+
+#: src/languages/tailwindcss.md:3
+msgid ""
+"Zed has built-in support for Tailwind CSS autocomplete, linting, and hover "
+"previews."
+msgstr ""
+
+#: src/languages/tailwindcss.md:5
+msgid ""
+"Language Server: [tailwindlabs/tailwindcss-intellisense](https://github.com/"
+"tailwindlabs/tailwindcss-intellisense)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:7
+msgid "Languages which can be used with Tailwind CSS in Zed:"
+msgstr ""
+
+#: src/languages/tailwindcss.md:9
+msgid "[Astro](./astro.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:10
+msgid "[CSS](./css.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:11
+msgid "[ERB](./ruby.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:12
+msgid "[Gleam](./gleam.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:13
+msgid "[HEEx](./elixir.md#heex)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:14
+msgid "[HTML](./html.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:15
+msgid "[TypeScript](./typescript.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:16
+msgid "[JavaScript](./javascript.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:17
+msgid "[PHP](./php.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:18
+msgid "[Svelte](./svelte.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:19
+msgid "[Vue](./vue.md)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:21
+msgid "Configuration"
+msgstr "組態"
+
+#: src/languages/tailwindcss.md:23
+msgid ""
+"If by default the language server isn't enough to make Tailwind work for a "
+"given language, you can configure the language server settings and add them "
+"to the `lsp` section of your `settings.json`:"
+msgstr ""
+
+#: src/languages/tailwindcss.md:27
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:28
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:29
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:30
+msgid "\"classFunctions\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:30
+msgid "\"cva\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:30
+msgid "\"cx\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:31
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:32
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:32
+msgid "\"[cls|className]\\\\s\\\\:\\\\=\\\\s\\\"([^\\\"]*)\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:40
+msgid ""
+"Refer to [the Tailwind CSS language server settings docs](https://github.com/"
+"tailwindlabs/tailwindcss-intellisense?tab=readme-ov-file#extension-settings) "
+"for more information."
+msgstr ""
+
+#: src/languages/tailwindcss.md:42
+msgid "Prettier Plugin"
+msgstr ""
+
+#: src/languages/tailwindcss.md:44
+msgid ""
+"Zed supports Prettier out of the box, which means that if you have the "
+"[Tailwind CSS Prettier plugin](https://github.com/tailwindlabs/prettier-"
+"plugin-tailwindcss) installed, adding it to your Prettier configuration will "
+"make it work automatically:"
+msgstr ""
+
+#: src/languages/tailwindcss.md:47
+msgid "// .prettierrc\n"
+msgstr ""
+
+#: src/languages/tailwindcss.md:49
+msgid "\"plugins\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:49
+msgid "\"prettier-plugin-tailwindcss\""
+msgstr ""

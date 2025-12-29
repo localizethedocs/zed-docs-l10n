@@ -1,0 +1,229 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/performance.md:1
+msgid "How to use our internal tools to profile and keep Zed fast."
+msgstr ""
+
+#: src/performance.md:3
+msgid "Rough quick CPU profiling (Flamechart)"
+msgstr ""
+
+#: src/performance.md:5
+msgid ""
+"See what the CPU spends the most time on. Strongly recommend you use [samply]"
+"(https://github.com/mstange/samply). It opens an interactive profile in the "
+"browser (specifically a local instance of [firefox_profiler](https://"
+"profiler.firefox.com/))."
+msgstr ""
+
+#: src/performance.md:9
+msgid ""
+"See [samply](https://github.com/mstange/samply)'s README on how to install "
+"and run."
+msgstr ""
+
+#: src/performance.md:11
+msgid ""
+"The profile.json does not contain any symbols. Firefox profiler can add the "
+"local symbols to the profile for for. To do that hit the upload local "
+"profile button in the top right corner."
+msgstr ""
+
+#: src/performance.md:15
+msgid "In depth CPU profiling (Tracing)"
+msgstr ""
+
+#: src/performance.md:17
+msgid ""
+"See how long each annotated function call took and its arguments (if "
+"configured)."
+msgstr ""
+
+#: src/performance.md:20
+msgid ""
+"Annotate any function you need appear in the profile with instrument. For "
+"more details see [tracing-instrument](https://docs.rs/tracing/latest/tracing/"
+"attr.instrument.html):"
+msgstr ""
+
+#: src/performance.md:31
+msgid ""
+"Then either compile Zed with `ZTRACING=1 cargo r --features tracy --"
+"release`. The release build is optional but highly recommended as like every "
+"program Zeds performance characteristics change dramatically with "
+"optimizations. You do not want to chase slowdowns that do not exist in "
+"release."
+msgstr ""
+
+#: src/performance.md:33
+msgid "One time Setup/Building the profiler:"
+msgstr ""
+
+#: src/performance.md:35
+msgid ""
+"Download the profiler: [linux x86_64](https://zed-tracy-import-miniprofiler."
+"nyc3.digitaloceanspaces.com/tracy-profiler-linux-x86_64) [macos aarch64]"
+"(https://zed-tracy-import-miniprofiler.nyc3.digitaloceanspaces.com/tracy-"
+"profiler-0.13.0-macos-aarch64)"
+msgstr ""
+
+#: src/performance.md:39 src/performance.md:70
+msgid "Alternative: Building it yourself"
+msgstr ""
+
+#: src/performance.md:41
+msgid "Clone the repo at git@github.com:wolfpld/tracy.git"
+msgstr ""
+
+#: src/performance.md:42
+msgid "`cd profiler && mkdir build && cd build`"
+msgstr ""
+
+#: src/performance.md:43 src/performance.md:74
+msgid ""
+"Run cmake to generate build files: `cmake -G Ninja -"
+"DCMAKE_BUILD_TYPE=Release ..`"
+msgstr ""
+
+#: src/performance.md:44
+msgid "Build the profiler: `ninja`"
+msgstr ""
+
+#: src/performance.md:45
+msgid ""
+"\\[Optional\\] move the profiler somewhere nice like ~/.local/bin on linux"
+msgstr ""
+
+#: src/performance.md:47
+msgid "Usage"
+msgstr ""
+
+#: src/performance.md:49
+msgid ""
+"Open the profiler (tracy-profiler), you should see zed in the list of "
+"`Discovered clients` click it. <img width=\"392\" height=\"287\" "
+"alt=\"image\" src=\"https://github.com/user-attachments/assets/"
+"b6f06fc3-6b25-41c7-ade9-558cc93d6033\" />"
+msgstr ""
+
+#: src/performance.md:52
+msgid ""
+"To find functions that take a long time follow this image: <img "
+"width=\"888\" height=\"1159\" alt=\"image\" src=\"https://github.com/user-"
+"attachments/assets/77087617-f53a-4331-863d-e59f8a5b6f0b\" />"
+msgstr ""
+
+#: src/performance.md:55
+msgid "Task/Async profiling"
+msgstr ""
+
+#: src/performance.md:57
+msgid ""
+"Get a profile of the zed foreground executor and background executors. Check "
+"if anything is blocking the foreground too long or taking too much (clock) "
+"time in the background."
+msgstr ""
+
+#: src/performance.md:61
+msgid ""
+"The profiler always runs in the background. You can save a trace from its UI "
+"or look at the results live."
+msgstr ""
+
+#: src/performance.md:64
+msgid "Setup/Building the importer:"
+msgstr ""
+
+#: src/performance.md:66
+msgid ""
+"Download the importer [linux x86_64](https://zed-tracy-import-miniprofiler."
+"nyc3.digitaloceanspaces.com/tracy-import-miniprofiler-linux-x86_64) [mac "
+"aarch64](https://zed-tracy-import-miniprofiler.nyc3.digitaloceanspaces.com/"
+"tracy-import-miniprofiler-macos-aarch64)"
+msgstr ""
+
+#: src/performance.md:72
+msgid ""
+"Clone the repo at git@github.com:zed-industries/tracy.git on v0.12.2 branch"
+msgstr ""
+
+#: src/performance.md:73
+msgid "`cd import && mkdir build && cd build`"
+msgstr ""
+
+#: src/performance.md:75
+msgid "Build the importer: `ninja`"
+msgstr ""
+
+#: src/performance.md:76
+msgid ""
+"Run the importer on the trace file: `./tracy-import-miniprofiler /path/to/"
+"trace.miniprof /path/to/output.tracy`"
+msgstr ""
+
+#: src/performance.md:77
+msgid "Open the trace in tracy:"
+msgstr ""
+
+#: src/performance.md:78
+msgid ""
+"If you're on windows download the v0.12.2 version from the releases on the "
+"upstream repo"
+msgstr ""
+
+#: src/performance.md:79
+msgid ""
+"If you're on other platforms open it on the website: https://tracy.nereid."
+"pl/ (the version might mismatch so your luck might vary, we need to host our "
+"own ideally..)"
+msgstr ""
+
+#: src/performance.md:81
+msgid "To Save a Trace:"
+msgstr ""
+
+#: src/performance.md:83
+msgid "Run the action: `zed open performance profiler`"
+msgstr ""
+
+#: src/performance.md:84
+msgid ""
+"Hit the save button. This opens a save dialog or if that fails to open the "
+"trace gets saved in your working directory."
+msgstr ""
+
+#: src/performance.md:85
+msgid ""
+"Convert the profile so it can be imported in tracy using the importer: `./"
+"tracy-import-miniprofiler <path to performance_profile.miniprof> output."
+"tracy`"
+msgstr ""
+
+#: src/performance.md:86
+msgid ""
+"Go to <https://tracy.nereid.pl/> hit the 'power button' in the top left and "
+"then open saved trace."
+msgstr ""
+
+#: src/performance.md:87
+msgid "Now zoom in to see the tasks and how long they took"
+msgstr ""
+
+#: src/performance.md:89
+msgid "Warn if function is slow"
+msgstr ""
+
+#: src/performance.md:92
+msgid "\"my_function_name\""
+msgstr ""

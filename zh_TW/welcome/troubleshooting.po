@@ -1,0 +1,246 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/troubleshooting.md:3
+msgid ""
+"This guide covers common troubleshooting techniques for Zed. Sometimes "
+"you'll be able to identify and resolve issues on your own using this "
+"information. Other times, troubleshooting means gathering the right "
+"information—logs, profiles, or reproduction steps—to help us diagnose and "
+"fix the problem."
+msgstr ""
+
+#: src/troubleshooting.md:7
+msgid ""
+"**Note**: To open the command palette, use `cmd-shift-p` on macOS or `ctrl-"
+"shift-p` on Windows / Linux."
+msgstr ""
+
+#: src/troubleshooting.md:9
+msgid "Retrieve Zed and System Information"
+msgstr ""
+
+#: src/troubleshooting.md:11
+msgid ""
+"When reporting issues or seeking help, it's useful to know your Zed version "
+"and system specifications. You can retrieve this information using the "
+"following actions from the command palette:"
+msgstr ""
+
+#: src/troubleshooting.md:13
+msgid "<code class=\"hljs\">zed: about</code>: Find your Zed version number"
+msgstr ""
+
+#: src/troubleshooting.md:14
+msgid ""
+"<code class=\"hljs\">zed: copy system specs into clipboard</code>: Populate "
+"your clipboard with Zed version number, operating system version, and "
+"hardware specs"
+msgstr ""
+
+#: src/troubleshooting.md:16
+msgid "Zed Log"
+msgstr ""
+
+#: src/troubleshooting.md:18
+msgid ""
+"Often, a good first place to look when troubleshooting any issue in Zed is "
+"the Zed log, which might contain clues about what's going wrong. You can "
+"review the most recent 1000 lines of the log by running the <code "
+"class=\"hljs\">zed: open log</code> action from the command palette. If you "
+"want to view the full file, you can reveal it in your operating system's "
+"native file manager via <code class=\"hljs\">zed: reveal log in file "
+"manager</code> from the command palette."
+msgstr ""
+
+#: src/troubleshooting.md:22
+msgid ""
+"You'll find the Zed log in the respective location on each operating system:"
+msgstr ""
+
+#: src/troubleshooting.md:24
+msgid "macOS: `~/Library/Logs/Zed/Zed.log`"
+msgstr ""
+
+#: src/troubleshooting.md:25
+msgid "Windows: `C:\\Users\\YOU\\AppData\\Local\\Zed\\logs\\Zed.log`"
+msgstr ""
+
+#: src/troubleshooting.md:26
+msgid "Linux: `~/.local/share/zed/logs/Zed.log` or `$XDG_DATA_HOME`"
+msgstr ""
+
+#: src/troubleshooting.md:28
+msgid ""
+"Note: In some cases, it might be useful to monitor the log live, such as "
+"when [developing a Zed extension](https://zed.dev/docs/extensions/developing-"
+"extensions). Example: `tail -f ~/Library/Logs/Zed/Zed.log`"
+msgstr ""
+
+#: src/troubleshooting.md:31
+msgid ""
+"The log may contain enough context to help you debug the issue yourself, or "
+"you may find specific errors that are useful when filing a [GitHub issue]"
+"(https://github.com/zed-industries/zed/issues/new/choose) or when talking to "
+"Zed staff in our [Discord server](https://zed.dev/community-links#forums-and-"
+"discussions)."
+msgstr ""
+
+#: src/troubleshooting.md:33
+msgid "Performance Issues (Profiling)"
+msgstr ""
+
+#: src/troubleshooting.md:35
+msgid ""
+"If you're running into performance issues in Zed—such as hitches, hangs, or "
+"general unresponsiveness—having a performance profile attached to your issue "
+"will help us zero in on what is getting stuck, so we can fix it."
+msgstr ""
+
+#: src/troubleshooting.md:37
+msgid "macOS"
+msgstr ""
+
+#: src/troubleshooting.md:39
+msgid ""
+"Xcode Instruments (which comes bundled with your [Xcode](https://apps.apple."
+"com/us/app/xcode/id497799835) download) is the standard tool for profiling "
+"on macOS."
+msgstr ""
+
+#: src/troubleshooting.md:41
+msgid "With Zed running, open Instruments"
+msgstr ""
+
+#: src/troubleshooting.md:42
+msgid "Select `Time Profiler` as the profiling template"
+msgstr ""
+
+#: src/troubleshooting.md:43
+msgid ""
+"In the `Time Profiler` configuration, set the target to the running Zed "
+"process"
+msgstr ""
+
+#: src/troubleshooting.md:44
+msgid "Start recording"
+msgstr ""
+
+#: src/troubleshooting.md:45
+msgid ""
+"If the performance issue occurs when performing a specific action in Zed, "
+"perform that action now"
+msgstr ""
+
+#: src/troubleshooting.md:46
+msgid "Stop recording"
+msgstr ""
+
+#: src/troubleshooting.md:47
+msgid "Save the trace file"
+msgstr ""
+
+#: src/troubleshooting.md:48
+msgid "Compress the trace file into a zip archive"
+msgstr ""
+
+#: src/troubleshooting.md:49
+msgid ""
+"File a [GitHub issue](https://github.com/zed-industries/zed/issues/new/"
+"choose) with the trace zip attached"
+msgstr ""
+
+#: src/troubleshooting.md:55
+msgid "Startup and Workspace Issues"
+msgstr ""
+
+#: src/troubleshooting.md:57
+msgid ""
+"Zed creates local SQLite databases to persist data relating to its workspace "
+"and your projects. These databases store, for instance, the tabs and panes "
+"you have open in a project, the scroll position of each open file, the list "
+"of all projects you've opened (for the recent projects modal picker), etc. "
+"You can find and explore these databases in the following locations:"
+msgstr ""
+
+#: src/troubleshooting.md:59
+msgid "macOS: `~/Library/Application Support/Zed/db`"
+msgstr ""
+
+#: src/troubleshooting.md:60
+msgid ""
+"Linux and FreeBSD: `~/.local/share/zed/db` (or within `XDG_DATA_HOME` or "
+"`FLATPAK_XDG_DATA_HOME`)"
+msgstr ""
+
+#: src/troubleshooting.md:61
+msgid "Windows: `%LOCALAPPDATA%\\Zed\\db`"
+msgstr ""
+
+#: src/troubleshooting.md:63
+msgid ""
+"The naming convention of these databases takes on the form of `0-"
+"<zed_channel>`:"
+msgstr ""
+
+#: src/troubleshooting.md:65
+msgid "Stable: `0-stable`"
+msgstr ""
+
+#: src/troubleshooting.md:66
+msgid "Preview: `0-preview`"
+msgstr ""
+
+#: src/troubleshooting.md:67
+msgid "Nightly: `0-nightly`"
+msgstr ""
+
+#: src/troubleshooting.md:68
+msgid "Dev: `0-dev`"
+msgstr ""
+
+#: src/troubleshooting.md:70
+msgid ""
+"While rare, we've seen a few cases where workspace databases became "
+"corrupted, which prevented Zed from starting. If you're experiencing startup "
+"issues, you can test whether it's workspace-related by temporarily moving "
+"the database from its location, then trying to start Zed again."
+msgstr ""
+
+#: src/troubleshooting.md:73
+msgid ""
+"**Note**: Moving the workspace database will cause Zed to create a fresh "
+"one. Your recent projects, open tabs, etc. will be reset to \"factory\"."
+msgstr ""
+
+#: src/troubleshooting.md:76
+msgid ""
+"If your issue persists after regenerating the database, please [file an "
+"issue](https://github.com/zed-industries/zed/issues/new/choose)."
+msgstr ""
+
+#: src/troubleshooting.md:78
+msgid "Language Server Issues"
+msgstr ""
+
+#: src/troubleshooting.md:80
+msgid ""
+"If you're experiencing language-server related issues, such as stale "
+"diagnostics or issues jumping to definitions, restarting the language server "
+"via <code class=\"hljs\">editor: restart language server</code> from the "
+"command palette will often resolve the issue."
+msgstr ""

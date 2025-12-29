@@ -1,0 +1,76 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/mcp-extensions.md:1
+msgid "MCP Server Extensions"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:3
+msgid ""
+"[Model Context Protocol servers](../ai/mcp.md) can be exposed as extensions "
+"for use in the Agent Panel."
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:5
+msgid "Defining MCP Extensions"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:7
+msgid ""
+"A given extension may provide one or more MCP servers. Each MCP server must "
+"be registered in the `extension.toml`:"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:14
+msgid ""
+"Then, in the Rust code for your extension, implement the "
+"`context_server_command` method on your extension:"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:32
+msgid ""
+"This method should return the command to start up an MCP server, along with "
+"any arguments or environment variables necessary for it to function."
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:34
+msgid ""
+"If you need to download the MCP server from an external source—like GitHub "
+"Releases or npm—you can also do that in this function."
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:36
+msgid "Available Extensions"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:38
+msgid ""
+"Check out all the MCP servers that have already been exposed as extensions "
+"[on Zed's site](https://zed.dev/extensions?filter=context-servers)."
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:40
+msgid ""
+"We recommend taking a look at their repositories as a way to understand how "
+"they are generally created and structured."
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:42
+msgid "Testing"
+msgstr ""
+
+#: src/extensions/mcp-extensions.md:44
+msgid ""
+"To test your new MCP server extension, you can [install it as a dev "
+"extension](./developing-extensions.md#developing-an-extension-locally)."
+msgstr ""

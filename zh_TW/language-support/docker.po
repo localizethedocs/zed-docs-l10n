@@ -1,0 +1,64 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/docker.md:1
+msgid "Docker"
+msgstr ""
+
+#: src/languages/docker.md:3
+msgid ""
+"Support for `Dockerfile` and `docker-compose.yaml` in Zed is provided by "
+"community-maintained extensions."
+msgstr ""
+
+#: src/languages/docker.md:5
+msgid "Docker Compose"
+msgstr ""
+
+#: src/languages/docker.md:7
+msgid ""
+"Docker `compose.yaml` language support in Zed is provided by the [Docker "
+"Compose extension](https://github.com/eth0net/zed-docker-compose). Please "
+"report issues to: [https://github.com/eth0net/zed-docker-compose/issues]"
+"(https://github.com/eth0net/zed-docker-compose/issues)."
+msgstr ""
+
+#: src/languages/docker.md:9
+msgid ""
+"Language Server: [microsoft/compose-language-service](https://github.com/"
+"microsoft/compose-language-service)"
+msgstr ""
+
+#: src/languages/docker.md:11
+msgid "Dockerfile"
+msgstr ""
+
+#: src/languages/docker.md:13
+msgid ""
+"`Dockerfile` language support in Zed is provided by the [Dockerfile "
+"extension](https://github.com/d1y/dockerfile.zed). Please report issues to: "
+"[https://github.com/d1y/dockerfile.zed/issues](https://github.com/d1y/"
+"dockerfile.zed/issues)."
+msgstr ""
+
+#: src/languages/docker.md:15
+msgid ""
+"Tree-sitter: [camdencheek/tree-sitter-dockerfile](https://github.com/"
+"camdencheek/tree-sitter-dockerfile)"
+msgstr ""
+
+#: src/languages/docker.md:16
+msgid ""
+"Language Server: [rcjsuen/dockerfile-language-server](https://github.com/"
+"rcjsuen/dockerfile-language-server)"
+msgstr ""

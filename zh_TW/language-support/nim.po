@@ -1,0 +1,79 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/nim.md:1
+msgid "Nim"
+msgstr ""
+
+#: src/languages/nim.md:3
+msgid ""
+"Nim language support in Zed is provided by the community-maintained [Nim "
+"extension](https://github.com/foxoman/zed-nim). Report issues to: [https://"
+"github.com/foxoman/zed-nim/issues](https://github.com/foxoman/zed-nim/issues)"
+msgstr ""
+
+#: src/languages/nim.md:6
+msgid ""
+"Tree-sitter: [alaviss/tree-sitter-nim](https://github.com/alaviss/tree-"
+"sitter-nim)"
+msgstr ""
+
+#: src/languages/nim.md:7
+msgid ""
+"Language Server: [nim-lang/langserver](https://github.com/nim-lang/"
+"langserver)"
+msgstr ""
+
+#: src/languages/nim.md:9
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/nim.md:11
+msgid ""
+"To use [arnetheduck/nph](https://github.com/arnetheduck/nph) as a formatter, "
+"follow the [nph installation instructions](https://github.com/arnetheduck/"
+"nph?tab=readme-ov-file#installation) and add this to your Zed `settings."
+"json`:"
+msgstr ""
+
+#: src/languages/nim.md:14
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/nim.md:15
+msgid "\"Nim\""
+msgstr ""
+
+#: src/languages/nim.md:16
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/nim.md:17
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/nim.md:18
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/nim.md:18
+msgid "\"nph\""
+msgstr ""
+
+#: src/languages/nim.md:19
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/nim.md:19
+msgid "\"-\""
+msgstr ""

@@ -1,0 +1,914 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/python.md:1
+msgid "How to Set Up Python in Zed"
+msgstr ""
+
+#: src/languages/python.md:3
+msgid "Python support is available natively in Zed."
+msgstr ""
+
+#: src/languages/python.md:5
+msgid ""
+"Tree-sitter: [tree-sitter-python](https://github.com/zed-industries/tree-"
+"sitter-python)"
+msgstr ""
+
+#: src/languages/python.md:6
+msgid "Language Servers:"
+msgstr ""
+
+#: src/languages/python.md:7
+msgid "[DetachHead/basedpyright](https://github.com/DetachHead/basedpyright)"
+msgstr ""
+
+#: src/languages/python.md:8
+msgid "[astral-sh/ruff](https://github.com/astral-sh/ruff)"
+msgstr ""
+
+#: src/languages/python.md:9
+msgid "[astral-sh/ty](https://github.com/astral-sh/ty)"
+msgstr ""
+
+#: src/languages/python.md:10
+msgid "[microsoft/pyright](https://github.com/microsoft/pyright)"
+msgstr ""
+
+#: src/languages/python.md:11
+msgid ""
+"[python-lsp/python-lsp-server](https://github.com/python-lsp/python-lsp-"
+"server) (PyLSP)"
+msgstr ""
+
+#: src/languages/python.md:12
+msgid "Debug Adapter: [debugpy](https://github.com/microsoft/debugpy)"
+msgstr ""
+
+#: src/languages/python.md:14
+msgid "Install Python"
+msgstr ""
+
+#: src/languages/python.md:16
+msgid "You'll need both Zed and Python installed before you can begin."
+msgstr ""
+
+#: src/languages/python.md:18
+msgid "Step 1: Install Python"
+msgstr ""
+
+#: src/languages/python.md:20
+msgid ""
+"Zed does not bundle a Python runtime, so you’ll need to install one "
+"yourself. Choose one of the following options:"
+msgstr ""
+
+#: src/languages/python.md:23
+msgid "uv (recommended)"
+msgstr ""
+
+#: src/languages/python.md:29
+msgid ""
+"To learn more, visit [Astral’s installation guide](https://docs.astral.sh/uv/"
+"getting-started/installation/)."
+msgstr ""
+
+#: src/languages/python.md:31
+msgid "Homebrew:"
+msgstr ""
+
+#: src/languages/python.md:37
+msgid ""
+"Python.org installer: Download the latest version from [python.org/downloads]"
+"(https://python.org/downloads)."
+msgstr ""
+
+#: src/languages/python.md:39
+msgid "Step 2: Verify Python Installation"
+msgstr ""
+
+#: src/languages/python.md:41
+msgid "Confirm Python is installed and available in your shell:"
+msgstr ""
+
+#: src/languages/python.md:47
+msgid "You should see an output like `Python 3.x.x`."
+msgstr ""
+
+#: src/languages/python.md:49
+msgid "Open Your First Python Project in Zed"
+msgstr ""
+
+#: src/languages/python.md:51
+msgid ""
+"Once Zed and Python are installed, open a folder containing Python code to "
+"start working."
+msgstr ""
+
+#: src/languages/python.md:53
+msgid "Step 1: Launch Zed with a Python Project"
+msgstr ""
+
+#: src/languages/python.md:55
+msgid ""
+"Open Zed. From the menu bar, choose File > Open Folder, or launch from the "
+"terminal:"
+msgstr ""
+
+#: src/languages/python.md:62
+msgid ""
+"Zed will recognize `.py` files automatically using its native tree-sitter-"
+"python parser, with no plugins or manual setup required."
+msgstr ""
+
+#: src/languages/python.md:64
+msgid "Step 2: Use the Integrated Terminal (Optional)"
+msgstr ""
+
+#: src/languages/python.md:66
+msgid ""
+"Zed includes an integrated terminal, accessible from the bottom panel. If "
+"Zed detects that your project is using a [virtual environment](#virtual-"
+"environments), it will be activated automatically in newly-created "
+"terminals. You can configure this behavior with the [`detect_venv`](../"
+"configuring-zed.md#terminal-detect_venv) setting."
+msgstr ""
+
+#: src/languages/python.md:68
+msgid "Configure Python Language Servers in Zed"
+msgstr ""
+
+#: src/languages/python.md:70
+msgid ""
+"Zed provides several Python language servers out of the box. By default, "
+"[basedpyright](https://github.com/DetachHead/basedpyright) is the primary "
+"language server, and [Ruff](https://github.com/astral-sh/ruff) is used for "
+"formatting and linting."
+msgstr ""
+
+#: src/languages/python.md:72
+msgid "Other built-in language servers are:"
+msgstr ""
+
+#: src/languages/python.md:74
+msgid ""
+"[Ty](https://docs.astral.sh/ty/)—Up-and-coming language server from Astral, "
+"built for speed."
+msgstr ""
+
+#: src/languages/python.md:75
+msgid ""
+"[Pyright](https://github.com/microsoft/pyright)—The basis for basedpyright."
+msgstr ""
+
+#: src/languages/python.md:76
+msgid ""
+"[PyLSP](https://github.com/python-lsp/python-lsp-server)—A plugin-based "
+"language server that integrates with tools like `pycodestyle`, `autopep8`, "
+"and `yapf`."
+msgstr ""
+
+#: src/languages/python.md:78
+msgid ""
+"These are disabled by default, but can be enabled in your settings. For "
+"example:"
+msgstr ""
+
+#: src/languages/python.md:82 src/languages/python.md:201
+#: src/languages/python.md:213
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/python.md:83 src/languages/python.md:202
+#: src/languages/python.md:214
+msgid "\"Python\""
+msgstr ""
+
+#: src/languages/python.md:84
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/python.md:85
+msgid ""
+"// Disable basedpyright and enable Ty, and otherwise\n"
+"        // use the default configuration.\n"
+"        \"ty\""
+msgstr ""
+
+#: src/languages/python.md:88
+msgid "\"!basedpyright\""
+msgstr ""
+
+#: src/languages/python.md:89
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/python.md:96
+msgid ""
+"See: [Working with Language Servers](https://zed.dev/docs/configuring-"
+"languages#working-with-language-servers) for more information about how to "
+"enable and disable language servers."
+msgstr ""
+
+#: src/languages/python.md:98
+msgid "Basedpyright"
+msgstr ""
+
+#: src/languages/python.md:100
+msgid ""
+"[basedpyright](https://docs.basedpyright.com/latest/) is the primary Python "
+"language server in Zed beginning with Zed v0.204.0. It provides core "
+"language server functionality like navigation (go to definition/find all "
+"references) and type checking. Compared to Pyright, it adds support for "
+"additional language server features (like inlay hints) and checking rules."
+msgstr ""
+
+#: src/languages/python.md:102
+msgid ""
+"Note that while basedpyright in isolation defaults to the `recommended` "
+"[type-checking mode](https://docs.basedpyright.com/latest/benefits-over-"
+"pyright/better-defaults/#typecheckingmode), Zed configures it to use the "
+"less-strict `standard` mode by default, which matches the behavior of "
+"Pyright. You can set the type-checking mode for your project using the "
+"`typeCheckingMode` setting in `pyrightconfig.json` or `pyproject.toml`, "
+"which will override Zed's default. Read on more for more details about how "
+"to configure basedpyright."
+msgstr ""
+
+#: src/languages/python.md:104
+msgid "Basedpyright Configuration"
+msgstr ""
+
+#: src/languages/python.md:106
+msgid ""
+"basedpyright reads configuration options from two different kinds of sources:"
+msgstr ""
+
+#: src/languages/python.md:108
+msgid ""
+"Language server settings (\"workspace configuration\"), which must be "
+"configured per-editor (using `settings.json` in Zed's case) but apply to all "
+"projects opened in that editor"
+msgstr ""
+
+#: src/languages/python.md:109
+msgid ""
+"Configuration files (`pyrightconfig.json`, `pyproject.toml`), which are "
+"editor-independent but specific to the project where they are placed"
+msgstr ""
+
+#: src/languages/python.md:111
+msgid ""
+"As a rule of thumb, options that are only relevant when using basedpyright "
+"from an editor must be set in language server settings, and options that are "
+"relevant even if you're running it [as a command-line tool](https://docs."
+"basedpyright.com/latest/configuration/command-line/) must be set in "
+"configuration files. Settings related to inlay hints are examples of the "
+"first category, and the [diagnostic category](https://docs.basedpyright.com/"
+"latest/configuration/config-files/#diagnostic-categories) settings are "
+"examples of the second category."
+msgstr ""
+
+#: src/languages/python.md:113
+msgid ""
+"Examples of both kinds of configuration are provided below. Refer to the "
+"basedpyright documentation on [language server settings](https://docs."
+"basedpyright.com/latest/configuration/language-server-settings/) and "
+"[configuration files](https://docs.basedpyright.com/latest/configuration/"
+"config-files/) for comprehensive lists of available options."
+msgstr ""
+
+#: src/languages/python.md:115
+msgid "Language server settings"
+msgstr ""
+
+#: src/languages/python.md:117
+msgid ""
+"Language server settings for basedpyright in Zed can be set in the `lsp` "
+"section of your `settings.json`."
+msgstr ""
+
+#: src/languages/python.md:119
+msgid "For example, in order to:"
+msgstr ""
+
+#: src/languages/python.md:121
+msgid ""
+"diagnose all files in the workspace instead of the only open files default"
+msgstr ""
+
+#: src/languages/python.md:122
+msgid "disable inlay hints on function arguments"
+msgstr ""
+
+#: src/languages/python.md:124
+msgid "You can use the following configuration:"
+msgstr ""
+
+#: src/languages/python.md:128 src/languages/python.md:235
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/python.md:129
+msgid "\"basedpyright\""
+msgstr ""
+
+#: src/languages/python.md:130 src/languages/python.md:238
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/python.md:131
+msgid "\"basedpyright.analysis\""
+msgstr ""
+
+#: src/languages/python.md:132
+msgid "\"diagnosticMode\""
+msgstr ""
+
+#: src/languages/python.md:132
+msgid "\"workspace\""
+msgstr ""
+
+#: src/languages/python.md:133
+msgid "\"inlayHints\""
+msgstr ""
+
+#: src/languages/python.md:134
+msgid "\"callArgumentNames\""
+msgstr ""
+
+#: src/languages/python.md:143
+msgid "Configuration files"
+msgstr ""
+
+#: src/languages/python.md:145
+msgid ""
+"basedpyright reads project-specific configuration from the `pyrightconfig."
+"json` configuration file and from the `[tool.basedpyright]` and `[tool."
+"pyright]` sections of `pyproject.toml` manifests. `pyrightconfig.json` "
+"overrides `pyproject.toml` if configuration is present in both places."
+msgstr ""
+
+#: src/languages/python.md:147
+msgid ""
+"Here's an example `pyrightconfig.json` file that configures basedpyright to "
+"use the `strict` type-checking mode and not to issue diagnostics for any "
+"files in `__pycache__` directories:"
+msgstr ""
+
+#: src/languages/python.md:151
+msgid "\"typeCheckingMode\""
+msgstr ""
+
+#: src/languages/python.md:151
+msgid "\"strict\""
+msgstr ""
+
+#: src/languages/python.md:152
+msgid "\"ignore\""
+msgstr ""
+
+#: src/languages/python.md:152
+msgid "\"**/__pycache__\""
+msgstr ""
+
+#: src/languages/python.md:156
+msgid "PyLSP"
+msgstr ""
+
+#: src/languages/python.md:158
+msgid ""
+"[python-lsp-server](https://github.com/python-lsp/python-lsp-server/), more "
+"commonly known as PyLSP, by default integrates with a number of external "
+"tools (autopep8, mccabe, pycodestyle, yapf) while others are optional and "
+"must be explicitly enabled and configured (flake8, pylint)."
+msgstr ""
+
+#: src/languages/python.md:160
+msgid ""
+"See [Python Language Server Configuration](https://github.com/python-lsp/"
+"python-lsp-server/blob/develop/CONFIGURATION.md) for more."
+msgstr ""
+
+#: src/languages/python.md:162
+msgid "Virtual Environments"
+msgstr ""
+
+#: src/languages/python.md:164
+msgid ""
+"[Virtual environments](https://docs.python.org/3/library/venv.html) are a "
+"useful tool for fixing a Python version and set of dependencies for a "
+"specific project, in a way that's isolated from other projects on the same "
+"machine. Zed has built-in support for discovering, configuring, and "
+"activating virtual environments, based on the language-agnostic concept of a "
+"[toolchain](../toolchains.md)."
+msgstr ""
+
+#: src/languages/python.md:166
+msgid ""
+"Note that if you have a global Python installation, it is also counted as a "
+"toolchain for Zed's purposes."
+msgstr ""
+
+#: src/languages/python.md:168
+msgid "Create a Virtual Environment"
+msgstr ""
+
+#: src/languages/python.md:170
+msgid ""
+"If your project doesn't have a virtual environment set up already, you can "
+"create one as follows:"
+msgstr ""
+
+#: src/languages/python.md:176
+msgid ""
+"Alternatively, if you're using `uv`, running `uv sync` will create a virtual "
+"environment the first time you run it."
+msgstr ""
+
+#: src/languages/python.md:178
+msgid "How Zed Uses Python Toolchains"
+msgstr ""
+
+#: src/languages/python.md:180
+msgid ""
+"Zed uses the selected Python toolchain for your project in the following "
+"ways:"
+msgstr ""
+
+#: src/languages/python.md:182
+msgid ""
+"Built-in language servers will be automatically configured with the path to "
+"the toolchain's Python interpreter and, if applicable, virtual environment. "
+"This is important so that they can resolve dependencies. (Note that language "
+"servers provided by extensions can't be automatically configured like this "
+"currently.)"
+msgstr ""
+
+#: src/languages/python.md:183
+msgid ""
+"Python tasks (such as pytest tests) will be run using the toolchain's Python "
+"interpreter."
+msgstr ""
+
+#: src/languages/python.md:184
+msgid ""
+"If the toolchain is a virtual environment, the environment's activation "
+"script will be run automatically when you launch a new shell in Zed's "
+"integrated terminal, giving you convenient access to the selected Python "
+"interpreter and dependency set."
+msgstr ""
+
+#: src/languages/python.md:185
+msgid ""
+"If a built-in language server is installed in the active virtual "
+"environment, that binary will be used instead of Zed's private automatically-"
+"installed binary. This also applies to debugpy."
+msgstr ""
+
+#: src/languages/python.md:187
+msgid "Selecting a Toolchain"
+msgstr ""
+
+#: src/languages/python.md:189
+msgid ""
+"For most projects, Zed will automatically select the right Python toolchain. "
+"In complex projects with multiple virtual environments, it might be "
+"necessary to override this selection. You can use the [toolchain selector]"
+"(../toolchains.md#selecting-toolchains) to pick a toolchain from the list "
+"discovered by Zed, or [specify the path to a toolchain manually](../"
+"toolchains.md#adding-toolchains-manually) if it's not on the list."
+msgstr ""
+
+#: src/languages/python.md:191
+msgid "Code Formatting & Linting"
+msgstr ""
+
+#: src/languages/python.md:193
+msgid ""
+"Zed provides the [Ruff](https://docs.astral.sh/ruff/) formatter and linter "
+"for Python code. (Specifically, Zed runs Ruff as an LSP server using the "
+"`ruff server` subcommand.) Both formatting and linting are enabled by "
+"default, including format-on-save."
+msgstr ""
+
+#: src/languages/python.md:195
+msgid "Configuring formatting"
+msgstr ""
+
+#: src/languages/python.md:197
+msgid ""
+"You can disable format-on-save for Python files in your `settings.json`:"
+msgstr ""
+
+#: src/languages/python.md:203
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/python.md:203
+msgid "\"off\""
+msgstr ""
+
+#: src/languages/python.md:209
+msgid ""
+"Alternatively, you can use the `black` command-line tool for Python "
+"formatting, while keeping Ruff enabled for linting:"
+msgstr ""
+
+#: src/languages/python.md:215
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/python.md:216
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/python.md:217
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/python.md:217
+msgid "\"black\""
+msgstr ""
+
+#: src/languages/python.md:218
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/python.md:218
+msgid "\"--stdin-filename\""
+msgstr ""
+
+#: src/languages/python.md:218
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/languages/python.md:218
+msgid "\"-\""
+msgstr ""
+
+#: src/languages/python.md:221
+msgid "// Or use `\"formatter\": null` to disable formatting entirely.\n"
+msgstr ""
+
+#: src/languages/python.md:227
+msgid "Configuring Ruff"
+msgstr ""
+
+#: src/languages/python.md:229
+msgid ""
+"Like basedpyright, Ruff reads options from both Zed's language server "
+"settings and configuration files (`ruff.toml`) when used in Zed. Unlike "
+"basedpyright, _all_ options can be configured in either of these locations, "
+"so the choice of where to put your Ruff configuration comes down to whether "
+"you want it to be shared between projects but specific to Zed (in which case "
+"you should use language server settings), or specific to one project but "
+"common to all Ruff invocations (in which case you should use `ruff.toml`)."
+msgstr ""
+
+#: src/languages/python.md:231
+msgid ""
+"Here's an example of using language server settings in Zed's `settings.json` "
+"to disable all Ruff lints in Zed (while still using Ruff as a formatter):"
+msgstr ""
+
+#: src/languages/python.md:236
+msgid "\"ruff\""
+msgstr ""
+
+#: src/languages/python.md:237
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/python.md:239
+msgid "\"exclude\""
+msgstr ""
+
+#: src/languages/python.md:239
+msgid "\"*\""
+msgstr ""
+
+#: src/languages/python.md:247
+msgid ""
+"And here's an example `ruff.toml` with linting and formatting options, "
+"adapted from the Ruff documentation:"
+msgstr ""
+
+#: src/languages/python.md:249
+msgid ""
+"```toml\n"
+"[lint]\n"
+"# Avoid enforcing line-length violations (`E501`)\n"
+"ignore = [\"E501\"]\n"
+"\n"
+"[format]\n"
+"# Use single quotes when formatting.\n"
+"quote-style = \"single\"\n"
+"```"
+msgstr ""
+
+#: src/languages/python.md:259
+msgid ""
+"For more details, refer to the Ruff documentation about [configuration files]"
+"(https://docs.astral.sh/ruff/configuration/) and [language server settings]"
+"(https://docs.astral.sh/ruff/editors/settings/), and the [list of options]"
+"(https://docs.astral.sh/ruff/settings/)."
+msgstr ""
+
+#: src/languages/python.md:261
+msgid "Embedded Language Highlighting"
+msgstr ""
+
+#: src/languages/python.md:263
+msgid ""
+"Zed supports syntax highlighting for code embedded in Python strings by "
+"adding a comment with the language name."
+msgstr ""
+
+#: src/languages/python.md:266
+msgid "# sql\n"
+msgstr ""
+
+#: src/languages/python.md:267
+msgid "\"SELECT * FROM users\""
+msgstr ""
+
+#: src/languages/python.md:268
+msgid "#sql\n"
+msgstr ""
+
+#: src/languages/python.md:270
+msgid ""
+"\"\"\"\n"
+"    SELECT *\n"
+"    FROM users\n"
+"\"\"\""
+msgstr ""
+
+#: src/languages/python.md:275
+msgid ""
+"#sql\n"
+"    \"SELECT * FROM users\""
+msgstr ""
+
+#: src/languages/python.md:280
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/python.md:282
+msgid ""
+"Zed supports Python debugging through the `debugpy` adapter. You can start "
+"with no configuration or define custom launch profiles in `.zed/debug.json`."
+msgstr ""
+
+#: src/languages/python.md:284
+msgid "Start Debugging with No Setup"
+msgstr ""
+
+#: src/languages/python.md:286
+msgid ""
+"Zed can automatically detect debuggable Python entry points. Press F4 (or "
+"run debugger: start from the Command Palette) to see available options for "
+"your current project. This works for:"
+msgstr ""
+
+#: src/languages/python.md:289
+msgid "Python scripts"
+msgstr ""
+
+#: src/languages/python.md:290
+msgid "Modules"
+msgstr ""
+
+#: src/languages/python.md:291
+msgid "pytest tests"
+msgstr ""
+
+#: src/languages/python.md:293
+msgid ""
+"Zed uses `debugpy` under the hood, but no manual adapter configuration is "
+"required."
+msgstr ""
+
+#: src/languages/python.md:295
+msgid "Define Custom Debug Configurations"
+msgstr ""
+
+#: src/languages/python.md:297
+msgid ""
+"For reusable setups, create a `.zed/debug.json` file in your project root. "
+"This gives you more control over how Zed runs and debugs your code."
+msgstr ""
+
+#: src/languages/python.md:299
+msgid ""
+"[debugpy configuration documentation](https://github.com/microsoft/debugpy/"
+"wiki/Debug-configuration-settings#launchattach-settings)"
+msgstr ""
+
+#: src/languages/python.md:301
+msgid "Debug Active File"
+msgstr ""
+
+#: src/languages/python.md:306 src/languages/python.md:338
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/python.md:306
+msgid "\"Python Active File\""
+msgstr ""
+
+#: src/languages/python.md:307 src/languages/python.md:339
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/python.md:307 src/languages/python.md:339
+msgid "\"Debugpy\""
+msgstr ""
+
+#: src/languages/python.md:308
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/python.md:308
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/languages/python.md:309 src/languages/python.md:340
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/python.md:309 src/languages/python.md:340
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/python.md:314
+msgid "This runs the file currently open in the editor."
+msgstr ""
+
+#: src/languages/python.md:316
+msgid "Debug a Flask App"
+msgstr ""
+
+#: src/languages/python.md:318
+msgid "For projects using Flask, you can define a full launch configuration:"
+msgstr ""
+
+#: src/languages/python.md:333
+msgid "…the following configuration can be used:"
+msgstr ""
+
+#: src/languages/python.md:338
+msgid "\"Python: Flask\""
+msgstr ""
+
+#: src/languages/python.md:341
+msgid "\"module\""
+msgstr ""
+
+#: src/languages/python.md:341 src/languages/python.md:344
+msgid "\"app\""
+msgstr ""
+
+#: src/languages/python.md:342
+msgid "\"cwd\""
+msgstr ""
+
+#: src/languages/python.md:342
+msgid "\"$ZED_WORKTREE_ROOT\""
+msgstr ""
+
+#: src/languages/python.md:343
+msgid "\"env\""
+msgstr ""
+
+#: src/languages/python.md:344
+msgid "\"FLASK_APP\""
+msgstr ""
+
+#: src/languages/python.md:345
+msgid "\"FLASK_DEBUG\""
+msgstr ""
+
+#: src/languages/python.md:345
+msgid "\"1\""
+msgstr ""
+
+#: src/languages/python.md:347
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/python.md:348
+msgid "\"run\""
+msgstr ""
+
+#: src/languages/python.md:349
+msgid "\"--reload\""
+msgstr ""
+
+#: src/languages/python.md:349
+msgid ""
+"// Enables Flask reloader that watches for file changes\n"
+"      \"--debugger\" // Enables Flask debugger\n"
+msgstr ""
+
+#: src/languages/python.md:352
+msgid "\"autoReload\""
+msgstr ""
+
+#: src/languages/python.md:353
+msgid "\"enable\""
+msgstr ""
+
+#: src/languages/python.md:355
+msgid "\"jinja\""
+msgstr ""
+
+#: src/languages/python.md:356
+msgid "\"justMyCode\""
+msgstr ""
+
+#: src/languages/python.md:361
+msgid ""
+"These can be combined to tailor the experience for web servers, test "
+"runners, or custom scripts."
+msgstr ""
+
+#: src/languages/python.md:363
+msgid "Troubleshoot and Maintain a Productive Python Setup"
+msgstr ""
+
+#: src/languages/python.md:365
+msgid ""
+"Zed is designed to minimize configuration overhead, but occasional issues "
+"can still arise—especially around environments, language servers, or "
+"tooling. Here's how to keep your Python setup working smoothly."
+msgstr ""
+
+#: src/languages/python.md:367
+msgid "Resolve Language Server Startup Issues"
+msgstr ""
+
+#: src/languages/python.md:369
+msgid ""
+"If a language server isn't responding or features like diagnostics or "
+"autocomplete aren't available:"
+msgstr ""
+
+#: src/languages/python.md:371
+msgid ""
+"Check your Zed log (using the <code class=\"hljs\">zed: open log</code> "
+"action) for errors related to the language server you're trying to use. This "
+"is where you're likely to find useful information if the language server "
+"failed to start up at all."
+msgstr ""
+
+#: src/languages/python.md:372
+msgid ""
+"Use the language server logs view to understand the lifecycle of the "
+"affected language server. You can access this view using the <code "
+"class=\"hljs\">dev: open language server logs</code> action, or by clicking "
+"the lightning bolt icon in the status bar and selecting your language "
+"server. The most useful pieces of data in this view are:"
+msgstr ""
+
+#: src/languages/python.md:373
+msgid "\"Server Logs\", which shows any errors printed by the language server"
+msgstr ""
+
+#: src/languages/python.md:374
+msgid ""
+"\"Server Info\", which shows details about how the language server was "
+"started"
+msgstr ""
+
+#: src/languages/python.md:375
+msgid ""
+"Verify your `settings.json` or `pyrightconfig.json` is syntactically correct."
+msgstr ""
+
+#: src/languages/python.md:376
+msgid ""
+"Restart Zed to reinitialize language server connections, or try restarting "
+"the language server using the <code class=\"hljs\">editor: restart language "
+"server</code>"
+msgstr ""
+
+#: src/languages/python.md:378
+msgid ""
+"If the language server is failing to resolve imports, and you're using a "
+"virtual environment, make sure that the right environment is chosen in the "
+"selector. You can use \"Server Info\" view to confirm which virtual "
+"environment Zed is sending to the language server—look for the `* "
+"Configuration` section at the end."
+msgstr ""

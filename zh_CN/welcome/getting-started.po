@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/getting-started.md:1
+msgid "Getting Started"
+msgstr ""
+
+#: src/getting-started.md:3
+msgid ""
+"Welcome to Zed! We are excited to have you. Zed is a powerful multiplayer "
+"code editor designed to stay out of your way and help you build what's next."
+msgstr ""
+
+#: src/getting-started.md:5
+msgid "Key Features"
+msgstr ""
+
+#: src/getting-started.md:7
+msgid ""
+"[Smooth Editing](./configuring-zed.md): Built in Rust, Zed is responsive and "
+"intuitive, with a minimalistic aesthetic and pixel-level editing controls."
+msgstr ""
+
+#: src/getting-started.md:8
+msgid ""
+"[Agentic Editing](./ai/overview.md): Use Zed's hosted models to collaborate "
+"with agents directly in an IDE. You can also plug into a third-party agent "
+"or bring your own keys."
+msgstr ""
+
+#: src/getting-started.md:9
+msgid ""
+"[Debugger](./debugger.md): Debug your code in seconds, not hours, with "
+"minimal setup required."
+msgstr ""
+
+#: src/getting-started.md:10
+msgid ""
+"[Remote Development](./remote-development.md): Offload the heavy lifting to "
+"the cloud, so you can focus on writing code."
+msgstr ""
+
+#: src/getting-started.md:11
+msgid ""
+"[Extensions](./extensions.md): Leverage Zed's extensions to customize how "
+"you work."
+msgstr ""
+
+#: src/getting-started.md:13
+msgid "Join the Zed Community"
+msgstr ""
+
+#: src/getting-started.md:15
+msgid ""
+"Zed is proudly open source, and we get better with every contribution. Join "
+"us on GitHub or in Discord to contribute code, report bugs, or suggest "
+"features."
+msgstr ""
+
+#: src/getting-started.md:17
+msgid "[Join Discord](https://discord.com/invite/zedindustries)"
+msgstr ""
+
+#: src/getting-started.md:18
+msgid "[GitHub Discussions](https://github.com/zed-industries/zed/discussions)"
+msgstr ""
+
+#: src/getting-started.md:19
+msgid "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
+msgstr ""

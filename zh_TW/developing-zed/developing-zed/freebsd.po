@@ -1,0 +1,98 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/development/freebsd.md:1
+msgid "Building Zed for FreeBSD"
+msgstr "為 FreeBSD 建置 Zed"
+
+#: src/development/freebsd.md:3
+msgid ""
+"Note, FreeBSD is not currently a supported platform, and so this is a work-"
+"in-progress."
+msgstr ""
+
+#: src/development/freebsd.md:5
+msgid "Repository"
+msgstr ""
+
+#: src/development/freebsd.md:7
+msgid "Clone the [Zed repository](https://github.com/zed-industries/zed)."
+msgstr ""
+
+#: src/development/freebsd.md:9
+msgid "Dependencies"
+msgstr ""
+
+#: src/development/freebsd.md:11
+msgid "Install the necessary system packages and rustup:"
+msgstr ""
+
+#: src/development/freebsd.md:17
+msgid ""
+"If preferred, you can inspect [`script/freebsd`](https://github.com/zed-"
+"industries/zed/blob/main/script/freebsd) and perform the steps manually."
+msgstr ""
+
+#: src/development/freebsd.md:19
+msgid "Building from source"
+msgstr "從來源碼建置"
+
+#: src/development/freebsd.md:21
+msgid ""
+"Once the dependencies are installed, you can build Zed using [Cargo](https://"
+"doc.rust-lang.org/cargo/)."
+msgstr ""
+
+#: src/development/freebsd.md:23
+msgid "For a debug build of the editor:"
+msgstr ""
+
+#: src/development/freebsd.md:29
+msgid "And to run the tests:"
+msgstr ""
+
+#: src/development/freebsd.md:35
+msgid ""
+"In release mode, the primary user interface is the `cli` crate. You can run "
+"it in development with:"
+msgstr ""
+
+#: src/development/freebsd.md:41
+msgid "WebRTC Notice"
+msgstr ""
+
+#: src/development/freebsd.md:43
+msgid ""
+"Currently, building `webrtc-sys` on FreeBSD fails due to missing upstream "
+"support and unavailable prebuilt binaries. As a result, some collaboration "
+"features (audio calls and screensharing) that depend on WebRTC are "
+"temporarily disabled."
+msgstr ""
+
+#: src/development/freebsd.md:45
+msgid ""
+"See \\[Issue #15309: FreeBSD Support\\] and \\[Discussion #29550: Unofficial "
+"FreeBSD port for Zed\\] for more."
+msgstr ""
+
+#: src/development/freebsd.md:47
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/development/freebsd.md:49
+msgid "Cargo errors claiming that a dependency is using unstable features"
+msgstr ""
+
+#: src/development/freebsd.md:51
+msgid "Try `cargo clean` and `cargo build`."
+msgstr ""
