@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/opentofu.md:1
 msgid "OpenTofu"
-msgstr ""
+msgstr "OpenTofu"
 
 #: src/languages/opentofu.md:3
 msgid ""

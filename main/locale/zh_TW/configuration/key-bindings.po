@@ -573,7 +573,7 @@ msgstr ""
 
 #: src/key-bindings.md:197
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: src/key-bindings.md:199
 msgid ""

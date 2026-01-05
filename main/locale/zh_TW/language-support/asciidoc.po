@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/asciidoc.md:1
 msgid "AsciiDoc"
-msgstr ""
+msgstr "AsciiDoc"
 
 #: src/languages/asciidoc.md:3
 msgid ""

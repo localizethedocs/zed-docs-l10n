@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/jsonnet.md:1
 msgid "Jsonnet"
-msgstr ""
+msgstr "Jsonnet"
 
 #: src/languages/jsonnet.md:3
 msgid ""

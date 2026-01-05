@@ -69,7 +69,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:32
 msgid "Required Fields"
-msgstr ""
+msgstr "必要欄位"
 
 #: src/extensions/agent-servers.md:34
 msgid ""
@@ -131,7 +131,7 @@ msgstr ""
 
 #: src/extensions/agent-servers.md:52
 msgid "Optional Fields"
-msgstr ""
+msgstr "必要欄位"
 
 #: src/extensions/agent-servers.md:54
 msgid "You can also optionally specify at the agent server level:"

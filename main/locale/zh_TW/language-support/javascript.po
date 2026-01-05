@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/javascript.md:1
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: src/languages/javascript.md:3
 msgid "JavaScript support is available natively in Zed."

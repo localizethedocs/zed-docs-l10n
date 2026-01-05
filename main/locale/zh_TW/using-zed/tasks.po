@@ -212,7 +212,7 @@ msgstr ""
 
 #: src/tasks.md:72
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: src/tasks.md:74
 msgid ""

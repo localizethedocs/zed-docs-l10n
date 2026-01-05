@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/groovy.md:1
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: src/languages/groovy.md:3
 msgid ""

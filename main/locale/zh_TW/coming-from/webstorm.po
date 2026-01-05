@@ -72,7 +72,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:36
 msgid "Search for `Base Keymap`"
-msgstr ""
+msgstr "搜尋 `Base Keymap`"
 
 #: src/migrate/webstorm.md:37
 msgid "Select `JetBrains`"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:60
 msgid "Zed Setting"
-msgstr ""
+msgstr "Zed 設定"
 
 #: src/migrate/webstorm.md:60
 msgid "What it does"
@@ -279,7 +279,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:99
 msgid "Go to File"
-msgstr ""
+msgstr "前往檔案"
 
 #: src/migrate/webstorm.md:99
 msgid "`Cmd + Shift + O`"
@@ -303,11 +303,11 @@ msgstr ""
 
 #: src/migrate/webstorm.md:102
 msgid "Go to Definition"
-msgstr ""
+msgstr "前往定義"
 
 #: src/migrate/webstorm.md:102
 msgid "`Cmd + B`"
-msgstr ""
+msgstr "`Cmd + B`"
 
 #: src/migrate/webstorm.md:103
 msgid "Find Usages"
@@ -327,11 +327,11 @@ msgstr ""
 
 #: src/migrate/webstorm.md:105
 msgid "Reformat Code"
-msgstr ""
+msgstr "重新格式化程式碼"
 
 #: src/migrate/webstorm.md:105
 msgid "`Cmd + Alt + L`"
-msgstr ""
+msgstr "`Cmd + Alt + L`"
 
 #: src/migrate/webstorm.md:106
 msgid "Toggle Project Panel"
@@ -355,7 +355,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:108
 msgid "`Cmd + D`"
-msgstr ""
+msgstr "`Cmd + D`"
 
 #: src/migrate/webstorm.md:109
 msgid "Delete Line"
@@ -845,7 +845,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:245
 msgid "WebStorm Tool Window"
-msgstr ""
+msgstr "WebStorm 工具視窗"
 
 #: src/migrate/webstorm.md:245
 msgid "Zed Equivalent"
@@ -1047,7 +1047,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:302
 msgid "Running Tests"
-msgstr ""
+msgstr "執行測試"
 
 #: src/migrate/webstorm.md:304
 msgid ""

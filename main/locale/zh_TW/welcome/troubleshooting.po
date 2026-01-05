@@ -74,15 +74,15 @@ msgstr ""
 
 #: src/troubleshooting.md:24
 msgid "macOS: `~/Library/Logs/Zed/Zed.log`"
-msgstr ""
+msgstr "macOS：`~/Library/Logs/Zed/Zed.log`"
 
 #: src/troubleshooting.md:25
 msgid "Windows: `C:\\Users\\YOU\\AppData\\Local\\Zed\\logs\\Zed.log`"
-msgstr ""
+msgstr "Windows：`C:\\Users\\YOU\\AppData\\Local\\Zed\\logs\\Zed.log`"
 
 #: src/troubleshooting.md:26
 msgid "Linux: `~/.local/share/zed/logs/Zed.log` or `$XDG_DATA_HOME`"
-msgstr ""
+msgstr "Linux：`~/.local/share/zed/logs/Zed.log` 或 `$XDG_DATA_HOME`"
 
 #: src/troubleshooting.md:28
 msgid ""
@@ -138,7 +138,7 @@ msgstr ""
 
 #: src/troubleshooting.md:44
 msgid "Start recording"
-msgstr ""
+msgstr "開始錄製"
 
 #: src/troubleshooting.md:45
 msgid ""
@@ -148,7 +148,7 @@ msgstr ""
 
 #: src/troubleshooting.md:46
 msgid "Stop recording"
-msgstr ""
+msgstr "停止錄製"
 
 #: src/troubleshooting.md:47
 msgid "Save the trace file"

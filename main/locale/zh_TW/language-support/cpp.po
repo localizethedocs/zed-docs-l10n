@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/cpp.md:1
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: src/languages/cpp.md:3
 msgid "C++ support is available natively in Zed."

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/css.md:1
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: src/languages/css.md:3
 msgid "Zed has built-in support for CSS."

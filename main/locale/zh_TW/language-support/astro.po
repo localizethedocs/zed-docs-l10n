@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/astro.md:1
 msgid "Astro"
-msgstr ""
+msgstr "Astro"
 
 #: src/languages/astro.md:3
 msgid ""

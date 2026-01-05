@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/bash.md:1
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: src/languages/bash.md:3
 msgid ""

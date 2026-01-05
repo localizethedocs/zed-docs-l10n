@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/elm.md:1
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: src/languages/elm.md:3
 msgid ""

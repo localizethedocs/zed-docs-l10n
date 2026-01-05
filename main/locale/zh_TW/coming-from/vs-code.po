@@ -98,7 +98,7 @@ msgstr ""
 #: src/migrate/vs-code.md:125 src/migrate/vs-code.md:135
 #: src/migrate/vs-code.md:144 src/migrate/vs-code.md:153
 msgid "Zed Setting"
-msgstr ""
+msgstr "Zed 設定"
 
 #: src/migrate/vs-code.md:35
 msgid "`editor.fontFamily`"
@@ -1086,7 +1086,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:214
 msgid "`Cmd + B`"
-msgstr ""
+msgstr "`Cmd + B`"
 
 #: src/migrate/vs-code.md:215
 msgid "Toggle bottom dock"

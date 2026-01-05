@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/kotlin.md:1
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: src/languages/kotlin.md:3
 msgid ""

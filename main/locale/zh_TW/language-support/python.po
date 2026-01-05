@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/languages/python.md:14
 msgid "Install Python"
-msgstr ""
+msgstr "安裝 Python"
 
 #: src/languages/python.md:16
 msgid "You'll need both Zed and Python installed before you can begin."
@@ -402,7 +402,7 @@ msgstr ""
 
 #: src/languages/python.md:162
 msgid "Virtual Environments"
-msgstr ""
+msgstr "虛擬環境"
 
 #: src/languages/python.md:164
 msgid ""
@@ -422,7 +422,7 @@ msgstr ""
 
 #: src/languages/python.md:168
 msgid "Create a Virtual Environment"
-msgstr ""
+msgstr "建立虛擬環境"
 
 #: src/languages/python.md:170
 msgid ""
@@ -492,7 +492,7 @@ msgstr ""
 
 #: src/languages/python.md:191
 msgid "Code Formatting & Linting"
-msgstr ""
+msgstr "程式碼格式化與梳理"
 
 #: src/languages/python.md:193
 msgid ""
@@ -684,11 +684,11 @@ msgstr ""
 
 #: src/languages/python.md:289
 msgid "Python scripts"
-msgstr ""
+msgstr "Python 腳本"
 
 #: src/languages/python.md:290
 msgid "Modules"
-msgstr ""
+msgstr "模組"
 
 #: src/languages/python.md:291
 msgid "pytest tests"
@@ -702,7 +702,7 @@ msgstr ""
 
 #: src/languages/python.md:295
 msgid "Define Custom Debug Configurations"
-msgstr ""
+msgstr "定義自訂除錯組態"
 
 #: src/languages/python.md:297
 msgid ""
@@ -758,7 +758,7 @@ msgstr ""
 
 #: src/languages/python.md:316
 msgid "Debug a Flask App"
-msgstr ""
+msgstr "除錯 Flask 應用"
 
 #: src/languages/python.md:318
 msgid "For projects using Flask, you can define a full launch configuration:"

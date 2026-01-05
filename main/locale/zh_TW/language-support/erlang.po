@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/erlang.md:1
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: src/languages/erlang.md:3
 msgid ""
@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/languages/erlang.md:10
 msgid "Choosing a language server"
-msgstr ""
+msgstr "選擇語言伺服器"
 
 #: src/languages/erlang.md:12
 msgid ""

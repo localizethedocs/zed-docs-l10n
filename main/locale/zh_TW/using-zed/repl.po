@@ -133,7 +133,7 @@ msgstr ""
 
 #: src/repl.md:67
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: src/repl.md:69
 msgid "Global environment"
@@ -197,7 +197,7 @@ msgstr ""
 
 #: src/repl.md:129
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: src/repl.md:131
 msgid ""

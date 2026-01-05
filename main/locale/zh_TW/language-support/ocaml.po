@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/ocaml.md:1
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: src/languages/ocaml.md:3
 msgid ""

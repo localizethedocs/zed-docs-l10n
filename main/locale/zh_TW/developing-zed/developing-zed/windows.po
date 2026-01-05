@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/development/windows.md:5
 msgid "Repository"
-msgstr ""
+msgstr "儲存庫"
 
 #: src/development/windows.md:7
 msgid "Clone down the [Zed repository](https://github.com/zed-industries/zed)."

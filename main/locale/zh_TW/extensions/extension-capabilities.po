@@ -163,10 +163,14 @@ msgid ""
 "industries\", \"zed\", \"**\"] }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"download_file\", host = \"github.com\", path = [\"zed-"
+"industries\", \"zed\", \"**\"] }\n"
+"```"
 
 #: src/extensions/capabilities.md:80
 msgid "`npm:install`"
-msgstr ""
+msgstr "`npm:install`"
 
 #: src/extensions/capabilities.md:82
 msgid ""
@@ -185,6 +189,9 @@ msgid ""
 "{ kind = \"npm:install\", package = \"*\" }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"npm:install\", package = \"*\" }\n"
+"```"
 
 #: src/extensions/capabilities.md:92
 msgid "To allow a specific npm package (e.g., `typescript`) to be installed:"
@@ -196,3 +203,6 @@ msgid ""
 "{ kind = \"npm:install\", package = \"typescript\" }\n"
 "```"
 msgstr ""
+"```toml\n"
+"{ kind = \"npm:install\", package = \"typescript\" }\n"
+"```"

@@ -459,7 +459,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:158
 msgid "MCP Servers"
-msgstr ""
+msgstr "MCP 伺服器"
 
 #: src/ai/agent-panel.md:160
 msgid ""

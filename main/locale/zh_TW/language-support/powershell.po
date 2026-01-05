@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/powershell.md:1
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: src/languages/powershell.md:3
 msgid ""

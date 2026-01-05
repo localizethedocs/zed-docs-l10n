@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/luau.md:1
 msgid "Luau"
-msgstr ""
+msgstr "Luau"
 
 #: src/languages/luau.md:3
 msgid ""

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/gdscript.md:1
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: src/languages/gdscript.md:3
 msgid ""

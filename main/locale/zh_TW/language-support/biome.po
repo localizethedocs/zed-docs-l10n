@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/biome.md:1
 msgid "Biome"
-msgstr ""
+msgstr "Biome"
 
 #: src/languages/biome.md:3
 msgid ""
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/languages/biome.md:12
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: src/languages/biome.md:13
 msgid "TypeScript"
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/languages/biome.md:16
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: src/languages/biome.md:17
 msgid "JSONC"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/languages/biome.md:19
 msgid "Astro"
-msgstr ""
+msgstr "Astro"
 
 #: src/languages/biome.md:20
 msgid "Svelte"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/languages/biome.md:21
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: src/languages/biome.md:23
 msgid "Configuration"

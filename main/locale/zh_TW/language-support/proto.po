@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/proto.md:1
 msgid "Proto"
-msgstr ""
+msgstr "Proto"
 
 #: src/languages/proto.md:3
 msgid ""

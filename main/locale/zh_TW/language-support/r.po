@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/r.md:1
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: src/languages/r.md:3
 msgid "R support is available via multiple R Zed extensions:"

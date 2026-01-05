@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/helm.md:1
 msgid "Helm"
-msgstr ""
+msgstr "Helm"
 
 #: src/languages/helm.md:3
 msgid ""

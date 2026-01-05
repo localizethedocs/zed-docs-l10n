@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ai/mcp.md:1
 msgid "Model Context Protocol"
-msgstr ""
+msgstr "模型上下文協定"
 
 #: src/ai/mcp.md:3
 msgid ""

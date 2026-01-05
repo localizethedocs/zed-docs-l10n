@@ -559,7 +559,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:243
 msgid "MCP Servers"
-msgstr ""
+msgstr "MCP 伺服器"
 
 #: src/ai/external-agents.md:245
 msgid ""

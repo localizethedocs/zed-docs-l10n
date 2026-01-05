@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/deno.md:1
 msgid "Deno"
-msgstr ""
+msgstr "Deno"
 
 #: src/languages/deno.md:3
 msgid ""

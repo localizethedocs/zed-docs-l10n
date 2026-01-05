@@ -17,7 +17,7 @@ msgstr "為 Linux 建置 Zed"
 
 #: src/development/linux.md:3
 msgid "Repository"
-msgstr ""
+msgstr "儲存庫"
 
 #: src/development/linux.md:5
 msgid "Clone down the [Zed repository](https://github.com/zed-industries/zed)."
@@ -82,6 +82,15 @@ msgid ""
 "rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
 "```"
 msgstr ""
+"```toml\n"
+"[target.x86_64-unknown-linux-gnu]\n"
+"linker = \"clang\"\n"
+"rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
+"\n"
+"[target.aarch64-unknown-linux-gnu]\n"
+"linker = \"clang\"\n"
+"rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
+"```"
 
 #: src/development/linux.md:39
 msgid "To use Mold as your default:"
@@ -177,7 +186,7 @@ msgstr ""
 
 #: src/development/linux.md:103
 msgid "Wayland & X11"
-msgstr ""
+msgstr "Wayland 和 X11"
 
 #: src/development/linux.md:105
 msgid ""

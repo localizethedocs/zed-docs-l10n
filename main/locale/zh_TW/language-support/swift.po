@@ -43,7 +43,7 @@ msgstr ""
 
 #: src/languages/swift.md:10
 msgid "Language Server Configuration"
-msgstr ""
+msgstr "語言伺服器組態"
 
 #: src/languages/swift.md:12
 msgid ""

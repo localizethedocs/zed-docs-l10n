@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/json.md:1
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: src/languages/json.md:3
 msgid "JSON support is available natively in Zed."

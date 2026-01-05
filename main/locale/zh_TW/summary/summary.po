@@ -177,7 +177,7 @@ msgstr "環境變數"
 
 #: src/SUMMARY.md:51
 msgid "REPL"
-msgstr ""
+msgstr "REPL"
 
 #: src/SUMMARY.md:53
 msgid "Platform Support"
@@ -185,11 +185,11 @@ msgstr "平臺支援"
 
 #: src/SUMMARY.md:55 src/SUMMARY.md:178
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: src/SUMMARY.md:56 src/SUMMARY.md:177
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: src/SUMMARY.md:58
 msgid "AI"
@@ -205,7 +205,7 @@ msgstr ""
 
 #: src/SUMMARY.md:62
 msgid "Tools"
-msgstr ""
+msgstr "工具"
 
 #: src/SUMMARY.md:63
 msgid "External Agents"
@@ -229,7 +229,7 @@ msgstr ""
 
 #: src/SUMMARY.md:68
 msgid "Model Context Protocol"
-msgstr ""
+msgstr "模型上下文協定"
 
 #: src/SUMMARY.md:70
 msgid "LLM Providers"
@@ -333,191 +333,191 @@ msgstr "所有語言"
 
 #: src/SUMMARY.md:102
 msgid "Ansible"
-msgstr ""
+msgstr "Ansible"
 
 #: src/SUMMARY.md:103
 msgid "AsciiDoc"
-msgstr ""
+msgstr "AsciiDoc"
 
 #: src/SUMMARY.md:104
 msgid "Astro"
-msgstr ""
+msgstr "Astro"
 
 #: src/SUMMARY.md:105
 msgid "Bash"
-msgstr ""
+msgstr "Bash"
 
 #: src/SUMMARY.md:106
 msgid "Biome"
-msgstr ""
+msgstr "Biome"
 
 #: src/SUMMARY.md:107
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: src/SUMMARY.md:108
 msgid "C++"
-msgstr ""
+msgstr "C++"
 
 #: src/SUMMARY.md:109
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: src/SUMMARY.md:110
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: src/SUMMARY.md:111
 msgid "CSS"
-msgstr ""
+msgstr "CSS"
 
 #: src/SUMMARY.md:112
 msgid "Dart"
-msgstr ""
+msgstr "Dart"
 
 #: src/SUMMARY.md:113
 msgid "Deno"
-msgstr ""
+msgstr "Deno"
 
 #: src/SUMMARY.md:114
 msgid "Diff"
-msgstr ""
+msgstr "Diff"
 
 #: src/SUMMARY.md:115
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #: src/SUMMARY.md:116
 msgid "Elixir"
-msgstr ""
+msgstr "Elixir"
 
 #: src/SUMMARY.md:117
 msgid "Elm"
-msgstr ""
+msgstr "Elm"
 
 #: src/SUMMARY.md:118
 msgid "Emmet"
-msgstr ""
+msgstr "Emmet"
 
 #: src/SUMMARY.md:119
 msgid "Erlang"
-msgstr ""
+msgstr "Erlang"
 
 #: src/SUMMARY.md:120
 msgid "Fish"
-msgstr ""
+msgstr "Fish"
 
 #: src/SUMMARY.md:121
 msgid "GDScript"
-msgstr ""
+msgstr "GDScript"
 
 #: src/SUMMARY.md:122
 msgid "Gleam"
-msgstr ""
+msgstr "Gleam"
 
 #: src/SUMMARY.md:123
 msgid "GLSL"
-msgstr ""
+msgstr "GLSL"
 
 #: src/SUMMARY.md:124
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: src/SUMMARY.md:125
 msgid "Groovy"
-msgstr ""
+msgstr "Groovy"
 
 #: src/SUMMARY.md:126
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: src/SUMMARY.md:127
 msgid "Helm"
-msgstr ""
+msgstr "Helm"
 
 #: src/SUMMARY.md:128
 msgid "HTML"
-msgstr ""
+msgstr "HTML"
 
 #: src/SUMMARY.md:129
 msgid "Java"
-msgstr ""
+msgstr "Java"
 
 #: src/SUMMARY.md:130
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: src/SUMMARY.md:131
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: src/SUMMARY.md:132
 msgid "JSON"
-msgstr ""
+msgstr "JSON"
 
 #: src/SUMMARY.md:133
 msgid "Jsonnet"
-msgstr ""
+msgstr "Jsonnet"
 
 #: src/SUMMARY.md:134
 msgid "Kotlin"
-msgstr ""
+msgstr "Kotlin"
 
 #: src/SUMMARY.md:135
 msgid "Lua"
-msgstr ""
+msgstr "Lua"
 
 #: src/SUMMARY.md:136
 msgid "Luau"
-msgstr ""
+msgstr "Luau"
 
 #: src/SUMMARY.md:137
 msgid "Makefile"
-msgstr ""
+msgstr "Makefile"
 
 #: src/SUMMARY.md:138
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: src/SUMMARY.md:139
 msgid "Nim"
-msgstr ""
+msgstr "Nim"
 
 #: src/SUMMARY.md:140
 msgid "OCaml"
-msgstr ""
+msgstr "OCaml"
 
 #: src/SUMMARY.md:141
 msgid "OpenTofu"
-msgstr ""
+msgstr "OpenTofu"
 
 #: src/SUMMARY.md:142
 msgid "PHP"
-msgstr ""
+msgstr "PHP"
 
 #: src/SUMMARY.md:143
 msgid "PowerShell"
-msgstr ""
+msgstr "PowerShell"
 
 #: src/SUMMARY.md:144
 msgid "Prisma"
-msgstr ""
+msgstr "Prisma"
 
 #: src/SUMMARY.md:145
 msgid "Proto"
-msgstr ""
+msgstr "Proto"
 
 #: src/SUMMARY.md:146
 msgid "PureScript"
-msgstr ""
+msgstr "PureScript"
 
 #: src/SUMMARY.md:147
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: src/SUMMARY.md:148
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: src/SUMMARY.md:149
 msgid "Rego"

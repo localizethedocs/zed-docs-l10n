@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/installation.md:31 src/installation.md:82
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: src/installation.md:33
 msgid ""

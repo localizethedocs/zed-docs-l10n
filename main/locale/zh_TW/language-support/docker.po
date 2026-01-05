@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/docker.md:1
 msgid "Docker"
-msgstr ""
+msgstr "Docker"
 
 #: src/languages/docker.md:3
 msgid ""

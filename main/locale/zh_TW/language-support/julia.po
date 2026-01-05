@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/julia.md:1
 msgid "Julia"
-msgstr ""
+msgstr "Julia"
 
 #: src/languages/julia.md:3
 msgid ""

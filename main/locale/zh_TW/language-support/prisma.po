@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/prisma.md:1
 msgid "Prisma"
-msgstr ""
+msgstr "Prisma"
 
 #: src/languages/prisma.md:3
 msgid ""

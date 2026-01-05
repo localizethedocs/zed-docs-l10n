@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/haskell.md:1
 msgid "Haskell"
-msgstr ""
+msgstr "Haskell"
 
 #: src/languages/haskell.md:3
 msgid ""

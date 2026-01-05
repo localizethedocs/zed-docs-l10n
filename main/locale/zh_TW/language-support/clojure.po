@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/clojure.md:1
 msgid "Clojure"
-msgstr ""
+msgstr "Clojure"
 
 #: src/languages/clojure.md:3
 msgid ""

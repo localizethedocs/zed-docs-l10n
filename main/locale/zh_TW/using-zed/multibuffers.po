@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/multibuffers.md:28
 msgid "Project search"
-msgstr ""
+msgstr "專案搜尋"
 
 #: src/multibuffers.md:30
 msgid ""

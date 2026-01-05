@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/diff.md:1
 msgid "Diff"
-msgstr ""
+msgstr "Diff"
 
 #: src/languages/diff.md:3
 msgid "Diff support is available natively in Zed."

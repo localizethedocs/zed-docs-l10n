@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/development/freebsd.md:5
 msgid "Repository"
-msgstr ""
+msgstr "儲存庫"
 
 #: src/development/freebsd.md:7
 msgid "Clone the [Zed repository](https://github.com/zed-industries/zed)."

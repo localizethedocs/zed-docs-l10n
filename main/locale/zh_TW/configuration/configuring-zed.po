@@ -6875,7 +6875,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4279
 msgid "REPL"
-msgstr ""
+msgstr "REPL"
 
 #: src/configuring-zed.md:4281
 msgid "Description: Repl settings."

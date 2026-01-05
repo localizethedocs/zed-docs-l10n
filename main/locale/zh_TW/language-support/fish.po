@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/fish.md:1
 msgid "Fish"
-msgstr ""
+msgstr "Fish"
 
 #: src/languages/fish.md:3
 msgid ""

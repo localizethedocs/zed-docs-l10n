@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/makefile.md:1
 msgid "Makefile"
-msgstr ""
+msgstr "Makefile"
 
 #: src/languages/makefile.md:3
 msgid ""

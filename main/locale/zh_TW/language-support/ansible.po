@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/languages/ansible.md:1
 msgid "Ansible"
-msgstr ""
+msgstr "Ansible"
 
 #: src/languages/ansible.md:3
 msgid ""

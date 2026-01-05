@@ -75,7 +75,7 @@ msgstr ""
 
 #: src/languages/php.md:34
 msgid "Choosing a language server"
-msgstr ""
+msgstr "選擇語言伺服器"
 
 #: src/languages/php.md:36
 msgid ""
@@ -161,7 +161,7 @@ msgstr ""
 
 #: src/languages/php.md:70
 msgid "PHP Tools"
-msgstr ""
+msgstr "PHP 工具"
 
 #: src/languages/php.md:72
 msgid ""

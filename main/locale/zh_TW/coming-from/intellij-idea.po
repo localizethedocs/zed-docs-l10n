@@ -71,7 +71,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:36
 msgid "Search for `Base Keymap`"
-msgstr ""
+msgstr "搜尋 `Base Keymap`"
 
 #: src/migrate/intellij.md:37
 msgid "Select `JetBrains`"
@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:60
 msgid "Zed Setting"
-msgstr ""
+msgstr "Zed 設定"
 
 #: src/migrate/intellij.md:60
 msgid "What it does"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:99
 msgid "Go to File"
-msgstr ""
+msgstr "前往檔案"
 
 #: src/migrate/intellij.md:99
 msgid "`Cmd + Shift + O`"
@@ -299,11 +299,11 @@ msgstr ""
 
 #: src/migrate/intellij.md:102
 msgid "Go to Definition"
-msgstr ""
+msgstr "前往定義"
 
 #: src/migrate/intellij.md:102
 msgid "`Cmd + B`"
-msgstr ""
+msgstr "`Cmd + B`"
 
 #: src/migrate/intellij.md:103
 msgid "Find Usages"
@@ -323,11 +323,11 @@ msgstr ""
 
 #: src/migrate/intellij.md:105
 msgid "Reformat Code"
-msgstr ""
+msgstr "重新格式化程式碼"
 
 #: src/migrate/intellij.md:105
 msgid "`Cmd + Alt + L`"
-msgstr ""
+msgstr "`Cmd + Alt + L`"
 
 #: src/migrate/intellij.md:106
 msgid "Toggle Project Panel"
@@ -351,7 +351,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:108
 msgid "`Cmd + D`"
-msgstr ""
+msgstr "`Cmd + D`"
 
 #: src/migrate/intellij.md:109
 msgid "Delete Line"
