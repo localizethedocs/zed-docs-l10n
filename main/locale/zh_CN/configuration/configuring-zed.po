@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -128,9 +128,9 @@ msgstr ""
 
 #: src/configuring-zed.md:54 src/configuring-zed.md:57
 #: src/configuring-zed.md:61 src/configuring-zed.md:2901
-#: src/configuring-zed.md:4309 src/configuring-zed.md:5015
-#: src/configuring-zed.md:5021 src/configuring-zed.md:5027
-#: src/configuring-zed.md:5042
+#: src/configuring-zed.md:4310 src/configuring-zed.md:5016
+#: src/configuring-zed.md:5022 src/configuring-zed.md:5028
+#: src/configuring-zed.md:5043
 msgid "\"theme\""
 msgstr ""
 
@@ -139,7 +139,7 @@ msgid "\"sunset\""
 msgstr ""
 
 #: src/configuring-zed.md:55 src/configuring-zed.md:58
-#: src/configuring-zed.md:5052
+#: src/configuring-zed.md:5053
 msgid "\"vim_mode\""
 msgstr ""
 
@@ -147,7 +147,7 @@ msgstr ""
 msgid "\"nightly\""
 msgstr ""
 
-#: src/configuring-zed.md:57 src/configuring-zed.md:5042
+#: src/configuring-zed.md:57 src/configuring-zed.md:5043
 msgid "\"cave-light\""
 msgstr ""
 
@@ -208,17 +208,17 @@ msgstr ""
 #: src/configuring-zed.md:2577 src/configuring-zed.md:2625
 #: src/configuring-zed.md:2685 src/configuring-zed.md:2802
 #: src/configuring-zed.md:2920 src/configuring-zed.md:3298
-#: src/configuring-zed.md:3403 src/configuring-zed.md:3520
-#: src/configuring-zed.md:3619 src/configuring-zed.md:3641
-#: src/configuring-zed.md:3676 src/configuring-zed.md:4087
-#: src/configuring-zed.md:4140 src/configuring-zed.md:4236
-#: src/configuring-zed.md:4283 src/configuring-zed.md:4306
-#: src/configuring-zed.md:4372 src/configuring-zed.md:4440
-#: src/configuring-zed.md:4617 src/configuring-zed.md:4651
-#: src/configuring-zed.md:4717 src/configuring-zed.md:4741
-#: src/configuring-zed.md:4763 src/configuring-zed.md:4782
-#: src/configuring-zed.md:4844 src/configuring-zed.md:4870
-#: src/configuring-zed.md:4928
+#: src/configuring-zed.md:3403 src/configuring-zed.md:3521
+#: src/configuring-zed.md:3620 src/configuring-zed.md:3642
+#: src/configuring-zed.md:3677 src/configuring-zed.md:4088
+#: src/configuring-zed.md:4141 src/configuring-zed.md:4237
+#: src/configuring-zed.md:4284 src/configuring-zed.md:4307
+#: src/configuring-zed.md:4373 src/configuring-zed.md:4441
+#: src/configuring-zed.md:4618 src/configuring-zed.md:4652
+#: src/configuring-zed.md:4718 src/configuring-zed.md:4742
+#: src/configuring-zed.md:4764 src/configuring-zed.md:4783
+#: src/configuring-zed.md:4845 src/configuring-zed.md:4871
+#: src/configuring-zed.md:4929
 msgid "Default:"
 msgstr ""
 
@@ -324,34 +324,34 @@ msgstr ""
 #: src/configuring-zed.md:3446 src/configuring-zed.md:3456
 #: src/configuring-zed.md:3466 src/configuring-zed.md:3479
 #: src/configuring-zed.md:3489 src/configuring-zed.md:3499
-#: src/configuring-zed.md:3509 src/configuring-zed.md:3537
-#: src/configuring-zed.md:3551 src/configuring-zed.md:3561
-#: src/configuring-zed.md:3571 src/configuring-zed.md:3581
-#: src/configuring-zed.md:3591 src/configuring-zed.md:3601
-#: src/configuring-zed.md:3611 src/configuring-zed.md:3631
-#: src/configuring-zed.md:3650 src/configuring-zed.md:3658
-#: src/configuring-zed.md:3668 src/configuring-zed.md:3721
-#: src/configuring-zed.md:3731 src/configuring-zed.md:3759
-#: src/configuring-zed.md:3797 src/configuring-zed.md:3817
-#: src/configuring-zed.md:3865 src/configuring-zed.md:3904
-#: src/configuring-zed.md:3922 src/configuring-zed.md:3941
-#: src/configuring-zed.md:3962 src/configuring-zed.md:4002
-#: src/configuring-zed.md:4026 src/configuring-zed.md:4044
-#: src/configuring-zed.md:4122 src/configuring-zed.md:4152
-#: src/configuring-zed.md:4168 src/configuring-zed.md:4186
-#: src/configuring-zed.md:4322 src/configuring-zed.md:4354
-#: src/configuring-zed.md:4364 src/configuring-zed.md:4387
-#: src/configuring-zed.md:4410 src/configuring-zed.md:4483
-#: src/configuring-zed.md:4507 src/configuring-zed.md:4531
-#: src/configuring-zed.md:4555 src/configuring-zed.md:4565
-#: src/configuring-zed.md:4589 src/configuring-zed.md:4625
-#: src/configuring-zed.md:4659 src/configuring-zed.md:4687
-#: src/configuring-zed.md:4727 src/configuring-zed.md:4753
-#: src/configuring-zed.md:4801 src/configuring-zed.md:4818
-#: src/configuring-zed.md:4887 src/configuring-zed.md:4899
-#: src/configuring-zed.md:4920 src/configuring-zed.md:4938
-#: src/configuring-zed.md:4969 src/configuring-zed.md:4985
-#: src/configuring-zed.md:4995
+#: src/configuring-zed.md:3509 src/configuring-zed.md:3538
+#: src/configuring-zed.md:3552 src/configuring-zed.md:3562
+#: src/configuring-zed.md:3572 src/configuring-zed.md:3582
+#: src/configuring-zed.md:3592 src/configuring-zed.md:3602
+#: src/configuring-zed.md:3612 src/configuring-zed.md:3632
+#: src/configuring-zed.md:3651 src/configuring-zed.md:3659
+#: src/configuring-zed.md:3669 src/configuring-zed.md:3722
+#: src/configuring-zed.md:3732 src/configuring-zed.md:3760
+#: src/configuring-zed.md:3798 src/configuring-zed.md:3818
+#: src/configuring-zed.md:3866 src/configuring-zed.md:3905
+#: src/configuring-zed.md:3923 src/configuring-zed.md:3942
+#: src/configuring-zed.md:3963 src/configuring-zed.md:4003
+#: src/configuring-zed.md:4027 src/configuring-zed.md:4045
+#: src/configuring-zed.md:4123 src/configuring-zed.md:4153
+#: src/configuring-zed.md:4169 src/configuring-zed.md:4187
+#: src/configuring-zed.md:4323 src/configuring-zed.md:4355
+#: src/configuring-zed.md:4365 src/configuring-zed.md:4388
+#: src/configuring-zed.md:4411 src/configuring-zed.md:4484
+#: src/configuring-zed.md:4508 src/configuring-zed.md:4532
+#: src/configuring-zed.md:4556 src/configuring-zed.md:4566
+#: src/configuring-zed.md:4590 src/configuring-zed.md:4626
+#: src/configuring-zed.md:4660 src/configuring-zed.md:4688
+#: src/configuring-zed.md:4728 src/configuring-zed.md:4754
+#: src/configuring-zed.md:4802 src/configuring-zed.md:4819
+#: src/configuring-zed.md:4888 src/configuring-zed.md:4900
+#: src/configuring-zed.md:4921 src/configuring-zed.md:4939
+#: src/configuring-zed.md:4970 src/configuring-zed.md:4986
+#: src/configuring-zed.md:4996
 msgid "**Options**"
 msgstr ""
 
@@ -376,11 +376,11 @@ msgid "Setting: `inactive_opacity`"
 msgstr ""
 
 #: src/configuring-zed.md:103 src/configuring-zed.md:3258
-#: src/configuring-zed.md:4120
+#: src/configuring-zed.md:4121
 msgid "Default: `1.0`"
 msgstr ""
 
-#: src/configuring-zed.md:107 src/configuring-zed.md:4557
+#: src/configuring-zed.md:107 src/configuring-zed.md:4558
 msgid "`float` values"
 msgstr ""
 
@@ -466,12 +466,12 @@ msgstr ""
 #: src/configuring-zed.md:1197 src/configuring-zed.md:1634
 #: src/configuring-zed.md:2111 src/configuring-zed.md:2643
 #: src/configuring-zed.md:2758 src/configuring-zed.md:2824
-#: src/configuring-zed.md:3902 src/configuring-zed.md:3920
-#: src/configuring-zed.md:3938 src/configuring-zed.md:4966
+#: src/configuring-zed.md:3903 src/configuring-zed.md:3921
+#: src/configuring-zed.md:3939 src/configuring-zed.md:4967
 msgid "Default: `null`"
 msgstr ""
 
-#: src/configuring-zed.md:157 src/configuring-zed.md:4987
+#: src/configuring-zed.md:157 src/configuring-zed.md:4988
 msgid "`integer` values from `6` to `100` pixels (inclusive)"
 msgstr ""
 
@@ -563,13 +563,13 @@ msgstr ""
 #: src/configuring-zed.md:3315 src/configuring-zed.md:3353
 #: src/configuring-zed.md:3393 src/configuring-zed.md:3444
 #: src/configuring-zed.md:3477 src/configuring-zed.md:3487
-#: src/configuring-zed.md:3497 src/configuring-zed.md:3549
-#: src/configuring-zed.md:3559 src/configuring-zed.md:3569
-#: src/configuring-zed.md:3579 src/configuring-zed.md:3589
-#: src/configuring-zed.md:3656 src/configuring-zed.md:3666
-#: src/configuring-zed.md:3863 src/configuring-zed.md:4166
-#: src/configuring-zed.md:4529 src/configuring-zed.md:4563
-#: src/configuring-zed.md:4587
+#: src/configuring-zed.md:3497 src/configuring-zed.md:3550
+#: src/configuring-zed.md:3560 src/configuring-zed.md:3570
+#: src/configuring-zed.md:3580 src/configuring-zed.md:3590
+#: src/configuring-zed.md:3657 src/configuring-zed.md:3667
+#: src/configuring-zed.md:3864 src/configuring-zed.md:4167
+#: src/configuring-zed.md:4530 src/configuring-zed.md:4564
+#: src/configuring-zed.md:4588
 msgid "Default: `true`"
 msgstr ""
 
@@ -599,12 +599,12 @@ msgstr ""
 #: src/configuring-zed.md:3382 src/configuring-zed.md:3397
 #: src/configuring-zed.md:3448 src/configuring-zed.md:3481
 #: src/configuring-zed.md:3491 src/configuring-zed.md:3501
-#: src/configuring-zed.md:3553 src/configuring-zed.md:3563
-#: src/configuring-zed.md:3573 src/configuring-zed.md:3583
-#: src/configuring-zed.md:3593 src/configuring-zed.md:3660
-#: src/configuring-zed.md:3670 src/configuring-zed.md:3799
-#: src/configuring-zed.md:3867 src/configuring-zed.md:4028
-#: src/configuring-zed.md:4170 src/configuring-zed.md:4889
+#: src/configuring-zed.md:3554 src/configuring-zed.md:3564
+#: src/configuring-zed.md:3574 src/configuring-zed.md:3584
+#: src/configuring-zed.md:3594 src/configuring-zed.md:3661
+#: src/configuring-zed.md:3671 src/configuring-zed.md:3800
+#: src/configuring-zed.md:3868 src/configuring-zed.md:4029
+#: src/configuring-zed.md:4171 src/configuring-zed.md:4890
 msgid "`boolean` values"
 msgstr ""
 
@@ -689,7 +689,7 @@ msgid "Setting: `autosave`"
 msgstr ""
 
 #: src/configuring-zed.md:251 src/configuring-zed.md:1416
-#: src/configuring-zed.md:3729
+#: src/configuring-zed.md:3730
 msgid "Default: `off`"
 msgstr ""
 
@@ -699,17 +699,17 @@ msgstr ""
 
 #: src/configuring-zed.md:259 src/configuring-zed.md:267
 #: src/configuring-zed.md:275 src/configuring-zed.md:283
-#: src/configuring-zed.md:5050
+#: src/configuring-zed.md:5051
 msgid "\"autosave\""
 msgstr ""
 
 #: src/configuring-zed.md:259 src/configuring-zed.md:1009
 #: src/configuring-zed.md:1308 src/configuring-zed.md:1424
 #: src/configuring-zed.md:1785 src/configuring-zed.md:2652
-#: src/configuring-zed.md:3246 src/configuring-zed.md:3681
-#: src/configuring-zed.md:3738 src/configuring-zed.md:3766
-#: src/configuring-zed.md:4111 src/configuring-zed.md:5051
-#: src/configuring-zed.md:5056
+#: src/configuring-zed.md:3246 src/configuring-zed.md:3682
+#: src/configuring-zed.md:3739 src/configuring-zed.md:3767
+#: src/configuring-zed.md:4112 src/configuring-zed.md:5052
+#: src/configuring-zed.md:5057
 msgid "\"off\""
 msgstr ""
 
@@ -717,7 +717,7 @@ msgstr ""
 msgid "To autosave when focus changes, use `on_focus_change`:"
 msgstr ""
 
-#: src/configuring-zed.md:267 src/configuring-zed.md:5050
+#: src/configuring-zed.md:267 src/configuring-zed.md:5051
 msgid "\"on_focus_change\""
 msgstr ""
 
@@ -772,9 +772,9 @@ msgstr ""
 #: src/configuring-zed.md:3321 src/configuring-zed.md:3329
 #: src/configuring-zed.md:3335 src/configuring-zed.md:3341
 #: src/configuring-zed.md:3347 src/configuring-zed.md:3359
-#: src/configuring-zed.md:3378 src/configuring-zed.md:3795
-#: src/configuring-zed.md:4024 src/configuring-zed.md:4402
-#: src/configuring-zed.md:4885
+#: src/configuring-zed.md:3378 src/configuring-zed.md:3796
+#: src/configuring-zed.md:4025 src/configuring-zed.md:4403
+#: src/configuring-zed.md:4886
 msgid "Default: `false`"
 msgstr ""
 
@@ -928,8 +928,8 @@ msgid "Setting: `buffer_font_features`"
 msgstr ""
 
 #: src/configuring-zed.md:404 src/configuring-zed.md:435
-#: src/configuring-zed.md:3939 src/configuring-zed.md:4936
-#: src/configuring-zed.md:4967
+#: src/configuring-zed.md:3940 src/configuring-zed.md:4937
+#: src/configuring-zed.md:4968
 msgid "Platform: macOS and Windows."
 msgstr ""
 
@@ -939,7 +939,7 @@ msgid ""
 "given buffer or terminal font, as well as setting values for font features."
 msgstr ""
 
-#: src/configuring-zed.md:410 src/configuring-zed.md:4942
+#: src/configuring-zed.md:410 src/configuring-zed.md:4943
 msgid ""
 "For example, to disable font ligatures, add the following to your settings:"
 msgstr ""
@@ -948,16 +948,16 @@ msgstr ""
 msgid "\"buffer_font_features\""
 msgstr ""
 
-#: src/configuring-zed.md:415 src/configuring-zed.md:3949
-#: src/configuring-zed.md:4932 src/configuring-zed.md:4947
+#: src/configuring-zed.md:415 src/configuring-zed.md:3950
+#: src/configuring-zed.md:4933 src/configuring-zed.md:4948
 msgid "\"calt\""
 msgstr ""
 
-#: src/configuring-zed.md:420 src/configuring-zed.md:4952
+#: src/configuring-zed.md:420 src/configuring-zed.md:4953
 msgid "You can also set other OpenType features, like setting `cv01` to `7`:"
 msgstr ""
 
-#: src/configuring-zed.md:425 src/configuring-zed.md:4957
+#: src/configuring-zed.md:425 src/configuring-zed.md:4958
 msgid "\"cv01\""
 msgstr ""
 
@@ -975,7 +975,7 @@ msgstr ""
 msgid "Setting: `buffer_font_fallbacks`"
 msgstr ""
 
-#: src/configuring-zed.md:439 src/configuring-zed.md:4971
+#: src/configuring-zed.md:439 src/configuring-zed.md:4972
 msgid ""
 "For example, to use `Nerd Font` as a fallback, add the following to your "
 "settings:"
@@ -985,7 +985,7 @@ msgstr ""
 msgid "\"buffer_font_fallbacks\""
 msgstr ""
 
-#: src/configuring-zed.md:443 src/configuring-zed.md:4975
+#: src/configuring-zed.md:443 src/configuring-zed.md:4976
 msgid "\"Nerd Font\""
 msgstr ""
 
@@ -1021,11 +1021,11 @@ msgstr ""
 msgid "Setting: `buffer_font_weight`"
 msgstr ""
 
-#: src/configuring-zed.md:461 src/configuring-zed.md:4993
+#: src/configuring-zed.md:461 src/configuring-zed.md:4994
 msgid "Default: `400`"
 msgstr ""
 
-#: src/configuring-zed.md:465 src/configuring-zed.md:4997
+#: src/configuring-zed.md:465 src/configuring-zed.md:4998
 msgid "`integer` values between `100` and `900`"
 msgstr ""
 
@@ -1153,7 +1153,7 @@ msgstr ""
 #: src/configuring-zed.md:531 src/configuring-zed.md:724
 #: src/configuring-zed.md:879 src/configuring-zed.md:1001
 #: src/configuring-zed.md:1226 src/configuring-zed.md:1440
-#: src/configuring-zed.md:4460
+#: src/configuring-zed.md:4461
 msgid "\"all\""
 msgstr ""
 
@@ -1402,7 +1402,7 @@ msgstr ""
 msgid "Setting: `edit_predictions_disabled_in`"
 msgstr ""
 
-#: src/configuring-zed.md:665 src/configuring-zed.md:4816
+#: src/configuring-zed.md:665 src/configuring-zed.md:4817
 msgid "Default: `[]`"
 msgstr ""
 
@@ -1436,7 +1436,7 @@ msgid "Only in Go, don't show edit predictions in strings and comments:"
 msgstr ""
 
 #: src/configuring-zed.md:687 src/configuring-zed.md:2349
-#: src/configuring-zed.md:2650 src/configuring-zed.md:5058
+#: src/configuring-zed.md:2650 src/configuring-zed.md:5059
 msgid "\"languages\""
 msgstr ""
 
@@ -1479,7 +1479,7 @@ msgstr ""
 #: src/configuring-zed.md:706 src/configuring-zed.md:862
 #: src/configuring-zed.md:1189 src/configuring-zed.md:1246
 #: src/configuring-zed.md:1760 src/configuring-zed.md:2283
-#: src/configuring-zed.md:5045
+#: src/configuring-zed.md:5046
 msgid "\"none\""
 msgstr ""
 
@@ -1497,7 +1497,7 @@ msgid "Highlight the editor area:"
 msgstr ""
 
 #: src/configuring-zed.md:718 src/configuring-zed.md:1216
-#: src/configuring-zed.md:4768
+#: src/configuring-zed.md:4769
 msgid "\"line\""
 msgstr ""
 
@@ -1551,7 +1551,7 @@ msgstr ""
 msgid "Description: Cursor shape for the default editor."
 msgstr ""
 
-#: src/configuring-zed.md:752 src/configuring-zed.md:3814
+#: src/configuring-zed.md:752 src/configuring-zed.md:3815
 msgid "Setting: `cursor_shape`"
 msgstr ""
 
@@ -1565,12 +1565,12 @@ msgstr ""
 
 #: src/configuring-zed.md:760 src/configuring-zed.md:766
 #: src/configuring-zed.md:772 src/configuring-zed.md:778
-#: src/configuring-zed.md:3824 src/configuring-zed.md:3834
-#: src/configuring-zed.md:3844 src/configuring-zed.md:3854
+#: src/configuring-zed.md:3825 src/configuring-zed.md:3835
+#: src/configuring-zed.md:3845 src/configuring-zed.md:3855
 msgid "\"cursor_shape\""
 msgstr ""
 
-#: src/configuring-zed.md:760 src/configuring-zed.md:3834
+#: src/configuring-zed.md:760 src/configuring-zed.md:3835
 msgid "\"bar\""
 msgstr ""
 
@@ -1578,7 +1578,7 @@ msgstr ""
 msgid "A block that surrounds the following character:"
 msgstr ""
 
-#: src/configuring-zed.md:766 src/configuring-zed.md:3824
+#: src/configuring-zed.md:766 src/configuring-zed.md:3825
 msgid "\"block\""
 msgstr ""
 
@@ -1586,7 +1586,7 @@ msgstr ""
 msgid "An underline / underscore that runs along the following character:"
 msgstr ""
 
-#: src/configuring-zed.md:772 src/configuring-zed.md:3844
+#: src/configuring-zed.md:772 src/configuring-zed.md:3845
 msgid "\"underline\""
 msgstr ""
 
@@ -1594,7 +1594,7 @@ msgstr ""
 msgid "An box drawn around the following character:"
 msgstr ""
 
-#: src/configuring-zed.md:778 src/configuring-zed.md:3854
+#: src/configuring-zed.md:778 src/configuring-zed.md:3855
 msgid "\"hollow\""
 msgstr ""
 
@@ -1681,7 +1681,7 @@ msgstr ""
 
 #: src/configuring-zed.md:818 src/configuring-zed.md:923
 #: src/configuring-zed.md:1081 src/configuring-zed.md:1117
-#: src/configuring-zed.md:4642 src/configuring-zed.md:4676
+#: src/configuring-zed.md:4643 src/configuring-zed.md:4677
 msgid "\"never\""
 msgstr ""
 
@@ -1747,8 +1747,8 @@ msgstr ""
 msgid "Place snippets at the bottom of the completion list:"
 msgstr ""
 
-#: src/configuring-zed.md:856 src/configuring-zed.md:3685
-#: src/configuring-zed.md:4770
+#: src/configuring-zed.md:856 src/configuring-zed.md:3686
+#: src/configuring-zed.md:4771
 msgid "\"bottom\""
 msgstr ""
 
@@ -1766,17 +1766,17 @@ msgid ""
 "elements in it."
 msgstr ""
 
-#: src/configuring-zed.md:868 src/configuring-zed.md:4650
+#: src/configuring-zed.md:868 src/configuring-zed.md:4651
 msgid "Setting: `scrollbar`"
 msgstr ""
 
 #: src/configuring-zed.md:872 src/configuring-zed.md:898
 #: src/configuring-zed.md:906 src/configuring-zed.md:914
 #: src/configuring-zed.md:922 src/configuring-zed.md:1044
-#: src/configuring-zed.md:3708 src/configuring-zed.md:4456
-#: src/configuring-zed.md:4654 src/configuring-zed.md:4665
-#: src/configuring-zed.md:4675 src/configuring-zed.md:4794
-#: src/configuring-zed.md:4860
+#: src/configuring-zed.md:3709 src/configuring-zed.md:4457
+#: src/configuring-zed.md:4655 src/configuring-zed.md:4666
+#: src/configuring-zed.md:4676 src/configuring-zed.md:4795
+#: src/configuring-zed.md:4861
 msgid "\"scrollbar\""
 msgstr ""
 
@@ -1785,13 +1785,13 @@ msgstr ""
 #: src/configuring-zed.md:923 src/configuring-zed.md:1081
 #: src/configuring-zed.md:1101 src/configuring-zed.md:1109
 #: src/configuring-zed.md:1117 src/configuring-zed.md:1259
-#: src/configuring-zed.md:3709 src/configuring-zed.md:4457
-#: src/configuring-zed.md:4462 src/configuring-zed.md:4621
-#: src/configuring-zed.md:4632 src/configuring-zed.md:4642
-#: src/configuring-zed.md:4655 src/configuring-zed.md:4666
-#: src/configuring-zed.md:4676 src/configuring-zed.md:4795
-#: src/configuring-zed.md:4858 src/configuring-zed.md:4861
-#: src/configuring-zed.md:5029
+#: src/configuring-zed.md:3710 src/configuring-zed.md:4458
+#: src/configuring-zed.md:4463 src/configuring-zed.md:4622
+#: src/configuring-zed.md:4633 src/configuring-zed.md:4643
+#: src/configuring-zed.md:4656 src/configuring-zed.md:4667
+#: src/configuring-zed.md:4677 src/configuring-zed.md:4796
+#: src/configuring-zed.md:4859 src/configuring-zed.md:4862
+#: src/configuring-zed.md:5030
 msgid "\"show\""
 msgstr ""
 
@@ -1824,7 +1824,7 @@ msgstr ""
 #: src/configuring-zed.md:1980 src/configuring-zed.md:1998
 #: src/configuring-zed.md:2010 src/configuring-zed.md:2023
 #: src/configuring-zed.md:2036 src/configuring-zed.md:2049
-#: src/configuring-zed.md:3645
+#: src/configuring-zed.md:3646
 msgid "\"diagnostics\""
 msgstr ""
 
@@ -1868,9 +1868,9 @@ msgid "Match the system's configured behavior:"
 msgstr ""
 
 #: src/configuring-zed.md:907 src/configuring-zed.md:2418
-#: src/configuring-zed.md:2452 src/configuring-zed.md:3702
-#: src/configuring-zed.md:4051 src/configuring-zed.md:4310
-#: src/configuring-zed.md:4344
+#: src/configuring-zed.md:2452 src/configuring-zed.md:3703
+#: src/configuring-zed.md:4052 src/configuring-zed.md:4311
+#: src/configuring-zed.md:4345
 msgid "\"system\""
 msgstr ""
 
@@ -1880,10 +1880,10 @@ msgstr ""
 
 #: src/configuring-zed.md:915 src/configuring-zed.md:1082
 #: src/configuring-zed.md:1101 src/configuring-zed.md:1141
-#: src/configuring-zed.md:1400 src/configuring-zed.md:4224
-#: src/configuring-zed.md:4462 src/configuring-zed.md:4621
-#: src/configuring-zed.md:4632 src/configuring-zed.md:4666
-#: src/configuring-zed.md:4858
+#: src/configuring-zed.md:1400 src/configuring-zed.md:4225
+#: src/configuring-zed.md:4463 src/configuring-zed.md:4622
+#: src/configuring-zed.md:4633 src/configuring-zed.md:4667
+#: src/configuring-zed.md:4859
 msgid "\"always\""
 msgstr ""
 
@@ -1985,7 +1985,7 @@ msgid ""
 msgstr ""
 
 #: src/configuring-zed.md:987 src/configuring-zed.md:1952
-#: src/configuring-zed.md:3652
+#: src/configuring-zed.md:3653
 msgid "Diagnostics"
 msgstr ""
 
@@ -1994,7 +1994,7 @@ msgid "Description: Which diagnostic indicators to show in the scrollbar."
 msgstr ""
 
 #: src/configuring-zed.md:990 src/configuring-zed.md:1955
-#: src/configuring-zed.md:3655
+#: src/configuring-zed.md:3656
 msgid "Setting: `diagnostics`"
 msgstr ""
 
@@ -2013,7 +2013,7 @@ msgstr ""
 #: src/configuring-zed.md:1017 src/configuring-zed.md:1025
 #: src/configuring-zed.md:1033 src/configuring-zed.md:1308
 #: src/configuring-zed.md:1424 src/configuring-zed.md:1432
-#: src/configuring-zed.md:1440 src/configuring-zed.md:4460
+#: src/configuring-zed.md:1440 src/configuring-zed.md:4461
 msgid "\"show_diagnostics\""
 msgstr ""
 
@@ -2231,7 +2231,7 @@ msgstr ""
 msgid "Settings: `tab_bar`"
 msgstr ""
 
-#: src/configuring-zed.md:1258 src/configuring-zed.md:5029
+#: src/configuring-zed.md:1258 src/configuring-zed.md:5030
 msgid "\"tab_bar\""
 msgstr ""
 
@@ -2297,18 +2297,18 @@ msgid "\"close_position\""
 msgstr ""
 
 #: src/configuring-zed.md:1303 src/configuring-zed.md:1324
-#: src/configuring-zed.md:3058 src/configuring-zed.md:4497
+#: src/configuring-zed.md:3058 src/configuring-zed.md:4498
 msgid "\"right\""
 msgstr ""
 
-#: src/configuring-zed.md:1304 src/configuring-zed.md:4449
-#: src/configuring-zed.md:4851
+#: src/configuring-zed.md:1304 src/configuring-zed.md:4450
+#: src/configuring-zed.md:4852
 msgid "\"file_icons\""
 msgstr ""
 
-#: src/configuring-zed.md:1305 src/configuring-zed.md:4451
-#: src/configuring-zed.md:4537 src/configuring-zed.md:4545
-#: src/configuring-zed.md:4853
+#: src/configuring-zed.md:1305 src/configuring-zed.md:4452
+#: src/configuring-zed.md:4538 src/configuring-zed.md:4546
+#: src/configuring-zed.md:4854
 msgid "\"git_status\""
 msgstr ""
 
@@ -2351,9 +2351,9 @@ msgid "Display the close button on the left:"
 msgstr ""
 
 #: src/configuring-zed.md:1332 src/configuring-zed.md:3050
-#: src/configuring-zed.md:4447 src/configuring-zed.md:4489
-#: src/configuring-zed.md:4747 src/configuring-zed.md:4788
-#: src/configuring-zed.md:4850
+#: src/configuring-zed.md:4448 src/configuring-zed.md:4490
+#: src/configuring-zed.md:4748 src/configuring-zed.md:4789
+#: src/configuring-zed.md:4851
 msgid "\"left\""
 msgstr ""
 
@@ -2369,7 +2369,7 @@ msgstr ""
 msgid "Setting: `file_icons`"
 msgstr ""
 
-#: src/configuring-zed.md:1342 src/configuring-zed.md:4525
+#: src/configuring-zed.md:1342 src/configuring-zed.md:4526
 msgid "Git Status"
 msgstr ""
 
@@ -2377,7 +2377,7 @@ msgstr ""
 msgid "Description: Whether or not to show Git file status in tab."
 msgstr ""
 
-#: src/configuring-zed.md:1345 src/configuring-zed.md:4528
+#: src/configuring-zed.md:1345 src/configuring-zed.md:4529
 msgid "Setting: `git_status`"
 msgstr ""
 
@@ -2568,7 +2568,7 @@ msgstr ""
 #: src/configuring-zed.md:2365 src/configuring-zed.md:2377
 #: src/configuring-zed.md:2528 src/configuring-zed.md:2630
 #: src/configuring-zed.md:2924 src/configuring-zed.md:3124
-#: src/configuring-zed.md:3625
+#: src/configuring-zed.md:3626
 msgid "\"enabled\""
 msgstr ""
 
@@ -2585,17 +2585,17 @@ msgid ""
 "Description: Whether or not to show various elements in the editor toolbar."
 msgstr ""
 
-#: src/configuring-zed.md:1511 src/configuring-zed.md:4139
+#: src/configuring-zed.md:1511 src/configuring-zed.md:4140
 msgid "Setting: `toolbar`"
 msgstr ""
 
-#: src/configuring-zed.md:1515 src/configuring-zed.md:3704
-#: src/configuring-zed.md:4145 src/configuring-zed.md:5030
+#: src/configuring-zed.md:1515 src/configuring-zed.md:3705
+#: src/configuring-zed.md:4146 src/configuring-zed.md:5031
 msgid "\"toolbar\""
 msgstr ""
 
-#: src/configuring-zed.md:1516 src/configuring-zed.md:3705
-#: src/configuring-zed.md:4146 src/configuring-zed.md:5030
+#: src/configuring-zed.md:1516 src/configuring-zed.md:3706
+#: src/configuring-zed.md:4147 src/configuring-zed.md:5031
 msgid "\"breadcrumbs\""
 msgstr ""
 
@@ -2917,10 +2917,10 @@ msgid "\"global_lsp_settings\""
 msgstr ""
 
 #: src/configuring-zed.md:1684 src/configuring-zed.md:3302
-#: src/configuring-zed.md:3701 src/configuring-zed.md:4175
-#: src/configuring-zed.md:4445 src/configuring-zed.md:4746
-#: src/configuring-zed.md:4771 src/configuring-zed.md:4787
-#: src/configuring-zed.md:4848
+#: src/configuring-zed.md:3702 src/configuring-zed.md:4176
+#: src/configuring-zed.md:4446 src/configuring-zed.md:4747
+#: src/configuring-zed.md:4772 src/configuring-zed.md:4788
+#: src/configuring-zed.md:4849
 msgid "\"button\""
 msgstr ""
 
@@ -3040,14 +3040,14 @@ msgid "`on`, enables format on save obeying `formatter` setting:"
 msgstr ""
 
 #: src/configuring-zed.md:1777 src/configuring-zed.md:1785
-#: src/configuring-zed.md:2652 src/configuring-zed.md:5051
-#: src/configuring-zed.md:5060
+#: src/configuring-zed.md:2652 src/configuring-zed.md:5052
+#: src/configuring-zed.md:5061
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/configuring-zed.md:1777 src/configuring-zed.md:3689
-#: src/configuring-zed.md:3748 src/configuring-zed.md:3786
-#: src/configuring-zed.md:4093 src/configuring-zed.md:5060
+#: src/configuring-zed.md:1777 src/configuring-zed.md:3690
+#: src/configuring-zed.md:3749 src/configuring-zed.md:3787
+#: src/configuring-zed.md:4094 src/configuring-zed.md:5061
 msgid "\"on\""
 msgstr ""
 
@@ -3073,12 +3073,12 @@ msgstr ""
 
 #: src/configuring-zed.md:1801 src/configuring-zed.md:1809
 #: src/configuring-zed.md:1823 src/configuring-zed.md:1835
-#: src/configuring-zed.md:1848 src/configuring-zed.md:5061
+#: src/configuring-zed.md:1848 src/configuring-zed.md:5062
 msgid "\"formatter\""
 msgstr ""
 
 #: src/configuring-zed.md:1801 src/configuring-zed.md:1849
-#: src/configuring-zed.md:5061
+#: src/configuring-zed.md:5062
 msgid "\"language_server\""
 msgstr ""
 
@@ -3174,7 +3174,7 @@ msgid ""
 "Or to use multiple formatters consecutively, use an array of formatters:"
 msgstr ""
 
-#: src/configuring-zed.md:1849 src/configuring-zed.md:4833
+#: src/configuring-zed.md:1849 src/configuring-zed.md:4834
 msgid "\"name\""
 msgstr ""
 
@@ -3212,9 +3212,9 @@ msgstr ""
 msgid "Setting: `always_treat_brackets_as_autoclosed`"
 msgstr ""
 
-#: src/configuring-zed.md:1883 src/configuring-zed.md:3801
-#: src/configuring-zed.md:3869 src/configuring-zed.md:3885
-#: src/configuring-zed.md:4126 src/configuring-zed.md:4906
+#: src/configuring-zed.md:1883 src/configuring-zed.md:3802
+#: src/configuring-zed.md:3870 src/configuring-zed.md:3886
+#: src/configuring-zed.md:4127 src/configuring-zed.md:4907
 msgid "**Example**"
 msgstr ""
 
@@ -3581,7 +3581,7 @@ msgstr ""
 msgid "Setting: `gutter_debounce`"
 msgstr ""
 
-#: src/configuring-zed.md:2117 src/configuring-zed.md:5008
+#: src/configuring-zed.md:2117 src/configuring-zed.md:5009
 msgid "Example:"
 msgstr ""
 
@@ -3748,15 +3748,15 @@ msgid ""
 "configured separately for each language."
 msgstr ""
 
-#: src/configuring-zed.md:2318 src/configuring-zed.md:4616
+#: src/configuring-zed.md:2318 src/configuring-zed.md:4617
 msgid "Setting: `indent_guides`"
 msgstr ""
 
 #: src/configuring-zed.md:2323 src/configuring-zed.md:2339
 #: src/configuring-zed.md:2351 src/configuring-zed.md:2364
-#: src/configuring-zed.md:2376 src/configuring-zed.md:4461
-#: src/configuring-zed.md:4620 src/configuring-zed.md:4631
-#: src/configuring-zed.md:4641 src/configuring-zed.md:4857
+#: src/configuring-zed.md:2376 src/configuring-zed.md:4462
+#: src/configuring-zed.md:4621 src/configuring-zed.md:4632
+#: src/configuring-zed.md:4642 src/configuring-zed.md:4858
 msgid "\"indent_guides\""
 msgstr ""
 
@@ -3885,13 +3885,13 @@ msgstr ""
 
 #: src/configuring-zed.md:2418 src/configuring-zed.md:2436
 #: src/configuring-zed.md:2444 src/configuring-zed.md:2452
-#: src/configuring-zed.md:4310 src/configuring-zed.md:4328
-#: src/configuring-zed.md:4336 src/configuring-zed.md:4344
+#: src/configuring-zed.md:4311 src/configuring-zed.md:4329
+#: src/configuring-zed.md:4337 src/configuring-zed.md:4345
 msgid "\"mode\""
 msgstr ""
 
 #: src/configuring-zed.md:2419 src/configuring-zed.md:2436
-#: src/configuring-zed.md:4311 src/configuring-zed.md:4328
+#: src/configuring-zed.md:4312 src/configuring-zed.md:4329
 msgid "\"dark\""
 msgstr ""
 
@@ -3900,11 +3900,11 @@ msgid "\"Zed (Default)\""
 msgstr ""
 
 #: src/configuring-zed.md:2420 src/configuring-zed.md:2444
-#: src/configuring-zed.md:4312 src/configuring-zed.md:4336
+#: src/configuring-zed.md:4313 src/configuring-zed.md:4337
 msgid "\"light\""
 msgstr ""
 
-#: src/configuring-zed.md:2424 src/configuring-zed.md:4316
+#: src/configuring-zed.md:2424 src/configuring-zed.md:4317
 msgid "Mode"
 msgstr ""
 
@@ -3912,12 +3912,12 @@ msgstr ""
 msgid "Description: Specify the icon theme mode."
 msgstr ""
 
-#: src/configuring-zed.md:2427 src/configuring-zed.md:4319
+#: src/configuring-zed.md:2427 src/configuring-zed.md:4320
 msgid "Setting: `mode`"
 msgstr ""
 
-#: src/configuring-zed.md:2428 src/configuring-zed.md:4042
-#: src/configuring-zed.md:4320
+#: src/configuring-zed.md:2428 src/configuring-zed.md:4043
+#: src/configuring-zed.md:4321
 msgid "Default: `system`"
 msgstr ""
 
@@ -3933,7 +3933,7 @@ msgstr ""
 msgid "Set the icon theme to system mode"
 msgstr ""
 
-#: src/configuring-zed.md:2456 src/configuring-zed.md:4348
+#: src/configuring-zed.md:2456 src/configuring-zed.md:4349
 msgid "Dark"
 msgstr ""
 
@@ -3941,7 +3941,7 @@ msgstr ""
 msgid "Description: The name of the dark icon theme."
 msgstr ""
 
-#: src/configuring-zed.md:2459 src/configuring-zed.md:4351
+#: src/configuring-zed.md:2459 src/configuring-zed.md:4352
 msgid "Setting: `dark`"
 msgstr ""
 
@@ -3951,7 +3951,7 @@ msgid ""
 "the command palette to see a current list of valid icon themes names."
 msgstr ""
 
-#: src/configuring-zed.md:2466 src/configuring-zed.md:4358
+#: src/configuring-zed.md:2466 src/configuring-zed.md:4359
 msgid "Light"
 msgstr ""
 
@@ -3959,7 +3959,7 @@ msgstr ""
 msgid "Description: The name of the light icon theme."
 msgstr ""
 
-#: src/configuring-zed.md:2469 src/configuring-zed.md:4361
+#: src/configuring-zed.md:2469 src/configuring-zed.md:4362
 msgid "Setting: `light`"
 msgstr ""
 
@@ -4258,18 +4258,18 @@ msgid ""
 "the `languages` value. Example:"
 msgstr ""
 
-#: src/configuring-zed.md:2651 src/configuring-zed.md:5059
+#: src/configuring-zed.md:2651 src/configuring-zed.md:5060
 msgid "\"C\""
 msgstr ""
 
 #: src/configuring-zed.md:2653 src/configuring-zed.md:2654
-#: src/configuring-zed.md:5044 src/configuring-zed.md:5062
-#: src/configuring-zed.md:5063
+#: src/configuring-zed.md:5045 src/configuring-zed.md:5063
+#: src/configuring-zed.md:5064
 msgid "\"preferred_line_length\""
 msgstr ""
 
-#: src/configuring-zed.md:2654 src/configuring-zed.md:5045
-#: src/configuring-zed.md:5063
+#: src/configuring-zed.md:2654 src/configuring-zed.md:5046
+#: src/configuring-zed.md:5064
 msgid "\"soft_wrap\""
 msgstr ""
 
@@ -4277,7 +4277,7 @@ msgstr ""
 msgid "\"JSON\""
 msgstr ""
 
-#: src/configuring-zed.md:2657 src/configuring-zed.md:5043
+#: src/configuring-zed.md:2657 src/configuring-zed.md:5044
 msgid "\"tab_size\""
 msgstr ""
 
@@ -4672,11 +4672,11 @@ msgstr ""
 msgid "Setting: `on_last_window_closed`"
 msgstr ""
 
-#: src/configuring-zed.md:2865 src/configuring-zed.md:4408
+#: src/configuring-zed.md:2865 src/configuring-zed.md:4409
 msgid "Default: `\"platform_default\"`"
 msgstr ""
 
-#: src/configuring-zed.md:2869 src/configuring-zed.md:4412
+#: src/configuring-zed.md:2869 src/configuring-zed.md:4413
 msgid "Use platform default behavior:"
 msgstr ""
 
@@ -4684,7 +4684,7 @@ msgstr ""
 msgid "\"on_last_window_closed\""
 msgstr ""
 
-#: src/configuring-zed.md:2873 src/configuring-zed.md:4416
+#: src/configuring-zed.md:2873 src/configuring-zed.md:4417
 msgid "\"platform_default\""
 msgstr ""
 
@@ -4706,12 +4706,12 @@ msgid ""
 "settings"
 msgstr ""
 
-#: src/configuring-zed.md:2888 src/configuring-zed.md:5002
+#: src/configuring-zed.md:2888 src/configuring-zed.md:5003
 msgid "Setting: `profiles`"
 msgstr ""
 
-#: src/configuring-zed.md:2889 src/configuring-zed.md:3883
-#: src/configuring-zed.md:5003
+#: src/configuring-zed.md:2889 src/configuring-zed.md:3884
+#: src/configuring-zed.md:5004
 msgid "Default: `{}`"
 msgstr ""
 
@@ -4719,7 +4719,7 @@ msgstr ""
 msgid "Configuration object for defining settings profiles. Example:"
 msgstr ""
 
-#: src/configuring-zed.md:2897 src/configuring-zed.md:5011
+#: src/configuring-zed.md:2897 src/configuring-zed.md:5012
 msgid "\"profiles\""
 msgstr ""
 
@@ -4727,19 +4727,19 @@ msgstr ""
 msgid "\"presentation\""
 msgstr ""
 
-#: src/configuring-zed.md:2899 src/configuring-zed.md:5014
-#: src/configuring-zed.md:5020 src/configuring-zed.md:5026
-#: src/configuring-zed.md:5047
+#: src/configuring-zed.md:2899 src/configuring-zed.md:5015
+#: src/configuring-zed.md:5021 src/configuring-zed.md:5027
+#: src/configuring-zed.md:5048
 msgid "\"buffer_font_size\""
 msgstr ""
 
-#: src/configuring-zed.md:2900 src/configuring-zed.md:5016
-#: src/configuring-zed.md:5022 src/configuring-zed.md:5028
+#: src/configuring-zed.md:2900 src/configuring-zed.md:5017
+#: src/configuring-zed.md:5023 src/configuring-zed.md:5029
 msgid "\"ui_font_size\""
 msgstr ""
 
-#: src/configuring-zed.md:2901 src/configuring-zed.md:4312
-#: src/configuring-zed.md:5021
+#: src/configuring-zed.md:2901 src/configuring-zed.md:4313
+#: src/configuring-zed.md:5022
 msgid "\"One Light\""
 msgstr ""
 
@@ -5019,8 +5019,8 @@ msgstr ""
 msgid "Default: `80`"
 msgstr ""
 
-#: src/configuring-zed.md:3070 src/configuring-zed.md:3613
-#: src/configuring-zed.md:3906
+#: src/configuring-zed.md:3070 src/configuring-zed.md:3614
+#: src/configuring-zed.md:3907
 msgid "`integer` values"
 msgstr ""
 
@@ -5407,7 +5407,7 @@ msgid ""
 "Description: Whether to show the project search button in the status bar."
 msgstr ""
 
-#: src/configuring-zed.md:3314 src/configuring-zed.md:4165
+#: src/configuring-zed.md:3314 src/configuring-zed.md:4166
 msgid "Setting: `button`"
 msgstr ""
 
@@ -5806,87 +5806,91 @@ msgstr ""
 msgid "`boundary`"
 msgstr ""
 
-#: src/configuring-zed.md:3516
+#: src/configuring-zed.md:3515
+msgid "`trailing`"
+msgstr ""
+
+#: src/configuring-zed.md:3517
 msgid "Whitespace Map"
 msgstr ""
 
-#: src/configuring-zed.md:3518
+#: src/configuring-zed.md:3519
 msgid ""
 "Description: Specify the characters used to render whitespace when "
 "show_whitespaces is enabled."
 msgstr ""
 
-#: src/configuring-zed.md:3519
+#: src/configuring-zed.md:3520
 msgid "Setting: `whitespace_map`"
 msgstr ""
 
-#: src/configuring-zed.md:3524
+#: src/configuring-zed.md:3525
 msgid "\"whitespace_map\""
 msgstr ""
 
-#: src/configuring-zed.md:3525
+#: src/configuring-zed.md:3526
 msgid "\"space\""
 msgstr ""
 
-#: src/configuring-zed.md:3525
+#: src/configuring-zed.md:3526
 msgid "\"•\""
 msgstr ""
 
-#: src/configuring-zed.md:3526
+#: src/configuring-zed.md:3527
 msgid "\"tab\""
 msgstr ""
 
-#: src/configuring-zed.md:3526
+#: src/configuring-zed.md:3527
 msgid "\"→\""
 msgstr ""
 
-#: src/configuring-zed.md:3531
+#: src/configuring-zed.md:3532
 msgid "Soft Wrap"
 msgstr ""
 
-#: src/configuring-zed.md:3533
+#: src/configuring-zed.md:3534
 msgid ""
 "Description: Whether or not to automatically wrap lines of text to fit "
 "editor / preferred width."
 msgstr ""
 
-#: src/configuring-zed.md:3534
+#: src/configuring-zed.md:3535
 msgid "Setting: `soft_wrap`"
 msgstr ""
 
-#: src/configuring-zed.md:3535
+#: src/configuring-zed.md:3536
 msgid "Default: `none`"
 msgstr ""
 
-#: src/configuring-zed.md:3539
+#: src/configuring-zed.md:3540
 msgid "`none` to avoid wrapping generally, unless the line is too long"
 msgstr ""
 
-#: src/configuring-zed.md:3540
+#: src/configuring-zed.md:3541
 msgid "`prefer_line` (deprecated, same as `none`)"
 msgstr ""
 
-#: src/configuring-zed.md:3541
+#: src/configuring-zed.md:3542
 msgid "`editor_width` to wrap lines that overflow the editor width"
 msgstr ""
 
-#: src/configuring-zed.md:3542
+#: src/configuring-zed.md:3543
 msgid ""
 "`preferred_line_length` to wrap lines that overflow `preferred_line_length` "
 "config value"
 msgstr ""
 
-#: src/configuring-zed.md:3543
+#: src/configuring-zed.md:3544
 msgid ""
 "`bounded` to wrap lines at the minimum of `editor_width` and "
 "`preferred_line_length`"
 msgstr ""
 
-#: src/configuring-zed.md:3545
+#: src/configuring-zed.md:3546
 msgid "Show Wrap Guides"
 msgstr ""
 
-#: src/configuring-zed.md:3547
+#: src/configuring-zed.md:3548
 msgid ""
 "Description: Whether to show wrap guides (vertical rulers) in the editor. "
 "Setting this to true will show a guide at the 'preferred_line_length' value "
@@ -5894,29 +5898,29 @@ msgid ""
 "additional guides as specified by the 'wrap_guides' setting."
 msgstr ""
 
-#: src/configuring-zed.md:3548
+#: src/configuring-zed.md:3549
 msgid "Setting: `show_wrap_guides`"
 msgstr ""
 
-#: src/configuring-zed.md:3555
+#: src/configuring-zed.md:3556
 msgid "Use On Type Format"
 msgstr ""
 
-#: src/configuring-zed.md:3557
+#: src/configuring-zed.md:3558
 msgid ""
 "Description: Whether to use additional LSP queries to format (and amend) the "
 "code after every \"trigger\" symbol input, defined by LSP server capabilities"
 msgstr ""
 
-#: src/configuring-zed.md:3558
+#: src/configuring-zed.md:3559
 msgid "Setting: `use_on_type_format`"
 msgstr ""
 
-#: src/configuring-zed.md:3565
+#: src/configuring-zed.md:3566
 msgid "Use Auto Surround"
 msgstr ""
 
-#: src/configuring-zed.md:3567
+#: src/configuring-zed.md:3568
 msgid ""
 "Description: Whether to automatically surround selected text when typing "
 "opening parenthesis, bracket, brace, single or double quote characters. For "
@@ -5924,29 +5928,29 @@ msgid ""
 "()."
 msgstr ""
 
-#: src/configuring-zed.md:3568
+#: src/configuring-zed.md:3569
 msgid "Setting: `use_auto_surround`"
 msgstr ""
 
-#: src/configuring-zed.md:3575
+#: src/configuring-zed.md:3576
 msgid "Use System Path Prompts"
 msgstr ""
 
-#: src/configuring-zed.md:3577
+#: src/configuring-zed.md:3578
 msgid ""
 "Description: Whether to use the system provided dialogs for Open and Save "
 "As. When set to false, Zed will use the built-in keyboard-first pickers."
 msgstr ""
 
-#: src/configuring-zed.md:3578
+#: src/configuring-zed.md:3579
 msgid "Setting: `use_system_path_prompts`"
 msgstr ""
 
-#: src/configuring-zed.md:3585
+#: src/configuring-zed.md:3586
 msgid "Use System Prompts"
 msgstr ""
 
-#: src/configuring-zed.md:3587
+#: src/configuring-zed.md:3588
 msgid ""
 "Description: Whether to use the system provided dialogs for prompts, such as "
 "confirmation prompts. When set to false, Zed will use its built-in prompts. "
@@ -5954,307 +5958,307 @@ msgid ""
 "in prompts."
 msgstr ""
 
-#: src/configuring-zed.md:3588
+#: src/configuring-zed.md:3589
 msgid "Setting: `use_system_prompts`"
 msgstr ""
 
-#: src/configuring-zed.md:3595
+#: src/configuring-zed.md:3596
 msgid "Wrap Guides (Vertical Rulers)"
 msgstr ""
 
-#: src/configuring-zed.md:3597
+#: src/configuring-zed.md:3598
 msgid ""
 "Description: Where to display vertical rulers as wrap-guides. Disable by "
 "setting `show_wrap_guides` to `false`."
 msgstr ""
 
-#: src/configuring-zed.md:3598
+#: src/configuring-zed.md:3599
 msgid "Setting: `wrap_guides`"
 msgstr ""
 
-#: src/configuring-zed.md:3599
+#: src/configuring-zed.md:3600
 msgid "Default: \\[\\]"
 msgstr ""
 
-#: src/configuring-zed.md:3603
+#: src/configuring-zed.md:3604
 msgid "List of `integer` column numbers"
 msgstr ""
 
-#: src/configuring-zed.md:3605
+#: src/configuring-zed.md:3606
 msgid "Tab Size"
 msgstr ""
 
-#: src/configuring-zed.md:3607
+#: src/configuring-zed.md:3608
 msgid "Description: The number of spaces to use for each tab character."
 msgstr ""
 
-#: src/configuring-zed.md:3608
+#: src/configuring-zed.md:3609
 msgid "Setting: `tab_size`"
 msgstr ""
 
-#: src/configuring-zed.md:3609
+#: src/configuring-zed.md:3610
 msgid "Default: `4`"
 msgstr ""
 
-#: src/configuring-zed.md:3615
+#: src/configuring-zed.md:3616
 msgid "Tasks"
 msgstr ""
 
-#: src/configuring-zed.md:3617
+#: src/configuring-zed.md:3618
 msgid "Description: Configuration for tasks that can be run within Zed"
 msgstr ""
 
-#: src/configuring-zed.md:3618
+#: src/configuring-zed.md:3619
 msgid "Setting: `tasks`"
 msgstr ""
 
-#: src/configuring-zed.md:3623
+#: src/configuring-zed.md:3624
 msgid "\"tasks\""
 msgstr ""
 
-#: src/configuring-zed.md:3624
+#: src/configuring-zed.md:3625
 msgid "\"variables\""
 msgstr ""
 
-#: src/configuring-zed.md:3626
+#: src/configuring-zed.md:3627
 msgid "\"prefer_lsp\""
 msgstr ""
 
-#: src/configuring-zed.md:3633
+#: src/configuring-zed.md:3634
 msgid "`variables`: Custom variables for task configuration"
 msgstr ""
 
-#: src/configuring-zed.md:3634
+#: src/configuring-zed.md:3635
 msgid "`enabled`: Whether tasks are enabled"
 msgstr ""
 
-#: src/configuring-zed.md:3635
+#: src/configuring-zed.md:3636
 msgid ""
 "`prefer_lsp`: Whether to prefer LSP-provided tasks over Zed language "
 "extension ones"
 msgstr ""
 
-#: src/configuring-zed.md:3637
+#: src/configuring-zed.md:3638
 msgid "Telemetry"
 msgstr ""
 
-#: src/configuring-zed.md:3639
+#: src/configuring-zed.md:3640
 msgid "Description: Control what info is collected by Zed."
 msgstr ""
 
-#: src/configuring-zed.md:3640
+#: src/configuring-zed.md:3641
 msgid "Setting: `telemetry`"
 msgstr ""
 
-#: src/configuring-zed.md:3644
+#: src/configuring-zed.md:3645
 msgid "\"telemetry\""
 msgstr ""
 
-#: src/configuring-zed.md:3646
+#: src/configuring-zed.md:3647
 msgid "\"metrics\""
 msgstr ""
 
-#: src/configuring-zed.md:3654
+#: src/configuring-zed.md:3655
 msgid ""
 "Description: Setting for sending debug-related data, such as crash reports."
 msgstr ""
 
-#: src/configuring-zed.md:3662
+#: src/configuring-zed.md:3663
 msgid "Metrics"
 msgstr ""
 
-#: src/configuring-zed.md:3664
+#: src/configuring-zed.md:3665
 msgid ""
 "Description: Setting for sending anonymized usage data, such what languages "
 "you're using Zed with."
 msgstr ""
 
-#: src/configuring-zed.md:3665
+#: src/configuring-zed.md:3666
 msgid "Setting: `metrics`"
 msgstr ""
 
-#: src/configuring-zed.md:3672
+#: src/configuring-zed.md:3673
 msgid "Terminal"
 msgstr ""
 
-#: src/configuring-zed.md:3674
+#: src/configuring-zed.md:3675
 msgid "Description: Configuration for the terminal."
 msgstr ""
 
-#: src/configuring-zed.md:3675
+#: src/configuring-zed.md:3676
 msgid "Setting: `terminal`"
 msgstr ""
 
-#: src/configuring-zed.md:3680 src/configuring-zed.md:3737
-#: src/configuring-zed.md:3747 src/configuring-zed.md:3765
-#: src/configuring-zed.md:3775 src/configuring-zed.md:3785
-#: src/configuring-zed.md:3805 src/configuring-zed.md:3823
-#: src/configuring-zed.md:3833 src/configuring-zed.md:3843
-#: src/configuring-zed.md:3853 src/configuring-zed.md:3873
-#: src/configuring-zed.md:3889 src/configuring-zed.md:3910
-#: src/configuring-zed.md:3928 src/configuring-zed.md:3947
-#: src/configuring-zed.md:3968 src/configuring-zed.md:3978
-#: src/configuring-zed.md:3988 src/configuring-zed.md:4014
-#: src/configuring-zed.md:4032 src/configuring-zed.md:4050
-#: src/configuring-zed.md:4060 src/configuring-zed.md:4072
-#: src/configuring-zed.md:4091 src/configuring-zed.md:4110
-#: src/configuring-zed.md:4130 src/configuring-zed.md:4144
-#: src/configuring-zed.md:4174 src/configuring-zed.md:4192
-#: src/configuring-zed.md:4202 src/configuring-zed.md:4212
-#: src/configuring-zed.md:4222 src/configuring-zed.md:4240
-#: src/configuring-zed.md:5054
+#: src/configuring-zed.md:3681 src/configuring-zed.md:3738
+#: src/configuring-zed.md:3748 src/configuring-zed.md:3766
+#: src/configuring-zed.md:3776 src/configuring-zed.md:3786
+#: src/configuring-zed.md:3806 src/configuring-zed.md:3824
+#: src/configuring-zed.md:3834 src/configuring-zed.md:3844
+#: src/configuring-zed.md:3854 src/configuring-zed.md:3874
+#: src/configuring-zed.md:3890 src/configuring-zed.md:3911
+#: src/configuring-zed.md:3929 src/configuring-zed.md:3948
+#: src/configuring-zed.md:3969 src/configuring-zed.md:3979
+#: src/configuring-zed.md:3989 src/configuring-zed.md:4015
+#: src/configuring-zed.md:4033 src/configuring-zed.md:4051
+#: src/configuring-zed.md:4061 src/configuring-zed.md:4073
+#: src/configuring-zed.md:4092 src/configuring-zed.md:4111
+#: src/configuring-zed.md:4131 src/configuring-zed.md:4145
+#: src/configuring-zed.md:4175 src/configuring-zed.md:4193
+#: src/configuring-zed.md:4203 src/configuring-zed.md:4213
+#: src/configuring-zed.md:4223 src/configuring-zed.md:4241
+#: src/configuring-zed.md:5055
 msgid "\"terminal\""
 msgstr ""
 
-#: src/configuring-zed.md:3681 src/configuring-zed.md:3738
-#: src/configuring-zed.md:3748
+#: src/configuring-zed.md:3682 src/configuring-zed.md:3739
+#: src/configuring-zed.md:3749
 msgid "\"alternate_scroll\""
 msgstr ""
 
-#: src/configuring-zed.md:3682 src/configuring-zed.md:3766
-#: src/configuring-zed.md:3776 src/configuring-zed.md:3786
-#: src/configuring-zed.md:5056
+#: src/configuring-zed.md:3683 src/configuring-zed.md:3767
+#: src/configuring-zed.md:3777 src/configuring-zed.md:3787
+#: src/configuring-zed.md:5057
 msgid "\"blinking\""
 msgstr ""
 
-#: src/configuring-zed.md:3682 src/configuring-zed.md:3776
+#: src/configuring-zed.md:3683 src/configuring-zed.md:3777
 msgid "\"terminal_controlled\""
 msgstr ""
 
-#: src/configuring-zed.md:3683 src/configuring-zed.md:3806
+#: src/configuring-zed.md:3684 src/configuring-zed.md:3807
 msgid "\"copy_on_select\""
 msgstr ""
 
-#: src/configuring-zed.md:3684 src/configuring-zed.md:3874
+#: src/configuring-zed.md:3685 src/configuring-zed.md:3875
 msgid "\"keep_selection_on_copy\""
 msgstr ""
 
-#: src/configuring-zed.md:3685 src/configuring-zed.md:4447
-#: src/configuring-zed.md:4489 src/configuring-zed.md:4497
-#: src/configuring-zed.md:4747 src/configuring-zed.md:4770
-#: src/configuring-zed.md:4788 src/configuring-zed.md:4850
+#: src/configuring-zed.md:3686 src/configuring-zed.md:4448
+#: src/configuring-zed.md:4490 src/configuring-zed.md:4498
+#: src/configuring-zed.md:4748 src/configuring-zed.md:4771
+#: src/configuring-zed.md:4789 src/configuring-zed.md:4851
 msgid "\"dock\""
 msgstr ""
 
-#: src/configuring-zed.md:3686 src/configuring-zed.md:4446
-#: src/configuring-zed.md:4748 src/configuring-zed.md:4789
-#: src/configuring-zed.md:4849
+#: src/configuring-zed.md:3687 src/configuring-zed.md:4447
+#: src/configuring-zed.md:4749 src/configuring-zed.md:4790
+#: src/configuring-zed.md:4850
 msgid "\"default_width\""
 msgstr ""
 
-#: src/configuring-zed.md:3687
+#: src/configuring-zed.md:3688
 msgid "\"default_height\""
 msgstr ""
 
-#: src/configuring-zed.md:3688 src/configuring-zed.md:4092
-#: src/configuring-zed.md:4111
+#: src/configuring-zed.md:3689 src/configuring-zed.md:4093
+#: src/configuring-zed.md:4112
 msgid "\"detect_venv\""
 msgstr ""
 
-#: src/configuring-zed.md:3690
+#: src/configuring-zed.md:3691
 msgid "\"directories\""
 msgstr ""
 
-#: src/configuring-zed.md:3690 src/configuring-zed.md:4097
+#: src/configuring-zed.md:3691 src/configuring-zed.md:4098
 msgid "\".env\""
 msgstr ""
 
-#: src/configuring-zed.md:3690 src/configuring-zed.md:3694
-#: src/configuring-zed.md:3890 src/configuring-zed.md:4097
+#: src/configuring-zed.md:3691 src/configuring-zed.md:3695
+#: src/configuring-zed.md:3891 src/configuring-zed.md:4098
 msgid "\"env\""
 msgstr ""
 
-#: src/configuring-zed.md:3690 src/configuring-zed.md:4097
+#: src/configuring-zed.md:3691 src/configuring-zed.md:4098
 msgid "\".venv\""
 msgstr ""
 
-#: src/configuring-zed.md:3690 src/configuring-zed.md:4097
+#: src/configuring-zed.md:3691 src/configuring-zed.md:4098
 msgid "\"venv\""
 msgstr ""
 
-#: src/configuring-zed.md:3691
+#: src/configuring-zed.md:3692
 msgid "\"activate_script\""
 msgstr ""
 
-#: src/configuring-zed.md:3691 src/configuring-zed.md:4099
+#: src/configuring-zed.md:3692 src/configuring-zed.md:4100
 msgid "\"default\""
 msgstr ""
 
-#: src/configuring-zed.md:3695 src/configuring-zed.md:3929
-#: src/configuring-zed.md:5055
+#: src/configuring-zed.md:3696 src/configuring-zed.md:3930
+#: src/configuring-zed.md:5056
 msgid "\"font_family\""
 msgstr ""
 
-#: src/configuring-zed.md:3696 src/configuring-zed.md:3948
+#: src/configuring-zed.md:3697 src/configuring-zed.md:3949
 msgid "\"font_features\""
 msgstr ""
 
-#: src/configuring-zed.md:3697 src/configuring-zed.md:3911
+#: src/configuring-zed.md:3698 src/configuring-zed.md:3912
 msgid "\"font_size\""
 msgstr ""
 
-#: src/configuring-zed.md:3698 src/configuring-zed.md:3969
-#: src/configuring-zed.md:3979 src/configuring-zed.md:3989
+#: src/configuring-zed.md:3699 src/configuring-zed.md:3970
+#: src/configuring-zed.md:3980 src/configuring-zed.md:3990
 msgid "\"line_height\""
 msgstr ""
 
-#: src/configuring-zed.md:3698 src/configuring-zed.md:3969
-#: src/configuring-zed.md:4448 src/configuring-zed.md:4513
+#: src/configuring-zed.md:3699 src/configuring-zed.md:3970
+#: src/configuring-zed.md:4449 src/configuring-zed.md:4514
 msgid "\"comfortable\""
 msgstr ""
 
-#: src/configuring-zed.md:3699 src/configuring-zed.md:4015
+#: src/configuring-zed.md:3700 src/configuring-zed.md:4016
 msgid "\"minimum_contrast\""
 msgstr ""
 
-#: src/configuring-zed.md:3700 src/configuring-zed.md:4033
+#: src/configuring-zed.md:3701 src/configuring-zed.md:4034
 msgid "\"option_as_meta\""
 msgstr ""
 
-#: src/configuring-zed.md:3702 src/configuring-zed.md:4051
-#: src/configuring-zed.md:4061 src/configuring-zed.md:4073
+#: src/configuring-zed.md:3703 src/configuring-zed.md:4052
+#: src/configuring-zed.md:4062 src/configuring-zed.md:4074
 msgid "\"shell\""
 msgstr ""
 
-#: src/configuring-zed.md:3703 src/configuring-zed.md:4131
+#: src/configuring-zed.md:3704 src/configuring-zed.md:4132
 msgid "\"scroll_multiplier\""
 msgstr ""
 
-#: src/configuring-zed.md:3707 src/configuring-zed.md:4193
-#: src/configuring-zed.md:4203 src/configuring-zed.md:4213
-#: src/configuring-zed.md:4223
+#: src/configuring-zed.md:3708 src/configuring-zed.md:4194
+#: src/configuring-zed.md:4204 src/configuring-zed.md:4214
+#: src/configuring-zed.md:4224
 msgid "\"working_directory\""
 msgstr ""
 
-#: src/configuring-zed.md:3707 src/configuring-zed.md:4193
+#: src/configuring-zed.md:3708 src/configuring-zed.md:4194
 msgid "\"current_project_directory\""
 msgstr ""
 
-#: src/configuring-zed.md:3715
+#: src/configuring-zed.md:3716
 msgid "Terminal: Dock"
 msgstr ""
 
-#: src/configuring-zed.md:3717 src/configuring-zed.md:4479
+#: src/configuring-zed.md:3718 src/configuring-zed.md:4480
 msgid "Description: Control the position of the dock"
 msgstr ""
 
-#: src/configuring-zed.md:3718 src/configuring-zed.md:4480
+#: src/configuring-zed.md:3719 src/configuring-zed.md:4481
 msgid "Setting: `dock`"
 msgstr ""
 
-#: src/configuring-zed.md:3719
+#: src/configuring-zed.md:3720
 msgid "Default: `bottom`"
 msgstr ""
 
-#: src/configuring-zed.md:3723
+#: src/configuring-zed.md:3724
 msgid "`\"bottom\"`, `\"left\"` or `\"right\"`"
 msgstr ""
 
-#: src/configuring-zed.md:3725
+#: src/configuring-zed.md:3726
 msgid "Terminal: Alternate Scroll"
 msgstr ""
 
-#: src/configuring-zed.md:3727
+#: src/configuring-zed.md:3728
 msgid ""
 "Description: Set whether Alternate Scroll mode (DECSET code: `?1007`) is "
 "active by default. Alternate Scroll mode converts mouse scroll events into "
@@ -6263,344 +6267,344 @@ msgid ""
 "mode with ANSI escape codes."
 msgstr ""
 
-#: src/configuring-zed.md:3728
+#: src/configuring-zed.md:3729
 msgid "Setting: `alternate_scroll`"
 msgstr ""
 
-#: src/configuring-zed.md:3733
+#: src/configuring-zed.md:3734
 msgid "Default alternate scroll mode to off"
 msgstr ""
 
-#: src/configuring-zed.md:3743
+#: src/configuring-zed.md:3744
 msgid "Default alternate scroll mode to on"
 msgstr ""
 
-#: src/configuring-zed.md:3753
+#: src/configuring-zed.md:3754
 msgid "Terminal: Blinking"
 msgstr ""
 
-#: src/configuring-zed.md:3755
+#: src/configuring-zed.md:3756
 msgid "Description: Set the cursor blinking behavior in the terminal"
 msgstr ""
 
-#: src/configuring-zed.md:3756
+#: src/configuring-zed.md:3757
 msgid "Setting: `blinking`"
 msgstr ""
 
-#: src/configuring-zed.md:3757
+#: src/configuring-zed.md:3758
 msgid "Default: `terminal_controlled`"
 msgstr ""
 
-#: src/configuring-zed.md:3761
+#: src/configuring-zed.md:3762
 msgid "Never blink the cursor, ignore the terminal mode"
 msgstr ""
 
-#: src/configuring-zed.md:3771
+#: src/configuring-zed.md:3772
 msgid ""
 "Default the cursor blink to off, but allow the terminal to turn blinking on"
 msgstr ""
 
-#: src/configuring-zed.md:3781
+#: src/configuring-zed.md:3782
 msgid "Always blink the cursor, ignore the terminal mode"
 msgstr ""
 
-#: src/configuring-zed.md:3791
+#: src/configuring-zed.md:3792
 msgid "Terminal: Copy On Select"
 msgstr ""
 
-#: src/configuring-zed.md:3793
+#: src/configuring-zed.md:3794
 msgid ""
 "Description: Whether or not selecting text in the terminal will "
 "automatically copy to the system clipboard."
 msgstr ""
 
-#: src/configuring-zed.md:3794
+#: src/configuring-zed.md:3795
 msgid "Setting: `copy_on_select`"
 msgstr ""
 
-#: src/configuring-zed.md:3811
+#: src/configuring-zed.md:3812
 msgid "Terminal: Cursor Shape"
 msgstr ""
 
-#: src/configuring-zed.md:3813
+#: src/configuring-zed.md:3814
 msgid ""
 "Description: Controls the visual shape of the cursor in the terminal. When "
 "not explicitly set, it defaults to a block shape."
 msgstr ""
 
-#: src/configuring-zed.md:3815
+#: src/configuring-zed.md:3816
 msgid "Default: `null` (defaults to block)"
 msgstr ""
 
-#: src/configuring-zed.md:3819
+#: src/configuring-zed.md:3820
 msgid "A block that surrounds the following character"
 msgstr ""
 
-#: src/configuring-zed.md:3829
+#: src/configuring-zed.md:3830
 msgid "A vertical bar"
 msgstr ""
 
-#: src/configuring-zed.md:3839
+#: src/configuring-zed.md:3840
 msgid "An underline / underscore that runs along the following character"
 msgstr ""
 
-#: src/configuring-zed.md:3849
+#: src/configuring-zed.md:3850
 msgid "A box drawn around the following character"
 msgstr ""
 
-#: src/configuring-zed.md:3859
+#: src/configuring-zed.md:3860
 msgid "Terminal: Keep Selection On Copy"
 msgstr ""
 
-#: src/configuring-zed.md:3861
+#: src/configuring-zed.md:3862
 msgid ""
 "Description: Whether or not to keep the selection in the terminal after "
 "copying text."
 msgstr ""
 
-#: src/configuring-zed.md:3862
+#: src/configuring-zed.md:3863
 msgid "Setting: `keep_selection_on_copy`"
 msgstr ""
 
-#: src/configuring-zed.md:3879
+#: src/configuring-zed.md:3880
 msgid "Terminal: Env"
 msgstr ""
 
-#: src/configuring-zed.md:3881
+#: src/configuring-zed.md:3882
 msgid ""
 "Description: Any key-value pairs added to this object will be added to the "
 "terminal's environment. Keys must be unique, use `:` to separate multiple "
 "values in a single variable"
 msgstr ""
 
-#: src/configuring-zed.md:3882
+#: src/configuring-zed.md:3883
 msgid "Setting: `env`"
 msgstr ""
 
-#: src/configuring-zed.md:3891
+#: src/configuring-zed.md:3892
 msgid "\"ZED\""
 msgstr ""
 
-#: src/configuring-zed.md:3891
+#: src/configuring-zed.md:3892
 msgid "\"1\""
 msgstr ""
 
-#: src/configuring-zed.md:3892
+#: src/configuring-zed.md:3893
 msgid "\"KEY\""
 msgstr ""
 
-#: src/configuring-zed.md:3892
+#: src/configuring-zed.md:3893
 msgid "\"value1:value2\""
 msgstr ""
 
-#: src/configuring-zed.md:3898
+#: src/configuring-zed.md:3899
 msgid "Terminal: Font Size"
 msgstr ""
 
-#: src/configuring-zed.md:3900
+#: src/configuring-zed.md:3901
 msgid ""
 "Description: What font size to use for the terminal. When not set defaults "
 "to matching the editor's font size"
 msgstr ""
 
-#: src/configuring-zed.md:3901
+#: src/configuring-zed.md:3902
 msgid "Setting: `font_size`"
 msgstr ""
 
-#: src/configuring-zed.md:3916
+#: src/configuring-zed.md:3917
 msgid "Terminal: Font Family"
 msgstr ""
 
-#: src/configuring-zed.md:3918
+#: src/configuring-zed.md:3919
 msgid ""
 "Description: What font to use for the terminal. When not set, defaults to "
 "matching the editor's font."
 msgstr ""
 
-#: src/configuring-zed.md:3919
+#: src/configuring-zed.md:3920
 msgid "Setting: `font_family`"
 msgstr ""
 
-#: src/configuring-zed.md:3924
+#: src/configuring-zed.md:3925
 msgid "The name of any font family installed on the user's system"
 msgstr ""
 
-#: src/configuring-zed.md:3929
+#: src/configuring-zed.md:3930
 msgid "\"Berkeley Mono\""
 msgstr ""
 
-#: src/configuring-zed.md:3934
+#: src/configuring-zed.md:3935
 msgid "Terminal: Font Features"
 msgstr ""
 
-#: src/configuring-zed.md:3936
+#: src/configuring-zed.md:3937
 msgid ""
 "Description: What font features to use for the terminal. When not set, "
 "defaults to matching the editor's font features."
 msgstr ""
 
-#: src/configuring-zed.md:3937
+#: src/configuring-zed.md:3938
 msgid "Setting: `font_features`"
 msgstr ""
 
-#: src/configuring-zed.md:3943
+#: src/configuring-zed.md:3944
 msgid "See Buffer Font Features"
 msgstr ""
 
-#: src/configuring-zed.md:3950
+#: src/configuring-zed.md:3951
 msgid "// See Buffer Font Features for more features\n"
 msgstr ""
 
-#: src/configuring-zed.md:3956
+#: src/configuring-zed.md:3957
 msgid "Terminal: Line Height"
 msgstr ""
 
-#: src/configuring-zed.md:3958
+#: src/configuring-zed.md:3959
 msgid "Description: Set the terminal's line height."
 msgstr ""
 
-#: src/configuring-zed.md:3959
+#: src/configuring-zed.md:3960
 msgid "Setting: `line_height`"
 msgstr ""
 
-#: src/configuring-zed.md:3960
+#: src/configuring-zed.md:3961
 msgid "Default: `standard`"
 msgstr ""
 
-#: src/configuring-zed.md:3964
+#: src/configuring-zed.md:3965
 msgid "Use a line height that's `comfortable` for reading, 1.618."
 msgstr ""
 
-#: src/configuring-zed.md:3974
+#: src/configuring-zed.md:3975
 msgid ""
 "Use a `standard` line height, 1.3. This option is useful for TUIs, "
 "particularly if they use box characters. (default)"
 msgstr ""
 
-#: src/configuring-zed.md:3979 src/configuring-zed.md:4521
+#: src/configuring-zed.md:3980 src/configuring-zed.md:4522
 msgid "\"standard\""
 msgstr ""
 
-#: src/configuring-zed.md:3984
+#: src/configuring-zed.md:3985
 msgid "Use a custom line height."
 msgstr ""
 
-#: src/configuring-zed.md:3990
+#: src/configuring-zed.md:3991
 msgid "\"custom\""
 msgstr ""
 
-#: src/configuring-zed.md:3996
+#: src/configuring-zed.md:3997
 msgid "Terminal: Minimum Contrast"
 msgstr ""
 
-#: src/configuring-zed.md:3998
+#: src/configuring-zed.md:3999
 msgid ""
 "Description: Controls the minimum contrast between foreground and background "
 "colors in the terminal. Uses the APCA (Accessible Perceptual Contrast "
 "Algorithm) for color adjustments. Set this to 0 to disable this feature."
 msgstr ""
 
-#: src/configuring-zed.md:3999
+#: src/configuring-zed.md:4000
 msgid "Setting: `minimum_contrast`"
 msgstr ""
 
-#: src/configuring-zed.md:4000
+#: src/configuring-zed.md:4001
 msgid "Default: `45`"
 msgstr ""
 
-#: src/configuring-zed.md:4004
+#: src/configuring-zed.md:4005
 msgid "`integer` values from 0 to 106. Common recommended values:"
 msgstr ""
 
-#: src/configuring-zed.md:4006
+#: src/configuring-zed.md:4007
 msgid "`0`: No contrast adjustment"
 msgstr ""
 
-#: src/configuring-zed.md:4007
+#: src/configuring-zed.md:4008
 msgid "`45`: Minimum for large fluent text (default)"
 msgstr ""
 
-#: src/configuring-zed.md:4008
+#: src/configuring-zed.md:4009
 msgid "`60`: Minimum for other content text"
 msgstr ""
 
-#: src/configuring-zed.md:4009
+#: src/configuring-zed.md:4010
 msgid "`75`: Minimum for body text"
 msgstr ""
 
-#: src/configuring-zed.md:4010
+#: src/configuring-zed.md:4011
 msgid "`90`: Preferred for body text"
 msgstr ""
 
-#: src/configuring-zed.md:4020
+#: src/configuring-zed.md:4021
 msgid "Terminal: Option As Meta"
 msgstr ""
 
-#: src/configuring-zed.md:4022
+#: src/configuring-zed.md:4023
 msgid ""
 "Description: Re-interprets the option keys to act like a 'meta' key, like in "
 "Emacs."
 msgstr ""
 
-#: src/configuring-zed.md:4023
+#: src/configuring-zed.md:4024
 msgid "Setting: `option_as_meta`"
 msgstr ""
 
-#: src/configuring-zed.md:4038
+#: src/configuring-zed.md:4039
 msgid "Terminal: Shell"
 msgstr ""
 
-#: src/configuring-zed.md:4040
+#: src/configuring-zed.md:4041
 msgid "Description: What shell to use when launching the terminal."
 msgstr ""
 
-#: src/configuring-zed.md:4041
+#: src/configuring-zed.md:4042
 msgid "Setting: `shell`"
 msgstr ""
 
-#: src/configuring-zed.md:4046
+#: src/configuring-zed.md:4047
 msgid ""
 "Use the system's default terminal configuration (usually the `/etc/passwd` "
 "file)."
 msgstr ""
 
-#: src/configuring-zed.md:4056
+#: src/configuring-zed.md:4057
 msgid "A program to launch:"
 msgstr ""
 
-#: src/configuring-zed.md:4062 src/configuring-zed.md:4075
+#: src/configuring-zed.md:4063 src/configuring-zed.md:4076
 msgid "\"program\""
 msgstr ""
 
-#: src/configuring-zed.md:4062
+#: src/configuring-zed.md:4063
 msgid "\"sh\""
 msgstr ""
 
-#: src/configuring-zed.md:4068
+#: src/configuring-zed.md:4069
 msgid "A program with arguments:"
 msgstr ""
 
-#: src/configuring-zed.md:4074
+#: src/configuring-zed.md:4075
 msgid "\"with_arguments\""
 msgstr ""
 
-#: src/configuring-zed.md:4075
+#: src/configuring-zed.md:4076
 msgid "\"/bin/bash\""
 msgstr ""
 
-#: src/configuring-zed.md:4076
+#: src/configuring-zed.md:4077
 msgid "\"args\""
 msgstr ""
 
-#: src/configuring-zed.md:4076
+#: src/configuring-zed.md:4077
 msgid "\"--login\""
 msgstr ""
 
-#: src/configuring-zed.md:4083
+#: src/configuring-zed.md:4084
 msgid "Terminal: Detect Virtual Environments"
 msgstr ""
 
-#: src/configuring-zed.md:4085
+#: src/configuring-zed.md:4086
 msgid ""
 "Description: Activate the [Python Virtual Environment](https://docs.python."
 "org/3/library/venv.html), if one is found, in the terminal's working "
@@ -6608,11 +6612,11 @@ msgid ""
 "the virtual environment."
 msgstr ""
 
-#: src/configuring-zed.md:4086
+#: src/configuring-zed.md:4087
 msgid "Setting: `detect_venv`"
 msgstr ""
 
-#: src/configuring-zed.md:4094
+#: src/configuring-zed.md:4095
 msgid ""
 "// Default directories to search for virtual environments, relative\n"
 "        // to the current working directory. We recommend overriding this\n"
@@ -6620,1270 +6624,1270 @@ msgid ""
 "        \"directories\""
 msgstr ""
 
-#: src/configuring-zed.md:4098
+#: src/configuring-zed.md:4099
 msgid ""
 "// Can also be `csh`, `fish`, and `nushell`\n"
 "        \"activate_script\""
 msgstr ""
 
-#: src/configuring-zed.md:4106
+#: src/configuring-zed.md:4107
 msgid "Disable with:"
 msgstr ""
 
-#: src/configuring-zed.md:4116
+#: src/configuring-zed.md:4117
 msgid "Terminal: Scroll Multiplier"
 msgstr ""
 
-#: src/configuring-zed.md:4118
+#: src/configuring-zed.md:4119
 msgid ""
 "Description: The multiplier for scrolling speed in the terminal when using "
 "mouse wheel or trackpad."
 msgstr ""
 
-#: src/configuring-zed.md:4119
+#: src/configuring-zed.md:4120
 msgid "Setting: `scroll_multiplier`"
 msgstr ""
 
-#: src/configuring-zed.md:4124
+#: src/configuring-zed.md:4125
 msgid ""
 "Positive floating point values. Values less than or equal to 0 will be "
 "clamped to a minimum of 0.01."
 msgstr ""
 
-#: src/configuring-zed.md:4136
+#: src/configuring-zed.md:4137
 msgid "Terminal: Toolbar"
 msgstr ""
 
-#: src/configuring-zed.md:4138
+#: src/configuring-zed.md:4139
 msgid ""
 "Description: Whether or not to show various elements in the terminal toolbar."
 msgstr ""
 
-#: src/configuring-zed.md:4154
+#: src/configuring-zed.md:4155
 msgid ""
 "At the moment, only the `breadcrumbs` option is available, it controls "
 "displaying of the terminal title that can be changed via `PROMPT_COMMAND`."
 msgstr ""
 
-#: src/configuring-zed.md:4156
+#: src/configuring-zed.md:4157
 msgid "If the terminal title is empty, the breadcrumbs won't be shown."
 msgstr ""
 
-#: src/configuring-zed.md:4158
+#: src/configuring-zed.md:4159
 msgid ""
 "The shell running in the terminal needs to be configured to emit the title."
 msgstr ""
 
-#: src/configuring-zed.md:4160
+#: src/configuring-zed.md:4161
 msgid "Example command to set the title: `echo -e \"\\e]2;New Title\\007\";`"
 msgstr ""
 
-#: src/configuring-zed.md:4162
+#: src/configuring-zed.md:4163
 msgid "Terminal: Button"
 msgstr ""
 
-#: src/configuring-zed.md:4164
+#: src/configuring-zed.md:4165
 msgid ""
 "Description: Control to show or hide the terminal button in the status bar"
 msgstr ""
 
-#: src/configuring-zed.md:4180
+#: src/configuring-zed.md:4181
 msgid "Terminal: Working Directory"
 msgstr ""
 
-#: src/configuring-zed.md:4182
+#: src/configuring-zed.md:4183
 msgid "Description: What working directory to use when launching the terminal."
 msgstr ""
 
-#: src/configuring-zed.md:4183
+#: src/configuring-zed.md:4184
 msgid "Setting: `working_directory`"
 msgstr ""
 
-#: src/configuring-zed.md:4184
+#: src/configuring-zed.md:4185
 msgid "Default: `\"current_project_directory\"`"
 msgstr ""
 
-#: src/configuring-zed.md:4188
+#: src/configuring-zed.md:4189
 msgid ""
 "Use the current file's project directory. Fallback to the first project "
 "directory strategy if unsuccessful."
 msgstr ""
 
-#: src/configuring-zed.md:4198
+#: src/configuring-zed.md:4199
 msgid ""
 "Use the first project in this workspace's directory. Fallback to using this "
 "platform's home directory."
 msgstr ""
 
-#: src/configuring-zed.md:4203
+#: src/configuring-zed.md:4204
 msgid "\"first_project_directory\""
 msgstr ""
 
-#: src/configuring-zed.md:4208
+#: src/configuring-zed.md:4209
 msgid "Always use this platform's home directory if it can be found."
 msgstr ""
 
-#: src/configuring-zed.md:4213
+#: src/configuring-zed.md:4214
 msgid "\"always_home\""
 msgstr ""
 
-#: src/configuring-zed.md:4218
+#: src/configuring-zed.md:4219
 msgid ""
 "Always use a specific directory. This value will be shell expanded. If this "
 "path is not a valid directory the terminal will default to this platform's "
 "home directory."
 msgstr ""
 
-#: src/configuring-zed.md:4225
+#: src/configuring-zed.md:4226
 msgid "\"directory\""
 msgstr ""
 
-#: src/configuring-zed.md:4225
+#: src/configuring-zed.md:4226
 msgid "\"~/zed/projects/\""
 msgstr ""
 
-#: src/configuring-zed.md:4232
+#: src/configuring-zed.md:4233
 msgid "Terminal: Path Hyperlink Regexes"
 msgstr ""
 
-#: src/configuring-zed.md:4234
+#: src/configuring-zed.md:4235
 msgid ""
 "Description: Regexes used to identify path hyperlinks. The regexes can be "
 "specified in two forms - a single regex string, or an array of strings "
 "(which will be collected into a single multi-line regex string)."
 msgstr ""
 
-#: src/configuring-zed.md:4235
+#: src/configuring-zed.md:4236
 msgid "Setting: `path_hyperlink_regexes`"
 msgstr ""
 
-#: src/configuring-zed.md:4241
+#: src/configuring-zed.md:4242
 msgid "\"path_hyperlink_regexes\""
 msgstr ""
 
-#: src/configuring-zed.md:4242
+#: src/configuring-zed.md:4243
 msgid ""
 "// Python-style diagnostics\n"
 "      \"File \\\"(?<path>[^\\\"]+)\\\", line (?<line>[0-9]+)\""
 msgstr ""
 
-#: src/configuring-zed.md:4244
+#: src/configuring-zed.md:4245
 msgid ""
 "// Common path syntax with optional line, column, description, trailing "
 "punctuation, or\n"
 "      // surrounding symbols or quotes\n"
 msgstr ""
 
-#: src/configuring-zed.md:4247
+#: src/configuring-zed.md:4248
 msgid "\"(?x)\""
 msgstr ""
 
-#: src/configuring-zed.md:4248
+#: src/configuring-zed.md:4249
 msgid "\"# optionally starts with 0-2 opening prefix symbols\""
 msgstr ""
 
-#: src/configuring-zed.md:4249
+#: src/configuring-zed.md:4250
 msgid "\"[({\\\\[<]{0,2}\""
 msgstr ""
 
-#: src/configuring-zed.md:4250
+#: src/configuring-zed.md:4251
 msgid "\"# which may be followed by an opening quote\""
 msgstr ""
 
-#: src/configuring-zed.md:4251
+#: src/configuring-zed.md:4252
 msgid "\"(?<quote>[\\\"'`])?\""
 msgstr ""
 
-#: src/configuring-zed.md:4252
+#: src/configuring-zed.md:4253
 msgid "\"# `path` is the shortest sequence of any non-space character\""
 msgstr ""
 
-#: src/configuring-zed.md:4253
+#: src/configuring-zed.md:4254
 msgid "\"(?<link>(?<path>[^ ]+?\""
 msgstr ""
 
-#: src/configuring-zed.md:4254
+#: src/configuring-zed.md:4255
 msgid "\"    # which may end with a line and optionally a column,\""
 msgstr ""
 
-#: src/configuring-zed.md:4255
+#: src/configuring-zed.md:4256
 msgid ""
 "\"    (?<line_column>:+[0-9]+(:[0-9]+)?|:?\\\\([0-9]+([,:][0-9]+)?\\\\))?\""
 msgstr ""
 
-#: src/configuring-zed.md:4256
+#: src/configuring-zed.md:4257
 msgid "\"))\""
 msgstr ""
 
-#: src/configuring-zed.md:4257
+#: src/configuring-zed.md:4258
 msgid "\"# which must be followed by a matching quote\""
 msgstr ""
 
-#: src/configuring-zed.md:4258
+#: src/configuring-zed.md:4259
 msgid "\"(?(<quote>)\\\\k<quote>)\""
 msgstr ""
 
-#: src/configuring-zed.md:4259
+#: src/configuring-zed.md:4260
 msgid "\"# and optionally a single closing symbol\""
 msgstr ""
 
-#: src/configuring-zed.md:4260
+#: src/configuring-zed.md:4261
 msgid "\"[)}\\\\]>]?\""
 msgstr ""
 
-#: src/configuring-zed.md:4261
+#: src/configuring-zed.md:4262
 msgid "\"# if line/column matched, may be followed by a description\""
 msgstr ""
 
-#: src/configuring-zed.md:4262
+#: src/configuring-zed.md:4263
 msgid "\"(?(<line_column>):[^ 0-9][^ ]*)?\""
 msgstr ""
 
-#: src/configuring-zed.md:4263
+#: src/configuring-zed.md:4264
 msgid "\"# which may be followed by trailing punctuation\""
 msgstr ""
 
-#: src/configuring-zed.md:4264
+#: src/configuring-zed.md:4265
 msgid "\"[.,:)}\\\\]>]*\""
 msgstr ""
 
-#: src/configuring-zed.md:4265
+#: src/configuring-zed.md:4266
 msgid "\"# and always includes trailing whitespace or end of line\""
 msgstr ""
 
-#: src/configuring-zed.md:4266
+#: src/configuring-zed.md:4267
 msgid "\"([ ]+|$)\""
 msgstr ""
 
-#: src/configuring-zed.md:4273
+#: src/configuring-zed.md:4274
 msgid "Terminal: Path Hyperlink Timeout (ms)"
 msgstr ""
 
-#: src/configuring-zed.md:4275
+#: src/configuring-zed.md:4276
 msgid ""
 "Description: Maximum time to search for a path hyperlink. When set to 0, "
 "path hyperlinks are disabled."
 msgstr ""
 
-#: src/configuring-zed.md:4276
+#: src/configuring-zed.md:4277
 msgid "Setting: `path_hyperlink_timeout_ms`"
 msgstr ""
 
-#: src/configuring-zed.md:4277
+#: src/configuring-zed.md:4278
 msgid "Default: `1`"
 msgstr ""
 
-#: src/configuring-zed.md:4279
+#: src/configuring-zed.md:4280
 msgid "REPL"
 msgstr ""
 
-#: src/configuring-zed.md:4281
+#: src/configuring-zed.md:4282
 msgid "Description: Repl settings."
 msgstr ""
 
-#: src/configuring-zed.md:4282
+#: src/configuring-zed.md:4283
 msgid "Setting: `repl`"
 msgstr ""
 
-#: src/configuring-zed.md:4286
+#: src/configuring-zed.md:4287
 msgid "\"repl\""
 msgstr ""
 
-#: src/configuring-zed.md:4287
+#: src/configuring-zed.md:4288
 msgid ""
 "// Maximum number of columns to keep in REPL's scrollback buffer.\n"
 "  // Clamped with [20, 512] range.\n"
 "  \"max_columns\""
 msgstr ""
 
-#: src/configuring-zed.md:4290
+#: src/configuring-zed.md:4291
 msgid ""
 "// Maximum number of lines to keep in REPL's scrollback buffer.\n"
 "  // Clamped with [4, 256] range.\n"
 "  \"max_lines\""
 msgstr ""
 
-#: src/configuring-zed.md:4296
+#: src/configuring-zed.md:4297
 msgid "Theme"
 msgstr ""
 
-#: src/configuring-zed.md:4298
+#: src/configuring-zed.md:4299
 msgid ""
 "Description: The theme setting can be specified in two forms - either as the "
 "name of a theme or as an object containing the `mode`, `dark`, and `light` "
 "themes for the Zed UI."
 msgstr ""
 
-#: src/configuring-zed.md:4299 src/configuring-zed.md:4305
+#: src/configuring-zed.md:4300 src/configuring-zed.md:4306
 msgid "Setting: `theme`"
 msgstr ""
 
-#: src/configuring-zed.md:4300 src/configuring-zed.md:4352
+#: src/configuring-zed.md:4301 src/configuring-zed.md:4353
 msgid "Default: `One Dark`"
 msgstr ""
 
-#: src/configuring-zed.md:4302
+#: src/configuring-zed.md:4303
 msgid "Theme Object"
 msgstr ""
 
-#: src/configuring-zed.md:4304
+#: src/configuring-zed.md:4305
 msgid ""
 "Description: Specify the theme using an object that includes the `mode`, "
 "`dark`, and `light` themes."
 msgstr ""
 
-#: src/configuring-zed.md:4311 src/configuring-zed.md:5015
+#: src/configuring-zed.md:4312 src/configuring-zed.md:5016
 msgid "\"One Dark\""
 msgstr ""
 
-#: src/configuring-zed.md:4318
+#: src/configuring-zed.md:4319
 msgid "Description: Specify theme mode."
 msgstr ""
 
-#: src/configuring-zed.md:4324
+#: src/configuring-zed.md:4325
 msgid "Set the theme to dark mode"
 msgstr ""
 
-#: src/configuring-zed.md:4332
+#: src/configuring-zed.md:4333
 msgid "Set the theme to light mode"
 msgstr ""
 
-#: src/configuring-zed.md:4340
+#: src/configuring-zed.md:4341
 msgid "Set the theme to system mode"
 msgstr ""
 
-#: src/configuring-zed.md:4350
+#: src/configuring-zed.md:4351
 msgid "Description: The name of the dark Zed theme to use for the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4356 src/configuring-zed.md:4366
+#: src/configuring-zed.md:4357 src/configuring-zed.md:4367
 msgid ""
 "Run the <code class=\"hljs\">theme selector: toggle</code> action in the "
 "command palette to see a current list of valid themes names."
 msgstr ""
 
-#: src/configuring-zed.md:4360
+#: src/configuring-zed.md:4361
 msgid "Description: The name of the light Zed theme to use for the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4362
+#: src/configuring-zed.md:4363
 msgid "Default: `One Light`"
 msgstr ""
 
-#: src/configuring-zed.md:4368
+#: src/configuring-zed.md:4369
 msgid "Title Bar"
 msgstr ""
 
-#: src/configuring-zed.md:4370
+#: src/configuring-zed.md:4371
 msgid "Description: Whether or not to show various elements in the title bar"
 msgstr ""
 
-#: src/configuring-zed.md:4371
+#: src/configuring-zed.md:4372
 msgid "Setting: `title_bar`"
 msgstr ""
 
-#: src/configuring-zed.md:4375
+#: src/configuring-zed.md:4376
 msgid "\"title_bar\""
 msgstr ""
 
-#: src/configuring-zed.md:4376
+#: src/configuring-zed.md:4377
 msgid "\"show_branch_icon\""
 msgstr ""
 
-#: src/configuring-zed.md:4377
+#: src/configuring-zed.md:4378
 msgid "\"show_branch_name\""
 msgstr ""
 
-#: src/configuring-zed.md:4378
+#: src/configuring-zed.md:4379
 msgid "\"show_project_items\""
 msgstr ""
 
-#: src/configuring-zed.md:4379
+#: src/configuring-zed.md:4380
 msgid "\"show_onboarding_banner\""
 msgstr ""
 
-#: src/configuring-zed.md:4380
+#: src/configuring-zed.md:4381
 msgid "\"show_user_picture\""
 msgstr ""
 
-#: src/configuring-zed.md:4381
+#: src/configuring-zed.md:4382
 msgid "\"show_user_menu\""
 msgstr ""
 
-#: src/configuring-zed.md:4382
+#: src/configuring-zed.md:4383
 msgid "\"show_sign_in\""
 msgstr ""
 
-#: src/configuring-zed.md:4383
+#: src/configuring-zed.md:4384
 msgid "\"show_menus\""
 msgstr ""
 
-#: src/configuring-zed.md:4389
+#: src/configuring-zed.md:4390
 msgid ""
 "`show_branch_icon`: Whether to show the branch icon beside branch switcher "
 "in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4390
+#: src/configuring-zed.md:4391
 msgid ""
 "`show_branch_name`: Whether to show the branch name button in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4391
+#: src/configuring-zed.md:4392
 msgid ""
 "`show_project_items`: Whether to show the project host and name in the "
 "titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4392
+#: src/configuring-zed.md:4393
 msgid ""
 "`show_onboarding_banner`: Whether to show onboarding banners in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4393
+#: src/configuring-zed.md:4394
 msgid "`show_user_picture`: Whether to show user picture in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4394
+#: src/configuring-zed.md:4395
 msgid ""
 "`show_user_menu`: Whether to show the user menu button in the titlebar (the "
 "one that displays your avatar by default and contains options like Settings, "
 "Keymap, Themes, etc.)"
 msgstr ""
 
-#: src/configuring-zed.md:4395
+#: src/configuring-zed.md:4396
 msgid "`show_sign_in`: Whether to show the sign in button in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4396
+#: src/configuring-zed.md:4397
 msgid "`show_menus`: Whether to show the menus in the titlebar"
 msgstr ""
 
-#: src/configuring-zed.md:4398
+#: src/configuring-zed.md:4399
 msgid "Vim"
 msgstr ""
 
-#: src/configuring-zed.md:4400
+#: src/configuring-zed.md:4401
 msgid "Description: Whether or not to enable vim mode."
 msgstr ""
 
-#: src/configuring-zed.md:4401
+#: src/configuring-zed.md:4402
 msgid "Setting: `vim_mode`"
 msgstr ""
 
-#: src/configuring-zed.md:4404
+#: src/configuring-zed.md:4405
 msgid "When Closing With No Tabs"
 msgstr ""
 
-#: src/configuring-zed.md:4406
+#: src/configuring-zed.md:4407
 msgid ""
 "Description: Whether the window should be closed when using 'close active "
 "item' on a window with no tabs"
 msgstr ""
 
-#: src/configuring-zed.md:4407
+#: src/configuring-zed.md:4408
 msgid "Setting: `when_closing_with_no_tabs`"
 msgstr ""
 
-#: src/configuring-zed.md:4416 src/configuring-zed.md:4424
-#: src/configuring-zed.md:4432
+#: src/configuring-zed.md:4417 src/configuring-zed.md:4425
+#: src/configuring-zed.md:4433
 msgid "\"when_closing_with_no_tabs\""
 msgstr ""
 
-#: src/configuring-zed.md:4420
+#: src/configuring-zed.md:4421
 msgid "Always close the window:"
 msgstr ""
 
-#: src/configuring-zed.md:4424
+#: src/configuring-zed.md:4425
 msgid "\"close_window\""
 msgstr ""
 
-#: src/configuring-zed.md:4428
+#: src/configuring-zed.md:4429
 msgid "Never close the window:"
 msgstr ""
 
-#: src/configuring-zed.md:4432
+#: src/configuring-zed.md:4433
 msgid "\"keep_window_open\""
 msgstr ""
 
-#: src/configuring-zed.md:4436
+#: src/configuring-zed.md:4437
 msgid "Project Panel"
 msgstr ""
 
-#: src/configuring-zed.md:4438
+#: src/configuring-zed.md:4439
 msgid "Description: Customize project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4439
+#: src/configuring-zed.md:4440
 msgid "Setting: `project_panel`"
 msgstr ""
 
-#: src/configuring-zed.md:4444
+#: src/configuring-zed.md:4445
 msgid "\"project_panel\""
 msgstr ""
 
-#: src/configuring-zed.md:4448 src/configuring-zed.md:4513
-#: src/configuring-zed.md:4521
+#: src/configuring-zed.md:4449 src/configuring-zed.md:4514
+#: src/configuring-zed.md:4522
 msgid "\"entry_spacing\""
 msgstr ""
 
-#: src/configuring-zed.md:4450 src/configuring-zed.md:4852
+#: src/configuring-zed.md:4451 src/configuring-zed.md:4853
 msgid "\"folder_icons\""
 msgstr ""
 
-#: src/configuring-zed.md:4452 src/configuring-zed.md:4854
+#: src/configuring-zed.md:4453 src/configuring-zed.md:4855
 msgid "\"indent_size\""
 msgstr ""
 
-#: src/configuring-zed.md:4453 src/configuring-zed.md:4571
-#: src/configuring-zed.md:4579 src/configuring-zed.md:4855
+#: src/configuring-zed.md:4454 src/configuring-zed.md:4572
+#: src/configuring-zed.md:4580 src/configuring-zed.md:4856
 msgid "\"auto_reveal_entries\""
 msgstr ""
 
-#: src/configuring-zed.md:4454 src/configuring-zed.md:4595
-#: src/configuring-zed.md:4603 src/configuring-zed.md:4856
+#: src/configuring-zed.md:4455 src/configuring-zed.md:4596
+#: src/configuring-zed.md:4604 src/configuring-zed.md:4857
 msgid "\"auto_fold_dirs\""
 msgstr ""
 
-#: src/configuring-zed.md:4455
+#: src/configuring-zed.md:4456
 msgid "\"drag_and_drop\""
 msgstr ""
 
-#: src/configuring-zed.md:4459
+#: src/configuring-zed.md:4460
 msgid "\"sticky_scroll\""
 msgstr ""
 
-#: src/configuring-zed.md:4464 src/configuring-zed.md:4693
-#: src/configuring-zed.md:4701 src/configuring-zed.md:4709
+#: src/configuring-zed.md:4465 src/configuring-zed.md:4694
+#: src/configuring-zed.md:4702 src/configuring-zed.md:4710
 msgid "\"sort_mode\""
 msgstr ""
 
-#: src/configuring-zed.md:4464 src/configuring-zed.md:4693
+#: src/configuring-zed.md:4465 src/configuring-zed.md:4694
 msgid "\"directories_first\""
 msgstr ""
 
-#: src/configuring-zed.md:4465
+#: src/configuring-zed.md:4466
 msgid "\"hide_root\""
 msgstr ""
 
-#: src/configuring-zed.md:4466
+#: src/configuring-zed.md:4467
 msgid "\"hide_hidden\""
 msgstr ""
 
-#: src/configuring-zed.md:4467
+#: src/configuring-zed.md:4468
 msgid "\"starts_open\""
 msgstr ""
 
-#: src/configuring-zed.md:4468 src/configuring-zed.md:4720
+#: src/configuring-zed.md:4469 src/configuring-zed.md:4721
 msgid "\"auto_open\""
 msgstr ""
 
-#: src/configuring-zed.md:4469 src/configuring-zed.md:4721
+#: src/configuring-zed.md:4470 src/configuring-zed.md:4722
 msgid "\"on_create\""
 msgstr ""
 
-#: src/configuring-zed.md:4470 src/configuring-zed.md:4722
+#: src/configuring-zed.md:4471 src/configuring-zed.md:4723
 msgid "\"on_paste\""
 msgstr ""
 
-#: src/configuring-zed.md:4471 src/configuring-zed.md:4723
+#: src/configuring-zed.md:4472 src/configuring-zed.md:4724
 msgid "\"on_drop\""
 msgstr ""
 
-#: src/configuring-zed.md:4477
+#: src/configuring-zed.md:4478
 msgid "Dock"
 msgstr ""
 
-#: src/configuring-zed.md:4481
+#: src/configuring-zed.md:4482
 msgid "Default: `left`"
 msgstr ""
 
-#: src/configuring-zed.md:4485
+#: src/configuring-zed.md:4486
 msgid "Default dock position to left"
 msgstr ""
 
-#: src/configuring-zed.md:4493
+#: src/configuring-zed.md:4494
 msgid "Default dock position to right"
 msgstr ""
 
-#: src/configuring-zed.md:4501
+#: src/configuring-zed.md:4502
 msgid "Entry Spacing"
 msgstr ""
 
-#: src/configuring-zed.md:4503
+#: src/configuring-zed.md:4504
 msgid "Description: Spacing between worktree entries"
 msgstr ""
 
-#: src/configuring-zed.md:4504
+#: src/configuring-zed.md:4505
 msgid "Setting: `entry_spacing`"
 msgstr ""
 
-#: src/configuring-zed.md:4505
+#: src/configuring-zed.md:4506
 msgid "Default: `comfortable`"
 msgstr ""
 
-#: src/configuring-zed.md:4509
+#: src/configuring-zed.md:4510
 msgid "Comfortable entry spacing"
 msgstr ""
 
-#: src/configuring-zed.md:4517
+#: src/configuring-zed.md:4518
 msgid "Standard entry spacing"
 msgstr ""
 
-#: src/configuring-zed.md:4527
+#: src/configuring-zed.md:4528
 msgid "Description: Indicates newly created and updated files"
 msgstr ""
 
-#: src/configuring-zed.md:4533
+#: src/configuring-zed.md:4534
 msgid "Default enable git status"
 msgstr ""
 
-#: src/configuring-zed.md:4541
+#: src/configuring-zed.md:4542
 msgid "Default disable git status"
 msgstr ""
 
-#: src/configuring-zed.md:4549
+#: src/configuring-zed.md:4550
 msgid "Default Width"
 msgstr ""
 
-#: src/configuring-zed.md:4551
+#: src/configuring-zed.md:4552
 msgid "Description: Customize default width taken by project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4552
+#: src/configuring-zed.md:4553
 msgid "Setting: `default_width`"
 msgstr ""
 
-#: src/configuring-zed.md:4553
+#: src/configuring-zed.md:4554
 msgid "Default: `240`"
 msgstr ""
 
-#: src/configuring-zed.md:4559
+#: src/configuring-zed.md:4560
 msgid "Auto Reveal Entries"
 msgstr ""
 
-#: src/configuring-zed.md:4561
+#: src/configuring-zed.md:4562
 msgid ""
 "Description: Whether to reveal it in the project panel automatically, when a "
 "corresponding project entry becomes active. Gitignored entries are never "
 "auto revealed."
 msgstr ""
 
-#: src/configuring-zed.md:4562
+#: src/configuring-zed.md:4563
 msgid "Setting: `auto_reveal_entries`"
 msgstr ""
 
-#: src/configuring-zed.md:4567
+#: src/configuring-zed.md:4568
 msgid "Enable auto reveal entries"
 msgstr ""
 
-#: src/configuring-zed.md:4575
+#: src/configuring-zed.md:4576
 msgid "Disable auto reveal entries"
 msgstr ""
 
-#: src/configuring-zed.md:4583
+#: src/configuring-zed.md:4584
 msgid "Auto Fold Dirs"
 msgstr ""
 
-#: src/configuring-zed.md:4585
+#: src/configuring-zed.md:4586
 msgid ""
 "Description: Whether to fold directories automatically when directory has "
 "only one directory inside."
 msgstr ""
 
-#: src/configuring-zed.md:4586
+#: src/configuring-zed.md:4587
 msgid "Setting: `auto_fold_dirs`"
 msgstr ""
 
-#: src/configuring-zed.md:4591
+#: src/configuring-zed.md:4592
 msgid "Enable auto fold dirs"
 msgstr ""
 
-#: src/configuring-zed.md:4599
+#: src/configuring-zed.md:4600
 msgid "Disable auto fold dirs"
 msgstr ""
 
-#: src/configuring-zed.md:4607
+#: src/configuring-zed.md:4608
 msgid "Indent Size"
 msgstr ""
 
-#: src/configuring-zed.md:4609
+#: src/configuring-zed.md:4610
 msgid "Description: Amount of indentation (in pixels) for nested items."
 msgstr ""
 
-#: src/configuring-zed.md:4610
+#: src/configuring-zed.md:4611
 msgid "Setting: `indent_size`"
 msgstr ""
 
-#: src/configuring-zed.md:4611
+#: src/configuring-zed.md:4612
 msgid "Default: `20`"
 msgstr ""
 
-#: src/configuring-zed.md:4613
+#: src/configuring-zed.md:4614
 msgid "Indent Guides: Show"
 msgstr ""
 
-#: src/configuring-zed.md:4615
+#: src/configuring-zed.md:4616
 msgid "Description: Whether to show indent guides in the project panel."
 msgstr ""
 
-#: src/configuring-zed.md:4627
+#: src/configuring-zed.md:4628
 msgid "Show indent guides in the project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4637
+#: src/configuring-zed.md:4638
 msgid "Hide indent guides in the project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4647
+#: src/configuring-zed.md:4648
 msgid "Scrollbar: Show"
 msgstr ""
 
-#: src/configuring-zed.md:4649
+#: src/configuring-zed.md:4650
 msgid ""
 "Description: Whether to show a scrollbar in the project panel. Possible "
 "values: null, \"auto\", \"system\", \"always\", \"never\". Inherits editor "
 "settings when absent, see its description for more details."
 msgstr ""
 
-#: src/configuring-zed.md:4661
+#: src/configuring-zed.md:4662
 msgid "Show scrollbar in the project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4671
+#: src/configuring-zed.md:4672
 msgid "Hide scrollbar in the project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4681
+#: src/configuring-zed.md:4682
 msgid "Sort Mode"
 msgstr ""
 
-#: src/configuring-zed.md:4683
+#: src/configuring-zed.md:4684
 msgid "Description: Sort order for entries in the project panel"
 msgstr ""
 
-#: src/configuring-zed.md:4684
+#: src/configuring-zed.md:4685
 msgid "Setting: `sort_mode`"
 msgstr ""
 
-#: src/configuring-zed.md:4685
+#: src/configuring-zed.md:4686
 msgid "Default: `directories_first`"
 msgstr ""
 
-#: src/configuring-zed.md:4689
+#: src/configuring-zed.md:4690
 msgid "Show directories first, then files"
 msgstr ""
 
-#: src/configuring-zed.md:4697
+#: src/configuring-zed.md:4698
 msgid "Mix directories and files together"
 msgstr ""
 
-#: src/configuring-zed.md:4701
+#: src/configuring-zed.md:4702
 msgid "\"mixed\""
 msgstr ""
 
-#: src/configuring-zed.md:4705
+#: src/configuring-zed.md:4706
 msgid "Show files first, then directories"
 msgstr ""
 
-#: src/configuring-zed.md:4709
+#: src/configuring-zed.md:4710
 msgid "\"files_first\""
 msgstr ""
 
-#: src/configuring-zed.md:4713
+#: src/configuring-zed.md:4714
 msgid "Auto Open"
 msgstr ""
 
-#: src/configuring-zed.md:4715
+#: src/configuring-zed.md:4716
 msgid ""
 "Description: Control whether files are opened automatically after different "
 "creation flows in the project panel."
 msgstr ""
 
-#: src/configuring-zed.md:4716
+#: src/configuring-zed.md:4717
 msgid "Setting: `auto_open`"
 msgstr ""
 
-#: src/configuring-zed.md:4729
+#: src/configuring-zed.md:4730
 msgid ""
 "`on_create`: Whether to automatically open newly created files in the editor."
 msgstr ""
 
-#: src/configuring-zed.md:4730
+#: src/configuring-zed.md:4731
 msgid ""
 "`on_paste`: Whether to automatically open files after pasting or duplicating "
 "them."
 msgstr ""
 
-#: src/configuring-zed.md:4731
+#: src/configuring-zed.md:4732
 msgid ""
 "`on_drop`: Whether to automatically open files dropped from external sources."
 msgstr ""
 
-#: src/configuring-zed.md:4733
+#: src/configuring-zed.md:4734
 msgid "Agent"
 msgstr ""
 
-#: src/configuring-zed.md:4735
+#: src/configuring-zed.md:4736
 msgid ""
 "Visit [the Configuration page](./ai/configuration.md) under the AI section "
 "to learn more about all the agent-related settings."
 msgstr ""
 
-#: src/configuring-zed.md:4737
+#: src/configuring-zed.md:4738
 msgid "Collaboration Panel"
 msgstr ""
 
-#: src/configuring-zed.md:4739
+#: src/configuring-zed.md:4740
 msgid "Description: Customizations for the collaboration panel."
 msgstr ""
 
-#: src/configuring-zed.md:4740
+#: src/configuring-zed.md:4741
 msgid "Setting: `collaboration_panel`"
 msgstr ""
 
-#: src/configuring-zed.md:4745
+#: src/configuring-zed.md:4746
 msgid "\"collaboration_panel\""
 msgstr ""
 
-#: src/configuring-zed.md:4755
+#: src/configuring-zed.md:4756
 msgid ""
 "`button`: Whether to show the collaboration panel button in the status bar"
 msgstr ""
 
-#: src/configuring-zed.md:4756
+#: src/configuring-zed.md:4757
 msgid "`dock`: Where to dock the collaboration panel. Can be `left` or `right`"
 msgstr ""
 
-#: src/configuring-zed.md:4757
+#: src/configuring-zed.md:4758
 msgid "`default_width`: Default width of the collaboration panel"
 msgstr ""
 
-#: src/configuring-zed.md:4759
+#: src/configuring-zed.md:4760
 msgid "Debugger"
 msgstr ""
 
-#: src/configuring-zed.md:4761
+#: src/configuring-zed.md:4762
 msgid "Description: Configuration for debugger panel and settings"
 msgstr ""
 
-#: src/configuring-zed.md:4762
+#: src/configuring-zed.md:4763
 msgid "Setting: `debugger`"
 msgstr ""
 
-#: src/configuring-zed.md:4767
+#: src/configuring-zed.md:4768
 msgid "\"debugger\""
 msgstr ""
 
-#: src/configuring-zed.md:4768
+#: src/configuring-zed.md:4769
 msgid "\"stepping_granularity\""
 msgstr ""
 
-#: src/configuring-zed.md:4769
+#: src/configuring-zed.md:4770
 msgid "\"save_breakpoints\""
 msgstr ""
 
-#: src/configuring-zed.md:4776
+#: src/configuring-zed.md:4777
 msgid ""
 "See the [debugger page](./debugger.md) for more information about debugging "
 "support within Zed."
 msgstr ""
 
-#: src/configuring-zed.md:4778
+#: src/configuring-zed.md:4779
 msgid "Git Panel"
 msgstr ""
 
-#: src/configuring-zed.md:4780
+#: src/configuring-zed.md:4781
 msgid "Description: Setting to customize the behavior of the git panel."
 msgstr ""
 
-#: src/configuring-zed.md:4781
+#: src/configuring-zed.md:4782
 msgid "Setting: `git_panel`"
 msgstr ""
 
-#: src/configuring-zed.md:4786
+#: src/configuring-zed.md:4787
 msgid "\"git_panel\""
 msgstr ""
 
-#: src/configuring-zed.md:4790
+#: src/configuring-zed.md:4791
 msgid "\"status_style\""
 msgstr ""
 
-#: src/configuring-zed.md:4790
+#: src/configuring-zed.md:4791
 msgid "\"icon\""
 msgstr ""
 
-#: src/configuring-zed.md:4791
+#: src/configuring-zed.md:4792
 msgid "\"fallback_branch_name\""
 msgstr ""
 
-#: src/configuring-zed.md:4791
+#: src/configuring-zed.md:4792
 msgid "\"main\""
 msgstr ""
 
-#: src/configuring-zed.md:4792
+#: src/configuring-zed.md:4793
 msgid "\"sort_by_path\""
 msgstr ""
 
-#: src/configuring-zed.md:4793
+#: src/configuring-zed.md:4794
 msgid "\"collapse_untracked_diff\""
 msgstr ""
 
-#: src/configuring-zed.md:4803
+#: src/configuring-zed.md:4804
 msgid "`button`: Whether to show the git panel button in the status bar"
 msgstr ""
 
-#: src/configuring-zed.md:4804
+#: src/configuring-zed.md:4805
 msgid "`dock`: Where to dock the git panel. Can be `left` or `right`"
 msgstr ""
 
-#: src/configuring-zed.md:4805
+#: src/configuring-zed.md:4806
 msgid "`default_width`: Default width of the git panel"
 msgstr ""
 
-#: src/configuring-zed.md:4806
+#: src/configuring-zed.md:4807
 msgid ""
 "`status_style`: How to display git status. Can be `label_color` or `icon`"
 msgstr ""
 
-#: src/configuring-zed.md:4807
+#: src/configuring-zed.md:4808
 msgid ""
 "`fallback_branch_name`: What branch name to use if `init.defaultBranch` is "
 "not set"
 msgstr ""
 
-#: src/configuring-zed.md:4808
+#: src/configuring-zed.md:4809
 msgid ""
 "`sort_by_path`: Whether to sort entries in the panel by path or by status "
 "(the default)"
 msgstr ""
 
-#: src/configuring-zed.md:4809
+#: src/configuring-zed.md:4810
 msgid ""
 "`collapse_untracked_diff`: Whether to collapse untracked files in the diff "
 "panel"
 msgstr ""
 
-#: src/configuring-zed.md:4810
+#: src/configuring-zed.md:4811
 msgid "`scrollbar`: When to show the scrollbar in the git panel"
 msgstr ""
 
-#: src/configuring-zed.md:4812
+#: src/configuring-zed.md:4813
 msgid "Git Hosting Providers"
 msgstr ""
 
-#: src/configuring-zed.md:4814
+#: src/configuring-zed.md:4815
 msgid ""
 "Description: Register self-hosted GitHub, GitLab, or Bitbucket instances so "
 "commit hashes, issue references, and permalinks resolve to the right host."
 msgstr ""
 
-#: src/configuring-zed.md:4815
+#: src/configuring-zed.md:4816
 msgid "Setting: `git_hosting_providers`"
 msgstr ""
 
-#: src/configuring-zed.md:4820
+#: src/configuring-zed.md:4821
 msgid "Each entry accepts:"
 msgstr ""
 
-#: src/configuring-zed.md:4822
+#: src/configuring-zed.md:4823
 msgid "`provider`: One of `github`, `gitlab`, or `bitbucket`"
 msgstr ""
 
-#: src/configuring-zed.md:4823
+#: src/configuring-zed.md:4824
 msgid "`name`: Display name for the instance"
 msgstr ""
 
-#: src/configuring-zed.md:4824
+#: src/configuring-zed.md:4825
 msgid "`base_url`: Base URL, e.g. `https://git.example.corp`"
 msgstr ""
 
-#: src/configuring-zed.md:4826
+#: src/configuring-zed.md:4827
 msgid ""
 "You can define these in user or project settings; project settings are "
 "merged on top of user settings."
 msgstr ""
 
-#: src/configuring-zed.md:4830
+#: src/configuring-zed.md:4831
 msgid "\"git_hosting_providers\""
 msgstr ""
 
-#: src/configuring-zed.md:4832
+#: src/configuring-zed.md:4833
 msgid "\"provider\""
 msgstr ""
 
-#: src/configuring-zed.md:4832
+#: src/configuring-zed.md:4833
 msgid "\"github\""
 msgstr ""
 
-#: src/configuring-zed.md:4833
+#: src/configuring-zed.md:4834
 msgid "\"BigCorp GitHub\""
 msgstr ""
 
-#: src/configuring-zed.md:4834
+#: src/configuring-zed.md:4835
 msgid "\"base_url\""
 msgstr ""
 
-#: src/configuring-zed.md:4834
+#: src/configuring-zed.md:4835
 msgid "\"https://git.example.corp\""
 msgstr ""
 
-#: src/configuring-zed.md:4840
+#: src/configuring-zed.md:4841
 msgid "Outline Panel"
 msgstr ""
 
-#: src/configuring-zed.md:4842
+#: src/configuring-zed.md:4843
 msgid "Description: Customize outline Panel"
 msgstr ""
 
-#: src/configuring-zed.md:4843
+#: src/configuring-zed.md:4844
 msgid "Setting: `outline_panel`"
 msgstr ""
 
-#: src/configuring-zed.md:4847
+#: src/configuring-zed.md:4848
 msgid "\"outline_panel\""
 msgstr ""
 
-#: src/configuring-zed.md:4866
+#: src/configuring-zed.md:4867
 msgid "Calls"
 msgstr ""
 
-#: src/configuring-zed.md:4868
+#: src/configuring-zed.md:4869
 msgid "Description: Customize behavior when participating in a call"
 msgstr ""
 
-#: src/configuring-zed.md:4869
+#: src/configuring-zed.md:4870
 msgid "Setting: `calls`"
 msgstr ""
 
-#: src/configuring-zed.md:4873
+#: src/configuring-zed.md:4874
 msgid "\"calls\""
 msgstr ""
 
-#: src/configuring-zed.md:4874
+#: src/configuring-zed.md:4875
 msgid ""
 "// Join calls with the microphone live by default\n"
 "  \"mute_on_join\""
 msgstr ""
 
-#: src/configuring-zed.md:4876
+#: src/configuring-zed.md:4877
 msgid ""
 "// Share your project when you are the first to join a channel\n"
 "  \"share_on_join\""
 msgstr ""
 
-#: src/configuring-zed.md:4881
+#: src/configuring-zed.md:4882
 msgid "Colorize Brackets"
 msgstr ""
 
-#: src/configuring-zed.md:4883
+#: src/configuring-zed.md:4884
 msgid ""
 "Description: Whether to use tree-sitter bracket queries to detect and "
 "colorize the brackets in the editor (also known as \"rainbow brackets\")."
 msgstr ""
 
-#: src/configuring-zed.md:4884
+#: src/configuring-zed.md:4885
 msgid "Setting: `colorize_brackets`"
 msgstr ""
 
-#: src/configuring-zed.md:4891
+#: src/configuring-zed.md:4892
 msgid ""
 "The colors that are used for different indentation levels are defined in the "
 "theme (theme key: `accents`). They can be customized by using theme "
 "overrides."
 msgstr ""
 
-#: src/configuring-zed.md:4893
+#: src/configuring-zed.md:4894
 msgid "Unnecessary Code Fade"
 msgstr ""
 
-#: src/configuring-zed.md:4895
+#: src/configuring-zed.md:4896
 msgid "Description: How much to fade out unused code."
 msgstr ""
 
-#: src/configuring-zed.md:4896
+#: src/configuring-zed.md:4897
 msgid "Setting: `unnecessary_code_fade`"
 msgstr ""
 
-#: src/configuring-zed.md:4897
+#: src/configuring-zed.md:4898
 msgid "Default: `0.3`"
 msgstr ""
 
-#: src/configuring-zed.md:4901
+#: src/configuring-zed.md:4902
 msgid "Float values between `0.0` and `0.9`, where:"
 msgstr ""
 
-#: src/configuring-zed.md:4903
+#: src/configuring-zed.md:4904
 msgid "`0.0` means no fading (unused code looks the same as used code)"
 msgstr ""
 
-#: src/configuring-zed.md:4904
+#: src/configuring-zed.md:4905
 msgid ""
 "`0.9` means maximum fading (unused code is very faint but still visible)"
 msgstr ""
 
-#: src/configuring-zed.md:4910
+#: src/configuring-zed.md:4911
 msgid "\"unnecessary_code_fade\""
 msgstr ""
 
-#: src/configuring-zed.md:4914
+#: src/configuring-zed.md:4915
 msgid "UI Font Family"
 msgstr ""
 
-#: src/configuring-zed.md:4916
+#: src/configuring-zed.md:4917
 msgid "Description: The name of the font to use for text in the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4917
+#: src/configuring-zed.md:4918
 msgid "Setting: `ui_font_family`"
 msgstr ""
 
-#: src/configuring-zed.md:4918
+#: src/configuring-zed.md:4919
 msgid ""
 "Default: `.ZedSans`. This currently aliases to [IBM Plex](https://www.ibm."
 "com/plex/)."
 msgstr ""
 
-#: src/configuring-zed.md:4922
+#: src/configuring-zed.md:4923
 msgid ""
 "The name of any font family installed on the system, `\".ZedSans\"` to use "
 "the Zed-provided default, or `\".SystemUIFont\"` to use the system's default "
 "UI font (on macOS and Windows)."
 msgstr ""
 
-#: src/configuring-zed.md:4924
+#: src/configuring-zed.md:4925
 msgid "UI Font Features"
 msgstr ""
 
-#: src/configuring-zed.md:4926
+#: src/configuring-zed.md:4927
 msgid "Description: The OpenType features to enable for text in the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4927
+#: src/configuring-zed.md:4928
 msgid "Setting: `ui_font_features`"
 msgstr ""
 
-#: src/configuring-zed.md:4931 src/configuring-zed.md:4946
-#: src/configuring-zed.md:4956
+#: src/configuring-zed.md:4932 src/configuring-zed.md:4947
+#: src/configuring-zed.md:4957
 msgid "\"ui_font_features\""
 msgstr ""
 
-#: src/configuring-zed.md:4940
+#: src/configuring-zed.md:4941
 msgid ""
 "Zed supports all OpenType features that can be enabled or disabled for a "
 "given UI font, as well as setting values for font features."
 msgstr ""
 
-#: src/configuring-zed.md:4962
+#: src/configuring-zed.md:4963
 msgid "UI Font Fallbacks"
 msgstr ""
 
-#: src/configuring-zed.md:4964
+#: src/configuring-zed.md:4965
 msgid "Description: The font fallbacks to use for text in the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4965
+#: src/configuring-zed.md:4966
 msgid "Setting: `ui_font_fallbacks`"
 msgstr ""
 
-#: src/configuring-zed.md:4975
+#: src/configuring-zed.md:4976
 msgid "\"ui_font_fallbacks\""
 msgstr ""
 
-#: src/configuring-zed.md:4979
+#: src/configuring-zed.md:4980
 msgid "UI Font Size"
 msgstr ""
 
-#: src/configuring-zed.md:4981
+#: src/configuring-zed.md:4982
 msgid "Description: The default font size for text in the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4982
+#: src/configuring-zed.md:4983
 msgid "Setting: `ui_font_size`"
 msgstr ""
 
-#: src/configuring-zed.md:4983
+#: src/configuring-zed.md:4984
 msgid "Default: `16`"
 msgstr ""
 
-#: src/configuring-zed.md:4989
+#: src/configuring-zed.md:4990
 msgid "UI Font Weight"
 msgstr ""
 
-#: src/configuring-zed.md:4991
+#: src/configuring-zed.md:4992
 msgid "Description: The default font weight for text in the UI."
 msgstr ""
 
-#: src/configuring-zed.md:4992
+#: src/configuring-zed.md:4993
 msgid "Setting: `ui_font_weight`"
 msgstr ""
 
-#: src/configuring-zed.md:4999
+#: src/configuring-zed.md:5000
 msgid "Settings Profiles"
 msgstr ""
 
-#: src/configuring-zed.md:5001
+#: src/configuring-zed.md:5002
 msgid ""
 "Description: Configure any number of settings profiles that are temporarily "
 "applied on top of your existing user settings when selected from `settings "
 "profile selector: toggle`."
 msgstr ""
 
-#: src/configuring-zed.md:5005
+#: src/configuring-zed.md:5006
 msgid ""
 "In your `settings.json` file, add the `profiles` object. Each key within "
 "this object is the name of a settings profile, and each value is an object "
 "that can include any of Zed's settings."
 msgstr ""
 
-#: src/configuring-zed.md:5012
+#: src/configuring-zed.md:5013
 msgid "\"Presenting (Dark)\""
 msgstr ""
 
-#: src/configuring-zed.md:5013 src/configuring-zed.md:5019
-#: src/configuring-zed.md:5025
+#: src/configuring-zed.md:5014 src/configuring-zed.md:5020
+#: src/configuring-zed.md:5026
 msgid "\"agent_buffer_font_size\""
 msgstr ""
 
-#: src/configuring-zed.md:5018
+#: src/configuring-zed.md:5019
 msgid "\"Presenting (Light)\""
 msgstr ""
 
-#: src/configuring-zed.md:5024
+#: src/configuring-zed.md:5025
 msgid "\"Writing\""
 msgstr ""
 
-#: src/configuring-zed.md:5027
+#: src/configuring-zed.md:5028
 msgid "\"Catppuccin Frappé - No Italics\""
 msgstr ""
 
-#: src/configuring-zed.md:5035
+#: src/configuring-zed.md:5036
 msgid ""
 "To preview and enable a settings profile, open the command palette via <kbd "
 "class=\"keybinding\">cmd-shift-p|ctrl-shift-p</kbd> and search for `settings "
 "profile selector: toggle`."
 msgstr ""
 
-#: src/configuring-zed.md:5037
+#: src/configuring-zed.md:5038
 msgid "An example configuration:"
 msgstr ""
 
-#: src/configuring-zed.md:5040
+#: src/configuring-zed.md:5041
 msgid "// ~/.config/zed/settings.json\n"
 msgstr ""
 
-#: src/configuring-zed.md:5048
+#: src/configuring-zed.md:5049
 msgid "\"buffer_font_family\""
 msgstr ""
 
-#: src/configuring-zed.md:5048
+#: src/configuring-zed.md:5049
 msgid "\".ZedMono\""
 msgstr ""
 
-#: src/configuring-zed.md:5053
+#: src/configuring-zed.md:5054
 msgid "\"projects_online_by_default\""
 msgstr ""
 
-#: src/configuring-zed.md:5055
+#: src/configuring-zed.md:5056
 msgid "\"FiraCode Nerd Font Mono\""
 msgstr ""

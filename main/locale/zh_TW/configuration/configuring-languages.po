@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1072,9 +1072,9 @@ msgstr ""
 
 #: src/configuring-languages.md:457
 msgid ""
-"The `workspace: Open Symbol` command allows you to search for symbols "
-"(functions, classes, variables) across your entire project. This is useful "
-"for quickly navigating large codebases."
+"The <code class=\"hljs\">project symbols: toggle</code> command allows you "
+"to search for symbols (functions, classes, variables) across your entire "
+"project. This is useful for quickly navigating large codebases."
 msgstr ""
 
 #: src/configuring-languages.md:459
@@ -1095,6 +1095,6 @@ msgstr "診斷"
 #: src/configuring-languages.md:465
 msgid ""
 "Language servers provide real-time diagnostics (errors, warnings, hints) as "
-"you code. View all diagnostics for your project using the `diagnostics: "
-"Toggle` command."
+"you code. View all diagnostics for your project using the <code "
+"class=\"hljs\">diagnostics: deploy</code> command."
 msgstr ""

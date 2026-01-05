@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -57,82 +57,80 @@ msgstr ""
 #: src/tab-switcher.md:23
 msgid ""
 "The Tab Switcher can also be opened with either <code class=\"hljs\">tab "
-"switcher: toggle</code> or <code class=\"hljs\">tab switcher: toggle all</"
-"code>. Using <kbd class=\"keybinding\">ctrl-tab|ctrl-tab</kbd> will show "
-"only the tabs for the current pane, while <div>No default binding</div> "
-"shows all tabs for all panes."
+"switcher: toggle</code> (<kbd class=\"keybinding\">ctrl-tab|ctrl-tab</kbd>) "
+"or <code class=\"hljs\">tab switcher: toggle all</code>."
 msgstr ""
 
-#: src/tab-switcher.md:28
+#: src/tab-switcher.md:26
 msgid "While the Tab Switcher is open, you can:"
 msgstr ""
 
-#: src/tab-switcher.md:30
+#: src/tab-switcher.md:28
 msgid ""
 "Press <kbd class=\"keybinding\">down|down</kbd> to move to the next tab in "
 "the list"
 msgstr ""
 
-#: src/tab-switcher.md:31
+#: src/tab-switcher.md:29
 msgid "Press <kbd class=\"keybinding\">up|up</kbd> to move to the previous tab"
 msgstr ""
 
-#: src/tab-switcher.md:32
+#: src/tab-switcher.md:30
 msgid ""
 "Press <kbd class=\"keybinding\">enter</kbd> to confirm the selected tab and "
 "close the switcher"
 msgstr ""
 
-#: src/tab-switcher.md:33
+#: src/tab-switcher.md:31
 msgid ""
 "Press <kbd class=\"keybinding\">escape</kbd> to close the switcher and "
 "return to the original tab from which the switcher was opened"
 msgstr ""
 
-#: src/tab-switcher.md:35
+#: src/tab-switcher.md:33
 msgid ""
 "Press <kbd class=\"keybinding\">ctrl-backspace|ctrl-backspace</kbd> to close "
 "the currently selected tab"
 msgstr ""
 
-#: src/tab-switcher.md:37
+#: src/tab-switcher.md:35
 msgid ""
 "As you navigate through the list, Zed will update the pane's active item to "
 "match the selected tab."
 msgstr ""
 
-#: src/tab-switcher.md:40
+#: src/tab-switcher.md:38
 msgid "Action Reference"
 msgstr ""
 
-#: src/tab-switcher.md:42
+#: src/tab-switcher.md:40
 msgid "Action"
 msgstr ""
 
-#: src/tab-switcher.md:42
+#: src/tab-switcher.md:40
 msgid "Description"
 msgstr ""
 
-#: src/tab-switcher.md:44
+#: src/tab-switcher.md:42
 msgid "<code class=\"hljs\">tab switcher: toggle</code>"
 msgstr ""
 
-#: src/tab-switcher.md:44
+#: src/tab-switcher.md:42
 msgid "Open the Tab Switcher for the current pane"
 msgstr ""
 
-#: src/tab-switcher.md:45
+#: src/tab-switcher.md:43
 msgid "<code class=\"hljs\">tab switcher: toggle all</code>"
 msgstr ""
 
-#: src/tab-switcher.md:45
+#: src/tab-switcher.md:43
 msgid "Open the Tab Switcher showing tabs from all panes"
 msgstr ""
 
-#: src/tab-switcher.md:46
+#: src/tab-switcher.md:44
 msgid "<code class=\"hljs\">tab switcher: close selected item</code>"
 msgstr ""
 
-#: src/tab-switcher.md:46
+#: src/tab-switcher.md:44
 msgid "Close the selected tab in the Tab Switcher"
 msgstr ""

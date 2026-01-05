@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -613,7 +613,7 @@ msgid "**Ruff** (default) — Linting and formatting"
 msgstr ""
 
 #: src/migrate/pycharm.md:167
-msgid "**Ty** — Up-and-coming language server from Astral, built for speed"
+msgid "**ty** — Up-and-coming language server from Astral, built for speed"
 msgstr ""
 
 #: src/migrate/pycharm.md:168

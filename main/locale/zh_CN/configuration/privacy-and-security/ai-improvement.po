@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Metadata about your Zed installation"
 msgstr ""
 
-#: src/ai/ai-improvement.md:40 src/ai/ai-improvement.md:102
+#: src/ai/ai-improvement.md:40 src/ai/ai-improvement.md:103
 msgid "Data Handling"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgstr ""
 msgid ""
 "You can see exactly how Zed detects open source licenses in: "
 "[license_detection.rs](https://github.com/zed-industries/zed/blob/main/"
-"crates/zeta/src/license_detection.rs)."
+"crates/edit_prediction/src/license_detection.rs)."
 msgstr ""
 
 #: src/ai/ai-improvement.md:56
@@ -281,26 +281,32 @@ msgid ""
 msgstr ""
 
 #: src/ai/ai-improvement.md:96
-msgid "the edit prediction"
+msgid ""
+"sampled edit prediction examples (cursor context + recent diffs/edits) for "
+"offline evaluation"
 msgstr ""
 
 #: src/ai/ai-improvement.md:97
-msgid "a portion of the buffer content around the cursor"
+msgid "the edit prediction"
 msgstr ""
 
 #: src/ai/ai-improvement.md:98
-msgid "a few recent edits"
+msgid "a portion of the buffer content around the cursor"
 msgstr ""
 
 #: src/ai/ai-improvement.md:99
-msgid "the current buffer outline"
+msgid "a few recent edits"
 msgstr ""
 
 #: src/ai/ai-improvement.md:100
+msgid "the current buffer outline"
+msgstr ""
+
+#: src/ai/ai-improvement.md:101
 msgid "diagnostics (errors, warnings, etc) from language servers"
 msgstr ""
 
-#: src/ai/ai-improvement.md:104
+#: src/ai/ai-improvement.md:105
 msgid ""
 "Collected data is stored in Snowflake, a private database where we track "
 "other metrics. We periodically review this data to select training samples "
@@ -311,11 +317,11 @@ msgid ""
 "datasets/zed-industries/zeta)."
 msgstr ""
 
-#: src/ai/ai-improvement.md:106
+#: src/ai/ai-improvement.md:107
 msgid "Model Output"
 msgstr ""
 
-#: src/ai/ai-improvement.md:108
+#: src/ai/ai-improvement.md:109
 msgid ""
 "We then use this training dataset to fine-tune [Qwen2.5-Coder-7B](https://"
 "huggingface.co/Qwen/Qwen2.5-Coder-7B) and make the resulting model available "
@@ -323,11 +329,11 @@ msgid ""
 "industries/zeta)."
 msgstr ""
 
-#: src/ai/ai-improvement.md:110
+#: src/ai/ai-improvement.md:111
 msgid "Applicable terms"
 msgstr ""
 
-#: src/ai/ai-improvement.md:112
+#: src/ai/ai-improvement.md:113
 msgid ""
 "Please see the [Zed Terms of Service](https://zed.dev/terms-of-service) for "
 "more."
