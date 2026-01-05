@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2025-12-27 23:29:36 +0000",
-      "hash" : "2cad6c8ef1bc4b3d92c6f787339d469e7817ee3b",
-      "title" : "svg_preview: Detect SVG in single-file mode by checking file name (#45747)"
+      "date" : "2026-01-05 09:30:46 +0100",
+      "hash" : "e57285fe3971404c041f13c80db1ec97adb7b493",
+      "title" : "gpui: Prepaint Div children with image cache (#46039)"
     }
   },
   "type" : "branch",
