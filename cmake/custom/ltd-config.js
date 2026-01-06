@@ -10,7 +10,7 @@ var CONFIG_OPTIONS = {
     ["main",    "Development"],
   ],
   CONFIG_PROJECTS: [
-    ["Home",    "https://projects.localizethedocs.org/zed-docs-l10n"],
+    ["Index",   "https://projects.localizethedocs.org"],
     ["Crowdin", "https://localizethedocs.crowdin.com/zed-docs-l10n"],
     ["GitHub",  "https://github.com/localizethedocs/zed-docs-l10n"],
     ["AtomGit", "https://atomgit.com/localizethedocs/zed-docs-l10n"],
