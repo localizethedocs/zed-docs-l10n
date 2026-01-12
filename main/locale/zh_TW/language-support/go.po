@@ -155,7 +155,7 @@ msgstr ""
 
 #: src/languages/go.md:76
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/go.md:78
 msgid ""

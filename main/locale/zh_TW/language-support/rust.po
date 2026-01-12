@@ -260,7 +260,7 @@ msgstr ""
 
 #: src/languages/rust.md:155
 msgid "More server configuration"
-msgstr ""
+msgstr "更多伺服器組態"
 
 #: src/languages/rust.md:161
 msgid ""
@@ -522,7 +522,7 @@ msgstr ""
 
 #: src/languages/rust.md:295
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/rust.md:297
 msgid ""

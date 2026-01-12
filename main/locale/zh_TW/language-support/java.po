@@ -144,7 +144,7 @@ msgstr ""
 
 #: src/languages/java.md:51
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/java.md:53
 msgid ""

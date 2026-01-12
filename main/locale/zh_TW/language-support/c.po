@@ -84,7 +84,7 @@ msgstr ""
 
 #: src/languages/c.md:29
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/c.md:31
 msgid ""
@@ -142,7 +142,7 @@ msgstr ""
 
 #: src/languages/c.md:54
 msgid "Compile Commands"
-msgstr ""
+msgstr "編譯命令"
 
 #: src/languages/c.md:56
 msgid ""
@@ -169,7 +169,7 @@ msgstr ""
 
 #: src/languages/c.md:68
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/c.md:70
 msgid ""

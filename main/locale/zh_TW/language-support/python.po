@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/languages/python.md:18
 msgid "Step 1: Install Python"
-msgstr ""
+msgstr "步驟 1：安裝 Python"
 
 #: src/languages/python.md:20
 msgid ""
@@ -95,7 +95,7 @@ msgstr ""
 
 #: src/languages/python.md:39
 msgid "Step 2: Verify Python Installation"
-msgstr ""
+msgstr "步驟 2：驗證 Python 安裝"
 
 #: src/languages/python.md:41
 msgid "Confirm Python is installed and available in your shell:"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: src/languages/python.md:64
 msgid "Step 2: Use the Integrated Terminal (Optional)"
-msgstr ""
+msgstr "步驟 2：使用整合式終端機（選用）"
 
 #: src/languages/python.md:66
 msgid ""
@@ -563,7 +563,7 @@ msgstr ""
 
 #: src/languages/python.md:227
 msgid "Configuring Ruff"
-msgstr ""
+msgstr "組態 Ruff"
 
 #: src/languages/python.md:229
 msgid ""
@@ -663,7 +663,7 @@ msgstr ""
 
 #: src/languages/python.md:280
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/python.md:282
 msgid ""

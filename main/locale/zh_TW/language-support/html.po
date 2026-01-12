@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/languages/html.md:18
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/html.md:20
 msgid ""

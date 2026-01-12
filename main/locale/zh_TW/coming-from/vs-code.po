@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:9
 msgid "Install Zed"
-msgstr ""
+msgstr "安裝 Zed"
 
 #: src/migrate/vs-code.md:11
 msgid "Zed is available on macOS, Windows, and Linux."

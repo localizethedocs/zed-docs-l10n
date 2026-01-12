@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/diagnostics.md:46
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/diagnostics.md:48
 msgid ""

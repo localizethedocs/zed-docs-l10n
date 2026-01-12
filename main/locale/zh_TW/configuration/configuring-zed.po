@@ -4079,19 +4079,19 @@ msgstr ""
 
 #: src/configuring-zed.md:2547
 msgid "[Go](https://docs.zed.dev/languages/go)"
-msgstr ""
+msgstr "[Go](https://docs.zed.dev/languages/go)"
 
 #: src/configuring-zed.md:2548
 msgid "[Rust](https://docs.zed.dev/languages/rust)"
-msgstr ""
+msgstr "[Rust](https://docs.zed.dev/languages/rust)"
 
 #: src/configuring-zed.md:2549
 msgid "[Svelte](https://docs.zed.dev/languages/svelte)"
-msgstr ""
+msgstr "[Svelte](https://docs.zed.dev/languages/svelte)"
 
 #: src/configuring-zed.md:2550
 msgid "[TypeScript](https://docs.zed.dev/languages/typescript)"
-msgstr ""
+msgstr "[TypeScript](https://docs.zed.dev/languages/typescript)"
 
 #: src/configuring-zed.md:2552
 msgid ""
@@ -4242,7 +4242,7 @@ msgstr ""
 
 #: src/configuring-zed.md:2639
 msgid "Languages"
-msgstr ""
+msgstr "語言"
 
 #: src/configuring-zed.md:2641
 msgid "Description: Configuration for specific languages."
@@ -4250,7 +4250,7 @@ msgstr ""
 
 #: src/configuring-zed.md:2642
 msgid "Setting: `languages`"
-msgstr ""
+msgstr "設定：`languages`"
 
 #: src/configuring-zed.md:2647
 msgid ""
@@ -7112,7 +7112,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4437
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/configuring-zed.md:4439
 msgid "Description: Customize project panel"
@@ -7495,7 +7495,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4779
 msgid "Git Panel"
-msgstr ""
+msgstr "Git 面板"
 
 #: src/configuring-zed.md:4781
 msgid "Description: Setting to customize the behavior of the git panel."
@@ -7634,7 +7634,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4841
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/configuring-zed.md:4843
 msgid "Description: Customize outline Panel"

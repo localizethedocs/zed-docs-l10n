@@ -24,7 +24,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:5
 msgid "Install Zed"
-msgstr ""
+msgstr "安裝 Zed"
 
 #: src/migrate/webstorm.md:7
 msgid "Zed is available on macOS, Windows, and Linux."
@@ -857,11 +857,11 @@ msgstr ""
 
 #: src/migrate/webstorm.md:247
 msgid "Project (1)"
-msgstr ""
+msgstr "專案 (1)"
 
 #: src/migrate/webstorm.md:247
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/migrate/webstorm.md:248
 msgid "Git (9 or Cmd+0)"
@@ -869,7 +869,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:248
 msgid "Git Panel"
-msgstr ""
+msgstr "Git 面板"
 
 #: src/migrate/webstorm.md:248
 msgid "`Cmd + 0`"
@@ -877,27 +877,27 @@ msgstr ""
 
 #: src/migrate/webstorm.md:249
 msgid "Terminal (Alt+F12)"
-msgstr ""
+msgstr "終端機 (Alt+F12)"
 
 #: src/migrate/webstorm.md:249
 msgid "Terminal Panel"
-msgstr ""
+msgstr "終端機面板"
 
 #: src/migrate/webstorm.md:250
 msgid "Structure (7)"
-msgstr ""
+msgstr "結構 (7)"
 
 #: src/migrate/webstorm.md:250
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/migrate/webstorm.md:250
 msgid "`Cmd + 7`"
-msgstr ""
+msgstr "`Cmd + 7`"
 
 #: src/migrate/webstorm.md:251
 msgid "Problems (6)"
-msgstr ""
+msgstr "問題 (6)"
 
 #: src/migrate/webstorm.md:251
 msgid "Diagnostics"
@@ -913,7 +913,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:252
 msgid "Debug Panel"
-msgstr ""
+msgstr "除錯面板"
 
 #: src/migrate/webstorm.md:252
 msgid "`Cmd + 5`"
@@ -933,7 +933,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:258
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/migrate/webstorm.md:260
 msgid ""
@@ -1417,7 +1417,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:445
 msgid "Next Steps"
-msgstr ""
+msgstr "下一步"
 
 #: src/migrate/webstorm.md:447
 msgid ""

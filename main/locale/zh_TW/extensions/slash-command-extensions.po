@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/extensions/slash-commands.md:1
 msgid "Slash Commands"
-msgstr ""
+msgstr "斜線命令"
 
 #: src/extensions/slash-commands.md:3
 msgid "Extensions may provide slash commands for use in the Assistant."
@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/extensions/slash-commands.md:11
 msgid "Defining slash commands"
-msgstr ""
+msgstr "定義斜線命令"
 
 #: src/extensions/slash-commands.md:13
 msgid ""

@@ -54,7 +54,7 @@ msgstr ""
 
 #: src/languages/sh.md:20
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/sh.md:22
 msgid ""

@@ -1068,7 +1068,7 @@ msgstr ""
 
 #: src/configuring-languages.md:455
 msgid "Workspace Symbol Search"
-msgstr ""
+msgstr "工作空間符號搜尋"
 
 #: src/configuring-languages.md:457
 msgid ""

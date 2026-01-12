@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/SUMMARY.md:16
 msgid "Configuring Languages"
-msgstr ""
+msgstr "組態語言"
 
 #: src/SUMMARY.md:17
 msgid "Toolchains"
@@ -625,7 +625,7 @@ msgstr ""
 
 #: src/SUMMARY.md:180
 msgid "Using Debuggers"
-msgstr ""
+msgstr "使用除錯器"
 
 #: src/SUMMARY.md:181
 msgid "Performance"

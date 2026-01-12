@@ -48,7 +48,7 @@ msgstr ""
 
 #: src/git.md:14
 msgid "Git status in the Project Panel"
-msgstr ""
+msgstr "專案面板中的 Git 狀態"
 
 #: src/git.md:15
 msgid "Branch creating and switching"
@@ -203,7 +203,7 @@ msgstr ""
 
 #: src/git.md:70
 msgid "Using the Git Panel"
-msgstr ""
+msgstr "使用 Git 面板"
 
 #: src/git.md:72
 msgid ""

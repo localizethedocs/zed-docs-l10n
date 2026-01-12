@@ -301,7 +301,7 @@ msgstr ""
 
 #: src/languages/lua.md:108
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/lua.md:110
 msgid "LuaLS Formatting"

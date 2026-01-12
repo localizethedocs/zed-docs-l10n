@@ -245,7 +245,7 @@ msgstr ""
 
 #: src/languages/php.md:128
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/php.md:130
 msgid ""

@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:5
 msgid "Install Zed"
-msgstr ""
+msgstr "安裝 Zed"
 
 #: src/migrate/pycharm.md:7
 msgid "Zed is available on macOS, Windows, and Linux."
@@ -909,11 +909,11 @@ msgstr ""
 
 #: src/migrate/pycharm.md:264
 msgid "Project (1)"
-msgstr ""
+msgstr "專案 (1)"
 
 #: src/migrate/pycharm.md:264
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/migrate/pycharm.md:265
 msgid "Git (9 or Cmd+0)"
@@ -921,7 +921,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:265
 msgid "Git Panel"
-msgstr ""
+msgstr "Git 面板"
 
 #: src/migrate/pycharm.md:265
 msgid "`Cmd + 0`"
@@ -929,27 +929,27 @@ msgstr ""
 
 #: src/migrate/pycharm.md:266
 msgid "Terminal (Alt+F12)"
-msgstr ""
+msgstr "終端機 (Alt+F12)"
 
 #: src/migrate/pycharm.md:266
 msgid "Terminal Panel"
-msgstr ""
+msgstr "終端機面板"
 
 #: src/migrate/pycharm.md:267
 msgid "Structure (7)"
-msgstr ""
+msgstr "結構 (7)"
 
 #: src/migrate/pycharm.md:267
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/migrate/pycharm.md:267
 msgid "`Cmd + 7`"
-msgstr ""
+msgstr "`Cmd + 7`"
 
 #: src/migrate/pycharm.md:268
 msgid "Problems (6)"
-msgstr ""
+msgstr "問題 (6)"
 
 #: src/migrate/pycharm.md:268
 msgid "Diagnostics"
@@ -965,7 +965,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:269
 msgid "Debug Panel"
-msgstr ""
+msgstr "除錯面板"
 
 #: src/migrate/pycharm.md:269
 msgid "`Cmd + 5`"
@@ -979,7 +979,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:273
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/migrate/pycharm.md:275
 msgid ""
@@ -1410,7 +1410,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:429
 msgid "Next Steps"
-msgstr ""
+msgstr "下一步"
 
 #: src/migrate/pycharm.md:431
 msgid ""

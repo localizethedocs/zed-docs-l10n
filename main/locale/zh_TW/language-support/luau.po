@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/languages/luau.md:15
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/luau.md:17
 msgid ""

@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/languages/sql.md:7
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/sql.md:9
 msgid ""
@@ -100,7 +100,7 @@ msgstr ""
 
 #: src/languages/sql.md:43
 msgid "Advanced Formatting"
-msgstr ""
+msgstr "進階格式化"
 
 #: src/languages/sql.md:45
 msgid ""

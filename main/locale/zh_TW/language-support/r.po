@@ -115,7 +115,7 @@ msgstr ""
 
 #: src/languages/r.md:51
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/r.md:53
 msgid "Air"

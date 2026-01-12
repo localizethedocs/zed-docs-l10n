@@ -30,7 +30,7 @@ msgstr ""
 
 #: src/languages/fish.md:8
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/fish.md:10
 msgid ""

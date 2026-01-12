@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:5
 msgid "Install Zed"
-msgstr ""
+msgstr "安裝 Zed"
 
 #: src/migrate/intellij.md:7
 msgid "Zed is available on macOS, Windows, and Linux."
@@ -832,11 +832,11 @@ msgstr ""
 
 #: src/migrate/intellij.md:241
 msgid "Project (1)"
-msgstr ""
+msgstr "專案 (1)"
 
 #: src/migrate/intellij.md:241
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/migrate/intellij.md:242
 msgid "Git (9 or Cmd+0)"
@@ -844,7 +844,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:242
 msgid "Git Panel"
-msgstr ""
+msgstr "Git 面板"
 
 #: src/migrate/intellij.md:242
 msgid "`Cmd + 0`"
@@ -852,27 +852,27 @@ msgstr ""
 
 #: src/migrate/intellij.md:243
 msgid "Terminal (Alt+F12)"
-msgstr ""
+msgstr "終端機 (Alt+F12)"
 
 #: src/migrate/intellij.md:243
 msgid "Terminal Panel"
-msgstr ""
+msgstr "終端機面板"
 
 #: src/migrate/intellij.md:244
 msgid "Structure (7)"
-msgstr ""
+msgstr "結構 (7)"
 
 #: src/migrate/intellij.md:244
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/migrate/intellij.md:244
 msgid "`Cmd + 7`"
-msgstr ""
+msgstr "`Cmd + 7`"
 
 #: src/migrate/intellij.md:245
 msgid "Problems (6)"
-msgstr ""
+msgstr "問題 (6)"
 
 #: src/migrate/intellij.md:245
 msgid "Diagnostics"
@@ -888,7 +888,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:246
 msgid "Debug Panel"
-msgstr ""
+msgstr "除錯面板"
 
 #: src/migrate/intellij.md:246
 msgid "`Cmd + 5`"
@@ -910,7 +910,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:252
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/migrate/intellij.md:254
 msgid ""
@@ -1168,7 +1168,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:348
 msgid "Next Steps"
-msgstr ""
+msgstr "下一步"
 
 #: src/migrate/intellij.md:350
 msgid ""

@@ -184,7 +184,7 @@ msgstr ""
 
 #: src/languages/typescript.md:76
 msgid "Large projects"
-msgstr ""
+msgstr "大型專案"
 
 #: src/languages/typescript.md:78
 msgid ""
@@ -337,7 +337,7 @@ msgstr ""
 
 #: src/languages/typescript.md:187
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/typescript.md:189
 msgid ""

@@ -124,7 +124,7 @@ msgstr ""
 
 #: src/languages/cpp.md:76
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/cpp.md:78
 msgid ""
@@ -208,7 +208,7 @@ msgstr ""
 
 #: src/languages/cpp.md:106
 msgid "More server configuration"
-msgstr ""
+msgstr "更多伺服器組態"
 
 #: src/languages/cpp.md:108
 msgid ""
@@ -254,7 +254,7 @@ msgstr ""
 
 #: src/languages/cpp.md:122
 msgid "Compile Commands"
-msgstr ""
+msgstr "編譯命令"
 
 #: src/languages/cpp.md:124
 msgid ""
@@ -265,7 +265,7 @@ msgstr ""
 
 #: src/languages/cpp.md:126
 msgid "CMake Compile Commands"
-msgstr ""
+msgstr "CMake 編譯命令"
 
 #: src/languages/cpp.md:128
 msgid ""
@@ -281,7 +281,7 @@ msgstr ""
 
 #: src/languages/cpp.md:136
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/cpp.md:138
 msgid ""

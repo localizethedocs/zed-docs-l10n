@@ -350,7 +350,7 @@ msgstr ""
 
 #: src/languages/javascript.md:206
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/javascript.md:208
 msgid ""

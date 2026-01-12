@@ -96,7 +96,7 @@ msgstr ""
 
 #: src/languages/dart.md:38
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/dart.md:40
 msgid ""

@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/languages/swift.md:14
 msgid "Debugging"
-msgstr ""
+msgstr "除錯"
 
 #: src/languages/swift.md:16
 msgid ""

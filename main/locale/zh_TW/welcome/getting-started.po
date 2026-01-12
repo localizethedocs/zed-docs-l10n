@@ -54,7 +54,7 @@ msgstr ""
 msgid ""
 "[Extensions](./extensions.md): Leverage Zed's extensions to customize how "
 "you work."
-msgstr ""
+msgstr "[擴充功能](./extensions.md)：利用 Zed 的擴充功能來自訂您的工作方式。"
 
 #: src/getting-started.md:13
 msgid "Join the Zed Community"
@@ -77,4 +77,4 @@ msgstr ""
 
 #: src/getting-started.md:19
 msgid "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
-msgstr ""
+msgstr "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"

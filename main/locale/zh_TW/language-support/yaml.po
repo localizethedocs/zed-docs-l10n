@@ -99,7 +99,7 @@ msgstr ""
 
 #: src/languages/yaml.md:33
 msgid "Formatting"
-msgstr ""
+msgstr "格式化"
 
 #: src/languages/yaml.md:35
 msgid "By default, Zed uses Prettier for formatting YAML files."
