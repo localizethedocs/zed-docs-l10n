@@ -1,5 +1,5 @@
 <div align="center">
-<h1 id="localization-of-zed-documentation">Localization of Zed Documentation</h1>
+<h1 id="localization-of-zed-documentation">Zed 文档的本地化</h1>
 </div>
 
 <details><summary><strong>切换语言</strong></summary>
