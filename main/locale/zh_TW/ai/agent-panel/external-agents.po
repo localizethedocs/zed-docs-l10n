@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -523,8 +523,8 @@ msgstr ""
 
 #: src/ai/external-agents.md:224
 msgid ""
-"// The agent name as it appears in the UI (e.g., \"OpenCode\", \"Auggie "
-"CLI\", etc.)\n"
+"// The agent name as defined in the extension or in settings.json (e.g., "
+"\"opencode\", \"Auggie CLI\", etc.)\n"
 "            \"command\""
 msgstr ""
 
@@ -543,31 +543,39 @@ msgid "\"acp\""
 msgstr ""
 
 #: src/ai/external-agents.md:237
+msgid ""
+"For most extensions, the `agent.custom.name` attribute matches the name of "
+"the agent that appears in the [Agent Panel](../ai/agent-panel.md) UI. In "
+"some cases however, the name might need to be written differently (e.g. in "
+"lowercase)."
+msgstr ""
+
+#: src/ai/external-agents.md:240
 msgid "Debugging Agents"
 msgstr ""
 
-#: src/ai/external-agents.md:239
+#: src/ai/external-agents.md:242
 msgid ""
 "When using external agents in Zed, you can access the debug view via with "
 "`dev: open acp logs` from the Command Palette. This lets you see the "
 "messages being sent and received between Zed and the agent."
 msgstr ""
 
-#: src/ai/external-agents.md:241
+#: src/ai/external-agents.md:244
 msgid "![The debug view for ACP logs.](https://zed.dev/img/acp/acp-logs.webp)"
 msgstr ""
 
-#: src/ai/external-agents.md:243
+#: src/ai/external-agents.md:246
 msgid "MCP Servers"
 msgstr "MCP 伺服器"
 
-#: src/ai/external-agents.md:245
+#: src/ai/external-agents.md:248
 msgid ""
 "Note that for external agents, access to MCP servers [installed from Zed](./"
 "mcp.md) may vary depending on the ACP agent implementation."
 msgstr ""
 
-#: src/ai/external-agents.md:247
+#: src/ai/external-agents.md:250
 msgid ""
 "Regarding the built-in ones, Claude Code and Codex both support it, and "
 "Gemini CLI does not yet. In the meantime, learn how to add MCP server "

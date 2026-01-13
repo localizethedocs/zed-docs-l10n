@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -130,10 +130,53 @@ msgid ""
 msgstr ""
 
 #: src/languages/tailwindcss.md:42
-msgid "Prettier Plugin"
+msgid "Using Tailwind CSS Mode in CSS Files (Preview)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:44
+msgid ""
+"Zed includes support for the Tailwind CSS language mode, which provides full "
+"CSS IntelliSense support even when using Tailwind-specific at-rules like "
+"`@apply`, `@layer`, and `@theme`. To use the Tailwind CSS language mode for "
+"CSS files, add the following to `languages` section of your `settings.json`:"
+msgstr ""
+
+#: src/languages/tailwindcss.md:49
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:50
+msgid "\"CSS\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:51
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:52
+msgid "\"tailwindcss-intellisense-css\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:53
+msgid "\"!vscode-css-language-server\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:54
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:61
+msgid ""
+"The `tailwindcss-intellisense-css` language server serves as an alternative "
+"to the default CSS language server, maintaining all standard CSS "
+"IntelliSense features while adding support for Tailwind-specific syntax."
+msgstr ""
+
+#: src/languages/tailwindcss.md:63
+msgid "Prettier Plugin"
+msgstr ""
+
+#: src/languages/tailwindcss.md:65
 msgid ""
 "Zed supports Prettier out of the box, which means that if you have the "
 "[Tailwind CSS Prettier plugin](https://github.com/tailwindlabs/prettier-"
@@ -141,14 +184,14 @@ msgid ""
 "make it work automatically:"
 msgstr ""
 
-#: src/languages/tailwindcss.md:47
+#: src/languages/tailwindcss.md:68
 msgid "// .prettierrc\n"
 msgstr ""
 
-#: src/languages/tailwindcss.md:49
+#: src/languages/tailwindcss.md:70
 msgid "\"plugins\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:49
+#: src/languages/tailwindcss.md:70
 msgid "\"prettier-plugin-tailwindcss\""
 msgstr ""

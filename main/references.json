@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-01-05 09:30:46 +0100",
-        "hash" : "e57285fe3971404c041f13c80db1ec97adb7b493",
-        "title" : "gpui: Prepaint Div children with image cache (#46039)"
+        "date" : "2026-01-11 23:35:32 -0500",
+        "hash" : "578911de0355c0f8947929609ebbdfa025cccdf1",
+        "title" : "terminal: Avoid overlapping IME marked text with terminal content (#46227)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-01-05 09:30:46 +0100",
-        "hash" : "e57285fe3971404c041f13c80db1ec97adb7b493",
-        "title" : "gpui: Prepaint Div children with image cache (#46039)"
+        "date" : "2026-01-11 23:35:32 -0500",
+        "hash" : "578911de0355c0f8947929609ebbdfa025cccdf1",
+        "title" : "terminal: Avoid overlapping IME marked text with terminal content (#46227)"
       }
     }
   },

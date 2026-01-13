@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
+"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,31 +21,31 @@ msgid ""
 "running the next action.<br> Keymap Name: <code>action::Sequence</code><br>"
 msgstr ""
 
-#: src/all-actions.md:374
+#: src/all-actions.md:368
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::ActivateMenuLeft</code><br>"
 msgstr ""
 
-#: src/all-actions.md:382
+#: src/all-actions.md:376
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::ActivateMenuRight</code><br>"
 msgstr ""
 
-#: src/all-actions.md:390
+#: src/all-actions.md:384
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::OpenApplicationMenu</code><br>"
 msgstr ""
 
-#: src/all-actions.md:600
+#: src/all-actions.md:594
 msgid ""
 "Use `collab_panel::OpenSelectedChannelNotes` to open the channel notes for "
 "the selected channel in the collab panel."
 msgstr ""
 
-#: src/all-actions.md:603
+#: src/all-actions.md:597
 msgid ""
 "If you want to open a specific channel, use `zed::OpenZedUrl` with a channel "
 "notes URL - can be copied via \"Copy link to section\" in the context menu "
@@ -54,7 +54,7 @@ msgid ""
 "OpenChannelNotes</code><br>"
 msgstr ""
 
-#: src/all-actions.md:679
+#: src/all-actions.md:673
 msgid ""
 "Use `collab::OpenChannelNotes` to open the channel notes for the current "
 "call.<br> Keymap Name: <code>collab_panel::OpenSelectedChannelNotes</"

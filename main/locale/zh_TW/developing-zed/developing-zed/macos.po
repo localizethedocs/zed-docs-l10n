@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -85,48 +85,132 @@ msgid "And to run the tests:"
 msgstr ""
 
 #: src/development/macos.md:56
-msgid "Troubleshooting"
-msgstr "疑難排解"
-
-#: src/development/macos.md:58
-msgid "Error compiling metal shaders"
+msgid "Visual Regression Tests"
 msgstr ""
 
-#: src/development/macos.md:63
-msgid "\"metal\""
+#: src/development/macos.md:58
+msgid ""
+"Zed includes visual regression tests that capture screenshots of real Zed "
+"windows and compare them against baseline images. These tests require macOS "
+"with Screen Recording permission."
+msgstr ""
+
+#: src/development/macos.md:60
+msgid "Prerequisites"
+msgstr ""
+
+#: src/development/macos.md:62
+msgid "You must grant Screen Recording permission to your terminal:"
+msgstr ""
+
+#: src/development/macos.md:64
+msgid "Run the visual test runner once - macOS will prompt for permission"
+msgstr ""
+
+#: src/development/macos.md:65
+msgid "Or manually: System Settings > Privacy & Security > Screen Recording"
 msgstr ""
 
 #: src/development/macos.md:66
+msgid "Enable your terminal app (e.g., Terminal.app, iTerm2, Ghostty)"
+msgstr ""
+
+#: src/development/macos.md:67
+msgid "Restart your terminal after granting permission"
+msgstr ""
+
+#: src/development/macos.md:69
+msgid "Running Visual Tests"
+msgstr ""
+
+#: src/development/macos.md:75
+msgid "Baseline Images"
+msgstr ""
+
+#: src/development/macos.md:77
+msgid ""
+"Baseline images are stored in `crates/zed/test_fixtures/visual_tests/` but "
+"are **gitignored** to avoid bloating the repository. You must generate them "
+"locally before running tests."
+msgstr ""
+
+#: src/development/macos.md:81
+msgid "Initial Setup"
+msgstr ""
+
+#: src/development/macos.md:83
+msgid ""
+"Before making any UI changes, generate baseline images from a known-good "
+"state:"
+msgstr ""
+
+#: src/development/macos.md:87 src/development/macos.md:98
+msgid "1"
+msgstr ""
+
+#: src/development/macos.md:91
+msgid "This creates baselines that reflect the current expected UI."
+msgstr ""
+
+#: src/development/macos.md:93
+msgid "Updating Baselines"
+msgstr ""
+
+#: src/development/macos.md:95
+msgid ""
+"When UI changes are intentional, update the baseline images after your "
+"changes:"
+msgstr ""
+
+#: src/development/macos.md:101
+msgid ""
+"**Note:** In the future, baselines may be stored externally. For now, they "
+"remain local-only to keep the git repository lightweight."
+msgstr ""
+
+#: src/development/macos.md:104
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/development/macos.md:106
+msgid "Error compiling metal shaders"
+msgstr ""
+
+#: src/development/macos.md:111
+msgid "\"metal\""
+msgstr ""
+
+#: src/development/macos.md:114
 msgid ""
 "Try `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer`"
 msgstr ""
 
-#: src/development/macos.md:68
+#: src/development/macos.md:116
 msgid ""
 "If you're on macOS 26, try `xcodebuild -downloadComponent MetalToolchain`"
 msgstr ""
 
-#: src/development/macos.md:70
+#: src/development/macos.md:118
 msgid "Cargo errors claiming that a dependency is using unstable features"
 msgstr ""
 
-#: src/development/macos.md:72
+#: src/development/macos.md:120
 msgid "Try `cargo clean` and `cargo build`."
 msgstr ""
 
-#: src/development/macos.md:74
+#: src/development/macos.md:122
 msgid "Error: 'dispatch/dispatch.h' file not found"
 msgstr ""
 
-#: src/development/macos.md:76
+#: src/development/macos.md:124
 msgid "If you encounter an error similar to:"
 msgstr ""
 
-#: src/development/macos.md:79
+#: src/development/macos.md:127
 msgid "'dispatch/dispatch.h'"
 msgstr ""
 
-#: src/development/macos.md:82
+#: src/development/macos.md:130
 msgid ""
 "'t exit successfully\n"
 "\n"
@@ -139,57 +223,57 @@ msgid ""
 "  cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS\n"
 msgstr ""
 
-#: src/development/macos.md:93
+#: src/development/macos.md:141
 msgid ""
 "This file is part of Xcode. Ensure you have installed the Xcode command line "
 "tools and set the correct path:"
 msgstr ""
 
-#: src/development/macos.md:100
+#: src/development/macos.md:148
 msgid "Additionally, set the `BINDGEN_EXTRA_CLANG_ARGS` environment variable:"
 msgstr ""
 
-#: src/development/macos.md:103
+#: src/development/macos.md:151
 msgid "\"--sysroot=$(xcrun --show-sdk-path)\""
 msgstr ""
 
-#: src/development/macos.md:106
+#: src/development/macos.md:154
 msgid "Then clean and rebuild the project:"
 msgstr ""
 
-#: src/development/macos.md:113
+#: src/development/macos.md:161
 msgid "Tests failing due to `Too many open files (os error 24)`"
 msgstr ""
 
-#: src/development/macos.md:115
+#: src/development/macos.md:163
 msgid ""
 "This error seems to be caused by OS resource constraints. Installing and "
 "running tests with `cargo-nextest` should resolve the issue."
 msgstr ""
 
-#: src/development/macos.md:117
+#: src/development/macos.md:165
 msgid "`cargo install cargo-nextest --locked`"
 msgstr ""
 
-#: src/development/macos.md:118
+#: src/development/macos.md:166
 msgid "`cargo nextest run --workspace --no-fail-fast`"
 msgstr ""
 
-#: src/development/macos.md:120
+#: src/development/macos.md:168
 msgid "Tips & Tricks"
 msgstr ""
 
-#: src/development/macos.md:122
+#: src/development/macos.md:170
 msgid "Avoiding continual rebuilds"
 msgstr ""
 
-#: src/development/macos.md:124
+#: src/development/macos.md:172
 msgid ""
 "If you are finding that Zed is continually rebuilding root crates, it may be "
 "because you are pointing your development Zed at the codebase itself."
 msgstr ""
 
-#: src/development/macos.md:127
+#: src/development/macos.md:175
 msgid ""
 "This causes problems because `cargo run` exports a bunch of environment "
 "variables which are picked up by the `rust-analyzer` that runs in the "
@@ -198,45 +282,45 @@ msgid ""
 "depend on."
 msgstr ""
 
-#: src/development/macos.md:132
+#: src/development/macos.md:180
 msgid ""
 "You can easily avoid running the built binary on the checked-out Zed "
 "codebase using `cargo run ~/path/to/other/project` to ensure that you don't "
 "hit this."
 msgstr ""
 
-#: src/development/macos.md:135
+#: src/development/macos.md:183
 msgid "Speeding up verification"
 msgstr ""
 
-#: src/development/macos.md:137
+#: src/development/macos.md:185
 msgid ""
 "If you are building Zed a lot, you may find that macOS continually verifies "
 "new builds which can add a few seconds to your iteration cycles."
 msgstr ""
 
-#: src/development/macos.md:140
+#: src/development/macos.md:188
 msgid "To fix this, you can:"
 msgstr ""
 
-#: src/development/macos.md:142
+#: src/development/macos.md:190
 msgid ""
 "Run `sudo spctl developer-mode enable-terminal` to enable the Developer "
 "Tools panel in System Settings."
 msgstr ""
 
-#: src/development/macos.md:143
+#: src/development/macos.md:191
 msgid ""
 "In System Settings, search for \"Developer Tools\" and add your terminal (e."
 "g. iTerm or Ghostty) to the list under \"Allow applications to use developer "
 "tools\""
 msgstr ""
 
-#: src/development/macos.md:144
+#: src/development/macos.md:192
 msgid "Restart your terminal."
 msgstr "重新啟動終端機。"
 
-#: src/development/macos.md:146
+#: src/development/macos.md:194
 msgid ""
 "Thanks to the nextest developers for publishing [this](https://nexte.st/docs/"
 "installation/macos/#gatekeeper)."

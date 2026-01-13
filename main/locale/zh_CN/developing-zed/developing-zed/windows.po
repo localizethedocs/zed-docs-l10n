@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -241,10 +241,17 @@ msgid "And to run the tests:"
 msgstr ""
 
 #: src/development/windows.md:111
-msgid "Installing from msys2"
+msgid ""
+"**Note:** Visual regression tests are currently macOS-only and require "
+"Screen Recording permission. See [Building Zed for macOS](./macos.md#visual-"
+"regression-tests) for details."
 msgstr ""
 
 #: src/development/windows.md:113
+msgid "Installing from msys2"
+msgstr ""
+
+#: src/development/windows.md:115
 msgid ""
 "Zed does not support unofficial MSYS2 Zed packages built for Mingw-w64. "
 "Please report any issues you may have with [mingw-w64-zed](https://packages."
@@ -252,43 +259,43 @@ msgid ""
 "github.com/msys2/MINGW-packages/issues?q=is%3Aissue+is%3Aopen+zed)."
 msgstr ""
 
-#: src/development/windows.md:115
+#: src/development/windows.md:117
 msgid ""
 "Please refer to [MSYS2 documentation](https://www.msys2.org/docs/ides-"
 "editors/#zed) first."
 msgstr ""
 
-#: src/development/windows.md:117
+#: src/development/windows.md:119
 msgid "Troubleshooting"
 msgstr ""
 
-#: src/development/windows.md:119
+#: src/development/windows.md:121
 msgid "Setting `RUSTFLAGS` env var breaks builds"
 msgstr ""
 
-#: src/development/windows.md:121
+#: src/development/windows.md:123
 msgid ""
 "If you set the `RUSTFLAGS` env var, it will override the `rustflags` "
 "settings in `.cargo/config.toml` which is required to properly build Zed."
 msgstr ""
 
-#: src/development/windows.md:123
+#: src/development/windows.md:125
 msgid ""
 "Since these settings can vary from time to time, the build errors you "
 "receive may vary from linker errors, to other stranger errors."
 msgstr ""
 
-#: src/development/windows.md:125
+#: src/development/windows.md:127
 msgid ""
 "If you'd like to add extra rust flags, you may do 1 of the following in `."
 "cargo/config.toml`:"
 msgstr ""
 
-#: src/development/windows.md:127
+#: src/development/windows.md:129
 msgid "Add your flags in the build section"
 msgstr ""
 
-#: src/development/windows.md:129
+#: src/development/windows.md:131
 msgid ""
 "```toml\n"
 "[build]\n"
@@ -297,11 +304,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:134
+#: src/development/windows.md:136
 msgid "Add your flags in the windows target section"
 msgstr ""
 
-#: src/development/windows.md:136
+#: src/development/windows.md:138
 msgid ""
 "```toml\n"
 "[target.'cfg(target_os = \"windows\")']\n"
@@ -314,14 +321,14 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:146
+#: src/development/windows.md:148
 msgid ""
 "Or, you can create a new `.cargo/config.toml` in the same folder as the Zed "
 "repo (see below). This is particularly useful if you are doing CI builds "
 "since you don't have to edit the original `.cargo/config.toml`."
 msgstr ""
 
-#: src/development/windows.md:148
+#: src/development/windows.md:150
 msgid ""
 "```\n"
 "upper_dir\n"
@@ -336,13 +343,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:160
+#: src/development/windows.md:162
 msgid ""
 "In the new (above) `.cargo/config.toml`, if we wanted to add `--cfg gles` to "
 "our rustflags, it would look like this"
 msgstr ""
 
-#: src/development/windows.md:162
+#: src/development/windows.md:164
 msgid ""
 "```toml\n"
 "[target.'cfg(all())']\n"
@@ -350,69 +357,69 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:167
+#: src/development/windows.md:169
 msgid "Cargo errors claiming that a dependency is using unstable features"
 msgstr ""
 
-#: src/development/windows.md:169
+#: src/development/windows.md:171
 msgid "Try `cargo clean` and `cargo build`."
 msgstr ""
 
-#: src/development/windows.md:171
+#: src/development/windows.md:173
 msgid "`STATUS_ACCESS_VIOLATION`"
 msgstr ""
 
-#: src/development/windows.md:173
+#: src/development/windows.md:175
 msgid ""
 "This error can happen if you are using the \"rust-lld.exe\" linker. Consider "
 "trying a different linker."
 msgstr ""
 
-#: src/development/windows.md:175
+#: src/development/windows.md:177
 msgid ""
 "If you are using a global config, consider moving the Zed repository to a "
 "nested directory and add a `.cargo/config.toml` with a custom linker config "
 "in the parent directory."
 msgstr ""
 
-#: src/development/windows.md:177
+#: src/development/windows.md:179
 msgid ""
 "See this issue for more information [\\#12041](https://github.com/zed-"
 "industries/zed/issues/12041)"
 msgstr ""
 
-#: src/development/windows.md:179
+#: src/development/windows.md:181
 msgid "Invalid RC path selected"
 msgstr ""
 
-#: src/development/windows.md:181
+#: src/development/windows.md:183
 msgid ""
 "Sometimes, depending on the security rules applied to your laptop, you may "
 "get the following error while compiling Zed:"
 msgstr ""
 
-#: src/development/windows.md:201
+#: src/development/windows.md:203
 msgid ""
 "In order to fix this issue, you can manually set the `ZED_RC_TOOLKIT_PATH` "
 "environment variable to the RC toolkit path. Usually, you can set it to: `C:"
 "\\Program Files (x86)\\Windows Kits\\10\\bin\\<SDK_version>\\x64`."
 msgstr ""
 
-#: src/development/windows.md:204
+#: src/development/windows.md:206
 msgid ""
 "See this [issue](https://github.com/zed-industries/zed/issues/18393) for "
 "more information."
 msgstr ""
 
-#: src/development/windows.md:206
+#: src/development/windows.md:208
 msgid "Build fails: Path too long"
 msgstr ""
 
-#: src/development/windows.md:208
+#: src/development/windows.md:210
 msgid "You may receive an error like the following when building"
 msgstr ""
 
-#: src/development/windows.md:210
+#: src/development/windows.md:212
 msgid ""
 "```\n"
 "error: failed to get `pet` as a dependency of package `languages v0.1.0 (D:"
@@ -434,20 +441,20 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:223
+#: src/development/windows.md:225
 msgid ""
 "In order to solve this, you can enable longpath support for git and Windows."
 msgstr ""
 
-#: src/development/windows.md:225
+#: src/development/windows.md:227
 msgid "For git: `git config --system core.longpaths true`"
 msgstr ""
 
-#: src/development/windows.md:227
+#: src/development/windows.md:229
 msgid "And for Windows with this PS command:"
 msgstr ""
 
-#: src/development/windows.md:229
+#: src/development/windows.md:231
 msgid ""
 "```powershell\n"
 "New-ItemProperty -Path \"HKLM:"
@@ -456,67 +463,67 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/windows.md:233
+#: src/development/windows.md:235
 msgid ""
 "For more information on this, please see [win32 docs](https://learn."
 "microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?"
 "tabs=powershell)"
 msgstr ""
 
-#: src/development/windows.md:235
+#: src/development/windows.md:237
 msgid ""
 "(note that you will need to restart your system after enabling longpath "
 "support)"
 msgstr ""
 
-#: src/development/windows.md:237
+#: src/development/windows.md:239
 msgid "Graphics issues"
 msgstr ""
 
-#: src/development/windows.md:239
+#: src/development/windows.md:241
 msgid "Zed fails to launch"
 msgstr ""
 
-#: src/development/windows.md:241
+#: src/development/windows.md:243
 msgid ""
 "Currently, Zed uses Vulkan as its graphics API on Windows. However, Vulkan "
 "isn't always the most reliable on Windows, so if Zed fails to launch, it's "
 "likely a Vulkan-related issue."
 msgstr ""
 
-#: src/development/windows.md:243
+#: src/development/windows.md:245
 msgid ""
 "You can check the Zed log at: `C:"
 "\\Users\\YOU\\AppData\\Local\\Zed\\logs\\Zed.log`"
 msgstr ""
 
-#: src/development/windows.md:246
+#: src/development/windows.md:248
 msgid "If you see messages like:"
 msgstr ""
 
-#: src/development/windows.md:248
+#: src/development/windows.md:250
 msgid "`Zed failed to open a window: NoSupportedDeviceFound`"
 msgstr ""
 
-#: src/development/windows.md:249
+#: src/development/windows.md:251
 msgid "`ERROR_INITIALIZATION_FAILED`"
 msgstr ""
 
-#: src/development/windows.md:250
+#: src/development/windows.md:252
 msgid "`GPU Crashed`"
 msgstr ""
 
-#: src/development/windows.md:251
+#: src/development/windows.md:253
 msgid "`ERROR_SURFACE_LOST_KHR`"
 msgstr ""
 
-#: src/development/windows.md:253
+#: src/development/windows.md:255
 msgid ""
 "Then Vulkan might not be working properly on your system. In most cases, "
 "updating your GPU drivers may help resolve this."
 msgstr ""
 
-#: src/development/windows.md:255
+#: src/development/windows.md:257
 msgid ""
 "If there's nothing Vulkan-related in the logs and you happen to have "
 "Bandicam installed, try uninstalling it. Zed is currently not compatible "
