@@ -140,7 +140,7 @@ msgstr ""
 
 #: src/snippets.md:41
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/snippets.md:43
 msgid ""

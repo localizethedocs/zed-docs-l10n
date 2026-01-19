@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ai/rules.md:1
 msgid "Using Rules"
-msgstr ""
+msgstr "使用規則"
 
 #: src/ai/rules.md:3
 msgid ""
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/ai/rules.md:6
 msgid "`.rules` files"
-msgstr ""
+msgstr "`.rules` 檔案"
 
 #: src/ai/rules.md:8
 msgid ""
@@ -38,39 +38,39 @@ msgstr ""
 
 #: src/ai/rules.md:11
 msgid "`.rules`"
-msgstr ""
+msgstr "`.rules`"
 
 #: src/ai/rules.md:12
 msgid "`.cursorrules`"
-msgstr ""
+msgstr "`.cursorrules`"
 
 #: src/ai/rules.md:13
 msgid "`.windsurfrules`"
-msgstr ""
+msgstr "`.windsurfrules`"
 
 #: src/ai/rules.md:14
 msgid "`.clinerules`"
-msgstr ""
+msgstr "`.clinerules`"
 
 #: src/ai/rules.md:15
 msgid "`.github/copilot-instructions.md`"
-msgstr ""
+msgstr "`.github/copilot-instructions.md`"
 
 #: src/ai/rules.md:16
 msgid "`AGENT.md`"
-msgstr ""
+msgstr "`AGENT.md`"
 
 #: src/ai/rules.md:17
 msgid "`AGENTS.md`"
-msgstr ""
+msgstr "`AGENTS.md`"
 
 #: src/ai/rules.md:18
 msgid "`CLAUDE.md`"
-msgstr ""
+msgstr "`CLAUDE.md`"
 
 #: src/ai/rules.md:19
 msgid "`GEMINI.md`"
-msgstr ""
+msgstr "`GEMINI.md`"
 
 #: src/ai/rules.md:21
 msgid "Rules Library"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: src/ai/rules.md:35
 msgid "Managing Rules"
-msgstr ""
+msgstr "管理規則"
 
 #: src/ai/rules.md:37
 msgid ""
@@ -130,7 +130,7 @@ msgstr ""
 
 #: src/ai/rules.md:41
 msgid "Creating Rules"
-msgstr ""
+msgstr "建立規則"
 
 #: src/ai/rules.md:43
 msgid ""
@@ -163,7 +163,7 @@ msgstr ""
 
 #: src/ai/rules.md:52
 msgid "Editing the Default Rules"
-msgstr ""
+msgstr "編輯預設規則"
 
 #: src/ai/rules.md:54
 msgid ""
@@ -192,7 +192,7 @@ msgstr ""
 
 #: src/ai/rules.md:65
 msgid "Slash Commands in Rules"
-msgstr ""
+msgstr "規則中的斜線命令"
 
 #: src/ai/rules.md:67
 msgid ""

@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/ai/subscription.md:1
 msgid "Subscription"
-msgstr ""
+msgstr "訂閱方案"
 
 #: src/ai/subscription.md:3
 msgid ""
@@ -35,7 +35,7 @@ msgstr ""
 #: src/ai/subscription.md:9
 msgid ""
 "[Models](./models.md): Overview of the models offered by Zed's subscriptions."
-msgstr ""
+msgstr "[模型](./models.md)：Zed 訂閱方案所提供的模型概覽。"
 
 #: src/ai/subscription.md:11
 msgid ""

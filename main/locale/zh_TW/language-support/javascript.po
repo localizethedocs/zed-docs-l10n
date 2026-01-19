@@ -485,27 +485,27 @@ msgstr ""
 
 #: src/languages/javascript.md:254
 msgid "\"$ZED_WORKTREE_ROOT/index.html\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT/index.html\""
 
 #: src/languages/javascript.md:255
 msgid "\"webRoot\""
-msgstr ""
+msgstr "\"webRoot\""
 
 #: src/languages/javascript.md:255
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/javascript.md:256
 msgid "\"console\""
-msgstr ""
+msgstr "\"console\""
 
 #: src/languages/javascript.md:256
 msgid "\"integratedTerminal\""
-msgstr ""
+msgstr "\"integratedTerminal\""
 
 #: src/languages/javascript.md:262
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/languages/javascript.md:264
 msgid ""

@@ -145,7 +145,7 @@ msgstr ""
 
 #: src/dev-containers.md:47
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/dev-containers.md:49
 msgid ""

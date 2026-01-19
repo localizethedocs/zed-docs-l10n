@@ -345,7 +345,7 @@ msgstr ""
 
 #: src/languages/cpp.md:153
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/cpp.md:155
 msgid "\"program\""

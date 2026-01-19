@@ -155,7 +155,7 @@ msgstr ""
 
 #: src/languages/html.md:67
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/languages/html.md:69
 msgid "[CSS](./css.md)"

@@ -20,6 +20,8 @@ msgid ""
 "Zed uses the [Model Context Protocol](https://modelcontextprotocol.io/) to "
 "interact with context servers."
 msgstr ""
+"Zed 使用[模型上下文協定](https://modelcontextprotocol.io/)與上下文伺服器進行"
+"互動。"
 
 #: src/ai/mcp.md:5
 msgid ""

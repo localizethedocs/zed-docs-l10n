@@ -316,7 +316,7 @@ msgstr ""
 
 #: src/debugger.md:100
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/debugger.md:105
 msgid ""
@@ -506,7 +506,7 @@ msgstr ""
 #: src/debugger.md:255 src/debugger.md:273 src/debugger.md:291
 #: src/debugger.md:309 src/debugger.md:327
 msgid "**Options**"
-msgstr ""
+msgstr "**選項**"
 
 #: src/debugger.md:181
 msgid "`left` - The debug panel will be docked to the left side of the UI."

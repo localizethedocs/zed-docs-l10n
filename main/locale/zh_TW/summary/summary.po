@@ -241,7 +241,7 @@ msgstr ""
 
 #: src/SUMMARY.md:72
 msgid "Subscription"
-msgstr ""
+msgstr "訂閱方案"
 
 #: src/SUMMARY.md:73
 msgid "Models"

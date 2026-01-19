@@ -229,7 +229,7 @@ msgstr ""
 
 #: src/languages/c.md:84
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/c.md:86
 msgid "\"program\""

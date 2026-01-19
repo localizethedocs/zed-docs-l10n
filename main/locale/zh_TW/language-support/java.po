@@ -141,6 +141,18 @@ msgid ""
 "}\n"
 "```"
 msgstr ""
+"```jsonc\n"
+"{\n"
+"  \"lsp\": {\n"
+"    \"jdtls\": {\n"
+"      \"settings\": {\n"
+"        \"java_home\": \"/path/to/your/JDK21+\",\n"
+"        \"lombok_support\": true,\n"
+"      },\n"
+"    },\n"
+"  },\n"
+"}\n"
+"```"
 
 #: src/languages/java.md:51
 msgid "Debugging"
@@ -310,7 +322,7 @@ msgstr ""
 
 #: src/languages/java.md:164
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/languages/java.md:166
 msgid ""

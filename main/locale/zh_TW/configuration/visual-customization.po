@@ -40,6 +40,8 @@ msgid ""
 "md) in form of extensions by running <code class=\"hljs\">zed: extensions</"
 "code> from the command palette."
 msgstr ""
+"您可以透過在命令選擇區中執行 <code class=\"hljs\">zed: extensions</code>，以"
+"擴充功能的形式安裝許多[主題](./themes.md)與[圖示主題](./icon-themes.md)。"
 
 #: src/visual-customization.md:11
 msgid ""
@@ -236,7 +238,7 @@ msgstr ""
 
 #: src/visual-customization.md:89 src/visual-customization.md:320
 msgid "Status Bar"
-msgstr ""
+msgstr "狀態條"
 
 #: src/visual-customization.md:93
 msgid ""
@@ -266,7 +268,7 @@ msgstr ""
 
 #: src/visual-customization.md:111
 msgid "Titlebar"
-msgstr ""
+msgstr "題目條"
 
 #: src/visual-customization.md:114
 msgid ""

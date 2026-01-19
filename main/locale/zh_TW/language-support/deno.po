@@ -196,7 +196,7 @@ msgstr ""
 
 #: src/languages/deno.md:101
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/deno.md:102
 msgid "\"program\""

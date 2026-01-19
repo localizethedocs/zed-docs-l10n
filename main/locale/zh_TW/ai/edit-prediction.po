@@ -676,7 +676,7 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:371
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/ai/edit-prediction.md:373
 msgid ""

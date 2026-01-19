@@ -290,7 +290,7 @@ msgstr ""
 
 #: src/languages/python.md:115
 msgid "Language server settings"
-msgstr ""
+msgstr "語言伺服器設定"
 
 #: src/languages/python.md:117
 msgid ""
@@ -349,7 +349,7 @@ msgstr ""
 
 #: src/languages/python.md:143
 msgid "Configuration files"
-msgstr ""
+msgstr "組態檔"
 
 #: src/languages/python.md:145
 msgid ""
@@ -786,7 +786,7 @@ msgstr ""
 
 #: src/languages/python.md:342
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/python.md:343
 msgid "\"env\""

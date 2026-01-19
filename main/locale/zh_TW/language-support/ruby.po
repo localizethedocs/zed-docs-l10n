@@ -588,7 +588,7 @@ msgstr ""
 #: src/languages/ruby.md:346 src/languages/ruby.md:369
 #: src/languages/ruby.md:384
 msgid "\"$ZED_WORKTREE_ROOT\""
-msgstr ""
+msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/ruby.md:310 src/languages/ruby.md:333
 #: src/languages/ruby.md:347

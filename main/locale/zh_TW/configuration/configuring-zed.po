@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/configuring-zed.md:1
 msgid "Configuring Zed"
-msgstr ""
+msgstr "組態 Zed"
 
 #: src/configuring-zed.md:3
 msgid ""
@@ -250,7 +250,7 @@ msgstr "設定：`border_size`"
 
 #: src/configuring-zed.md:93
 msgid "Default: `0.0`"
-msgstr ""
+msgstr "預設值：`0.0`"
 
 #: src/configuring-zed.md:95 src/configuring-zed.md:105
 #: src/configuring-zed.md:115 src/configuring-zed.md:155
@@ -353,7 +353,7 @@ msgstr ""
 #: src/configuring-zed.md:4962 src/configuring-zed.md:4993
 #: src/configuring-zed.md:5009 src/configuring-zed.md:5019
 msgid "**Options**"
-msgstr ""
+msgstr "**選項**"
 
 #: src/configuring-zed.md:97
 msgid "Non-negative `float` values"
@@ -638,7 +638,7 @@ msgstr "設定：`auto_install_extensions`"
 
 #: src/configuring-zed.md:217
 msgid "Default: `{ \"html\": true }`"
-msgstr ""
+msgstr "預設值：`{ \"html\": true }`"
 
 #: src/configuring-zed.md:221
 msgid ""
@@ -709,7 +709,7 @@ msgstr ""
 
 #: src/configuring-zed.md:270
 msgid "Setting: `autosave`"
-msgstr ""
+msgstr "設定：`autosave`"
 
 #: src/configuring-zed.md:271 src/configuring-zed.md:1436
 #: src/configuring-zed.md:3753
@@ -782,7 +782,7 @@ msgstr ""
 
 #: src/configuring-zed.md:316
 msgid "Setting: `autoscroll_on_clicks`"
-msgstr ""
+msgstr "設定：`autoscroll_on_clicks`"
 
 #: src/configuring-zed.md:317 src/configuring-zed.md:327
 #: src/configuring-zed.md:337 src/configuring-zed.md:519
@@ -812,7 +812,7 @@ msgstr ""
 
 #: src/configuring-zed.md:326
 msgid "Setting: `auto_signature_help`"
-msgstr ""
+msgstr "設定：`auto_signature_help`"
 
 #: src/configuring-zed.md:333
 msgid "Show Signature Help After Edits"
@@ -827,7 +827,7 @@ msgstr ""
 
 #: src/configuring-zed.md:336
 msgid "Setting: `show_signature_help_after_edits`"
-msgstr ""
+msgstr "設定：`show_signature_help_after_edits`"
 
 #: src/configuring-zed.md:343
 msgid "Auto Update"
@@ -839,7 +839,7 @@ msgstr ""
 
 #: src/configuring-zed.md:346
 msgid "Setting: `auto_update`"
-msgstr ""
+msgstr "設定：`auto_update`"
 
 #: src/configuring-zed.md:353
 msgid "Base Keymap"
@@ -853,7 +853,7 @@ msgstr ""
 
 #: src/configuring-zed.md:356
 msgid "Setting: `base_keymap`"
-msgstr ""
+msgstr "設定：`base_keymap`"
 
 #: src/configuring-zed.md:357
 msgid "Default: `VSCode`"
@@ -924,7 +924,7 @@ msgstr ""
 
 #: src/configuring-zed.md:412
 msgid "Setting: `buffer_font_family`"
-msgstr ""
+msgstr "設定：`buffer_font_family`"
 
 #: src/configuring-zed.md:413
 msgid ""
@@ -948,7 +948,7 @@ msgstr ""
 
 #: src/configuring-zed.md:422
 msgid "Setting: `buffer_font_features`"
-msgstr ""
+msgstr "設定：`buffer_font_features`"
 
 #: src/configuring-zed.md:424 src/configuring-zed.md:455
 #: src/configuring-zed.md:3963 src/configuring-zed.md:4960
@@ -996,7 +996,7 @@ msgstr ""
 
 #: src/configuring-zed.md:453
 msgid "Setting: `buffer_font_fallbacks`"
-msgstr ""
+msgstr "設定：`buffer_font_fallbacks`"
 
 #: src/configuring-zed.md:459 src/configuring-zed.md:4995
 msgid ""
@@ -1022,7 +1022,7 @@ msgstr ""
 
 #: src/configuring-zed.md:470
 msgid "Setting: `buffer_font_size`"
-msgstr ""
+msgstr "設定：`buffer_font_size`"
 
 #: src/configuring-zed.md:471
 msgid "Default: `15`"
@@ -1042,7 +1042,7 @@ msgstr ""
 
 #: src/configuring-zed.md:480
 msgid "Setting: `buffer_font_weight`"
-msgstr ""
+msgstr "設定：`buffer_font_weight`"
 
 #: src/configuring-zed.md:481 src/configuring-zed.md:5017
 msgid "Default: `400`"
@@ -1062,7 +1062,7 @@ msgstr ""
 
 #: src/configuring-zed.md:490
 msgid "Setting: `buffer_line_height`"
-msgstr ""
+msgstr "設定：`buffer_line_height`"
 
 #: src/configuring-zed.md:491
 msgid "Default: `\"comfortable\"`"
@@ -1084,7 +1084,7 @@ msgstr ""
 
 #: src/configuring-zed.md:500
 msgid "Setting: `centered_layout`"
-msgstr ""
+msgstr "設定：`centered_layout`"
 
 #: src/configuring-zed.md:504
 msgid "\"centered_layout\""
@@ -1117,7 +1117,7 @@ msgstr ""
 
 #: src/configuring-zed.md:518
 msgid "Setting: `close_on_file_delete`"
-msgstr ""
+msgstr "設定：`close_on_file_delete`"
 
 #: src/configuring-zed.md:525
 msgid ""
@@ -1147,7 +1147,7 @@ msgstr ""
 
 #: src/configuring-zed.md:532
 msgid "Setting: `confirm_quit`"
-msgstr ""
+msgstr "設定：`confirm_quit`"
 
 #: src/configuring-zed.md:539
 msgid "Diagnostics Max Severity"
@@ -1161,7 +1161,7 @@ msgstr ""
 
 #: src/configuring-zed.md:542
 msgid "Setting: `diagnostics_max_severity`"
-msgstr ""
+msgstr "設定：`diagnostics_max_severity`"
 
 #: src/configuring-zed.md:547
 msgid "Allow all diagnostics (default):"
@@ -1182,7 +1182,7 @@ msgstr ""
 
 #: src/configuring-zed.md:555 src/configuring-zed.md:1033
 msgid "Show only errors:"
-msgstr ""
+msgstr "只顯示錯誤："
 
 #: src/configuring-zed.md:559 src/configuring-zed.md:1037
 msgid "\"error\""
@@ -1190,7 +1190,7 @@ msgstr ""
 
 #: src/configuring-zed.md:563
 msgid "Show errors and warnings:"
-msgstr ""
+msgstr "顯示錯誤與警告："
 
 #: src/configuring-zed.md:567 src/configuring-zed.md:1045
 #: src/configuring-zed.md:2075
@@ -1199,7 +1199,7 @@ msgstr ""
 
 #: src/configuring-zed.md:571
 msgid "Show errors, warnings, and information:"
-msgstr ""
+msgstr "顯示錯誤、警告與資訊："
 
 #: src/configuring-zed.md:575 src/configuring-zed.md:1053
 msgid "\"info\""
@@ -1223,7 +1223,7 @@ msgstr ""
 
 #: src/configuring-zed.md:590
 msgid "Setting: `disable_ai`"
-msgstr ""
+msgstr "設定：`disable_ai`"
 
 #: src/configuring-zed.md:597
 msgid "Direnv Integration"
@@ -1240,7 +1240,7 @@ msgstr ""
 
 #: src/configuring-zed.md:602
 msgid "Setting: `load_direnv`"
-msgstr ""
+msgstr "設定：`load_direnv`"
 
 #: src/configuring-zed.md:603
 msgid "Default: `\"direct\"`"
@@ -1281,7 +1281,7 @@ msgstr ""
 
 #: src/configuring-zed.md:616
 msgid "Setting: `double_click_in_multibuffer`"
-msgstr ""
+msgstr "設定：`double_click_in_multibuffer`"
 
 #: src/configuring-zed.md:617
 msgid "Default: `\"select\"`"
@@ -1328,7 +1328,7 @@ msgstr ""
 
 #: src/configuring-zed.md:642
 msgid "Setting: `drop_target_size`"
-msgstr ""
+msgstr "設定：`drop_target_size`"
 
 #: src/configuring-zed.md:643
 msgid "Default: `0.2`"
@@ -2046,11 +2046,11 @@ msgstr ""
 
 #: src/configuring-zed.md:1041
 msgid "Show only errors and warnings:"
-msgstr ""
+msgstr "只顯示錯誤與警告："
 
 #: src/configuring-zed.md:1049
 msgid "Show only errors, warnings, and information:"
-msgstr ""
+msgstr "只顯示錯誤、警告與資訊："
 
 #: src/configuring-zed.md:1057
 msgid "Axes"
@@ -2786,7 +2786,7 @@ msgstr ""
 
 #: src/configuring-zed.md:1628
 msgid "Status Bar"
-msgstr ""
+msgstr "狀態條"
 
 #: src/configuring-zed.md:1630
 msgid ""

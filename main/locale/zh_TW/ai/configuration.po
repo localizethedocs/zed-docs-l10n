@@ -17,11 +17,11 @@ msgstr "組態"
 
 #: src/ai/configuration.md:3
 msgid "When using AI in Zed, you can configure multiple dimensions:"
-msgstr ""
+msgstr "在 Zed 中使用 AI 時，您可以從多個維度進行組態："
 
 #: src/ai/configuration.md:5
 msgid "Which LLM providers you can use"
-msgstr ""
+msgstr "您可以使用哪些 LLM 提供商"
 
 #: src/ai/configuration.md:6
 msgid ""
@@ -49,13 +49,15 @@ msgstr ""
 
 #: src/ai/configuration.md:12
 msgid "Turning AI Off Entirely"
-msgstr ""
+msgstr "完全關閉 AI"
 
 #: src/ai/configuration.md:14
 msgid ""
 "We want to respect users who want to use Zed without interacting with AI "
 "whatsoever. To do that, add the following key to your `settings.json`:"
 msgstr ""
+"我們想要尊重希望在完全不與 AI 互動的情況下使用 Zed 的使用者。若要達成此目的，"
+"請將以下鍵值新增至您的 `settings.json`："
 
 #: src/ai/configuration.md:19
 msgid "\"disable_ai\""
