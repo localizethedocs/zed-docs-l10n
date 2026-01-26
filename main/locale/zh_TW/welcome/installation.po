@@ -33,11 +33,11 @@ msgstr ""
 
 #: src/installation.md:9
 msgid "You can also install Zed stable via Homebrew:"
-msgstr ""
+msgstr "您也可以透過 Homebrew 安裝 Zed 穩定版："
 
 #: src/installation.md:15
 msgid "As well as Zed preview:"
-msgstr ""
+msgstr "以及 Zed 預覽版："
 
 #: src/installation.md:21 src/installation.md:92
 msgid "Windows"
@@ -95,11 +95,11 @@ msgstr ""
 
 #: src/installation.md:55
 msgid "Zed supports the follow macOS releases:"
-msgstr ""
+msgstr "Zed 支援以下 macOS 發行版："
 
 #: src/installation.md:57 src/installation.md:95
 msgid "Version"
-msgstr ""
+msgstr "版本"
 
 #: src/installation.md:57
 msgid "Codename"
@@ -246,6 +246,7 @@ msgstr ""
 msgid ""
 "Zed supports 64-bit Intel/AMD (x86_64) and 64-bit Arm (aarch64) processors."
 msgstr ""
+"Zed 支援 64 位元 Intel/AMD (x86_64) 以及 64 位元 Arm (aarch64) 處理器。"
 
 #: src/installation.md:86
 msgid "Zed requires a Vulkan 1.3 driver and the following desktop portals:"
