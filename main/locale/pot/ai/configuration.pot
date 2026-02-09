@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,18 +52,15 @@ msgid "Turning AI Off Entirely"
 msgstr ""
 
 #: src/ai/configuration.md:14
-msgid ""
-"We want to respect users who want to use Zed without interacting with AI "
-"whatsoever. To do that, add the following key to your `settings.json`:"
+msgid "To disable all AI features, add the following to your `settings.json`:"
 msgstr ""
 
-#: src/ai/configuration.md:19
+#: src/ai/configuration.md:18
 msgid "\"disable_ai\""
 msgstr ""
 
-#: src/ai/configuration.md:23
+#: src/ai/configuration.md:22
 msgid ""
-"Read [the following blog post](https://zed.dev/blog/disable-ai-features) to "
-"learn more about our motivation to promote this, as much as we also "
-"encourage users to explore AI-assisted programming."
+"See [this blog post](https://zed.dev/blog/disable-ai-features) for "
+"background on this option."
 msgstr ""

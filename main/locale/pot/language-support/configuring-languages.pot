@@ -1,0 +1,1098 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/configuring-languages.md:1
+msgid "Configuring Supported Languages"
+msgstr ""
+
+#: src/configuring-languages.md:3
+msgid "Zed's language support is built on two technologies:"
+msgstr ""
+
+#: src/configuring-languages.md:5
+msgid ""
+"**Tree-sitter** handles syntax highlighting and structure-based features "
+"like the outline panel."
+msgstr ""
+
+#: src/configuring-languages.md:6
+msgid ""
+"**Language Server Protocol (LSP)** provides semantic features: code "
+"completion, diagnostics, go-to-definition, and refactoring."
+msgstr ""
+
+#: src/configuring-languages.md:8
+msgid ""
+"This page covers language-specific settings, file associations, language "
+"server configuration, formatting, linting, and syntax highlighting."
+msgstr ""
+
+#: src/configuring-languages.md:10
+msgid ""
+"For a list of supported languages, see [Supported Languages](./languages."
+"md). To add support for new languages, see [Language Extensions](./"
+"extensions/languages.md)."
+msgstr ""
+
+#: src/configuring-languages.md:12
+msgid "Language-specific Settings"
+msgstr ""
+
+#: src/configuring-languages.md:14
+msgid ""
+"Zed allows you to override global settings for individual languages. These "
+"custom configurations are defined in your `settings.json` file under the "
+"`languages` key."
+msgstr ""
+
+#: src/configuring-languages.md:16
+msgid "Here's an example of language-specific settings:"
+msgstr ""
+
+#: src/configuring-languages.md:19 src/configuring-languages.md:111
+#: src/configuring-languages.md:241 src/configuring-languages.md:259
+#: src/configuring-languages.md:281 src/configuring-languages.md:309
+#: src/configuring-languages.md:323
+msgid "\"languages\""
+msgstr ""
+
+#: src/configuring-languages.md:20
+msgid "\"Python\""
+msgstr ""
+
+#: src/configuring-languages.md:21 src/configuring-languages.md:26
+msgid "\"tab_size\""
+msgstr ""
+
+#: src/configuring-languages.md:22 src/configuring-languages.md:27
+#: src/configuring-languages.md:261 src/configuring-languages.md:270
+#: src/configuring-languages.md:311 src/configuring-languages.md:325
+msgid "\"formatter\""
+msgstr ""
+
+#: src/configuring-languages.md:22 src/configuring-languages.md:270
+msgid "\"language_server\""
+msgstr ""
+
+#: src/configuring-languages.md:23 src/configuring-languages.md:267
+#: src/configuring-languages.md:271 src/configuring-languages.md:283
+#: src/configuring-languages.md:336
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/configuring-languages.md:23 src/configuring-languages.md:267
+#: src/configuring-languages.md:271 src/configuring-languages.md:336
+msgid "\"on\""
+msgstr ""
+
+#: src/configuring-languages.md:25 src/configuring-languages.md:260
+#: src/configuring-languages.md:310 src/configuring-languages.md:324
+msgid "\"JavaScript\""
+msgstr ""
+
+#: src/configuring-languages.md:28 src/configuring-languages.md:262
+#: src/configuring-languages.md:330
+msgid "\"external\""
+msgstr ""
+
+#: src/configuring-languages.md:29 src/configuring-languages.md:141
+#: src/configuring-languages.md:263 src/configuring-languages.md:331
+msgid "\"command\""
+msgstr ""
+
+#: src/configuring-languages.md:29 src/configuring-languages.md:263
+#: src/configuring-languages.md:331
+msgid "\"prettier\""
+msgstr ""
+
+#: src/configuring-languages.md:30 src/configuring-languages.md:227
+#: src/configuring-languages.md:264 src/configuring-languages.md:332
+msgid "\"arguments\""
+msgstr ""
+
+#: src/configuring-languages.md:30 src/configuring-languages.md:264
+#: src/configuring-languages.md:332
+msgid "\"--stdin-filepath\""
+msgstr ""
+
+#: src/configuring-languages.md:30 src/configuring-languages.md:264
+#: src/configuring-languages.md:332
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/configuring-languages.md:37
+msgid ""
+"You can customize a wide range of settings for each language, including:"
+msgstr ""
+
+#: src/configuring-languages.md:39
+msgid ""
+"[`tab_size`](./reference/all-settings.md#tab-size): The number of spaces for "
+"each indentation level"
+msgstr ""
+
+#: src/configuring-languages.md:40
+msgid ""
+"[`formatter`](./reference/all-settings.md#formatter): The tool used for code "
+"formatting"
+msgstr ""
+
+#: src/configuring-languages.md:41
+msgid ""
+"[`format_on_save`](./reference/all-settings.md#format-on-save): Whether to "
+"automatically format code when saving"
+msgstr ""
+
+#: src/configuring-languages.md:42
+msgid ""
+"[`enable_language_server`](./reference/all-settings.md#enable-language-"
+"server): Toggle language server support"
+msgstr ""
+
+#: src/configuring-languages.md:43
+msgid ""
+"[`hard_tabs`](./reference/all-settings.md#hard-tabs): Use tabs instead of "
+"spaces for indentation"
+msgstr ""
+
+#: src/configuring-languages.md:44
+msgid ""
+"[`preferred_line_length`](./reference/all-settings.md#preferred-line-"
+"length): The recommended maximum line length"
+msgstr ""
+
+#: src/configuring-languages.md:45
+msgid ""
+"[`soft_wrap`](./reference/all-settings.md#soft-wrap): How to wrap long lines "
+"of code"
+msgstr ""
+
+#: src/configuring-languages.md:46
+msgid ""
+"[`show_completions_on_input`](./reference/all-settings.md#show-completions-"
+"on-input): Whether or not to show completions as you type"
+msgstr ""
+
+#: src/configuring-languages.md:47
+msgid ""
+"[`show_completion_documentation`](./reference/all-settings.md#show-"
+"completion-documentation): Whether to display inline and alongside "
+"documentation for items in the completions menu"
+msgstr ""
+
+#: src/configuring-languages.md:48
+msgid ""
+"[`colorize_brackets`](./reference/all-settings.md#colorize-brackets): "
+"Whether to use tree-sitter bracket queries to detect and colorize the "
+"brackets in the editor (also known as \"rainbow brackets\")"
+msgstr ""
+
+#: src/configuring-languages.md:50
+msgid ""
+"These settings allow you to maintain specific coding styles across different "
+"languages and projects."
+msgstr ""
+
+#: src/configuring-languages.md:52
+msgid "File Associations"
+msgstr ""
+
+#: src/configuring-languages.md:54
+msgid ""
+"Zed automatically detects file types based on their extensions, but you can "
+"customize these associations to fit your workflow."
+msgstr ""
+
+#: src/configuring-languages.md:56
+msgid ""
+"To set up custom file associations, use the [`file_types`](./reference/all-"
+"settings.md#file-types) setting in your `settings.json`:"
+msgstr ""
+
+#: src/configuring-languages.md:59
+msgid "\"file_types\""
+msgstr ""
+
+#: src/configuring-languages.md:60
+msgid "\"C++\""
+msgstr ""
+
+#: src/configuring-languages.md:60
+msgid "\"c\""
+msgstr ""
+
+#: src/configuring-languages.md:61
+msgid "\"TOML\""
+msgstr ""
+
+#: src/configuring-languages.md:61
+msgid "\"MyLockFile\""
+msgstr ""
+
+#: src/configuring-languages.md:62
+msgid "\"Dockerfile\""
+msgstr ""
+
+#: src/configuring-languages.md:62
+msgid "\"Dockerfile*\""
+msgstr ""
+
+#: src/configuring-languages.md:66
+msgid "This configuration tells Zed to:"
+msgstr ""
+
+#: src/configuring-languages.md:68
+msgid "Treat `.c` files as C++ instead of C"
+msgstr ""
+
+#: src/configuring-languages.md:69
+msgid "Recognize files named \"MyLockFile\" as TOML"
+msgstr ""
+
+#: src/configuring-languages.md:70
+msgid "Apply Dockerfile syntax to any file starting with \"Dockerfile\""
+msgstr ""
+
+#: src/configuring-languages.md:72
+msgid ""
+"You can use glob patterns for more flexible matching, allowing you to handle "
+"complex naming conventions in your projects."
+msgstr ""
+
+#: src/configuring-languages.md:74
+msgid "Working with Language Servers"
+msgstr ""
+
+#: src/configuring-languages.md:76
+msgid ""
+"Language servers are a crucial part of Zed's intelligent coding features, "
+"providing capabilities like auto-completion, go-to-definition, and real-time "
+"error checking."
+msgstr ""
+
+#: src/configuring-languages.md:78
+msgid "What are Language Servers?"
+msgstr ""
+
+#: src/configuring-languages.md:80
+msgid ""
+"Language servers implement the Language Server Protocol (LSP), which "
+"standardizes communication between the editor and language-specific tools. "
+"This allows Zed to support advanced features for multiple programming "
+"languages without implementing each feature separately."
+msgstr ""
+
+#: src/configuring-languages.md:82
+msgid "Some key features provided by language servers include:"
+msgstr ""
+
+#: src/configuring-languages.md:84
+msgid "Code completion"
+msgstr ""
+
+#: src/configuring-languages.md:85
+msgid "Error checking and diagnostics"
+msgstr ""
+
+#: src/configuring-languages.md:86
+msgid "Code navigation (go to definition, find references)"
+msgstr ""
+
+#: src/configuring-languages.md:87
+msgid "Code actions (Rename, extract method)"
+msgstr ""
+
+#: src/configuring-languages.md:88
+msgid "Hover information"
+msgstr ""
+
+#: src/configuring-languages.md:89
+msgid "Workspace symbol search"
+msgstr ""
+
+#: src/configuring-languages.md:91
+msgid "Managing Language Servers"
+msgstr ""
+
+#: src/configuring-languages.md:93
+msgid "Zed simplifies language server management for users:"
+msgstr ""
+
+#: src/configuring-languages.md:95
+msgid ""
+"Automatic Download: When you open a file with a matching file type, Zed "
+"automatically downloads the appropriate language server. Zed may prompt you "
+"to install an extension for known file types."
+msgstr ""
+
+#: src/configuring-languages.md:97
+msgid "Storage Location:"
+msgstr ""
+
+#: src/configuring-languages.md:99
+msgid "macOS: `~/Library/Application Support/Zed/languages`"
+msgstr ""
+
+#: src/configuring-languages.md:100
+msgid ""
+"Linux: `$XDG_DATA_HOME/zed/languages`, `$FLATPAK_XDG_DATA_HOME/zed/"
+"languages`, or `$HOME/.local/share/zed/languages`"
+msgstr ""
+
+#: src/configuring-languages.md:102
+msgid ""
+"Automatic Updates: Zed keeps your language servers up-to-date, ensuring you "
+"always have the latest features and improvements."
+msgstr ""
+
+#: src/configuring-languages.md:104
+msgid "Choosing Language Servers"
+msgstr ""
+
+#: src/configuring-languages.md:106
+msgid ""
+"Some languages in Zed offer multiple language server options. You might have "
+"multiple extensions installed that bundle language servers targeting the "
+"same language, potentially leading to overlapping capabilities. To ensure "
+"you get the functionality you prefer, Zed allows you to prioritize which "
+"language servers are used and in what order."
+msgstr ""
+
+#: src/configuring-languages.md:108
+msgid "You can specify your preference using the `language_servers` setting:"
+msgstr ""
+
+#: src/configuring-languages.md:112
+msgid "\"PHP\""
+msgstr ""
+
+#: src/configuring-languages.md:113
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/configuring-languages.md:113
+msgid "\"intelephense\""
+msgstr ""
+
+#: src/configuring-languages.md:113
+msgid "\"!phpactor\""
+msgstr ""
+
+#: src/configuring-languages.md:113
+msgid "\"!phptools\""
+msgstr ""
+
+#: src/configuring-languages.md:113
+msgid "\"...\""
+msgstr ""
+
+#: src/configuring-languages.md:118
+msgid "In this example:"
+msgstr ""
+
+#: src/configuring-languages.md:120
+msgid "`intelephense` is set as the primary language server"
+msgstr ""
+
+#: src/configuring-languages.md:121
+msgid "`phpactor` is disabled (note the `!` prefix)"
+msgstr ""
+
+#: src/configuring-languages.md:122
+msgid ""
+"`...` expands to the rest of the language servers that are registered for PHP"
+msgstr ""
+
+#: src/configuring-languages.md:124
+msgid ""
+"This configuration allows you to tailor the language server setup to your "
+"specific needs, ensuring that you get the most suitable functionality for "
+"your development workflow."
+msgstr ""
+
+#: src/configuring-languages.md:126
+msgid "Toolchains"
+msgstr ""
+
+#: src/configuring-languages.md:128
+msgid ""
+"Some language servers need to be configured with a current \"toolchain\", "
+"which is an installation of a specific version of a programming language "
+"compiler or/and interpreter, which can possibly include a full set of "
+"dependencies of a project. An example of what Zed considers a toolchain is a "
+"virtual environment in Python. Not all languages in Zed support toolchain "
+"discovery and selection, but for those that do, you can specify the "
+"toolchain from a toolchain picker (via <code class=\"hljs\">toolchain: "
+"select</code>). To learn more about toolchains in Zed, see [`toolchains`](./"
+"toolchains.md)."
+msgstr ""
+
+#: src/configuring-languages.md:132
+msgid "Configuring Language Servers"
+msgstr ""
+
+#: src/configuring-languages.md:134
+msgid ""
+"Many language servers accept custom configuration options. You can set these "
+"in the `lsp` section of your `settings.json`:"
+msgstr ""
+
+#: src/configuring-languages.md:137 src/configuring-languages.md:162
+#: src/configuring-languages.md:190 src/configuring-languages.md:205
+#: src/configuring-languages.md:221 src/configuring-languages.md:293
+msgid "\"lsp\""
+msgstr ""
+
+#: src/configuring-languages.md:138 src/configuring-languages.md:191
+#: src/configuring-languages.md:222
+msgid "\"rust-analyzer\""
+msgstr ""
+
+#: src/configuring-languages.md:139 src/configuring-languages.md:164
+#: src/configuring-languages.md:192
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/configuring-languages.md:140
+msgid "\"check\""
+msgstr ""
+
+#: src/configuring-languages.md:141
+msgid "\"clippy\""
+msgstr ""
+
+#: src/configuring-languages.md:148
+msgid ""
+"This example configures the Rust Analyzer to use Clippy for additional "
+"linting when saving files."
+msgstr ""
+
+#: src/configuring-languages.md:150
+msgid "Nested objects"
+msgstr ""
+
+#: src/configuring-languages.md:152
+msgid ""
+"When configuring language server options in Zed, it's important to use "
+"nested objects rather than dot-delimited strings. This is particularly "
+"relevant when working with more complex configurations. Let's look at a real-"
+"world example using the TypeScript language server:"
+msgstr ""
+
+#: src/configuring-languages.md:154
+msgid "Suppose you want to configure the following settings for TypeScript:"
+msgstr ""
+
+#: src/configuring-languages.md:156
+msgid "Enable strict null checks"
+msgstr ""
+
+#: src/configuring-languages.md:157
+msgid "Set the target ECMAScript version to ES2020"
+msgstr ""
+
+#: src/configuring-languages.md:159
+msgid "Here's how you would structure these settings in Zed's `settings.json`:"
+msgstr ""
+
+#: src/configuring-languages.md:163
+msgid "\"typescript-language-server\""
+msgstr ""
+
+#: src/configuring-languages.md:165
+msgid ""
+"// These are not supported (VSCode dotted style):\n"
+"      // \"preferences.strictNullChecks\": true,\n"
+"      // \"preferences.target\": \"ES2020\"\n"
+"      //\n"
+"      // These is correct (nested notation):\n"
+"      \"preferences\""
+msgstr ""
+
+#: src/configuring-languages.md:171
+msgid "\"strictNullChecks\""
+msgstr ""
+
+#: src/configuring-languages.md:172
+msgid "\"target\""
+msgstr ""
+
+#: src/configuring-languages.md:172
+msgid "\"ES2020\""
+msgstr ""
+
+#: src/configuring-languages.md:179
+msgid "Possible configuration options"
+msgstr ""
+
+#: src/configuring-languages.md:181
+msgid ""
+"Depending on how a particular language server is implemented, they may "
+"depend on different configuration options, both specified in the LSP."
+msgstr ""
+
+#: src/configuring-languages.md:183
+msgid ""
+"[initializationOptions](https://microsoft.github.io/language-server-protocol/"
+"specifications/lsp/3.17/specification/#version_3_17_0)"
+msgstr ""
+
+#: src/configuring-languages.md:185
+msgid ""
+"Sent once during language server startup, requires server's restart to "
+"reapply changes."
+msgstr ""
+
+#: src/configuring-languages.md:187
+msgid ""
+"For example, rust-analyzer and clangd rely on this way of configuring only."
+msgstr ""
+
+#: src/configuring-languages.md:193
+msgid "\"checkOnSave\""
+msgstr ""
+
+#: src/configuring-languages.md:199
+msgid ""
+"[Configuration Request](https://microsoft.github.io/language-server-protocol/"
+"specifications/lsp/3.17/specification/#workspace_configuration)"
+msgstr ""
+
+#: src/configuring-languages.md:201
+msgid ""
+"May be queried by the server multiple times. Most of the servers would rely "
+"on this way of configuring only."
+msgstr ""
+
+#: src/configuring-languages.md:206
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/configuring-languages.md:207 src/configuring-languages.md:295
+msgid "\"settings\""
+msgstr ""
+
+#: src/configuring-languages.md:208
+msgid "\"tailwindCSS\""
+msgstr ""
+
+#: src/configuring-languages.md:209
+msgid "\"emmetCompletions\""
+msgstr ""
+
+#: src/configuring-languages.md:216
+msgid ""
+"Apart of the LSP-related server configuration options, certain servers in "
+"Zed allow configuring the way binary is launched by Zed."
+msgstr ""
+
+#: src/configuring-languages.md:218
+msgid ""
+"Language servers are automatically downloaded or launched if found in your "
+"path, if you wish to specify an explicit alternate binary you can specify "
+"that in settings:"
+msgstr ""
+
+#: src/configuring-languages.md:223
+msgid "\"binary\""
+msgstr ""
+
+#: src/configuring-languages.md:224
+msgid ""
+"// Whether to fetch the binary from the internet, or attempt to find "
+"locally.\n"
+"        \"ignore_system_version\""
+msgstr ""
+
+#: src/configuring-languages.md:226
+msgid "\"path\""
+msgstr ""
+
+#: src/configuring-languages.md:226
+msgid "\"/path/to/langserver/bin\""
+msgstr ""
+
+#: src/configuring-languages.md:227
+msgid "\"--option\""
+msgstr ""
+
+#: src/configuring-languages.md:227
+msgid "\"value\""
+msgstr ""
+
+#: src/configuring-languages.md:228
+msgid "\"env\""
+msgstr ""
+
+#: src/configuring-languages.md:229
+msgid "\"FOO\""
+msgstr ""
+
+#: src/configuring-languages.md:229
+msgid "\"BAR\""
+msgstr ""
+
+#: src/configuring-languages.md:236
+msgid "Enabling or Disabling Language Servers"
+msgstr ""
+
+#: src/configuring-languages.md:238
+msgid "You can toggle language server support globally or per-language:"
+msgstr ""
+
+#: src/configuring-languages.md:242 src/configuring-languages.md:282
+msgid "\"Markdown\""
+msgstr ""
+
+#: src/configuring-languages.md:243
+msgid "\"enable_language_server\""
+msgstr ""
+
+#: src/configuring-languages.md:248
+msgid ""
+"This disables the language server for Markdown files, which can be useful "
+"for performance in large documentation projects. You can configure this "
+"globally in your `~/.config/zed/settings.json` or inside a `.zed/settings."
+"json` in your project directory."
+msgstr ""
+
+#: src/configuring-languages.md:250
+msgid "Formatting and Linting"
+msgstr ""
+
+#: src/configuring-languages.md:252
+msgid ""
+"Zed provides support for code formatting and linting to maintain consistent "
+"code style and catch potential issues early."
+msgstr ""
+
+#: src/configuring-languages.md:254
+msgid "Configuring Formatters"
+msgstr ""
+
+#: src/configuring-languages.md:256
+msgid ""
+"Zed supports both built-in and external formatters. See [`formatter`](./"
+"reference/all-settings.md#formatter) docs for more. You can configure "
+"formatters globally or per-language in your `settings.json`:"
+msgstr ""
+
+#: src/configuring-languages.md:269
+msgid "\"Rust\""
+msgstr ""
+
+#: src/configuring-languages.md:276
+msgid ""
+"This example uses Prettier for JavaScript and the language server's "
+"formatter for Rust, both set to format on save."
+msgstr ""
+
+#: src/configuring-languages.md:278
+msgid "To disable formatting for a specific language:"
+msgstr ""
+
+#: src/configuring-languages.md:283
+msgid "\"off\""
+msgstr ""
+
+#: src/configuring-languages.md:288
+msgid "Setting Up Linters"
+msgstr ""
+
+#: src/configuring-languages.md:290
+msgid ""
+"Linting in Zed is typically handled by language servers. Many language "
+"servers allow you to configure linting rules:"
+msgstr ""
+
+#: src/configuring-languages.md:294
+msgid "\"eslint\""
+msgstr ""
+
+#: src/configuring-languages.md:296
+msgid "\"codeActionOnSave\""
+msgstr ""
+
+#: src/configuring-languages.md:297
+msgid "\"rules\""
+msgstr ""
+
+#: src/configuring-languages.md:297
+msgid "\"import/order\""
+msgstr ""
+
+#: src/configuring-languages.md:304
+msgid ""
+"This configuration sets up ESLint to organize imports on save for JavaScript "
+"files."
+msgstr ""
+
+#: src/configuring-languages.md:306
+msgid "To run linter fixes automatically on save:"
+msgstr ""
+
+#: src/configuring-languages.md:312 src/configuring-languages.md:327
+msgid "\"code_action\""
+msgstr ""
+
+#: src/configuring-languages.md:312 src/configuring-languages.md:327
+msgid "\"source.fixAll.eslint\""
+msgstr ""
+
+#: src/configuring-languages.md:318
+msgid "Integrating Formatting and Linting"
+msgstr ""
+
+#: src/configuring-languages.md:320
+msgid ""
+"Zed allows you to run both formatting and linting on save. Here's an example "
+"that uses Prettier for formatting and ESLint for linting JavaScript files:"
+msgstr ""
+
+#: src/configuring-languages.md:341
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/configuring-languages.md:343
+msgid "If you encounter issues with formatting or linting:"
+msgstr ""
+
+#: src/configuring-languages.md:345
+msgid ""
+"Check Zed's log file for error messages (Use the command palette: `zed: open "
+"log`)"
+msgstr ""
+
+#: src/configuring-languages.md:346
+msgid ""
+"Ensure external tools (formatters, linters) are correctly installed and in "
+"your PATH"
+msgstr ""
+
+#: src/configuring-languages.md:347
+msgid ""
+"Verify configurations in both Zed settings and language-specific config "
+"files (e.g., `.eslintrc`, `.prettierrc`)"
+msgstr ""
+
+#: src/configuring-languages.md:349
+msgid "Syntax Highlighting and Themes"
+msgstr ""
+
+#: src/configuring-languages.md:351
+msgid ""
+"Zed offers customization options for syntax highlighting and themes, "
+"allowing you to tailor the visual appearance of your code."
+msgstr ""
+
+#: src/configuring-languages.md:353
+msgid "Customizing Syntax Highlighting"
+msgstr ""
+
+#: src/configuring-languages.md:355
+msgid ""
+"Zed uses Tree-sitter grammars for syntax highlighting. Override the default "
+"highlighting using the `theme_overrides` setting."
+msgstr ""
+
+#: src/configuring-languages.md:357
+msgid "This example makes comments italic and changes the color of strings:"
+msgstr ""
+
+#: src/configuring-languages.md:360
+msgid "\"theme_overrides\""
+msgstr ""
+
+#: src/configuring-languages.md:361 src/configuring-languages.md:384
+msgid "\"One Dark\""
+msgstr ""
+
+#: src/configuring-languages.md:362
+msgid "\"syntax\""
+msgstr ""
+
+#: src/configuring-languages.md:363
+msgid "\"comment\""
+msgstr ""
+
+#: src/configuring-languages.md:364
+msgid "\"font_style\""
+msgstr ""
+
+#: src/configuring-languages.md:364
+msgid "\"italic\""
+msgstr ""
+
+#: src/configuring-languages.md:366
+msgid "\"string\""
+msgstr ""
+
+#: src/configuring-languages.md:367
+msgid "\"color\""
+msgstr ""
+
+#: src/configuring-languages.md:367
+msgid "\"#00AA00\""
+msgstr ""
+
+#: src/configuring-languages.md:374
+msgid "Selecting and Customizing Themes"
+msgstr ""
+
+#: src/configuring-languages.md:376
+msgid "Change your theme:"
+msgstr ""
+
+#: src/configuring-languages.md:378
+msgid ""
+"Use the theme selector (<kbd class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</"
+"kbd>)"
+msgstr ""
+
+#: src/configuring-languages.md:379
+msgid "Or set it in your `settings.json`:"
+msgstr ""
+
+#: src/configuring-languages.md:382
+msgid "\"theme\""
+msgstr ""
+
+#: src/configuring-languages.md:383
+msgid "\"mode\""
+msgstr ""
+
+#: src/configuring-languages.md:383 src/configuring-languages.md:384
+msgid "\"dark\""
+msgstr ""
+
+#: src/configuring-languages.md:385
+msgid "\"light\""
+msgstr ""
+
+#: src/configuring-languages.md:385
+msgid "\"GitHub Light\""
+msgstr ""
+
+#: src/configuring-languages.md:389
+msgid ""
+"Create custom themes by creating a JSON file in `~/.config/zed/themes/`. Zed "
+"will automatically detect and make available any themes in this directory."
+msgstr ""
+
+#: src/configuring-languages.md:391
+msgid "Using Theme Extensions"
+msgstr ""
+
+#: src/configuring-languages.md:393
+msgid ""
+"Zed supports theme extensions. Browse and install theme extensions from the "
+"Extensions panel (<kbd class=\"keybinding\">cmd-shift-x|ctrl-shift-x</kbd>)."
+msgstr ""
+
+#: src/configuring-languages.md:395
+msgid ""
+"To create your own theme extension, refer to the [Developing Theme "
+"Extensions](./extensions/themes.md) guide."
+msgstr ""
+
+#: src/configuring-languages.md:397
+msgid "Using Language Server Features"
+msgstr ""
+
+#: src/configuring-languages.md:399
+msgid "Semantic Tokens"
+msgstr ""
+
+#: src/configuring-languages.md:401
+msgid ""
+"Semantic tokens provide richer syntax highlighting by using type and scope "
+"information from language servers. Enable them with the `semantic_tokens` "
+"setting:"
+msgstr ""
+
+#: src/configuring-languages.md:404
+msgid "\"semantic_tokens\""
+msgstr ""
+
+#: src/configuring-languages.md:404
+msgid "\"combined\""
+msgstr ""
+
+#: src/configuring-languages.md:407
+msgid "`\"off\"` — Tree-sitter highlighting only (default)"
+msgstr ""
+
+#: src/configuring-languages.md:408
+msgid "`\"combined\"` — LSP semantic tokens overlaid on tree-sitter"
+msgstr ""
+
+#: src/configuring-languages.md:409
+msgid "`\"full\"` — LSP semantic tokens replace tree-sitter entirely"
+msgstr ""
+
+#: src/configuring-languages.md:411
+msgid ""
+"You can customize token colors and styles through `global_lsp_settings."
+"semantic_token_rules` in your settings."
+msgstr ""
+
+#: src/configuring-languages.md:413
+msgid "→ [Semantic Tokens documentation](./semantic-tokens.md)"
+msgstr ""
+
+#: src/configuring-languages.md:415
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/configuring-languages.md:417
+msgid ""
+"Inlay hints provide additional information inline in your code, such as "
+"parameter names or inferred types. Configure inlay hints in your `settings."
+"json`:"
+msgstr ""
+
+#: src/configuring-languages.md:420
+msgid "\"inlay_hints\""
+msgstr ""
+
+#: src/configuring-languages.md:421
+msgid "\"enabled\""
+msgstr ""
+
+#: src/configuring-languages.md:422
+msgid "\"show_type_hints\""
+msgstr ""
+
+#: src/configuring-languages.md:423
+msgid "\"show_parameter_hints\""
+msgstr ""
+
+#: src/configuring-languages.md:424
+msgid "\"show_other_hints\""
+msgstr ""
+
+#: src/configuring-languages.md:428
+msgid ""
+"For language-specific inlay hint settings, refer to the documentation for "
+"each language."
+msgstr ""
+
+#: src/configuring-languages.md:430
+msgid "Code Actions"
+msgstr ""
+
+#: src/configuring-languages.md:432
+msgid ""
+"Code actions provide quick fixes and refactoring options. Access code "
+"actions using the `editor: Toggle Code Actions` command or by clicking the "
+"lightbulb icon that appears next to your cursor when actions are available."
+msgstr ""
+
+#: src/configuring-languages.md:434
+msgid "Go To Definition and References"
+msgstr ""
+
+#: src/configuring-languages.md:436
+msgid "Use these commands to navigate your codebase:"
+msgstr ""
+
+#: src/configuring-languages.md:438
+msgid "`editor: Go to Definition` (<kbd>f12|f12</kbd>)"
+msgstr ""
+
+#: src/configuring-languages.md:439
+msgid "`editor: Go to Type Definition` (<kbd>cmd-f12|ctrl-f12</kbd>)"
+msgstr ""
+
+#: src/configuring-languages.md:440
+msgid "`editor: Find All References` (<kbd>shift-f12|shift-f12</kbd>)"
+msgstr ""
+
+#: src/configuring-languages.md:442
+msgid "Rename Symbol"
+msgstr ""
+
+#: src/configuring-languages.md:444
+msgid "To rename a symbol across your project:"
+msgstr ""
+
+#: src/configuring-languages.md:446
+msgid "Place your cursor on the symbol"
+msgstr ""
+
+#: src/configuring-languages.md:447
+msgid "Use the `editor: Rename Symbol` command (<kbd>f2|f2</kbd>)"
+msgstr ""
+
+#: src/configuring-languages.md:448
+msgid "Enter the new name and press Enter"
+msgstr ""
+
+#: src/configuring-languages.md:450
+msgid ""
+"These features depend on the capabilities of the language server for each "
+"language."
+msgstr ""
+
+#: src/configuring-languages.md:452
+msgid ""
+"When renaming a symbol that spans multiple files, Zed will open a preview in "
+"a multibuffer. This allows you to review all the changes across your project "
+"before applying them. To confirm the rename, simply save the multibuffer. If "
+"you decide not to proceed with the rename, you can undo the changes or close "
+"the multibuffer without saving."
+msgstr ""
+
+#: src/configuring-languages.md:454
+msgid "Hover Information"
+msgstr ""
+
+#: src/configuring-languages.md:456
+msgid ""
+"Use the `editor: Hover` command to display information about the symbol "
+"under the cursor. This often includes type information, documentation, and "
+"links to relevant resources."
+msgstr ""
+
+#: src/configuring-languages.md:458
+msgid "Workspace Symbol Search"
+msgstr ""
+
+#: src/configuring-languages.md:460
+msgid ""
+"The <code class=\"hljs\">project symbols: toggle</code> command allows you "
+"to search for symbols (functions, classes, variables) across your entire "
+"project. This is useful for quickly navigating large codebases."
+msgstr ""
+
+#: src/configuring-languages.md:462
+msgid "Code Completion"
+msgstr ""
+
+#: src/configuring-languages.md:464
+msgid ""
+"Zed provides intelligent code completion suggestions as you type. You can "
+"manually trigger completion with the `editor: Show Completions` command. Use "
+"<kbd>tab|tab</kbd> or <kbd>enter|enter</kbd> to accept suggestions."
+msgstr ""
+
+#: src/configuring-languages.md:466
+msgid "Diagnostics"
+msgstr ""
+
+#: src/configuring-languages.md:468
+msgid ""
+"Language servers provide real-time diagnostics (errors, warnings, hints) as "
+"you code. View all diagnostics for your project using the <code "
+"class=\"hljs\">diagnostics: deploy</code> command."
+msgstr ""

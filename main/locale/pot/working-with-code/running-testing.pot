@@ -1,0 +1,83 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/running-testing.md:1
+msgid "Running & Testing"
+msgstr ""
+
+#: src/running-testing.md:3
+msgid ""
+"This section covers how to run, test, and debug your code without leaving "
+"Zed."
+msgstr ""
+
+#: src/running-testing.md:5
+msgid "What's here"
+msgstr ""
+
+#: src/running-testing.md:7
+msgid ""
+"**[Terminal](./terminal.md)**: Zed's built-in terminal emulator. Open "
+"multiple terminals, customize your shell, and integrate with the editor. "
+"Tasks and commands run here."
+msgstr ""
+
+#: src/running-testing.md:9
+msgid ""
+"**[Tasks](./tasks.md)**: Define and run shell commands with access to editor "
+"context like the current file, selection, or symbol. Use tasks to build, "
+"lint, run scripts, or execute any repeatable workflow."
+msgstr ""
+
+#: src/running-testing.md:11
+msgid ""
+"**[Debugger](./debugger.md)**: Set breakpoints, step through code, and "
+"inspect variables using Zed's built-in debugger. Works with C, C++, Go, "
+"JavaScript, Python, Rust, TypeScript, and more through the Debug Adapter "
+"Protocol."
+msgstr ""
+
+#: src/running-testing.md:13
+msgid ""
+"**[REPL](./repl.md)**: Run code interactively using Jupyter kernels. Execute "
+"selections or cells and see results inline—useful for Python, TypeScript "
+"(Deno), R, Julia, and other supported languages."
+msgstr ""
+
+#: src/running-testing.md:15
+msgid "Quick start"
+msgstr ""
+
+#: src/running-testing.md:17
+msgid ""
+"**Open a terminal**: Press `` Ctrl+` `` to toggle the terminal panel, or "
+"`Ctrl+~` to open a new terminal."
+msgstr ""
+
+#: src/running-testing.md:19
+msgid ""
+"**Run a command**: Press `Cmd+Shift+R` (macOS) or `Ctrl+Shift+R` (Linux/"
+"Windows) to open the task picker, then type any shell command."
+msgstr ""
+
+#: src/running-testing.md:21
+msgid ""
+"**Start debugging**: Press `Cmd+Shift+D` (macOS) or `Ctrl+Shift+D` (Linux/"
+"Windows) to open the debug panel and select a configuration."
+msgstr ""
+
+#: src/running-testing.md:23
+msgid ""
+"**Run code interactively**: In a Python or TypeScript file, select some code "
+"and press `Ctrl+Shift+Enter` to execute it in a REPL session."
+msgstr ""
