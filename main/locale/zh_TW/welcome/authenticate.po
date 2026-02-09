@@ -95,7 +95,7 @@ msgstr ""
 
 #: src/authentication.md:28
 msgid "Email Addresses"
-msgstr ""
+msgstr "電子郵件地址"
 
 #: src/authentication.md:30
 msgid ""

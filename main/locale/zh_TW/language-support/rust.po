@@ -53,7 +53,7 @@ msgstr ""
 #: src/languages/rust.md:143 src/languages/rust.md:196
 #: src/languages/rust.md:230 src/languages/rust.md:246
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/rust.md:22 src/languages/rust.md:49 src/languages/rust.md:73
 #: src/languages/rust.md:87 src/languages/rust.md:101 src/languages/rust.md:120
@@ -70,7 +70,7 @@ msgstr ""
 
 #: src/languages/rust.md:24
 msgid "\"inlayHints\""
-msgstr ""
+msgstr "\"inlayHints\""
 
 #: src/languages/rust.md:25
 msgid "\"maxLength\""
@@ -352,7 +352,7 @@ msgstr ""
 
 #: src/languages/rust.md:215
 msgid "\"workspace\""
-msgstr ""
+msgstr "\"workspace\""
 
 #: src/languages/rust.md:223
 msgid "Multi-project workspaces"
@@ -556,7 +556,7 @@ msgstr ""
 
 #: src/languages/rust.md:309 src/languages/rust.md:330
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/rust.md:309 src/languages/rust.md:330
 msgid "\"Build & Debug native binary\""
@@ -573,7 +573,7 @@ msgstr ""
 
 #: src/languages/rust.md:312 src/languages/rust.md:334
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/rust.md:314
 msgid "\"program\""
@@ -599,7 +599,7 @@ msgstr ""
 
 #: src/languages/rust.md:318 src/languages/rust.md:331
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/rust.md:318 src/languages/rust.md:331
 msgid "\"CodeLLDB\""

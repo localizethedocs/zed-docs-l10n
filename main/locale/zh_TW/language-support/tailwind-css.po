@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/languages/tailwindcss.md:27
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/tailwindcss.md:28
 msgid "\"tailwindcss-language-server\""
@@ -96,7 +96,7 @@ msgstr ""
 
 #: src/languages/tailwindcss.md:29
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/tailwindcss.md:30
 msgid "\"classFunctions\""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: src/languages/tailwindcss.md:51
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/tailwindcss.md:52
 msgid "\"tailwindcss-intellisense-css\""

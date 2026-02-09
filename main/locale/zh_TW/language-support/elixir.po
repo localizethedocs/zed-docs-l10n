@@ -93,7 +93,7 @@ msgstr ""
 #: src/languages/elixir.md:42 src/languages/elixir.md:45
 #: src/languages/elixir.md:57 src/languages/elixir.md:60
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/elixir.md:27 src/languages/elixir.md:30
 msgid "\"expert\""
@@ -226,7 +226,7 @@ msgstr ""
 
 #: src/languages/elixir.md:95
 msgid "\"--stdin-filename\""
-msgstr ""
+msgstr "\"--stdin-filename\""
 
 #: src/languages/elixir.md:95
 msgid "\"{buffer_path}\""
@@ -234,7 +234,7 @@ msgstr ""
 
 #: src/languages/elixir.md:95
 msgid "\"-\""
-msgstr ""
+msgstr "\"-\""
 
 #: src/languages/elixir.md:103
 msgid "Additional workspace configuration options"
@@ -252,7 +252,7 @@ msgstr ""
 
 #: src/languages/elixir.md:110
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/elixir.md:111
 msgid "\"elixir-ls\""
@@ -260,7 +260,7 @@ msgstr ""
 
 #: src/languages/elixir.md:112
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/elixir.md:113
 msgid "\"dialyzerEnabled\""

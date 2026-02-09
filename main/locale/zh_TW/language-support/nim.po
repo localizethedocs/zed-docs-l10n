@@ -76,4 +76,4 @@ msgstr ""
 
 #: src/languages/nim.md:19
 msgid "\"-\""
-msgstr ""
+msgstr "\"-\""

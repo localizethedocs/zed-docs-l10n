@@ -697,7 +697,7 @@ msgstr ""
 #: src/migrate/intellij.md:198 src/migrate/intellij.md:202
 #: src/migrate/intellij.md:206
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/migrate/intellij.md:198
 msgid "\"build\""
@@ -714,7 +714,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:202
 msgid "\"run\""
-msgstr ""
+msgstr "\"run\""
 
 #: src/migrate/intellij.md:203
 msgid "\"./gradlew bootRun\""
@@ -1148,7 +1148,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:338
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/migrate/intellij.md:339
 msgid "\"jdtls\""
@@ -1156,7 +1156,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:340
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/migrate/intellij.md:341
 msgid "\"java_home\""

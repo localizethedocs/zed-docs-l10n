@@ -27,7 +27,7 @@ msgstr ""
 #: src/tasks.md:130 src/tasks.md:142 src/tasks.md:151 src/tasks.md:203
 #: src/tasks.md:233
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/tasks.md:8
 msgid "\"Example task\""
@@ -343,7 +343,7 @@ msgstr ""
 
 #: src/tasks.md:122
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/tasks.md:122
 msgid "\"$ZED_FILE\""

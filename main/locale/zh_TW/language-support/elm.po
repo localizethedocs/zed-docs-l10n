@@ -67,7 +67,7 @@ msgstr ""
 
 #: src/languages/elm.md:28
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/elm.md:29
 msgid "\"elm-language-server\""

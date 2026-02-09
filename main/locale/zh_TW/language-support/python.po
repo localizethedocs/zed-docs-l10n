@@ -187,16 +187,16 @@ msgstr ""
 #: src/languages/python.md:82 src/languages/python.md:201
 #: src/languages/python.md:213
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/python.md:83 src/languages/python.md:202
 #: src/languages/python.md:214
 msgid "\"Python\""
-msgstr ""
+msgstr "\"Python\""
 
 #: src/languages/python.md:84
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/python.md:85
 msgid ""
@@ -317,35 +317,35 @@ msgstr ""
 
 #: src/languages/python.md:128 src/languages/python.md:235
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/python.md:129
 msgid "\"basedpyright\""
-msgstr ""
+msgstr "\"basedpyright\""
 
 #: src/languages/python.md:130 src/languages/python.md:238
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/python.md:131
 msgid "\"basedpyright.analysis\""
-msgstr ""
+msgstr "\"basedpyright.analysis\""
 
 #: src/languages/python.md:132
 msgid "\"diagnosticMode\""
-msgstr ""
+msgstr "\"diagnosticMode\""
 
 #: src/languages/python.md:132
 msgid "\"workspace\""
-msgstr ""
+msgstr "\"workspace\""
 
 #: src/languages/python.md:133
 msgid "\"inlayHints\""
-msgstr ""
+msgstr "\"inlayHints\""
 
 #: src/languages/python.md:134
 msgid "\"callArgumentNames\""
-msgstr ""
+msgstr "\"callArgumentNames\""
 
 #: src/languages/python.md:143
 msgid "Configuration files"
@@ -527,35 +527,35 @@ msgstr ""
 
 #: src/languages/python.md:215
 msgid "\"formatter\""
-msgstr ""
+msgstr "\"formatter\""
 
 #: src/languages/python.md:216
 msgid "\"external\""
-msgstr ""
+msgstr "\"external\""
 
 #: src/languages/python.md:217
 msgid "\"command\""
-msgstr ""
+msgstr "\"command\""
 
 #: src/languages/python.md:217
 msgid "\"black\""
-msgstr ""
+msgstr "\"black\""
 
 #: src/languages/python.md:218
 msgid "\"arguments\""
-msgstr ""
+msgstr "\"arguments\""
 
 #: src/languages/python.md:218
 msgid "\"--stdin-filename\""
-msgstr ""
+msgstr "\"--stdin-filename\""
 
 #: src/languages/python.md:218
 msgid "\"{buffer_path}\""
-msgstr ""
+msgstr "\"{buffer_path}\""
 
 #: src/languages/python.md:218
 msgid "\"-\""
-msgstr ""
+msgstr "\"-\""
 
 #: src/languages/python.md:221
 msgid "// Or use `\"formatter\": null` to disable formatting entirely.\n"
@@ -722,7 +722,7 @@ msgstr ""
 
 #: src/languages/python.md:306 src/languages/python.md:338
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/python.md:306
 msgid "\"Python Active File\""
@@ -730,27 +730,27 @@ msgstr ""
 
 #: src/languages/python.md:307 src/languages/python.md:339
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/python.md:307 src/languages/python.md:339
 msgid "\"Debugpy\""
-msgstr ""
+msgstr "\"Debugpy\""
 
 #: src/languages/python.md:308
 msgid "\"program\""
-msgstr ""
+msgstr "\"program\""
 
 #: src/languages/python.md:308
 msgid "\"$ZED_FILE\""
-msgstr ""
+msgstr "\"$ZED_FILE\""
 
 #: src/languages/python.md:309 src/languages/python.md:340
 msgid "\"request\""
-msgstr ""
+msgstr "\"request\""
 
 #: src/languages/python.md:309 src/languages/python.md:340
 msgid "\"launch\""
-msgstr ""
+msgstr "\"launch\""
 
 #: src/languages/python.md:314
 msgid "This runs the file currently open in the editor."
@@ -774,15 +774,15 @@ msgstr ""
 
 #: src/languages/python.md:341
 msgid "\"module\""
-msgstr ""
+msgstr "\"module\""
 
 #: src/languages/python.md:341 src/languages/python.md:344
 msgid "\"app\""
-msgstr ""
+msgstr "\"app\""
 
 #: src/languages/python.md:342
 msgid "\"cwd\""
-msgstr ""
+msgstr "\"cwd\""
 
 #: src/languages/python.md:342
 msgid "\"$ZED_WORKTREE_ROOT\""
@@ -790,7 +790,7 @@ msgstr "\"$ZED_WORKTREE_ROOT\""
 
 #: src/languages/python.md:343
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/languages/python.md:344
 msgid "\"FLASK_APP\""
@@ -798,23 +798,23 @@ msgstr ""
 
 #: src/languages/python.md:345
 msgid "\"FLASK_DEBUG\""
-msgstr ""
+msgstr "\"FLASK_DEBUG\""
 
 #: src/languages/python.md:345
 msgid "\"1\""
-msgstr ""
+msgstr "\"1\""
 
 #: src/languages/python.md:347
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/python.md:348
 msgid "\"run\""
-msgstr ""
+msgstr "\"run\""
 
 #: src/languages/python.md:349
 msgid "\"--reload\""
-msgstr ""
+msgstr "\"--reload\""
 
 #: src/languages/python.md:349
 msgid ""

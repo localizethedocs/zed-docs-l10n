@@ -136,7 +136,7 @@ msgstr ""
 #: src/debugger.md:44 src/debugger.md:49 src/debugger.md:115
 #: src/debugger.md:132
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/debugger.md:44 src/debugger.md:115 src/debugger.md:132
 #: src/debugger.md:350
@@ -146,7 +146,7 @@ msgstr ""
 #: src/debugger.md:45 src/debugger.md:50 src/debugger.md:114
 #: src/debugger.md:131
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/debugger.md:45
 msgid "\"First configuration\""
@@ -158,7 +158,7 @@ msgstr ""
 
 #: src/debugger.md:49
 msgid "\"Debugpy\""
-msgstr ""
+msgstr "\"Debugpy\""
 
 #: src/debugger.md:50
 msgid "\"Second configuration\""
@@ -361,7 +361,7 @@ msgstr ""
 
 #: src/debugger.md:120 src/debugger.md:352
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/debugger.md:120
 msgid "\"-j8\""

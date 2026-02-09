@@ -2880,7 +2880,7 @@ msgstr ""
 #: src/configuring-zed.md:1671 src/configuring-zed.md:1685
 #: src/configuring-zed.md:3433
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/configuring-zed.md:1672 src/configuring-zed.md:1870
 msgid "\"rust-analyzer\""
@@ -2915,7 +2915,7 @@ msgstr ""
 
 #: src/configuring-zed.md:1687
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/configuring-zed.md:1688
 msgid "\"yaml\""
@@ -3834,7 +3834,7 @@ msgstr ""
 
 #: src/configuring-zed.md:2373
 msgid "\"Python\""
-msgstr ""
+msgstr "\"Python\""
 
 #: src/configuring-zed.md:2382
 msgid ""
@@ -6205,7 +6205,7 @@ msgstr ""
 #: src/configuring-zed.md:3714 src/configuring-zed.md:3718
 #: src/configuring-zed.md:3914 src/configuring-zed.md:4121
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/configuring-zed.md:3714 src/configuring-zed.md:4121
 msgid "\".venv\""
@@ -6426,7 +6426,7 @@ msgstr ""
 
 #: src/configuring-zed.md:3915
 msgid "\"1\""
-msgstr ""
+msgstr "\"1\""
 
 #: src/configuring-zed.md:3916
 msgid "\"KEY\""
@@ -6633,7 +6633,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4100
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/configuring-zed.md:4100
 msgid "\"--login\""

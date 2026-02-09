@@ -734,7 +734,7 @@ msgstr ""
 #: src/migrate/webstorm.md:280 src/migrate/webstorm.md:286
 #: src/migrate/webstorm.md:292
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/migrate/webstorm.md:205
 msgid "\"dev\""
@@ -995,7 +995,7 @@ msgstr ""
 #: src/migrate/webstorm.md:281 src/migrate/webstorm.md:287
 #: src/migrate/webstorm.md:293
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/migrate/webstorm.md:281 src/migrate/webstorm.md:287
 #: src/migrate/webstorm.md:293
@@ -1359,19 +1359,19 @@ msgstr ""
 
 #: src/migrate/webstorm.md:414
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/migrate/webstorm.md:415
 msgid "\"eslint\""
-msgstr ""
+msgstr "\"eslint\""
 
 #: src/migrate/webstorm.md:416
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/migrate/webstorm.md:417
 msgid "\"codeActionOnSave\""
-msgstr ""
+msgstr "\"codeActionOnSave\""
 
 #: src/migrate/webstorm.md:418
 msgid "\"rules\""

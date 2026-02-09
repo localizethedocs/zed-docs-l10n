@@ -110,7 +110,7 @@ msgstr ""
 
 #: src/configuring-languages.md:33
 msgid "\"Python\""
-msgstr ""
+msgstr "\"Python\""
 
 #: src/configuring-languages.md:34 src/configuring-languages.md:39
 msgid "\"tab_size\""
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/configuring-languages.md:126
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/configuring-languages.md:126
 msgid "\"intelephense\""
@@ -494,7 +494,7 @@ msgstr ""
 #: src/configuring-languages.md:203 src/configuring-languages.md:218
 #: src/configuring-languages.md:234 src/configuring-languages.md:306
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/configuring-languages.md:151 src/configuring-languages.md:204
 #: src/configuring-languages.md:235
@@ -623,7 +623,7 @@ msgstr ""
 
 #: src/configuring-languages.md:220 src/configuring-languages.md:308
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/configuring-languages.md:221
 msgid "\"tailwindCSS\""
@@ -675,7 +675,7 @@ msgstr ""
 
 #: src/configuring-languages.md:241
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/configuring-languages.md:242
 msgid "\"FOO\""
@@ -760,11 +760,11 @@ msgstr ""
 
 #: src/configuring-languages.md:307
 msgid "\"eslint\""
-msgstr ""
+msgstr "\"eslint\""
 
 #: src/configuring-languages.md:309
 msgid "\"codeActionOnSave\""
-msgstr ""
+msgstr "\"codeActionOnSave\""
 
 #: src/configuring-languages.md:310
 msgid "\"rules\""

@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/languages/terraform.md:18
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/terraform.md:19
 msgid "\"terraform-ls\""

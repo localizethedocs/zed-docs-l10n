@@ -403,7 +403,7 @@ msgstr ""
 
 #: src/languages/lua.md:156
 msgid "\"-\""
-msgstr ""
+msgstr "\"-\""
 
 #: src/languages/lua.md:165
 msgid ""

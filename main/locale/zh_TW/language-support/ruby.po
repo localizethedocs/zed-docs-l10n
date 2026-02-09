@@ -166,7 +166,7 @@ msgstr ""
 #: src/languages/ruby.md:169 src/languages/ruby.md:192
 #: src/languages/ruby.md:265
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/ruby.md:52
 msgid "\"<SERVER_NAME>\""
@@ -174,7 +174,7 @@ msgstr ""
 
 #: src/languages/ruby.md:53 src/languages/ruby.md:267
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/ruby.md:54
 msgid "\"use_bundler\""
@@ -213,7 +213,7 @@ msgstr ""
 #: src/languages/ruby.md:150 src/languages/ruby.md:219
 #: src/languages/ruby.md:243
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/ruby.md:73 src/languages/ruby.md:77 src/languages/ruby.md:81
 #: src/languages/ruby.md:85 src/languages/ruby.md:103 src/languages/ruby.md:150
@@ -541,7 +541,7 @@ msgstr ""
 #: src/languages/ruby.md:343 src/languages/ruby.md:365
 #: src/languages/ruby.md:379
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/ruby.md:301
 msgid "\"test $ZED_RELATIVE_FILE -n /$ZED_CUSTOM_RUBY_TEST_NAME/\""
@@ -560,7 +560,7 @@ msgstr ""
 #: src/languages/ruby.md:303 src/languages/ruby.md:324
 #: src/languages/ruby.md:345 src/languages/ruby.md:383
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/ruby.md:304
 msgid "\"test\""
@@ -582,7 +582,7 @@ msgstr ""
 #: src/languages/ruby.md:346 src/languages/ruby.md:369
 #: src/languages/ruby.md:384
 msgid "\"cwd\""
-msgstr ""
+msgstr "\"cwd\""
 
 #: src/languages/ruby.md:309 src/languages/ruby.md:332
 #: src/languages/ruby.md:346 src/languages/ruby.md:369
@@ -679,7 +679,7 @@ msgstr ""
 
 #: src/languages/ruby.md:366 src/languages/ruby.md:380
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/ruby.md:366 src/languages/ruby.md:380
 msgid "\"rdbg\""
@@ -719,7 +719,7 @@ msgstr ""
 
 #: src/languages/ruby.md:385
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/languages/ruby.md:386
 msgid "\"RUBY_DEBUG_OPEN\""
@@ -762,7 +762,7 @@ msgstr ""
 
 #: src/languages/ruby.md:404
 msgid "\"--stdin-filename\""
-msgstr ""
+msgstr "\"--stdin-filename\""
 
 #: src/languages/ruby.md:404
 msgid "\"{buffer_path}\""

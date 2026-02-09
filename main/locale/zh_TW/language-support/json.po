@@ -156,7 +156,7 @@ msgstr ""
 
 #: src/languages/json.md:57
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/json.md:58
 msgid "\"json-language-server\""
@@ -164,7 +164,7 @@ msgstr ""
 
 #: src/languages/json.md:59
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/json.md:61
 msgid "\"schemas\""

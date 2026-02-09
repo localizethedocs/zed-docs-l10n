@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/languages/kotlin.md:25 src/languages/kotlin.md:45
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/kotlin.md:26 src/languages/kotlin.md:46
 msgid "\"kotlin-language-server\""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/languages/kotlin.md:27
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/kotlin.md:28
 msgid "\"compiler\""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: src/languages/kotlin.md:48
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/languages/kotlin.md:49
 msgid "\"JAVA_HOME\""

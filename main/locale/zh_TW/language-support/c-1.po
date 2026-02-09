@@ -47,7 +47,7 @@ msgstr ""
 
 #: src/languages/csharp.md:16
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/csharp.md:17
 msgid "\"omnisharp\""
@@ -79,7 +79,7 @@ msgstr ""
 
 #: src/languages/csharp.md:20
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/csharp.md:20
 msgid "\"-lsp\""

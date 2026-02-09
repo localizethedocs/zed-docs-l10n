@@ -155,7 +155,7 @@ msgstr ""
 
 #: src/snippets.md:49
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/snippets.md:50
 msgid "\"snippet-completion-server\""
@@ -163,7 +163,7 @@ msgstr ""
 
 #: src/snippets.md:51
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/snippets.md:52
 msgid "\"feature_paths\""

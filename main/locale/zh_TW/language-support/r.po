@@ -150,7 +150,7 @@ msgstr ""
 
 #: src/languages/r.md:65 src/languages/r.md:77
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/r.md:65 src/languages/r.md:77
 msgid "\"air\""

@@ -720,7 +720,7 @@ msgstr ""
 #: src/migrate/rustrover.md:232 src/migrate/rustrover.md:295
 #: src/migrate/rustrover.md:301 src/migrate/rustrover.md:312
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/migrate/rustrover.md:216 src/migrate/rustrover.md:217
 msgid "\"cargo run\""
@@ -956,7 +956,7 @@ msgstr ""
 #: src/migrate/rustrover.md:296 src/migrate/rustrover.md:302
 #: src/migrate/rustrover.md:313
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/migrate/rustrover.md:296 src/migrate/rustrover.md:302
 #: src/migrate/rustrover.md:313
@@ -991,7 +991,7 @@ msgstr ""
 
 #: src/migrate/rustrover.md:305 src/migrate/rustrover.md:316
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/migrate/rustrover.md:305 src/migrate/rustrover.md:307
 msgid "\"test\""
@@ -1347,7 +1347,7 @@ msgstr ""
 #: src/migrate/rustrover.md:436 src/migrate/rustrover.md:458
 #: src/migrate/rustrover.md:482
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/migrate/rustrover.md:437 src/migrate/rustrover.md:459
 #: src/migrate/rustrover.md:483

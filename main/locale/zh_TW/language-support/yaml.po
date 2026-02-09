@@ -45,7 +45,7 @@ msgstr ""
 
 #: src/languages/yaml.md:13 src/languages/yaml.md:83 src/languages/yaml.md:103
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/yaml.md:14 src/languages/yaml.md:84 src/languages/yaml.md:104
 msgid "\"yaml-language-server\""
@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/languages/yaml.md:15 src/languages/yaml.md:85 src/languages/yaml.md:105
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/yaml.md:16 src/languages/yaml.md:86 src/languages/yaml.md:106
 msgid "\"yaml\""

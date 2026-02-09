@@ -155,23 +155,23 @@ msgstr ""
 #: src/languages/javascript.md:129 src/languages/javascript.md:147
 #: src/languages/javascript.md:166 src/languages/javascript.md:184
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/javascript.md:73 src/languages/javascript.md:112
 #: src/languages/javascript.md:130 src/languages/javascript.md:148
 #: src/languages/javascript.md:167
 msgid "\"eslint\""
-msgstr ""
+msgstr "\"eslint\""
 
 #: src/languages/javascript.md:74 src/languages/javascript.md:113
 #: src/languages/javascript.md:131 src/languages/javascript.md:149
 #: src/languages/javascript.md:168 src/languages/javascript.md:186
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/javascript.md:75
 msgid "\"codeActionOnSave\""
-msgstr ""
+msgstr "\"codeActionOnSave\""
 
 #: src/languages/javascript.md:76
 msgid "\"rules\""
@@ -425,11 +425,11 @@ msgstr ""
 
 #: src/languages/javascript.md:235 src/languages/javascript.md:250
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/javascript.md:236 src/languages/javascript.md:251
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/javascript.md:236
 msgid "\"Debug JS file\""

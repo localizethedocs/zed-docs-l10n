@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/languages/swift.md:30
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/swift.md:30
 msgid "\"Debug Swift\""
@@ -105,7 +105,7 @@ msgstr ""
 
 #: src/languages/swift.md:33
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/swift.md:35
 msgid "\"program\""
@@ -126,7 +126,7 @@ msgstr ""
 
 #: src/languages/swift.md:37
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/swift.md:37
 msgid "\"Swift\""

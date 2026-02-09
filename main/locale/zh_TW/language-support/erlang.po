@@ -71,7 +71,7 @@ msgstr ""
 
 #: src/languages/erlang.md:22
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/erlang.md:22
 msgid "\"elp\""

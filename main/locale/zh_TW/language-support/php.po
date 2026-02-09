@@ -111,7 +111,7 @@ msgstr ""
 
 #: src/languages/php.md:48 src/languages/php.md:80 src/languages/php.md:116
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/php.md:48 src/languages/php.md:61
 msgid "\"intelephense\""
@@ -145,7 +145,7 @@ msgstr ""
 
 #: src/languages/php.md:60 src/languages/php.md:90
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/php.md:62 src/languages/php.md:92
 msgid "\"initialization_options\""
@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/languages/php.md:135 src/languages/php.md:141
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/php.md:135
 msgid "\"PHP: Listen to Xdebug\""
@@ -263,7 +263,7 @@ msgstr ""
 
 #: src/languages/php.md:136 src/languages/php.md:142
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/php.md:136 src/languages/php.md:142
 msgid "\"Xdebug\""
@@ -295,7 +295,7 @@ msgstr ""
 
 #: src/languages/php.md:145
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/php.md:145
 msgid "\"--filter\""

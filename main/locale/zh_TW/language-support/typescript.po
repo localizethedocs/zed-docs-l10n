@@ -65,7 +65,7 @@ msgstr ""
 #: src/languages/typescript.md:23 src/languages/typescript.md:26
 #: src/languages/typescript.md:29
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/typescript.md:23 src/languages/typescript.md:26
 #: src/languages/typescript.md:29 src/languages/typescript.md:104
@@ -123,7 +123,7 @@ msgstr ""
 #: src/languages/typescript.md:54 src/languages/typescript.md:82
 #: src/languages/typescript.md:103 src/languages/typescript.md:128
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/typescript.md:55
 msgid "\"tailwindcss-language-server\""
@@ -132,7 +132,7 @@ msgstr ""
 #: src/languages/typescript.md:56 src/languages/typescript.md:84
 #: src/languages/typescript.md:130
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/typescript.md:57
 msgid "\"experimental\""
@@ -292,7 +292,7 @@ msgstr ""
 
 #: src/languages/typescript.md:133 src/languages/typescript.md:158
 msgid "\"inlayHints\""
-msgstr ""
+msgstr "\"inlayHints\""
 
 #: src/languages/typescript.md:134 src/languages/typescript.md:159
 msgid "\"parameterNames\""
@@ -418,7 +418,7 @@ msgstr ""
 
 #: src/languages/typescript.md:218
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/typescript.md:218
 msgid "\"Launch Chrome (TypeScript)\""
@@ -426,7 +426,7 @@ msgstr ""
 
 #: src/languages/typescript.md:219
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/typescript.md:220
 msgid "\"type\""
@@ -482,7 +482,7 @@ msgstr ""
 
 #: src/languages/typescript.md:227
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/typescript.md:227
 msgid "\"tsc\""

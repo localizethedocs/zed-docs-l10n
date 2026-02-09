@@ -129,7 +129,7 @@ msgstr ""
 
 #: src/languages/go.md:61
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/go.md:62
 msgid "\"gopls\""
@@ -190,7 +190,7 @@ msgstr ""
 #: src/languages/go.md:91 src/languages/go.md:98 src/languages/go.md:118
 #: src/languages/go.md:138 src/languages/go.md:169
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/go.md:91
 msgid "\"Go (Delve)\""
@@ -199,7 +199,7 @@ msgstr ""
 #: src/languages/go.md:92 src/languages/go.md:99 src/languages/go.md:119
 #: src/languages/go.md:139 src/languages/go.md:168
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/go.md:92 src/languages/go.md:99 src/languages/go.md:119
 #: src/languages/go.md:139 src/languages/go.md:168
@@ -321,7 +321,7 @@ msgstr ""
 
 #: src/languages/go.md:143 src/languages/go.md:146 src/languages/go.md:172
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/go.md:143
 msgid "\"-test.v\""
@@ -388,7 +388,7 @@ msgstr ""
 
 #: src/languages/go.md:171
 msgid "\"cwd\""
-msgstr ""
+msgstr "\"cwd\""
 
 #: src/languages/go.md:171
 msgid "\"/Users/zed/Projects/language_repositories/golang/hello\""
@@ -396,7 +396,7 @@ msgstr ""
 
 #: src/languages/go.md:173
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/languages/go.md:176
 msgid "\"stopOnEntry\""

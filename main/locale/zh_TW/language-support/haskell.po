@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/languages/haskell.md:24 src/languages/haskell.md:42
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/haskell.md:25 src/languages/haskell.md:43
 msgid "\"hls\""

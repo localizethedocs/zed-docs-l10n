@@ -1580,7 +1580,7 @@ msgstr ""
 
 #: src/migrate/vs-code.md:366
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/migrate/vs-code.md:366
 msgid "\"build\""

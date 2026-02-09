@@ -107,4 +107,4 @@ msgstr ""
 
 #: src/languages/luau.md:36
 msgid "\"-\""
-msgstr ""
+msgstr "\"-\""

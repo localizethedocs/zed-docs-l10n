@@ -256,7 +256,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:109 src/ai/external-agents.md:202
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/ai/external-agents.md:110
 msgid "\"CLAUDE_CODE_EXECUTABLE\""
@@ -470,7 +470,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:201
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/ai/external-agents.md:201
 msgid "\"~/projects/agent/index.js\""

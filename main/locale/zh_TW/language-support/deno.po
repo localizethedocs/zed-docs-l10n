@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/languages/deno.md:13 src/languages/deno.md:65
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/deno.md:14 src/languages/deno.md:16 src/languages/deno.md:25
 #: src/languages/deno.md:34 src/languages/deno.md:43 src/languages/deno.md:103
@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/languages/deno.md:15 src/languages/deno.md:67
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/deno.md:17
 msgid "\"enable\""
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/languages/deno.md:24 src/languages/deno.md:33 src/languages/deno.md:42
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/deno.md:26 src/languages/deno.md:35 src/languages/deno.md:44
 msgid "\"!typescript-language-server\""
@@ -164,11 +164,11 @@ msgstr ""
 
 #: src/languages/deno.md:97
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/deno.md:98 src/languages/deno.md:117
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/deno.md:98
 msgid "\"Deno\""
@@ -192,7 +192,7 @@ msgstr ""
 
 #: src/languages/deno.md:101
 msgid "\"cwd\""
-msgstr ""
+msgstr "\"cwd\""
 
 #: src/languages/deno.md:101
 msgid "\"$ZED_WORKTREE_ROOT\""
@@ -216,7 +216,7 @@ msgstr ""
 
 #: src/languages/deno.md:104
 msgid "\"run\""
-msgstr ""
+msgstr "\"run\""
 
 #: src/languages/deno.md:104
 msgid "\"--allow-all\""

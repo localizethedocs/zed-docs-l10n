@@ -113,7 +113,7 @@ msgstr ""
 
 #: src/languages/html.md:49
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/html.md:50
 msgid "\"vscode-html-language-server\""
@@ -121,7 +121,7 @@ msgstr ""
 
 #: src/languages/html.md:51
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/html.md:53
 msgid "\"format\""

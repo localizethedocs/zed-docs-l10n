@@ -102,7 +102,7 @@ msgstr ""
 
 #: src/languages/powershell.md:28
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/powershell.md:29
 msgid "\"powershell-es\""

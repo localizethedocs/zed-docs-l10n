@@ -801,11 +801,11 @@ msgstr ""
 #: src/migrate/pycharm.md:235 src/migrate/pycharm.md:294
 #: src/migrate/pycharm.md:300
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/migrate/pycharm.md:227 src/migrate/pycharm.md:304
 msgid "\"run\""
-msgstr ""
+msgstr "\"run\""
 
 #: src/migrate/pycharm.md:228 src/migrate/pycharm.md:232
 #: src/migrate/pycharm.md:236
@@ -1037,11 +1037,11 @@ msgstr ""
 
 #: src/migrate/pycharm.md:295 src/migrate/pycharm.md:301
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/migrate/pycharm.md:295 src/migrate/pycharm.md:301
 msgid "\"Debugpy\""
-msgstr ""
+msgstr "\"Debugpy\""
 
 #: src/migrate/pycharm.md:296
 msgid "\"program\""
@@ -1065,7 +1065,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:303
 msgid "\"module\""
-msgstr ""
+msgstr "\"module\""
 
 #: src/migrate/pycharm.md:303
 msgid "\"flask\""
@@ -1073,7 +1073,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:304
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/migrate/pycharm.md:304
 msgid "\"--debug\""
@@ -1081,7 +1081,7 @@ msgstr ""
 
 #: src/migrate/pycharm.md:305 src/migrate/pycharm.md:409
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/migrate/pycharm.md:306
 msgid "\"FLASK_APP\""

@@ -197,7 +197,7 @@ msgstr ""
 
 #: src/languages/c.md:80
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/languages/c.md:80
 msgid "\"Debug native binary\""
@@ -217,7 +217,7 @@ msgstr ""
 
 #: src/languages/c.md:83
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/languages/c.md:83
 msgid "\"-j8\""
@@ -225,7 +225,7 @@ msgstr ""
 
 #: src/languages/c.md:84
 msgid "\"cwd\""
-msgstr ""
+msgstr "\"cwd\""
 
 #: src/languages/c.md:84
 msgid "\"$ZED_WORKTREE_ROOT\""
@@ -249,7 +249,7 @@ msgstr ""
 
 #: src/languages/c.md:88
 msgid "\"adapter\""
-msgstr ""
+msgstr "\"adapter\""
 
 #: src/languages/c.md:88
 msgid "\"CodeLLDB\""

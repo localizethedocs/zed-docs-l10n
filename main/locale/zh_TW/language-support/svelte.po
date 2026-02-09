@@ -85,7 +85,7 @@ msgstr ""
 
 #: src/languages/svelte.md:30
 msgid "\"inlayHints\""
-msgstr ""
+msgstr "\"inlayHints\""
 
 #: src/languages/svelte.md:31
 msgid "\"parameterNames\""
@@ -135,7 +135,7 @@ msgstr ""
 
 #: src/languages/svelte.md:57
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/svelte.md:58
 msgid "\"svelte-language-server\""

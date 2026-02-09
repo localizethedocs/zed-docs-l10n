@@ -163,7 +163,7 @@ msgstr ""
 
 #: src/languages/ansible.md:54 src/languages/ansible.md:103
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/ansible.md:55
 msgid "\"yaml-language-server\""
@@ -171,7 +171,7 @@ msgstr ""
 
 #: src/languages/ansible.md:56 src/languages/ansible.md:107
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/ansible.md:57
 msgid "\"yaml\""

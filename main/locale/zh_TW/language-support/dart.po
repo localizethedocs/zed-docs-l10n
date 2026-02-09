@@ -64,7 +64,7 @@ msgstr ""
 
 #: src/languages/dart.md:27 src/languages/dart.md:44
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/dart.md:28 src/languages/dart.md:31 src/languages/dart.md:45
 msgid "\"dart\""
@@ -107,7 +107,7 @@ msgstr ""
 
 #: src/languages/dart.md:46
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/dart.md:47
 msgid "\"lineLength\""

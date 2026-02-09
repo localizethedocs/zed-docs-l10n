@@ -145,7 +145,7 @@ msgstr ""
 
 #: src/ai/mcp.md:45
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/ai/mcp.md:45
 msgid "\"arg-1\""
@@ -157,7 +157,7 @@ msgstr ""
 
 #: src/ai/mcp.md:46
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/ai/mcp.md:48
 msgid "\"remote-mcp-server\""
