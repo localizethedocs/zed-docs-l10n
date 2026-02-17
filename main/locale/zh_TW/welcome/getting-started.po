@@ -20,6 +20,8 @@ msgid ""
 "Welcome to Zed! We are excited to have you. Zed is a powerful multiplayer "
 "code editor designed to stay out of your way and help you build what's next."
 msgstr ""
+"歡迎使用 Zed！我們很高興您的加入。Zed 是一款強大的多人協作程式碼編輯器，為了"
+"在減少您的干擾而設計，並幫助您打造未來的產品。"
 
 #: src/getting-started.md:5
 msgid "Key Features"
