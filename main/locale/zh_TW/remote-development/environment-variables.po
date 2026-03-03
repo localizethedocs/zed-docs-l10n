@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/environment.md:1
 msgid "Environment Variables"
-msgstr ""
+msgstr "環境變數"
 
 #: src/environment.md:3
 msgid "_**Note**: The following only applies to Zed 0.152.0 and later._"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/environment.md:10 src/environment.md:85
 msgid "Language servers"
-msgstr ""
+msgstr "語言伺服器"
 
 #: src/environment.md:12
 msgid ""
@@ -189,7 +189,7 @@ msgstr ""
 
 #: src/environment.md:74
 msgid "Go"
-msgstr ""
+msgstr "Go"
 
 #: src/environment.md:75
 msgid "Zig"
@@ -201,7 +201,7 @@ msgstr ""
 
 #: src/environment.md:77
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: src/environment.md:78
 msgid "TypeScript"

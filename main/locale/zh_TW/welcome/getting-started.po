@@ -57,7 +57,7 @@ msgstr ""
 
 #: src/getting-started.md:21
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: src/getting-started.md:21
 msgid "Linux/Windows"
@@ -278,15 +278,3 @@ msgstr ""
 #: src/getting-started.md:79
 msgid "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
 msgstr "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
-
-#~ msgid ""
-#~ "[Extensions](./extensions.md): Leverage Zed's extensions to customize how "
-#~ "you work."
-#~ msgstr ""
-#~ "[擴充功能](./extensions.md)：利用 Zed 的擴充功能來自訂您的工作方式。"
-
-#~ msgid "Join the Zed Community"
-#~ msgstr "加入 Zed 社群"
-
-#~ msgid "[Join Discord](https://discord.com/invite/zedindustries)"
-#~ msgstr "[加入 Discord](https://discord.com/invite/zedindustries)"

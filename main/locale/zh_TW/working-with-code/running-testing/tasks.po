@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/tasks.md:1
@@ -27,7 +27,7 @@ msgstr ""
 #: src/tasks.md:130 src/tasks.md:142 src/tasks.md:151 src/tasks.md:203
 #: src/tasks.md:233
 msgid "\"label\""
-msgstr ""
+msgstr "\"label\""
 
 #: src/tasks.md:8
 msgid "\"Example task\""
@@ -37,7 +37,7 @@ msgstr ""
 #: src/tasks.md:131 src/tasks.md:143 src/tasks.md:152 src/tasks.md:204
 #: src/tasks.md:234
 msgid "\"command\""
-msgstr ""
+msgstr "\"command\""
 
 #: src/tasks.md:9
 msgid "\"for i in {1..5}; do echo \\\"Hello $i/5\\\"; sleep 1; done\""
@@ -212,7 +212,7 @@ msgstr ""
 
 #: src/tasks.md:72
 msgid "Variables"
-msgstr ""
+msgstr "變數"
 
 #: src/tasks.md:74
 msgid ""
@@ -343,11 +343,11 @@ msgstr ""
 
 #: src/tasks.md:122
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/tasks.md:122
 msgid "\"$ZED_FILE\""
-msgstr ""
+msgstr "\"$ZED_FILE\""
 
 #: src/tasks.md:126
 msgid "Or explicitly include escaped quotes like so:"

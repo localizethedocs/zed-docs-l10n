@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/finding-navigating.md:1
@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/finding-navigating.md:5 src/finding-navigating.md:44
 msgid "Command Palette"
-msgstr ""
+msgstr "命令選擇區"
 
 #: src/finding-navigating.md:7
 msgid ""
@@ -59,7 +59,7 @@ msgstr ""
 
 #: src/finding-navigating.md:19
 msgid "Go to Definition"
-msgstr ""
+msgstr "前往定義"
 
 #: src/finding-navigating.md:21
 msgid ""
@@ -86,7 +86,7 @@ msgstr ""
 
 #: src/finding-navigating.md:28 src/finding-navigating.md:51
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/finding-navigating.md:30
 msgid ""
@@ -102,7 +102,7 @@ msgstr ""
 
 #: src/finding-navigating.md:34 src/finding-navigating.md:52
 msgid "Tab Switcher"
-msgstr ""
+msgstr "頁籤切換器"
 
 #: src/finding-navigating.md:36
 msgid ""
@@ -141,7 +141,7 @@ msgstr ""
 
 #: src/finding-navigating.md:46
 msgid "Project search"
-msgstr ""
+msgstr "專案搜尋"
 
 #: src/finding-navigating.md:46
 msgid "<kbd class=\"keybinding\">cmd-shift-h"

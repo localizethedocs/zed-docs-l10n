@@ -846,7 +846,7 @@ msgstr ""
 
 #: src/languages/python.md:363
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/languages/python.md:365
 msgid ""

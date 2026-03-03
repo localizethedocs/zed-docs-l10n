@@ -448,7 +448,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:209
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/ai/external-agents.md:211
 msgid ""

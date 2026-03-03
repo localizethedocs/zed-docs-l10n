@@ -5,15 +5,15 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/vim.md:1
 msgid "Vim Mode"
-msgstr ""
+msgstr "Vim 模式"
 
 #: src/vim.md:3
 msgid ""
@@ -23,7 +23,7 @@ msgstr ""
 
 #: src/vim.md:5
 msgid "Zed's vim mode design"
-msgstr ""
+msgstr "Zed 的 vim 模式設計"
 
 #: src/vim.md:7
 msgid ""
@@ -255,7 +255,7 @@ msgstr ""
 
 #: src/vim.md:63 src/vim.md:300
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/vim.md:67
 msgid "Go to next git change"
@@ -876,7 +876,7 @@ msgstr ""
 
 #: src/vim.md:210
 msgid "Example Configuration"
-msgstr ""
+msgstr "範例組態"
 
 #: src/vim.md:212
 msgid ""
@@ -1172,43 +1172,43 @@ msgstr ""
 
 #: src/vim.md:280
 msgid "Open the chat panel"
-msgstr ""
+msgstr "開啟聊天面板"
 
 #: src/vim.md:280
 msgid "`:Ch[at]`"
-msgstr ""
+msgstr "`:Ch[at]`"
 
 #: src/vim.md:281
 msgid "Open the AI panel"
-msgstr ""
+msgstr "開啟 AI 面板"
 
 #: src/vim.md:281
 msgid "`:A[I]`"
-msgstr ""
+msgstr "`:A[I]`"
 
 #: src/vim.md:282
 msgid "Open the git panel"
-msgstr ""
+msgstr "開啟 git 面板"
 
 #: src/vim.md:282
 msgid "`:G[it]`"
-msgstr ""
+msgstr "`:G[it]`"
 
 #: src/vim.md:283
 msgid "Open the debug panel"
-msgstr ""
+msgstr "開啟除錯面板"
 
 #: src/vim.md:283
 msgid "`:D[ebug]`"
-msgstr ""
+msgstr "`:D[ebug]`"
 
 #: src/vim.md:284
 msgid "Open the notifications panel"
-msgstr ""
+msgstr "開啟通知面板"
 
 #: src/vim.md:284
 msgid "`:No[tif]`"
-msgstr ""
+msgstr "`:No[tif]`"
 
 #: src/vim.md:285
 msgid "Open the feedback window"
@@ -1228,7 +1228,7 @@ msgstr ""
 
 #: src/vim.md:287
 msgid "Open the terminal"
-msgstr ""
+msgstr "開啟終端機"
 
 #: src/vim.md:287
 msgid "`:te[rm]`"
@@ -1308,7 +1308,7 @@ msgstr ""
 
 #: src/vim.md:315
 msgid "Jump to a line number"
-msgstr ""
+msgstr "跳至行號"
 
 #: src/vim.md:316
 msgid "`:$`"
@@ -1316,7 +1316,7 @@ msgstr ""
 
 #: src/vim.md:316
 msgid "Jump to the end of the file"
-msgstr ""
+msgstr "跳至檔案結尾"
 
 #: src/vim.md:317
 msgid "`:/foo` and `:?foo`"
@@ -1551,7 +1551,7 @@ msgstr ""
 
 #: src/vim.md:394
 msgid "Normal mode"
-msgstr ""
+msgstr "普通模式"
 
 #: src/vim.md:395
 msgid "vim_mode == visual"
@@ -1567,7 +1567,7 @@ msgstr ""
 
 #: src/vim.md:396
 msgid "Insert mode"
-msgstr ""
+msgstr "插入模式"
 
 #: src/vim.md:397
 msgid "vim_mode == replace"
@@ -1575,7 +1575,7 @@ msgstr ""
 
 #: src/vim.md:397
 msgid "Replace mode"
-msgstr ""
+msgstr "取代模式"
 
 #: src/vim.md:398
 msgid "vim_mode == waiting"

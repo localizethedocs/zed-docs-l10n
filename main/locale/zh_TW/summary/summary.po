@@ -678,9 +678,3 @@ msgstr ""
 #: src/SUMMARY.md:200
 msgid "Debugging Crashes"
 msgstr ""
-
-#~ msgid "Using Zed"
-#~ msgstr "使用 Zed"
-
-#~ msgid "Diagnostics"
-#~ msgstr "診斷"

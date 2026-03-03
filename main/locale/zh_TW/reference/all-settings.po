@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/reference/all-settings.md:1
@@ -28,7 +28,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:7
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: src/reference/all-settings.md:9
 msgid "Find below an extensive run-through of many supported settings by Zed."
@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:14
 msgid "Setting: `active_pane_modifiers`"
-msgstr ""
+msgstr "設定：`active_pane_modifiers`"
 
 #: src/reference/all-settings.md:15 src/reference/all-settings.md:418
 #: src/reference/all-settings.md:570 src/reference/all-settings.md:722
@@ -101,11 +101,11 @@ msgstr ""
 
 #: src/reference/all-settings.md:29
 msgid "Setting: `border_size`"
-msgstr ""
+msgstr "設定：`border_size`"
 
 #: src/reference/all-settings.md:30
 msgid "Default: `0.0`"
-msgstr ""
+msgstr "預設值：`0.0`"
 
 #: src/reference/all-settings.md:32 src/reference/all-settings.md:42
 #: src/reference/all-settings.md:52 src/reference/all-settings.md:92
@@ -208,7 +208,7 @@ msgstr ""
 #: src/reference/all-settings.md:4968 src/reference/all-settings.md:4999
 #: src/reference/all-settings.md:5015 src/reference/all-settings.md:5025
 msgid "**Options**"
-msgstr ""
+msgstr "**選項**"
 
 #: src/reference/all-settings.md:34
 msgid "Non-negative `float` values"
@@ -228,7 +228,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:39
 msgid "Setting: `inactive_opacity`"
-msgstr ""
+msgstr "設定：`inactive_opacity`"
 
 #: src/reference/all-settings.md:40 src/reference/all-settings.md:3188
 #: src/reference/all-settings.md:4115
@@ -251,11 +251,11 @@ msgstr ""
 
 #: src/reference/all-settings.md:49
 msgid "Setting: `bottom_dock_layout`"
-msgstr ""
+msgstr "設定：`bottom_dock_layout`"
 
 #: src/reference/all-settings.md:50
 msgid "Default: `\"contained\"`"
-msgstr ""
+msgstr "預設值：`\"contained\"`"
 
 #: src/reference/all-settings.md:54
 msgid ""
@@ -315,7 +315,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:89
 msgid "Setting: `agent_font_size`"
-msgstr ""
+msgstr "設定：`agent_font_size`"
 
 #: src/reference/all-settings.md:90 src/reference/all-settings.md:340
 #: src/reference/all-settings.md:371 src/reference/all-settings.md:460
@@ -343,7 +343,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:99
 msgid "Setting: `allow_rewrap`"
-msgstr ""
+msgstr "設定：`allow_rewrap`"
 
 #: src/reference/all-settings.md:100
 msgid "Default: `\"in_comments\"`"
@@ -396,7 +396,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:133
 msgid "Setting: `auto_indent`"
-msgstr ""
+msgstr "設定：`auto_indent`"
 
 #: src/reference/all-settings.md:134 src/reference/all-settings.md:144
 #: src/reference/all-settings.md:264 src/reference/all-settings.md:668
@@ -473,11 +473,11 @@ msgstr ""
 
 #: src/reference/all-settings.md:143
 msgid "Setting: `auto_indent_on_paste`"
-msgstr ""
+msgstr "設定：`auto_indent_on_paste`"
 
 #: src/reference/all-settings.md:150
 msgid "Auto Install extensions"
-msgstr ""
+msgstr "自動安裝擴充功能"
 
 #: src/reference/all-settings.md:152
 msgid ""
@@ -486,11 +486,11 @@ msgstr ""
 
 #: src/reference/all-settings.md:153
 msgid "Setting: `auto_install_extensions`"
-msgstr ""
+msgstr "設定：`auto_install_extensions`"
 
 #: src/reference/all-settings.md:154
 msgid "Default: `{ \"html\": true }`"
-msgstr ""
+msgstr "預設值：`{ \"html\": true }`"
 
 #: src/reference/all-settings.md:158
 msgid ""
@@ -539,7 +539,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:187
 msgid "Setting: `autosave`"
-msgstr ""
+msgstr "設定：`autosave`"
 
 #: src/reference/all-settings.md:188 src/reference/all-settings.md:1353
 #: src/reference/all-settings.md:3307 src/reference/all-settings.md:3341
@@ -613,7 +613,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:233
 msgid "Setting: `autoscroll_on_clicks`"
-msgstr ""
+msgstr "設定：`autoscroll_on_clicks`"
 
 #: src/reference/all-settings.md:234 src/reference/all-settings.md:244
 #: src/reference/all-settings.md:254 src/reference/all-settings.md:436
@@ -643,7 +643,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:243
 msgid "Setting: `auto_signature_help`"
-msgstr ""
+msgstr "設定：`auto_signature_help`"
 
 #: src/reference/all-settings.md:250
 msgid "Show Signature Help After Edits"
@@ -658,7 +658,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:253
 msgid "Setting: `show_signature_help_after_edits`"
-msgstr ""
+msgstr "設定：`show_signature_help_after_edits`"
 
 #: src/reference/all-settings.md:260
 msgid "Auto Update"
@@ -670,7 +670,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:263
 msgid "Setting: `auto_update`"
-msgstr ""
+msgstr "設定：`auto_update`"
 
 #: src/reference/all-settings.md:270
 msgid "Base Keymap"
@@ -684,7 +684,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:273
 msgid "Setting: `base_keymap`"
-msgstr ""
+msgstr "設定：`base_keymap`"
 
 #: src/reference/all-settings.md:274
 msgid "Default: `VSCode`"
@@ -692,7 +692,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:278
 msgid "VS Code"
-msgstr ""
+msgstr "VS Code"
 
 #: src/reference/all-settings.md:282 src/reference/all-settings.md:290
 #: src/reference/all-settings.md:298 src/reference/all-settings.md:306
@@ -755,7 +755,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:329
 msgid "Setting: `buffer_font_family`"
-msgstr ""
+msgstr "設定：`buffer_font_family`"
 
 #: src/reference/all-settings.md:330
 msgid ""
@@ -779,7 +779,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:339
 msgid "Setting: `buffer_font_features`"
-msgstr ""
+msgstr "設定：`buffer_font_features`"
 
 #: src/reference/all-settings.md:341 src/reference/all-settings.md:372
 #: src/reference/all-settings.md:3934 src/reference/all-settings.md:4966
@@ -827,7 +827,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:370
 msgid "Setting: `buffer_font_fallbacks`"
-msgstr ""
+msgstr "設定：`buffer_font_fallbacks`"
 
 #: src/reference/all-settings.md:376 src/reference/all-settings.md:5001
 msgid ""
@@ -853,7 +853,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:387
 msgid "Setting: `buffer_font_size`"
-msgstr ""
+msgstr "設定：`buffer_font_size`"
 
 #: src/reference/all-settings.md:388
 msgid "Default: `15`"
@@ -873,7 +873,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:397
 msgid "Setting: `buffer_font_weight`"
-msgstr ""
+msgstr "設定：`buffer_font_weight`"
 
 #: src/reference/all-settings.md:398 src/reference/all-settings.md:5023
 msgid "Default: `400`"
@@ -893,7 +893,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:407
 msgid "Setting: `buffer_line_height`"
-msgstr ""
+msgstr "設定：`buffer_line_height`"
 
 #: src/reference/all-settings.md:408
 msgid "Default: `\"comfortable\"`"
@@ -915,7 +915,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:417
 msgid "Setting: `centered_layout`"
-msgstr ""
+msgstr "設定：`centered_layout`"
 
 #: src/reference/all-settings.md:421
 msgid "\"centered_layout\""
@@ -948,7 +948,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:435
 msgid "Setting: `close_on_file_delete`"
-msgstr ""
+msgstr "設定：`close_on_file_delete`"
 
 #: src/reference/all-settings.md:442
 msgid ""
@@ -978,7 +978,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:449
 msgid "Setting: `confirm_quit`"
-msgstr ""
+msgstr "設定：`confirm_quit`"
 
 #: src/reference/all-settings.md:456
 msgid "Diagnostics Max Severity"
@@ -992,7 +992,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:459
 msgid "Setting: `diagnostics_max_severity`"
-msgstr ""
+msgstr "設定：`diagnostics_max_severity`"
 
 #: src/reference/all-settings.md:464
 msgid "Allow all diagnostics (default):"
@@ -1013,7 +1013,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:472 src/reference/all-settings.md:950
 msgid "Show only errors:"
-msgstr ""
+msgstr "只顯示錯誤："
 
 #: src/reference/all-settings.md:476 src/reference/all-settings.md:954
 msgid "\"error\""
@@ -1021,7 +1021,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:480
 msgid "Show errors and warnings:"
-msgstr ""
+msgstr "顯示錯誤與警告："
 
 #: src/reference/all-settings.md:484 src/reference/all-settings.md:962
 #: src/reference/all-settings.md:1978
@@ -1030,7 +1030,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:488
 msgid "Show errors, warnings, and information:"
-msgstr ""
+msgstr "顯示錯誤、警告與資訊："
 
 #: src/reference/all-settings.md:492 src/reference/all-settings.md:970
 msgid "\"info\""
@@ -1054,7 +1054,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:507
 msgid "Setting: `disable_ai`"
-msgstr ""
+msgstr "設定：`disable_ai`"
 
 #: src/reference/all-settings.md:514
 msgid "Direnv Integration"
@@ -1071,7 +1071,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:519
 msgid "Setting: `load_direnv`"
-msgstr ""
+msgstr "設定：`load_direnv`"
 
 #: src/reference/all-settings.md:520
 msgid "Default: `\"direct\"`"
@@ -1112,7 +1112,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:533
 msgid "Setting: `double_click_in_multibuffer`"
-msgstr ""
+msgstr "設定：`double_click_in_multibuffer`"
 
 #: src/reference/all-settings.md:534
 msgid "Default: `\"select\"`"
@@ -1159,7 +1159,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:559
 msgid "Setting: `drop_target_size`"
-msgstr ""
+msgstr "設定：`drop_target_size`"
 
 #: src/reference/all-settings.md:560
 msgid "Default: `0.2`"
@@ -1293,7 +1293,7 @@ msgstr ""
 #: src/reference/all-settings.md:2576 src/reference/all-settings.md:3327
 #: src/reference/all-settings.md:3360 src/reference/all-settings.md:5088
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/reference/all-settings.md:625
 msgid "\"Go\""
@@ -1842,7 +1842,7 @@ msgstr ""
 #: src/reference/all-settings.md:924 src/reference/all-settings.md:1878
 #: src/reference/all-settings.md:3647
 msgid "Diagnostics"
-msgstr ""
+msgstr "診斷"
 
 #: src/reference/all-settings.md:926
 msgid "Description: Which diagnostic indicators to show in the scrollbar."
@@ -1878,11 +1878,11 @@ msgstr ""
 
 #: src/reference/all-settings.md:958
 msgid "Show only errors and warnings:"
-msgstr ""
+msgstr "只顯示錯誤與警告："
 
 #: src/reference/all-settings.md:966
 msgid "Show only errors, warnings, and information:"
-msgstr ""
+msgstr "只顯示錯誤、警告與資訊："
 
 #: src/reference/all-settings.md:974
 msgid "Axes"
@@ -2589,7 +2589,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:1525
 msgid "Status Bar"
-msgstr ""
+msgstr "狀態條"
 
 #: src/reference/all-settings.md:1527
 msgid ""
@@ -2675,7 +2675,7 @@ msgstr ""
 #: src/reference/all-settings.md:1567 src/reference/all-settings.md:1581
 #: src/reference/all-settings.md:3405
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/reference/all-settings.md:1568 src/reference/all-settings.md:1775
 msgid "\"rust-analyzer\""
@@ -2692,7 +2692,7 @@ msgstr ""
 #: src/reference/all-settings.md:1571 src/reference/all-settings.md:1737
 #: src/reference/all-settings.md:1751 src/reference/all-settings.md:1778
 msgid "\"command\""
-msgstr ""
+msgstr "\"command\""
 
 #: src/reference/all-settings.md:1571
 msgid "\"clippy\" // rust-analyzer.check.command (default: \"check\")\n"
@@ -2710,7 +2710,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:1583
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/reference/all-settings.md:1584
 msgid "\"yaml\""
@@ -2936,7 +2936,7 @@ msgstr ""
 #: src/reference/all-settings.md:1749 src/reference/all-settings.md:1761
 #: src/reference/all-settings.md:1774 src/reference/all-settings.md:5091
 msgid "\"formatter\""
-msgstr ""
+msgstr "\"formatter\""
 
 #: src/reference/all-settings.md:1727 src/reference/all-settings.md:1775
 #: src/reference/all-settings.md:5091
@@ -2955,7 +2955,7 @@ msgstr ""
 #: src/reference/all-settings.md:1736 src/reference/all-settings.md:1750
 #: src/reference/all-settings.md:1777
 msgid "\"external\""
-msgstr ""
+msgstr "\"external\""
 
 #: src/reference/all-settings.md:1737 src/reference/all-settings.md:1778
 msgid "\"sed\""
@@ -2964,7 +2964,7 @@ msgstr ""
 #: src/reference/all-settings.md:1738 src/reference/all-settings.md:1752
 #: src/reference/all-settings.md:1779
 msgid "\"arguments\""
-msgstr ""
+msgstr "\"arguments\""
 
 #: src/reference/all-settings.md:1738 src/reference/all-settings.md:1779
 msgid "\"-e\""
@@ -3002,7 +3002,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:1752
 msgid "\"{buffer_path}\""
-msgstr ""
+msgstr "\"{buffer_path}\""
 
 #: src/reference/all-settings.md:1757
 msgid ""
@@ -3343,7 +3343,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:1984
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/reference/all-settings.md:1986
 msgid "Description: Configuration for git-related features."
@@ -3586,7 +3586,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:2231
 msgid "Helix Mode"
-msgstr ""
+msgstr "Helix 模式"
 
 #: src/reference/all-settings.md:2233
 msgid ""
@@ -3656,7 +3656,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:2276
 msgid "\"Python\""
-msgstr ""
+msgstr "\"Python\""
 
 #: src/reference/all-settings.md:2285
 msgid ""
@@ -3941,19 +3941,19 @@ msgstr ""
 
 #: src/reference/all-settings.md:2473
 msgid "[Go](https://docs.zed.dev/languages/go)"
-msgstr ""
+msgstr "[Go](https://docs.zed.dev/languages/go)"
 
 #: src/reference/all-settings.md:2474
 msgid "[Rust](https://docs.zed.dev/languages/rust)"
-msgstr ""
+msgstr "[Rust](https://docs.zed.dev/languages/rust)"
 
 #: src/reference/all-settings.md:2475
 msgid "[Svelte](https://docs.zed.dev/languages/svelte)"
-msgstr ""
+msgstr "[Svelte](https://docs.zed.dev/languages/svelte)"
 
 #: src/reference/all-settings.md:2476
 msgid "[TypeScript](https://docs.zed.dev/languages/typescript)"
-msgstr ""
+msgstr "[TypeScript](https://docs.zed.dev/languages/typescript)"
 
 #: src/reference/all-settings.md:2478
 msgid ""
@@ -4104,7 +4104,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:2565
 msgid "Languages"
-msgstr ""
+msgstr "語言"
 
 #: src/reference/all-settings.md:2567
 msgid "Description: Configuration for specific languages."
@@ -4112,7 +4112,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:2568
 msgid "Setting: `languages`"
-msgstr ""
+msgstr "設定：`languages`"
 
 #: src/reference/all-settings.md:2573
 msgid ""
@@ -5530,7 +5530,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:3379
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 #: src/reference/all-settings.md:3381
 msgid ""
@@ -5559,7 +5559,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:3394
 msgid "Completions"
-msgstr ""
+msgstr "補全"
 
 #: src/reference/all-settings.md:3396
 msgid "Description: Controls how completions are processed for this language."
@@ -6145,7 +6145,7 @@ msgstr ""
 #: src/reference/all-settings.md:3685 src/reference/all-settings.md:3689
 #: src/reference/all-settings.md:3885 src/reference/all-settings.md:4092
 msgid "\"env\""
-msgstr ""
+msgstr "\"env\""
 
 #: src/reference/all-settings.md:3685 src/reference/all-settings.md:4092
 msgid "\".venv\""
@@ -6366,7 +6366,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:3886
 msgid "\"1\""
-msgstr ""
+msgstr "\"1\""
 
 #: src/reference/all-settings.md:3887
 msgid "\"KEY\""
@@ -6553,7 +6553,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4057 src/reference/all-settings.md:4070
 msgid "\"program\""
-msgstr ""
+msgstr "\"program\""
 
 #: src/reference/all-settings.md:4057
 msgid "\"sh\""
@@ -6573,7 +6573,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4071
 msgid "\"args\""
-msgstr ""
+msgstr "\"args\""
 
 #: src/reference/all-settings.md:4071
 msgid "\"--login\""
@@ -6868,7 +6868,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4284
 msgid "REPL"
-msgstr ""
+msgstr "REPL"
 
 #: src/reference/all-settings.md:4286
 msgid "Description: Repl settings."
@@ -7101,7 +7101,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4441
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/reference/all-settings.md:4443
 msgid "Description: Customize project panel"
@@ -7481,7 +7481,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4789
 msgid "Debugger"
-msgstr ""
+msgstr "除錯器"
 
 #: src/reference/all-settings.md:4791
 msgid "Description: Configuration for debugger panel and settings"
@@ -7511,7 +7511,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4808
 msgid "Git Panel"
-msgstr ""
+msgstr "Git 面板"
 
 #: src/reference/all-settings.md:4810
 msgid "Description: Setting to customize the behavior of the git panel."
@@ -7650,7 +7650,7 @@ msgstr ""
 
 #: src/reference/all-settings.md:4870
 msgid "Outline Panel"
-msgstr ""
+msgstr "大綱面板"
 
 #: src/reference/all-settings.md:4872
 msgid "Description: Customize outline Panel"
