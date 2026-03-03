@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-01-12T09:06:26Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -130,7 +130,7 @@ msgid ""
 msgstr ""
 
 #: src/languages/tailwindcss.md:42
-msgid "Using Tailwind CSS Mode in CSS Files (Preview)"
+msgid "Using Tailwind CSS Mode in CSS Files"
 msgstr ""
 
 #: src/languages/tailwindcss.md:44

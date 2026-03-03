@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -24,59 +24,269 @@ msgstr ""
 "在減少您的干擾而設計，並幫助您打造未來的產品。"
 
 #: src/getting-started.md:5
-msgid "Key Features"
+msgid ""
+"This guide gets you from zero to productive in Zed. You'll learn the "
+"essential commands, configure your environment, and find your way around."
 msgstr ""
 
 #: src/getting-started.md:7
-msgid ""
-"[Smooth Editing](./configuring-zed.md): Built in Rust, Zed is responsive and "
-"intuitive, with a minimalistic aesthetic and pixel-level editing controls."
-msgstr ""
-
-#: src/getting-started.md:8
-msgid ""
-"[Agentic Editing](./ai/overview.md): Use Zed's hosted models to collaborate "
-"with agents directly in an IDE. You can also plug into a third-party agent "
-"or bring your own keys."
+msgid "Quick Start"
 msgstr ""
 
 #: src/getting-started.md:9
-msgid ""
-"[Debugger](./debugger.md): Debug your code in seconds, not hours, with "
-"minimal setup required."
-msgstr ""
-
-#: src/getting-started.md:10
-msgid ""
-"[Remote Development](./remote-development.md): Offload the heavy lifting to "
-"the cloud, so you can focus on writing code."
+msgid "1. Open a Project"
 msgstr ""
 
 #: src/getting-started.md:11
+msgid "Open a folder from the command line:"
+msgstr ""
+
+#: src/getting-started.md:17
 msgid ""
-"[Extensions](./extensions.md): Leverage Zed's extensions to customize how "
-"you work."
-msgstr "[擴充功能](./extensions.md)：利用 Zed 的擴充功能來自訂您的工作方式。"
+"Or use `Cmd+O` (macOS) / `Ctrl+O` (Linux/Windows) to open a folder from "
+"within Zed."
+msgstr ""
 
-#: src/getting-started.md:13
-msgid "Join the Zed Community"
-msgstr "加入 Zed 社群"
+#: src/getting-started.md:19
+msgid "2. Learn the Essential Commands"
+msgstr ""
 
-#: src/getting-started.md:15
+#: src/getting-started.md:21
+msgid "Action"
+msgstr ""
+
+#: src/getting-started.md:21
+msgid "macOS"
+msgstr ""
+
+#: src/getting-started.md:21
+msgid "Linux/Windows"
+msgstr ""
+
+#: src/getting-started.md:23
+msgid "Command palette"
+msgstr ""
+
+#: src/getting-started.md:23
+msgid "`Cmd+Shift+P`"
+msgstr ""
+
+#: src/getting-started.md:23
+msgid "`Ctrl+Shift+P`"
+msgstr ""
+
+#: src/getting-started.md:24
+msgid "Go to file"
+msgstr ""
+
+#: src/getting-started.md:24
+msgid "`Cmd+P`"
+msgstr ""
+
+#: src/getting-started.md:24
+msgid "`Ctrl+P`"
+msgstr ""
+
+#: src/getting-started.md:25
+msgid "Go to symbol"
+msgstr ""
+
+#: src/getting-started.md:25
+msgid "`Cmd+Shift+O`"
+msgstr ""
+
+#: src/getting-started.md:25
+msgid "`Ctrl+Shift+O`"
+msgstr ""
+
+#: src/getting-started.md:26
+msgid "Find in project"
+msgstr ""
+
+#: src/getting-started.md:26
+msgid "`Cmd+Shift+F`"
+msgstr ""
+
+#: src/getting-started.md:26
+msgid "`Ctrl+Shift+F`"
+msgstr ""
+
+#: src/getting-started.md:27
+msgid "Toggle terminal"
+msgstr ""
+
+#: src/getting-started.md:27
+msgid "`` Ctrl+` ``"
+msgstr ""
+
+#: src/getting-started.md:28
+msgid "Open settings"
+msgstr ""
+
+#: src/getting-started.md:28
+msgid "`Cmd+,`"
+msgstr ""
+
+#: src/getting-started.md:28
+msgid "`Ctrl+,`"
+msgstr ""
+
+#: src/getting-started.md:30
+msgid ""
+"The command palette (`Cmd+Shift+P`) is your gateway to every action in Zed. "
+"If you forget a shortcut, search for it there."
+msgstr ""
+
+#: src/getting-started.md:32
+msgid "3. Configure Your Editor"
+msgstr ""
+
+#: src/getting-started.md:34
+msgid ""
+"Open the Settings Editor with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows). "
+"Search for any setting and change it directly."
+msgstr ""
+
+#: src/getting-started.md:36
+msgid "Common first changes:"
+msgstr ""
+
+#: src/getting-started.md:38
+msgid ""
+"**Theme**: Press `Cmd+K Cmd+T` (macOS) or `Ctrl+K Ctrl+T` (Linux/Windows) to "
+"open the theme selector"
+msgstr ""
+
+#: src/getting-started.md:39
+msgid "**Font**: Search for `buffer_font_family` in Settings"
+msgstr ""
+
+#: src/getting-started.md:40
+msgid "**Format on save**: Search for `format_on_save` and set to `on`"
+msgstr ""
+
+#: src/getting-started.md:42
+msgid "4. Set Up Your Language"
+msgstr ""
+
+#: src/getting-started.md:44
+msgid ""
+"Zed includes built-in support for many languages. For others, install the "
+"extension:"
+msgstr ""
+
+#: src/getting-started.md:46
+msgid ""
+"Open Extensions with `Cmd+Shift+X` (macOS) or `Ctrl+Shift+X` (Linux/Windows)"
+msgstr ""
+
+#: src/getting-started.md:47
+msgid "Search for your language"
+msgstr ""
+
+#: src/getting-started.md:48
+msgid "Click Install"
+msgstr ""
+
+#: src/getting-started.md:50
+msgid ""
+"See [Languages](./languages.md) for language-specific setup instructions."
+msgstr ""
+
+#: src/getting-started.md:52
+msgid "5. Try AI Features"
+msgstr ""
+
+#: src/getting-started.md:54
+msgid ""
+"Zed includes built-in AI assistance. Open the Agent Panel with `Cmd+Shift+A` "
+"(macOS) or `Ctrl+Shift+A` (Linux/Windows) to start a conversation, or use "
+"`Cmd+Enter` (macOS) / `Ctrl+Enter` (Linux/Windows) for inline assistance."
+msgstr ""
+
+#: src/getting-started.md:56
+msgid ""
+"See [AI Overview](./ai/overview.md) to configure providers and learn what's "
+"possible."
+msgstr ""
+
+#: src/getting-started.md:58
+msgid "Coming from Another Editor?"
+msgstr ""
+
+#: src/getting-started.md:60
+msgid "We have dedicated guides for switching from other editors:"
+msgstr ""
+
+#: src/getting-started.md:62
+msgid ""
+"[VS Code](./migrate/vs-code.md) — Import settings, map keybindings, find "
+"equivalent features"
+msgstr ""
+
+#: src/getting-started.md:63
+msgid ""
+"[IntelliJ IDEA](./migrate/intellij.md) — Adapt to Zed's approach to "
+"navigation and refactoring"
+msgstr ""
+
+#: src/getting-started.md:64
+msgid "[PyCharm](./migrate/pycharm.md) — Set up Python development in Zed"
+msgstr ""
+
+#: src/getting-started.md:65
+msgid ""
+"[WebStorm](./migrate/webstorm.md) — Configure JavaScript/TypeScript workflows"
+msgstr ""
+
+#: src/getting-started.md:66
+msgid "[RustRover](./migrate/rustrover.md) — Rust development in Zed"
+msgstr ""
+
+#: src/getting-started.md:68
+msgid "You can also enable familiar keybindings:"
+msgstr ""
+
+#: src/getting-started.md:70
+msgid "**Vim**: Enable `vim_mode` in settings. See [Vim Mode](./vim.md)."
+msgstr ""
+
+#: src/getting-started.md:71
+msgid ""
+"**Helix**: Enable `helix_mode` in settings. See [Helix Mode](./helix.md)."
+msgstr ""
+
+#: src/getting-started.md:73
+msgid "Join the Community"
+msgstr ""
+
+#: src/getting-started.md:75
 msgid ""
 "Zed is proudly open source, and we get better with every contribution. Join "
 "us on GitHub or in Discord to contribute code, report bugs, or suggest "
 "features."
 msgstr ""
 
-#: src/getting-started.md:17
-msgid "[Join Discord](https://discord.com/invite/zedindustries)"
-msgstr "[加入 Discord](https://discord.com/invite/zedindustries)"
+#: src/getting-started.md:77
+msgid "[Discord](https://discord.com/invite/zedindustries)"
+msgstr ""
 
-#: src/getting-started.md:18
+#: src/getting-started.md:78
 msgid "[GitHub Discussions](https://github.com/zed-industries/zed/discussions)"
 msgstr ""
 
-#: src/getting-started.md:19
+#: src/getting-started.md:79
 msgid "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
 msgstr "[Zed Reddit](https://www.reddit.com/r/ZedEditor)"
+
+#~ msgid ""
+#~ "[Extensions](./extensions.md): Leverage Zed's extensions to customize how "
+#~ "you work."
+#~ msgstr ""
+#~ "[擴充功能](./extensions.md)：利用 Zed 的擴充功能來自訂您的工作方式。"
+
+#~ msgid "Join the Zed Community"
+#~ msgstr "加入 Zed 社群"
+
+#~ msgid "[Join Discord](https://discord.com/invite/zedindustries)"
+#~ msgstr "[加入 Discord](https://discord.com/invite/zedindustries)"

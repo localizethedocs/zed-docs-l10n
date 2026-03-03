@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,8 +21,8 @@ msgstr "標準安裝"
 
 #: src/linux.md:5
 msgid ""
-"For most people we recommend using the script on the [download](https://zed."
-"dev/download) page to install Zed:"
+"The installation script on the [download](https://zed.dev/download) page is "
+"the fastest way to install Zed:"
 msgstr ""
 
 #: src/linux.md:11

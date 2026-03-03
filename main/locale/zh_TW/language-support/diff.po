@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -32,10 +32,10 @@ msgstr "組態"
 #: src/languages/diff.md:9
 msgid ""
 "Zed will not attempt to format diff files and has "
-"[`remove_trailing_whitespace_on_save`](https://zed.dev/docs/configuring-"
-"zed#remove-trailing-whitespace-on-save) and [`ensure-final-newline-on-save`]"
-"(https://zed.dev/docs/configuring-zed#ensure-final-newline-on-save) set to "
-"false."
+"[`remove_trailing_whitespace_on_save`](https://zed.dev/docs/reference/all-"
+"settings#remove-trailing-whitespace-on-save) and [`ensure-final-newline-on-"
+"save`](https://zed.dev/docs/reference/all-settings#ensure-final-newline-on-"
+"save) set to false."
 msgstr ""
 
 #: src/languages/diff.md:11

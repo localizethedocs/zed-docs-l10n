@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,8 +17,8 @@ msgstr "工具"
 
 #: src/ai/tools.md:3
 msgid ""
-"Zed's built-in agent has access to a variety of tools that allow it to "
-"interact with your codebase and perform tasks."
+"Zed's built-in agent has access to these tools for reading, searching, and "
+"editing your codebase."
 msgstr ""
 
 #: src/ai/tools.md:5
@@ -169,20 +169,38 @@ msgid "Edits files by replacing specific text with new content."
 msgstr ""
 
 #: src/ai/tools.md:67
-msgid "`move_path`"
+msgid "`restore_file_from_disk`"
 msgstr ""
 
 #: src/ai/tools.md:69
+msgid "Reloads a file from disk, discarding any unsaved changes in the buffer."
+msgstr ""
+
+#: src/ai/tools.md:71
+msgid "`save_file`"
+msgstr ""
+
+#: src/ai/tools.md:73
+msgid ""
+"Saves a buffer's current contents to disk, preserving unsaved changes before "
+"the agent modifies the file."
+msgstr ""
+
+#: src/ai/tools.md:75
+msgid "`move_path`"
+msgstr ""
+
+#: src/ai/tools.md:77
 msgid ""
 "Moves or renames a file or directory in the project, performing a rename if "
 "only the filename differs."
 msgstr ""
 
-#: src/ai/tools.md:71
+#: src/ai/tools.md:79
 msgid "`terminal`"
 msgstr ""
 
-#: src/ai/tools.md:73
+#: src/ai/tools.md:81
 msgid ""
 "Executes shell commands and returns the combined output, creating a new "
 "shell process for each invocation."

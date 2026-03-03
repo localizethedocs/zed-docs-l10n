@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,8 +34,8 @@ msgstr ""
 #: src/languages/xml.md:9
 msgid ""
 "If you have additional file extensions that are not being automatically "
-"recognized as XML just add them to [file_types](../configuring-zed.md#file-"
-"types) in your Zed settings:"
+"recognized as XML just add them to [file_types](../reference/all-settings."
+"md#file-types) in your Zed settings:"
 msgstr ""
 
 #: src/languages/xml.md:12

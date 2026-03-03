@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -17,17 +17,16 @@ msgstr ""
 
 #: src/ai/rules.md:3
 msgid ""
-"A rule is essentially a prompt that is inserted at the beginning of each "
-"interaction with the Agent. Currently, Zed supports adding rules through "
-"files inserted directly in the worktree or through the Rules Library, which "
-"allows you to store multiple rules for constant or on-demand usage."
+"Rules are prompts inserted at the beginning of each agent interaction. Add "
+"them via files in your worktree (`.rules`, etc.) or through the Rules "
+"Library for reuse across projects and threads."
 msgstr ""
 
-#: src/ai/rules.md:6
+#: src/ai/rules.md:5
 msgid "`.rules` files"
 msgstr ""
 
-#: src/ai/rules.md:8
+#: src/ai/rules.md:7
 msgid ""
 "Zed supports including `.rules` files at the top level of worktrees, and "
 "they act as project-level instructions that are included in all of your "
@@ -36,165 +35,158 @@ msgid ""
 "which matches in this list will be used:"
 msgstr ""
 
-#: src/ai/rules.md:11
+#: src/ai/rules.md:10
 msgid "`.rules`"
 msgstr ""
 
-#: src/ai/rules.md:12
+#: src/ai/rules.md:11
 msgid "`.cursorrules`"
 msgstr ""
 
-#: src/ai/rules.md:13
+#: src/ai/rules.md:12
 msgid "`.windsurfrules`"
 msgstr ""
 
-#: src/ai/rules.md:14
+#: src/ai/rules.md:13
 msgid "`.clinerules`"
 msgstr ""
 
-#: src/ai/rules.md:15
+#: src/ai/rules.md:14
 msgid "`.github/copilot-instructions.md`"
 msgstr ""
 
-#: src/ai/rules.md:16
+#: src/ai/rules.md:15
 msgid "`AGENT.md`"
 msgstr ""
 
-#: src/ai/rules.md:17
+#: src/ai/rules.md:16
 msgid "`AGENTS.md`"
 msgstr ""
 
-#: src/ai/rules.md:18
+#: src/ai/rules.md:17
 msgid "`CLAUDE.md`"
 msgstr ""
 
-#: src/ai/rules.md:19
+#: src/ai/rules.md:18
 msgid "`GEMINI.md`"
 msgstr ""
 
-#: src/ai/rules.md:21
+#: src/ai/rules.md:20
 msgid "Rules Library"
 msgstr ""
 
-#: src/ai/rules.md:23
+#: src/ai/rules.md:22
 msgid ""
-"The Rules Library is an interface for writing and managing rules. Like other "
-"text-driven UIs in Zed, it is a full editor with syntax highlighting, "
-"keyboard shortcuts, etc."
+"The Rules Library is an interface for writing and managing rules. It's a "
+"full editor with syntax highlighting and all standard keybindings."
 msgstr ""
 
-#: src/ai/rules.md:25
+#: src/ai/rules.md:24
 msgid ""
 "You can use the inline assistant right in the rules editor, allowing you to "
 "automate and rewrite rules."
 msgstr ""
 
-#: src/ai/rules.md:27
+#: src/ai/rules.md:26
 msgid "Opening the Rules Library"
 msgstr ""
 
-#: src/ai/rules.md:29
+#: src/ai/rules.md:28
 msgid "Open the Agent Panel."
 msgstr ""
 
-#: src/ai/rules.md:30
+#: src/ai/rules.md:29
 msgid "Click on the Agent menu (`...`) in the top right corner."
 msgstr ""
 
-#: src/ai/rules.md:31
+#: src/ai/rules.md:30
 msgid "Select `Rules...` from the dropdown."
 msgstr ""
 
-#: src/ai/rules.md:33
+#: src/ai/rules.md:32
 msgid ""
 "You can also reach it by running <code class=\"hljs\">agent: open rules "
 "library</code> in the command palette or through the <kbd "
 "class=\"keybinding\">cmd-alt-l|ctrl-alt-l</kbd> keybinding."
 msgstr ""
 
-#: src/ai/rules.md:35
+#: src/ai/rules.md:34
 msgid "Managing Rules"
 msgstr ""
 
-#: src/ai/rules.md:37
+#: src/ai/rules.md:36
 msgid ""
 "Once a rules file is selected, you can edit it directly in the built-in "
 "editor. Its title can be changed from the editor title bar as well."
 msgstr ""
 
-#: src/ai/rules.md:39
+#: src/ai/rules.md:38
 msgid ""
 "Rules can be duplicated, deleted, or added to the default rules using the "
 "buttons in the rules editor."
 msgstr ""
 
-#: src/ai/rules.md:41
+#: src/ai/rules.md:40
 msgid "Creating Rules"
 msgstr ""
 
-#: src/ai/rules.md:43
+#: src/ai/rules.md:42
 msgid ""
 "To create a rule file, simply open the `Rules Library` and click the `+` "
 "button. Rules files are stored locally and can be accessed from the library "
 "at any time."
 msgstr ""
 
-#: src/ai/rules.md:45
-msgid ""
-"Having a series of rules files specifically tailored to prompt engineering "
-"can also help you write consistent and effective rules."
+#: src/ai/rules.md:44
+msgid "For guidance on writing effective rules:"
 msgstr ""
 
-#: src/ai/rules.md:47
-msgid "Here are a couple of helpful resources for writing better rules:"
-msgstr ""
-
-#: src/ai/rules.md:49
+#: src/ai/rules.md:46
 msgid ""
 "[Anthropic: Prompt Engineering](https://platform.claude.com/docs/en/build-"
 "with-claude/prompt-engineering/overview)"
 msgstr ""
 
-#: src/ai/rules.md:50
+#: src/ai/rules.md:47
 msgid ""
 "[OpenAI: Prompt Engineering](https://platform.openai.com/docs/guides/prompt-"
 "engineering)"
 msgstr ""
 
-#: src/ai/rules.md:52
+#: src/ai/rules.md:49
 msgid "Editing the Default Rules"
 msgstr ""
 
-#: src/ai/rules.md:54
+#: src/ai/rules.md:51
 msgid ""
 "Zed allows you to customize the default rules used when interacting with "
 "LLMs. Or to be more precise, it uses a series of rules that are combined to "
 "form the default rules."
 msgstr ""
 
-#: src/ai/rules.md:57
+#: src/ai/rules.md:54
 msgid ""
 "Default rules are included in the context of every new thread automatically. "
 "You can also manually add other rules (that are not flagged as default) as "
 "context using the `@rule` command."
 msgstr ""
 
-#: src/ai/rules.md:60
+#: src/ai/rules.md:57
 msgid "Migrating from Prompt Library"
 msgstr ""
 
-#: src/ai/rules.md:62
+#: src/ai/rules.md:59
 msgid ""
 "Previously, the Rules Library was called the \"Prompt Library\". The new "
 "rules system replaces the Prompt Library except in a few specific cases, "
 "which are outlined below."
 msgstr ""
 
-#: src/ai/rules.md:65
+#: src/ai/rules.md:62
 msgid "Slash Commands in Rules"
 msgstr ""
 
-#: src/ai/rules.md:67
+#: src/ai/rules.md:64
 msgid ""
 "Previously, it was possible to use slash commands (now @-mentions) in custom "
 "prompts (now rules). There is currently no support for using @-mentions in "
@@ -203,11 +195,11 @@ msgid ""
 "(./text-threads.md#slash-commands-in-rules) for more information."
 msgstr ""
 
-#: src/ai/rules.md:71
+#: src/ai/rules.md:68
 msgid "Prompt templates"
 msgstr ""
 
-#: src/ai/rules.md:73
+#: src/ai/rules.md:70
 msgid ""
 "Zed maintains backwards compatibility with its original template system, "
 "which allows you to customize prompts used throughout the application, "

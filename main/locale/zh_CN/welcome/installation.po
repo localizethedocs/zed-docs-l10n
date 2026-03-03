@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -19,7 +19,7 @@ msgstr ""
 msgid "Download Zed"
 msgstr ""
 
-#: src/installation.md:5 src/installation.md:53
+#: src/installation.md:5 src/installation.md:63
 msgid "macOS"
 msgstr ""
 
@@ -39,7 +39,7 @@ msgstr ""
 msgid "As well as Zed preview:"
 msgstr ""
 
-#: src/installation.md:21 src/installation.md:92
+#: src/installation.md:21 src/installation.md:102
 msgid "Windows"
 msgstr ""
 
@@ -47,7 +47,7 @@ msgstr ""
 msgid "Additionally, you can install Zed using winget:"
 msgstr ""
 
-#: src/installation.md:31 src/installation.md:82
+#: src/installation.md:31 src/installation.md:92
 msgid "Linux"
 msgstr ""
 
@@ -59,21 +59,39 @@ msgstr ""
 
 #: src/installation.md:39
 msgid ""
-"If you'd like to help us test our new features, you can also install our "
-"preview build:"
+"You can now optionally specify a **version** of Zed to install using the "
+"`ZED_VERSION` environment variable:"
 msgstr ""
 
 #: src/installation.md:42
+msgid "# Install the latest stable version (default)\n"
+msgstr ""
+
+#: src/installation.md:44
+msgid "# Install a specific version\n"
+msgstr ""
+
+#: src/installation.md:46
+msgid "0.216.0"
+msgstr ""
+
+#: src/installation.md:49
+msgid ""
+"To install the preview build, which receives updates about a week ahead of "
+"stable:"
+msgstr ""
+
+#: src/installation.md:52
 msgid "preview"
 msgstr ""
 
-#: src/installation.md:45
+#: src/installation.md:55
 msgid ""
 "This script supports `x86_64` and `AArch64`, as well as common Linux "
 "distributions: Ubuntu, Arch, Debian, RedHat, CentOS, Fedora, and more."
 msgstr ""
 
-#: src/installation.md:47
+#: src/installation.md:57
 msgid ""
 "If Zed is installed using this installation script, it can be uninstalled at "
 "any time by running the shell command `zed --uninstall`. The shell will then "
@@ -82,116 +100,116 @@ msgid ""
 "uninstalled."
 msgstr ""
 
-#: src/installation.md:49
+#: src/installation.md:59
 msgid ""
 "If this script is insufficient for your use case, you run into problems "
 "running Zed, or there are errors in uninstalling Zed, please see our [Linux-"
 "specific documentation](./linux.md)."
 msgstr ""
 
-#: src/installation.md:51
+#: src/installation.md:61
 msgid "System Requirements"
 msgstr ""
 
-#: src/installation.md:55
+#: src/installation.md:65
 msgid "Zed supports the follow macOS releases:"
 msgstr ""
 
-#: src/installation.md:57 src/installation.md:95
+#: src/installation.md:67 src/installation.md:105
 msgid "Version"
 msgstr ""
 
-#: src/installation.md:57
+#: src/installation.md:67
 msgid "Codename"
 msgstr ""
 
-#: src/installation.md:57
+#: src/installation.md:67
 msgid "Apple Status"
 msgstr ""
 
-#: src/installation.md:57 src/installation.md:95
+#: src/installation.md:67 src/installation.md:105
 msgid "Zed Status"
 msgstr ""
 
-#: src/installation.md:59
+#: src/installation.md:69
 msgid "macOS 26.x"
 msgstr ""
 
-#: src/installation.md:59
+#: src/installation.md:69
 msgid "Tahoe"
 msgstr ""
 
-#: src/installation.md:59 src/installation.md:60 src/installation.md:61
-#: src/installation.md:62 src/installation.md:63 src/installation.md:97
-#: src/installation.md:98
+#: src/installation.md:69 src/installation.md:70 src/installation.md:71
+#: src/installation.md:72 src/installation.md:73 src/installation.md:107
+#: src/installation.md:108
 msgid "Supported"
 msgstr ""
 
-#: src/installation.md:60
+#: src/installation.md:70
 msgid "macOS 15.x"
 msgstr ""
 
-#: src/installation.md:60
+#: src/installation.md:70
 msgid "Sequoia"
 msgstr ""
 
-#: src/installation.md:61
+#: src/installation.md:71
 msgid "macOS 14.x"
 msgstr ""
 
-#: src/installation.md:61
+#: src/installation.md:71
 msgid "Sonoma"
 msgstr ""
 
-#: src/installation.md:62
+#: src/installation.md:72
 msgid "macOS 13.x"
 msgstr ""
 
-#: src/installation.md:62
+#: src/installation.md:72
 msgid "Ventura"
 msgstr ""
 
-#: src/installation.md:63
+#: src/installation.md:73
 msgid "macOS 12.x"
 msgstr ""
 
-#: src/installation.md:63
+#: src/installation.md:73
 msgid "Monterey"
 msgstr ""
 
-#: src/installation.md:63
+#: src/installation.md:73
 msgid "EOL 2024-09-16"
 msgstr ""
 
-#: src/installation.md:64
+#: src/installation.md:74
 msgid "macOS 11.x"
 msgstr ""
 
-#: src/installation.md:64
+#: src/installation.md:74
 msgid "Big Sur"
 msgstr ""
 
-#: src/installation.md:64
+#: src/installation.md:74
 msgid "EOL 2023-09-26"
 msgstr ""
 
-#: src/installation.md:64 src/installation.md:65
+#: src/installation.md:74 src/installation.md:75
 msgid "Partially Supported"
 msgstr ""
 
-#: src/installation.md:65
+#: src/installation.md:75
 msgid "macOS 10.15.x"
 msgstr ""
 
-#: src/installation.md:65
+#: src/installation.md:75
 msgid "Catalina"
 msgstr ""
 
-#: src/installation.md:65
+#: src/installation.md:75
 msgid "EOL 2022-09-12"
 msgstr ""
 
-#: src/installation.md:67
+#: src/installation.md:77
 msgid ""
 "The macOS releases labelled \"Partially Supported\" (Big Sur and Catalina) "
 "do not support screen sharing via Zed Collaboration. These features use the "
@@ -200,120 +218,120 @@ msgid ""
 "available on macOS 12 (Monterey) and newer."
 msgstr ""
 
-#: src/installation.md:69
+#: src/installation.md:79
 msgid "Mac Hardware"
 msgstr ""
 
-#: src/installation.md:71
+#: src/installation.md:81
 msgid ""
 "Zed supports machines with Intel (x86_64) or Apple (aarch64) processors that "
 "meet the above macOS requirements:"
 msgstr ""
 
-#: src/installation.md:73
+#: src/installation.md:83
 msgid "MacBook Pro (Early 2015 and newer)"
 msgstr ""
 
-#: src/installation.md:74
+#: src/installation.md:84
 msgid "MacBook Air (Early 2015 and newer)"
 msgstr ""
 
-#: src/installation.md:75
+#: src/installation.md:85
 msgid "MacBook (Early 2016 and newer)"
 msgstr ""
 
-#: src/installation.md:76
+#: src/installation.md:86
 msgid "Mac Mini (Late 2014 and newer)"
 msgstr ""
 
-#: src/installation.md:77
+#: src/installation.md:87
 msgid "Mac Pro (Late 2013 or newer)"
 msgstr ""
 
-#: src/installation.md:78
+#: src/installation.md:88
 msgid "iMac (Late 2015 and newer)"
 msgstr ""
 
-#: src/installation.md:79
+#: src/installation.md:89
 msgid "iMac Pro (all models)"
 msgstr ""
 
-#: src/installation.md:80
+#: src/installation.md:90
 msgid "Mac Studio (all models)"
 msgstr ""
 
-#: src/installation.md:84
+#: src/installation.md:94
 msgid ""
 "Zed supports 64-bit Intel/AMD (x86_64) and 64-bit Arm (aarch64) processors."
 msgstr ""
 
-#: src/installation.md:86
+#: src/installation.md:96
 msgid "Zed requires a Vulkan 1.3 driver and the following desktop portals:"
 msgstr ""
 
-#: src/installation.md:88
+#: src/installation.md:98
 msgid "`org.freedesktop.portal.FileChooser`"
 msgstr ""
 
-#: src/installation.md:89
+#: src/installation.md:99
 msgid "`org.freedesktop.portal.OpenURI`"
 msgstr ""
 
-#: src/installation.md:90
+#: src/installation.md:100
 msgid "`org.freedesktop.portal.Secret` or `org.freedesktop.Secrets`"
 msgstr ""
 
-#: src/installation.md:94
+#: src/installation.md:104
 msgid "Zed supports the following Windows releases:"
 msgstr ""
 
-#: src/installation.md:97
+#: src/installation.md:107
 msgid "Windows 11, version 22H2 and later"
 msgstr ""
 
-#: src/installation.md:98
+#: src/installation.md:108
 msgid "Windows 10, version 1903 and later"
 msgstr ""
 
-#: src/installation.md:100
+#: src/installation.md:110
 msgid "A 64-bit operating system is required to run Zed."
 msgstr ""
 
-#: src/installation.md:102
+#: src/installation.md:112
 msgid "Windows Hardware"
 msgstr ""
 
-#: src/installation.md:104
+#: src/installation.md:114
 msgid ""
 "Zed supports machines with x64 (Intel, AMD) or Arm64 (Qualcomm) processors "
 "that meet the following requirements:"
 msgstr ""
 
-#: src/installation.md:106
+#: src/installation.md:116
 msgid "Graphics: A GPU that supports DirectX 11 (most PCs from 2012+)."
 msgstr ""
 
-#: src/installation.md:107
+#: src/installation.md:117
 msgid ""
 "Driver: Current NVIDIA/AMD/Intel/Qualcomm driver (not the Microsoft Basic "
 "Display Adapter)."
 msgstr ""
 
-#: src/installation.md:109
+#: src/installation.md:119
 msgid "FreeBSD"
 msgstr ""
 
-#: src/installation.md:111
+#: src/installation.md:121
 msgid ""
 "Not yet available as an official download. Can be built [from source](./"
 "development/freebsd.md)."
 msgstr ""
 
-#: src/installation.md:113
+#: src/installation.md:123
 msgid "Web"
 msgstr ""
 
-#: src/installation.md:115
+#: src/installation.md:125
 msgid ""
 "Not supported at this time. See our [Platform Support issue](https://github."
 "com/zed-industries/zed/issues/5391)."

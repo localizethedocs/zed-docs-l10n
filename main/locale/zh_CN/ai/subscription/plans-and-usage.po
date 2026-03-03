@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,9 +27,8 @@ msgstr ""
 
 #: src/ai/plans-and-usage.md:7
 msgid ""
-"Please note that if you’re interested in just using Zed as the world’s "
-"fastest editor, with no AI or subscription features, you can always do so "
-"for free, without [authentication](../authentication.md)."
+"Zed works without AI features or a subscription. No [authentication](../"
+"authentication.md) required for the editor itself."
 msgstr ""
 
 #: src/ai/plans-and-usage.md:9

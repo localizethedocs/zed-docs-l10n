@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,10 +29,9 @@ msgstr ""
 
 #: src/ai/billing.md:8
 msgid ""
-"You can access billing information and settings at [dashboard.zed.dev/"
-"account](https://dashboard.zed.dev/account). Most of the page embeds "
-"information from our invoicing/metering partner, Orb (we're planning on a "
-"more native experience soon!)."
+"Access billing information and settings at [dashboard.zed.dev/account]"
+"(https://dashboard.zed.dev/account). This page embeds data from Orb, our "
+"invoicing and metering partner."
 msgstr ""
 
 #: src/ai/billing.md:11
@@ -118,9 +117,7 @@ msgid ""
 msgstr ""
 
 #: src/ai/billing.md:39
-msgid ""
-"We'll be updating our account page shortly to allow for self-service "
-"updates. Stay tuned!"
+msgid "Self-service billing updates will be available in a future release."
 msgstr ""
 
 #: src/ai/billing.md:41

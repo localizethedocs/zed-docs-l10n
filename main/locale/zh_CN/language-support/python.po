@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-01-05T09:08:06Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -141,7 +141,7 @@ msgid ""
 "Zed detects that your project is using a [virtual environment](#virtual-"
 "environments), it will be activated automatically in newly-created "
 "terminals. You can configure this behavior with the [`detect_venv`](../"
-"configuring-zed.md#terminal-detect_venv) setting."
+"reference/all-settings.md#terminal-detect_venv) setting."
 msgstr ""
 
 #: src/languages/python.md:68
@@ -845,14 +845,13 @@ msgid ""
 msgstr ""
 
 #: src/languages/python.md:363
-msgid "Troubleshoot and Maintain a Productive Python Setup"
+msgid "Troubleshooting"
 msgstr ""
 
 #: src/languages/python.md:365
 msgid ""
-"Zed is designed to minimize configuration overhead, but occasional issues "
-"can still arise—especially around environments, language servers, or "
-"tooling. Here's how to keep your Python setup working smoothly."
+"Issues with Python in Zed typically involve virtual environments, language "
+"servers, or tooling configuration."
 msgstr ""
 
 #: src/languages/python.md:367

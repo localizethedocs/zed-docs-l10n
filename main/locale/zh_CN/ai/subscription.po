@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,9 +22,8 @@ msgstr ""
 
 #: src/ai/subscription.md:5
 msgid ""
-"Using [your own API keys](./llm-providers.md), and [external agents](./"
-"external-agents.md), is _free_ — you do not need to subscribe to a Zed plan "
-"to use AI features."
+"You can use [your own API keys](./llm-providers.md) or [external agents](./"
+"external-agents.md) without a Zed subscription."
 msgstr ""
 
 #: src/ai/subscription.md:7
