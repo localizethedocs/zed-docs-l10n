@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,7 +16,9 @@ msgid "Agent Settings"
 msgstr ""
 
 #: src/ai/agent-settings.md:3
-msgid "Learn about all the settings you can customize in Zed's Agent Panel."
+msgid ""
+"Settings for Zed's Agent Panel, including model selection, UI preferences, "
+"and tool permissions."
 msgstr ""
 
 #: src/ai/agent-settings.md:5
@@ -42,8 +44,8 @@ msgstr ""
 #: src/ai/agent-settings.md:141 src/ai/agent-settings.md:153
 #: src/ai/agent-settings.md:168 src/ai/agent-settings.md:181
 #: src/ai/agent-settings.md:196 src/ai/agent-settings.md:209
-#: src/ai/agent-settings.md:223 src/ai/agent-settings.md:236
-#: src/ai/agent-settings.md:249 src/ai/agent-settings.md:262
+#: src/ai/agent-settings.md:222 src/ai/agent-settings.md:235
+#: src/ai/agent-settings.md:248 src/ai/agent-settings.md:261
 msgid "\"agent\""
 msgstr ""
 
@@ -347,20 +349,19 @@ msgstr ""
 
 #: src/ai/agent-settings.md:217
 msgid ""
-"Make a modifier (`cmd` on macOS, `ctrl` on Linux) required to send messages. "
-"This is encouraged for more thoughtful prompt crafting. The default value is "
-"`false`."
+"Require a modifier (`cmd` on macOS, `ctrl` on Linux) to send messages. "
+"Prevents accidental sends while editing. The default value is `false`."
 msgstr ""
 
-#: src/ai/agent-settings.md:224
+#: src/ai/agent-settings.md:223
 msgid "\"use_modifier_to_send\""
 msgstr ""
 
-#: src/ai/agent-settings.md:229
+#: src/ai/agent-settings.md:228
 msgid "Edit Card"
 msgstr ""
 
-#: src/ai/agent-settings.md:231
+#: src/ai/agent-settings.md:230
 msgid ""
 "Use the `expand_edit_card` setting to control whether edit cards show the "
 "full diff in the Agent Panel. It is set to `true` by default, but if set to "
@@ -368,15 +369,15 @@ msgid ""
 "click to be expanded."
 msgstr ""
 
-#: src/ai/agent-settings.md:237
+#: src/ai/agent-settings.md:236
 msgid "\"expand_edit_card\""
 msgstr ""
 
-#: src/ai/agent-settings.md:242
+#: src/ai/agent-settings.md:241
 msgid "Terminal Card"
 msgstr ""
 
-#: src/ai/agent-settings.md:244
+#: src/ai/agent-settings.md:243
 msgid ""
 "Use the `expand_terminal_card` setting to control whether terminal cards "
 "show the command output in the Agent Panel. It is set to `true` by default, "
@@ -384,21 +385,21 @@ msgid ""
 "is running, requiring a click to be expanded."
 msgstr ""
 
-#: src/ai/agent-settings.md:250
+#: src/ai/agent-settings.md:249
 msgid "\"expand_terminal_card\""
 msgstr ""
 
-#: src/ai/agent-settings.md:255
+#: src/ai/agent-settings.md:254
 msgid "Feedback Controls"
 msgstr ""
 
-#: src/ai/agent-settings.md:257
+#: src/ai/agent-settings.md:256
 msgid ""
 "Control whether to display the thumbs up/down buttons at the bottom of each "
 "agent response, allowing you to give Zed feedback about the agent's "
 "performance. The default value is `true`."
 msgstr ""
 
-#: src/ai/agent-settings.md:263
+#: src/ai/agent-settings.md:262
 msgid "\"enable_feedback\""
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -1439,8 +1439,8 @@ msgstr ""
 
 #: src/migrate/rustrover.md:496
 msgid ""
-"[Configuring Zed](../configuring-zed.md) — Customize settings, themes, and "
-"editor behavior"
+"[All Settings](../reference/all-settings.md) — Customize settings, themes, "
+"and editor behavior"
 msgstr ""
 
 #: src/migrate/rustrover.md:497
