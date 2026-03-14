@@ -225,7 +225,7 @@ endif()
 #]============================================================]
 
 if     (VERSION MATCHES "^(main)$")
-    set(VERSION_OF_RUST                 "1.91")
+    set(VERSION_OF_RUST                 "1.92")
     set(VERSION_OF_DASEL                "2")
     set(VERSION_OF_MDBOOK               "0.4.40")
     set(VERSION_OF_MDBOOK_I18N_HELPERS  "^0.3")

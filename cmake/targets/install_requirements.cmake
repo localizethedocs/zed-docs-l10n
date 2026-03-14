@@ -250,6 +250,12 @@ execute_process(
             conda-forge::alsa-lib
             conda-forge::libxkbcommon
             conda-forge::pkg-config
+            conda-forge::glib
+            conda-forge::zlib
+            conda-forge::libva
+            conda-forge::fontconfig
+            conda-forge::freetype
+            conda-forge::expat
             --channel conda-forge
             --prefix ${PROJ_CONDA_DIR}
             --yes
@@ -401,23 +407,6 @@ else()
 endif()
 message("")
 restore_cmake_message_indent()
-
-
-message(STATUS "Verifying X11 pkg-config files in conda environment...")
-set(X11_PC_FILE "${PROJ_CONDA_DIR}/lib/pkgconfig/x11.pc")
-if (EXISTS "${X11_PC_FILE}")
-    remove_cmake_message_indent()
-    message("")
-    message("Found: ${X11_PC_FILE}")
-    message("")
-    restore_cmake_message_indent()
-else()
-    remove_cmake_message_indent()
-    message("")
-    message(FATAL_ERROR "Missing: ${X11_PC_FILE}\nPlease check conda installation of xorg-libx11.")
-    message("")
-    restore_cmake_message_indent()
-endif()
 
 
 message(STATUS "Running 'cargo build' command to compile the 'zed' crate...")
