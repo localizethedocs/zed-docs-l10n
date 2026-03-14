@@ -1,77 +1,127 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/collaboration/overview.md:1
+#: src/collaboration/overview.md:3
 msgid "Collaboration"
 msgstr ""
 
-#: src/collaboration/overview.md:3
+#: src/collaboration/overview.md:5
 msgid ""
-"At Zed, we believe that great things are built by great people working "
-"together. We have designed Zed to help individuals work faster and help "
-"teams of people work together more effectively."
+"Zed supports real-time multiplayer editing. Multiple people can work in the "
+"same project simultaneously, seeing each other's cursors and edits as they "
+"happen."
 msgstr ""
 
-#: src/collaboration/overview.md:6
+#: src/collaboration/overview.md:7
 msgid ""
-"In Zed, all collaboration happens in the collaboration panel, which can be "
-"opened via <kbd class=\"keybinding\">cmd-shift-c|ctrl-shift-c</kbd> or "
-"`collab panel: toggle focus` from the command palette."
+"Open the Collaboration Panel with <kbd class=\"keybinding\">cmd-shift-c|ctrl-"
+"shift-c</kbd>. You'll need to [sign in](../authentication.md#signing-in) to "
+"access collaboration features."
 msgstr ""
 
-#: src/collaboration/overview.md:8
+#: src/collaboration/overview.md:9
+msgid "Collaboration Panel"
+msgstr ""
+
+#: src/collaboration/overview.md:11
+msgid "The Collaboration Panel has two sections:"
+msgstr ""
+
+#: src/collaboration/overview.md:13
 msgid ""
-"You will need to [sign in](../authentication.md#signing-in) in order to "
-"access features within the collaboration panel."
-msgstr ""
-
-#: src/collaboration/overview.md:10
-msgid "Collaboration panel"
-msgstr ""
-
-#: src/collaboration/overview.md:12
-msgid "The collaboration panel is broken down into two sections:"
+"[Channels](./channels.md): Persistent project rooms for team collaboration, "
+"with shared projects and voice chat."
 msgstr ""
 
 #: src/collaboration/overview.md:14
 msgid ""
-"[Channels](./channels.md): Ongoing project rooms where team members can "
-"share projects, collaborate on code, and maintain ambient awareness of what "
-"everyone is working on."
-msgstr ""
-
-#: src/collaboration/overview.md:15
-msgid ""
 "[Contacts and Private Calls](./contacts-and-private-calls.md): Your contacts "
-"list for ad-hoc private collaboration."
+"list for ad-hoc private sessions."
 msgstr ""
 
-#: src/collaboration/overview.md:19
+#: src/collaboration/overview.md:16
 msgid ""
-"Note: Only collaborate with people that you trust. Since sharing a project "
-"gives them access to your local file system, you should not share projects "
-"with people you do not trust; they could potentially do some nasty things."
+"**Warning:** Sharing a project gives collaborators access to your local file "
+"system within that project. Only collaborate with people you trust."
+msgstr ""
+
+#: src/collaboration/overview.md:18
+msgid ""
+"See the [Data and Privacy FAQs](https://zed.dev/faq#data-and-privacy) for "
+"more details."
+msgstr ""
+
+#: src/collaboration/overview.md:20
+msgid "Audio Settings"
 msgstr ""
 
 #: src/collaboration/overview.md:22
-msgid ""
-"In the future, we will do more to prevent this type of access beyond the "
-"shared project and add more control over what collaborators can do, but for "
-"now, only collaborate with people you trust."
+msgid "Selecting Audio Devices"
 msgstr ""
 
 #: src/collaboration/overview.md:24
 msgid ""
-"See our [Data and Privacy FAQs](https://zed.dev/faq#data-and-privacy) for "
-"collaboration."
+"You can select specific input and output audio devices instead of using "
+"system defaults. To configure audio devices:"
+msgstr ""
+
+#: src/collaboration/overview.md:26
+msgid "Open <kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>"
+msgstr ""
+
+#: src/collaboration/overview.md:27
+msgid "Navigate to **Collaboration** > **Experimental**"
+msgstr ""
+
+#: src/collaboration/overview.md:28
+msgid ""
+"Use the **Output Audio Device** and **Input Audio Device** dropdowns to "
+"select your preferred devices"
+msgstr ""
+
+#: src/collaboration/overview.md:30
+msgid ""
+"Changes take effect immediately. If you select a device that becomes "
+"unavailable, Zed falls back to system defaults."
+msgstr ""
+
+#: src/collaboration/overview.md:32
+msgid ""
+"To test your audio configuration, click **Test Audio** in the same section. "
+"This opens a window where you can verify your microphone and speaker work "
+"correctly with the selected devices."
+msgstr ""
+
+#: src/collaboration/overview.md:34
+msgid "**JSON configuration:**"
+msgstr ""
+
+#: src/collaboration/overview.md:38
+msgid "\"audio\""
+msgstr ""
+
+#: src/collaboration/overview.md:39
+msgid "\"experimental.output_audio_device\""
+msgstr ""
+
+#: src/collaboration/overview.md:39 src/collaboration/overview.md:40
+msgid "\"Device Name (device-id)\""
+msgstr ""
+
+#: src/collaboration/overview.md:40
+msgid "\"experimental.input_audio_device\""
+msgstr ""
+
+#: src/collaboration/overview.md:45
+msgid "Set either value to `null` to use system defaults."
 msgstr ""

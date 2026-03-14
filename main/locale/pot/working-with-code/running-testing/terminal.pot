@@ -1,811 +1,814 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/terminal.md:1
+#: src/terminal.md:3
 msgid "Terminal"
 msgstr ""
 
-#: src/terminal.md:3
+#: src/terminal.md:5
 msgid ""
 "Zed includes a built-in terminal emulator that supports multiple terminal "
 "instances, custom shells, and deep integration with the editor."
 msgstr ""
 
-#: src/terminal.md:5
+#: src/terminal.md:7
 msgid "Opening Terminals"
 msgstr ""
 
-#: src/terminal.md:7 src/terminal.md:179 src/terminal.md:200
+#: src/terminal.md:9 src/terminal.md:181 src/terminal.md:202
 msgid "Action"
 msgstr ""
 
-#: src/terminal.md:7 src/terminal.md:179 src/terminal.md:200
+#: src/terminal.md:9 src/terminal.md:181 src/terminal.md:202
 msgid "macOS"
 msgstr ""
 
-#: src/terminal.md:7 src/terminal.md:179 src/terminal.md:200
+#: src/terminal.md:9 src/terminal.md:181 src/terminal.md:202
 msgid "Linux/Windows"
 msgstr ""
 
-#: src/terminal.md:9
+#: src/terminal.md:11
 msgid "Toggle terminal panel"
 msgstr ""
 
-#: src/terminal.md:9
+#: src/terminal.md:11
 msgid "`` Ctrl+` ``"
 msgstr ""
 
-#: src/terminal.md:10
+#: src/terminal.md:12
 msgid "Open new terminal"
 msgstr ""
 
-#: src/terminal.md:10
+#: src/terminal.md:12
 msgid "`Ctrl+~`"
 msgstr ""
 
-#: src/terminal.md:11
+#: src/terminal.md:13
 msgid "Open terminal in center"
 msgstr ""
 
-#: src/terminal.md:11
+#: src/terminal.md:13
 msgid "Command palette"
 msgstr ""
 
-#: src/terminal.md:13
+#: src/terminal.md:15
 msgid ""
 "You can also open a terminal from the command palette with `terminal panel: "
 "toggle` or `workspace: new terminal`."
 msgstr ""
 
-#: src/terminal.md:15
+#: src/terminal.md:17
 msgid "Terminal Panel vs Center Terminal"
 msgstr ""
 
-#: src/terminal.md:17
+#: src/terminal.md:19
 msgid "Terminals can open in two locations:"
 msgstr ""
 
-#: src/terminal.md:19
+#: src/terminal.md:21
 msgid ""
 "**Terminal Panel** — Docked at the bottom (default), left, or right of the "
 "workspace. Toggle with `` Ctrl+` ``."
 msgstr ""
 
-#: src/terminal.md:20
+#: src/terminal.md:22
 msgid ""
 "**Center Pane** — Opens as a regular tab alongside your files. Use "
 "`workspace: new center terminal` from the command palette."
 msgstr ""
 
-#: src/terminal.md:22
+#: src/terminal.md:24
 msgid "Working with Multiple Terminals"
 msgstr ""
 
-#: src/terminal.md:24
+#: src/terminal.md:26
 msgid ""
 "Create additional terminals with `Cmd+N` (macOS) or `Ctrl+N` (Linux/Windows) "
 "while focused in the terminal panel. Each terminal appears as a tab in the "
 "panel."
 msgstr ""
 
-#: src/terminal.md:26
+#: src/terminal.md:28
 msgid ""
 "Split terminals horizontally with `Cmd+D` (macOS) or `Ctrl+Shift+5` (Linux/"
 "Windows)."
 msgstr ""
 
-#: src/terminal.md:28
+#: src/terminal.md:30
 msgid "Configuring the Shell"
 msgstr ""
 
-#: src/terminal.md:30
+#: src/terminal.md:32
 msgid ""
 "By default, Zed uses your system's default shell (from `/etc/passwd` on Unix "
 "systems). To use a different shell:"
 msgstr ""
 
-#: src/terminal.md:34 src/terminal.md:46 src/terminal.md:71 src/terminal.md:83
-#: src/terminal.md:100 src/terminal.md:117 src/terminal.md:129
-#: src/terminal.md:152 src/terminal.md:169 src/terminal.md:192
-#: src/terminal.md:211 src/terminal.md:223 src/terminal.md:250
-#: src/terminal.md:264 src/terminal.md:286 src/terminal.md:298
-#: src/terminal.md:311 src/terminal.md:323
+#: src/terminal.md:36 src/terminal.md:48 src/terminal.md:73 src/terminal.md:85
+#: src/terminal.md:102 src/terminal.md:119 src/terminal.md:131
+#: src/terminal.md:154 src/terminal.md:171 src/terminal.md:194
+#: src/terminal.md:213 src/terminal.md:225 src/terminal.md:252
+#: src/terminal.md:266 src/terminal.md:288 src/terminal.md:300
+#: src/terminal.md:313 src/terminal.md:325
 msgid "\"terminal\""
 msgstr ""
 
-#: src/terminal.md:35 src/terminal.md:47
+#: src/terminal.md:37 src/terminal.md:49
 msgid "\"shell\""
 msgstr ""
 
-#: src/terminal.md:36 src/terminal.md:49
+#: src/terminal.md:38 src/terminal.md:51
 msgid "\"program\""
 msgstr ""
 
-#: src/terminal.md:36
+#: src/terminal.md:38
 msgid "\"/bin/zsh\""
 msgstr ""
 
-#: src/terminal.md:42
+#: src/terminal.md:44
 msgid "To pass arguments to your shell:"
 msgstr ""
 
-#: src/terminal.md:48
+#: src/terminal.md:50
 msgid "\"with_arguments\""
 msgstr ""
 
-#: src/terminal.md:49
+#: src/terminal.md:51
 msgid "\"/bin/bash\""
 msgstr ""
 
-#: src/terminal.md:50
+#: src/terminal.md:52
 msgid "\"args\""
 msgstr ""
 
-#: src/terminal.md:50
+#: src/terminal.md:52
 msgid "\"--login\""
 msgstr ""
 
-#: src/terminal.md:57
+#: src/terminal.md:59
 msgid "Working Directory"
 msgstr ""
 
-#: src/terminal.md:59
+#: src/terminal.md:61
 msgid "Control where new terminals start:"
 msgstr ""
 
-#: src/terminal.md:61
+#: src/terminal.md:63
 msgid "Value"
 msgstr ""
 
-#: src/terminal.md:61
+#: src/terminal.md:63
 msgid "Behavior"
 msgstr ""
 
-#: src/terminal.md:63
+#: src/terminal.md:65
 msgid "`\"current_file_directory\"`"
 msgstr ""
 
-#: src/terminal.md:63
+#: src/terminal.md:65
 msgid ""
 "Uses the current file's directory, falling back to the project directory, "
 "then the first project in the workspace"
 msgstr ""
 
-#: src/terminal.md:64
+#: src/terminal.md:66
 msgid "`\"current_project_directory\"`"
 msgstr ""
 
-#: src/terminal.md:64
+#: src/terminal.md:66
 msgid "Uses the current file's project directory (default)"
 msgstr ""
 
-#: src/terminal.md:65
+#: src/terminal.md:67
 msgid "`\"first_project_directory\"`"
 msgstr ""
 
-#: src/terminal.md:65
+#: src/terminal.md:67
 msgid "Uses the first project in your workspace"
 msgstr ""
 
-#: src/terminal.md:66
+#: src/terminal.md:68
 msgid "`\"always_home\"`"
 msgstr ""
 
-#: src/terminal.md:66
+#: src/terminal.md:68
 msgid "Always starts in your home directory"
 msgstr ""
 
-#: src/terminal.md:67
+#: src/terminal.md:69
 msgid "`{ \"always\": { \"directory\": \"~/projects\" } }`"
 msgstr ""
 
-#: src/terminal.md:67
+#: src/terminal.md:69
 msgid "Always starts in a specific directory"
 msgstr ""
 
-#: src/terminal.md:72
+#: src/terminal.md:74
 msgid "\"working_directory\""
 msgstr ""
 
-#: src/terminal.md:72
+#: src/terminal.md:74
 msgid "\"first_project_directory\""
 msgstr ""
 
-#: src/terminal.md:77
+#: src/terminal.md:79
 msgid "Environment Variables"
 msgstr ""
 
-#: src/terminal.md:79
+#: src/terminal.md:81
 msgid "Add environment variables to all terminal sessions:"
 msgstr ""
 
-#: src/terminal.md:84
+#: src/terminal.md:86
 msgid "\"env\""
 msgstr ""
 
-#: src/terminal.md:85
+#: src/terminal.md:87
 msgid "\"EDITOR\""
 msgstr ""
 
-#: src/terminal.md:85
+#: src/terminal.md:87
 msgid "\"zed --wait\""
 msgstr ""
 
-#: src/terminal.md:86
+#: src/terminal.md:88
 msgid "\"MY_VAR\""
 msgstr ""
 
-#: src/terminal.md:86
+#: src/terminal.md:88
 msgid "\"value\""
 msgstr ""
 
-#: src/terminal.md:92
+#: src/terminal.md:94
 msgid ""
 "**Tip:** Use `:` to separate multiple values in a single variable: "
 "`\"PATH\": \"/custom/path:$PATH\"`"
 msgstr ""
 
-#: src/terminal.md:94
+#: src/terminal.md:96
 msgid "Python Virtual Environment Detection"
 msgstr ""
 
-#: src/terminal.md:96
+#: src/terminal.md:98
 msgid ""
 "Zed can automatically activate Python virtual environments when opening a "
 "terminal. By default, it searches for `.env`, `env`, `.venv`, and `venv` "
 "directories:"
 msgstr ""
 
-#: src/terminal.md:101 src/terminal.md:118
+#: src/terminal.md:103 src/terminal.md:120
 msgid "\"detect_venv\""
 msgstr ""
 
-#: src/terminal.md:102 src/terminal.md:154 src/terminal.md:265
+#: src/terminal.md:104 src/terminal.md:156 src/terminal.md:267
 msgid "\"on\""
 msgstr ""
 
-#: src/terminal.md:103
+#: src/terminal.md:105
 msgid "\"directories\""
 msgstr ""
 
-#: src/terminal.md:103
+#: src/terminal.md:105
 msgid "\".venv\""
 msgstr ""
 
-#: src/terminal.md:103
+#: src/terminal.md:105
 msgid "\"venv\""
 msgstr ""
 
-#: src/terminal.md:104
+#: src/terminal.md:106
 msgid "\"activate_script\""
 msgstr ""
 
-#: src/terminal.md:104
+#: src/terminal.md:106
 msgid "\"default\""
 msgstr ""
 
-#: src/terminal.md:111
+#: src/terminal.md:113
 msgid ""
 "The `activate_script` option supports `\"default\"`, `\"csh\"`, `\"fish\"`, "
 "and `\"nushell\"`."
 msgstr ""
 
-#: src/terminal.md:113
+#: src/terminal.md:115
 msgid "To disable virtual environment detection:"
 msgstr ""
 
-#: src/terminal.md:118
+#: src/terminal.md:120
 msgid "\"off\""
 msgstr ""
 
-#: src/terminal.md:123
+#: src/terminal.md:125
 msgid "Fonts and Appearance"
 msgstr ""
 
-#: src/terminal.md:125
+#: src/terminal.md:127
 msgid "The terminal can use different fonts from the editor:"
 msgstr ""
 
-#: src/terminal.md:130
+#: src/terminal.md:132
 msgid "\"font_family\""
 msgstr ""
 
-#: src/terminal.md:130
+#: src/terminal.md:132
 msgid "\"JetBrains Mono\""
 msgstr ""
 
-#: src/terminal.md:131
+#: src/terminal.md:133
 msgid "\"font_size\""
 msgstr ""
 
-#: src/terminal.md:132
+#: src/terminal.md:134
 msgid "\"font_features\""
 msgstr ""
 
-#: src/terminal.md:133
+#: src/terminal.md:135
 msgid "\"calt\""
 msgstr ""
 
-#: src/terminal.md:135
+#: src/terminal.md:137
 msgid "\"line_height\""
 msgstr ""
 
-#: src/terminal.md:135
+#: src/terminal.md:137
 msgid "\"comfortable\""
 msgstr ""
 
-#: src/terminal.md:140
+#: src/terminal.md:142
 msgid "Line height options:"
 msgstr ""
 
-#: src/terminal.md:142
+#: src/terminal.md:144
 msgid "`\"comfortable\"` — 1.618 ratio, good for reading (default)"
 msgstr ""
 
-#: src/terminal.md:143
+#: src/terminal.md:145
 msgid ""
 "`\"standard\"` — 1.3 ratio, better for TUI applications with box-drawing "
 "characters"
 msgstr ""
 
-#: src/terminal.md:144
+#: src/terminal.md:146
 msgid "`{ \"custom\": 1.5 }` — Custom ratio"
 msgstr ""
 
-#: src/terminal.md:146
+#: src/terminal.md:148
 msgid "Cursor"
 msgstr ""
 
-#: src/terminal.md:148
+#: src/terminal.md:150
 msgid "Configure cursor appearance:"
 msgstr ""
 
-#: src/terminal.md:153
+#: src/terminal.md:155
 msgid "\"cursor_shape\""
 msgstr ""
 
-#: src/terminal.md:153
+#: src/terminal.md:155
 msgid "\"bar\""
 msgstr ""
 
-#: src/terminal.md:154
+#: src/terminal.md:156
 msgid "\"blinking\""
 msgstr ""
 
-#: src/terminal.md:159
+#: src/terminal.md:161
 msgid "Cursor shapes: `\"block\"`, `\"bar\"`, `\"underline\"`, `\"hollow\"`"
 msgstr ""
 
-#: src/terminal.md:161
+#: src/terminal.md:163
 msgid ""
 "Blinking options: `\"off\"`, `\"terminal_controlled\"` (default), `\"on\"`"
 msgstr ""
 
-#: src/terminal.md:163
+#: src/terminal.md:165
 msgid "Minimum Contrast"
 msgstr ""
 
-#: src/terminal.md:165
+#: src/terminal.md:167
 msgid ""
 "Zed adjusts terminal colors to maintain readability. The default value of "
 "`45` ensures text remains visible. Set to `0` to disable contrast adjustment "
 "and use exact theme colors:"
 msgstr ""
 
-#: src/terminal.md:170
+#: src/terminal.md:172
 msgid "\"minimum_contrast\""
 msgstr ""
 
-#: src/terminal.md:175
+#: src/terminal.md:177
 msgid "Scrolling"
 msgstr ""
 
-#: src/terminal.md:177
+#: src/terminal.md:179
 msgid "Navigate terminal history with these keybindings:"
 msgstr ""
 
-#: src/terminal.md:181
+#: src/terminal.md:183
 msgid "Scroll page up"
 msgstr ""
 
-#: src/terminal.md:181
+#: src/terminal.md:183
 msgid "`Shift+PageUp` or `Cmd+Up`"
 msgstr ""
 
-#: src/terminal.md:181
+#: src/terminal.md:183
 msgid "`Shift+PageUp`"
 msgstr ""
 
-#: src/terminal.md:182
+#: src/terminal.md:184
 msgid "Scroll page down"
 msgstr ""
 
-#: src/terminal.md:182
+#: src/terminal.md:184
 msgid "`Shift+PageDown` or `Cmd+Down`"
 msgstr ""
 
-#: src/terminal.md:182
+#: src/terminal.md:184
 msgid "`Shift+PageDown`"
 msgstr ""
 
-#: src/terminal.md:183
+#: src/terminal.md:185
 msgid "Scroll line up"
 msgstr ""
 
-#: src/terminal.md:183
+#: src/terminal.md:185
 msgid "`Shift+Up`"
 msgstr ""
 
-#: src/terminal.md:184
+#: src/terminal.md:186
 msgid "Scroll line down"
 msgstr ""
 
-#: src/terminal.md:184
+#: src/terminal.md:186
 msgid "`Shift+Down`"
 msgstr ""
 
-#: src/terminal.md:185
+#: src/terminal.md:187
 msgid "Scroll to top"
 msgstr ""
 
-#: src/terminal.md:185
+#: src/terminal.md:187
 msgid "`Shift+Home` or `Cmd+Home`"
 msgstr ""
 
-#: src/terminal.md:185
+#: src/terminal.md:187
 msgid "`Shift+Home`"
 msgstr ""
 
-#: src/terminal.md:186
+#: src/terminal.md:188
 msgid "Scroll to bottom"
 msgstr ""
 
-#: src/terminal.md:186
+#: src/terminal.md:188
 msgid "`Shift+End` or `Cmd+End`"
 msgstr ""
 
-#: src/terminal.md:186
+#: src/terminal.md:188
 msgid "`Shift+End`"
 msgstr ""
 
-#: src/terminal.md:188
+#: src/terminal.md:190
 msgid "Adjust scroll speed with:"
 msgstr ""
 
-#: src/terminal.md:193
+#: src/terminal.md:195
 msgid "\"scroll_multiplier\""
 msgstr ""
 
-#: src/terminal.md:198
+#: src/terminal.md:200
 msgid "Copy and Paste"
 msgstr ""
 
-#: src/terminal.md:202
+#: src/terminal.md:204
 msgid "Copy"
 msgstr ""
 
-#: src/terminal.md:202
+#: src/terminal.md:204
 msgid "`Cmd+C`"
 msgstr ""
 
-#: src/terminal.md:202
+#: src/terminal.md:204
 msgid "`Ctrl+Shift+C`"
 msgstr ""
 
-#: src/terminal.md:203
+#: src/terminal.md:205
 msgid "Paste"
 msgstr ""
 
-#: src/terminal.md:203
+#: src/terminal.md:205
 msgid "`Cmd+V`"
 msgstr ""
 
-#: src/terminal.md:203
+#: src/terminal.md:205
 msgid "`Ctrl+Shift+V`"
 msgstr ""
 
-#: src/terminal.md:205
+#: src/terminal.md:207
 msgid "Copy on Select"
 msgstr ""
 
-#: src/terminal.md:207
+#: src/terminal.md:209
 msgid "Automatically copy selected text to the clipboard:"
 msgstr ""
 
-#: src/terminal.md:212
+#: src/terminal.md:214
 msgid "\"copy_on_select\""
 msgstr ""
 
-#: src/terminal.md:217
+#: src/terminal.md:219
 msgid "Keep Selection After Copy"
 msgstr ""
 
-#: src/terminal.md:219
+#: src/terminal.md:221
 msgid "By default, text stays selected after copying. To clear the selection:"
 msgstr ""
 
-#: src/terminal.md:224
+#: src/terminal.md:226
 msgid "\"keep_selection_on_copy\""
 msgstr ""
 
-#: src/terminal.md:229
+#: src/terminal.md:231
 msgid "Search"
 msgstr ""
 
-#: src/terminal.md:231
+#: src/terminal.md:233
 msgid ""
 "Search terminal content with `Cmd+F` (macOS) or `Ctrl+Shift+F` (Linux/"
 "Windows). This opens the same search bar used in the editor."
 msgstr ""
 
-#: src/terminal.md:233
+#: src/terminal.md:235
 msgid "Vi Mode"
 msgstr ""
 
-#: src/terminal.md:235
+#: src/terminal.md:237
 msgid ""
 "Toggle vi-style navigation in the terminal with `Ctrl+Shift+Space`. This "
 "allows you to navigate and select text using vi keybindings."
 msgstr ""
 
-#: src/terminal.md:237
+#: src/terminal.md:239
 msgid "Clear Terminal"
 msgstr ""
 
-#: src/terminal.md:239
+#: src/terminal.md:241
 msgid "Clear the terminal screen:"
 msgstr ""
 
-#: src/terminal.md:241
+#: src/terminal.md:243
 msgid "macOS: `Cmd+K`"
 msgstr ""
 
-#: src/terminal.md:242
+#: src/terminal.md:244
 msgid "Linux/Windows: `Ctrl+Shift+L`"
 msgstr ""
 
-#: src/terminal.md:244
+#: src/terminal.md:246
 msgid "Option as Meta (macOS)"
 msgstr ""
 
-#: src/terminal.md:246
+#: src/terminal.md:248
 msgid ""
 "For Emacs users or applications that use Meta key combinations, enable "
 "Option as Meta:"
 msgstr ""
 
-#: src/terminal.md:251
+#: src/terminal.md:253
 msgid "\"option_as_meta\""
 msgstr ""
 
-#: src/terminal.md:256
+#: src/terminal.md:258
 msgid ""
 "This reinterprets the Option key as Meta, allowing sequences like `Alt+X` to "
 "work correctly."
 msgstr ""
 
-#: src/terminal.md:258
+#: src/terminal.md:260
 msgid "Alternate Scroll Mode"
 msgstr ""
 
-#: src/terminal.md:260
+#: src/terminal.md:262
 msgid ""
 "When enabled, mouse scroll events are converted to arrow key presses in "
 "applications like `vim` or `less`:"
 msgstr ""
 
-#: src/terminal.md:265
+#: src/terminal.md:267
 msgid "\"alternate_scroll\""
 msgstr ""
 
-#: src/terminal.md:270
+#: src/terminal.md:272
 msgid "Path Hyperlinks"
 msgstr ""
 
-#: src/terminal.md:272
+#: src/terminal.md:274
 msgid ""
 "Zed detects file paths in terminal output and makes them clickable. "
 "`Cmd+Click` (macOS) or `Ctrl+Click` (Linux/Windows) opens the file in Zed, "
 "jumping to the line number if one is detected."
 msgstr ""
 
-#: src/terminal.md:274
+#: src/terminal.md:276
 msgid "Common formats recognized:"
 msgstr ""
 
-#: src/terminal.md:276
+#: src/terminal.md:278
 msgid "`src/main.rs:42` — Opens at line 42"
 msgstr ""
 
-#: src/terminal.md:277
+#: src/terminal.md:279
 msgid "`src/main.rs:42:10` — Opens at line 42, column 10"
 msgstr ""
 
-#: src/terminal.md:278
+#: src/terminal.md:280
 msgid "`File \"script.py\", line 10` — Python tracebacks"
 msgstr ""
 
-#: src/terminal.md:280
+#: src/terminal.md:282
 msgid "Panel Configuration"
 msgstr ""
 
-#: src/terminal.md:282
+#: src/terminal.md:284
 msgid "Dock Position"
 msgstr ""
 
-#: src/terminal.md:287
+#: src/terminal.md:289
 msgid "\"dock\""
 msgstr ""
 
-#: src/terminal.md:287
+#: src/terminal.md:289
 msgid "\"bottom\""
 msgstr ""
 
-#: src/terminal.md:292
+#: src/terminal.md:294
 msgid "Options: `\"bottom\"` (default), `\"left\"`, `\"right\"`"
 msgstr ""
 
-#: src/terminal.md:294
+#: src/terminal.md:296
 msgid "Default Size"
 msgstr ""
 
-#: src/terminal.md:299
+#: src/terminal.md:301
 msgid "\"default_width\""
 msgstr ""
 
-#: src/terminal.md:300
+#: src/terminal.md:302
 msgid "\"default_height\""
 msgstr ""
 
-#: src/terminal.md:305
+#: src/terminal.md:307
 msgid "Terminal Button"
 msgstr ""
 
-#: src/terminal.md:307
+#: src/terminal.md:309
 msgid "Hide the terminal button in the status bar:"
 msgstr ""
 
-#: src/terminal.md:312
+#: src/terminal.md:314
 msgid "\"button\""
 msgstr ""
 
-#: src/terminal.md:317
+#: src/terminal.md:319
 msgid "Toolbar"
 msgstr ""
 
-#: src/terminal.md:319
+#: src/terminal.md:321
 msgid "Show the terminal title in a breadcrumb toolbar:"
 msgstr ""
 
-#: src/terminal.md:324
+#: src/terminal.md:326
 msgid "\"toolbar\""
 msgstr ""
 
-#: src/terminal.md:325
+#: src/terminal.md:327
 msgid "\"breadcrumbs\""
 msgstr ""
 
-#: src/terminal.md:331
+#: src/terminal.md:333
 msgid ""
 "The title can be set by your shell using the escape sequence `\\e]2;"
 "Title\\007`."
 msgstr ""
 
-#: src/terminal.md:333
+#: src/terminal.md:335
 msgid "Integration with Tasks"
 msgstr ""
 
-#: src/terminal.md:335
+#: src/terminal.md:337
 msgid ""
 "The terminal integrates with Zed's [task system](./tasks.md). When you run a "
 "task, it executes in the terminal. Rerun the last task from a terminal with:"
 msgstr ""
 
-#: src/terminal.md:337
+#: src/terminal.md:339
 msgid "macOS: `Cmd+Alt+R`"
 msgstr ""
 
-#: src/terminal.md:338
+#: src/terminal.md:340
 msgid "Linux/Windows: `Ctrl+Shift+R` or `Alt+T`"
 msgstr ""
 
-#: src/terminal.md:340
+#: src/terminal.md:342
 msgid "AI Assistance"
 msgstr ""
 
-#: src/terminal.md:342
-msgid "Get help with terminal commands using inline assist:"
+#: src/terminal.md:344
+msgid ""
+"Get help with terminal commands using the [Inline Assistant](./ai/inline-"
+"assistant.md):"
 msgstr ""
 
-#: src/terminal.md:344
+#: src/terminal.md:346
 msgid "macOS: `Ctrl+Enter`"
 msgstr ""
 
-#: src/terminal.md:345
+#: src/terminal.md:347
 msgid "Linux/Windows: `Ctrl+Enter` or `Ctrl+I`"
 msgstr ""
 
-#: src/terminal.md:347
-msgid ""
-"This opens the AI assistant to help explain errors, suggest commands, or "
-"troubleshoot issues."
-msgstr ""
-
 #: src/terminal.md:349
-msgid "Sending Text and Keystrokes"
+msgid ""
+"This opens the Inline Assistant to help explain errors, suggest commands, or "
+"troubleshoot issues. AI agents in the [Agent Panel](./ai/agent-panel.md) can "
+"also run terminal commands as part of their workflow."
 msgstr ""
 
 #: src/terminal.md:351
+msgid "Sending Text and Keystrokes"
+msgstr ""
+
+#: src/terminal.md:353
 msgid ""
 "For advanced keybinding customization, you can send raw text or keystrokes "
 "to the terminal:"
 msgstr ""
 
-#: src/terminal.md:355
+#: src/terminal.md:357
 msgid "\"context\""
 msgstr ""
 
-#: src/terminal.md:355
+#: src/terminal.md:357
 msgid "\"Terminal\""
 msgstr ""
 
-#: src/terminal.md:356
+#: src/terminal.md:358
 msgid "\"bindings\""
 msgstr ""
 
-#: src/terminal.md:357
+#: src/terminal.md:359
 msgid "\"alt-left\""
 msgstr ""
 
-#: src/terminal.md:357
+#: src/terminal.md:359
 msgid "\"terminal::SendText\""
 msgstr ""
 
-#: src/terminal.md:357
+#: src/terminal.md:359
 msgid "\"\\u001bb\""
 msgstr ""
 
-#: src/terminal.md:358
+#: src/terminal.md:360
 msgid "\"ctrl-c\""
 msgstr ""
 
-#: src/terminal.md:358
+#: src/terminal.md:360
 msgid "\"terminal::SendKeystroke\""
 msgstr ""
 
-#: src/terminal.md:363
+#: src/terminal.md:365
 msgid "All Terminal Settings"
 msgstr ""
 
-#: src/terminal.md:365
+#: src/terminal.md:367
 msgid ""
 "For the complete list of terminal settings, see the [Terminal section in All "
 "Settings](./reference/all-settings.md#terminal)."
 msgstr ""
 
-#: src/terminal.md:367
+#: src/terminal.md:369
 msgid "What's Next"
 msgstr ""
 
-#: src/terminal.md:369
+#: src/terminal.md:371
 msgid "[Tasks](./tasks.md) — Run commands and scripts from Zed"
 msgstr ""
 
-#: src/terminal.md:370
+#: src/terminal.md:372
 msgid "[REPL](./repl.md) — Interactive code execution"
 msgstr ""
 
-#: src/terminal.md:371
+#: src/terminal.md:373
 msgid ""
 "[CLI Reference](./reference/cli.md) — Command-line interface for opening "
 "files in Zed"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,62 +11,62 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/fish.md:1
+#: src/languages/fish.md:3
 msgid "Fish"
 msgstr ""
 
-#: src/languages/fish.md:3
+#: src/languages/fish.md:5
 msgid ""
 "Fish language support in Zed is provided by the community-maintained [Fish "
 "extension](https://github.com/hasit/zed-fish). Report issues to: [https://"
 "github.com/hasit/zed-fish/issues](https://github.com/hasit/zed-fish/issues)"
 msgstr ""
 
-#: src/languages/fish.md:6
+#: src/languages/fish.md:8
 msgid ""
 "Tree-sitter: [ram02z/tree-sitter-fish](https://github.com/ram02z/tree-sitter-"
 "fish)"
 msgstr ""
 
-#: src/languages/fish.md:8
+#: src/languages/fish.md:10
 msgid "Formatting"
 msgstr ""
 
-#: src/languages/fish.md:10
+#: src/languages/fish.md:12
 msgid ""
 "Zed supports auto-formatting fish code using external tools like "
 "[`fish_indent`](https://fishshell.com/docs/current/cmds/fish_indent.html), "
 "which is included with fish."
 msgstr ""
 
-#: src/languages/fish.md:12
+#: src/languages/fish.md:14
 msgid "Ensure `fish_indent` is available in your path and check the version:"
 msgstr ""
 
-#: src/languages/fish.md:19
+#: src/languages/fish.md:21
 msgid "Configure Zed to automatically format fish code with `fish_indent`:"
 msgstr ""
 
-#: src/languages/fish.md:22
+#: src/languages/fish.md:24
 msgid "\"languages\""
 msgstr ""
 
-#: src/languages/fish.md:23
+#: src/languages/fish.md:25
 msgid "\"Fish\""
 msgstr ""
 
-#: src/languages/fish.md:24
+#: src/languages/fish.md:26
 msgid "\"formatter\""
 msgstr ""
 
-#: src/languages/fish.md:25
+#: src/languages/fish.md:27
 msgid "\"external\""
 msgstr ""
 
-#: src/languages/fish.md:26
+#: src/languages/fish.md:28
 msgid "\"command\""
 msgstr ""
 
-#: src/languages/fish.md:26
+#: src/languages/fish.md:28
 msgid "\"fish_indent\""
 msgstr ""

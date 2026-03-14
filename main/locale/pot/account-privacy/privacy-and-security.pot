@@ -1,103 +1,116 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/ai/privacy-and-security.md:1
+#: src/ai/privacy-and-security.md:3
 msgid "Privacy and Security"
 msgstr ""
 
-#: src/ai/privacy-and-security.md:3
-msgid "Philosophy"
-msgstr ""
-
 #: src/ai/privacy-and-security.md:5
-msgid ""
-"Zed aims to collect only the minimum data necessary to serve and improve our "
-"product."
+msgid "Philosophy"
 msgstr ""
 
 #: src/ai/privacy-and-security.md:7
 msgid ""
-"Data sharing is opt-in by default. Privacy is not a setting to toggle—it's "
-"the baseline."
+"Zed collects minimal data necessary to serve and improve our product. "
+"Features that could share data, like AI and telemetry, are either opt-in or "
+"can be disabled."
 msgstr ""
 
 #: src/ai/privacy-and-security.md:9
 msgid ""
-"As an open-source product, we believe in maximal transparency, and invite "
-"you to examine our codebase. If you find issues, we encourage you to share "
-"them with us."
+"**Telemetry**: Zed collects only the data necessary to understand usage and "
+"fix issues. Client-side telemetry can be disabled in settings."
 msgstr ""
 
 #: src/ai/privacy-and-security.md:11
 msgid ""
-"Zed, including AI features, works without sharing data with us and without "
-"authentication."
+"**AI**: Data sharing for AI improvement is opt-in, and each share is a one-"
+"time action; it does not grant permission for future data collection. You "
+"can use Zed's AI features without sharing any data with Zed and without "
+"authenticating."
 msgstr ""
 
 #: src/ai/privacy-and-security.md:13
-msgid "Documentation"
+msgid ""
+"**Open-Source**: Zed's codebase is public. You can inspect exactly what data "
+"is collected and how it's handled. If you find issues, we encourage you to "
+"report them."
 msgstr ""
 
 #: src/ai/privacy-and-security.md:15
+msgid ""
+"**Secure-by-default**: Designing Zed and our Service with \"secure-by-"
+"default\" as an objective is of utmost importance to us. We take your "
+"security and ours very seriously and strive to follow industry best-practice "
+"in order to uphold that principle."
+msgstr ""
+
+#: src/ai/privacy-and-security.md:17
+msgid "Related Documentation"
+msgstr ""
+
+#: src/ai/privacy-and-security.md:19
+msgid ""
+"[Tool Permissions](./tool-permissions.md): Configure granular rules to "
+"control which agent actions are auto-approved, blocked, or require "
+"confirmation."
+msgstr ""
+
+#: src/ai/privacy-and-security.md:21
 msgid ""
 "[Worktree trust](../worktree-trust.md): How Zed opens files and directories "
 "in restricted mode."
 msgstr ""
 
-#: src/ai/privacy-and-security.md:17
+#: src/ai/privacy-and-security.md:23
 msgid "[Telemetry](../telemetry.md): How Zed collects general telemetry data."
 msgstr ""
 
-#: src/ai/privacy-and-security.md:19
+#: src/ai/privacy-and-security.md:25
 msgid ""
-"[AI Improvement](./ai-improvement.md): Zed's opt-in-only approach to data "
-"collection for AI improvement, whether our Agentic offering or Edit "
-"Predictions."
+"[Zed AI Features and Privacy](./ai-improvement.md): An overview of Zed's AI "
+"features, your data when using AI in Zed, and how to opt-in and help Zed "
+"improve these features."
 msgstr ""
 
-#: src/ai/privacy-and-security.md:21
+#: src/ai/privacy-and-security.md:27
 msgid ""
 "[Accounts](../authentication.md): When and why you'd need to authenticate "
 "into Zed, how to do so, and what scope we need from you."
 msgstr ""
 
-#: src/ai/privacy-and-security.md:23
+#: src/ai/privacy-and-security.md:29
 msgid ""
 "[Collab](https://zed.dev/faq#data-and-privacy): How Zed's live collaboration "
-"works, and how data flows to provide the experience (we don't store your "
-"code!)."
-msgstr ""
-
-#: src/ai/privacy-and-security.md:25
-msgid "Legal Links"
-msgstr ""
-
-#: src/ai/privacy-and-security.md:27
-msgid "[Terms of Service](https://zed.dev/terms-of-service)"
-msgstr ""
-
-#: src/ai/privacy-and-security.md:28
-msgid "[Terms of Use](https://zed.dev/terms)"
-msgstr ""
-
-#: src/ai/privacy-and-security.md:29
-msgid "[Privacy Policy](https://zed.dev/privacy-policy)"
-msgstr ""
-
-#: src/ai/privacy-and-security.md:30
-msgid "[Zed's Contributor License and Feedback Agreement](https://zed.dev/cla)"
+"works and how data flows. Zed does not store your code."
 msgstr ""
 
 #: src/ai/privacy-and-security.md:31
+msgid "Legal Links"
+msgstr ""
+
+#: src/ai/privacy-and-security.md:33
+msgid "[Terms of Service](https://zed.dev/terms)"
+msgstr ""
+
+#: src/ai/privacy-and-security.md:34
+msgid "[Privacy Policy](https://zed.dev/privacy-policy)"
+msgstr ""
+
+#: src/ai/privacy-and-security.md:35
+msgid "[Zed's Contributor License and Feedback Agreement](https://zed.dev/cla)"
+msgstr ""
+
+#: src/ai/privacy-and-security.md:36
 msgid "[Subprocessors](https://zed.dev/subprocessors)"
 msgstr ""

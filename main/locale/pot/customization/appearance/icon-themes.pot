@@ -1,59 +1,59 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/icon-themes.md:1
+#: src/icon-themes.md:3
 msgid "Icon Themes"
 msgstr ""
 
-#: src/icon-themes.md:3
+#: src/icon-themes.md:5
 msgid ""
 "Zed comes with a built-in icon theme, with more icon themes available as "
 "extensions."
 msgstr ""
 
-#: src/icon-themes.md:5
+#: src/icon-themes.md:7
 msgid "Selecting an Icon Theme"
 msgstr ""
 
-#: src/icon-themes.md:7
+#: src/icon-themes.md:9
 msgid ""
 "See what icon themes are installed and preview them via the Icon Theme "
 "Selector, which you can open from the command palette with `icon theme "
 "selector: toggle`."
 msgstr ""
 
-#: src/icon-themes.md:9
+#: src/icon-themes.md:11
 msgid ""
 "Navigating through the icon theme list by moving up and down will change the "
 "icon theme in real time and hitting enter will save it to your settings file."
 msgstr ""
 
-#: src/icon-themes.md:11
+#: src/icon-themes.md:13
 msgid "Installing more Icon Themes"
 msgstr ""
 
-#: src/icon-themes.md:13
+#: src/icon-themes.md:15
 msgid ""
 "More icon themes are available from the Extensions page, which you can "
 "access via the command palette with `zed: extensions` or the [Zed website]"
 "(https://zed.dev/extensions?filter=icon-themes)."
 msgstr ""
 
-#: src/icon-themes.md:15
+#: src/icon-themes.md:17
 msgid "Configuring Icon Themes"
 msgstr ""
 
-#: src/icon-themes.md:17
+#: src/icon-themes.md:19
 msgid ""
 "Your selected icon theme is stored in your settings file. You can open your "
 "settings file from the command palette with <code class=\"hljs\">zed: open "
@@ -61,45 +61,45 @@ msgid ""
 "</kbd>)."
 msgstr ""
 
-#: src/icon-themes.md:20
+#: src/icon-themes.md:22
 msgid ""
 "Just like with themes, Zed allows for configuring different icon themes for "
 "light and dark mode. You can set the mode to `\"light\"` or `\"dark\"` to "
 "ignore the current system mode."
 msgstr ""
 
-#: src/icon-themes.md:25
+#: src/icon-themes.md:27
 msgid "\"icon_theme\""
 msgstr ""
 
-#: src/icon-themes.md:26
+#: src/icon-themes.md:28
 msgid "\"mode\""
 msgstr ""
 
-#: src/icon-themes.md:26
+#: src/icon-themes.md:28
 msgid "\"system\""
 msgstr ""
 
-#: src/icon-themes.md:27
+#: src/icon-themes.md:29
 msgid "\"light\""
 msgstr ""
 
-#: src/icon-themes.md:27
+#: src/icon-themes.md:29
 msgid "\"Light Icon Theme\""
 msgstr ""
 
-#: src/icon-themes.md:28
+#: src/icon-themes.md:30
 msgid "\"dark\""
 msgstr ""
 
-#: src/icon-themes.md:28
+#: src/icon-themes.md:30
 msgid "\"Dark Icon Theme\""
 msgstr ""
 
-#: src/icon-themes.md:33
+#: src/icon-themes.md:35
 msgid "Icon Theme Development"
 msgstr ""
 
-#: src/icon-themes.md:35
+#: src/icon-themes.md:37
 msgid "See: [Developing Zed Icon Themes](./extensions/icon-themes.md)"
 msgstr ""

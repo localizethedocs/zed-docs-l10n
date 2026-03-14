@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,59 +11,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/opentofu.md:1
+#: src/languages/opentofu.md:3
 msgid "OpenTofu"
 msgstr ""
 
-#: src/languages/opentofu.md:3
+#: src/languages/opentofu.md:5
 msgid ""
 "OpenTofu support is available through the [OpenTofu extension](https://"
 "github.com/ashpool37/zed-extension-opentofu)."
 msgstr ""
 
-#: src/languages/opentofu.md:5
+#: src/languages/opentofu.md:7
 msgid ""
 "Tree-sitter: [MichaHoffmann/tree-sitter-hcl](https://github.com/"
 "MichaHoffmann/tree-sitter-hcl)"
 msgstr ""
 
-#: src/languages/opentofu.md:6
+#: src/languages/opentofu.md:8
 msgid ""
 "Language Server: [opentofu/tofu-ls](https://github.com/opentofu/tofu-ls)"
 msgstr ""
 
-#: src/languages/opentofu.md:8
+#: src/languages/opentofu.md:10
 msgid "Configuration"
 msgstr ""
 
-#: src/languages/opentofu.md:10
+#: src/languages/opentofu.md:12
 msgid ""
-"In order to automatically use the OpenTofu extension and language server "
-"when editing .tf and .tfvars files, either uninstall the Terraform extension "
-"or add this to your settings.json:"
+"To automatically use the OpenTofu extension and language server when editing "
+"`.tf` and `.tfvars` files, either uninstall the Terraform extension or add "
+"this to your settings.json:"
 msgstr ""
 
-#: src/languages/opentofu.md:14
+#: src/languages/opentofu.md:16
 msgid "\"file_types\""
 msgstr ""
 
-#: src/languages/opentofu.md:15
+#: src/languages/opentofu.md:17
 msgid "\"OpenTofu\""
 msgstr ""
 
-#: src/languages/opentofu.md:15
+#: src/languages/opentofu.md:17
 msgid "\"tf\""
 msgstr ""
 
-#: src/languages/opentofu.md:16
+#: src/languages/opentofu.md:18
 msgid "\"OpenTofu Vars\""
 msgstr ""
 
-#: src/languages/opentofu.md:16
+#: src/languages/opentofu.md:18
 msgid "\"tfvars\""
 msgstr ""
 
-#: src/languages/opentofu.md:20
+#: src/languages/opentofu.md:22
 msgid ""
 "See the [full list of server settings here](https://github.com/opentofu/tofu-"
 "ls/blob/main/docs/SETTINGS.md)."

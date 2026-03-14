@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/asciidoc.md:1
+#: src/languages/asciidoc.md:3
 msgid "AsciiDoc"
 msgstr ""
 
-#: src/languages/asciidoc.md:3
+#: src/languages/asciidoc.md:5
 msgid ""
 "AsciiDoc language support in Zed is provided by the community-maintained "
 "[AsciiDoc extension](https://github.com/andreicek/zed-asciidoc). Report "
@@ -23,7 +23,7 @@ msgid ""
 "com/andreicek/zed-asciidoc/issues)"
 msgstr ""
 
-#: src/languages/asciidoc.md:6
+#: src/languages/asciidoc.md:8
 msgid ""
 "Tree-sitter: [cathaysia/tree-sitter-asciidoc](https://github.com/cathaysia/"
 "tree-sitter-asciidoc)"
