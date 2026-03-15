@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,52 +11,52 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/troubleshooting.md:1
+#: src/troubleshooting.md:3
 msgid "Troubleshooting"
 msgstr ""
 
-#: src/troubleshooting.md:3
+#: src/troubleshooting.md:5
 msgid ""
 "This guide covers common troubleshooting techniques for Zed. Sometimes "
 "you'll be able to identify and resolve issues on your own using this "
 "information. Other times, troubleshooting means gathering the right "
-"information—logs, profiles, or reproduction steps—to help us diagnose and "
+"information (logs, profiles, or reproduction steps) to help us diagnose and "
 "fix the problem."
 msgstr ""
 
-#: src/troubleshooting.md:7
+#: src/troubleshooting.md:9
 msgid ""
 "**Note**: To open the command palette, use `cmd-shift-p` on macOS or `ctrl-"
 "shift-p` on Windows / Linux."
 msgstr ""
 
-#: src/troubleshooting.md:9
+#: src/troubleshooting.md:11
 msgid "Retrieve Zed and System Information"
 msgstr ""
 
-#: src/troubleshooting.md:11
+#: src/troubleshooting.md:13
 msgid ""
 "When reporting issues or seeking help, it's useful to know your Zed version "
 "and system specifications. You can retrieve this information using the "
 "following actions from the command palette:"
 msgstr ""
 
-#: src/troubleshooting.md:13
+#: src/troubleshooting.md:15
 msgid "<code class=\"hljs\">zed: about</code>: Find your Zed version number"
 msgstr ""
 
-#: src/troubleshooting.md:14
+#: src/troubleshooting.md:16
 msgid ""
 "<code class=\"hljs\">zed: copy system specs into clipboard</code>: Populate "
 "your clipboard with Zed version number, operating system version, and "
 "hardware specs"
 msgstr ""
 
-#: src/troubleshooting.md:16
+#: src/troubleshooting.md:18
 msgid "Zed Log"
 msgstr ""
 
-#: src/troubleshooting.md:18
+#: src/troubleshooting.md:20
 msgid ""
 "Often, a good first place to look when troubleshooting any issue in Zed is "
 "the Zed log, which might contain clues about what's going wrong. You can "
@@ -67,31 +67,31 @@ msgid ""
 "manager</code> from the command palette."
 msgstr ""
 
-#: src/troubleshooting.md:22
+#: src/troubleshooting.md:24
 msgid ""
 "You'll find the Zed log in the respective location on each operating system:"
 msgstr ""
 
-#: src/troubleshooting.md:24
+#: src/troubleshooting.md:26
 msgid "macOS: `~/Library/Logs/Zed/Zed.log`"
 msgstr ""
 
-#: src/troubleshooting.md:25
+#: src/troubleshooting.md:27
 msgid "Windows: `C:\\Users\\YOU\\AppData\\Local\\Zed\\logs\\Zed.log`"
 msgstr ""
 
-#: src/troubleshooting.md:26
+#: src/troubleshooting.md:28
 msgid "Linux: `~/.local/share/zed/logs/Zed.log` or `$XDG_DATA_HOME`"
 msgstr ""
 
-#: src/troubleshooting.md:28
+#: src/troubleshooting.md:30
 msgid ""
-"Note: In some cases, it might be useful to monitor the log live, such as "
+"**Note:** In some cases, it might be useful to monitor the log live, such as "
 "when [developing a Zed extension](https://zed.dev/docs/extensions/developing-"
 "extensions). Example: `tail -f ~/Library/Logs/Zed/Zed.log`"
 msgstr ""
 
-#: src/troubleshooting.md:31
+#: src/troubleshooting.md:33
 msgid ""
 "The log may contain enough context to help you debug the issue yourself, or "
 "you may find specific errors that are useful when filing a [GitHub issue]"
@@ -100,75 +100,75 @@ msgid ""
 "discussions)."
 msgstr ""
 
-#: src/troubleshooting.md:33
+#: src/troubleshooting.md:35
 msgid "Performance Issues (Profiling)"
 msgstr ""
 
-#: src/troubleshooting.md:35
-msgid ""
-"If you're running into performance issues in Zed—such as hitches, hangs, or "
-"general unresponsiveness—having a performance profile attached to your issue "
-"will help us zero in on what is getting stuck, so we can fix it."
-msgstr ""
-
 #: src/troubleshooting.md:37
-msgid "macOS"
+msgid ""
+"If you're running into performance issues in Zed (hitches, hangs, or general "
+"unresponsiveness), having a performance profile attached to your issue will "
+"help us zero in on what is getting stuck."
 msgstr ""
 
 #: src/troubleshooting.md:39
+msgid "macOS"
+msgstr ""
+
+#: src/troubleshooting.md:41
 msgid ""
 "Xcode Instruments (which comes bundled with your [Xcode](https://apps.apple."
 "com/us/app/xcode/id497799835) download) is the standard tool for profiling "
 "on macOS."
 msgstr ""
 
-#: src/troubleshooting.md:41
+#: src/troubleshooting.md:43
 msgid "With Zed running, open Instruments"
 msgstr ""
 
-#: src/troubleshooting.md:42
+#: src/troubleshooting.md:44
 msgid "Select `Time Profiler` as the profiling template"
 msgstr ""
 
-#: src/troubleshooting.md:43
+#: src/troubleshooting.md:45
 msgid ""
 "In the `Time Profiler` configuration, set the target to the running Zed "
 "process"
 msgstr ""
 
-#: src/troubleshooting.md:44
+#: src/troubleshooting.md:46
 msgid "Start recording"
 msgstr ""
 
-#: src/troubleshooting.md:45
+#: src/troubleshooting.md:47
 msgid ""
 "If the performance issue occurs when performing a specific action in Zed, "
 "perform that action now"
 msgstr ""
 
-#: src/troubleshooting.md:46
+#: src/troubleshooting.md:48
 msgid "Stop recording"
 msgstr ""
 
-#: src/troubleshooting.md:47
+#: src/troubleshooting.md:49
 msgid "Save the trace file"
 msgstr ""
 
-#: src/troubleshooting.md:48
+#: src/troubleshooting.md:50
 msgid "Compress the trace file into a zip archive"
 msgstr ""
 
-#: src/troubleshooting.md:49
+#: src/troubleshooting.md:51
 msgid ""
 "File a [GitHub issue](https://github.com/zed-industries/zed/issues/new/"
 "choose) with the trace zip attached"
 msgstr ""
 
-#: src/troubleshooting.md:55
+#: src/troubleshooting.md:57
 msgid "Startup and Workspace Issues"
 msgstr ""
 
-#: src/troubleshooting.md:57
+#: src/troubleshooting.md:59
 msgid ""
 "Zed creates local SQLite databases to persist data relating to its workspace "
 "and your projects. These databases store, for instance, the tabs and panes "
@@ -177,43 +177,43 @@ msgid ""
 "You can find and explore these databases in the following locations:"
 msgstr ""
 
-#: src/troubleshooting.md:59
+#: src/troubleshooting.md:61
 msgid "macOS: `~/Library/Application Support/Zed/db`"
 msgstr ""
 
-#: src/troubleshooting.md:60
+#: src/troubleshooting.md:62
 msgid ""
 "Linux and FreeBSD: `~/.local/share/zed/db` (or within `XDG_DATA_HOME` or "
 "`FLATPAK_XDG_DATA_HOME`)"
 msgstr ""
 
-#: src/troubleshooting.md:61
+#: src/troubleshooting.md:63
 msgid "Windows: `%LOCALAPPDATA%\\Zed\\db`"
 msgstr ""
 
-#: src/troubleshooting.md:63
+#: src/troubleshooting.md:65
 msgid ""
 "The naming convention of these databases takes on the form of `0-"
 "<zed_channel>`:"
 msgstr ""
 
-#: src/troubleshooting.md:65
+#: src/troubleshooting.md:67
 msgid "Stable: `0-stable`"
 msgstr ""
 
-#: src/troubleshooting.md:66
+#: src/troubleshooting.md:68
 msgid "Preview: `0-preview`"
 msgstr ""
 
-#: src/troubleshooting.md:67
+#: src/troubleshooting.md:69
 msgid "Nightly: `0-nightly`"
 msgstr ""
 
-#: src/troubleshooting.md:68
+#: src/troubleshooting.md:70
 msgid "Dev: `0-dev`"
 msgstr ""
 
-#: src/troubleshooting.md:70
+#: src/troubleshooting.md:72
 msgid ""
 "While rare, we've seen a few cases where workspace databases became "
 "corrupted, which prevented Zed from starting. If you're experiencing startup "
@@ -221,26 +221,78 @@ msgid ""
 "the database from its location, then trying to start Zed again."
 msgstr ""
 
-#: src/troubleshooting.md:73
+#: src/troubleshooting.md:75
 msgid ""
 "**Note**: Moving the workspace database will cause Zed to create a fresh "
 "one. Your recent projects, open tabs, etc. will be reset to \"factory\"."
 msgstr ""
 
-#: src/troubleshooting.md:76
+#: src/troubleshooting.md:78
 msgid ""
 "If your issue persists after regenerating the database, please [file an "
 "issue](https://github.com/zed-industries/zed/issues/new/choose)."
 msgstr ""
 
-#: src/troubleshooting.md:78
+#: src/troubleshooting.md:80
 msgid "Language Server Issues"
 msgstr ""
 
-#: src/troubleshooting.md:80
+#: src/troubleshooting.md:82
 msgid ""
 "If you're experiencing language-server related issues, such as stale "
 "diagnostics or issues jumping to definitions, restarting the language server "
 "via <code class=\"hljs\">editor: restart language server</code> from the "
 "command palette will often resolve the issue."
+msgstr ""
+
+#: src/troubleshooting.md:84
+msgid "Agent Error Messages"
+msgstr ""
+
+#: src/troubleshooting.md:86
+msgid "\"Max tokens reached\""
+msgstr ""
+
+#: src/troubleshooting.md:88
+msgid ""
+"You see this error when the agent's response exceeds the model's maximum "
+"token limit. This happens when:"
+msgstr ""
+
+#: src/troubleshooting.md:90
+msgid "The agent generates an extremely long response"
+msgstr ""
+
+#: src/troubleshooting.md:91
+msgid "The conversation context plus the response exceeds the model's capacity"
+msgstr ""
+
+#: src/troubleshooting.md:92
+msgid "Tool outputs are large and consume the available token budget"
+msgstr ""
+
+#: src/troubleshooting.md:94
+msgid "**To resolve this:**"
+msgstr ""
+
+#: src/troubleshooting.md:96
+msgid "Start a new thread to reduce context size"
+msgstr ""
+
+#: src/troubleshooting.md:97
+msgid "Use a model with a larger token limit in AI settings"
+msgstr ""
+
+#: src/troubleshooting.md:98
+msgid "Break your request into smaller, focused tasks"
+msgstr ""
+
+#: src/troubleshooting.md:99
+msgid "Clear tool outputs or previous messages using the thread controls"
+msgstr ""
+
+#: src/troubleshooting.md:101
+msgid ""
+"The token limit varies by model—check your model provider's documentation "
+"for specific limits."
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,456 +11,472 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/ai/models.md:1
+#: src/ai/models.md:3
 msgid "Models"
 msgstr ""
 
-#: src/ai/models.md:3
+#: src/ai/models.md:5
 msgid ""
 "Zed's plans offer hosted versions of major LLMs with higher rate limits than "
-"direct API access. Model availability is updated regularly."
+"direct API access. Model availability is updated regularly. To use your own "
+"API keys instead, see [LLM Providers](./llm-providers.md). For general "
+"setup, see [Configuration](./configuration.md)."
 msgstr ""
 
-#: src/ai/models.md:5 src/ai/models.md:69
+#: src/ai/models.md:7 src/ai/models.md:80
 msgid "Model"
 msgstr ""
 
-#: src/ai/models.md:5 src/ai/models.md:69
+#: src/ai/models.md:7 src/ai/models.md:80
 msgid "Provider"
 msgstr ""
 
-#: src/ai/models.md:5
+#: src/ai/models.md:7
 msgid "Token Type"
 msgstr ""
 
-#: src/ai/models.md:5
+#: src/ai/models.md:7
 msgid "Provider Price per 1M tokens"
 msgstr ""
 
-#: src/ai/models.md:5
+#: src/ai/models.md:7
 msgid "Zed Price per 1M tokens"
 msgstr ""
 
-#: src/ai/models.md:7 src/ai/models.md:71
+#: src/ai/models.md:9 src/ai/models.md:82
 msgid "Claude Opus 4.5"
 msgstr ""
 
-#: src/ai/models.md:7 src/ai/models.md:8 src/ai/models.md:9 src/ai/models.md:10
-#: src/ai/models.md:11 src/ai/models.md:12 src/ai/models.md:13
-#: src/ai/models.md:14 src/ai/models.md:15 src/ai/models.md:16
-#: src/ai/models.md:17 src/ai/models.md:18 src/ai/models.md:19
-#: src/ai/models.md:20 src/ai/models.md:21 src/ai/models.md:22
-#: src/ai/models.md:23 src/ai/models.md:24 src/ai/models.md:25
-#: src/ai/models.md:26 src/ai/models.md:27 src/ai/models.md:28
-#: src/ai/models.md:29 src/ai/models.md:30 src/ai/models.md:71
-#: src/ai/models.md:72 src/ai/models.md:73 src/ai/models.md:74
-#: src/ai/models.md:75
+#: src/ai/models.md:9 src/ai/models.md:10 src/ai/models.md:11
+#: src/ai/models.md:12 src/ai/models.md:13 src/ai/models.md:14
+#: src/ai/models.md:15 src/ai/models.md:16 src/ai/models.md:17
+#: src/ai/models.md:18 src/ai/models.md:19 src/ai/models.md:20
+#: src/ai/models.md:21 src/ai/models.md:22 src/ai/models.md:23
+#: src/ai/models.md:24 src/ai/models.md:25 src/ai/models.md:26
+#: src/ai/models.md:27 src/ai/models.md:28 src/ai/models.md:82
+#: src/ai/models.md:83 src/ai/models.md:84 src/ai/models.md:85
+#: src/ai/models.md:86
 msgid "Anthropic"
-msgstr ""
-
-#: src/ai/models.md:7 src/ai/models.md:11 src/ai/models.md:15
-#: src/ai/models.md:19 src/ai/models.md:23 src/ai/models.md:27
-#: src/ai/models.md:31 src/ai/models.md:34 src/ai/models.md:37
-#: src/ai/models.md:40 src/ai/models.md:42 src/ai/models.md:44
-#: src/ai/models.md:46 src/ai/models.md:49 src/ai/models.md:52
-#: src/ai/models.md:55
-msgid "Input"
-msgstr ""
-
-#: src/ai/models.md:7 src/ai/models.md:28
-msgid "$5.00"
-msgstr ""
-
-#: src/ai/models.md:7 src/ai/models.md:28
-msgid "$5.50"
-msgstr ""
-
-#: src/ai/models.md:8 src/ai/models.md:12 src/ai/models.md:16
-#: src/ai/models.md:20 src/ai/models.md:24 src/ai/models.md:28
-#: src/ai/models.md:32 src/ai/models.md:35 src/ai/models.md:38
-#: src/ai/models.md:41 src/ai/models.md:43 src/ai/models.md:45
-#: src/ai/models.md:47 src/ai/models.md:50 src/ai/models.md:53
-#: src/ai/models.md:56
-msgid "Output"
-msgstr ""
-
-#: src/ai/models.md:8
-msgid "$25.00"
-msgstr ""
-
-#: src/ai/models.md:8
-msgid "$27.50"
 msgstr ""
 
 #: src/ai/models.md:9 src/ai/models.md:13 src/ai/models.md:17
 #: src/ai/models.md:21 src/ai/models.md:25 src/ai/models.md:29
-msgid "Input - Cache Write"
+#: src/ai/models.md:32 src/ai/models.md:35 src/ai/models.md:38
+#: src/ai/models.md:41 src/ai/models.md:43 src/ai/models.md:45
+#: src/ai/models.md:48 src/ai/models.md:51 src/ai/models.md:54
+msgid "Input"
 msgstr ""
 
-#: src/ai/models.md:9
-msgid "$6.25"
+#: src/ai/models.md:9 src/ai/models.md:13 src/ai/models.md:26
+msgid "$5.00"
 msgstr ""
 
-#: src/ai/models.md:9
-msgid "$6.875"
+#: src/ai/models.md:9 src/ai/models.md:13 src/ai/models.md:26
+msgid "$5.50"
 msgstr ""
 
 #: src/ai/models.md:10 src/ai/models.md:14 src/ai/models.md:18
 #: src/ai/models.md:22 src/ai/models.md:26 src/ai/models.md:30
+#: src/ai/models.md:33 src/ai/models.md:36 src/ai/models.md:39
+#: src/ai/models.md:42 src/ai/models.md:44 src/ai/models.md:46
+#: src/ai/models.md:49 src/ai/models.md:52 src/ai/models.md:55
+msgid "Output"
+msgstr ""
+
+#: src/ai/models.md:10 src/ai/models.md:14
+msgid "$25.00"
+msgstr ""
+
+#: src/ai/models.md:10 src/ai/models.md:14
+msgid "$27.50"
+msgstr ""
+
+#: src/ai/models.md:11 src/ai/models.md:15 src/ai/models.md:19
+#: src/ai/models.md:23 src/ai/models.md:27
+msgid "Input - Cache Write"
+msgstr ""
+
+#: src/ai/models.md:11 src/ai/models.md:15
+msgid "$6.25"
+msgstr ""
+
+#: src/ai/models.md:11 src/ai/models.md:15
+msgid "$6.875"
+msgstr ""
+
+#: src/ai/models.md:12 src/ai/models.md:16 src/ai/models.md:20
+#: src/ai/models.md:24 src/ai/models.md:28
 msgid "Input - Cache Read"
 msgstr ""
 
-#: src/ai/models.md:10 src/ai/models.md:50 src/ai/models.md:53
+#: src/ai/models.md:12 src/ai/models.md:16 src/ai/models.md:49
+#: src/ai/models.md:52
 msgid "$0.50"
 msgstr ""
 
-#: src/ai/models.md:10 src/ai/models.md:50 src/ai/models.md:53
+#: src/ai/models.md:12 src/ai/models.md:16 src/ai/models.md:49
+#: src/ai/models.md:52
 msgid "$0.55"
 msgstr ""
 
-#: src/ai/models.md:11 src/ai/models.md:72
-msgid "Claude Opus 4.1"
+#: src/ai/models.md:13 src/ai/models.md:83
+msgid "Claude Opus 4.6"
 msgstr ""
 
-#: src/ai/models.md:11 src/ai/models.md:16 src/ai/models.md:20
-#: src/ai/models.md:24 src/ai/models.md:47
-msgid "$15.00"
-msgstr ""
-
-#: src/ai/models.md:11 src/ai/models.md:16 src/ai/models.md:20
-#: src/ai/models.md:24
-msgid "$16.50"
-msgstr ""
-
-#: src/ai/models.md:12
-msgid "$75.00"
-msgstr ""
-
-#: src/ai/models.md:12
-msgid "$82.50"
-msgstr ""
-
-#: src/ai/models.md:13
-msgid "$18.75"
-msgstr ""
-
-#: src/ai/models.md:13
-msgid "$20.625"
-msgstr ""
-
-#: src/ai/models.md:14 src/ai/models.md:56
-msgid "$1.50"
-msgstr ""
-
-#: src/ai/models.md:14 src/ai/models.md:56
-msgid "$1.65"
-msgstr ""
-
-#: src/ai/models.md:15
+#: src/ai/models.md:17 src/ai/models.md:84
 msgid "Claude Sonnet 4.5"
 msgstr ""
 
-#: src/ai/models.md:15 src/ai/models.md:19 src/ai/models.md:23
-#: src/ai/models.md:46
+#: src/ai/models.md:17 src/ai/models.md:21 src/ai/models.md:45
 msgid "$3.00"
 msgstr ""
 
-#: src/ai/models.md:15 src/ai/models.md:19 src/ai/models.md:23
-#: src/ai/models.md:46
+#: src/ai/models.md:17 src/ai/models.md:21 src/ai/models.md:45
 msgid "$3.30"
 msgstr ""
 
-#: src/ai/models.md:17 src/ai/models.md:21 src/ai/models.md:25
+#: src/ai/models.md:18 src/ai/models.md:22 src/ai/models.md:46
+msgid "$15.00"
+msgstr ""
+
+#: src/ai/models.md:18 src/ai/models.md:22
+msgid "$16.50"
+msgstr ""
+
+#: src/ai/models.md:19 src/ai/models.md:23
 msgid "$3.75"
 msgstr ""
 
-#: src/ai/models.md:17 src/ai/models.md:21 src/ai/models.md:25
+#: src/ai/models.md:19 src/ai/models.md:23
 msgid "$4.125"
 msgstr ""
 
-#: src/ai/models.md:18 src/ai/models.md:22 src/ai/models.md:26
-#: src/ai/models.md:44
+#: src/ai/models.md:20 src/ai/models.md:24 src/ai/models.md:43
 msgid "$0.30"
 msgstr ""
 
-#: src/ai/models.md:18 src/ai/models.md:22 src/ai/models.md:26
-#: src/ai/models.md:44
+#: src/ai/models.md:20 src/ai/models.md:24 src/ai/models.md:43
 msgid "$0.33"
 msgstr ""
 
-#: src/ai/models.md:19 src/ai/models.md:73
-msgid "Claude Sonnet 4"
+#: src/ai/models.md:21 src/ai/models.md:85
+msgid "Claude Sonnet 4.6"
 msgstr ""
 
-#: src/ai/models.md:23 src/ai/models.md:74
-msgid "Claude Sonnet 3.7"
-msgstr ""
-
-#: src/ai/models.md:27 src/ai/models.md:75
+#: src/ai/models.md:25 src/ai/models.md:86
 msgid "Claude Haiku 4.5"
 msgstr ""
 
-#: src/ai/models.md:27
+#: src/ai/models.md:25
 msgid "$1.00"
 msgstr ""
 
-#: src/ai/models.md:27
+#: src/ai/models.md:25
 msgid "$1.10"
 msgstr ""
 
-#: src/ai/models.md:29 src/ai/models.md:31 src/ai/models.md:42
+#: src/ai/models.md:27 src/ai/models.md:29 src/ai/models.md:32
 msgid "$1.25"
 msgstr ""
 
-#: src/ai/models.md:29 src/ai/models.md:31 src/ai/models.md:42
+#: src/ai/models.md:27 src/ai/models.md:29 src/ai/models.md:32
 msgid "$1.375"
 msgstr ""
 
-#: src/ai/models.md:30
+#: src/ai/models.md:28
 msgid "$0.10"
 msgstr ""
 
-#: src/ai/models.md:30
+#: src/ai/models.md:28
 msgid "$0.11"
 msgstr ""
 
-#: src/ai/models.md:31 src/ai/models.md:76
-msgid "GPT-5"
+#: src/ai/models.md:29 src/ai/models.md:87
+msgid "GPT-5.2"
 msgstr ""
 
-#: src/ai/models.md:31 src/ai/models.md:32 src/ai/models.md:33
-#: src/ai/models.md:34 src/ai/models.md:35 src/ai/models.md:36
-#: src/ai/models.md:37 src/ai/models.md:38 src/ai/models.md:39
-#: src/ai/models.md:76 src/ai/models.md:77 src/ai/models.md:78
+#: src/ai/models.md:29 src/ai/models.md:30 src/ai/models.md:31
+#: src/ai/models.md:32 src/ai/models.md:33 src/ai/models.md:34
+#: src/ai/models.md:35 src/ai/models.md:36 src/ai/models.md:37
+#: src/ai/models.md:38 src/ai/models.md:39 src/ai/models.md:40
+#: src/ai/models.md:87 src/ai/models.md:88 src/ai/models.md:89
+#: src/ai/models.md:90
 msgid "OpenAI"
 msgstr ""
 
-#: src/ai/models.md:32 src/ai/models.md:43
+#: src/ai/models.md:30 src/ai/models.md:33
 msgid "$10.00"
 msgstr ""
 
-#: src/ai/models.md:32 src/ai/models.md:43
+#: src/ai/models.md:30 src/ai/models.md:33
 msgid "$11.00"
 msgstr ""
 
-#: src/ai/models.md:33 src/ai/models.md:36 src/ai/models.md:39
-#: src/ai/models.md:48 src/ai/models.md:51 src/ai/models.md:54
-#: src/ai/models.md:57
+#: src/ai/models.md:31 src/ai/models.md:34 src/ai/models.md:37
+#: src/ai/models.md:40 src/ai/models.md:47 src/ai/models.md:50
+#: src/ai/models.md:53 src/ai/models.md:56
 msgid "Cached Input"
 msgstr ""
 
-#: src/ai/models.md:33
+#: src/ai/models.md:31 src/ai/models.md:34
 msgid "$0.125"
 msgstr ""
 
-#: src/ai/models.md:33
+#: src/ai/models.md:31 src/ai/models.md:34
 msgid "$0.1375"
 msgstr ""
 
-#: src/ai/models.md:34 src/ai/models.md:77
+#: src/ai/models.md:32 src/ai/models.md:88
+msgid "GPT-5.2 Codex"
+msgstr ""
+
+#: src/ai/models.md:35 src/ai/models.md:89
 msgid "GPT-5 mini"
 msgstr ""
 
-#: src/ai/models.md:34
+#: src/ai/models.md:35
 msgid "$0.25"
 msgstr ""
 
-#: src/ai/models.md:34
+#: src/ai/models.md:35
 msgid "$0.275"
 msgstr ""
 
-#: src/ai/models.md:35 src/ai/models.md:40
+#: src/ai/models.md:36 src/ai/models.md:41
 msgid "$2.00"
 msgstr ""
 
-#: src/ai/models.md:35 src/ai/models.md:40
+#: src/ai/models.md:36 src/ai/models.md:41
 msgid "$2.20"
 msgstr ""
 
-#: src/ai/models.md:36
+#: src/ai/models.md:37
 msgid "$0.025"
 msgstr ""
 
-#: src/ai/models.md:36
+#: src/ai/models.md:37
 msgid "$0.0275"
 msgstr ""
 
-#: src/ai/models.md:37 src/ai/models.md:78
+#: src/ai/models.md:38 src/ai/models.md:90
 msgid "GPT-5 nano"
 msgstr ""
 
-#: src/ai/models.md:37 src/ai/models.md:51 src/ai/models.md:54
+#: src/ai/models.md:38 src/ai/models.md:50 src/ai/models.md:53
 msgid "$0.05"
 msgstr ""
 
-#: src/ai/models.md:37 src/ai/models.md:51 src/ai/models.md:54
+#: src/ai/models.md:38 src/ai/models.md:50 src/ai/models.md:53
 msgid "$0.055"
 msgstr ""
 
-#: src/ai/models.md:38
+#: src/ai/models.md:39
 msgid "$0.40"
 msgstr ""
 
-#: src/ai/models.md:38
+#: src/ai/models.md:39
 msgid "$0.44"
 msgstr ""
 
-#: src/ai/models.md:39
+#: src/ai/models.md:40
 msgid "$0.005"
 msgstr ""
 
-#: src/ai/models.md:39
+#: src/ai/models.md:40
 msgid "$0.0055"
 msgstr ""
 
-#: src/ai/models.md:40 src/ai/models.md:81
-msgid "Gemini 3.0 Pro"
+#: src/ai/models.md:41 src/ai/models.md:91
+msgid "Gemini 3.1 Pro"
 msgstr ""
 
-#: src/ai/models.md:40 src/ai/models.md:41 src/ai/models.md:42
-#: src/ai/models.md:43 src/ai/models.md:44 src/ai/models.md:45
-#: src/ai/models.md:79 src/ai/models.md:80 src/ai/models.md:81
+#: src/ai/models.md:41 src/ai/models.md:42 src/ai/models.md:43
+#: src/ai/models.md:44 src/ai/models.md:91 src/ai/models.md:92
 msgid "Google"
 msgstr ""
 
-#: src/ai/models.md:41
+#: src/ai/models.md:42
 msgid "$12.00"
 msgstr ""
 
-#: src/ai/models.md:41
+#: src/ai/models.md:42
 msgid "$13.20"
 msgstr ""
 
-#: src/ai/models.md:42 src/ai/models.md:79
-msgid "Gemini 2.5 Pro"
+#: src/ai/models.md:43 src/ai/models.md:92
+msgid "Gemini 3 Flash"
 msgstr ""
 
-#: src/ai/models.md:44 src/ai/models.md:80
-msgid "Gemini 2.5 Flash"
-msgstr ""
-
-#: src/ai/models.md:45
+#: src/ai/models.md:44
 msgid "$2.50"
 msgstr ""
 
-#: src/ai/models.md:45
+#: src/ai/models.md:44
 msgid "$2.75"
 msgstr ""
 
-#: src/ai/models.md:46
+#: src/ai/models.md:45
 msgid "Grok 4"
 msgstr ""
 
-#: src/ai/models.md:46 src/ai/models.md:47 src/ai/models.md:48
-#: src/ai/models.md:49 src/ai/models.md:50 src/ai/models.md:51
-#: src/ai/models.md:52 src/ai/models.md:53 src/ai/models.md:54
-#: src/ai/models.md:55 src/ai/models.md:56 src/ai/models.md:57
+#: src/ai/models.md:45 src/ai/models.md:46 src/ai/models.md:47
+#: src/ai/models.md:48 src/ai/models.md:49 src/ai/models.md:50
+#: src/ai/models.md:51 src/ai/models.md:52 src/ai/models.md:53
+#: src/ai/models.md:54 src/ai/models.md:55 src/ai/models.md:56
 msgid "X.ai"
 msgstr ""
 
-#: src/ai/models.md:47
+#: src/ai/models.md:46
 msgid "$16.5"
 msgstr ""
 
-#: src/ai/models.md:48
+#: src/ai/models.md:47
 msgid "$0.75"
 msgstr ""
 
-#: src/ai/models.md:48
+#: src/ai/models.md:47
 msgid "$0.825"
 msgstr ""
 
-#: src/ai/models.md:49
+#: src/ai/models.md:48
 msgid "Grok 4 Fast"
 msgstr ""
 
-#: src/ai/models.md:49 src/ai/models.md:52 src/ai/models.md:55
+#: src/ai/models.md:48 src/ai/models.md:51 src/ai/models.md:54
 msgid "$0.20"
 msgstr ""
 
-#: src/ai/models.md:49 src/ai/models.md:52 src/ai/models.md:55
+#: src/ai/models.md:48 src/ai/models.md:51 src/ai/models.md:54
 msgid "$0.22"
 msgstr ""
 
-#: src/ai/models.md:52
+#: src/ai/models.md:51
 msgid "Grok 4 (Non-Reasoning)"
 msgstr ""
 
-#: src/ai/models.md:55
+#: src/ai/models.md:54
 msgid "Grok Code Fast 1"
 msgstr ""
 
-#: src/ai/models.md:57
+#: src/ai/models.md:55
+msgid "$1.50"
+msgstr ""
+
+#: src/ai/models.md:55
+msgid "$1.65"
+msgstr ""
+
+#: src/ai/models.md:56
 msgid "$0.02"
 msgstr ""
 
-#: src/ai/models.md:57
+#: src/ai/models.md:56
 msgid "$0.022"
 msgstr ""
 
-#: src/ai/models.md:59
+#: src/ai/models.md:58
+msgid "Recent Model Retirements"
+msgstr ""
+
+#: src/ai/models.md:60
+msgid ""
+"As of February 19, 2026, Zed Pro serves newer model versions in place of the "
+"retired models below:"
+msgstr ""
+
+#: src/ai/models.md:62
+msgid "Claude Opus 4.1 → Claude Opus 4.5 or Claude Opus 4.6"
+msgstr ""
+
+#: src/ai/models.md:63
+msgid "Claude Sonnet 4 → Claude Sonnet 4.5 or Claude Sonnet 4.6"
+msgstr ""
+
+#: src/ai/models.md:64
+msgid ""
+"Claude Sonnet 3.7 (retired Feb 19) → Claude Sonnet 4.5 or Claude Sonnet 4.6"
+msgstr ""
+
+#: src/ai/models.md:65
+msgid "GPT-5.1 and GPT-5 → GPT-5.2 or GPT-5.2 Codex"
+msgstr ""
+
+#: src/ai/models.md:66
+msgid "Gemini 2.5 Pro → Gemini 3.1 Pro"
+msgstr ""
+
+#: src/ai/models.md:67
+msgid "Gemini 3 Pro → Gemini 3.1 Pro"
+msgstr ""
+
+#: src/ai/models.md:68
+msgid "Gemini 2.5 Flash → Gemini 3 Flash"
+msgstr ""
+
+#: src/ai/models.md:70
 msgid "Usage"
 msgstr ""
 
-#: src/ai/models.md:61
+#: src/ai/models.md:72
 msgid ""
 "Any usage of a Zed-hosted model will be billed at the Zed Price (rightmost "
 "column above). See [Plans and Usage](./plans-and-usage.md) for details on "
 "Zed's plans and limits for use of hosted models."
 msgstr ""
 
-#: src/ai/models.md:63
+#: src/ai/models.md:74
 msgid ""
 "LLMs can enter unproductive loops that require user intervention. Monitor "
 "longer-running tasks and interrupt if needed."
 msgstr ""
 
-#: src/ai/models.md:65
+#: src/ai/models.md:76
 msgid "Context Windows"
 msgstr ""
 
-#: src/ai/models.md:67
+#: src/ai/models.md:78
 msgid ""
 "A context window is the maximum span of text and code an LLM can consider at "
 "once, including both the input prompt and output generated by the model."
 msgstr ""
 
-#: src/ai/models.md:69
+#: src/ai/models.md:80
 msgid "Zed-Hosted Context Window"
 msgstr ""
 
-#: src/ai/models.md:71 src/ai/models.md:72 src/ai/models.md:73
-#: src/ai/models.md:74 src/ai/models.md:75 src/ai/models.md:79
-#: src/ai/models.md:80 src/ai/models.md:81
+#: src/ai/models.md:82 src/ai/models.md:83 src/ai/models.md:84
+#: src/ai/models.md:85 src/ai/models.md:86 src/ai/models.md:91
+#: src/ai/models.md:92
 msgid "200k"
 msgstr ""
 
-#: src/ai/models.md:76 src/ai/models.md:77 src/ai/models.md:78
+#: src/ai/models.md:87 src/ai/models.md:88 src/ai/models.md:89
+#: src/ai/models.md:90
 msgid "400k"
 msgstr ""
 
-#: src/ai/models.md:83
+#: src/ai/models.md:94
 msgid ""
-"Context window limits for hosted Sonnet 4 and Gemini 2.5 Pro/Flash may "
-"increase in future releases."
+"Context window limits for hosted Sonnet 4.5/4.6 and Gemini 3.1 Pro/3 Pro/"
+"Flash may increase in future releases."
 msgstr ""
 
-#: src/ai/models.md:85
+#: src/ai/models.md:96
 msgid ""
 "Each Agent thread and text thread in Zed maintains its own context window. "
 "The more prompts, attached files, and responses included in a session, the "
 "larger the context window grows."
 msgstr ""
 
-#: src/ai/models.md:88
+#: src/ai/models.md:99
 msgid "Start a new thread for each distinct task to keep context focused."
 msgstr ""
 
-#: src/ai/models.md:90
+#: src/ai/models.md:101
 msgid "Tool Calls"
 msgstr ""
 
-#: src/ai/models.md:92
+#: src/ai/models.md:103
 msgid ""
 "Models can use [tools](./tools.md) to interface with your code, search the "
 "web, and perform other useful functions."

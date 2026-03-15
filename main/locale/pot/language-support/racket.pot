@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/racket.md:1
+#: src/languages/racket.md:3
 msgid "Racket"
 msgstr ""
 
-#: src/languages/racket.md:3
+#: src/languages/racket.md:5
 msgid ""
 "Racket support is available through the [Racket extension](https://github."
 "com/zed-extensions/racket)."
 msgstr ""
 
-#: src/languages/racket.md:5
+#: src/languages/racket.md:7
 msgid ""
 "Tree-sitter: [zed-industries/tree-sitter-racket](https://github.com/zed-"
 "industries/tree-sitter-racket)"
 msgstr ""
 
-#: src/languages/racket.md:7
+#: src/languages/racket.md:9
 msgid ""
 "The [racket-language-server](https://docs.racket-lang.org/racket-language-"
 "server/index.html) is not yet supported in Zed, please see [Issue #15789]"

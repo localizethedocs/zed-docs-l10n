@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,58 +11,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/r.md:1
+#: src/languages/r.md:3
 msgid "R"
 msgstr ""
 
-#: src/languages/r.md:3
+#: src/languages/r.md:5
 msgid "R support is available via multiple R Zed extensions:"
 msgstr ""
 
-#: src/languages/r.md:5
+#: src/languages/r.md:7
 msgid "[ocsmit/zed-r](https://github.com/ocsmit/zed-r)"
 msgstr ""
 
-#: src/languages/r.md:7
+#: src/languages/r.md:9
 msgid ""
 "Tree-sitter: [r-lib/tree-sitter-r](https://github.com/r-lib/tree-sitter-r)"
 msgstr ""
 
-#: src/languages/r.md:8
+#: src/languages/r.md:10
 msgid ""
 "Language-Server: [REditorSupport/languageserver](https://github.com/"
 "REditorSupport/languageserver)"
 msgstr ""
 
-#: src/languages/r.md:10
+#: src/languages/r.md:12
 msgid "[posit-dev/air](https://github.com/posit-dev/air/tree/main/editors/zed)"
 msgstr ""
 
-#: src/languages/r.md:11
+#: src/languages/r.md:13
 msgid "Formatter: [posit-dev/air](https://posit-dev.github.io/air/)"
 msgstr ""
 
-#: src/languages/r.md:13
+#: src/languages/r.md:15
 msgid "Installation"
 msgstr ""
 
-#: src/languages/r.md:15
+#: src/languages/r.md:17
 msgid "[Download and Install R](https://cloud.r-project.org/)."
 msgstr ""
 
-#: src/languages/r.md:16
+#: src/languages/r.md:18
 msgid "Install the R packages `languageserver` and `lintr`:"
 msgstr ""
 
-#: src/languages/r.md:19
+#: src/languages/r.md:21
 msgid "\"languageserver\""
 msgstr ""
 
-#: src/languages/r.md:20
+#: src/languages/r.md:22
 msgid "\"lintr\""
 msgstr ""
 
-#: src/languages/r.md:23
+#: src/languages/r.md:25
 msgid ""
 "Install the [R](https://github.com/ocsmit/zed-r) extension through Zed's "
 "extensions manager for basic R language support (syntax highlighting, tree-"
@@ -70,58 +70,58 @@ msgid ""
 "REditorSupport/languageserver) support."
 msgstr ""
 
-#: src/languages/r.md:25
+#: src/languages/r.md:27
 msgid ""
 "Install the [Air](https://posit-dev.github.io/air/) extension through Zed's "
 "extensions manager for R code formatting via Air."
 msgstr ""
 
-#: src/languages/r.md:27
+#: src/languages/r.md:29
 msgid "Linting"
 msgstr ""
 
-#: src/languages/r.md:29
+#: src/languages/r.md:31
 msgid ""
 "`REditorSupport/languageserver` bundles support for [r-lib/lintr](https://"
 "github.com/r-lib/lintr) as a linter. This can be configured via the use of a "
 "`.lintr` inside your project (or in your home directory for global defaults)."
 msgstr ""
 
-#: src/languages/r.md:37
+#: src/languages/r.md:39
 msgid "\"inst/doc/creating_linters.R\""
 msgstr ""
 
-#: src/languages/r.md:38
+#: src/languages/r.md:40
 msgid "\"inst/example/bad.R\""
 msgstr ""
 
-#: src/languages/r.md:39
+#: src/languages/r.md:41
 msgid "\"tests/testthat/exclusions-test\""
 msgstr ""
 
-#: src/languages/r.md:43
+#: src/languages/r.md:45
 msgid "Or exclude it from linting anything,"
 msgstr ""
 
-#: src/languages/r.md:46
+#: src/languages/r.md:48
 msgid "\".\""
 msgstr ""
 
-#: src/languages/r.md:49
+#: src/languages/r.md:51
 msgid ""
 "See [Using lintr](https://lintr.r-lib.org/articles/lintr.html) for a "
 "complete list of options,"
 msgstr ""
 
-#: src/languages/r.md:51
+#: src/languages/r.md:53
 msgid "Formatting"
 msgstr ""
 
-#: src/languages/r.md:53
+#: src/languages/r.md:55
 msgid "Air"
 msgstr ""
 
-#: src/languages/r.md:55
+#: src/languages/r.md:57
 msgid ""
 "[Air](https://posit-dev.github.io/air/) provides code formatting for R, "
 "including support for format-on-save. The [Air documentation for Zed]"
@@ -129,56 +129,59 @@ msgid ""
 "date advice for running Air in Zed."
 msgstr ""
 
-#: src/languages/r.md:57
+#: src/languages/r.md:59
 msgid ""
 "Ensure that you have installed both the [ocsmit/zed-r](https://github.com/"
 "ocsmit/zed-r) extension (for general R language awareness in Zed) and the "
 "[Air](https://posit-dev.github.io/air/) extension."
 msgstr ""
 
-#: src/languages/r.md:59
-msgid "Enable Air in your `settings.json`:"
+#: src/languages/r.md:61
+msgid ""
+"Configure language servers in Settings (<kbd class=\"keybinding\">cmd-,|"
+"ctrl-,</kbd>) under Languages > R, or add to your settings file:"
 msgstr ""
 
-#: src/languages/r.md:63 src/languages/r.md:75
+#: src/languages/r.md:65 src/languages/r.md:77
 msgid "\"languages\""
 msgstr ""
 
-#: src/languages/r.md:64 src/languages/r.md:76
+#: src/languages/r.md:66 src/languages/r.md:78
 msgid "\"R\""
 msgstr ""
 
-#: src/languages/r.md:65 src/languages/r.md:77
+#: src/languages/r.md:67 src/languages/r.md:79
 msgid "\"language_servers\""
 msgstr ""
 
-#: src/languages/r.md:65 src/languages/r.md:77
+#: src/languages/r.md:67 src/languages/r.md:79
 msgid "\"air\""
 msgstr ""
 
-#: src/languages/r.md:71
+#: src/languages/r.md:73
 msgid ""
 "If you use the `\"r_language_server\"` from `REditorSupport/languageserver`, "
-"but would still like to use Air for formatting, use the following "
-"configuration:"
+"but would still like to use Air for formatting, configure in Settings (<kbd "
+"class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > R, or add to your "
+"settings file:"
 msgstr ""
 
-#: src/languages/r.md:77
+#: src/languages/r.md:79
 msgid "\"r_language_server\""
 msgstr ""
 
-#: src/languages/r.md:78
+#: src/languages/r.md:80
 msgid "\"use_on_type_format\""
 msgstr ""
 
-#: src/languages/r.md:84
+#: src/languages/r.md:86
 msgid ""
 "Note that `\"air\"` must come first in this list, otherwise [r-lib/styler]"
 "(https://github.com/r-lib/styler) will be invoked via "
 "`\"r_language_server\"`."
 msgstr ""
 
-#: src/languages/r.md:86
+#: src/languages/r.md:88
 msgid ""
 "`\"r_language_server\"` provides on-type-formatting that differs from Air's "
 "formatting rules. To avoid this entirely and let Air be fully in charge of "
@@ -186,27 +189,27 @@ msgid ""
 "above."
 msgstr ""
 
-#: src/languages/r.md:88
+#: src/languages/r.md:90
 msgid "Configuring Air"
 msgstr ""
 
-#: src/languages/r.md:90
+#: src/languages/r.md:92
 msgid ""
 "Air is minimally configurable via an `air.toml` file placed in the root "
-"directory of your project:"
+"folder of your project:"
 msgstr ""
 
-#: src/languages/r.md:98
+#: src/languages/r.md:100
 msgid ""
 "For more details, refer to the Air documentation about [configuration]"
 "(https://posit-dev.github.io/air/configuration.html)."
 msgstr ""
 
-#: src/languages/r.md:100
+#: src/languages/r.md:102
 msgid "Styler"
 msgstr ""
 
-#: src/languages/r.md:102
+#: src/languages/r.md:104
 msgid ""
 "`REditorSupport/languageserver` bundles support for [r-lib/styler](https://"
 "github.com/r-lib/styler) as a formatter. See [Customizing Styler](https://"

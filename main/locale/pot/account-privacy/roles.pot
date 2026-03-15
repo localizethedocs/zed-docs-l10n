@@ -1,0 +1,191 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/roles.md:3
+msgid "Roles"
+msgstr ""
+
+#: src/roles.md:5
+msgid ""
+"Every member of a Zed organization is assigned a role that determines what "
+"they can access and configure."
+msgstr ""
+
+#: src/roles.md:8
+msgid "Role Types"
+msgstr ""
+
+#: src/roles.md:10
+msgid "Every member of an organization is assigned one of three roles:"
+msgstr ""
+
+#: src/roles.md:12
+msgid "Role"
+msgstr ""
+
+#: src/roles.md:12
+msgid "Description"
+msgstr ""
+
+#: src/roles.md:14
+msgid "**Owner**"
+msgstr ""
+
+#: src/roles.md:14
+msgid "Full control, including billing and ownership transfer"
+msgstr ""
+
+#: src/roles.md:15
+msgid "**Admin**"
+msgstr ""
+
+#: src/roles.md:15
+msgid "Full control, except billing"
+msgstr ""
+
+#: src/roles.md:16
+msgid "**Member**"
+msgstr ""
+
+#: src/roles.md:16
+msgid "Standard access, no privileged actions"
+msgstr ""
+
+#: src/roles.md:18
+msgid "Owner"
+msgstr ""
+
+#: src/roles.md:20
+msgid "An owner has full control over the organization, including:"
+msgstr ""
+
+#: src/roles.md:22
+msgid "Invite and remove members"
+msgstr ""
+
+#: src/roles.md:23
+msgid "Assign and change member roles"
+msgstr ""
+
+#: src/roles.md:24
+msgid "Manage billing, payment methods, and invoices"
+msgstr ""
+
+#: src/roles.md:25
+msgid "Configure data-sharing policies"
+msgstr ""
+
+#: src/roles.md:26
+msgid "Disable Zed's collaborative features"
+msgstr ""
+
+#: src/roles.md:27
+msgid ""
+"Control whether members can use Zed-hosted models and Zed's edit predictions"
+msgstr ""
+
+#: src/roles.md:28
+msgid "Transfer ownership to another member"
+msgstr ""
+
+#: src/roles.md:30
+msgid "Admin"
+msgstr ""
+
+#: src/roles.md:32
+msgid "Admins have the same capabilities as the Owner, except they cannot:"
+msgstr ""
+
+#: src/roles.md:34
+msgid "Access or modify billing settings"
+msgstr ""
+
+#: src/roles.md:35
+msgid "Transfer organization ownership"
+msgstr ""
+
+#: src/roles.md:37
+msgid ""
+"This role is suited for team leads or managers who handle day-to-day member "
+"access without needing visibility into payment details."
+msgstr ""
+
+#: src/roles.md:40
+msgid "Member"
+msgstr ""
+
+#: src/roles.md:42
+msgid ""
+"Members have standard access to Zed. They cannot access billing or "
+"organization settings."
+msgstr ""
+
+#: src/roles.md:45
+msgid "Managing User Roles"
+msgstr ""
+
+#: src/roles.md:47
+msgid ""
+"Owners and Admins can manage organization members from the Zed dashboard "
+"within the Members page."
+msgstr ""
+
+#: src/roles.md:50
+msgid "Inviting Members"
+msgstr ""
+
+#: src/roles.md:52
+msgid "On the Members page, select **+ Invite Member**."
+msgstr ""
+
+#: src/roles.md:53
+msgid "Enter the member's company email address and choose a role."
+msgstr ""
+
+#: src/roles.md:54
+msgid ""
+"The invitee receives an email with instructions to join. After accepting, "
+"they authenticate via GitHub."
+msgstr ""
+
+#: src/roles.md:57
+msgid "Changing a Member's Role"
+msgstr ""
+
+#: src/roles.md:59
+msgid ""
+"On the Members page, find the member. You can filter by role or search by "
+"name."
+msgstr ""
+
+#: src/roles.md:61
+msgid "Open the three-dot menu and select a new role."
+msgstr ""
+
+#: src/roles.md:63
+msgid "Removing a Member"
+msgstr ""
+
+#: src/roles.md:65
+msgid "On the Members page, find the member."
+msgstr ""
+
+#: src/roles.md:66
+msgid "Select **Remove** and confirm."
+msgstr ""
+
+#: src/roles.md:68
+msgid ""
+"Removing a member removes their access to organization settings and any "
+"organization-managed features. They can continue using Zed on their own."
+msgstr ""

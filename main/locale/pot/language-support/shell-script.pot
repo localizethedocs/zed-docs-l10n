@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,148 +11,148 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/sh.md:1
+#: src/languages/sh.md:3
 msgid "Shell Scripts"
 msgstr ""
 
-#: src/languages/sh.md:3
+#: src/languages/sh.md:5
 msgid "Shell Scripts (bash, zsh, dash, sh) are supported natively by Zed."
 msgstr ""
 
-#: src/languages/sh.md:5
+#: src/languages/sh.md:7
 msgid ""
 "Tree-sitter: [tree-sitter/tree-sitter-bash](https://github.com/tree-sitter/"
 "tree-sitter-bash)"
 msgstr ""
 
-#: src/languages/sh.md:7
+#: src/languages/sh.md:9
 msgid "Settings"
 msgstr ""
 
-#: src/languages/sh.md:9
+#: src/languages/sh.md:11
 msgid ""
-"You can configure various settings for Shell Scripts in your Zed User "
-"Settings (`~/.config/zed/settings.json`) or Zed Project Settings (`.zed/"
-"settings.json`):"
+"Configure settings in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"kbd>) under Languages > Shell Script, or add to your settings file:"
 msgstr ""
 
-#: src/languages/sh.md:12 src/languages/sh.md:45
+#: src/languages/sh.md:14 src/languages/sh.md:47
 msgid "\"languages\""
 msgstr ""
 
-#: src/languages/sh.md:13 src/languages/sh.md:46
+#: src/languages/sh.md:15 src/languages/sh.md:48
 msgid "\"Shell Script\""
 msgstr ""
 
-#: src/languages/sh.md:14
+#: src/languages/sh.md:16
 msgid "\"tab_size\""
 msgstr ""
 
-#: src/languages/sh.md:15
+#: src/languages/sh.md:17
 msgid "\"hard_tabs\""
 msgstr ""
 
-#: src/languages/sh.md:20
+#: src/languages/sh.md:22
 msgid "Formatting"
 msgstr ""
 
-#: src/languages/sh.md:22
+#: src/languages/sh.md:24
 msgid ""
 "Zed supports auto-formatting Shell Scripts using external tools like "
 "[`shfmt`](https://github.com/mvdan/sh)."
 msgstr ""
 
-#: src/languages/sh.md:24
+#: src/languages/sh.md:26
 msgid "Install `shfmt`:"
 msgstr ""
 
-#: src/languages/sh.md:27
+#: src/languages/sh.md:29
 msgid "# macos (homebrew)\n"
 msgstr ""
 
-#: src/languages/sh.md:28
+#: src/languages/sh.md:30
 msgid "# debian/ubuntu\n"
 msgstr ""
 
-#: src/languages/sh.md:29
+#: src/languages/sh.md:31
 msgid "# fedora\n"
 msgstr ""
 
-#: src/languages/sh.md:30
+#: src/languages/sh.md:32
 msgid "# redhat\n"
 msgstr ""
 
-#: src/languages/sh.md:31
+#: src/languages/sh.md:33
 msgid "# archlinux\n"
 msgstr ""
 
-#: src/languages/sh.md:32
+#: src/languages/sh.md:34
 msgid "# windows (chocolatey)\n"
 msgstr ""
 
-#: src/languages/sh.md:35
+#: src/languages/sh.md:37
 msgid "Ensure `shfmt` is available in your path and check the version:"
 msgstr ""
 
-#: src/languages/sh.md:42
+#: src/languages/sh.md:44
 msgid ""
-"Configure Zed to automatically format Shell Scripts with `shfmt` on save:"
-msgstr ""
-
-#: src/languages/sh.md:47
-msgid "\"format_on_save\""
-msgstr ""
-
-#: src/languages/sh.md:47
-msgid "\"on\""
-msgstr ""
-
-#: src/languages/sh.md:48
-msgid "\"formatter\""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"kbd>) under Languages > Shell Script, or add to your settings file:"
 msgstr ""
 
 #: src/languages/sh.md:49
-msgid "\"external\""
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/sh.md:49
+msgid "\"on\""
 msgstr ""
 
 #: src/languages/sh.md:50
-msgid "\"command\""
-msgstr ""
-
-#: src/languages/sh.md:50
-msgid "\"shfmt\""
+msgid "\"formatter\""
 msgstr ""
 
 #: src/languages/sh.md:51
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/sh.md:52
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/sh.md:52
+msgid "\"shfmt\""
+msgstr ""
+
+#: src/languages/sh.md:53
 msgid ""
 "// Change `--indent 2` to match your preferred tab_size\n"
 "          \"arguments\""
 msgstr ""
 
-#: src/languages/sh.md:52
+#: src/languages/sh.md:54
 msgid "\"--filename\""
 msgstr ""
 
-#: src/languages/sh.md:52
+#: src/languages/sh.md:54
 msgid "\"{buffer_path}\""
 msgstr ""
 
-#: src/languages/sh.md:52
+#: src/languages/sh.md:54
 msgid "\"--indent\""
 msgstr ""
 
-#: src/languages/sh.md:52
+#: src/languages/sh.md:54
 msgid "\"2\""
 msgstr ""
 
-#: src/languages/sh.md:59
+#: src/languages/sh.md:61
 msgid "See also:"
 msgstr ""
 
-#: src/languages/sh.md:61
+#: src/languages/sh.md:63
 msgid "[Zed Docs: Language Support: Bash](./bash.md)"
 msgstr ""
 
-#: src/languages/sh.md:62
+#: src/languages/sh.md:64
 msgid "[Zed Docs: Language Support: Fish](./fish.md)"
 msgstr ""
