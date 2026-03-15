@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,167 +11,162 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/elixir.md:1
+#: src/languages/elixir.md:3
 msgid "Elixir"
 msgstr ""
 
-#: src/languages/elixir.md:3
+#: src/languages/elixir.md:5
 msgid ""
 "Elixir support is available through the [Elixir extension](https://github."
 "com/zed-extensions/elixir)."
 msgstr ""
 
-#: src/languages/elixir.md:5
+#: src/languages/elixir.md:7
 msgid "Tree-sitter:"
 msgstr ""
 
-#: src/languages/elixir.md:6
+#: src/languages/elixir.md:8
 msgid ""
 "[elixir-lang/tree-sitter-elixir](https://github.com/elixir-lang/tree-sitter-"
 "elixir)"
 msgstr ""
 
-#: src/languages/elixir.md:7
+#: src/languages/elixir.md:9
 msgid ""
 "[phoenixframework/tree-sitter-heex](https://github.com/phoenixframework/tree-"
 "sitter-heex)"
 msgstr ""
 
-#: src/languages/elixir.md:8
+#: src/languages/elixir.md:10
 msgid "Language servers:"
 msgstr ""
 
-#: src/languages/elixir.md:9
+#: src/languages/elixir.md:11
 msgid "[elixir-lang/expert](https://github.com/elixir-lang/expert)"
 msgstr ""
 
-#: src/languages/elixir.md:10
+#: src/languages/elixir.md:12
 msgid "[elixir-lsp/elixir-ls](https://github.com/elixir-lsp/elixir-ls)"
 msgstr ""
 
-#: src/languages/elixir.md:11
+#: src/languages/elixir.md:13
 msgid "[elixir-tools/next-ls](https://github.com/elixir-tools/next-ls)"
 msgstr ""
 
-#: src/languages/elixir.md:12
+#: src/languages/elixir.md:14
 msgid "[lexical-lsp/lexical](https://github.com/lexical-lsp/lexical)"
 msgstr ""
 
-#: src/languages/elixir.md:14
+#: src/languages/elixir.md:16
 msgid "Choosing a language server"
 msgstr ""
 
-#: src/languages/elixir.md:16
+#: src/languages/elixir.md:18
 msgid ""
 "The Elixir extension offers language server support for `expert`, `elixir-"
 "ls`, `next-ls`, and `lexical`."
 msgstr ""
 
-#: src/languages/elixir.md:18
+#: src/languages/elixir.md:20
 msgid "`elixir-ls` is enabled by default."
 msgstr ""
 
-#: src/languages/elixir.md:20
+#: src/languages/elixir.md:22
 msgid "Expert"
 msgstr ""
 
-#: src/languages/elixir.md:22
-msgid "To switch to `expert`, add the following to your `settings.json`:"
+#: src/languages/elixir.md:24 src/languages/elixir.md:39
+#: src/languages/elixir.md:54
+msgid ""
+"Configure language servers in Settings (<kbd class=\"keybinding\">cmd-,|"
+"ctrl-,</kbd>) under Languages > Elixir, or add to your settings file:"
 msgstr ""
 
-#: src/languages/elixir.md:25 src/languages/elixir.md:40
-#: src/languages/elixir.md:55 src/languages/elixir.md:89
+#: src/languages/elixir.md:27 src/languages/elixir.md:42
+#: src/languages/elixir.md:57 src/languages/elixir.md:93
 msgid "\"languages\""
 msgstr ""
 
-#: src/languages/elixir.md:26 src/languages/elixir.md:41
-#: src/languages/elixir.md:56 src/languages/elixir.md:90
+#: src/languages/elixir.md:28 src/languages/elixir.md:43
+#: src/languages/elixir.md:58 src/languages/elixir.md:94
 msgid "\"Elixir\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"language_servers\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
 msgid "\"expert\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"!elixir-ls\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"!next-ls\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
 msgid "\"!lexical\""
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:30
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:29 src/languages/elixir.md:32
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"...\""
 msgstr ""
 
-#: src/languages/elixir.md:29 src/languages/elixir.md:44
-#: src/languages/elixir.md:59
+#: src/languages/elixir.md:31 src/languages/elixir.md:46
+#: src/languages/elixir.md:61
 msgid "\"HEEX\""
 msgstr ""
 
-#: src/languages/elixir.md:35
+#: src/languages/elixir.md:37
 msgid "Next LS"
 msgstr ""
 
-#: src/languages/elixir.md:37
-msgid "To switch to `next-ls`, add the following to your `settings.json`:"
-msgstr ""
-
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
 msgid "\"next-ls\""
 msgstr ""
 
-#: src/languages/elixir.md:42 src/languages/elixir.md:45
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:44 src/languages/elixir.md:47
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"!expert\""
 msgstr ""
 
-#: src/languages/elixir.md:50
+#: src/languages/elixir.md:52
 msgid "Lexical"
 msgstr ""
 
-#: src/languages/elixir.md:52
-msgid "To switch to `lexical`, add the following to your `settings.json`:"
-msgstr ""
-
-#: src/languages/elixir.md:57 src/languages/elixir.md:60
+#: src/languages/elixir.md:59 src/languages/elixir.md:62
 msgid "\"lexical\""
 msgstr ""
 
-#: src/languages/elixir.md:65
+#: src/languages/elixir.md:67
 msgid "Setting up `elixir-ls`"
 msgstr ""
 
-#: src/languages/elixir.md:67
+#: src/languages/elixir.md:69
 msgid "Install `elixir`:"
 msgstr ""
 
-#: src/languages/elixir.md:73
+#: src/languages/elixir.md:75
 msgid "Install `elixir-ls`:"
 msgstr ""
 
-#: src/languages/elixir.md:79
+#: src/languages/elixir.md:81
 msgid "Restart Zed"
 msgstr ""
 
-#: src/languages/elixir.md:81
+#: src/languages/elixir.md:83
 msgid ""
 "If `elixir-ls` is not running in an elixir project, check the error log via "
 "the command palette action `zed: open log`. If you find an error message "
@@ -181,110 +176,189 @@ msgid ""
 "line and accept the prompt to install `Hex`."
 msgstr ""
 
-#: src/languages/elixir.md:83
+#: src/languages/elixir.md:85
 msgid "Formatting with Mix"
 msgstr ""
 
-#: src/languages/elixir.md:85
+#: src/languages/elixir.md:87
 msgid ""
 "If you prefer to format your code with [Mix](https://hexdocs.pm/mix/Mix."
-"html), use the following snippet in your `settings.json` file to configure "
-"it as an external formatter. Formatting will occur on file save."
+"html), configure it as an external formatter. Formatting will occur on file "
+"save."
 msgstr ""
 
-#: src/languages/elixir.md:91
+#: src/languages/elixir.md:89
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"kbd>) under Languages > Elixir, or add to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:95
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/languages/elixir.md:91
+#: src/languages/elixir.md:95
 msgid "\"on\""
 msgstr ""
 
-#: src/languages/elixir.md:92
+#: src/languages/elixir.md:96
 msgid "\"formatter\""
 msgstr ""
 
-#: src/languages/elixir.md:93
+#: src/languages/elixir.md:97
 msgid "\"external\""
 msgstr ""
 
-#: src/languages/elixir.md:94
+#: src/languages/elixir.md:98
 msgid "\"command\""
 msgstr ""
 
-#: src/languages/elixir.md:94
+#: src/languages/elixir.md:98
 msgid "\"mix\""
 msgstr ""
 
-#: src/languages/elixir.md:95
+#: src/languages/elixir.md:99
 msgid "\"arguments\""
 msgstr ""
 
-#: src/languages/elixir.md:95
+#: src/languages/elixir.md:99
 msgid "\"format\""
 msgstr ""
 
-#: src/languages/elixir.md:95
+#: src/languages/elixir.md:99
 msgid "\"--stdin-filename\""
 msgstr ""
 
-#: src/languages/elixir.md:95
+#: src/languages/elixir.md:99
 msgid "\"{buffer_path}\""
 msgstr ""
 
-#: src/languages/elixir.md:95
+#: src/languages/elixir.md:99
 msgid "\"-\""
 msgstr ""
 
-#: src/languages/elixir.md:103
+#: src/languages/elixir.md:107
 msgid "Additional workspace configuration options"
 msgstr ""
 
-#: src/languages/elixir.md:105
+#: src/languages/elixir.md:109
 msgid ""
-"You can pass additional elixir-ls workspace configuration options via lsp "
-"settings in `settings.json`."
-msgstr ""
-
-#: src/languages/elixir.md:107
-msgid "The following example disables dialyzer:"
-msgstr ""
-
-#: src/languages/elixir.md:110
-msgid "\"lsp\""
+"You can pass additional elixir-ls workspace configuration options via `lsp` "
+"settings in your settings file ([how to edit](../configuring-zed.md#settings-"
+"files))."
 msgstr ""
 
 #: src/languages/elixir.md:111
+msgid "The following example disables dialyzer:"
+msgstr ""
+
+#: src/languages/elixir.md:114 src/languages/elixir.md:137
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/elixir.md:115
 msgid "\"elixir-ls\""
 msgstr ""
 
-#: src/languages/elixir.md:112
+#: src/languages/elixir.md:116 src/languages/elixir.md:139
 msgid "\"settings\""
 msgstr ""
 
-#: src/languages/elixir.md:113
+#: src/languages/elixir.md:117
 msgid "\"dialyzerEnabled\""
 msgstr ""
 
-#: src/languages/elixir.md:119
+#: src/languages/elixir.md:123
 msgid ""
 "See [ElixirLS configuration settings](https://github.com/elixir-lsp/elixir-"
 "ls#elixirls-configuration-settings) for more options."
 msgstr ""
 
-#: src/languages/elixir.md:121
+#: src/languages/elixir.md:125
 msgid "HEEx"
 msgstr ""
 
-#: src/languages/elixir.md:123
+#: src/languages/elixir.md:127
 msgid ""
 "Zed also supports HEEx templates. HEEx is a mix of [EEx](https://hexdocs.pm/"
 "eex/1.12.3/EEx.html) (Embedded Elixir) and HTML, and is used in Phoenix "
 "LiveView applications."
 msgstr ""
 
-#: src/languages/elixir.md:125
+#: src/languages/elixir.md:129
 msgid ""
 "Tree-sitter: [phoenixframework/tree-sitter-heex](https://github.com/"
 "phoenixframework/tree-sitter-heex)"
+msgstr ""
+
+#: src/languages/elixir.md:131
+msgid "Using the Tailwind CSS Language Server with HEEx"
+msgstr ""
+
+#: src/languages/elixir.md:133
+msgid ""
+"To get all features (autocomplete, linting, and hover docs) from the "
+"[Tailwind CSS language server](https://github.com/tailwindlabs/tailwindcss-"
+"intellisense/tree/HEAD/packages/tailwindcss-language-server#readme) in HEEx "
+"files, add the following to your settings file ([how to edit](../configuring-"
+"zed.md#settings-files)):"
+msgstr ""
+
+#: src/languages/elixir.md:138
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/elixir.md:140
+msgid "\"includeLanguages\""
+msgstr ""
+
+#: src/languages/elixir.md:141
+msgid "\"phoenix-heex\""
+msgstr ""
+
+#: src/languages/elixir.md:141
+msgid "\"html\""
+msgstr ""
+
+#: src/languages/elixir.md:143
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/elixir.md:144
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/elixir.md:144
+msgid "\"class=\\\"([^\\\"]*)\\\"\""
+msgstr ""
+
+#: src/languages/elixir.md:144
+msgid "\"class='([^']*)'\""
+msgstr ""
+
+#: src/languages/elixir.md:152
+msgid ""
+"With these settings, you will get completions for Tailwind CSS classes in "
+"HEEx template files. Examples:"
+msgstr ""
+
+#: src/languages/elixir.md:154
+msgid ""
+"```heex\n"
+"<%!-- Standard class attribute --%>\n"
+"<div class=\"flex items-center <completion here>\">\n"
+"  <p class=\"text-lg font-bold <completion here>\">Hello World</p>\n"
+"</div>\n"
+"\n"
+"<%!-- With Elixir expression --%>\n"
+"<div class={\"flex #{@custom_class} <completion here>\"}>\n"
+"  Content\n"
+"</div>\n"
+"\n"
+"<%!-- With Phoenix function --%>\n"
+"<div class={class_list([\"flex\", \"items-center\", \"<completion here>\"])}"
+">\n"
+"  Content\n"
+"</div>\n"
+"```"
 msgstr ""

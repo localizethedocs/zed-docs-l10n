@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,172 +11,178 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/tailwindcss.md:1
+#: src/languages/tailwindcss.md:3
 msgid "Tailwind CSS"
 msgstr ""
 
-#: src/languages/tailwindcss.md:3
+#: src/languages/tailwindcss.md:5
 msgid ""
 "Zed has built-in support for Tailwind CSS autocomplete, linting, and hover "
 "previews."
 msgstr ""
 
-#: src/languages/tailwindcss.md:5
+#: src/languages/tailwindcss.md:7
 msgid ""
 "Language Server: [tailwindlabs/tailwindcss-intellisense](https://github.com/"
 "tailwindlabs/tailwindcss-intellisense)"
 msgstr ""
 
-#: src/languages/tailwindcss.md:7
+#: src/languages/tailwindcss.md:9
 msgid "Languages which can be used with Tailwind CSS in Zed:"
 msgstr ""
 
-#: src/languages/tailwindcss.md:9
-msgid "[Astro](./astro.md)"
-msgstr ""
-
-#: src/languages/tailwindcss.md:10
-msgid "[CSS](./css.md)"
-msgstr ""
-
 #: src/languages/tailwindcss.md:11
-msgid "[ERB](./ruby.md)"
+msgid "[Astro](./astro.md#using-the-tailwind-css-language-server-with-astro)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:12
-msgid "[Gleam](./gleam.md)"
+msgid "[CSS](./css.md)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:13
-msgid "[HEEx](./elixir.md#heex)"
+msgid "[ERB](./ruby.md#using-the-tailwind-css-language-server-with-ruby)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:14
-msgid "[HTML](./html.md)"
+msgid "[Gleam](./gleam.md)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:15
-msgid "[TypeScript](./typescript.md)"
+msgid "[HEEx](./elixir.md#using-the-tailwind-css-language-server-with-heex)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:16
-msgid "[JavaScript](./javascript.md)"
+msgid "[HTML](./html.md#using-the-tailwind-css-language-server-with-html)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:17
-msgid "[PHP](./php.md)"
+msgid ""
+"[TypeScript](./typescript.md#using-the-tailwind-css-language-server-with-"
+"typescript)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:18
-msgid "[Svelte](./svelte.md)"
+msgid ""
+"[JavaScript](./javascript.md#using-the-tailwind-css-language-server-with-"
+"javascript)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:19
-msgid "[Vue](./vue.md)"
+msgid "[PHP](./php.md#using-the-tailwind-css-language-server-with-php)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:20
+msgid ""
+"[Svelte](./svelte.md#using-the-tailwind-css-language-server-with-svelte)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:21
+msgid "[Vue](./vue.md#using-the-tailwind-css-language-server-with-vue)"
+msgstr ""
+
+#: src/languages/tailwindcss.md:23
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/tailwindcss.md:23
+#: src/languages/tailwindcss.md:25
 msgid ""
 "If by default the language server isn't enough to make Tailwind work for a "
 "given language, you can configure the language server settings and add them "
 "to the `lsp` section of your `settings.json`:"
 msgstr ""
 
-#: src/languages/tailwindcss.md:27
+#: src/languages/tailwindcss.md:29
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/tailwindcss.md:28
+#: src/languages/tailwindcss.md:30
 msgid "\"tailwindcss-language-server\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:29
+#: src/languages/tailwindcss.md:31
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/tailwindcss.md:30
+#: src/languages/tailwindcss.md:32
 msgid "\"classFunctions\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:30
+#: src/languages/tailwindcss.md:32
 msgid "\"cva\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:30
+#: src/languages/tailwindcss.md:32
 msgid "\"cx\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:31
+#: src/languages/tailwindcss.md:33
 msgid "\"experimental\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:32
+#: src/languages/tailwindcss.md:34
 msgid "\"classRegex\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:32
+#: src/languages/tailwindcss.md:34
 msgid "\"[cls|className]\\\\s\\\\:\\\\=\\\\s\\\"([^\\\"]*)\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:40
+#: src/languages/tailwindcss.md:42
 msgid ""
 "Refer to [the Tailwind CSS language server settings docs](https://github.com/"
 "tailwindlabs/tailwindcss-intellisense?tab=readme-ov-file#extension-settings) "
 "for more information."
 msgstr ""
 
-#: src/languages/tailwindcss.md:42
+#: src/languages/tailwindcss.md:44
 msgid "Using Tailwind CSS Mode in CSS Files"
 msgstr ""
 
-#: src/languages/tailwindcss.md:44
+#: src/languages/tailwindcss.md:46
 msgid ""
 "Zed includes support for the Tailwind CSS language mode, which provides full "
 "CSS IntelliSense support even when using Tailwind-specific at-rules like "
-"`@apply`, `@layer`, and `@theme`. To use the Tailwind CSS language mode for "
-"CSS files, add the following to `languages` section of your `settings.json`:"
-msgstr ""
-
-#: src/languages/tailwindcss.md:49
-msgid "\"languages\""
-msgstr ""
-
-#: src/languages/tailwindcss.md:50
-msgid "\"CSS\""
+"`@apply`, `@layer`, and `@theme`. Configure language servers in Settings "
+"(<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > CSS, or add "
+"to your settings file:"
 msgstr ""
 
 #: src/languages/tailwindcss.md:51
-msgid "\"language_servers\""
-msgstr "\"language_servers\""
+msgid "\"languages\""
+msgstr ""
 
 #: src/languages/tailwindcss.md:52
-msgid "\"tailwindcss-intellisense-css\""
+msgid "\"CSS\""
 msgstr ""
 
 #: src/languages/tailwindcss.md:53
+msgid "\"language_servers\""
+msgstr "\"language_servers\""
+
+#: src/languages/tailwindcss.md:54
+msgid "\"tailwindcss-intellisense-css\""
+msgstr ""
+
+#: src/languages/tailwindcss.md:55
 msgid "\"!vscode-css-language-server\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:54
+#: src/languages/tailwindcss.md:56
 msgid "\"...\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:61
+#: src/languages/tailwindcss.md:63
 msgid ""
 "The `tailwindcss-intellisense-css` language server serves as an alternative "
 "to the default CSS language server, maintaining all standard CSS "
 "IntelliSense features while adding support for Tailwind-specific syntax."
 msgstr ""
 
-#: src/languages/tailwindcss.md:63
+#: src/languages/tailwindcss.md:65
 msgid "Prettier Plugin"
 msgstr ""
 
-#: src/languages/tailwindcss.md:65
+#: src/languages/tailwindcss.md:67
 msgid ""
 "Zed supports Prettier out of the box, which means that if you have the "
 "[Tailwind CSS Prettier plugin](https://github.com/tailwindlabs/prettier-"
@@ -184,14 +190,14 @@ msgid ""
 "make it work automatically:"
 msgstr ""
 
-#: src/languages/tailwindcss.md:68
+#: src/languages/tailwindcss.md:70
 msgid "// .prettierrc\n"
 msgstr ""
 
-#: src/languages/tailwindcss.md:70
+#: src/languages/tailwindcss.md:72
 msgid "\"plugins\""
 msgstr ""
 
-#: src/languages/tailwindcss.md:70
+#: src/languages/tailwindcss.md:72
 msgid "\"prettier-plugin-tailwindcss\""
 msgstr ""

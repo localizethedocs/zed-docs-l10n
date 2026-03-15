@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,204 +11,199 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/development/glossary.md:1
+#: src/development/glossary.md:3
 msgid "Zed Development: Glossary"
 msgstr ""
 
-#: src/development/glossary.md:3
-msgid ""
-"These are some terms and structures frequently used throughout the zed "
-"codebase."
-msgstr ""
-
 #: src/development/glossary.md:5
-msgid "This is a best effort list and a work in progress."
+msgid ""
+"This page defines terms and structures used throughout the Zed codebase."
 msgstr ""
 
-#: src/development/glossary.md:16
-msgid "Naming conventions"
+#: src/development/glossary.md:7
+msgid "It is a best-effort list and a work in progress."
 msgstr ""
 
 #: src/development/glossary.md:18
+msgid "Naming conventions"
+msgstr ""
+
+#: src/development/glossary.md:20
 msgid ""
-"These are generally true for the whole codebase. Note that Name can be "
-"anything here. An example would be `AnyElement` and `LspStore`."
+"These are common naming patterns across the codebase. `Name` is a "
+"placeholder for any type name, such as `AnyElement` or `LspStore`."
 msgstr ""
 
-#: src/development/glossary.md:21
-msgid "`AnyName`: A type erased version of _name_. Think `Box<dyn NameTrait>`."
+#: src/development/glossary.md:23
+msgid "`AnyName`: A type-erased version of _name_. Think `Box<dyn NameTrait>`."
 msgstr ""
 
-#: src/development/glossary.md:22
+#: src/development/glossary.md:24
 msgid ""
 "`NameStore`: A wrapper type which abstracts over whether operations are "
 "running locally or on a remote."
 msgstr ""
 
-#: src/development/glossary.md:24
+#: src/development/glossary.md:26
 msgid "GPUI"
 msgstr ""
 
-#: src/development/glossary.md:26
-msgid "State management"
-msgstr ""
-
 #: src/development/glossary.md:28
-msgid ""
-"`App`: A singleton which holds the full application state including all the "
-"entities. Crucially: `App` is not `Send`, which means that `App` only exists "
-"on the thread that created it (which is the main/UI thread, usually). Thus, "
-"if you see a `&mut App`, know that you're on UI thread."
-msgstr ""
-
-#: src/development/glossary.md:29
-msgid ""
-"`Context`: A wrapper around the `App` struct with specialized behavior for a "
-"specific `Entity`. Think of it as `(&mut App, Entity<V>)`. The specialized "
-"behavior is surfaced in the API surface of `Context`. E.g., `App::spawn` "
-"takes an `AsyncFnOnce(AsyncApp) -> Ret`, whereas `Context::spawn` takes an "
-"`AsyncFnOnce(WeakEntity<V>, AsyncApp) -> Ret`."
+msgid "State management"
 msgstr ""
 
 #: src/development/glossary.md:30
 msgid ""
-"`AsyncApp`: An owned version of `App` for use in async contexts. This type "
-"is _still_ not `Send` (so `AsyncApp` = you're on the main thread) and any "
-"use of it may be fallible (to account for the fact that the `App` might've "
-"been terminated by the time this closure runs). The convenience of "
-"`AsyncApp` lies in the fact that you usually interface with `App` via `&mut "
-"App`, which would be inconvenient to use with async closures; `AsyncApp` is "
-"owned, so you can use it in async closures with no sweat."
+"`App`: A singleton that holds full application state, including all "
+"entities. `App` is not `Send`, so it exists only on the thread that created "
+"it (usually the main/UI thread). If you see `&mut App`, you are on the UI "
+"thread."
+msgstr ""
+
+#: src/development/glossary.md:31
+msgid ""
+"`Context`: A wrapper around `App` with specialized behavior for a specific "
+"`Entity`. You can think of it as `(&mut App, Entity<V>)`. For example, `App::"
+"spawn` takes `AsyncFnOnce(AsyncApp) -> Ret`, while `Context::spawn` takes "
+"`AsyncFnOnce(WeakEntity<V>, AsyncApp) -> Ret`."
 msgstr ""
 
 #: src/development/glossary.md:32
 msgid ""
-"`AppContext` A trait which abstracts over `App`, `AsyncApp` & `Context` and "
-"their Test versions."
+"`AsyncApp`: An owned version of `App` for async contexts. It is still not "
+"`Send`, so it still runs on the main thread, and operations may fail if the "
+"`App` has already terminated. `AsyncApp` exists because `App` is usually "
+"accessed as `&mut App`, which is awkward to hold across async boundaries."
 msgstr ""
 
-#: src/development/glossary.md:33
+#: src/development/glossary.md:34
 msgid ""
-"`Task`: A future running or scheduled to run on the background or foreground "
-"executor. In contradiction to regular Futures Tasks do not need `.await` to "
-"start running. You do need to await them to get the result of the task."
+"`AppContext`: A trait that abstracts over `App`, `AsyncApp`, `Context`, and "
+"their test variants."
 msgstr ""
 
 #: src/development/glossary.md:35
+msgid ""
+"`Task`: A future running (or scheduled to run) on a background or foreground "
+"executor. Unlike regular futures, tasks do not need `.await` to start. You "
+"still need to await them to read their result."
+msgstr ""
+
+#: src/development/glossary.md:36
 msgid ""
 "`Executor`: Used to spawn tasks that run either on the foreground or "
 "background thread. Try to run the tasks on the background thread."
 msgstr ""
 
-#: src/development/glossary.md:36
+#: src/development/glossary.md:37
 msgid "`BackgroundExecutor`: A threadpool running `Task`s."
 msgstr ""
 
-#: src/development/glossary.md:37
+#: src/development/glossary.md:38
 msgid "`ForegroundExecutor`: The main thread running `Task`s."
 msgstr ""
 
-#: src/development/glossary.md:38
+#: src/development/glossary.md:39
 msgid ""
 "`Entity`: A strong, well-typed reference to a struct which is managed by "
 "gpui. Effectively a pointer/map key into the `App::EntityMap`."
 msgstr ""
 
-#: src/development/glossary.md:39
+#: src/development/glossary.md:40
 msgid ""
 "`WeakEntity`: A runtime checked reference to an `Entity` which may no longer "
 "exist. Similar to [`std::rc::Weak`](https://doc.rust-lang.org/std/rc/struct."
 "Weak.html)."
 msgstr ""
 
-#: src/development/glossary.md:40
+#: src/development/glossary.md:41
 msgid ""
 "`Global`: A singleton type which has only one value, that is stored in the "
 "`App`."
 msgstr ""
 
-#: src/development/glossary.md:41
-msgid "`Event`: A datatype which can be send by an `Entity` to subscribers"
+#: src/development/glossary.md:42
+msgid "`Event`: A data type that can be sent by an `Entity` to subscribers."
 msgstr ""
 
-#: src/development/glossary.md:42
+#: src/development/glossary.md:43
 msgid ""
 "`Action`: An event that represents a user's keyboard input that can be "
 "handled by listeners Example: `file finder: toggle`"
 msgstr ""
 
-#: src/development/glossary.md:44
-msgid "`Observing`: reacting entities notifying they've changed"
+#: src/development/glossary.md:45
+msgid "`Observing`: Reacting to notifications that entities have changed."
 msgstr ""
 
-#: src/development/glossary.md:45
+#: src/development/glossary.md:46
 msgid ""
 "`Subscription`: An event handler that is used to react to the changes of "
 "state in the application."
 msgstr ""
 
-#: src/development/glossary.md:46
+#: src/development/glossary.md:47
 msgid "Emitted event handling"
 msgstr ""
 
-#: src/development/glossary.md:47
+#: src/development/glossary.md:48
 msgid "Observing `{new,release,on notify}` of an entity"
 msgstr ""
 
-#: src/development/glossary.md:49
+#: src/development/glossary.md:50
 msgid "UI"
 msgstr ""
 
-#: src/development/glossary.md:51
+#: src/development/glossary.md:52
 msgid ""
 "`View`: An `Entity` which can produce an `Element` through its "
 "implementation of `Render`."
 msgstr ""
 
-#: src/development/glossary.md:52
+#: src/development/glossary.md:53
 msgid "`Element`: A type that can be laid out and painted to the screen."
 msgstr ""
 
-#: src/development/glossary.md:53
+#: src/development/glossary.md:54
 msgid ""
 "`element expression`: An expression that builds an element tree, example:"
 msgstr ""
 
-#: src/development/glossary.md:67
+#: src/development/glossary.md:68
 msgid ""
 "`Component`: A builder which can be rendered turning it into an `Element`."
 msgstr ""
 
-#: src/development/glossary.md:68
+#: src/development/glossary.md:69
 msgid "`Dispatch tree`: TODO"
 msgstr ""
 
-#: src/development/glossary.md:69
+#: src/development/glossary.md:70
 msgid "`Focus`: The place where keystrokes are handled first"
 msgstr ""
 
-#: src/development/glossary.md:70
+#: src/development/glossary.md:71
 msgid ""
 "`Focus tree`: Path from the place that has the current focus to the UI Root. "
 "Example <img> TODO"
 msgstr ""
 
-#: src/development/glossary.md:72
+#: src/development/glossary.md:73
 msgid "Zed UI"
 msgstr ""
 
-#: src/development/glossary.md:74
-msgid ""
-"`Window`: A struct in zed representing a zed window in your desktop "
-"environment (see image below). There can be multiple if you have multiple "
-"zed instances open. Mostly passed around for rendering."
-msgstr ""
-
 #: src/development/glossary.md:75
-msgid "`Modal`: A UI element that floats on top of the rest of the UI"
+msgid ""
+"`Window`: A struct representing a Zed window in your desktop environment "
+"(see image below). You can have multiple windows open. This is mostly passed "
+"around for rendering."
 msgstr ""
 
 #: src/development/glossary.md:76
+msgid "`Modal`: A UI element that floats on top of the rest of the UI"
+msgstr ""
+
+#: src/development/glossary.md:77
 msgid ""
 "`Picker`: A struct representing a list of items floating on top of the UI "
 "(Modal). You can select an item and confirm. What happens on select or "
@@ -216,49 +211,49 @@ msgid ""
 "below is a picker.)"
 msgstr ""
 
-#: src/development/glossary.md:77
+#: src/development/glossary.md:78
 msgid ""
 "`PickerDelegate`: A trait used to specialize behavior for a `Picker`. The "
 "`Picker` stores the `PickerDelegate` in the field delegate."
 msgstr ""
 
-#: src/development/glossary.md:78
+#: src/development/glossary.md:79
 msgid ""
 "`Center`: The middle of the zed window, the center is split into multiple "
 "`Pane`s. In the codebase this is a field on the `Workspace` struct. (see "
 "image below)."
 msgstr ""
 
-#: src/development/glossary.md:79
+#: src/development/glossary.md:80
 msgid ""
 "`Pane`: An area in the `Center` where we can place items, such as an editor, "
 "multi-buffer or terminal (see image below)."
 msgstr ""
 
-#: src/development/glossary.md:80
-msgid ""
-"`Panel`: An `Entity` implementing the `Panel` trait. These can be placed in "
-"a `Dock`. In the image below we see the: `ProjectPanel` in the left dock, "
-"the `DebugPanel` in the bottom dock, and `AgentPanel` in the right dock. "
-"Note `Editor` does not implement `Panel` and hence is not a `Panel`."
-msgstr ""
-
 #: src/development/glossary.md:81
 msgid ""
-"`Dock`: A UI element similar to a `Pane` which can be opened and hidden. "
-"There can be up to 3 docks open at a time, left right and below the center. "
-"A dock contains one or more `Panel`s not `Pane`s. (see image)."
+"`Panel`: An `Entity` implementing the `Panel` trait. Panels can be placed in "
+"a `Dock`. In the image below: `ProjectPanel` is in the left dock, "
+"`DebugPanel` is in the bottom dock, and `AgentPanel` is in the right dock. "
+"`Editor` does not implement `Panel`."
 msgstr ""
 
-#: src/development/glossary.md:85
-msgid "`Project`: One or more `Worktree`s"
+#: src/development/glossary.md:82
+msgid ""
+"`Dock`: A UI element similar to a `Pane` that can be opened and hidden. Up "
+"to three docks can be open at once: left, right, and bottom. A dock contains "
+"one or more `Panel`s, not `Pane`s."
 msgstr ""
 
 #: src/development/glossary.md:86
+msgid "`Project`: One or more `Worktree`s"
+msgstr ""
+
+#: src/development/glossary.md:87
 msgid "`Worktree`: Represents either local or remote files."
 msgstr ""
 
-#: src/development/glossary.md:90
+#: src/development/glossary.md:91
 msgid ""
 "[Multibuffer](https://zed.dev/docs/multibuffers): A list of Editors, a multi-"
 "buffer allows editing multiple files simultaneously. A multi-buffer opens "
@@ -266,93 +261,93 @@ msgid ""
 "_go to definition_. See project search in the image below."
 msgstr ""
 
-#: src/development/glossary.md:94
+#: src/development/glossary.md:95
 msgid "Editor"
 msgstr ""
 
-#: src/development/glossary.md:96
-msgid ""
-"`Editor`: _The_ text editor, nearly everything in zed is an `Editor`, even "
-"single line inputs. Each pane in the image above contains one or more "
-"`Editor` instances."
-msgstr ""
-
 #: src/development/glossary.md:97
-msgid "`Workspace`: The root of the window"
+msgid ""
+"`Editor`: The text editor type. Most editable surfaces in Zed are an "
+"`Editor`, including single-line inputs. Each pane in the image above "
+"contains one or more `Editor` instances."
 msgstr ""
 
 #: src/development/glossary.md:98
-msgid "`Entry`: A file, dir, pending dir or unloaded dir."
+msgid "`Workspace`: The root of the window"
 msgstr ""
 
 #: src/development/glossary.md:99
+msgid "`Entry`: A file, dir, pending dir or unloaded dir."
+msgstr ""
+
+#: src/development/glossary.md:100
 msgid ""
 "`Buffer`: The in-memory representation of a 'file' together with relevant "
 "data such as syntax trees, git status and diagnostics."
 msgstr ""
 
-#: src/development/glossary.md:100
+#: src/development/glossary.md:101
 msgid ""
 "`pending selection`: You have mouse down and you're dragging but you have "
 "not yet released."
 msgstr ""
 
-#: src/development/glossary.md:102
+#: src/development/glossary.md:103
 msgid "Collab"
 msgstr ""
 
-#: src/development/glossary.md:104
+#: src/development/glossary.md:105
 msgid "`Collab session`: Multiple users working in a shared `Project`"
 msgstr ""
 
-#: src/development/glossary.md:105
+#: src/development/glossary.md:106
 msgid "`Upstream client`: The zed client which has shared their workspace"
 msgstr ""
 
-#: src/development/glossary.md:106
+#: src/development/glossary.md:107
 msgid "`Downstream client`: The zed client joining a shared workspace"
 msgstr ""
 
-#: src/development/glossary.md:108
+#: src/development/glossary.md:109
 msgid "Debugger"
 msgstr ""
 
-#: src/development/glossary.md:110
+#: src/development/glossary.md:111
 msgid "`DapStore`: Is an entity that manages debugger sessions"
 msgstr ""
 
-#: src/development/glossary.md:111
+#: src/development/glossary.md:112
 msgid ""
-"`debugger::Session`: Is an entity that manages the lifecycle of a debug "
-"session and communication with DAPS"
+"`debugger::Session`: An entity that manages the lifecycle of a debug session "
+"and communication with DAPs."
 msgstr ""
 
-#: src/development/glossary.md:112
+#: src/development/glossary.md:113
 msgid ""
 "`BreakpointStore`: Is an entity that manages breakpoints states in local and "
 "remote instances of Zed"
 msgstr ""
 
-#: src/development/glossary.md:113
+#: src/development/glossary.md:114
 msgid "`DebugSession`: Manages a debug session's UI and running state"
 msgstr ""
 
-#: src/development/glossary.md:114
+#: src/development/glossary.md:115
 msgid "`RunningState`: Directly manages all the views of a debug session"
 msgstr ""
 
-#: src/development/glossary.md:115
+#: src/development/glossary.md:116
 msgid "`VariableList`: The variable and watch list view of a debug session"
 msgstr ""
 
-#: src/development/glossary.md:116
+#: src/development/glossary.md:117
 msgid "`Console`: TODO"
 msgstr ""
 
-#: src/development/glossary.md:117
+#: src/development/glossary.md:118
 msgid "`Terminal`: TODO"
 msgstr ""
 
-#: src/development/glossary.md:118
+#: src/development/glossary.md:119
 msgid "`BreakpointList`: TODO"
 msgstr ""

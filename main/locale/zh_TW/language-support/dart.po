@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,109 +11,109 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/dart.md:1
+#: src/languages/dart.md:3
 msgid "Dart"
 msgstr "Dart"
 
-#: src/languages/dart.md:3
+#: src/languages/dart.md:5
 msgid ""
 "Dart support is available through the [Dart extension](https://github.com/"
 "zed-extensions/dart)."
 msgstr ""
 
-#: src/languages/dart.md:5
+#: src/languages/dart.md:7
 msgid ""
 "Tree-sitter: [UserNobody14/tree-sitter-dart](https://github.com/UserNobody14/"
 "tree-sitter-dart)"
 msgstr ""
 
-#: src/languages/dart.md:6
+#: src/languages/dart.md:8
 msgid ""
 "Language Server: [dart language-server](https://github.com/dart-lang/sdk)"
 msgstr ""
 
-#: src/languages/dart.md:8
+#: src/languages/dart.md:10
 msgid "Pre-requisites"
 msgstr ""
 
-#: src/languages/dart.md:10
+#: src/languages/dart.md:12
 msgid "You will need to install the Dart SDK."
 msgstr ""
 
-#: src/languages/dart.md:12
+#: src/languages/dart.md:14
 msgid ""
 "You can install dart from [dart.dev/get-dart](https://dart.dev/get-dart) or "
 "via the [Flutter Version Management CLI (fvm)](https://fvm.app/documentation/"
 "getting-started/installation)"
 msgstr ""
 
-#: src/languages/dart.md:14
+#: src/languages/dart.md:16
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/dart.md:16
+#: src/languages/dart.md:18
 msgid ""
 "The dart extension requires no configuration if you have `dart` in your path:"
 msgstr ""
 
-#: src/languages/dart.md:23
+#: src/languages/dart.md:25
 msgid ""
 "If you would like to use a specific dart binary or use dart via FVM you can "
 "specify the `dart` binary in your Zed settings.jsons file:"
 msgstr ""
 
-#: src/languages/dart.md:27 src/languages/dart.md:44
+#: src/languages/dart.md:29 src/languages/dart.md:46
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/dart.md:28 src/languages/dart.md:31 src/languages/dart.md:45
+#: src/languages/dart.md:30 src/languages/dart.md:33 src/languages/dart.md:47
 msgid "\"dart\""
 msgstr ""
 
-#: src/languages/dart.md:29
+#: src/languages/dart.md:31
 msgid "\"binary\""
 msgstr ""
 
-#: src/languages/dart.md:30
+#: src/languages/dart.md:32
 msgid "\"path\""
 msgstr ""
 
-#: src/languages/dart.md:30
+#: src/languages/dart.md:32
 msgid "\"/opt/homebrew/bin/fvm\""
 msgstr ""
 
-#: src/languages/dart.md:31
+#: src/languages/dart.md:33
 msgid "\"arguments\""
 msgstr ""
 
-#: src/languages/dart.md:31
+#: src/languages/dart.md:33
 msgid "\"language-server\""
 msgstr ""
 
-#: src/languages/dart.md:31
+#: src/languages/dart.md:33
 msgid "\"--protocol=lsp\""
 msgstr ""
 
-#: src/languages/dart.md:38
+#: src/languages/dart.md:40
 msgid "Formatting"
 msgstr "格式化"
 
-#: src/languages/dart.md:40
+#: src/languages/dart.md:42
 msgid ""
 "Dart by-default uses a very conservative maximum line length (80). If you "
 "would like the dart LSP to permit a longer line length when auto-formatting, "
 "add the following to your Zed settings.json:"
 msgstr ""
 
-#: src/languages/dart.md:46
+#: src/languages/dart.md:48
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/dart.md:47
+#: src/languages/dart.md:49
 msgid "\"lineLength\""
 msgstr ""
 
-#: src/languages/dart.md:54
+#: src/languages/dart.md:56
 msgid ""
 "Please see the Dart documentation for more information on [dart language-"
 "server capabilities](https://github.com/dart-lang/sdk/blob/main/pkg/"

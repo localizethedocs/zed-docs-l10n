@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,100 +11,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/luau.md:1
+#: src/languages/luau.md:3
 msgid "Luau"
 msgstr "Luau"
 
-#: src/languages/luau.md:3
+#: src/languages/luau.md:5
 msgid ""
 "[Luau](https://luau.org/) is a fast, small, safe, gradually typed, "
 "embeddable scripting language derived from Lua. Luau was developed by Roblox "
 "and is available under the MIT license."
 msgstr ""
 
-#: src/languages/luau.md:5
+#: src/languages/luau.md:7
 msgid ""
 "Luau language support in Zed is provided by the community-maintained [Luau "
 "extension](https://github.com/4teapo/zed-luau). Report issues to: [https://"
 "github.com/4teapo/zed-luau/issues](https://github.com/4teapo/zed-luau/issues)"
 msgstr ""
 
-#: src/languages/luau.md:8
+#: src/languages/luau.md:10
 msgid ""
 "Tree-sitter: [4teapo/tree-sitter-luau](https://github.com/4teapo/tree-sitter-"
 "luau)"
 msgstr ""
 
-#: src/languages/luau.md:9
+#: src/languages/luau.md:11
 msgid ""
 "Language Server: [JohnnyMorganz/luau-lsp](https://github.com/JohnnyMorganz/"
 "luau-lsp)"
 msgstr ""
 
-#: src/languages/luau.md:11
+#: src/languages/luau.md:13
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/luau.md:13
+#: src/languages/luau.md:15
 msgid ""
 "Configuration instructions are available in the [Luau Zed Extension README]"
 "(https://github.com/4teapo/zed-luau)."
 msgstr ""
 
-#: src/languages/luau.md:15
+#: src/languages/luau.md:17
 msgid "Formatting"
 msgstr "格式化"
 
-#: src/languages/luau.md:17
+#: src/languages/luau.md:19
 msgid ""
 "To support automatically formatting your code, you can use [JohnnyMorganz/"
 "StyLua](https://github.com/JohnnyMorganz/StyLua), a Lua code formatter."
 msgstr ""
 
-#: src/languages/luau.md:19
+#: src/languages/luau.md:21
 msgid "Install with:"
 msgstr ""
 
-#: src/languages/luau.md:22
+#: src/languages/luau.md:24
 msgid "# macOS via Homebrew\n"
 msgstr ""
 
-#: src/languages/luau.md:23
+#: src/languages/luau.md:25
 msgid "# Or via Cargo\n"
 msgstr ""
 
-#: src/languages/luau.md:28
-msgid "Then add the following to your Zed `settings.json`:"
-msgstr ""
-
-#: src/languages/luau.md:31
-msgid "\"languages\""
-msgstr ""
-
-#: src/languages/luau.md:32
-msgid "\"Luau\""
+#: src/languages/luau.md:30
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"kbd>) under Languages > Luau, or add to your settings file:"
 msgstr ""
 
 #: src/languages/luau.md:33
-msgid "\"formatter\""
+msgid "\"languages\""
 msgstr ""
 
 #: src/languages/luau.md:34
+msgid "\"Luau\""
+msgstr ""
+
+#: src/languages/luau.md:35
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/luau.md:36
 msgid "\"external\""
 msgstr ""
 
-#: src/languages/luau.md:35
+#: src/languages/luau.md:37
 msgid "\"command\""
 msgstr ""
 
-#: src/languages/luau.md:35
+#: src/languages/luau.md:37
 msgid "\"stylua\""
 msgstr ""
 
-#: src/languages/luau.md:36
+#: src/languages/luau.md:38
 msgid "\"arguments\""
 msgstr ""
 
-#: src/languages/luau.md:36
+#: src/languages/luau.md:38
 msgid "\"-\""
 msgstr "\"-\""

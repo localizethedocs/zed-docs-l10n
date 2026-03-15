@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/gleam.md:1
+#: src/languages/gleam.md:3
 msgid "Gleam"
 msgstr "Gleam"
 
-#: src/languages/gleam.md:3
+#: src/languages/gleam.md:5
 msgid ""
 "Gleam support is available through the [Gleam extension](https://github.com/"
 "gleam-lang/zed-gleam). To learn about Gleam, see the [docs](https://gleam."
@@ -25,26 +25,26 @@ msgid ""
 "language-server/)."
 msgstr ""
 
-#: src/languages/gleam.md:5
+#: src/languages/gleam.md:7
 msgid ""
 "Tree-sitter: [gleam-lang/tree-sitter-gleam](https://github.com/gleam-lang/"
 "tree-sitter-gleam)"
 msgstr ""
 
-#: src/languages/gleam.md:6
+#: src/languages/gleam.md:8
 msgid ""
 "Language Server: [gleam lsp](https://github.com/gleam-lang/gleam/tree/main/"
 "compiler-core/src/language_server)"
 msgstr ""
 
-#: src/languages/gleam.md:8
+#: src/languages/gleam.md:10
 msgid "See also:"
 msgstr ""
 
-#: src/languages/gleam.md:10
+#: src/languages/gleam.md:12
 msgid "[Elixir](./elixir.md)"
 msgstr ""
 
-#: src/languages/gleam.md:11
+#: src/languages/gleam.md:13
 msgid "[Erlang](./erlang.md)"
 msgstr ""

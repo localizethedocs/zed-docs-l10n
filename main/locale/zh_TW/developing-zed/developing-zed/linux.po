@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,66 +11,67 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/development/linux.md:1
+#: src/development/linux.md:3
 msgid "Building Zed for Linux"
 msgstr "為 Linux 建置 Zed"
 
-#: src/development/linux.md:3
+#: src/development/linux.md:5
 msgid "Repository"
 msgstr "儲存庫"
 
-#: src/development/linux.md:5
-msgid "Clone down the [Zed repository](https://github.com/zed-industries/zed)."
-msgstr ""
-
 #: src/development/linux.md:7
-msgid "Dependencies"
+msgid "Clone the [Zed repository](https://github.com/zed-industries/zed)."
 msgstr ""
 
 #: src/development/linux.md:9
+msgid "Dependencies"
+msgstr ""
+
+#: src/development/linux.md:11
 msgid "Install [rustup](https://www.rust-lang.org/tools/install)"
 msgstr "安裝 [rustup](https://www.rust-lang.org/tools/install)"
 
-#: src/development/linux.md:11
+#: src/development/linux.md:13
 msgid "Install the necessary system libraries:"
 msgstr ""
 
-#: src/development/linux.md:17
+#: src/development/linux.md:19
 msgid ""
 "If you prefer to install the system libraries manually, you can find the "
 "list of required packages in the `script/linux` file."
 msgstr ""
 
-#: src/development/linux.md:19
+#: src/development/linux.md:21
 msgid "Linkers"
 msgstr "連結器"
 
-#: src/development/linux.md:21
+#: src/development/linux.md:23
 msgid ""
 "On Linux, Rust's default linker is [LLVM's `lld`](https://blog.rust-lang."
 "org/2025/09/18/Rust-1.90.0/). Alternative linkers, especially [Wild](https://"
-"github.com/davidlattimore/wild) and [Mold](https://github.com/rui314/mold) "
-"can significantly improve clean and incremental build time."
-msgstr ""
-
-#: src/development/linux.md:23
-msgid ""
-"At present Zed uses Mold in CI because it's more mature. For local "
-"development Wild is recommended because it's 5-20% faster than Mold."
+"github.com/davidlattimore/wild) and [Mold](https://github.com/rui314/mold), "
+"can improve clean and incremental build times."
 msgstr ""
 
 #: src/development/linux.md:25
+msgid ""
+"Zed currently uses Mold in CI because it is more mature. For local "
+"development, Wild is recommended because it is typically 5-20% faster than "
+"Mold."
+msgstr ""
+
+#: src/development/linux.md:27
 msgid ""
 "These linkers can be installed with `script/install-mold` and `script/"
 "install-wild`."
 msgstr ""
 
-#: src/development/linux.md:27
+#: src/development/linux.md:29
 msgid ""
 "To use Wild as your default, add these lines to your `~/.cargo/config.toml`:"
 msgstr ""
 
-#: src/development/linux.md:29
+#: src/development/linux.md:31
 msgid ""
 "```toml\n"
 "[target.x86_64-unknown-linux-gnu]\n"
@@ -92,11 +93,11 @@ msgstr ""
 "rustflags = [\"-C\", \"link-arg=--ld-path=wild\"]\n"
 "```"
 
-#: src/development/linux.md:39
+#: src/development/linux.md:41
 msgid "To use Mold as your default:"
 msgstr ""
 
-#: src/development/linux.md:41
+#: src/development/linux.md:43
 msgid ""
 "```toml\n"
 "[target.'cfg(target_os = \"linux\")']\n"
@@ -108,116 +109,116 @@ msgstr ""
 "rustflags = [\"-C\", \"link-arg=-fuse-ld=mold\"]\n"
 "```"
 
-#: src/development/linux.md:46
+#: src/development/linux.md:48
 msgid "Building from source"
 msgstr "從來源碼建置"
 
-#: src/development/linux.md:48
+#: src/development/linux.md:50
 msgid ""
 "Once the dependencies are installed, you can build Zed using [Cargo](https://"
 "doc.rust-lang.org/cargo/)."
 msgstr ""
 
-#: src/development/linux.md:50
+#: src/development/linux.md:52
 msgid "For a debug build of the editor:"
 msgstr ""
 
-#: src/development/linux.md:56
+#: src/development/linux.md:58
 msgid "And to run the tests:"
 msgstr ""
 
-#: src/development/linux.md:62
+#: src/development/linux.md:64
 msgid ""
 "In release mode, the primary user interface is the `cli` crate. You can run "
 "it in development with:"
 msgstr ""
 
-#: src/development/linux.md:68
+#: src/development/linux.md:70
 msgid "Installing a development build"
 msgstr ""
 
-#: src/development/linux.md:70
+#: src/development/linux.md:72
 msgid "You can install a local build on your machine with:"
 msgstr ""
 
-#: src/development/linux.md:76
+#: src/development/linux.md:78
 msgid ""
-"This will build zed and the cli in release mode and make them available at "
-"`~/.local/bin/zed`, installing .desktop files to `~/.local/share`."
+"This builds `zed` and the `cli` in release mode, installs the binary at `~/."
+"local/bin/zed`, and installs `.desktop` files to `~/.local/share`."
 msgstr ""
 
-#: src/development/linux.md:78
+#: src/development/linux.md:80
 msgid "**_Note_**: If you encounter linker errors similar to the following:"
 msgstr ""
 
-#: src/development/linux.md:82 src/development/linux.md:84
+#: src/development/linux.md:84 src/development/linux.md:86
 msgid "':\n"
 msgstr ""
 
-#: src/development/linux.md:86
+#: src/development/linux.md:88
 msgid "'\n"
 msgstr ""
 
-#: src/development/linux.md:91
+#: src/development/linux.md:93
 msgid "\"remote_server\""
 msgstr ""
 
-#: src/development/linux.md:94
+#: src/development/linux.md:96
 msgid ""
-"**Cause**: this is caused by known bugs in aws-lc-rs(doesn't support GCC >= "
-"14): [FIPS fails to build with GCC >= 14](https://github.com/aws/aws-lc-rs/"
+"**Cause**: This is caused by known bugs in aws-lc-rs (no GCC >= 14 support): "
+"[FIPS fails to build with GCC >= 14](https://github.com/aws/aws-lc-rs/"
 "issues/569) & [GCC-14 - build failure for FIPS module](https://github.com/"
 "aws/aws-lc/issues/2010)"
 msgstr ""
 
-#: src/development/linux.md:98
+#: src/development/linux.md:100
 msgid ""
 "You can refer to [linux: Linker error for remote_server when using script/"
 "install-linux](https://github.com/zed-industries/zed/issues/24880) for more "
 "information."
 msgstr ""
 
-#: src/development/linux.md:100
+#: src/development/linux.md:102
 msgid ""
-"**Workarounds**: Set the remote server target to `x86_64-unknown-linux-gnu` "
+"**Workaround**: Set the remote server target to `x86_64-unknown-linux-gnu` "
 "like so `export REMOTE_SERVER_TARGET=x86_64-unknown-linux-gnu; script/"
 "install-linux`"
 msgstr ""
 
-#: src/development/linux.md:103
+#: src/development/linux.md:105
 msgid "Wayland & X11"
 msgstr "Wayland 和 X11"
 
-#: src/development/linux.md:105
+#: src/development/linux.md:107
 msgid ""
 "Zed supports both X11 and Wayland. By default, we pick whichever we can find "
 "at runtime. If you're on Wayland and want to run in X11 mode, use the "
 "environment variable `WAYLAND_DISPLAY=''`."
 msgstr ""
 
-#: src/development/linux.md:107
+#: src/development/linux.md:109
 msgid "Notes for packaging Zed"
 msgstr ""
 
-#: src/development/linux.md:109
-msgid "Thank you for taking on the task of packaging Zed!"
-msgstr ""
-
 #: src/development/linux.md:111
-msgid "Technical requirements"
+msgid "This section is for distribution maintainers packaging Zed."
 msgstr ""
 
 #: src/development/linux.md:113
-msgid "Zed has two main binaries:"
+msgid "Technical requirements"
 msgstr ""
 
 #: src/development/linux.md:115
+msgid "Zed has two main binaries:"
+msgstr ""
+
+#: src/development/linux.md:117
 msgid ""
 "You will need to build `crates/cli` and make its binary available in `$PATH` "
 "with the name `zed`."
 msgstr ""
 
-#: src/development/linux.md:116
+#: src/development/linux.md:118
 msgid ""
 "You will need to build `crates/zed` and put it at `$PATH/to/cli/../../"
 "libexec/zed-editor`. For example, if you are going to put the cli at `~/."
@@ -227,7 +228,7 @@ msgid ""
 "lib/zed/zed-editor`) instead."
 msgstr ""
 
-#: src/development/linux.md:117
+#: src/development/linux.md:119
 msgid ""
 "If you are going to provide a `.desktop` file you can find a template in "
 "`crates/zed/resources/zed.desktop.in`, and use `envsubst` to populate it "
@@ -237,7 +238,7 @@ msgid ""
 "also make this desktop file executable (`chmod 755`)."
 msgstr ""
 
-#: src/development/linux.md:118
+#: src/development/linux.md:120
 msgid ""
 "You will need to ensure that the necessary libraries are installed. You can "
 "get the current list by [inspecting the built binary](https://github.com/zed-"
@@ -245,14 +246,14 @@ msgid ""
 "linux#L65-L67) on your system."
 msgstr ""
 
-#: src/development/linux.md:119
+#: src/development/linux.md:121
 msgid ""
 "For an example of a complete build script, see [script/bundle-linux](https://"
 "github.com/zed-industries/zed/blob/935cf542aebf55122ce6ed1c91d0fe8711970c82/"
 "script/bundle-linux)."
 msgstr ""
 
-#: src/development/linux.md:120
+#: src/development/linux.md:122
 msgid ""
 "You can disable Zed's auto updates and provide instructions for users who "
 "try to update Zed manually by building (or running) Zed with the environment "
@@ -260,36 +261,27 @@ msgid ""
 "`ZED_UPDATE_EXPLANATION=\"Please use flatpak to update zed.\"`."
 msgstr ""
 
-#: src/development/linux.md:121
+#: src/development/linux.md:123
 msgid ""
 "Make sure to update the contents of the `crates/zed/RELEASE_CHANNEL` file to "
 "'nightly', 'preview', or 'stable', with no newline. This will cause Zed to "
 "use the credentials manager to remember a user's login."
 msgstr ""
 
-#: src/development/linux.md:123
-msgid "Other things to note"
-msgstr ""
-
 #: src/development/linux.md:125
-msgid ""
-"At Zed, our priority has been to move fast and bring the latest technology "
-"to our users. We've long been frustrated at having software that is slow, "
-"out of date, or hard to configure, and so we've built our editor to those "
-"tastes."
+msgid "Other things to note"
 msgstr ""
 
 #: src/development/linux.md:127
 msgid ""
-"However, we realize that many distros have other priorities. We want to work "
-"with everyone to bring Zed to their favorite platforms. But there is a long "
-"way to go:"
+"Zed moves quickly, and distribution maintainers often have different "
+"constraints and priorities. The points below describe current trade-offs:"
 msgstr ""
 
 #: src/development/linux.md:129
 msgid ""
-"Zed is a fast-moving early-phase project. We typically release 2-3 builds "
-"per week to fix user-reported issues and release major features."
+"Zed is a fast-moving project. We typically publish 2-3 builds per week to "
+"address reported issues and ship larger changes."
 msgstr ""
 
 #: src/development/linux.md:130
@@ -303,18 +295,17 @@ msgstr ""
 
 #: src/development/linux.md:131
 msgid ""
-"Zed automatically installs the correct version of common developer tools in "
-"the same way as rustup/rbenv/pyenv, etc. We understand this is contentious, "
-"[see here](https://github.com/zed-industries/zed/issues/12589)."
+"Zed automatically installs versions of common developer tools, similar to "
+"rustup/rbenv/pyenv. This behavior is discussed [here](https://github.com/zed-"
+"industries/zed/issues/12589)."
 msgstr ""
 
 #: src/development/linux.md:132
 msgid ""
-"We allow users to install extensions locally and from [zed-industries/"
-"extensions](https://github.com/zed-industries/extensions). These extensions "
-"may install further tooling as needed, such as language servers. In the long "
-"run, we would like to make this safer, [see here](https://github.com/zed-"
-"industries/zed/issues/12358)."
+"Users can install extensions locally and from [zed-industries/extensions]"
+"(https://github.com/zed-industries/extensions). Extensions may install "
+"additional tools such as language servers. Planned safety improvements are "
+"tracked [here](https://github.com/zed-industries/zed/issues/12358)."
 msgstr ""
 
 #: src/development/linux.md:133
@@ -327,9 +318,9 @@ msgstr ""
 
 #: src/development/linux.md:134
 msgid ""
-"As a result of the above issues, zed currently does not play nice with "
-"sandboxes, [see here](https://github.com/zed-industries/zed/"
-"pull/12006#issuecomment-2130421220)"
+"Because of the points above, Zed currently does not work well with "
+"sandboxes. See [this discussion](https://github.com/zed-industries/zed/"
+"pull/12006#issuecomment-2130421220)."
 msgstr ""
 
 #: src/development/linux.md:136
@@ -394,8 +385,8 @@ msgstr ""
 
 #: src/development/linux.md:166
 msgid ""
-"How to get a flamegraph with resolved symbols from a running zed instance. "
-"Use when zed is using a lot of CPU. Not useful for hangs."
+"How to get a flamegraph with resolved symbols from a running Zed instance. "
+"Use this when Zed is using a lot of CPU. It is not useful for hangs."
 msgstr ""
 
 #: src/development/linux.md:169
@@ -405,8 +396,8 @@ msgstr ""
 #: src/development/linux.md:171
 msgid ""
 "Find the PID (process ID) using: `ps -eo size,pid,comm | grep zed | sort | "
-"head -n 1 | cut -d ' ' -f 2` Or find the pid of the command zed-editor with "
-"the most ram usage in something like htop/btop/top."
+"head -n 1 | cut -d ' ' -f 2` Or find the PID of `zed-editor` with the "
+"highest RAM usage in something like htop/btop/top."
 msgstr ""
 
 #: src/development/linux.md:176
@@ -416,9 +407,9 @@ msgstr ""
 
 #: src/development/linux.md:179
 msgid ""
-"Perf Record: run `sudo perf record -p <pid you just found>`, wait a few "
-"seconds to gather data then press Ctrl+C. You should now have a perf.data "
-"file"
+"Perf record: Run `sudo perf record -p <pid you just found>`, wait a few "
+"seconds to gather data, then press Ctrl+C. You should now have a `perf.data` "
+"file."
 msgstr ""
 
 #: src/development/linux.md:182
@@ -432,7 +423,7 @@ msgid ""
 msgstr ""
 
 #: src/development/linux.md:188
-msgid "The `data.perf` file can be send to zed together with the exact commit."
+msgid "The `perf.data` file can be sent to Zed together with the exact commit."
 msgstr ""
 
 #: src/development/linux.md:190
@@ -446,13 +437,13 @@ msgstr ""
 #: src/development/linux.md:194
 msgid ""
 "Build Zed with symbols: Check out the commit found previously and modify "
-"`Cargo.toml`. Apply the following diff then make a release build."
+"`Cargo.toml`. Apply the following diff, then make a release build."
 msgstr ""
 
 #: src/development/linux.md:204
 msgid ""
-"Add the symbols to perf database: `pref buildid-cache -v -a <path to release "
-"zed binary>`"
+"Add the symbols to the perf database: `perf buildid-cache -v -a <path to "
+"release zed binary>`"
 msgstr ""
 
 #: src/development/linux.md:207

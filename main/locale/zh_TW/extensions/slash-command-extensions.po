@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,48 +11,48 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/extensions/slash-commands.md:1
+#: src/extensions/slash-commands.md:3
 msgid "Slash Commands"
 msgstr "斜線命令"
 
-#: src/extensions/slash-commands.md:3
+#: src/extensions/slash-commands.md:5
 msgid "Extensions may provide slash commands for use in the Assistant."
 msgstr ""
 
-#: src/extensions/slash-commands.md:5
+#: src/extensions/slash-commands.md:7
 msgid "Example extension"
 msgstr ""
 
-#: src/extensions/slash-commands.md:7
+#: src/extensions/slash-commands.md:9
 msgid ""
 "To see a working example of an extension that provides slash commands, check "
 "out the [`slash-commands-example` extension](https://github.com/zed-"
 "industries/zed/tree/main/extensions/slash-commands-example)."
 msgstr ""
 
-#: src/extensions/slash-commands.md:9
+#: src/extensions/slash-commands.md:11
 msgid ""
 "This extension can be [installed as a dev extension](./developing-extensions."
 "md#developing-an-extension-locally) if you want to try it out for yourself."
 msgstr ""
 
-#: src/extensions/slash-commands.md:11
+#: src/extensions/slash-commands.md:13
 msgid "Defining slash commands"
 msgstr "定義斜線命令"
 
-#: src/extensions/slash-commands.md:13
+#: src/extensions/slash-commands.md:15
 msgid ""
 "A given extension may provide one or more slash commands. Each slash command "
 "must be registered in the `extension.toml`."
 msgstr ""
 
-#: src/extensions/slash-commands.md:15
+#: src/extensions/slash-commands.md:17
 msgid ""
 "For example, here is an extension that provides two slash commands: `/echo` "
 "and `/pick-one`:"
 msgstr ""
 
-#: src/extensions/slash-commands.md:17
+#: src/extensions/slash-commands.md:19
 msgid ""
 "```toml\n"
 "[slash_commands.echo]\n"
@@ -65,39 +65,39 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/extensions/slash-commands.md:27
+#: src/extensions/slash-commands.md:29
 msgid "Each slash command may define the following properties:"
 msgstr ""
 
-#: src/extensions/slash-commands.md:29
+#: src/extensions/slash-commands.md:31
 msgid ""
 "`description`: A description of the slash command that will be shown when "
 "completing available commands."
 msgstr ""
 
-#: src/extensions/slash-commands.md:30
+#: src/extensions/slash-commands.md:32
 msgid ""
 "`requires_argument`: Indicates whether a slash command requires at least one "
 "argument to run."
 msgstr ""
 
-#: src/extensions/slash-commands.md:32
+#: src/extensions/slash-commands.md:34
 msgid "Implementing slash command behavior"
 msgstr ""
 
-#: src/extensions/slash-commands.md:34
+#: src/extensions/slash-commands.md:36
 msgid ""
 "To implement behavior for your slash commands, implement `run_slash_command` "
 "for your extension."
 msgstr ""
 
-#: src/extensions/slash-commands.md:36
+#: src/extensions/slash-commands.md:38
 msgid ""
 "This method accepts the slash command that will be run, the list of "
 "arguments passed to it, and an optional `Worktree`."
 msgstr ""
 
-#: src/extensions/slash-commands.md:38
+#: src/extensions/slash-commands.md:40
 msgid ""
 "This method returns `SlashCommandOutput`, which contains the textual output "
 "of the command in the `text` field. The output may also define "
@@ -105,116 +105,116 @@ msgid ""
 "sections are then rendered as creases in the Assistant's context editor."
 msgstr ""
 
-#: src/extensions/slash-commands.md:40
+#: src/extensions/slash-commands.md:42
 msgid ""
 "Your extension should `match` on the command name (without the leading `/`) "
 "and then execute behavior accordingly:"
 msgstr ""
 
-#: src/extensions/slash-commands.md:51 src/extensions/slash-commands.md:116
+#: src/extensions/slash-commands.md:53 src/extensions/slash-commands.md:118
 msgid "\"echo\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:53
+#: src/extensions/slash-commands.md:55
 msgid "\"nothing to echo\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:56
+#: src/extensions/slash-commands.md:58
 msgid "\" \""
 msgstr ""
 
-#: src/extensions/slash-commands.md:61
+#: src/extensions/slash-commands.md:63
 msgid "\"Echo\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:66 src/extensions/slash-commands.md:117
+#: src/extensions/slash-commands.md:68 src/extensions/slash-commands.md:119
 msgid "\"pick-one\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:68
+#: src/extensions/slash-commands.md:70
 msgid "\"no option selected\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:72 src/extensions/slash-commands.md:120
+#: src/extensions/slash-commands.md:74 src/extensions/slash-commands.md:122
 msgid "\"option-1\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:72 src/extensions/slash-commands.md:125
+#: src/extensions/slash-commands.md:74 src/extensions/slash-commands.md:127
 msgid "\"option-2\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:72 src/extensions/slash-commands.md:130
+#: src/extensions/slash-commands.md:74 src/extensions/slash-commands.md:132
 msgid "\"option-3\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:74
+#: src/extensions/slash-commands.md:76
 msgid "\"{invalid_option} is not a valid option\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:78
+#: src/extensions/slash-commands.md:80
 msgid "\"You chose {selection}.\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:83
+#: src/extensions/slash-commands.md:85
 msgid "\"Pick One: {selection}\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:88 src/extensions/slash-commands.md:134
+#: src/extensions/slash-commands.md:90 src/extensions/slash-commands.md:136
 msgid "\"unknown slash command: \\\"{command}\\\"\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:94
+#: src/extensions/slash-commands.md:96
 msgid "Auto-completing slash command arguments"
 msgstr ""
 
-#: src/extensions/slash-commands.md:96
+#: src/extensions/slash-commands.md:98
 msgid ""
 "For slash commands that have arguments, you may also choose to implement "
 "`complete_slash_command_argument` to provide completions for your slash "
 "commands."
 msgstr ""
 
-#: src/extensions/slash-commands.md:98
+#: src/extensions/slash-commands.md:100
 msgid ""
 "This method accepts the slash command that will be run and the list of "
 "arguments passed to it. It returns a list of "
 "`SlashCommandArgumentCompletion`s that will be shown in the completion menu."
 msgstr ""
 
-#: src/extensions/slash-commands.md:100
+#: src/extensions/slash-commands.md:102
 msgid ""
 "A `SlashCommandArgumentCompletion` consists of the following properties:"
 msgstr ""
 
-#: src/extensions/slash-commands.md:102
+#: src/extensions/slash-commands.md:104
 msgid "`label`: The label that will be shown in the completion menu."
 msgstr ""
 
-#: src/extensions/slash-commands.md:103
+#: src/extensions/slash-commands.md:105
 msgid ""
 "`new_text`: The text that will be inserted when the completion is accepted."
 msgstr ""
 
-#: src/extensions/slash-commands.md:104
+#: src/extensions/slash-commands.md:106
 msgid ""
 "`run_command`: Whether the slash command will be run when the completion is "
 "accepted."
 msgstr ""
 
-#: src/extensions/slash-commands.md:106
+#: src/extensions/slash-commands.md:108
 msgid ""
 "Once again, your extension should `match` on the command name (without the "
 "leading `/`) and return the desired argument completions:"
 msgstr ""
 
-#: src/extensions/slash-commands.md:119
+#: src/extensions/slash-commands.md:121
 msgid "\"Option One\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:124
+#: src/extensions/slash-commands.md:126
 msgid "\"Option Two\""
 msgstr ""
 
-#: src/extensions/slash-commands.md:129
+#: src/extensions/slash-commands.md:131
 msgid "\"Option Three\""
 msgstr ""

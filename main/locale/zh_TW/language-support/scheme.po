@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,17 +11,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/scheme.md:1
+#: src/languages/scheme.md:3
 msgid "Scheme"
 msgstr ""
 
-#: src/languages/scheme.md:3
+#: src/languages/scheme.md:5
 msgid ""
 "Scheme support is available through the [Scheme extension](https://github."
 "com/zed-extensions/scheme)."
 msgstr ""
 
-#: src/languages/scheme.md:5
+#: src/languages/scheme.md:7
 msgid ""
 "Tree-sitter: [6cdh/tree-sitter-scheme](https://github.com/6cdh/tree-sitter-"
 "scheme)"

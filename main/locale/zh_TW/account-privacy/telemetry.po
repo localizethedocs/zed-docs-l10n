@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,194 +11,188 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/telemetry.md:1
+#: src/telemetry.md:3
 msgid "Telemetry in Zed"
 msgstr ""
 
-#: src/telemetry.md:3
-msgid ""
-"Zed collects anonymous telemetry data to help the team understand how people "
-"are using the application and to see what sort of issues they are "
-"experiencing."
-msgstr ""
-
 #: src/telemetry.md:5
-msgid "Configuring Telemetry Settings"
+msgid ""
+"Zed collects anonymous telemetry to understand usage patterns and diagnose "
+"issues."
 msgstr ""
 
 #: src/telemetry.md:7
+msgid "Telemetry falls into two categories:"
+msgstr ""
+
+#: src/telemetry.md:9
 msgid ""
-"You have full control over what data is sent out by Zed. To enable or "
-"disable some or all telemetry types, open your `settings.json` file via "
-"<code class=\"hljs\">zed: open settings</code>(<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>) from the command palette."
+"**Client-side**: Usage metrics and crash reports. You can disable these in "
+"settings."
 msgstr ""
 
 #: src/telemetry.md:10
-msgid "Insert and tweak the following:"
+msgid ""
+"**Server-side**: Collected when using hosted services like AI or "
+"Collaboration. Required for these features to function."
 msgstr ""
 
-#: src/telemetry.md:13
-msgid "\"telemetry\""
+#: src/telemetry.md:12
+msgid "Configuring Telemetry Settings"
 msgstr ""
 
 #: src/telemetry.md:14
-msgid "\"diagnostics\""
+msgid ""
+"You have full control over what data is sent out by Zed. To enable or "
+"disable some or all telemetry types, open Settings (<kbd "
+"class=\"keybinding\">cmd-,|ctrl-,</kbd>) and search for \"telemetry\", or "
+"add the following to your settings file:"
 msgstr ""
 
-#: src/telemetry.md:15
-msgid "\"metrics\""
+#: src/telemetry.md:18
+msgid "\"telemetry\""
 msgstr ""
 
 #: src/telemetry.md:19
+msgid "\"diagnostics\""
+msgstr ""
+
+#: src/telemetry.md:20
+msgid "\"metrics\""
+msgstr ""
+
+#: src/telemetry.md:24
 msgid "Dataflow"
 msgstr ""
 
-#: src/telemetry.md:21
+#: src/telemetry.md:26
 msgid ""
-"Telemetry is sent from the application to our servers. Data is proxied "
-"through our servers to enable us to easily switch analytics services. We "
+"Telemetry is sent from the application to our servers every 5 minutes (or "
+"when 50 events accumulate), then routed to the appropriate service. We "
 "currently use:"
 msgstr ""
 
-#: src/telemetry.md:23
+#: src/telemetry.md:28
 msgid ""
 "[Sentry](https://sentry.io): Crash-monitoring service - stores diagnostic "
 "events"
 msgstr ""
 
-#: src/telemetry.md:24
+#: src/telemetry.md:29
 msgid ""
 "[Snowflake](https://snowflake.com): Data warehouse - stores both diagnostic "
 "and metric events"
 msgstr ""
 
-#: src/telemetry.md:25
+#: src/telemetry.md:30
 msgid ""
 "[Hex](https://www.hex.tech): Dashboards and data exploration - accesses data "
 "stored in Snowflake"
 msgstr ""
 
-#: src/telemetry.md:26
+#: src/telemetry.md:31
 msgid ""
 "[Amplitude](https://www.amplitude.com): Dashboards and data exploration - "
 "accesses data stored in Snowflake"
 msgstr ""
 
-#: src/telemetry.md:28
+#: src/telemetry.md:33
 msgid "Types of Telemetry"
 msgstr ""
 
-#: src/telemetry.md:30
+#: src/telemetry.md:35
 msgid "Diagnostics"
 msgstr "診斷"
 
-#: src/telemetry.md:32
+#: src/telemetry.md:37
 msgid ""
 "Crash reports consist of a [minidump](https://learn.microsoft.com/en-us/"
-"windows/win32/debug/minidump-files) and some extra debug information. "
-"Reports are sent on the first application launch after the crash occurred. "
-"We've built dashboards that allow us to visualize the frequency and severity "
-"of issues experienced by users. Having these reports sent automatically "
-"allows us to begin implementing fixes without the user needing to file a "
-"report in our issue tracker. The plots in the dashboards also give us an "
-"informal measurement of the stability of Zed."
+"windows/win32/debug/minidump-files) and debug metadata. Reports are sent on "
+"the next launch after a crash, allowing Zed to identify and fix issues "
+"without requiring you to file a bug report."
 msgstr ""
 
-#: src/telemetry.md:34
+#: src/telemetry.md:39
 msgid ""
-"You can see what extra data is sent alongside the minidump in the `Panic` "
-"struct in [crates/telemetry_events/src/telemetry_events.rs](https://github."
-"com/zed-industries/zed/blob/main/crates/telemetry_events/src/"
-"telemetry_events.rs) in the Zed repo. You can find additional information in "
-"the [Debugging Crashes](./development/debugging-crashes.md) documentation."
-msgstr ""
-
-#: src/telemetry.md:36
-msgid "Client-Side Usage Data"
-msgstr ""
-
-#: src/telemetry.md:38
-msgid ""
-"To improve Zed and understand how it is being used in the wild, Zed "
-"optionally collects usage data like the following:"
-msgstr ""
-
-#: src/telemetry.md:40
-msgid "(a) file extensions of opened files;"
+"You can inspect what data is sent in the `Panic` struct in [crates/"
+"telemetry_events/src/telemetry_events.rs](https://github.com/zed-industries/"
+"zed/blob/main/crates/telemetry_events/src/telemetry_events.rs). See also: "
+"[Debugging Crashes](./development/debugging-crashes.md)."
 msgstr ""
 
 #: src/telemetry.md:41
-msgid "(b) features and tools You use within the Editor;"
-msgstr ""
-
-#: src/telemetry.md:42
-msgid "(c) project statistics (e.g., number of files); and"
+msgid "Client-Side Metrics"
 msgstr ""
 
 #: src/telemetry.md:43
-msgid "(d) frameworks detected in Your projects"
+msgid "Client-side telemetry includes:"
 msgstr ""
 
 #: src/telemetry.md:45
-msgid ""
-"Usage Data does not include any of Your software code or sensitive project "
-"details. Metric events are reported over HTTPS, and requests are rate-"
-"limited to avoid using significant network bandwidth."
+msgid "File extensions of opened files"
+msgstr ""
+
+#: src/telemetry.md:46
+msgid "Features and tools used within the editor"
 msgstr ""
 
 #: src/telemetry.md:47
-msgid ""
-"Usage Data is associated with a secure random telemetry ID which may be "
-"linked to Your email address. This linkage currently serves two purposes: "
-"(1) it allows Zed to analyze usage patterns over time while maintaining Your "
-"privacy; and (2) it enables Zed to reach out to specific user groups for "
-"feedback and improvement suggestions."
+msgid "Project statistics (e.g., number of files)"
 msgstr ""
 
-#: src/telemetry.md:49
-msgid ""
-"You can audit the metrics data that Zed has reported by running the command "
-"<code class=\"hljs\">zed: open telemetry log</code> from the command "
-"palette, or clicking `Help > View Telemetry Log` in the application menu."
+#: src/telemetry.md:48
+msgid "Frameworks detected in your projects"
 msgstr ""
 
-#: src/telemetry.md:51
+#: src/telemetry.md:50
 msgid ""
-"You can see the full list of the event types and exactly the data sent for "
-"each by inspecting the `Event` enum and the associated structs in [crates/"
-"telemetry_events/src/telemetry_events.rs](https://github.com/zed-industries/"
-"zed/blob/main/crates/telemetry_events/src/telemetry_events.rs) in the Zed "
-"repository."
+"This data does not include your code or sensitive project details. Events "
+"are sent over HTTPS and rate-limited."
 msgstr ""
 
-#: src/telemetry.md:53
-msgid "Server-Side Usage Data"
+#: src/telemetry.md:52
+msgid ""
+"Usage data is tied to a random telemetry ID. If you've authenticated, this "
+"ID may be linked to your email so Zed can analyze patterns over time and "
+"reach out for feedback."
 msgstr ""
 
-#: src/telemetry.md:55
+#: src/telemetry.md:54
 msgid ""
-"When using Zed's hosted services, we may collect, generate, and Process data "
-"to allow us to support users and improve our hosted offering. Examples "
-"include metadata around rate limiting and billing metrics/token usage. Zed "
-"does not persistently store user content or use user content to evaluate and/"
-"or improve our AI features, unless it is explicitly shared with Zed, and we "
-"have a zero-data retention agreement with Anthropic."
+"To audit what Zed has reported, run <code class=\"hljs\">zed: open telemetry "
+"log</code> from the command palette or click `Help > View Telemetry Log`."
 msgstr ""
 
-#: src/telemetry.md:57
+#: src/telemetry.md:56
 msgid ""
-"You can see more about our stance on data collection (and that any prompt "
-"data shared with Zed is explicitly opt-in) at [AI Improvement](./ai/ai-"
+"For the full list of event types, see the `Event` enum in [telemetry_events."
+"rs](https://github.com/zed-industries/zed/blob/main/crates/telemetry_events/"
+"src/telemetry_events.rs)."
+msgstr ""
+
+#: src/telemetry.md:58
+msgid "Server-Side Metrics"
+msgstr ""
+
+#: src/telemetry.md:60
+msgid ""
+"When using Zed's hosted services, we collect metadata for rate limiting and "
+"billing (e.g., token usage). Zed does not store your prompts or code unless "
+"you explicitly share them via feedback ratings."
+msgstr ""
+
+#: src/telemetry.md:62
+msgid ""
+"For details on AI data handling, see [Zed AI Features and Privacy](./ai/ai-"
 "improvement.md)."
 msgstr ""
 
-#: src/telemetry.md:59
+#: src/telemetry.md:64
 msgid "Concerns and Questions"
 msgstr ""
 
-#: src/telemetry.md:61
+#: src/telemetry.md:66
 msgid ""
-"If you have concerns about telemetry, please feel free to [open an issue]"
-"(https://github.com/zed-industries/zed/issues/new/choose)."
+"If you have concerns about telemetry, you can [open an issue](https://github."
+"com/zed-industries/zed/issues/new/choose) or email hi@zed.dev."
 msgstr ""

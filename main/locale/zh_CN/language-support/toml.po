@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/toml.md:1
+#: src/languages/toml.md:3
 msgid "TOML"
 msgstr ""
 
-#: src/languages/toml.md:3
+#: src/languages/toml.md:5
 msgid ""
 "TOML support is available through the [TOML extension](https://zed.dev/"
 "extensions/toml)."
 msgstr ""
 
-#: src/languages/toml.md:5
+#: src/languages/toml.md:7
 msgid ""
 "Tree-sitter: [tree-sitter/tree-sitter-toml](https://github.com/tree-sitter/"
 "tree-sitter-toml)"
 msgstr ""
 
-#: src/languages/toml.md:7
+#: src/languages/toml.md:9
 msgid ""
 "A TOML language server is available in the [Tombi extension](https://zed.dev/"
 "extensions/tombi)."

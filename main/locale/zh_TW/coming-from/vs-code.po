@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,28 +11,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/migrate/vs-code.md:1
-msgid "How to Migrate from VS Code to Zed"
-msgstr ""
-
 #: src/migrate/vs-code.md:3
-msgid ""
-"This guide is for developers who spent serious time in VS Code and want to "
-"try Zed without starting from scratch."
+msgid "How to Migrate from VS Code to Zed"
 msgstr ""
 
 #: src/migrate/vs-code.md:5
 msgid ""
-"If you’re here, you might be looking for a faster editor. Or something less "
-"cluttered. Or you’re curious about built-in collaboration. Whatever brought "
-"you here, this guide helps you move over your habits, shortcuts, and "
-"settings."
+"This guide explains how to move from VS Code to Zed without rebuilding your "
+"workflow."
 msgstr ""
 
 #: src/migrate/vs-code.md:7
 msgid ""
-"We’ll cover what to bring, what to change, and what’s different. You can "
-"ease in gradually or switch all at once. Either way, you’ll stay productive."
+"It covers which settings import automatically, which shortcuts map cleanly, "
+"and which behaviors differ so you can adjust quickly."
 msgstr ""
 
 #: src/migrate/vs-code.md:9
@@ -854,8 +846,8 @@ msgstr ""
 
 #: src/migrate/vs-code.md:162
 msgid ""
-"Zed doesn’t import extensions or keybindings, but this is the fastest way to "
-"get a familiar feel while trying something new. If you skip that step during "
+"Zed doesn’t import extensions or keybindings, but this import gets core "
+"editor behavior close to your VS Code setup. If you skip that step during "
 "setup, you can still import settings manually later via the command palette:"
 msgstr ""
 
@@ -868,120 +860,112 @@ msgid "Set Up Editor Preferences"
 msgstr "設定編輯器偏好設定"
 
 #: src/migrate/vs-code.md:168
-msgid "You can also configure settings manually in the Settings Editor."
+msgid ""
+"You can configure most settings in the Settings Editor (<kbd "
+"class=\"keybinding\">cmd-,|ctrl-,</kbd>). For advanced settings, run `zed: "
+"open settings file` from the Command Palette to edit your settings file "
+"directly."
 msgstr ""
 
 #: src/migrate/vs-code.md:170
-msgid "To edit your settings:"
-msgstr ""
-
-#: src/migrate/vs-code.md:172
-msgid "`Cmd+,` to open the Settings Editor."
-msgstr ""
-
-#: src/migrate/vs-code.md:173
-msgid "Run `zed: open settings` in the Command Palette."
-msgstr ""
-
-#: src/migrate/vs-code.md:175
 msgid "Here’s how common VS Code settings translate:"
 msgstr ""
 
-#: src/migrate/vs-code.md:176 src/migrate/vs-code.md:228
+#: src/migrate/vs-code.md:171 src/migrate/vs-code.md:223
 msgid "VS Code"
 msgstr "VS Code"
 
-#: src/migrate/vs-code.md:176 src/migrate/vs-code.md:228
+#: src/migrate/vs-code.md:171 src/migrate/vs-code.md:223
 msgid "Zed"
 msgstr ""
 
-#: src/migrate/vs-code.md:176 src/migrate/vs-code.md:237
+#: src/migrate/vs-code.md:171 src/migrate/vs-code.md:232
 msgid "Notes"
 msgstr ""
 
-#: src/migrate/vs-code.md:178
+#: src/migrate/vs-code.md:173
 msgid "editor.fontFamily"
 msgstr ""
 
-#: src/migrate/vs-code.md:178
+#: src/migrate/vs-code.md:173
 msgid "buffer_font_family"
 msgstr ""
 
-#: src/migrate/vs-code.md:178
+#: src/migrate/vs-code.md:173
 msgid "Zed uses Zed Mono by default"
 msgstr ""
 
-#: src/migrate/vs-code.md:179
+#: src/migrate/vs-code.md:174
 msgid "editor.fontSize"
 msgstr ""
 
-#: src/migrate/vs-code.md:179
+#: src/migrate/vs-code.md:174
 msgid "buffer_font_size"
 msgstr ""
 
-#: src/migrate/vs-code.md:179
+#: src/migrate/vs-code.md:174
 msgid "Set in pixels"
 msgstr ""
 
-#: src/migrate/vs-code.md:180
+#: src/migrate/vs-code.md:175
 msgid "editor.tabSize"
 msgstr ""
 
-#: src/migrate/vs-code.md:180
+#: src/migrate/vs-code.md:175
 msgid "tab_size"
 msgstr ""
 
-#: src/migrate/vs-code.md:180
+#: src/migrate/vs-code.md:175
 msgid "Can override per language"
 msgstr ""
 
-#: src/migrate/vs-code.md:181
+#: src/migrate/vs-code.md:176
 msgid "editor.insertSpaces"
 msgstr ""
 
-#: src/migrate/vs-code.md:181
+#: src/migrate/vs-code.md:176
 msgid "insert_spaces"
 msgstr ""
 
-#: src/migrate/vs-code.md:181
+#: src/migrate/vs-code.md:176
 msgid "Boolean"
 msgstr ""
 
-#: src/migrate/vs-code.md:182
+#: src/migrate/vs-code.md:177
 msgid "editor.formatOnSave"
 msgstr ""
 
-#: src/migrate/vs-code.md:182
+#: src/migrate/vs-code.md:177
 msgid "format_on_save"
 msgstr ""
 
-#: src/migrate/vs-code.md:182
+#: src/migrate/vs-code.md:177
 msgid "Works with formatter enabled"
 msgstr ""
 
-#: src/migrate/vs-code.md:183
+#: src/migrate/vs-code.md:178
 msgid "editor.wordWrap"
 msgstr ""
 
-#: src/migrate/vs-code.md:183
+#: src/migrate/vs-code.md:178
 msgid "soft_wrap"
 msgstr ""
 
-#: src/migrate/vs-code.md:183
+#: src/migrate/vs-code.md:178
 msgid "Supports optional wrap column"
 msgstr ""
 
-#: src/migrate/vs-code.md:185
+#: src/migrate/vs-code.md:180
 msgid ""
 "Zed also supports per-project settings. You can find these in the Settings "
 "Editor as well."
 msgstr ""
 
-#: src/migrate/vs-code.md:187
+#: src/migrate/vs-code.md:182
 msgid "Open or Create a Project"
 msgstr "開啟或建立專案"
 
-#: src/migrate/vs-code.md:189
+#: src/migrate/vs-code.md:184
 msgid ""
 "After setup, press `Cmd+O` (`Ctrl+O` on Linux) to open a folder. This "
 "becomes your workspace in Zed. There's no support for multi-root workspaces "
@@ -989,19 +973,19 @@ msgid ""
 "one workspace."
 msgstr ""
 
-#: src/migrate/vs-code.md:191
+#: src/migrate/vs-code.md:186
 msgid ""
 "To start a new project, create a directory using your terminal or file "
 "manager, then open it in Zed. The editor will treat that folder as the root "
 "of your project."
 msgstr ""
 
-#: src/migrate/vs-code.md:193
+#: src/migrate/vs-code.md:188
 msgid ""
 "You can also launch Zed from the terminal inside any folder with: `zed .`"
 msgstr ""
 
-#: src/migrate/vs-code.md:196
+#: src/migrate/vs-code.md:191
 msgid ""
 "Once inside a project, use `Cmd+P` to jump between files quickly. "
 "`Cmd+Shift+P` (`Ctrl+Shift+P` on Linux) opens the command palette for "
@@ -1009,592 +993,584 @@ msgid ""
 "session."
 msgstr ""
 
-#: src/migrate/vs-code.md:198
+#: src/migrate/vs-code.md:193
 msgid ""
-"Open buffers appear as tabs across the top. The sidebar shows your file tree "
-"and Git status. Collapse it with `Cmd+B` for a distraction-free view."
+"Open buffers appear as tabs across the top. The Project Panel shows your "
+"file tree and Git status. Collapse it with `Cmd+B` for a distraction-free "
+"view."
 msgstr ""
 
-#: src/migrate/vs-code.md:200
+#: src/migrate/vs-code.md:195
 msgid "Differences in Keybindings"
 msgstr ""
 
-#: src/migrate/vs-code.md:202
+#: src/migrate/vs-code.md:197
 msgid ""
-"If you chose the VS Code keymap during onboarding, you're likely good to go, "
-"and most of your shortcuts should already feel familiar. Here’s a quick "
-"reference guide for how our keybindings compare to what you’re used to "
-"coming from VS Code."
+"If you chose the VS Code keymap during onboarding, most shortcuts should "
+"already feel familiar. Here’s a quick reference for where keybindings match "
+"and where they differ."
 msgstr ""
 
-#: src/migrate/vs-code.md:205
+#: src/migrate/vs-code.md:200
 msgid "Common Shared Keybindings (Zed \\<\\> VS Code)"
 msgstr ""
 
-#: src/migrate/vs-code.md:207 src/migrate/vs-code.md:228
-#: src/migrate/vs-code.md:237
+#: src/migrate/vs-code.md:202 src/migrate/vs-code.md:223
+#: src/migrate/vs-code.md:232
 msgid "Action"
 msgstr ""
 
-#: src/migrate/vs-code.md:207 src/migrate/vs-code.md:237
+#: src/migrate/vs-code.md:202 src/migrate/vs-code.md:232
 msgid "Shortcut"
 msgstr ""
 
-#: src/migrate/vs-code.md:209
+#: src/migrate/vs-code.md:204
 msgid "Find files"
 msgstr ""
 
-#: src/migrate/vs-code.md:209
+#: src/migrate/vs-code.md:204
 msgid "`Cmd + P`"
 msgstr ""
 
-#: src/migrate/vs-code.md:210
+#: src/migrate/vs-code.md:205
 msgid "Run a command"
 msgstr ""
 
-#: src/migrate/vs-code.md:210
+#: src/migrate/vs-code.md:205
 msgid "`Cmd + Shift + P`"
 msgstr ""
 
-#: src/migrate/vs-code.md:211
+#: src/migrate/vs-code.md:206
 msgid "Search text (project-wide)"
 msgstr ""
 
-#: src/migrate/vs-code.md:211
+#: src/migrate/vs-code.md:206
 msgid "`Cmd + Shift + F`"
 msgstr ""
 
-#: src/migrate/vs-code.md:212
+#: src/migrate/vs-code.md:207
 msgid "Find symbols (project-wide)"
 msgstr ""
 
-#: src/migrate/vs-code.md:212
+#: src/migrate/vs-code.md:207
 msgid "`Cmd + T`"
 msgstr ""
 
-#: src/migrate/vs-code.md:213
+#: src/migrate/vs-code.md:208
 msgid "Find symbols (file-wide)"
 msgstr ""
 
-#: src/migrate/vs-code.md:213
+#: src/migrate/vs-code.md:208
 msgid "`Cmd + Shift + O`"
 msgstr ""
 
-#: src/migrate/vs-code.md:214
+#: src/migrate/vs-code.md:209
 msgid "Toggle left dock"
 msgstr ""
 
-#: src/migrate/vs-code.md:214
+#: src/migrate/vs-code.md:209
 msgid "`Cmd + B`"
 msgstr "`Cmd + B`"
 
-#: src/migrate/vs-code.md:215
+#: src/migrate/vs-code.md:210
 msgid "Toggle bottom dock"
 msgstr ""
 
-#: src/migrate/vs-code.md:215
+#: src/migrate/vs-code.md:210
 msgid "`Cmd + J`"
 msgstr ""
 
-#: src/migrate/vs-code.md:216
+#: src/migrate/vs-code.md:211
 msgid "Open terminal"
 msgstr ""
 
-#: src/migrate/vs-code.md:216
+#: src/migrate/vs-code.md:211
 msgid "`Ctrl + ~`"
 msgstr ""
 
-#: src/migrate/vs-code.md:217
+#: src/migrate/vs-code.md:212
 msgid "Open file tree explorer"
 msgstr ""
 
-#: src/migrate/vs-code.md:217
+#: src/migrate/vs-code.md:212
 msgid "`Cmd + Shift + E`"
 msgstr ""
 
-#: src/migrate/vs-code.md:218
+#: src/migrate/vs-code.md:213
 msgid "Close current buffer"
 msgstr ""
 
-#: src/migrate/vs-code.md:218
+#: src/migrate/vs-code.md:213
 msgid "`Cmd + W`"
 msgstr ""
 
-#: src/migrate/vs-code.md:219
+#: src/migrate/vs-code.md:214
 msgid "Close whole project"
 msgstr ""
 
-#: src/migrate/vs-code.md:219
+#: src/migrate/vs-code.md:214
 msgid "`Cmd + Shift + W`"
 msgstr ""
 
-#: src/migrate/vs-code.md:220
+#: src/migrate/vs-code.md:215
 msgid "Refactor: rename symbol"
 msgstr ""
 
-#: src/migrate/vs-code.md:220
+#: src/migrate/vs-code.md:215
 msgid "`F2`"
 msgstr ""
 
-#: src/migrate/vs-code.md:221
+#: src/migrate/vs-code.md:216
 msgid "Change theme"
 msgstr ""
 
-#: src/migrate/vs-code.md:221
+#: src/migrate/vs-code.md:216
 msgid "`Cmd + K, Cmd + T`"
 msgstr ""
 
-#: src/migrate/vs-code.md:222
+#: src/migrate/vs-code.md:217
 msgid "Wrap text"
 msgstr ""
 
-#: src/migrate/vs-code.md:222
+#: src/migrate/vs-code.md:217
 msgid "`Opt + Z`"
 msgstr ""
 
-#: src/migrate/vs-code.md:223
+#: src/migrate/vs-code.md:218
 msgid "Navigate open tabs"
 msgstr ""
 
-#: src/migrate/vs-code.md:223
+#: src/migrate/vs-code.md:218
 msgid "`Cmd + Opt + Arrow`"
 msgstr ""
 
-#: src/migrate/vs-code.md:224
+#: src/migrate/vs-code.md:219
 msgid "Syntactic fold / unfold"
 msgstr ""
 
-#: src/migrate/vs-code.md:224
+#: src/migrate/vs-code.md:219
 msgid "`Cmd + Opt + {` or `}`"
 msgstr ""
 
-#: src/migrate/vs-code.md:226
+#: src/migrate/vs-code.md:221
 msgid "Different Keybindings (Zed \\<\\> VS Code)"
 msgstr ""
 
-#: src/migrate/vs-code.md:230
+#: src/migrate/vs-code.md:225
 msgid "Open recent project"
 msgstr ""
 
-#: src/migrate/vs-code.md:230
+#: src/migrate/vs-code.md:225
 msgid "`Ctrl + R`"
 msgstr ""
 
-#: src/migrate/vs-code.md:230
+#: src/migrate/vs-code.md:225
 msgid "`Cmd + Opt + O`"
 msgstr ""
 
-#: src/migrate/vs-code.md:231
+#: src/migrate/vs-code.md:226
 msgid "Move lines up/down"
 msgstr ""
 
-#: src/migrate/vs-code.md:231 src/migrate/vs-code.md:240
+#: src/migrate/vs-code.md:226 src/migrate/vs-code.md:235
 msgid "`Opt + Up/Down`"
 msgstr ""
 
-#: src/migrate/vs-code.md:231
+#: src/migrate/vs-code.md:226
 msgid "`Cmd + Ctrl + Up/Down`"
 msgstr ""
 
-#: src/migrate/vs-code.md:232
+#: src/migrate/vs-code.md:227
 msgid "Split panes"
 msgstr ""
 
-#: src/migrate/vs-code.md:232
+#: src/migrate/vs-code.md:227
 msgid "`Cmd + \\`"
 msgstr ""
 
-#: src/migrate/vs-code.md:232
+#: src/migrate/vs-code.md:227
 msgid "`Cmd + K, Arrow Keys`"
 msgstr ""
 
-#: src/migrate/vs-code.md:233
+#: src/migrate/vs-code.md:228
 msgid "Expand Selection"
 msgstr ""
 
-#: src/migrate/vs-code.md:233
+#: src/migrate/vs-code.md:228
 msgid "`Shift + Alt + Right`"
 msgstr ""
 
-#: src/migrate/vs-code.md:233
+#: src/migrate/vs-code.md:228
 msgid "`Opt + Up`"
 msgstr ""
 
-#: src/migrate/vs-code.md:235
+#: src/migrate/vs-code.md:230
 msgid "Unique to Zed"
 msgstr ""
 
-#: src/migrate/vs-code.md:239
+#: src/migrate/vs-code.md:234
 msgid "Toggle right dock"
 msgstr ""
 
-#: src/migrate/vs-code.md:239
+#: src/migrate/vs-code.md:234
 msgid "`Cmd + R` or `Cmd + Alt + B`"
 msgstr ""
 
-#: src/migrate/vs-code.md:240
+#: src/migrate/vs-code.md:235
 msgid "Syntactic selection"
 msgstr ""
 
-#: src/migrate/vs-code.md:240
+#: src/migrate/vs-code.md:235
 msgid "Selects code by structure (e.g., inside braces)."
 msgstr ""
 
-#: src/migrate/vs-code.md:242
+#: src/migrate/vs-code.md:237
 msgid "How to Customize Keybindings"
 msgstr ""
 
-#: src/migrate/vs-code.md:244
+#: src/migrate/vs-code.md:239
 msgid "To edit your keybindings:"
 msgstr ""
 
-#: src/migrate/vs-code.md:246
+#: src/migrate/vs-code.md:241
 msgid "Open the command palette (`Cmd+Shift+P`)"
 msgstr ""
 
-#: src/migrate/vs-code.md:247
+#: src/migrate/vs-code.md:242
 msgid "Run `Zed: Open Keymap Editor`"
 msgstr ""
 
-#: src/migrate/vs-code.md:249
+#: src/migrate/vs-code.md:244
 msgid ""
 "This opens a list of all available bindings. You can override individual "
 "shortcuts, remove conflicts, or build a layout that works better for your "
 "setup."
 msgstr ""
 
-#: src/migrate/vs-code.md:251
+#: src/migrate/vs-code.md:246
 msgid ""
 "Zed also supports chords (multi-key sequences) like `Cmd+K Cmd+C`, like VS "
 "Code does."
 msgstr ""
 
-#: src/migrate/vs-code.md:253
+#: src/migrate/vs-code.md:248
 msgid "Differences in User Interfaces"
 msgstr ""
 
-#: src/migrate/vs-code.md:255
+#: src/migrate/vs-code.md:250
 msgid "No Workspace"
 msgstr "無工作空間"
 
-#: src/migrate/vs-code.md:257
+#: src/migrate/vs-code.md:252
 msgid ""
 "VS Code uses a dedicated Workspace concept, with multi-root folders, `.code-"
 "workspace` files, and a clear distinction between “a window” and “a "
 "workspace.” Zed simplifies this model."
 msgstr ""
 
-#: src/migrate/vs-code.md:260
+#: src/migrate/vs-code.md:255
 msgid "In Zed:"
 msgstr ""
 
-#: src/migrate/vs-code.md:262
+#: src/migrate/vs-code.md:257
 msgid ""
 "There is no workspace file format. Opening a folder is your project context."
 msgstr ""
 
-#: src/migrate/vs-code.md:264
+#: src/migrate/vs-code.md:259
 msgid ""
 "Zed does not support multi-root workspaces. You can only open one folder at "
 "a time in a window."
 msgstr ""
 
-#: src/migrate/vs-code.md:266
+#: src/migrate/vs-code.md:261
 msgid ""
 "Most project-level behavior is scoped to the folder you open. Search, Git "
 "integration, tasks, and environment detection all treat the opened directory "
 "as the project root."
 msgstr ""
 
-#: src/migrate/vs-code.md:268
+#: src/migrate/vs-code.md:263
 msgid ""
 "Per-project settings are optional. You can add a `.zed/settings.json` file "
 "inside a project to override global settings, but Zed does not use `.code-"
 "workspace` files and won’t import them."
 msgstr ""
 
-#: src/migrate/vs-code.md:270
+#: src/migrate/vs-code.md:265
 msgid ""
 "You can start from a single file or an empty window. Zed doesn’t require you "
 "to open a folder to begin editing."
 msgstr ""
 
-#: src/migrate/vs-code.md:272
+#: src/migrate/vs-code.md:267
 msgid ""
 "The result is a simpler model: Open a folder → work inside that folder → no "
 "additional workspace layer."
 msgstr ""
 
-#: src/migrate/vs-code.md:275
+#: src/migrate/vs-code.md:270
 msgid "Navigating in a Project"
 msgstr ""
 
-#: src/migrate/vs-code.md:277
+#: src/migrate/vs-code.md:272
 msgid ""
 "In VS Code, the standard entry point is opening a folder. From there, the "
-"left-hand sidebar is central to your navigation. Zed takes a different "
-"approach:"
+"left-hand panel is central to navigation. Zed takes a different approach:"
 msgstr ""
 
-#: src/migrate/vs-code.md:280
+#: src/migrate/vs-code.md:275
 msgid ""
 "You can still open folders, but you don’t need to. Opening a single file or "
 "even starting with an empty workspace is valid."
 msgstr ""
 
-#: src/migrate/vs-code.md:281
+#: src/migrate/vs-code.md:276
 msgid ""
-"The Command Palette (`Cmd+Shift+P`) and File Finder (`Cmd+P`) are your "
-"primary navigation tools. The File Finder searches across the entire "
-"workspace instantly; files, symbols, commands, even teammates if you're "
-"collaborating."
+"The Command Palette (`Cmd+Shift+P`) and File Finder (`Cmd+P`) are primary "
+"navigation tools. The File Finder searches files, symbols, and commands "
+"across the workspace."
 msgstr ""
 
-#: src/migrate/vs-code.md:282
-msgid "Instead of a persistent sidebar, Zed encourages you to:"
+#: src/migrate/vs-code.md:277
+msgid "Instead of a persistent panel, Zed encourages you to:"
 msgstr ""
 
-#: src/migrate/vs-code.md:283
+#: src/migrate/vs-code.md:278
 msgid "Fuzzy-find files by name (`Cmd+P`)"
 msgstr ""
 
-#: src/migrate/vs-code.md:284
+#: src/migrate/vs-code.md:279
 msgid "Jump directly to symbols (`Cmd+Shift+O`)"
 msgstr ""
 
-#: src/migrate/vs-code.md:285
+#: src/migrate/vs-code.md:280
 msgid ""
 "Use split panes and tabs for context, rather than keeping a large file tree "
 "open (though you can do this with the Project Panel if you prefer)."
 msgstr ""
 
-#: src/migrate/vs-code.md:287
+#: src/migrate/vs-code.md:282
 msgid ""
-"The UI is intentionally minimal. Panels slide in only when needed, then get "
-"out of your way. The focus is on flowing between code instead of managing "
-"panes."
+"The UI keeps auxiliary panels out of the way so navigation stays centered on "
+"code."
 msgstr ""
 
-#: src/migrate/vs-code.md:289
+#: src/migrate/vs-code.md:284
 msgid "Extensions vs. Marketplace"
 msgstr ""
 
-#: src/migrate/vs-code.md:291
+#: src/migrate/vs-code.md:286
 msgid ""
 "Zed does not offer as many extensions as VS Code. The available extensions "
 "are focused on language support, themes, syntax highlighting, and other core "
 "editing enhancements."
 msgstr ""
 
-#: src/migrate/vs-code.md:293
+#: src/migrate/vs-code.md:288
 msgid ""
-"However there are several features that typically require extensions in VS "
-"Code which we built directly into Zed:"
+"Several features that typically require extensions in VS Code are built into "
+"Zed:"
 msgstr ""
 
-#: src/migrate/vs-code.md:295
+#: src/migrate/vs-code.md:290
 msgid ""
 "Real-time collaboration with voice and cursor sharing (no Live Share "
 "required)"
 msgstr ""
 
-#: src/migrate/vs-code.md:296
+#: src/migrate/vs-code.md:291
 msgid "AI coding assistance (no Copilot extension needed)"
 msgstr ""
 
-#: src/migrate/vs-code.md:297
+#: src/migrate/vs-code.md:292
 msgid "Built-in terminal panel"
 msgstr "內建的終端機面板"
 
-#: src/migrate/vs-code.md:298
+#: src/migrate/vs-code.md:293
 msgid "Project-wide fuzzy search"
 msgstr ""
 
-#: src/migrate/vs-code.md:299
+#: src/migrate/vs-code.md:294
 msgid "Task runner with JSON config"
 msgstr ""
 
-#: src/migrate/vs-code.md:300
+#: src/migrate/vs-code.md:295
 msgid "Inline diagnostics and code actions via LSP"
 msgstr ""
 
-#: src/migrate/vs-code.md:302
+#: src/migrate/vs-code.md:297
 msgid ""
 "You won’t find one-to-one replacements for every VS Code extension, "
 "especially if you rely on tools for DevOps, containers, or test runners. "
-"Zed's extension ecosystem is still growing, and the catalog is smaller by "
-"design."
+"Zed's extension catalog is still growing and remains smaller."
 msgstr ""
 
-#: src/migrate/vs-code.md:304
+#: src/migrate/vs-code.md:299
 msgid "Collaboration in Zed vs. VS Code"
 msgstr ""
 
-#: src/migrate/vs-code.md:306
+#: src/migrate/vs-code.md:301
 msgid ""
 "Unlike VS Code, Zed doesn’t require an extension to collaborate. It’s built "
 "into the core experience."
 msgstr ""
 
-#: src/migrate/vs-code.md:308
+#: src/migrate/vs-code.md:303
 msgid "Open the Collab Panel in the left dock."
 msgstr ""
 
-#: src/migrate/vs-code.md:309
+#: src/migrate/vs-code.md:304
 msgid ""
 "Create a channel and [invite your collaborators](https://zed.dev/docs/"
 "collaboration#inviting-a-collaborator) to join."
 msgstr ""
 
-#: src/migrate/vs-code.md:310
+#: src/migrate/vs-code.md:305
 msgid ""
 "[Share your screen or your codebase](https://zed.dev/docs/"
 "collaboration#share-a-project) directly."
 msgstr ""
 
-#: src/migrate/vs-code.md:312
+#: src/migrate/vs-code.md:307
 msgid ""
 "Once connected, you’ll see each other's cursors, selections, and edits in "
 "real time. Voice chat is included, so you can talk as you work. There’s no "
-"need for separate tools or third-party logins. Zed’s collaboration is "
-"designed for everything from quick pair programming to longer team sessions."
+"need for separate tools or third-party logins."
 msgstr ""
 
-#: src/migrate/vs-code.md:314
+#: src/migrate/vs-code.md:309
 msgid ""
 "Learn how [Zed uses Zed](https://zed.dev/blog/zed-is-our-office) to plan "
 "work and collaborate."
 msgstr ""
 
-#: src/migrate/vs-code.md:316
+#: src/migrate/vs-code.md:311
 msgid "Using AI in Zed"
 msgstr "在 Zed 中使用 AI"
 
-#: src/migrate/vs-code.md:318
+#: src/migrate/vs-code.md:313
 msgid ""
 "If you’re used to GitHub Copilot in VS Code, you can do the same in Zed. You "
 "can also explore other agents through Zed Pro, or bring your own keys and "
-"connect without authentication. Zed is designed to enable many options for "
-"using AI, including disabling it entirely."
+"connect without authentication. You can disable AI features entirely if you "
+"prefer."
+msgstr ""
+
+#: src/migrate/vs-code.md:315
+msgid "Configuring GitHub Copilot"
+msgstr ""
+
+#: src/migrate/vs-code.md:317
+msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
+msgstr ""
+
+#: src/migrate/vs-code.md:318
+msgid "Navigate to **AI → Edit Predictions**"
+msgstr ""
+
+#: src/migrate/vs-code.md:319
+msgid "Click **Configure** next to \"Configure Providers\""
 msgstr ""
 
 #: src/migrate/vs-code.md:320
-msgid "Configuring GitHub Copilot"
+msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
 msgstr ""
 
 #: src/migrate/vs-code.md:322
 msgid ""
-"You should be able to sign-in to GitHub Copilot by clicking on the Zeta icon "
-"in the status bar and following the setup instructions. You can also add "
-"this to your settings:"
+"Once signed in, just start typing. Zed will offer suggestions inline for you "
+"to accept."
 msgstr ""
 
-#: src/migrate/vs-code.md:327
-msgid "\"features\""
-msgstr ""
-
-#: src/migrate/vs-code.md:328
-msgid "\"edit_prediction_provider\""
-msgstr ""
-
-#: src/migrate/vs-code.md:328
-msgid "\"copilot\""
-msgstr ""
-
-#: src/migrate/vs-code.md:333
-msgid ""
-"To invoke completions, just start typing. Zed will offer suggestions inline "
-"for you to accept."
-msgstr ""
-
-#: src/migrate/vs-code.md:335
+#: src/migrate/vs-code.md:324
 msgid "Additional AI Options"
 msgstr ""
 
-#: src/migrate/vs-code.md:337
+#: src/migrate/vs-code.md:326
 msgid "To use other AI models in Zed, you have several options:"
 msgstr ""
 
-#: src/migrate/vs-code.md:339
+#: src/migrate/vs-code.md:328
 msgid ""
 "Use Zed’s hosted models, with higher rate limits. Requires [authentication]"
-"(https://zed.dev/docs/accounts.html) and subscription to [Zed Pro](https://"
+"(https://zed.dev/docs/authentication) and subscription to [Zed Pro](https://"
 "zed.dev/docs/ai/subscription.html)."
 msgstr ""
 
-#: src/migrate/vs-code.md:340
+#: src/migrate/vs-code.md:329
 msgid ""
 "Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
 "authentication needed"
 msgstr ""
 
-#: src/migrate/vs-code.md:341
+#: src/migrate/vs-code.md:330
 msgid ""
-"Use [external agents like Claude Code](https://zed.dev/docs/ai/external-"
+"Use [external agents like Claude Agent](https://zed.dev/docs/ai/external-"
 "agents.html)."
 msgstr ""
 
-#: src/migrate/vs-code.md:343
+#: src/migrate/vs-code.md:332
 msgid "Advanced Config and Productivity Tweaks"
 msgstr ""
 
-#: src/migrate/vs-code.md:345
+#: src/migrate/vs-code.md:334
 msgid ""
 "Zed exposes advanced settings for power users who want to fine-tune their "
 "environment."
 msgstr ""
 
-#: src/migrate/vs-code.md:347
+#: src/migrate/vs-code.md:336
 msgid "Here are a few useful tweaks:"
 msgstr ""
 
-#: src/migrate/vs-code.md:349
+#: src/migrate/vs-code.md:338
 msgid "**Format on Save:**"
 msgstr ""
 
-#: src/migrate/vs-code.md:352
+#: src/migrate/vs-code.md:341
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/migrate/vs-code.md:352
+#: src/migrate/vs-code.md:341
 msgid "\"on\""
 msgstr ""
 
-#: src/migrate/vs-code.md:355
+#: src/migrate/vs-code.md:344
 msgid "**Enable direnv support:**"
 msgstr ""
 
-#: src/migrate/vs-code.md:358
+#: src/migrate/vs-code.md:347
 msgid "\"load_direnv\""
 msgstr ""
 
-#: src/migrate/vs-code.md:358
+#: src/migrate/vs-code.md:347
 msgid "\"shell_hook\""
 msgstr ""
 
-#: src/migrate/vs-code.md:361
+#: src/migrate/vs-code.md:350
 msgid ""
 "**Custom Tasks**: Define build or run commands in your `tasks.json` "
 "(accessed via command palette: `zed: open tasks`):"
 msgstr ""
 
-#: src/migrate/vs-code.md:366
+#: src/migrate/vs-code.md:355
 msgid "\"label\""
 msgstr "\"label\""
 
-#: src/migrate/vs-code.md:366
+#: src/migrate/vs-code.md:355
 msgid "\"build\""
 msgstr ""
 
-#: src/migrate/vs-code.md:367
+#: src/migrate/vs-code.md:356
 msgid "\"command\""
 msgstr ""
 
-#: src/migrate/vs-code.md:367
+#: src/migrate/vs-code.md:356
 msgid "\"cargo build\""
 msgstr ""
 
-#: src/migrate/vs-code.md:372
+#: src/migrate/vs-code.md:361
 msgid ""
 "**Bring over custom snippets** Copy your VS Code snippet JSON directly into "
 "Zed's snippets folder (`zed: configure snippets`)."

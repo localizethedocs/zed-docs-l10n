@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,140 +11,140 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/extensions/capabilities.md:1
+#: src/extensions/capabilities.md:3
 msgid "Extension Capabilities"
 msgstr ""
 
-#: src/extensions/capabilities.md:3
+#: src/extensions/capabilities.md:5
 msgid ""
 "The operations that Zed extensions are able to perform are governed by a "
 "capability system."
 msgstr ""
 
-#: src/extensions/capabilities.md:5
+#: src/extensions/capabilities.md:7
 msgid "Restricting capabilities"
 msgstr ""
 
-#: src/extensions/capabilities.md:7
+#: src/extensions/capabilities.md:9
 msgid ""
 "As a user, you have the option of restricting the capabilities that are "
 "granted to extensions."
 msgstr ""
 
-#: src/extensions/capabilities.md:9
+#: src/extensions/capabilities.md:11
 msgid "This is controlled via the `granted_extension_capabilities` setting."
 msgstr ""
 
-#: src/extensions/capabilities.md:11
+#: src/extensions/capabilities.md:13
 msgid ""
 "Restricting or removing a capability will cause an error to be returned when "
 "an extension attempts to call the corresponding extension API without "
 "sufficient capabilities."
 msgstr ""
 
-#: src/extensions/capabilities.md:13
+#: src/extensions/capabilities.md:15
 msgid ""
-"For instance, if you wanted to restrict downloads to just files from GitHub, "
-"you could modify `host` for the `download_file` capability:"
+"For example, to restrict downloads to files from GitHub, set `host` for the "
+"`download_file` capability:"
 msgstr ""
 
-#: src/extensions/capabilities.md:26
+#: src/extensions/capabilities.md:28
 msgid ""
 "If you don't want extensions to be able to perform _any_ capabilities, you "
 "can remove all granted capabilities:"
 msgstr ""
 
-#: src/extensions/capabilities.md:30
+#: src/extensions/capabilities.md:32
 msgid "\"granted_extension_capabilities\""
 msgstr ""
 
-#: src/extensions/capabilities.md:34
+#: src/extensions/capabilities.md:36
 msgid ""
 "Note that this will likely make many extensions non-functional, at least in "
 "their default configuration."
 msgstr ""
 
-#: src/extensions/capabilities.md:36
+#: src/extensions/capabilities.md:38
 msgid "Capabilities"
 msgstr ""
 
-#: src/extensions/capabilities.md:38
+#: src/extensions/capabilities.md:40
 msgid "`process:exec`"
 msgstr ""
 
-#: src/extensions/capabilities.md:40
+#: src/extensions/capabilities.md:42
 msgid ""
 "The `process:exec` capability grants extensions the ability to invoke "
 "commands using [`zed_extension_api::process::Command`](https://docs.rs/"
 "zed_extension_api/latest/zed_extension_api/process/struct.Command.html)."
 msgstr ""
 
-#: src/extensions/capabilities.md:42 src/extensions/capabilities.md:60
-#: src/extensions/capabilities.md:84
+#: src/extensions/capabilities.md:44 src/extensions/capabilities.md:62
+#: src/extensions/capabilities.md:86
 msgid "Examples"
 msgstr ""
 
-#: src/extensions/capabilities.md:44
+#: src/extensions/capabilities.md:46
 msgid "To allow any command to be executed with any arguments:"
 msgstr ""
 
-#: src/extensions/capabilities.md:46
+#: src/extensions/capabilities.md:48
 msgid ""
 "```toml\n"
 "{ kind = \"process:exec\", command = \"*\", args = [\"**\"] }\n"
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:50
+#: src/extensions/capabilities.md:52
 msgid ""
 "To allow a specific command (e.g., `gem`) to be executed with any arguments:"
 msgstr ""
 
-#: src/extensions/capabilities.md:52
+#: src/extensions/capabilities.md:54
 msgid ""
 "```toml\n"
 "{ kind = \"process:exec\", command = \"gem\", args = [\"**\"] }\n"
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:56
+#: src/extensions/capabilities.md:58
 msgid "`download_file`"
 msgstr ""
 
-#: src/extensions/capabilities.md:58
+#: src/extensions/capabilities.md:60
 msgid ""
 "The `download_file` capability grants extensions the ability to download "
 "files using [`zed_extension_api::download_file`](https://docs.rs/"
 "zed_extension_api/latest/zed_extension_api/fn.download_file.html)."
 msgstr ""
 
-#: src/extensions/capabilities.md:62
+#: src/extensions/capabilities.md:64
 msgid "To allow any file to be downloaded:"
 msgstr ""
 
-#: src/extensions/capabilities.md:64
+#: src/extensions/capabilities.md:66
 msgid ""
 "```toml\n"
 "{ kind = \"download_file\", host = \"*\", path = [\"**\"] }\n"
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:68
+#: src/extensions/capabilities.md:70
 msgid "To allow any file to be downloaded from `github.com`:"
 msgstr ""
 
-#: src/extensions/capabilities.md:70
+#: src/extensions/capabilities.md:72
 msgid ""
 "```toml\n"
 "{ kind = \"download_file\", host = \"github.com\", path = [\"**\"] }\n"
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:74
+#: src/extensions/capabilities.md:76
 msgid "To allow any file to be downloaded from a specific GitHub repository:"
 msgstr ""
 
-#: src/extensions/capabilities.md:76
+#: src/extensions/capabilities.md:78
 msgid ""
 "```toml\n"
 "{ kind = \"download_file\", host = \"github.com\", path = [\"zed-"
@@ -152,33 +152,33 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:80
+#: src/extensions/capabilities.md:82
 msgid "`npm:install`"
 msgstr ""
 
-#: src/extensions/capabilities.md:82
+#: src/extensions/capabilities.md:84
 msgid ""
 "The `npm:install` capability grants extensions the ability to install npm "
 "packages using [`zed_extension_api::npm_install_package`](https://docs.rs/"
 "zed_extension_api/latest/zed_extension_api/fn.npm_install_package.html)."
 msgstr ""
 
-#: src/extensions/capabilities.md:86
+#: src/extensions/capabilities.md:88
 msgid "To allow any npm package to be installed:"
 msgstr ""
 
-#: src/extensions/capabilities.md:88
+#: src/extensions/capabilities.md:90
 msgid ""
 "```toml\n"
 "{ kind = \"npm:install\", package = \"*\" }\n"
 "```"
 msgstr ""
 
-#: src/extensions/capabilities.md:92
+#: src/extensions/capabilities.md:94
 msgid "To allow a specific npm package (e.g., `typescript`) to be installed:"
 msgstr ""
 
-#: src/extensions/capabilities.md:94
+#: src/extensions/capabilities.md:96
 msgid ""
 "```toml\n"
 "{ kind = \"npm:install\", package = \"typescript\" }\n"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/groovy.md:1
+#: src/languages/groovy.md:3
 msgid "Groovy"
 msgstr ""
 
-#: src/languages/groovy.md:3
+#: src/languages/groovy.md:5
 msgid ""
 "Groovy language support in Zed is provided by the community-maintained "
 "[Groovy extension](https://github.com/valentinegb/zed-groovy). Report issues "
@@ -23,13 +23,13 @@ msgid ""
 "valentinegb/zed-groovy/issues)"
 msgstr ""
 
-#: src/languages/groovy.md:6
+#: src/languages/groovy.md:8
 msgid ""
 "Tree-sitter: [murtaza64/tree-sitter-groovy](https://github.com/murtaza64/"
 "tree-sitter-groovy)"
 msgstr ""
 
-#: src/languages/groovy.md:7
+#: src/languages/groovy.md:9
 msgid ""
 "Language Server: [GroovyLanguageServer/groovy-language-server](https://"
 "github.com/GroovyLanguageServer/groovy-language-server)"

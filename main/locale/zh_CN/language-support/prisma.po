@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/prisma.md:1
+#: src/languages/prisma.md:3
 msgid "Prisma"
 msgstr ""
 
-#: src/languages/prisma.md:3
+#: src/languages/prisma.md:5
 msgid ""
 "Prisma support is available through the [Prisma extension](https://github."
 "com/zed-extensions/prisma)."
 msgstr ""
 
-#: src/languages/prisma.md:5
+#: src/languages/prisma.md:7
 msgid ""
 "Tree-sitter: [victorhqc/tree-sitter-prisma](https://github.com/victorhqc/"
 "tree-sitter-prisma)"
 msgstr ""
 
-#: src/languages/prisma.md:6
+#: src/languages/prisma.md:8
 msgid ""
 "Language-Server: [prisma/language-tools](https://github.com/prisma/language-"
 "tools)"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,29 +11,29 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/uiua.md:1
+#: src/languages/uiua.md:3
 msgid "Uiua"
 msgstr ""
 
-#: src/languages/uiua.md:3
+#: src/languages/uiua.md:5
 msgid ""
 "[Uiua](https://www.uiua.org/) is a general purpose, stack-based, array-"
 "oriented programming language with a focus on simplicity, beauty, and tacit "
 "code."
 msgstr ""
 
-#: src/languages/uiua.md:5
+#: src/languages/uiua.md:7
 msgid ""
 "Uiua support is available through the [Uiua extension](https://github.com/"
 "zed-extensions/uiua)."
 msgstr ""
 
-#: src/languages/uiua.md:7
+#: src/languages/uiua.md:9
 msgid ""
 "Tree-sitter: [shnarazk/tree-sitter-uiua](https://github.com/shnarazk/tree-"
 "sitter-uiua)"
 msgstr ""
 
-#: src/languages/uiua.md:8
+#: src/languages/uiua.md:10
 msgid "Language Server: [uiua-lang/uiua](https://github.com/uiua-lang/uiua/)"
 msgstr ""

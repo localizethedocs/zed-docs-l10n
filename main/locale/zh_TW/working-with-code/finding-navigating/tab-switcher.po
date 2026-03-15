@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,28 +11,28 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/tab-switcher.md:1
+#: src/tab-switcher.md:3
 msgid "Tab Switcher"
 msgstr "頁籤切換器"
 
-#: src/tab-switcher.md:3
+#: src/tab-switcher.md:5
 msgid ""
 "The Tab Switcher provides a quick way to navigate between open tabs in Zed. "
 "It displays a list of your open tabs sorted by recent usage, making it easy "
 "to jump back to whatever you were just working on."
 msgstr ""
 
-#: src/tab-switcher.md:7
+#: src/tab-switcher.md:9
 msgid ""
 "![Tab Switcher with multiple panes](https://zed.dev/img/features/tab-"
 "switcher.png)"
 msgstr ""
 
-#: src/tab-switcher.md:9
+#: src/tab-switcher.md:11
 msgid "Quick Switching"
 msgstr ""
 
-#: src/tab-switcher.md:11
+#: src/tab-switcher.md:13
 msgid ""
 "When the Tab Switcher is opened using <kbd class=\"keybinding\">ctrl-tab|"
 "ctrl-tab</kbd>, instead of running the <code class=\"hljs\">tab switcher: "
@@ -40,7 +40,7 @@ msgid ""
 "<kbd class=\"keybinding\">ctrl</kbd> key is held down."
 msgstr ""
 
-#: src/tab-switcher.md:15
+#: src/tab-switcher.md:17
 msgid ""
 "While holding down <kbd class=\"keybinding\">ctrl</kbd>, each subsequent "
 "<kbd\n"
@@ -50,87 +50,87 @@ msgid ""
 "and the switcher is closed."
 msgstr ""
 
-#: src/tab-switcher.md:21
+#: src/tab-switcher.md:23
 msgid "Opening the Tab Switcher"
 msgstr ""
 
-#: src/tab-switcher.md:23
+#: src/tab-switcher.md:25
 msgid ""
 "The Tab Switcher can also be opened with either <code class=\"hljs\">tab "
 "switcher: toggle</code> (<kbd class=\"keybinding\">ctrl-tab|ctrl-tab</kbd>) "
 "or <code class=\"hljs\">tab switcher: toggle all</code>."
 msgstr ""
 
-#: src/tab-switcher.md:26
+#: src/tab-switcher.md:28
 msgid "While the Tab Switcher is open, you can:"
 msgstr ""
 
-#: src/tab-switcher.md:28
+#: src/tab-switcher.md:30
 msgid ""
 "Press <kbd class=\"keybinding\">down|down</kbd> to move to the next tab in "
 "the list"
 msgstr ""
 
-#: src/tab-switcher.md:29
+#: src/tab-switcher.md:31
 msgid "Press <kbd class=\"keybinding\">up|up</kbd> to move to the previous tab"
 msgstr ""
 
-#: src/tab-switcher.md:30
+#: src/tab-switcher.md:32
 msgid ""
 "Press <kbd class=\"keybinding\">enter</kbd> to confirm the selected tab and "
 "close the switcher"
 msgstr ""
 
-#: src/tab-switcher.md:31
+#: src/tab-switcher.md:33
 msgid ""
 "Press <kbd class=\"keybinding\">escape</kbd> to close the switcher and "
 "return to the original tab from which the switcher was opened"
 msgstr ""
 
-#: src/tab-switcher.md:33
+#: src/tab-switcher.md:35
 msgid ""
 "Press <kbd class=\"keybinding\">ctrl-backspace|ctrl-backspace</kbd> to close "
 "the currently selected tab"
 msgstr ""
 
-#: src/tab-switcher.md:35
+#: src/tab-switcher.md:37
 msgid ""
 "As you navigate through the list, Zed will update the pane's active item to "
 "match the selected tab."
 msgstr ""
 
-#: src/tab-switcher.md:38
+#: src/tab-switcher.md:40
 msgid "Action Reference"
 msgstr ""
 
-#: src/tab-switcher.md:40
+#: src/tab-switcher.md:42
 msgid "Action"
 msgstr ""
 
-#: src/tab-switcher.md:40
+#: src/tab-switcher.md:42
 msgid "Description"
 msgstr ""
 
-#: src/tab-switcher.md:42
+#: src/tab-switcher.md:44
 msgid "<code class=\"hljs\">tab switcher: toggle</code>"
 msgstr ""
 
-#: src/tab-switcher.md:42
+#: src/tab-switcher.md:44
 msgid "Open the Tab Switcher for the current pane"
 msgstr ""
 
-#: src/tab-switcher.md:43
+#: src/tab-switcher.md:45
 msgid "<code class=\"hljs\">tab switcher: toggle all</code>"
 msgstr ""
 
-#: src/tab-switcher.md:43
+#: src/tab-switcher.md:45
 msgid "Open the Tab Switcher showing tabs from all panes"
 msgstr ""
 
-#: src/tab-switcher.md:44
+#: src/tab-switcher.md:46
 msgid "<code class=\"hljs\">tab switcher: close selected item</code>"
 msgstr ""
 
-#: src/tab-switcher.md:44
+#: src/tab-switcher.md:46
 msgid "Close the selected tab in the Tab Switcher"
 msgstr ""

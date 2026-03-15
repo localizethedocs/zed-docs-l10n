@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,50 +11,54 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/extensions.md:1
+#: src/extensions.md:3
 msgid "Extensions"
 msgstr ""
 
-#: src/extensions.md:3
+#: src/extensions.md:5
 msgid "Zed lets you add new functionality using user-defined extensions."
 msgstr ""
 
-#: src/extensions.md:5
+#: src/extensions.md:7
 msgid "[Installing Extensions](./extensions/installing-extensions.md)"
 msgstr ""
 
-#: src/extensions.md:6
+#: src/extensions.md:8
 msgid "[Extension Capabilities](./extensions/capabilities.md)"
 msgstr ""
 
-#: src/extensions.md:7
+#: src/extensions.md:9
 msgid "[Developing Extensions](./extensions/developing-extensions.md)"
 msgstr ""
 
-#: src/extensions.md:8
+#: src/extensions.md:10
 msgid "[Developing Language Extensions](./extensions/languages.md)"
 msgstr ""
 
-#: src/extensions.md:9
+#: src/extensions.md:11
 msgid "[Developing Debugger Extensions](./extensions/debugger-extensions.md)"
 msgstr ""
 
-#: src/extensions.md:10
+#: src/extensions.md:12
 msgid "[Developing Themes](./extensions/themes.md)"
 msgstr ""
 
-#: src/extensions.md:11
+#: src/extensions.md:13
 msgid "[Developing Icon Themes](./extensions/icon-themes.md)"
 msgstr ""
 
-#: src/extensions.md:12
+#: src/extensions.md:14
+msgid "[Developing Snippets](./extensions/snippets.md)"
+msgstr ""
+
+#: src/extensions.md:15
 msgid "[Developing Slash Commands](./extensions/slash-commands.md)"
 msgstr ""
 
-#: src/extensions.md:13
+#: src/extensions.md:16
 msgid "[Developing Agent Servers](./extensions/agent-servers.md)"
 msgstr ""
 
-#: src/extensions.md:14
+#: src/extensions.md:17
 msgid "[Developing MCP Servers](./extensions/mcp-extensions.md)"
 msgstr ""

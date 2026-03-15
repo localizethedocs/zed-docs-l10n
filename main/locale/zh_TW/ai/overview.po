@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,90 +11,143 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/ai/overview.md:1
+#: src/ai/overview.md:3
 msgid "AI"
 msgstr ""
 
-#: src/ai/overview.md:3
-msgid ""
-"Zed integrates AI throughout the editor: agentic coding, inline "
-"transformations, edit prediction, and direct model conversations."
-msgstr ""
-
 #: src/ai/overview.md:5
-msgid "Setting Up AI"
+msgid ""
+"Zed is an open-source AI code editor. AI runs throughout the editing "
+"experience: agents that read and write your code, inline transformations, "
+"code completions on every keystroke, and conversations with models in any "
+"buffer."
 msgstr ""
 
 #: src/ai/overview.md:7
+msgid "How Zed approaches AI"
+msgstr ""
+
+#: src/ai/overview.md:9
+msgid ""
+"Zed's AI features run inside a native, GPU-accelerated application built in "
+"Rust. There is no Electron layer between you and the model output."
+msgstr ""
+
+#: src/ai/overview.md:11
+msgid ""
+"**Open source.** The editor and all AI features are [open source](https://"
+"github.com/zed-industries/zed). You can read how AI is implemented, how data "
+"flows to providers, and how tool calls execute."
+msgstr ""
+
+#: src/ai/overview.md:12
+msgid ""
+"**Multi-model.** Use Zed's hosted models or [bring your own API keys](./llm-"
+"providers.md) from Anthropic, OpenAI, Google, Ollama, and 8+ other "
+"providers. Run local models, connect to cloud APIs, or mix both. Switch "
+"models per task."
+msgstr ""
+
+#: src/ai/overview.md:13
+msgid ""
+"**External agents.** Run Claude Agent, Gemini CLI, Codex, and other CLI-"
+"based agents directly in Zed through the [Agent Client Protocol](https://zed."
+"dev/acp). See [External Agents](./external-agents.md)."
+msgstr ""
+
+#: src/ai/overview.md:14
+msgid ""
+"**Privacy by default.** AI data sharing is opt-in. When you use your own API "
+"keys, Zed maintains zero-data retention agreements with providers. See "
+"[Privacy and Security](./privacy-and-security.md)."
+msgstr ""
+
+#: src/ai/overview.md:16
+msgid "Agentic editing"
+msgstr ""
+
+#: src/ai/overview.md:18
+msgid ""
+"The [Agent Panel](./agent-panel.md) is where you work with AI agents. Agents "
+"can read files, edit code, run terminal commands, search the web, and access "
+"diagnostics through [built-in tools](./tools.md)."
+msgstr ""
+
+#: src/ai/overview.md:20
+msgid ""
+"You can extend agents with additional tools through [MCP servers](./mcp.md), "
+"control what they can access with [tool permissions](./tool-permissions.md), "
+"and shape their behavior with [rules](./rules.md)."
+msgstr ""
+
+#: src/ai/overview.md:22
+msgid ""
+"The [Inline Assistant](./inline-assistant.md) works differently: select code "
+"or a terminal command, describe what you want, and the model rewrites the "
+"selection in place. It works with multiple cursors."
+msgstr ""
+
+#: src/ai/overview.md:24
+msgid "Code completions"
+msgstr ""
+
+#: src/ai/overview.md:26
+msgid ""
+"[Edit Prediction](./edit-prediction.md) provides AI code completions on "
+"every keystroke. Each keypress sends a request to the prediction provider, "
+"which returns single or multi-line suggestions you accept with `tab`."
+msgstr ""
+
+#: src/ai/overview.md:28
+msgid ""
+"The default provider is Zeta, Zed's open-source model trained on open data. "
+"You can also use GitHub Copilot, or Codestral."
+msgstr ""
+
+#: src/ai/overview.md:30
+msgid "Text threads"
+msgstr ""
+
+#: src/ai/overview.md:32
+msgid ""
+"[Text Threads](./text-threads.md) are conversations with models inside any "
+"buffer. They work like a regular editor with your keybindings, multiple "
+"cursors, and standard editing features. Content is organized into message "
+"blocks with roles (You, Assistant, System)."
+msgstr ""
+
+#: src/ai/overview.md:34
+msgid "Getting started"
+msgstr ""
+
+#: src/ai/overview.md:36
 msgid ""
 "[Configuration](./configuration.md): Connect to Anthropic, OpenAI, Ollama, "
 "Google AI, or other LLM providers."
 msgstr ""
 
-#: src/ai/overview.md:9
+#: src/ai/overview.md:37
 msgid ""
-"[External Agents](./external-agents.md): Run Claude Code, Codex, Aider, or "
+"[External Agents](./external-agents.md): Run Claude Agent, Codex, Aider, or "
 "other external agents inside Zed."
 msgstr ""
 
-#: src/ai/overview.md:11
+#: src/ai/overview.md:38
 msgid "[Subscription](./subscription.md): Zed's hosted models and billing."
 msgstr ""
 
-#: src/ai/overview.md:13
+#: src/ai/overview.md:39
 msgid ""
 "[Privacy and Security](./privacy-and-security.md): How Zed handles data when "
 "using AI features."
 msgstr ""
 
-#: src/ai/overview.md:15
-msgid "Agentic Editing"
-msgstr ""
-
-#: src/ai/overview.md:17
+#: src/ai/overview.md:41
 msgid ""
-"[Agent Panel](./agent-panel.md): Chat with AI agents that can read, write, "
-"and run code in your project."
+"New to Zed? Start with [Getting Started](../getting-started.md), then come "
+"back here to set up AI. For a higher-level overview, see [zed.dev/ai]"
+"(https://zed.dev/ai)."
 msgstr ""
 
-#: src/ai/overview.md:19
-msgid "[Rules](./rules.md): Define specific instructions for AI behavior."
-msgstr ""
-
-#: src/ai/overview.md:21
-msgid ""
-"[Tools](./tools.md): The built-in capabilities agents use: file operations, "
-"terminal commands, web search."
-msgstr ""
-
-#: src/ai/overview.md:23
-msgid ""
-"[Model Context Protocol](./mcp.md): Extend agents with custom tools via MCP "
-"servers."
-msgstr ""
-
-#: src/ai/overview.md:25
-msgid ""
-"[Inline Assistant](./inline-assistant.md): Transform selected code or "
-"terminal output with `ctrl-enter`."
-msgstr ""
-
-#: src/ai/overview.md:27
-msgid "Edit Prediction"
-msgstr "編輯預測"
-
-#: src/ai/overview.md:29
-msgid ""
-"[Edit Prediction](./edit-prediction.md): AI-powered autocomplete that "
-"predicts multi-line edits as you type."
-msgstr ""
-
-#: src/ai/overview.md:31
-msgid "Text Threads"
-msgstr ""
-
-#: src/ai/overview.md:33
-msgid ""
-"[Text Threads](./text-threads.md): Lightweight conversations with models "
-"inside any buffer."
-msgstr ""
+#~ msgid "Edit Prediction"
+#~ msgstr "編輯預測"

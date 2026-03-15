@@ -1,0 +1,640 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/tool-permissions.md:1
+msgid "Tool Permissions"
+msgstr ""
+
+#: src/ai/tool-permissions.md:3
+msgid ""
+"Configure which [Agent Panel](./agent-panel.md) tools run automatically and "
+"which require your approval. For a list of available tools, [see the Tools "
+"page](./tools.md)."
+msgstr ""
+
+#: src/ai/tool-permissions.md:6
+msgid ""
+"**Note:** In Zed v0.224.0 and above, tool approval is controlled by `agent."
+"tool_permissions.default`. In earlier versions, it was controlled by the "
+"`agent.always_allow_tool_actions` boolean (default `false`)."
+msgstr ""
+
+#: src/ai/tool-permissions.md:9
+msgid "Quick Start"
+msgstr ""
+
+#: src/ai/tool-permissions.md:11
+msgid ""
+"Use Zed's Settings Editor to [configure tool permissions](zed://settings/"
+"agent.tool_permissions), or add rules directly to your settings file:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:15 src/ai/tool-permissions.md:66
+#: src/ai/tool-permissions.md:95 src/ai/tool-permissions.md:132
+#: src/ai/tool-permissions.md:196 src/ai/tool-permissions.md:227
+#: src/ai/tool-permissions.md:252 src/ai/tool-permissions.md:274
+#: src/ai/tool-permissions.md:295
+msgid "\"agent\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:16 src/ai/tool-permissions.md:67
+#: src/ai/tool-permissions.md:96 src/ai/tool-permissions.md:133
+#: src/ai/tool-permissions.md:197 src/ai/tool-permissions.md:228
+#: src/ai/tool-permissions.md:253 src/ai/tool-permissions.md:275
+#: src/ai/tool-permissions.md:296
+msgid "\"tool_permissions\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:17 src/ai/tool-permissions.md:20
+#: src/ai/tool-permissions.md:68 src/ai/tool-permissions.md:71
+#: src/ai/tool-permissions.md:134 src/ai/tool-permissions.md:200
+#: src/ai/tool-permissions.md:231 src/ai/tool-permissions.md:256
+#: src/ai/tool-permissions.md:278 src/ai/tool-permissions.md:299
+#: src/ai/tool-permissions.md:302
+msgid "\"default\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:17 src/ai/tool-permissions.md:134
+msgid "\"allow\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:18 src/ai/tool-permissions.md:69
+#: src/ai/tool-permissions.md:97 src/ai/tool-permissions.md:198
+#: src/ai/tool-permissions.md:229 src/ai/tool-permissions.md:254
+#: src/ai/tool-permissions.md:276 src/ai/tool-permissions.md:297
+msgid "\"tools\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:19 src/ai/tool-permissions.md:199
+msgid "\"terminal\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:20 src/ai/tool-permissions.md:68
+#: src/ai/tool-permissions.md:71 src/ai/tool-permissions.md:200
+#: src/ai/tool-permissions.md:231 src/ai/tool-permissions.md:256
+#: src/ai/tool-permissions.md:278 src/ai/tool-permissions.md:299
+#: src/ai/tool-permissions.md:302
+msgid "\"confirm\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:21 src/ai/tool-permissions.md:72
+#: src/ai/tool-permissions.md:99 src/ai/tool-permissions.md:201
+#: src/ai/tool-permissions.md:232 src/ai/tool-permissions.md:279
+msgid "\"always_allow\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:22 src/ai/tool-permissions.md:23
+#: src/ai/tool-permissions.md:25 src/ai/tool-permissions.md:72
+#: src/ai/tool-permissions.md:73 src/ai/tool-permissions.md:74
+#: src/ai/tool-permissions.md:101 src/ai/tool-permissions.md:202
+#: src/ai/tool-permissions.md:203 src/ai/tool-permissions.md:204
+#: src/ai/tool-permissions.md:205 src/ai/tool-permissions.md:206
+#: src/ai/tool-permissions.md:209 src/ai/tool-permissions.md:210
+#: src/ai/tool-permissions.md:213 src/ai/tool-permissions.md:214
+#: src/ai/tool-permissions.md:233 src/ai/tool-permissions.md:234
+#: src/ai/tool-permissions.md:237 src/ai/tool-permissions.md:238
+#: src/ai/tool-permissions.md:239 src/ai/tool-permissions.md:258
+#: src/ai/tool-permissions.md:259 src/ai/tool-permissions.md:260
+#: src/ai/tool-permissions.md:261 src/ai/tool-permissions.md:280
+#: src/ai/tool-permissions.md:281 src/ai/tool-permissions.md:283
+msgid "\"pattern\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:22
+msgid "\"^cargo\\\\s+(build|test|check)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:23
+msgid "\"^npm\\\\s+(install|test|run)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:25 src/ai/tool-permissions.md:74
+#: src/ai/tool-permissions.md:212
+msgid "\"always_confirm\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:25
+msgid "\"sudo\\\\s+/\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:33
+msgid ""
+"This example auto-approves `cargo` and `npm` commands in the terminal tool, "
+"while requiring manual confirmation on a case-by-case basis for `sudo` "
+"commands. Non-terminal commands follow the global `\"default\": \"allow\"` "
+"setting, but tool-specific defaults and `always_confirm` rules can still "
+"prompt."
+msgstr ""
+
+#: src/ai/tool-permissions.md:36
+msgid "How It Works"
+msgstr ""
+
+#: src/ai/tool-permissions.md:38
+msgid ""
+"The `tool_permissions` setting lets you customize tool permissions by "
+"specifying regex patterns that:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:40
+msgid "**Auto-approve** actions you trust"
+msgstr ""
+
+#: src/ai/tool-permissions.md:41
+msgid ""
+"**Auto-deny** dangerous actions (blocked even when `tool_permissions."
+"default` is set to `\"allow\"`)"
+msgstr ""
+
+#: src/ai/tool-permissions.md:42
+msgid "**Always confirm** sensitive actions regardless of other settings"
+msgstr ""
+
+#: src/ai/tool-permissions.md:44
+msgid "Supported Tools"
+msgstr ""
+
+#: src/ai/tool-permissions.md:46
+msgid "Tool"
+msgstr ""
+
+#: src/ai/tool-permissions.md:46
+msgid "Input Matched Against"
+msgstr ""
+
+#: src/ai/tool-permissions.md:48
+msgid "`terminal`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:48
+msgid "The shell command string"
+msgstr ""
+
+#: src/ai/tool-permissions.md:49
+msgid "`edit_file`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:49
+msgid "The file path"
+msgstr ""
+
+#: src/ai/tool-permissions.md:50
+msgid "`delete_path`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:50
+msgid "The path being deleted"
+msgstr ""
+
+#: src/ai/tool-permissions.md:51
+msgid "`move_path`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:51 src/ai/tool-permissions.md:52
+msgid "Source and destination paths"
+msgstr ""
+
+#: src/ai/tool-permissions.md:52
+msgid "`copy_path`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:53
+msgid "`create_directory`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:53
+msgid "The directory path"
+msgstr ""
+
+#: src/ai/tool-permissions.md:54
+msgid "`restore_file_from_disk`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:54 src/ai/tool-permissions.md:55
+msgid "The file paths"
+msgstr ""
+
+#: src/ai/tool-permissions.md:55
+msgid "`save_file`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:56
+msgid "`fetch`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:56
+msgid "The URL"
+msgstr ""
+
+#: src/ai/tool-permissions.md:57
+msgid "`web_search`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:57
+msgid "The search query"
+msgstr ""
+
+#: src/ai/tool-permissions.md:59
+msgid ""
+"For MCP tools, use the format `mcp:<server>:<tool_name>`. For example, a "
+"tool called `create_issue` on a server called `github` would be `mcp:github:"
+"create_issue`."
+msgstr ""
+
+#: src/ai/tool-permissions.md:62
+msgid "Configuration"
+msgstr ""
+
+#: src/ai/tool-permissions.md:70
+msgid "\"<tool_name>\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:72 src/ai/tool-permissions.md:73
+#: src/ai/tool-permissions.md:74
+msgid "\"...\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:72 src/ai/tool-permissions.md:73
+#: src/ai/tool-permissions.md:74 src/ai/tool-permissions.md:102
+msgid "\"case_sensitive\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:73 src/ai/tool-permissions.md:208
+#: src/ai/tool-permissions.md:236 src/ai/tool-permissions.md:257
+#: src/ai/tool-permissions.md:283
+msgid "\"always_deny\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:82
+msgid "Options"
+msgstr ""
+
+#: src/ai/tool-permissions.md:84
+msgid "Option"
+msgstr ""
+
+#: src/ai/tool-permissions.md:84
+msgid "Description"
+msgstr ""
+
+#: src/ai/tool-permissions.md:86
+msgid "`default`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:86
+msgid ""
+"Fallback when no patterns match: `\"confirm\"` (default), `\"allow\"`, or "
+"`\"deny\"`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:87
+msgid "`always_allow`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:87
+msgid "Patterns that auto-approve (unless deny or confirm also matches)"
+msgstr ""
+
+#: src/ai/tool-permissions.md:88
+msgid "`always_deny`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:88
+msgid "Patterns that block immediately—highest priority, cannot be overridden"
+msgstr ""
+
+#: src/ai/tool-permissions.md:89
+msgid "`always_confirm`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:89
+msgid ""
+"Patterns that always prompt, even when `tool_permissions.default` is "
+"`\"allow\"`"
+msgstr ""
+
+#: src/ai/tool-permissions.md:91
+msgid "Pattern Syntax"
+msgstr ""
+
+#: src/ai/tool-permissions.md:98 src/ai/tool-permissions.md:230
+msgid "\"edit_file\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:101
+msgid "\"your-regex-here\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:112
+msgid ""
+"Patterns use Rust regex syntax. Matching is case-insensitive by default."
+msgstr ""
+
+#: src/ai/tool-permissions.md:115
+msgid "Rule Precedence"
+msgstr ""
+
+#: src/ai/tool-permissions.md:117
+msgid "From highest to lowest priority:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:119
+msgid ""
+"**Built-in security rules**: Hardcoded protections (e.g., `rm -rf /`). "
+"Cannot be overridden."
+msgstr ""
+
+#: src/ai/tool-permissions.md:120
+msgid "**`always_deny`**: Blocks matching actions"
+msgstr ""
+
+#: src/ai/tool-permissions.md:121
+msgid "**`always_confirm`**: Requires confirmation for matching actions"
+msgstr ""
+
+#: src/ai/tool-permissions.md:122
+msgid "**`always_allow`**: Auto-approves matching actions"
+msgstr ""
+
+#: src/ai/tool-permissions.md:123
+msgid ""
+"**Tool-specific `default`**: Per-tool fallback when no patterns match (e.g., "
+"`tools.terminal.default`)"
+msgstr ""
+
+#: src/ai/tool-permissions.md:124
+msgid ""
+"**Global `default`**: Falls back to `tool_permissions.default` when no tool-"
+"specific default is set"
+msgstr ""
+
+#: src/ai/tool-permissions.md:126
+msgid "Global Auto-Approve"
+msgstr ""
+
+#: src/ai/tool-permissions.md:128
+msgid "To auto-approve all tool actions:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:140
+msgid ""
+"This bypasses confirmation prompts for most tools, but `always_deny`, "
+"`always_confirm`, built-in security rules, and paths inside Zed settings "
+"directories still prompt or block."
+msgstr ""
+
+#: src/ai/tool-permissions.md:142
+msgid "Shell Compatibility"
+msgstr ""
+
+#: src/ai/tool-permissions.md:144
+msgid ""
+"For the `terminal` tool, Zed parses chained commands (e.g., `echo hello && "
+"rm file`) to check each sub-command against your patterns."
+msgstr ""
+
+#: src/ai/tool-permissions.md:146
+msgid ""
+"All supported shells work with tool permission patterns, including sh, bash, "
+"zsh, dash, fish, PowerShell 7+, pwsh, cmd, xonsh, csh, tcsh, Nushell, "
+"Elvish, and rc (Plan 9)."
+msgstr ""
+
+#: src/ai/tool-permissions.md:148
+msgid "Writing Patterns"
+msgstr ""
+
+#: src/ai/tool-permissions.md:150
+msgid ""
+"Use `\\b` for word boundaries: `\\brm\\b` matches \"rm\" but not \"storm\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:151
+msgid "Use `^` and `$` to anchor patterns to start/end of input"
+msgstr ""
+
+#: src/ai/tool-permissions.md:152
+msgid "Escape special characters: `\\.` for literal dot, `\\\\` for backslash"
+msgstr ""
+
+#: src/ai/tool-permissions.md:156
+msgid ""
+"Test carefully—a typo in a deny pattern blocks legitimate actions. You can "
+"use the \"Test Your Rules\" checker, available in each individual tool page, "
+"to confirm whether a pattern is correctly falling in the desired condition."
+msgstr ""
+
+#: src/ai/tool-permissions.md:161
+msgid "Built-in Security Rules"
+msgstr ""
+
+#: src/ai/tool-permissions.md:163
+msgid ""
+"Zed includes a small set of hardcoded security rules that **cannot be "
+"overridden** by any setting. These only apply to the **terminal** tool and "
+"block recursive deletion of critical directories:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:166
+msgid "`rm -rf /` and `rm -rf /*` — filesystem root"
+msgstr ""
+
+#: src/ai/tool-permissions.md:167
+msgid "`rm -rf ~` and `rm -rf ~/*` — home directory"
+msgstr ""
+
+#: src/ai/tool-permissions.md:168
+msgid ""
+"`rm -rf $HOME` / `rm -rf ${HOME}` (and `$HOME/*`) — home directory via "
+"environment variable"
+msgstr ""
+
+#: src/ai/tool-permissions.md:169
+msgid "`rm -rf .` and `rm -rf ./*` — current directory"
+msgstr ""
+
+#: src/ai/tool-permissions.md:170
+msgid "`rm -rf ..` and `rm -rf ../*` — parent directory"
+msgstr ""
+
+#: src/ai/tool-permissions.md:172
+msgid ""
+"These patterns catch any flag combination (e.g., `-fr`, `-rfv`, `-r -f`, `--"
+"recursive --force`) and are case-insensitive. They are checked against both "
+"the raw command and each parsed sub-command in chained commands (e.g., `ls "
+"&& rm -rf /`)."
+msgstr ""
+
+#: src/ai/tool-permissions.md:175
+msgid ""
+"There are no other built-in rules. The default settings file (<code "
+"class=\"hljs\">zed: open default settings</code>) includes commented-out "
+"examples for protecting `.env` files, secrets directories, and private keys "
+"— you can uncomment or adapt these to suit your needs."
+msgstr ""
+
+#: src/ai/tool-permissions.md:178
+msgid "Permission Request in the UI"
+msgstr ""
+
+#: src/ai/tool-permissions.md:180
+msgid ""
+"When the agent requests permission, you'll see in the thread view a tool "
+"card with a menu that includes:"
+msgstr ""
+
+#: src/ai/tool-permissions.md:182
+msgid "**Allow once** / **Deny once** — One-time decision"
+msgstr ""
+
+#: src/ai/tool-permissions.md:183
+msgid "**Always for <tool>** — Sets a tool-level default to allow or deny"
+msgstr ""
+
+#: src/ai/tool-permissions.md:184
+msgid ""
+"**Always for <pattern>** — Adds an `always_allow` or `always_deny` pattern "
+"(when a safe pattern can be extracted)"
+msgstr ""
+
+#: src/ai/tool-permissions.md:186
+msgid ""
+"Selecting \"Always for <tool>\" sets `tools.<tool>.default` to allow or "
+"deny. When a pattern can be safely extracted, selecting \"Always for "
+"<pattern>\" adds an `always_allow` or `always_deny` rule for that input. MCP "
+"tools only support the tool-level option."
+msgstr ""
+
+#: src/ai/tool-permissions.md:190
+msgid "Examples"
+msgstr ""
+
+#: src/ai/tool-permissions.md:192
+msgid "Terminal: Auto-Approve Build Commands"
+msgstr ""
+
+#: src/ai/tool-permissions.md:202
+msgid "\"^cargo\\\\s+(build|test|check|clippy|fmt)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:203
+msgid "\"^npm\\\\s+(install|test|run|build)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:204
+msgid "\"^git\\\\s+(status|log|diff|branch)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:205
+msgid "\"^ls\\\\b\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:206
+msgid "\"^cat\\\\s\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:209
+msgid "\"rm\\\\s+-rf\\\\s+(/|~)\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:210
+msgid "\"sudo\\\\s+rm\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:213
+msgid "\"sudo\\\\s\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:214
+msgid "\"git\\\\s+push\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:223
+msgid "File Editing: Protect Sensitive Files"
+msgstr ""
+
+#: src/ai/tool-permissions.md:233
+msgid "\"\\\\.(md|txt|json)$\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:234
+msgid "\"^src/\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:237
+msgid "\"\\\\.env\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:238
+msgid "\"secrets?/\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:239
+msgid "\"\\\\.(pem|key)$\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:248
+msgid "Path Deletion: Block Critical Directories"
+msgstr ""
+
+#: src/ai/tool-permissions.md:255
+msgid "\"delete_path\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:258
+msgid "\"^/etc\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:259
+msgid "\"^/usr\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:260
+msgid "\"\\\\.git/?$\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:261
+msgid "\"node_modules/?$\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:270
+msgid "URL Fetching: Control External Access"
+msgstr ""
+
+#: src/ai/tool-permissions.md:277
+msgid "\"fetch\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:280
+msgid "\"docs\\\\.rs\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:281
+msgid "\"github\\\\.com\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:283
+msgid "\"internal\\\\.company\\\\.com\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:291
+msgid "MCP Tools"
+msgstr ""
+
+#: src/ai/tool-permissions.md:298
+msgid "\"mcp:github:create_issue\""
+msgstr ""
+
+#: src/ai/tool-permissions.md:301
+msgid "\"mcp:github:create_pull_request\""
+msgstr ""

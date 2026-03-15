@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/biome.md:1
+#: src/languages/biome.md:3
 msgid "Biome"
 msgstr "Biome"
 
-#: src/languages/biome.md:3
+#: src/languages/biome.md:5
 msgid ""
 "[Biome](https://biomejs.dev/) support in Zed is provided by the community-"
 "maintained [Biome extension](https://github.com/biomejs/biome-zed). Report "
@@ -23,83 +23,83 @@ msgid ""
 "biomejs/biome-zed/issues)"
 msgstr ""
 
-#: src/languages/biome.md:6
+#: src/languages/biome.md:8
 msgid "Language Server: [biomejs/biome](https://github.com/biomejs/biome)"
 msgstr ""
 
-#: src/languages/biome.md:8
+#: src/languages/biome.md:10
 msgid "Biome Language Support"
 msgstr ""
 
-#: src/languages/biome.md:10
+#: src/languages/biome.md:12
 msgid "The Biome extension includes support for the following languages:"
 msgstr ""
 
-#: src/languages/biome.md:12
+#: src/languages/biome.md:14
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/languages/biome.md:13
+#: src/languages/biome.md:15
 msgid "TypeScript"
 msgstr ""
 
-#: src/languages/biome.md:14
+#: src/languages/biome.md:16
 msgid "JSX"
 msgstr ""
 
-#: src/languages/biome.md:15
+#: src/languages/biome.md:17
 msgid "TSX"
 msgstr ""
 
-#: src/languages/biome.md:16
+#: src/languages/biome.md:18
 msgid "JSON"
 msgstr "JSON"
 
-#: src/languages/biome.md:17
+#: src/languages/biome.md:19
 msgid "JSONC"
 msgstr ""
 
-#: src/languages/biome.md:18
+#: src/languages/biome.md:20
 msgid "Vue.js"
 msgstr ""
 
-#: src/languages/biome.md:19
+#: src/languages/biome.md:21
 msgid "Astro"
 msgstr "Astro"
 
-#: src/languages/biome.md:20
+#: src/languages/biome.md:22
 msgid "Svelte"
 msgstr ""
 
-#: src/languages/biome.md:21
+#: src/languages/biome.md:23
 msgid "CSS"
 msgstr "CSS"
 
-#: src/languages/biome.md:23
+#: src/languages/biome.md:25
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/biome.md:25
+#: src/languages/biome.md:27
 msgid ""
 "By default, the `biome.json` file is required to be in the root of the "
 "workspace."
 msgstr ""
 
-#: src/languages/biome.md:29
+#: src/languages/biome.md:31
 msgid "\"$schema\""
 msgstr ""
 
-#: src/languages/biome.md:29
+#: src/languages/biome.md:31
 msgid "\"https://biomejs.dev/schemas/1.8.3/schema.json\""
 msgstr ""
 
-#: src/languages/biome.md:33
+#: src/languages/biome.md:35
 msgid ""
 "For a full list of `biome.json` options see [Biome Configuration](https://"
 "biomejs.dev/reference/configuration/) documentation."
 msgstr ""
 
-#: src/languages/biome.md:35
+#: src/languages/biome.md:37
 msgid ""
 "See the [Biome Zed Extension README](https://github.com/biomejs/biome-zed) "
 "for a complete list of features and configuration options."

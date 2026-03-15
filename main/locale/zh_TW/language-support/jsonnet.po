@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,56 +11,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/jsonnet.md:1
+#: src/languages/jsonnet.md:3
 msgid "Jsonnet"
 msgstr "Jsonnet"
 
-#: src/languages/jsonnet.md:3
+#: src/languages/jsonnet.md:5
 msgid ""
 "Jsonnet language support in Zed is provided by the community-maintained "
 "[Jsonnet extension](https://github.com/narqo/zed-jsonnet)."
 msgstr ""
 
-#: src/languages/jsonnet.md:5
+#: src/languages/jsonnet.md:7
 msgid ""
 "Tree-sitter: [sourcegraph/tree-sitter-jsonnet](https://github.com/"
 "sourcegraph/tree-sitter-jsonnet)"
 msgstr ""
 
-#: src/languages/jsonnet.md:6
+#: src/languages/jsonnet.md:8
 msgid ""
 "Language Server: [grafana/jsonnet-language-server](https://github.com/"
 "grafana/jsonnet-language-server)"
 msgstr ""
 
-#: src/languages/jsonnet.md:8
+#: src/languages/jsonnet.md:10
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/jsonnet.md:10
+#: src/languages/jsonnet.md:12
 msgid ""
 "Workspace configuration options can be passed to the language server via the "
 "`lsp` settings of the `settings.json`."
 msgstr ""
 
-#: src/languages/jsonnet.md:12
+#: src/languages/jsonnet.md:14
 msgid ""
-"The following example enables support for resolving [tanka](https://tanka."
-"dev) import paths in `jsonnet-language-server`:"
-msgstr ""
-
-#: src/languages/jsonnet.md:16
-msgid "\"lsp\""
-msgstr "\"lsp\""
-
-#: src/languages/jsonnet.md:17
-msgid "\"jsonnet-language-server\""
+"The following example configures `jsonnet-language-server` to resolve [tanka]"
+"(https://tanka.dev) import paths:"
 msgstr ""
 
 #: src/languages/jsonnet.md:18
+msgid "\"lsp\""
+msgstr "\"lsp\""
+
+#: src/languages/jsonnet.md:19
+msgid "\"jsonnet-language-server\""
+msgstr ""
+
+#: src/languages/jsonnet.md:20
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/jsonnet.md:19
+#: src/languages/jsonnet.md:21
 msgid "\"resolve_paths_with_tanka\""
 msgstr ""

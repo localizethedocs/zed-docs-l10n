@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,33 +11,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/haskell.md:1
+#: src/languages/haskell.md:3
 msgid "Haskell"
 msgstr "Haskell"
 
-#: src/languages/haskell.md:3
+#: src/languages/haskell.md:5
 msgid ""
 "Haskell support is available through the [Haskell extension](https://github."
 "com/zed-extensions/haskell)."
 msgstr ""
 
-#: src/languages/haskell.md:5
+#: src/languages/haskell.md:7
 msgid ""
 "Tree-sitter: [tree-sitter-haskell](https://github.com/tree-sitter/tree-"
 "sitter-haskell)"
 msgstr ""
 
-#: src/languages/haskell.md:6
+#: src/languages/haskell.md:8
 msgid ""
 "Language Server: [haskell-language-server](https://github.com/haskell/"
 "haskell-language-server)"
 msgstr ""
 
-#: src/languages/haskell.md:8
+#: src/languages/haskell.md:10
 msgid "Installing HLS"
 msgstr ""
 
-#: src/languages/haskell.md:10
+#: src/languages/haskell.md:12
 msgid ""
 "Recommended method to [install haskell-language-server](https://haskell-"
 "language-server.readthedocs.io/en/latest/installation.html) (HLS) is via "
@@ -45,70 +45,70 @@ msgid ""
 "tlsv1.2 -sSf https://get-ghcup.haskell.org | sh `):"
 msgstr ""
 
-#: src/languages/haskell.md:18
+#: src/languages/haskell.md:20
 msgid "Configuring HLS"
 msgstr ""
 
-#: src/languages/haskell.md:20
+#: src/languages/haskell.md:22
 msgid ""
 "If you need to configure haskell-language-server (hls) you can add "
 "configuration options to your Zed settings.json:"
 msgstr ""
 
-#: src/languages/haskell.md:24 src/languages/haskell.md:42
+#: src/languages/haskell.md:26 src/languages/haskell.md:44
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/haskell.md:25 src/languages/haskell.md:43
+#: src/languages/haskell.md:27 src/languages/haskell.md:45
 msgid "\"hls\""
 msgstr ""
 
-#: src/languages/haskell.md:26
+#: src/languages/haskell.md:28
 msgid "\"initialization_options\""
 msgstr ""
 
-#: src/languages/haskell.md:27
+#: src/languages/haskell.md:29
 msgid "\"haskell\""
 msgstr ""
 
-#: src/languages/haskell.md:28
+#: src/languages/haskell.md:30
 msgid "\"formattingProvider\""
 msgstr ""
 
-#: src/languages/haskell.md:28
+#: src/languages/haskell.md:30
 msgid "\"fourmolu\""
 msgstr ""
 
-#: src/languages/haskell.md:36
+#: src/languages/haskell.md:38
 msgid ""
 "See the official [configuring haskell-language-server](https://haskell-"
 "language-server.readthedocs.io/en/latest/configuration.html) docs for more "
 "options."
 msgstr ""
 
-#: src/languages/haskell.md:38
+#: src/languages/haskell.md:40
 msgid ""
 "If you would like to use a specific hls binary, or perhaps use [static-ls]"
 "(https://github.com/josephsumabat/static-ls) as a drop-in replacement "
 "instead, you can specify the binary path and arguments:"
 msgstr ""
 
-#: src/languages/haskell.md:44
+#: src/languages/haskell.md:46
 msgid "\"binary\""
 msgstr ""
 
-#: src/languages/haskell.md:45
+#: src/languages/haskell.md:47
 msgid "\"path\""
 msgstr ""
 
-#: src/languages/haskell.md:45
+#: src/languages/haskell.md:47
 msgid "\"static-ls\""
 msgstr ""
 
-#: src/languages/haskell.md:46
+#: src/languages/haskell.md:48
 msgid "\"arguments\""
 msgstr ""
 
-#: src/languages/haskell.md:46
+#: src/languages/haskell.md:48
 msgid "\"--experimentalFeatures\""
 msgstr ""

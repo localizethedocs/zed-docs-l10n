@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,89 +11,89 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/java.md:1
+#: src/languages/java.md:3
 msgid "Java"
 msgstr ""
 
-#: src/languages/java.md:3
+#: src/languages/java.md:5
 msgid "Java language support in Zed is provided by:"
 msgstr ""
 
-#: src/languages/java.md:5
+#: src/languages/java.md:7
 msgid "Zed Java: [zed-extensions/java](https://github.com/zed-extensions/java)"
 msgstr ""
 "Zed Java：[zed-extensions/java](https://github.com/zed-extensions/java)"
 
-#: src/languages/java.md:6
+#: src/languages/java.md:8
 msgid ""
 "Tree-sitter: [tree-sitter/tree-sitter-java](https://github.com/tree-sitter/"
 "tree-sitter-java)"
 msgstr ""
 
-#: src/languages/java.md:7
+#: src/languages/java.md:9
 msgid ""
 "Language Server: [eclipse-jdtls/eclipse.jdt.ls](https://github.com/eclipse-"
 "jdtls/eclipse.jdt.ls)"
 msgstr ""
 
-#: src/languages/java.md:9
+#: src/languages/java.md:11
 msgid "Install OpenJDK"
 msgstr "安裝 OpenJDK"
 
-#: src/languages/java.md:11
+#: src/languages/java.md:13
 msgid "You will need to install a Java runtime (OpenJDK)."
 msgstr ""
 
-#: src/languages/java.md:13
+#: src/languages/java.md:15
 msgid "macOS: `brew install openjdk`"
 msgstr ""
 
-#: src/languages/java.md:14
+#: src/languages/java.md:16
 msgid ""
 "Ubuntu: `sudo add-apt-repository ppa:openjdk-23 && sudo apt-get install "
 "openjdk-23`"
 msgstr ""
 
-#: src/languages/java.md:15
+#: src/languages/java.md:17
 msgid "Windows: `choco install openjdk`"
 msgstr ""
 
-#: src/languages/java.md:16
+#: src/languages/java.md:18
 msgid "Arch Linux: `sudo pacman -S jre-openjdk-headless`"
 msgstr ""
 
-#: src/languages/java.md:18
+#: src/languages/java.md:20
 msgid ""
 "Or manually download and install [OpenJDK 23](https://jdk.java.net/23/)."
 msgstr ""
 
-#: src/languages/java.md:20
+#: src/languages/java.md:22
 msgid "Extension Install"
 msgstr ""
 
-#: src/languages/java.md:22
+#: src/languages/java.md:24
 msgid ""
 "You can install by opening <code class=\"hljs\">zed: extensions</code>(<kbd "
 "class=\"keybinding\">cmd-shift-x|ctrl-shift-x</kbd>) and searching for "
 "`java`."
 msgstr ""
 
-#: src/languages/java.md:24
+#: src/languages/java.md:26
 msgid "Quick start and configuration"
 msgstr ""
 
-#: src/languages/java.md:26
+#: src/languages/java.md:28
 msgid "For the majority of users, Java support should work out of the box."
 msgstr ""
 
-#: src/languages/java.md:28
+#: src/languages/java.md:30
 msgid ""
 "It is generally recommended to open projects with the Zed-project root at "
 "the Java project root folder (where you would commonly have your `pom.xml` "
 "or `build.gradle` file)."
 msgstr ""
 
-#: src/languages/java.md:30
+#: src/languages/java.md:32
 msgid ""
 "By default the extension will download and run the latest official version "
 "of JDTLS for you, but this requires Java version 21 to be available on your "
@@ -103,7 +103,7 @@ msgid ""
 "via the `java_home` configuration option."
 msgstr ""
 
-#: src/languages/java.md:32
+#: src/languages/java.md:34
 msgid ""
 "You can provide a **custom launch script for JDTLS**, by adding an "
 "executable named `jdtls` (or `jdtls.bat` on Windows) to your `$PATH` "
@@ -112,7 +112,7 @@ msgid ""
 "environment."
 msgstr ""
 
-#: src/languages/java.md:34
+#: src/languages/java.md:36
 msgid ""
 "To support [Lombok](https://projectlombok.org/), the lombok-jar must be "
 "downloaded and registered as a Java-Agent when launching JDTLS. By default "
@@ -120,13 +120,13 @@ msgid ""
 "that you can set the `lombok_support` configuration-option to `false`."
 msgstr ""
 
-#: src/languages/java.md:36
+#: src/languages/java.md:38
 msgid ""
 "Here is a common `settings.json` including the above mentioned "
 "configurations:"
 msgstr ""
 
-#: src/languages/java.md:38
+#: src/languages/java.md:40
 msgid ""
 "```jsonc\n"
 "{\n"
@@ -154,11 +154,11 @@ msgstr ""
 "}\n"
 "```"
 
-#: src/languages/java.md:51
+#: src/languages/java.md:53
 msgid "Debugging"
 msgstr "除錯"
 
-#: src/languages/java.md:53
+#: src/languages/java.md:55
 msgid ""
 "Debug support is enabled via our [Fork of Java Debug](https://github.com/zed-"
 "industries/java-debug), which the extension will automatically download and "
@@ -167,13 +167,13 @@ msgid ""
 "works in Zed."
 msgstr ""
 
-#: src/languages/java.md:55
+#: src/languages/java.md:57
 msgid ""
 "To get started with Java, click the `edit debug.json` button in the Debug "
 "menu, and replace the contents of the file with the following:"
 msgstr ""
 
-#: src/languages/java.md:57
+#: src/languages/java.md:59
 msgid ""
 "```jsonc\n"
 "[\n"
@@ -193,17 +193,17 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/languages/java.md:74
+#: src/languages/java.md:76
 msgid ""
 "You should then be able to start a new Debug Session with the \"Launch "
 "Debugger\" scenario from the debug menu."
 msgstr ""
 
-#: src/languages/java.md:76
+#: src/languages/java.md:78
 msgid "Launch Scripts (aka Tasks) in Windows"
 msgstr ""
 
-#: src/languages/java.md:78
+#: src/languages/java.md:80
 msgid ""
 "This extension provides tasks for running your application and tests from "
 "within Zed via little play buttons next to tests/entry points. However, due "
@@ -213,7 +213,7 @@ msgid ""
 "and Linux."
 msgstr ""
 
-#: src/languages/java.md:80
+#: src/languages/java.md:82
 msgid ""
 "There is a fairly straightforward fix that you can apply to make it work on "
 "Windows by supplying your own task scripts. Please see [this Issue](https://"
@@ -222,11 +222,11 @@ msgid ""
 "tasks) for more information."
 msgstr ""
 
-#: src/languages/java.md:82
+#: src/languages/java.md:84
 msgid "Advanced Configuration/JDTLS initialization Options"
 msgstr ""
 
-#: src/languages/java.md:84
+#: src/languages/java.md:86
 msgid ""
 "JDTLS provides many configuration options that can be passed via the "
 "`initialize` LSP-request. The extension will pass the JSON-object from `lsp."
@@ -238,7 +238,7 @@ msgid ""
 "the above wiki page to JDTLS:"
 msgstr ""
 
-#: src/languages/java.md:86
+#: src/languages/java.md:88
 msgid ""
 "```jsonc\n"
 "{\n"
@@ -320,11 +320,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/languages/java.md:164
+#: src/languages/java.md:166
 msgid "See also"
 msgstr "另請參見"
 
-#: src/languages/java.md:166
+#: src/languages/java.md:168
 msgid ""
 "[Zed Java Repo](https://github.com/zed-extensions/java) [Eclipse JDTLS Repo]"
 "(https://github.com/eclipse-jdtls/eclipse.jdt.ls)"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/development/debuggers.md:1
+#: src/development/debuggers.md:3
 msgid "Using a debugger"
 msgstr "使用除錯器"
 
-#: src/development/debuggers.md:3
+#: src/development/debuggers.md:5
 msgid ""
-"**DISCLAIMER**: This is not documentation for [configuring Zed's debugger]"
-"(../debugger.md). Rather, it is intended to provide information on how to "
-"use a debugger while developing Zed itself to both Zed employees and "
-"external contributors."
+"This page is not about [configuring Zed's debugger](../debugger.md). It "
+"covers how to use a debugger while developing Zed itself."
 msgstr ""
 
-#: src/development/debuggers.md:6
+#: src/development/debuggers.md:8
 msgid "Using Zed's built-in debugger"
 msgstr "使用 Zed 的內建除錯器"
 
-#: src/development/debuggers.md:8
+#: src/development/debuggers.md:10
 msgid ""
 "While the Zed project is open you can open the `New Process Modal` and "
 "select the `Debug` tab. There you can see two debug configurations to debug "
@@ -35,79 +33,74 @@ msgid ""
 "and Zed will build and launch the binary."
 msgstr ""
 
-#: src/development/debuggers.md:10
-msgid "Please note, GDB isn't supported on arm Macbooks"
-msgstr ""
-
 #: src/development/debuggers.md:12
-msgid "Release build profile considerations"
+msgid "GDB is not supported on Apple Silicon Macs."
 msgstr ""
 
 #: src/development/debuggers.md:14
-msgid ""
-"By default, builds using the release profile (release is the profile used "
-"for production builds, i.e. nightly, preview, and stable) include limited "
-"debug info."
+msgid "Release build profile considerations"
 msgstr ""
 
 #: src/development/debuggers.md:16
+msgid ""
+"By default, builds using the release profile (the profile used for nightly, "
+"preview, and stable) include limited debug info."
+msgstr ""
+
+#: src/development/debuggers.md:18
 msgid ""
 "This is done by setting the `profile.(release).debug` field in the root "
 "`Cargo.toml` field to `\"limited\"`."
 msgstr ""
 
-#: src/development/debuggers.md:18
+#: src/development/debuggers.md:20
 msgid ""
-"The official documentation for the `debug` field can be found [here](https://"
-"doc.rust-lang.org/cargo/reference/profiles.html#debug). But the TLDR is that "
-"`\"limited\"` strips type and variable level debug info."
-msgstr ""
-
-#: src/development/debuggers.md:21
-msgid ""
-"In release builds, this is done to reduce the binary size, as type and "
-"variable level debug info is not required, and does not impact the usability "
-"of generated stack traces."
+"The official documentation for the `debug` field is [here](https://doc.rust-"
+"lang.org/cargo/reference/profiles.html#debug). In short, `\"limited\"` "
+"strips type-level and variable-level debug info."
 msgstr ""
 
 #: src/development/debuggers.md:23
 msgid ""
-"However, while the type and variable level debug info is not required for "
-"good stack traces, it is very important for a good experience using "
-"debuggers, as without the type and variable level debug info, the debugger "
-"has no way to resolve local variables, inspect them, format them using "
-"pretty-printers, etc."
+"In release builds, this reduces binary size. Type-level and variable-level "
+"debug info is not required for useful stack traces."
 msgstr ""
 
-#: src/development/debuggers.md:26
+#: src/development/debuggers.md:25
 msgid ""
-"Therefore, in order to use a debugger to it's fullest extent when debugging "
-"a release build, you must compile a new Zed binary, with full debug info."
+"However, this data matters when you are actively debugging. Without it, "
+"debuggers cannot resolve local variables, inspect values, or format output "
+"with pretty-printers."
 msgstr ""
 
-#: src/development/debuggers.md:28
+#: src/development/debuggers.md:27
 msgid ""
-"The simplest way to do this, is to use the `--config` flag to override the "
-"`debug` field in the root `Cargo.toml` file when running `cargo run` or "
-"`cargo build` like so:"
+"To get the full debugger experience on a release build, compile a Zed binary "
+"with full debug info."
 msgstr ""
 
-#: src/development/debuggers.md:31 src/development/debuggers.md:32
+#: src/development/debuggers.md:29
+msgid ""
+"The simplest way is to use `--config` to override the `debug` field in the "
+"root `Cargo.toml` when running `cargo run` or `cargo build`:"
+msgstr ""
+
+#: src/development/debuggers.md:32 src/development/debuggers.md:33
 msgid "'profile.release.debug=\"full\"'"
 msgstr ""
 
-#: src/development/debuggers.md:35
+#: src/development/debuggers.md:36
 msgid ""
-"If you wish to avoid passing the `--config` flag on every invocation of "
-"`cargo`. You may also change the section in the [root `Cargo.toml`](https://"
-"github.com/zed-industries/zed/blob/main/Cargo.toml)"
+"If you do not want to pass `--config` on every `cargo` command, you can also "
+"change the section in the [root `Cargo.toml`](https://github.com/zed-"
+"industries/zed/blob/main/Cargo.toml)"
 msgstr ""
 
-#: src/development/debuggers.md:37
+#: src/development/debuggers.md:38
 msgid "from"
 msgstr ""
 
-#: src/development/debuggers.md:39
+#: src/development/debuggers.md:40
 msgid ""
 "```toml\n"
 "[profile.release]\n"
@@ -115,11 +108,11 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/debuggers.md:44
+#: src/development/debuggers.md:45
 msgid "to"
 msgstr ""
 
-#: src/development/debuggers.md:46
+#: src/development/debuggers.md:47
 msgid ""
 "```toml\n"
 "[profile.release]\n"
@@ -127,160 +120,141 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/development/debuggers.md:51
+#: src/development/debuggers.md:52
 msgid ""
-"This will ensure all invocations of `cargo run --release` or `cargo build --"
-"release` will compile with full debug info."
+"This makes all invocations of `cargo run --release` or `cargo build --"
+"release` compile with full debug info."
 msgstr ""
 
-#: src/development/debuggers.md:53
-msgid "**WARNING:** Make sure to avoid committing these changes!"
+#: src/development/debuggers.md:54
+msgid "**Warning:** Do not commit these changes."
 msgstr ""
 
-#: src/development/debuggers.md:55
+#: src/development/debuggers.md:56
 msgid "Running Zed with a shell debugger GDB/LLDB"
 msgstr ""
 
-#: src/development/debuggers.md:57
+#: src/development/debuggers.md:58
 msgid "Background"
 msgstr ""
 
-#: src/development/debuggers.md:59
+#: src/development/debuggers.md:60
 msgid ""
-"When installing rust through rustup, (the recommended way to do so when "
-"developing Zed, see the documentation for getting started on your platform "
-"[here](../development.md)) a few additional scripts are installed and put on "
-"your path to assist with debugging binaries compiled with rust."
+"When you install Rust through rustup (the recommended setup for Zed "
+"development; see your platform guide [here](../development.md)), rustup also "
+"installs helper scripts for debugging Rust binaries."
 msgstr ""
 
 #: src/development/debuggers.md:62
-msgid "These are `rust-gdb` and `rust-lldb` respectively."
+msgid "These scripts are `rust-gdb` and `rust-lldb`."
 msgstr ""
 
 #: src/development/debuggers.md:64
 msgid ""
-"You can read more information about these scripts and why they are useful "
-"[here](https://michaelwoerister.github.io/2015/03/27/rust-xxdb.html) if you "
-"are interested."
+"You can read more about these scripts [here](https://michaelwoerister.github."
+"io/2015/03/27/rust-xxdb.html)."
 msgstr ""
 
 #: src/development/debuggers.md:66
 msgid ""
-"However, the summary is that they are simple shell scripts that wrap the "
-"standard `gdb` and `lldb` commands, injecting the relevant commands and "
-"flags to enable additional rust-specific features such as pretty-printers "
-"and type information."
+"They are wrapper scripts around `gdb` and `lldb` that inject commands and "
+"flags for Rust-specific features such as pretty-printers and type info."
 msgstr ""
 
-#: src/development/debuggers.md:69
+#: src/development/debuggers.md:68
 msgid ""
-"Therefore, in order to use `rust-gdb` or `rust-lldb`, you must have `gdb` or "
-"`lldb` installed on your system. If you don't have them installed, you will "
-"need to install them in a manner appropriate for your platform."
+"To use `rust-gdb` or `rust-lldb`, install `gdb` or `lldb` on your system."
 msgstr ""
 
-#: src/development/debuggers.md:71
+#: src/development/debuggers.md:70
 msgid ""
-"According to the [previously linked article](https://michaelwoerister.github."
-"io/2015/03/27/rust-xxdb.html), \"The minimum supported debugger versions are "
-"GDB 7.7 and LLDB 310. However, the general rule is: the newer the better.\" "
-"Therefore, it is recommended to install the latest version of `gdb` or "
-"`lldb` if possible."
+"The [linked article](https://michaelwoerister.github.io/2015/03/27/rust-xxdb."
+"html) notes that the minimum supported versions are GDB 7.7 and LLDB 310. In "
+"practice, newer versions are usually better."
 msgstr ""
 
-#: src/development/debuggers.md:73
+#: src/development/debuggers.md:72
 msgid ""
-"**Note**: `rust-gdb` is not installed by default on Windows, as `gdb` "
-"support for windows is not very stable. It is recommended to use `lldb` with "
-"`rust-lldb` instead on Windows."
+"**Note**: `rust-gdb` is not installed by default on Windows because `gdb` "
+"support there is unstable. Use `rust-lldb` instead."
 msgstr ""
 
-#: src/development/debuggers.md:75
+#: src/development/debuggers.md:74
 msgid ""
-"If you are unfamiliar with `gdb` or `lldb`, you can learn more about them "
-"[here](https://www.gnu.org/software/gdb/) and [here](https://lldb.llvm.org/) "
-"respectively."
+"If you are new to these tools, see the `gdb` docs [here](https://www.gnu.org/"
+"software/gdb/) and the `lldb` docs [here](https://lldb.llvm.org/)."
 msgstr ""
 
-#: src/development/debuggers.md:77
+#: src/development/debuggers.md:76
 msgid "Usage with Zed"
 msgstr ""
 
-#: src/development/debuggers.md:79
+#: src/development/debuggers.md:78
 msgid ""
-"After following the steps above for including full debug info when compiling "
-"Zed, You can either run `rust-gdb` or `rust-lldb` on the compiled Zed binary "
-"after building it with `cargo build`, by running one of the following "
-"commands:"
+"After enabling full debug info and building with `cargo build`, run `rust-"
+"gdb` or `rust-lldb` against the compiled Zed binary:"
 msgstr ""
 
-#: src/development/debuggers.md:87
+#: src/development/debuggers.md:85
 msgid ""
-"Alternatively, you can attach to a running instance of Zed (such as an "
-"instance of Zed started using `cargo run`) by running one of the following "
-"commands:"
+"You can also attach to a running Zed process (for example, one started with "
+"`cargo run`):"
+msgstr ""
+
+#: src/development/debuggers.md:92
+msgid "`<pid>` is the process ID of the Zed instance you want to attach to."
 msgstr ""
 
 #: src/development/debuggers.md:94
 msgid ""
-"Where `<pid>` is the process ID of the Zed instance you want to attach to."
+"To find the PID, use your system's process tools, such as Task Manager on "
+"Windows or Activity Monitor on macOS."
 msgstr ""
 
 #: src/development/debuggers.md:96
 msgid ""
-"To get the process ID of a running Zed instance, you can use your systems "
-"process management tools such as `Task Manager` on windows or `Activity "
-"Monitor` on macOS."
+"You can also run `ps aux | grep zed` on macOS and Linux, or `Get-Process | "
+"Select-Object Id, ProcessName` in PowerShell on Windows."
 msgstr ""
 
 #: src/development/debuggers.md:98
-msgid ""
-"Alternatively, you can run the `ps aux | grep zed` command on macOS and "
-"Linux or `Get-Process | Select-Object Id, ProcessName` in an instance of "
-"PowerShell on Windows."
+msgid "Debugging Panics and Crashes"
 msgstr ""
 
 #: src/development/debuggers.md:100
-msgid "Debugging Panics and Crashes"
+msgid ""
+"Debuggers are useful for finding the cause of panics and crashes, including "
+"in Zed."
 msgstr ""
 
 #: src/development/debuggers.md:102
 msgid ""
-"Debuggers can be an excellent tool for debugging the cause of panics and "
-"crashes in all programs, including Zed."
+"By default, when a process attached to `gdb` or `lldb` hits an exception "
+"such as a panic, the debugger stops at that point so you can inspect program "
+"state."
 msgstr ""
 
 #: src/development/debuggers.md:104
 msgid ""
-"By default, when a process that `gdb` or `lldb` is attached to hits an "
-"exception such as a panic, the debugger will automatically stop at the point "
-"of the panic and allow you to inspect the state of the program."
+"The initial stop point is often in Rust standard library panic or exception "
+"handling code, so you usually need to walk up the stack to find the root "
+"cause."
 msgstr ""
 
 #: src/development/debuggers.md:106
 msgid ""
-"Most likely, the point at which the debugger stops will be deep in the rust "
-"standard library panic or exception handling code, so you will need to "
-"navigate up the stack trace to find the actual cause of the panic."
+"In `lldb`, use `backtrace` with `frame select`. `gdb` provides equivalent "
+"commands."
 msgstr ""
 
 #: src/development/debuggers.md:108
 msgid ""
-"This can be accomplished using the `backtrace` command in combination with "
-"the `frame select` command in `lldb`, with similar commands available in "
-"`gdb`."
+"After the program stops on the exception, you usually cannot continue normal "
+"execution. You can still move between stack frames and inspect variables and "
+"expressions, which is often enough to identify the crash cause."
 msgstr ""
 
 #: src/development/debuggers.md:110
-msgid ""
-"Once the program is stopped, you will not be able to continue execution as "
-"you can before an exception is hit. However, you can jump around to "
-"different stack frames, and inspect the values of variables and expressions "
-"within each frame, which can be very useful in identifying the root cause of "
-"the crash."
-msgstr ""
-
-#: src/development/debuggers.md:113
 msgid ""
 "You can find additional information on debugging Zed crashes [here](./"
 "debugging-crashes.md)."

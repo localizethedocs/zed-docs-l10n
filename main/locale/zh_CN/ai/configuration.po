@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,56 +11,60 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/ai/configuration.md:1
+#: src/ai/configuration.md:3
 msgid "Configuration"
 msgstr ""
 
-#: src/ai/configuration.md:3
-msgid "When using AI in Zed, you can configure multiple dimensions:"
+#: src/ai/configuration.md:5
+msgid "You can configure multiple dimensions of AI usage in Zed:"
 msgstr ""
 
-#: src/ai/configuration.md:5
+#: src/ai/configuration.md:7
 msgid "Which LLM providers you can use"
 msgstr ""
 
-#: src/ai/configuration.md:6
+#: src/ai/configuration.md:8
 msgid ""
 "Zed's hosted models, which require [authentication](../authentication.md) "
 "and [subscription](./subscription.md)"
 msgstr ""
 
-#: src/ai/configuration.md:7
-msgid "[Using your own API keys](./llm-providers.md), which do not"
-msgstr ""
-
-#: src/ai/configuration.md:8
-msgid ""
-"Using [external agents like Claude Code](./external-agents.md), which do not"
-msgstr ""
-
 #: src/ai/configuration.md:9
-msgid "[Model parameters and usage](./agent-settings.md#model-settings)"
+msgid ""
+"[Using your own API keys](./llm-providers.md), which do not require the above"
 msgstr ""
 
 #: src/ai/configuration.md:10
 msgid ""
-"[Interactions with the Agent Panel](./agent-settings.md#agent-panel-settings)"
+"Using [external agents like Claude Agent](./external-agents.md), which also "
+"do not require the above"
+msgstr ""
+
+#: src/ai/configuration.md:11
+msgid "[Model parameters and usage](./agent-settings.md#model-settings)"
 msgstr ""
 
 #: src/ai/configuration.md:12
-msgid "Turning AI Off Entirely"
+msgid ""
+"[Interactions with the Agent Panel](./agent-settings.md#agent-panel-settings)"
 msgstr ""
 
 #: src/ai/configuration.md:14
-msgid "To disable all AI features, add the following to your `settings.json`:"
+msgid "Turning AI Off Entirely"
 msgstr ""
 
-#: src/ai/configuration.md:18
+#: src/ai/configuration.md:16
+msgid ""
+"To disable all AI features, add the following to your settings file ([how to "
+"edit](../configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/configuration.md:20
 msgid "\"disable_ai\""
 msgstr ""
 
-#: src/ai/configuration.md:22
+#: src/ai/configuration.md:24
 msgid ""
-"See [this blog post](https://zed.dev/blog/disable-ai-features) for "
-"background on this option."
+"See [this blog post](https://zed.dev/blog/disable-ai-features) for further "
+"context on this option."
 msgstr ""

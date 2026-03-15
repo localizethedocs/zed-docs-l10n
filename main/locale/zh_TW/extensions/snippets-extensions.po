@@ -1,0 +1,66 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_TW\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/extensions/snippets.md:3
+msgid "Snippets"
+msgstr ""
+
+#: src/extensions/snippets.md:5
+msgid "Extensions may provide snippets for one or more languages."
+msgstr ""
+
+#: src/extensions/snippets.md:7
+msgid ""
+"Each file containing snippets can be specified in the `snippets` field of "
+"the `extensions.toml` file."
+msgstr ""
+
+#: src/extensions/snippets.md:9
+msgid "The referenced path must be relative to the `extension.toml`."
+msgstr ""
+
+#: src/extensions/snippets.md:11
+msgid "Defining Snippets"
+msgstr ""
+
+#: src/extensions/snippets.md:13
+msgid ""
+"A given extension may provide one or more snippets. Each snippet must be "
+"registered in the `extension.toml`."
+msgstr ""
+
+#: src/extensions/snippets.md:15
+msgid ""
+"Zed matches snippet files based on the lowercase name of the language (e.g. "
+"`rust.json` for Rust). You can use `snippets.json` as a file name to define "
+"snippets that will be available regardless of the current buffer language."
+msgstr ""
+
+#: src/extensions/snippets.md:18
+msgid ""
+"For example, here is an extension that provides snippets for Rust and "
+"TypeScript:"
+msgstr ""
+
+#: src/extensions/snippets.md:20
+msgid ""
+"```toml\n"
+"snippets = [\"./snippets/rust.json\", \"./snippets/typescript.json\"]\n"
+"```"
+msgstr ""
+
+#: src/extensions/snippets.md:24
+msgid ""
+"For more information on how to create snippets, see the [Snippets "
+"documentation](../snippets.md)."
+msgstr ""

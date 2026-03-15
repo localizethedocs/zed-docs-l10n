@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,148 +11,157 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/extensions/themes.md:1
+#: src/extensions/themes.md:3
 msgid "Themes"
 msgstr "主題"
 
-#: src/extensions/themes.md:3
+#: src/extensions/themes.md:5
 msgid ""
 "The `themes` directory in an extension should contain one or more theme "
 "files."
 msgstr ""
 
-#: src/extensions/themes.md:5
+#: src/extensions/themes.md:7
 msgid ""
 "Each theme file should adhere to the JSON schema specified at [`https://zed."
 "dev/schema/themes/v0.2.0.json`](https://zed.dev/schema/themes/v0.2.0.json)."
 msgstr ""
 
-#: src/extensions/themes.md:7
+#: src/extensions/themes.md:9
 msgid ""
 "See [this blog post](https://zed.dev/blog/user-themes-now-in-preview) for "
-"more details about creating themes."
+"additional background on creating themes."
 msgstr ""
 
-#: src/extensions/themes.md:9
+#: src/extensions/themes.md:11
 msgid "Theme JSON Structure"
 msgstr "主題 JSON 結構"
 
-#: src/extensions/themes.md:11
+#: src/extensions/themes.md:13
 msgid ""
 "The structure of a Zed theme is defined in the [Zed Theme JSON Schema]"
 "(https://zed.dev/schema/themes/v0.2.0.json)."
 msgstr ""
 
-#: src/extensions/themes.md:13
+#: src/extensions/themes.md:15
 msgid "A Zed theme consists of a Theme Family object including:"
 msgstr ""
 
-#: src/extensions/themes.md:15
+#: src/extensions/themes.md:17
 msgid "`name`: The name for the theme family"
 msgstr ""
 
-#: src/extensions/themes.md:16
+#: src/extensions/themes.md:18
 msgid "`author`: The name of the author of the theme family"
 msgstr ""
 
-#: src/extensions/themes.md:17
+#: src/extensions/themes.md:19
 msgid "`themes`: An array of Themes belonging to the theme family"
 msgstr ""
 
-#: src/extensions/themes.md:19
-msgid "The core components a Theme object include:"
-msgstr ""
-
 #: src/extensions/themes.md:21
-msgid "Theme Metadata:"
+msgid "The core components of a Theme object include:"
 msgstr ""
 
 #: src/extensions/themes.md:23
+msgid "Theme Metadata:"
+msgstr ""
+
+#: src/extensions/themes.md:25
 msgid "`name`: The name of the theme"
 msgstr ""
 
-#: src/extensions/themes.md:24
+#: src/extensions/themes.md:26
 msgid "`appearance`: Either \"light\" or \"dark\""
 msgstr ""
 
-#: src/extensions/themes.md:26
+#: src/extensions/themes.md:28
 msgid "Style Properties under the `style`, such as:"
 msgstr ""
 
-#: src/extensions/themes.md:28
+#: src/extensions/themes.md:30
 msgid "`background`: The main background color"
 msgstr ""
 
-#: src/extensions/themes.md:29
+#: src/extensions/themes.md:31
 msgid "`foreground`: The main text color"
 msgstr ""
 
-#: src/extensions/themes.md:30
+#: src/extensions/themes.md:32
 msgid "`accent`: The accent color used for highlighting and emphasis"
 msgstr ""
 
-#: src/extensions/themes.md:32
+#: src/extensions/themes.md:34
 msgid "Syntax Highlighting:"
 msgstr "語法標明："
 
-#: src/extensions/themes.md:34
+#: src/extensions/themes.md:36
 msgid ""
 "`syntax`: An object containing color definitions for various syntax elements "
 "(e.g., keywords, strings, comments)"
 msgstr ""
 
-#: src/extensions/themes.md:36
+#: src/extensions/themes.md:38
 msgid "UI Elements:"
 msgstr "UI 元素："
 
-#: src/extensions/themes.md:38
+#: src/extensions/themes.md:40
 msgid "Colors for various UI components such as:"
 msgstr ""
 
-#: src/extensions/themes.md:39
+#: src/extensions/themes.md:41
 msgid "`element.background`: Background color for UI elements"
 msgstr ""
 
-#: src/extensions/themes.md:40
+#: src/extensions/themes.md:42
 msgid ""
 "`border`: Border colors for different states (normal, focused, selected)"
 msgstr ""
 
-#: src/extensions/themes.md:41
+#: src/extensions/themes.md:43
 msgid "`text`: Text colors for different states (normal, muted, accent)"
 msgstr ""
 
-#: src/extensions/themes.md:43
+#: src/extensions/themes.md:45
 msgid "Editor-specific Colors:"
 msgstr ""
 
-#: src/extensions/themes.md:45
+#: src/extensions/themes.md:47
 msgid "Colors for editor-related elements such as:"
 msgstr ""
 
-#: src/extensions/themes.md:46
+#: src/extensions/themes.md:48
 msgid "`editor.background`: Editor background color"
 msgstr ""
 
-#: src/extensions/themes.md:47
+#: src/extensions/themes.md:49
 msgid "`editor.gutter`: Gutter colors"
 msgstr ""
 
-#: src/extensions/themes.md:48
+#: src/extensions/themes.md:50
 msgid "`editor.line_number`: Line number colors"
 msgstr ""
 
-#: src/extensions/themes.md:50
+#: src/extensions/themes.md:52
 msgid "Terminal Colors:"
 msgstr ""
 
-#: src/extensions/themes.md:51
+#: src/extensions/themes.md:53
 msgid "ANSI color definitions for the integrated terminal"
 msgstr ""
 
-#: src/extensions/themes.md:53
+#: src/extensions/themes.md:55
+msgid "Designing Your Theme"
+msgstr ""
+
+#: src/extensions/themes.md:57
 msgid ""
-"We recommend looking at our [existing themes](https://github.com/zed-"
-"industries/zed/tree/main/assets/themes) to get a more comprehensive idea of "
-"what can be styled."
+"You can use [Zed's Theme Builder](https://zed.dev/theme-builder) to design "
+"your own custom theme based on an existing one."
+msgstr ""
+
+#: src/extensions/themes.md:59
+msgid ""
+"This tool lets you fine-tune and preview how surfaces in Zed will look. You "
+"can then export the JSON and publish it in Zed's extension store."
 msgstr ""

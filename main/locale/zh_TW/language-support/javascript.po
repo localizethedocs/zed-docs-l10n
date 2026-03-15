@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,42 +11,42 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/javascript.md:1
+#: src/languages/javascript.md:3
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: src/languages/javascript.md:3
+#: src/languages/javascript.md:5
 msgid "JavaScript support is available natively in Zed."
 msgstr ""
 
-#: src/languages/javascript.md:5
+#: src/languages/javascript.md:7
 msgid ""
 "Tree-sitter: [tree-sitter/tree-sitter-javascript](https://github.com/tree-"
 "sitter/tree-sitter-javascript)"
 msgstr ""
 
-#: src/languages/javascript.md:6
+#: src/languages/javascript.md:8
 msgid "Language Server: [yioneko/vtsls](https://github.com/yioneko/vtsls)"
 msgstr "語言伺服器：[yioneko/vtsls](https://github.com/yioneko/vtsls)"
 
-#: src/languages/javascript.md:7
+#: src/languages/javascript.md:9
 msgid ""
 "Alternate Language Server: [typescript-language-server/typescript-language-"
 "server](https://github.com/typescript-language-server/typescript-language-"
 "server)"
 msgstr ""
 
-#: src/languages/javascript.md:8
+#: src/languages/javascript.md:10
 msgid ""
 "Debug Adapter: [vscode-js-debug](https://github.com/microsoft/vscode-js-"
 "debug)"
 msgstr ""
 
-#: src/languages/javascript.md:10
+#: src/languages/javascript.md:12
 msgid "Code formatting"
 msgstr "程式碼格式化"
 
-#: src/languages/javascript.md:12
+#: src/languages/javascript.md:14
 msgid ""
 "Formatting on save is enabled by default for JavaScript, using TypeScript's "
 "built-in code formatting. But many JavaScript projects use other command-"
@@ -56,132 +56,144 @@ msgid ""
 "settings.md) for more information."
 msgstr ""
 
-#: src/languages/javascript.md:17
+#: src/languages/javascript.md:19
 msgid ""
 "For example, if you have Prettier installed and on your `PATH`, you can use "
-"it to format JavaScript files by adding the following to your `settings."
-"json`:"
+"it to format JavaScript files."
 msgstr ""
 
-#: src/languages/javascript.md:21 src/languages/javascript.md:51
-#: src/languages/javascript.md:65 src/languages/javascript.md:94
+#: src/languages/javascript.md:21
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"kbd>) under Languages > JavaScript, or add to your settings file:"
+msgstr ""
+
+#: src/languages/javascript.md:25 src/languages/javascript.md:57
+#: src/languages/javascript.md:71 src/languages/javascript.md:101
 msgid "\"languages\""
 msgstr ""
 
-#: src/languages/javascript.md:22 src/languages/javascript.md:52
-#: src/languages/javascript.md:66 src/languages/javascript.md:95
-#: src/languages/javascript.md:235 src/languages/javascript.md:250
+#: src/languages/javascript.md:26 src/languages/javascript.md:58
+#: src/languages/javascript.md:72 src/languages/javascript.md:102
+#: src/languages/javascript.md:242 src/languages/javascript.md:257
 msgid "\"JavaScript\""
 msgstr ""
 
-#: src/languages/javascript.md:23 src/languages/javascript.md:96
+#: src/languages/javascript.md:27 src/languages/javascript.md:103
 msgid "\"formatter\""
 msgstr ""
 
-#: src/languages/javascript.md:24
+#: src/languages/javascript.md:28
 msgid "\"external\""
 msgstr ""
 
-#: src/languages/javascript.md:25
+#: src/languages/javascript.md:29
 msgid "\"command\""
 msgstr ""
 
-#: src/languages/javascript.md:25
+#: src/languages/javascript.md:29
 msgid "\"prettier\""
 msgstr ""
 
-#: src/languages/javascript.md:26
+#: src/languages/javascript.md:30
 msgid "\"arguments\""
 msgstr ""
 
-#: src/languages/javascript.md:26
+#: src/languages/javascript.md:30
 msgid "\"--stdin-filepath\""
 msgstr ""
 
-#: src/languages/javascript.md:26
+#: src/languages/javascript.md:30
 msgid "\"{buffer_path}\""
 msgstr ""
 
-#: src/languages/javascript.md:34
+#: src/languages/javascript.md:38
 msgid "JSX"
 msgstr ""
 
-#: src/languages/javascript.md:36
+#: src/languages/javascript.md:40
 msgid "Zed supports JSX syntax highlighting out of the box."
 msgstr ""
 
-#: src/languages/javascript.md:38
+#: src/languages/javascript.md:42
 msgid ""
 "In JSX strings, the [`tailwindcss-language-server`](./tailwindcss.md) is "
 "used to provide autocompletion for Tailwind CSS classes."
 msgstr ""
 
-#: src/languages/javascript.md:40
+#: src/languages/javascript.md:44
 msgid "JSDoc"
 msgstr ""
 
-#: src/languages/javascript.md:42
+#: src/languages/javascript.md:46
 msgid ""
 "Zed supports JSDoc syntax in JavaScript and TypeScript comments that match "
 "the JSDoc syntax. Zed uses [tree-sitter/tree-sitter-jsdoc](https://github."
 "com/tree-sitter/tree-sitter-jsdoc) for parsing and highlighting JSDoc."
 msgstr ""
 
-#: src/languages/javascript.md:45
+#: src/languages/javascript.md:49
 msgid "ESLint"
 msgstr ""
 
-#: src/languages/javascript.md:47
+#: src/languages/javascript.md:51
 msgid ""
 "You can configure Zed to format code using `eslint --fix` by running the "
-"ESLint code action when formatting:"
+"ESLint code action when formatting."
 msgstr ""
 
-#: src/languages/javascript.md:53 src/languages/javascript.md:67
-#: src/languages/javascript.md:97
+#: src/languages/javascript.md:53
+msgid ""
+"Configure code actions on format in Settings (<kbd "
+"class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > JavaScript, or "
+"add to your settings file:"
+msgstr ""
+
+#: src/languages/javascript.md:59 src/languages/javascript.md:73
+#: src/languages/javascript.md:104
 msgid "\"code_actions_on_format\""
 msgstr ""
 
-#: src/languages/javascript.md:54 src/languages/javascript.md:68
-#: src/languages/javascript.md:98
+#: src/languages/javascript.md:60 src/languages/javascript.md:74
+#: src/languages/javascript.md:105
 msgid "\"source.fixAll.eslint\""
 msgstr ""
 
-#: src/languages/javascript.md:61
+#: src/languages/javascript.md:67
 msgid "You can also only execute a single ESLint rule when using `fixAll`:"
 msgstr ""
 
-#: src/languages/javascript.md:72 src/languages/javascript.md:111
-#: src/languages/javascript.md:129 src/languages/javascript.md:147
-#: src/languages/javascript.md:166 src/languages/javascript.md:184
+#: src/languages/javascript.md:78 src/languages/javascript.md:118
+#: src/languages/javascript.md:136 src/languages/javascript.md:154
+#: src/languages/javascript.md:173 src/languages/javascript.md:191
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/javascript.md:73 src/languages/javascript.md:112
-#: src/languages/javascript.md:130 src/languages/javascript.md:148
-#: src/languages/javascript.md:167
+#: src/languages/javascript.md:79 src/languages/javascript.md:119
+#: src/languages/javascript.md:137 src/languages/javascript.md:155
+#: src/languages/javascript.md:174
 msgid "\"eslint\""
 msgstr "\"eslint\""
 
-#: src/languages/javascript.md:74 src/languages/javascript.md:113
-#: src/languages/javascript.md:131 src/languages/javascript.md:149
-#: src/languages/javascript.md:168 src/languages/javascript.md:186
+#: src/languages/javascript.md:80 src/languages/javascript.md:120
+#: src/languages/javascript.md:138 src/languages/javascript.md:156
+#: src/languages/javascript.md:175 src/languages/javascript.md:193
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/javascript.md:75
+#: src/languages/javascript.md:81
 msgid "\"codeActionOnSave\""
 msgstr "\"codeActionOnSave\""
 
-#: src/languages/javascript.md:76
+#: src/languages/javascript.md:82
 msgid "\"rules\""
 msgstr ""
 
-#: src/languages/javascript.md:76
+#: src/languages/javascript.md:82
 msgid "\"import/order\""
 msgstr ""
 
-#: src/languages/javascript.md:84
+#: src/languages/javascript.md:90
 msgid ""
 "**Note:** the other formatter you have configured will still run, after "
 "ESLint. So if your language server or Prettier configuration don't format "
@@ -189,105 +201,111 @@ msgid ""
 "you end up with errors."
 msgstr ""
 
-#: src/languages/javascript.md:89
+#: src/languages/javascript.md:95
 msgid ""
 "If you **only** want to run ESLint on save, you can configure code actions "
-"as the formatter:"
+"as the formatter."
 msgstr ""
 
-#: src/languages/javascript.md:105
+#: src/languages/javascript.md:97
+msgid ""
+"Configure in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) under "
+"Languages > JavaScript, or add to your settings file:"
+msgstr ""
+
+#: src/languages/javascript.md:112
 msgid "Configure ESLint's `nodePath`:"
 msgstr ""
 
-#: src/languages/javascript.md:107
+#: src/languages/javascript.md:114
 msgid "You can configure ESLint's `nodePath` setting:"
 msgstr ""
 
-#: src/languages/javascript.md:114
+#: src/languages/javascript.md:121
 msgid "\"nodePath\""
 msgstr ""
 
-#: src/languages/javascript.md:114
+#: src/languages/javascript.md:121
 msgid "\".yarn/sdks\""
 msgstr ""
 
-#: src/languages/javascript.md:121
+#: src/languages/javascript.md:128
 msgid "Configure ESLint's `problems`:"
 msgstr ""
 
-#: src/languages/javascript.md:123
+#: src/languages/javascript.md:130
 msgid "You can configure ESLint's `problems` setting."
 msgstr ""
 
-#: src/languages/javascript.md:125
+#: src/languages/javascript.md:132
 msgid "For example, here's how to set `problems.shortenToSingleLine`:"
 msgstr ""
 
-#: src/languages/javascript.md:132
+#: src/languages/javascript.md:139
 msgid "\"problems\""
 msgstr ""
 
-#: src/languages/javascript.md:133
+#: src/languages/javascript.md:140
 msgid "\"shortenToSingleLine\""
 msgstr ""
 
-#: src/languages/javascript.md:141
+#: src/languages/javascript.md:148
 msgid "Configure ESLint's `rulesCustomizations`:"
 msgstr ""
 
-#: src/languages/javascript.md:143
+#: src/languages/javascript.md:150
 msgid "You can configure ESLint's `rulesCustomizations` setting:"
 msgstr ""
 
-#: src/languages/javascript.md:150
+#: src/languages/javascript.md:157
 msgid "\"rulesCustomizations\""
 msgstr ""
 
-#: src/languages/javascript.md:151
+#: src/languages/javascript.md:158
 msgid "// set all eslint errors/warnings to show as warnings\n"
 msgstr ""
 
-#: src/languages/javascript.md:152
+#: src/languages/javascript.md:159
 msgid "\"rule\""
 msgstr ""
 
-#: src/languages/javascript.md:152
+#: src/languages/javascript.md:159
 msgid "\"*\""
 msgstr ""
 
-#: src/languages/javascript.md:152
+#: src/languages/javascript.md:159
 msgid "\"severity\""
 msgstr ""
 
-#: src/languages/javascript.md:152
+#: src/languages/javascript.md:159
 msgid "\"warn\""
 msgstr ""
 
-#: src/languages/javascript.md:160
+#: src/languages/javascript.md:167
 msgid "Configure ESLint's `workingDirectory`:"
 msgstr ""
 
-#: src/languages/javascript.md:162
+#: src/languages/javascript.md:169
 msgid "You can configure ESLint's `workingDirectory` setting:"
 msgstr ""
 
-#: src/languages/javascript.md:169
+#: src/languages/javascript.md:176
 msgid "\"workingDirectory\""
 msgstr ""
 
-#: src/languages/javascript.md:170
+#: src/languages/javascript.md:177
 msgid "\"mode\""
 msgstr ""
 
-#: src/languages/javascript.md:170
+#: src/languages/javascript.md:177
 msgid "\"auto\""
 msgstr ""
 
-#: src/languages/javascript.md:178
+#: src/languages/javascript.md:185
 msgid "Using the Tailwind CSS Language Server with JavaScript"
 msgstr ""
 
-#: src/languages/javascript.md:180
+#: src/languages/javascript.md:187
 msgid ""
 "To get all the features (autocomplete, linting, etc.) from the [Tailwind CSS "
 "language server](https://github.com/tailwindlabs/tailwindcss-intellisense/"
@@ -296,116 +314,116 @@ msgid ""
 "`settings.json`:"
 msgstr ""
 
-#: src/languages/javascript.md:185
+#: src/languages/javascript.md:192
 msgid "\"tailwindcss-language-server\""
 msgstr ""
 
-#: src/languages/javascript.md:187
+#: src/languages/javascript.md:194
 msgid "\"experimental\""
 msgstr ""
 
-#: src/languages/javascript.md:188
+#: src/languages/javascript.md:195
 msgid "\"classRegex\""
 msgstr ""
 
-#: src/languages/javascript.md:189
+#: src/languages/javascript.md:196
 msgid "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:190
+#: src/languages/javascript.md:197
 msgid ""
 "\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
 "\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:191
+#: src/languages/javascript.md:198
 msgid ""
 "\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:192
+#: src/languages/javascript.md:199
 msgid "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:193
+#: src/languages/javascript.md:200
 msgid "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:194
+#: src/languages/javascript.md:201
 msgid "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:195
+#: src/languages/javascript.md:202
 msgid "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:196
+#: src/languages/javascript.md:203
 msgid "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:197
+#: src/languages/javascript.md:204
 msgid ""
 "\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
 
-#: src/languages/javascript.md:206
+#: src/languages/javascript.md:213
 msgid "Debugging"
 msgstr "除錯"
 
-#: src/languages/javascript.md:208
+#: src/languages/javascript.md:215
 msgid ""
 "Zed supports debugging JavaScript code out of the box with `vscode-js-"
 "debug`. The following can be debugged without writing additional "
 "configuration:"
 msgstr ""
 
-#: src/languages/javascript.md:211
+#: src/languages/javascript.md:218
 msgid "Tasks from `package.json`"
 msgstr ""
 
-#: src/languages/javascript.md:212
+#: src/languages/javascript.md:219
 msgid ""
 "Tests written using several popular frameworks (Jest, Mocha, Vitest, "
 "Jasmine, Bun, Node)"
 msgstr ""
 
-#: src/languages/javascript.md:214
+#: src/languages/javascript.md:221
 msgid ""
 "Run <code class=\"hljs\">debugger: start</code> (<kbd "
 "class=\"keybinding\">f4|f4</kbd>) to see a contextual list of these "
 "predefined debug tasks."
 msgstr ""
 
-#: src/languages/javascript.md:216
+#: src/languages/javascript.md:223
 msgid ""
 "**Note:** Bun test is automatically detected when `@types/bun` is present in "
 "`package.json`."
 msgstr ""
 
-#: src/languages/javascript.md:218
+#: src/languages/javascript.md:225
 msgid ""
 "**Note:** Node test is automatically detected when `@types/node` is present "
 "in `package.json` (requires Node.js 20+)."
 msgstr ""
 
-#: src/languages/javascript.md:220
+#: src/languages/javascript.md:227
 msgid ""
 "As for all languages, configurations from `.vscode/launch.json` are also "
 "available for debugging in Zed."
 msgstr ""
 
-#: src/languages/javascript.md:222
+#: src/languages/javascript.md:229
 msgid ""
 "If your use-case isn't covered by any of these, you can take full control by "
 "adding debug configurations to `.zed/debug.json`. See below for example "
 "configurations."
 msgstr ""
 
-#: src/languages/javascript.md:224
+#: src/languages/javascript.md:231
 msgid "Configuring JavaScript debug tasks"
 msgstr ""
 
-#: src/languages/javascript.md:226
+#: src/languages/javascript.md:233
 msgid ""
 "JavaScript debugging is more complicated than other languages because there "
 "are two different environments: Node.js and the browser. `vscode-js-debug` "
@@ -413,106 +431,106 @@ msgid ""
 "`node` or `chrome`."
 msgstr ""
 
-#: src/languages/javascript.md:228
+#: src/languages/javascript.md:235
 msgid ""
 "[vscode-js-debug configuration documentation](https://github.com/microsoft/"
 "vscode-js-debug/blob/main/OPTIONS.md)"
 msgstr ""
 
-#: src/languages/javascript.md:230
+#: src/languages/javascript.md:237
 msgid "Debug the current file with Node"
 msgstr ""
 
-#: src/languages/javascript.md:235 src/languages/javascript.md:250
+#: src/languages/javascript.md:242 src/languages/javascript.md:257
 msgid "\"adapter\""
 msgstr "\"adapter\""
 
-#: src/languages/javascript.md:236 src/languages/javascript.md:251
+#: src/languages/javascript.md:243 src/languages/javascript.md:258
 msgid "\"label\""
 msgstr "\"label\""
 
-#: src/languages/javascript.md:236
+#: src/languages/javascript.md:243
 msgid "\"Debug JS file\""
 msgstr ""
 
-#: src/languages/javascript.md:237 src/languages/javascript.md:252
+#: src/languages/javascript.md:244 src/languages/javascript.md:259
 msgid "\"type\""
 msgstr ""
 
-#: src/languages/javascript.md:237
+#: src/languages/javascript.md:244
 msgid "\"node\""
 msgstr ""
 
-#: src/languages/javascript.md:238 src/languages/javascript.md:253
+#: src/languages/javascript.md:245 src/languages/javascript.md:260
 msgid "\"request\""
 msgstr ""
 
-#: src/languages/javascript.md:238 src/languages/javascript.md:253
+#: src/languages/javascript.md:245 src/languages/javascript.md:260
 msgid "\"launch\""
 msgstr ""
 
-#: src/languages/javascript.md:239
+#: src/languages/javascript.md:246
 msgid "\"program\""
 msgstr ""
 
-#: src/languages/javascript.md:239
+#: src/languages/javascript.md:246
 msgid "\"$ZED_FILE\""
 msgstr ""
 
-#: src/languages/javascript.md:240 src/languages/javascript.md:257
+#: src/languages/javascript.md:247 src/languages/javascript.md:264
 msgid "\"skipFiles\""
 msgstr ""
 
-#: src/languages/javascript.md:240 src/languages/javascript.md:257
+#: src/languages/javascript.md:247 src/languages/javascript.md:264
 msgid "\"<node_internals>/**\""
 msgstr ""
 
-#: src/languages/javascript.md:245
+#: src/languages/javascript.md:252
 msgid "Launch a web app in Chrome"
 msgstr ""
 
-#: src/languages/javascript.md:251
+#: src/languages/javascript.md:258
 msgid "\"Debug app in Chrome\""
 msgstr ""
 
-#: src/languages/javascript.md:252
+#: src/languages/javascript.md:259
 msgid "\"chrome\""
 msgstr ""
 
-#: src/languages/javascript.md:254
+#: src/languages/javascript.md:261
 msgid "\"file\""
 msgstr ""
 
-#: src/languages/javascript.md:254
+#: src/languages/javascript.md:261
 msgid "\"$ZED_WORKTREE_ROOT/index.html\""
 msgstr "\"$ZED_WORKTREE_ROOT/index.html\""
 
-#: src/languages/javascript.md:255
+#: src/languages/javascript.md:262
 msgid "\"webRoot\""
 msgstr "\"webRoot\""
 
-#: src/languages/javascript.md:255
+#: src/languages/javascript.md:262
 msgid "\"$ZED_WORKTREE_ROOT\""
 msgstr "\"$ZED_WORKTREE_ROOT\""
 
-#: src/languages/javascript.md:256
+#: src/languages/javascript.md:263
 msgid "\"console\""
 msgstr "\"console\""
 
-#: src/languages/javascript.md:256
+#: src/languages/javascript.md:263
 msgid "\"integratedTerminal\""
 msgstr "\"integratedTerminal\""
 
-#: src/languages/javascript.md:262
+#: src/languages/javascript.md:269
 msgid "See also"
 msgstr "另請參見"
 
-#: src/languages/javascript.md:264
+#: src/languages/javascript.md:271
 msgid ""
 "[Yarn documentation](./yarn.md) for a walkthrough of configuring your "
 "project to use Yarn."
 msgstr ""
 
-#: src/languages/javascript.md:265
+#: src/languages/javascript.md:272
 msgid "[TypeScript documentation](./typescript.md)"
 msgstr ""

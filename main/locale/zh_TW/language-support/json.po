@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,31 +11,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/json.md:1
+#: src/languages/json.md:3
 msgid "JSON"
 msgstr "JSON"
 
-#: src/languages/json.md:3
+#: src/languages/json.md:5
 msgid "JSON support is available natively in Zed."
 msgstr ""
 
-#: src/languages/json.md:5
+#: src/languages/json.md:7
 msgid ""
 "Tree-sitter: [tree-sitter/tree-sitter-json](https://github.com/tree-sitter/"
 "tree-sitter-json)"
 msgstr ""
 
-#: src/languages/json.md:6
+#: src/languages/json.md:8
 msgid ""
 "Language Server: [zed-industries/json-language-server](https://github.com/"
 "zed-industries/json-language-server)"
 msgstr ""
 
-#: src/languages/json.md:8
+#: src/languages/json.md:10
 msgid "JSONC"
 msgstr ""
 
-#: src/languages/json.md:10
+#: src/languages/json.md:12
 msgid ""
 "Zed also supports a super-set of JSON called JSONC, which allows single line "
 "comments (`//`) in JSON files. While editing these files you can use `cmd-/` "
@@ -43,11 +43,11 @@ msgid ""
 "selection."
 msgstr ""
 
-#: src/languages/json.md:13
+#: src/languages/json.md:15
 msgid "JSONC Prettier Formatting"
 msgstr ""
 
-#: src/languages/json.md:15
+#: src/languages/json.md:17
 msgid ""
 "If you use files with the `*.jsonc` extension when using `Format Document` "
 "or have `format_on_save` enabled, Zed invokes Prettier as the formatter. "
@@ -56,49 +56,49 @@ msgid ""
 "extension. JSONC files which have a `.json` extension are unaffected."
 msgstr ""
 
-#: src/languages/json.md:17
+#: src/languages/json.md:19
 msgid ""
 "To workaround this behavior you can add the following to your `.prettierrc` "
 "configuration file:"
 msgstr ""
 
-#: src/languages/json.md:21
+#: src/languages/json.md:23
 msgid "\"overrides\""
 msgstr ""
 
-#: src/languages/json.md:23
+#: src/languages/json.md:25
 msgid "\"files\""
 msgstr ""
 
-#: src/languages/json.md:23
+#: src/languages/json.md:25
 msgid "\"*.jsonc\""
 msgstr ""
 
-#: src/languages/json.md:24
+#: src/languages/json.md:26
 msgid "\"options\""
 msgstr ""
 
-#: src/languages/json.md:25
+#: src/languages/json.md:27
 msgid "\"parser\""
 msgstr ""
 
-#: src/languages/json.md:25 src/languages/json.md:60
+#: src/languages/json.md:27 src/languages/json.md:60
 msgid "\"json\""
 msgstr ""
 
-#: src/languages/json.md:26
+#: src/languages/json.md:28
 msgid "\"trailingComma\""
 msgstr ""
 
-#: src/languages/json.md:26
+#: src/languages/json.md:28
 msgid "\"none\""
 msgstr ""
 
-#: src/languages/json.md:33
+#: src/languages/json.md:35
 msgid "JSON Language Server"
 msgstr ""
 
-#: src/languages/json.md:35
+#: src/languages/json.md:37
 msgid ""
 "Zed automatically out of the box supports JSON Schema validation of `package."
 "json` and `tsconfig.json` files, but `json-language-server` can use JSON "
@@ -106,52 +106,48 @@ msgid ""
 "www.schemastore.org) or other publicly available URLs for JSON validation."
 msgstr ""
 
-#: src/languages/json.md:37
+#: src/languages/json.md:39
 msgid "Inline Schema Specification"
 msgstr ""
 
-#: src/languages/json.md:39
+#: src/languages/json.md:41
 msgid ""
 "To specify a schema inline with your JSON files, add a `$schema` top level "
 "key linking to your json schema file."
 msgstr ""
 
-#: src/languages/json.md:41
+#: src/languages/json.md:43
 msgid ""
 "For example to for a `.luarc.json` for use with [lua-language-server]"
 "(https://github.com/LuaLS/lua-language-server/):"
 msgstr ""
 
-#: src/languages/json.md:45
+#: src/languages/json.md:47
 msgid "\"$schema\""
 msgstr ""
 
-#: src/languages/json.md:45 src/languages/json.md:64
+#: src/languages/json.md:47 src/languages/json.md:72
 msgid ""
 "\"https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema."
 "json\""
 msgstr ""
 
-#: src/languages/json.md:46
+#: src/languages/json.md:48
 msgid "\"runtime.version\""
 msgstr ""
 
-#: src/languages/json.md:46
+#: src/languages/json.md:48
 msgid "\"Lua 5.4\""
 msgstr ""
 
-#: src/languages/json.md:50
+#: src/languages/json.md:52
 msgid "Schema Specification via Settings"
 msgstr ""
 
-#: src/languages/json.md:52
-msgid ""
-"You can alternatively associate JSON Schemas with file paths by via Zed LSP "
-"settings."
-msgstr ""
-
 #: src/languages/json.md:54
-msgid "To"
+msgid ""
+"You can associate JSON Schemas with file paths using relative paths in your "
+"language server settings. Zed resolves paths relative to your project root:"
 msgstr ""
 
 #: src/languages/json.md:57
@@ -170,19 +166,41 @@ msgstr "\"settings\""
 msgid "\"schemas\""
 msgstr ""
 
-#: src/languages/json.md:63
+#: src/languages/json.md:63 src/languages/json.md:67 src/languages/json.md:71
 msgid "\"fileMatch\""
 msgstr ""
 
 #: src/languages/json.md:63
-msgid "\"*/*.luarc.json\""
+msgid "\"config/*.json\""
 msgstr ""
 
-#: src/languages/json.md:64
+#: src/languages/json.md:64 src/languages/json.md:68 src/languages/json.md:72
 msgid "\"url\""
 msgstr ""
 
-#: src/languages/json.md:73
+#: src/languages/json.md:64
+msgid "\"./schemas/custom-schema.json\""
+msgstr ""
+
+#: src/languages/json.md:67
+msgid "\"*.config.json\""
+msgstr ""
+
+#: src/languages/json.md:68
+msgid "\"~/global-schemas/shared.json\""
+msgstr ""
+
+#: src/languages/json.md:71
+msgid "\"*/*.luarc.json\""
+msgstr ""
+
+#: src/languages/json.md:81
+msgid ""
+"Paths starting with `./` resolve relative to the worktree root. Paths "
+"starting with `~/` expand to your home directory."
+msgstr ""
+
+#: src/languages/json.md:83
 msgid ""
 "You can also pass any of the [supported settings](https://github.com/"
 "Microsoft/vscode/blob/main/extensions/json-language-features/server/README."

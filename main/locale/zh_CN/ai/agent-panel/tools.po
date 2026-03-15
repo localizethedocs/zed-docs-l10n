@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,25 +11,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/ai/tools.md:1
+#: src/ai/tools.md:3
 msgid "Tools"
 msgstr ""
 
-#: src/ai/tools.md:3
+#: src/ai/tools.md:5
 msgid ""
 "Zed's built-in agent has access to these tools for reading, searching, and "
-"editing your codebase."
-msgstr ""
-
-#: src/ai/tools.md:5
-msgid "Read & Search Tools"
+"editing your codebase. These tools are used in the [Agent Panel](./agent-"
+"panel.md) during conversations with AI agents."
 msgstr ""
 
 #: src/ai/tools.md:7
-msgid "`diagnostics`"
+msgid ""
+"You can configure permissions for tool actions, including situations where "
+"they are automatically approved, automatically denied, or require your "
+"confirmation on a case-by-case basis. See [Tool Permissions](./tool-"
+"permissions.md) for the list of permission-gated tools and details."
 msgstr ""
 
 #: src/ai/tools.md:9
+msgid ""
+"To add custom tools beyond these built-in ones, see [MCP servers](./mcp.md)."
+msgstr ""
+
+#: src/ai/tools.md:11
+msgid "Read & Search Tools"
+msgstr ""
+
+#: src/ai/tools.md:13
+msgid "`diagnostics`"
+msgstr ""
+
+#: src/ai/tools.md:15
 msgid ""
 "Gets errors and warnings for either a specific file or the entire project, "
 "useful after making edits to determine if further changes are needed. When a "
@@ -38,170 +52,243 @@ msgid ""
 "the project."
 msgstr ""
 
-#: src/ai/tools.md:13
+#: src/ai/tools.md:19
+msgid ""
+"**Example:** After editing `src/parser.rs`, call `diagnostics` with that "
+"path to check for type errors immediately. After a larger refactor touching "
+"many files, call it without a path to see a project-wide count of errors "
+"before deciding what to fix next."
+msgstr ""
+
+#: src/ai/tools.md:21
 msgid "`fetch`"
 msgstr ""
 
-#: src/ai/tools.md:15
+#: src/ai/tools.md:23
 msgid ""
 "Fetches a URL and returns the content as Markdown. Useful for providing docs "
 "as context."
 msgstr ""
 
-#: src/ai/tools.md:17
+#: src/ai/tools.md:25
+msgid ""
+"**Example:** Fetching a library's changelog page to check whether a breaking "
+"API change was introduced in a recent version before writing integration "
+"code."
+msgstr ""
+
+#: src/ai/tools.md:27
 msgid "`find_path`"
 msgstr ""
 
-#: src/ai/tools.md:19
+#: src/ai/tools.md:29
 msgid ""
 "Quickly finds files by matching glob patterns (like \"\\*_/_.js\"), "
 "returning matching file paths alphabetically."
 msgstr ""
 
-#: src/ai/tools.md:21
+#: src/ai/tools.md:31
 msgid "`grep`"
 msgstr ""
 
-#: src/ai/tools.md:23
+#: src/ai/tools.md:33
 msgid ""
 "Searches file contents across the project using regular expressions, "
 "preferred for finding symbols in code without knowing exact file paths."
 msgstr ""
 
-#: src/ai/tools.md:25
+#: src/ai/tools.md:35
+msgid ""
+"**Example:** To find every call site of a function before renaming it, "
+"search for `parse_config\\(` — the regex matches the function name followed "
+"by an opening parenthesis, filtering out comments or variable names that "
+"happen to contain the string."
+msgstr ""
+
+#: src/ai/tools.md:37
 msgid "`list_directory`"
 msgstr ""
 
-#: src/ai/tools.md:27
+#: src/ai/tools.md:39
 msgid ""
 "Lists files and directories in a given path, providing an overview of "
 "filesystem contents."
 msgstr ""
 
-#: src/ai/tools.md:29
+#: src/ai/tools.md:41
 msgid "`now`"
 msgstr ""
 
-#: src/ai/tools.md:31
+#: src/ai/tools.md:43
 msgid "Returns the current date and time."
 msgstr ""
 
-#: src/ai/tools.md:33
+#: src/ai/tools.md:45
 msgid "`open`"
 msgstr ""
 
-#: src/ai/tools.md:35
+#: src/ai/tools.md:47
 msgid ""
 "Opens a file or URL with the default application associated with it on the "
 "user's operating system."
 msgstr ""
 
-#: src/ai/tools.md:37
+#: src/ai/tools.md:49
 msgid "`read_file`"
 msgstr ""
 
-#: src/ai/tools.md:39
+#: src/ai/tools.md:51
 msgid ""
 "Reads the content of a specified file in the project, allowing access to "
 "file contents."
 msgstr ""
 
-#: src/ai/tools.md:41
+#: src/ai/tools.md:53
 msgid "`thinking`"
 msgstr ""
 
-#: src/ai/tools.md:43
+#: src/ai/tools.md:55
 msgid ""
 "Allows the Agent to work through problems, brainstorm ideas, or plan without "
 "executing actions, useful for complex problem-solving."
 msgstr ""
 
-#: src/ai/tools.md:45
+#: src/ai/tools.md:57
 msgid "`web_search`"
 msgstr ""
 
-#: src/ai/tools.md:47
+#: src/ai/tools.md:59
 msgid ""
 "Searches the web for information, providing results with snippets and links "
 "from relevant web pages, useful for accessing real-time information."
 msgstr ""
 
-#: src/ai/tools.md:49
+#: src/ai/tools.md:61
+msgid ""
+"**Example:** Looking up whether a known bug in a dependency has been patched "
+"in a recent release, or finding the current API signature for a third-party "
+"library when the local docs are out of date."
+msgstr ""
+
+#: src/ai/tools.md:63
 msgid "Edit Tools"
 msgstr ""
 
-#: src/ai/tools.md:51
+#: src/ai/tools.md:65
 msgid "`copy_path`"
 msgstr ""
 
-#: src/ai/tools.md:53
+#: src/ai/tools.md:67
 msgid ""
 "Copies a file or directory recursively in the project, more efficient than "
 "manually reading and writing files when duplicating content."
 msgstr ""
 
-#: src/ai/tools.md:55
+#: src/ai/tools.md:69
 msgid "`create_directory`"
 msgstr ""
 
-#: src/ai/tools.md:57
+#: src/ai/tools.md:71
 msgid ""
 "Creates a new directory at the specified path within the project, creating "
 "all necessary parent directories (similar to `mkdir -p`)."
 msgstr ""
 
-#: src/ai/tools.md:59
+#: src/ai/tools.md:73
 msgid "`delete_path`"
 msgstr ""
 
-#: src/ai/tools.md:61
+#: src/ai/tools.md:75
 msgid ""
 "Deletes a file or directory (including contents recursively) at the "
 "specified path and confirms the deletion."
 msgstr ""
 
-#: src/ai/tools.md:63
+#: src/ai/tools.md:77
 msgid "`edit_file`"
 msgstr ""
 
-#: src/ai/tools.md:65
+#: src/ai/tools.md:79
 msgid "Edits files by replacing specific text with new content."
 msgstr ""
 
-#: src/ai/tools.md:67
-msgid "`restore_file_from_disk`"
-msgstr ""
-
-#: src/ai/tools.md:69
-msgid "Reloads a file from disk, discarding any unsaved changes in the buffer."
-msgstr ""
-
-#: src/ai/tools.md:71
-msgid "`save_file`"
-msgstr ""
-
-#: src/ai/tools.md:73
+#: src/ai/tools.md:81
 msgid ""
-"Saves a buffer's current contents to disk, preserving unsaved changes before "
-"the agent modifies the file."
+"**Example:** Updating a function signature — the agent identifies the exact "
+"lines to replace and provides the updated version, leaving the surrounding "
+"code untouched. For widespread renames, it pairs this with `grep` to find "
+"every occurrence first."
 msgstr ""
 
-#: src/ai/tools.md:75
+#: src/ai/tools.md:83
 msgid "`move_path`"
 msgstr ""
 
-#: src/ai/tools.md:77
+#: src/ai/tools.md:85
 msgid ""
 "Moves or renames a file or directory in the project, performing a rename if "
 "only the filename differs."
 msgstr ""
 
-#: src/ai/tools.md:79
+#: src/ai/tools.md:87
+msgid "`restore_file_from_disk`"
+msgstr ""
+
+#: src/ai/tools.md:89
+msgid ""
+"Discards unsaved changes in open buffers by reloading file contents from "
+"disk. Useful for resetting files to their on-disk state before retrying an "
+"edit."
+msgstr ""
+
+#: src/ai/tools.md:91
+msgid "`save_file`"
+msgstr ""
+
+#: src/ai/tools.md:93
+msgid ""
+"Saves files that have unsaved changes. Used when files need to be saved "
+"before further edits can be made."
+msgstr ""
+
+#: src/ai/tools.md:95
 msgid "`terminal`"
 msgstr ""
 
-#: src/ai/tools.md:81
+#: src/ai/tools.md:97
 msgid ""
 "Executes shell commands and returns the combined output, creating a new "
 "shell process for each invocation."
+msgstr ""
+
+#: src/ai/tools.md:99
+msgid ""
+"**Example:** After editing a Rust file, run `cargo test --package my_crate "
+"2>&1 | tail -30` to confirm the changes don't break existing tests. Or run "
+"`git diff --stat` to review which files have been modified before wrapping "
+"up a task."
+msgstr ""
+
+#: src/ai/tools.md:101
+msgid "Other Tools"
+msgstr ""
+
+#: src/ai/tools.md:103
+msgid "`spawn_agent`"
+msgstr ""
+
+#: src/ai/tools.md:105
+msgid ""
+"Spawns a subagent with its own context window to perform a delegated task. "
+"Useful for running parallel investigations, completing self-contained tasks, "
+"or performing research where only the outcome matters. Each subagent has "
+"access to the same tools as the parent agent."
+msgstr ""
+
+#: src/ai/tools.md:107
+msgid ""
+"**Example:** While refactoring the authentication module, spawn a subagent "
+"to investigate how session tokens are validated elsewhere in the codebase. "
+"The parent agent continues its work and reviews the subagent's findings when "
+"it completes — keeping both context windows focused on a single task."
 msgstr ""

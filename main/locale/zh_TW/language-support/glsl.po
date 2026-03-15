@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/glsl.md:1
+#: src/languages/glsl.md:3
 msgid "GLSL"
 msgstr "GLSL"
 
-#: src/languages/glsl.md:3
+#: src/languages/glsl.md:5
 msgid ""
 "GLSL (OpenGL Shading Language) support is available through the [GLSL "
 "Extension](https://github.com/zed-industries/zed/tree/main/extensions/glsl/)"
 msgstr ""
 
-#: src/languages/glsl.md:5
+#: src/languages/glsl.md:7
 msgid ""
 "Tree-sitter: [theHamsta/tree-sitter-glsl](https://github.com/theHamsta/tree-"
 "sitter-glsl)"
 msgstr ""
 
-#: src/languages/glsl.md:6
+#: src/languages/glsl.md:8
 msgid ""
 "Language Server: [nolanderc/glsl_analyzer](https://github.com/nolanderc/"
 "glsl_analyzer)"

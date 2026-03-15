@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,59 +11,59 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/terraform.md:1
+#: src/languages/terraform.md:3
 msgid "Terraform"
 msgstr ""
 
-#: src/languages/terraform.md:3
+#: src/languages/terraform.md:5
 msgid ""
 "Terraform support is available through the [Terraform extension](https://"
 "github.com/zed-extensions/terraform)."
 msgstr ""
 
-#: src/languages/terraform.md:5
+#: src/languages/terraform.md:7
 msgid ""
 "Tree-sitter: [MichaHoffmann/tree-sitter-hcl](https://github.com/"
 "MichaHoffmann/tree-sitter-hcl)"
 msgstr ""
 
-#: src/languages/terraform.md:6
+#: src/languages/terraform.md:8
 msgid ""
 "Language Server: [hashicorp/terraform-ls](https://github.com/hashicorp/"
 "terraform-ls)"
 msgstr ""
 
-#: src/languages/terraform.md:8
+#: src/languages/terraform.md:10
 msgid "Configuration"
 msgstr "組態"
 
-#: src/languages/terraform.md:14
+#: src/languages/terraform.md:16
 msgid ""
 "The Terraform language server can be configured in your `settings.json`, e."
 "g.:"
 msgstr ""
 
-#: src/languages/terraform.md:18
+#: src/languages/terraform.md:20
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/terraform.md:19
+#: src/languages/terraform.md:21
 msgid "\"terraform-ls\""
 msgstr ""
 
-#: src/languages/terraform.md:20
+#: src/languages/terraform.md:22
 msgid "\"initialization_options\""
 msgstr ""
 
-#: src/languages/terraform.md:21
+#: src/languages/terraform.md:23
 msgid "\"experimentalFeatures\""
 msgstr ""
 
-#: src/languages/terraform.md:22
+#: src/languages/terraform.md:24
 msgid "\"prefillRequiredFields\""
 msgstr ""
 
-#: src/languages/terraform.md:30
+#: src/languages/terraform.md:32
 msgid ""
 "See the [full list of server settings here](https://github.com/hashicorp/"
 "terraform-ls/blob/main/docs/SETTINGS.md)."

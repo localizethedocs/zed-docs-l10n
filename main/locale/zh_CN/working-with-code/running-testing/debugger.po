@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,11 +11,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/debugger.md:1
+#: src/debugger.md:3
 msgid "Debugger"
 msgstr ""
 
-#: src/debugger.md:3
+#: src/debugger.md:5
 msgid ""
 "Zed uses the [Debug Adapter Protocol (DAP)](https://microsoft.github.io/"
 "debug-adapter-protocol/) to provide debugging functionality across multiple "
@@ -26,18 +26,18 @@ msgid ""
 "_debug adapters_ implement the server side."
 msgstr ""
 
-#: src/debugger.md:8
+#: src/debugger.md:10
 msgid ""
 "This protocol enables features like setting breakpoints, stepping through "
 "code, inspecting variables, and more, in a consistent manner across "
 "different programming languages and runtime environments."
 msgstr ""
 
-#: src/debugger.md:11
+#: src/debugger.md:13
 msgid "Supported Languages"
 msgstr ""
 
-#: src/debugger.md:13
+#: src/debugger.md:15
 msgid ""
 "To debug code written in a specific language, Zed needs to find a debug "
 "adapter for that language. Some debug adapters are provided by Zed without "
@@ -46,69 +46,69 @@ msgid ""
 "debug adapters available:"
 msgstr ""
 
-#: src/debugger.md:17
+#: src/debugger.md:19
 msgid "[C](./languages/c.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:18
+#: src/debugger.md:20
 msgid "[C++](./languages/cpp.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:19
+#: src/debugger.md:21
 msgid "[Go](./languages/go.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:20
+#: src/debugger.md:22
 msgid "[Java](./languages/java.md#debugging) (provided by extension)"
 msgstr ""
 
-#: src/debugger.md:21
+#: src/debugger.md:23
 msgid "[JavaScript](./languages/javascript.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:22
+#: src/debugger.md:24
 msgid "[PHP](./languages/php.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:23
+#: src/debugger.md:25
 msgid "[Python](./languages/python.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:24
+#: src/debugger.md:26
 msgid "[Ruby](./languages/ruby.md#debugging) (provided by extension)"
 msgstr ""
 
-#: src/debugger.md:25
+#: src/debugger.md:27
 msgid "[Rust](./languages/rust.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:26
+#: src/debugger.md:28
 msgid "[Swift](./languages/swift.md#debugging) (provided by extension)"
 msgstr ""
 
-#: src/debugger.md:27
+#: src/debugger.md:29
 msgid "[TypeScript](./languages/typescript.md#debugging) (built-in)"
 msgstr ""
 
-#: src/debugger.md:29
+#: src/debugger.md:31
 msgid ""
 "If your language isn't listed, you can contribute by adding a debug adapter "
 "for it. Check out our [debugger extensions](./extensions/debugger-extensions."
 "md) documentation for more information."
 msgstr ""
 
-#: src/debugger.md:31
+#: src/debugger.md:33
 msgid ""
 "Follow those links for language- and adapter-specific information and "
 "examples, or read on for more about Zed's general debugging features that "
 "apply to all adapters."
 msgstr ""
 
-#: src/debugger.md:33
+#: src/debugger.md:35
 msgid "Getting Started"
 msgstr ""
 
-#: src/debugger.md:35
+#: src/debugger.md:37
 msgid ""
 "For most languages, the fastest way to get started is to run <code "
 "class=\"hljs\">debugger: start</code> (<kbd class=\"keybinding\">f4|f4</"
@@ -119,13 +119,13 @@ msgid ""
 "about what's supported."
 msgstr ""
 
-#: src/debugger.md:37
+#: src/debugger.md:39
 msgid ""
 "You can open the same modal by clicking the \"plus\" button at the top right "
 "of the debug panel."
 msgstr ""
 
-#: src/debugger.md:39
+#: src/debugger.md:41
 msgid ""
 "For languages that don't provide preconfigured debug tasks (this includes C, "
 "C++, and some extension-supported languages), you can define debug "
@@ -133,56 +133,56 @@ msgid ""
 "should be an array of configuration objects:"
 msgstr ""
 
-#: src/debugger.md:44 src/debugger.md:49 src/debugger.md:115
-#: src/debugger.md:132
+#: src/debugger.md:46 src/debugger.md:51 src/debugger.md:117
+#: src/debugger.md:134
 msgid "\"adapter\""
 msgstr ""
 
-#: src/debugger.md:44 src/debugger.md:115 src/debugger.md:132
-#: src/debugger.md:350
+#: src/debugger.md:46 src/debugger.md:117 src/debugger.md:134
+#: src/debugger.md:360
 msgid "\"CodeLLDB\""
 msgstr ""
 
-#: src/debugger.md:45 src/debugger.md:50 src/debugger.md:114
-#: src/debugger.md:131
+#: src/debugger.md:47 src/debugger.md:52 src/debugger.md:116
+#: src/debugger.md:133
 msgid "\"label\""
 msgstr ""
 
-#: src/debugger.md:45
+#: src/debugger.md:47
 msgid "\"First configuration\""
 msgstr ""
 
-#: src/debugger.md:46 src/debugger.md:51
+#: src/debugger.md:48 src/debugger.md:53
 msgid "// ...\n"
 msgstr ""
 
-#: src/debugger.md:49
+#: src/debugger.md:51
 msgid "\"Debugpy\""
 msgstr ""
 
-#: src/debugger.md:50
+#: src/debugger.md:52
 msgid "\"Second configuration\""
 msgstr ""
 
-#: src/debugger.md:56
+#: src/debugger.md:58
 msgid ""
 "Check the documentation for your language for example configurations "
 "covering typical use-cases. Once you've added configurations to `.zed/debug."
 "json`, they'll appear in the list in the new process modal."
 msgstr ""
 
-#: src/debugger.md:58
+#: src/debugger.md:60
 msgid ""
 "Zed will also load debug configurations from `.vscode/launch.json`, and show "
 "them in the new process modal if no configurations are found in `.zed/debug."
 "json`."
 msgstr ""
 
-#: src/debugger.md:60
+#: src/debugger.md:62
 msgid "Global debug configurations"
 msgstr ""
 
-#: src/debugger.md:62
+#: src/debugger.md:64
 msgid ""
 "If you run the same launch profiles across multiple projects, you can store "
 "them once in your user configuration. Invoke <code class=\"hljs\">zed: open "
@@ -191,21 +191,21 @@ msgid ""
 "with the debugger UI. The file lives at:"
 msgstr ""
 
-#: src/debugger.md:64
+#: src/debugger.md:66
 msgid "**macOS:** `~/Library/Application Support/Zed/debug.json`"
 msgstr ""
 
-#: src/debugger.md:65
+#: src/debugger.md:67
 msgid ""
 "**Linux/BSD:** `$XDG_CONFIG_HOME/zed/debug.json` (falls back to `~/.config/"
 "zed/debug.json`)"
 msgstr ""
 
-#: src/debugger.md:66
+#: src/debugger.md:68
 msgid "**Windows:** `%APPDATA%\\Zed\\debug.json`"
 msgstr ""
 
-#: src/debugger.md:68
+#: src/debugger.md:70
 msgid ""
 "Populate this file with the same array of objects you would place in `.zed/"
 "debug.json`. Any scenarios defined there are merged into every workspace, so "
@@ -213,18 +213,18 @@ msgid ""
 "Session\" dialog."
 msgstr ""
 
-#: src/debugger.md:70
+#: src/debugger.md:72
 msgid "Launching & Attaching"
 msgstr ""
 
-#: src/debugger.md:72
+#: src/debugger.md:74
 msgid ""
 "Zed debugger offers two ways to debug your program; you can either _launch_ "
 "a new instance of your program or _attach_ to an existing process. Which one "
 "you choose depends on what you are trying to achieve."
 msgstr ""
 
-#: src/debugger.md:75
+#: src/debugger.md:77
 msgid ""
 "When launching a new instance, Zed (and the underlying debug adapter) can "
 "often do a better job at picking up the debug information compared to "
@@ -233,7 +233,7 @@ msgid ""
 "use case for launching."
 msgstr ""
 
-#: src/debugger.md:78
+#: src/debugger.md:80
 msgid ""
 "Compared to launching, attaching to an existing process might seem inferior, "
 "but that's far from truth; there are cases where you cannot afford to "
@@ -241,11 +241,11 @@ msgid ""
 "outside of a production environment or some other circumstances."
 msgstr ""
 
-#: src/debugger.md:80
+#: src/debugger.md:82
 msgid "Configuration"
 msgstr ""
 
-#: src/debugger.md:82
+#: src/debugger.md:84
 msgid ""
 "Zed requires the `adapter` and `label` fields for all debug tasks. In "
 "addition, Zed will use the `build` field to run any necessary setup steps "
@@ -253,35 +253,35 @@ msgid ""
 "`tcp_connection` field to connect to an existing process."
 msgstr ""
 
-#: src/debugger.md:84
+#: src/debugger.md:86
 msgid ""
 "All other fields are provided by the debug adapter and can contain [task "
 "variables](./tasks.md#variables). Most adapters support `request`, "
 "`program`, and `cwd`:"
 msgstr ""
 
-#: src/debugger.md:89
+#: src/debugger.md:91
 msgid ""
 "// The label for the debug configuration and used to identify the debug "
 "session inside the debug panel & new process modal\n"
 "    \"label\""
 msgstr ""
 
-#: src/debugger.md:90
+#: src/debugger.md:92
 msgid "\"Example Start debugger config\""
 msgstr ""
 
-#: src/debugger.md:91
+#: src/debugger.md:93
 msgid ""
 "// The debug adapter that Zed should use to debug the program\n"
 "    \"adapter\""
 msgstr ""
 
-#: src/debugger.md:92
+#: src/debugger.md:94
 msgid "\"Example adapter name\""
 msgstr ""
 
-#: src/debugger.md:93
+#: src/debugger.md:95
 msgid ""
 "// Request:\n"
 "    //  - launch: Zed will launch the program if specified, or show a debug "
@@ -292,95 +292,95 @@ msgid ""
 "    \"request\""
 msgstr ""
 
-#: src/debugger.md:96 src/debugger.md:117 src/debugger.md:134
+#: src/debugger.md:98 src/debugger.md:119 src/debugger.md:136
 msgid "\"launch\""
 msgstr ""
 
-#: src/debugger.md:97
+#: src/debugger.md:99
 msgid ""
 "// The program to debug. This field supports path resolution with ~ or . "
 "symbols.\n"
 "    \"program\""
 msgstr ""
 
-#: src/debugger.md:98 src/debugger.md:116 src/debugger.md:133
+#: src/debugger.md:100 src/debugger.md:118 src/debugger.md:135
 msgid "\"path_to_program\""
 msgstr ""
 
-#: src/debugger.md:99
+#: src/debugger.md:101
 msgid ""
 "// cwd: defaults to the current working directory of your project "
 "($ZED_WORKTREE_ROOT)\n"
 "    \"cwd\""
 msgstr ""
 
-#: src/debugger.md:100
+#: src/debugger.md:102
 msgid "\"$ZED_WORKTREE_ROOT\""
 msgstr ""
 
-#: src/debugger.md:105
+#: src/debugger.md:107
 msgid ""
 "Check your debug adapter's documentation for more information on the fields "
 "it supports."
 msgstr ""
 
-#: src/debugger.md:107
+#: src/debugger.md:109
 msgid "Build tasks"
 msgstr ""
 
-#: src/debugger.md:109
+#: src/debugger.md:111
 msgid ""
 "Zed allows embedding a Zed task in the `build` field that is run before the "
 "debugger starts. This is useful for setting up the environment or running "
 "any necessary setup steps before the debugger starts."
 msgstr ""
 
-#: src/debugger.md:114 src/debugger.md:131
+#: src/debugger.md:116 src/debugger.md:133
 msgid "\"Build Binary\""
 msgstr ""
 
-#: src/debugger.md:116 src/debugger.md:133
+#: src/debugger.md:118 src/debugger.md:135
 msgid "\"program\""
 msgstr ""
 
-#: src/debugger.md:117 src/debugger.md:134
+#: src/debugger.md:119 src/debugger.md:136
 msgid "\"request\""
 msgstr ""
 
-#: src/debugger.md:118 src/debugger.md:120 src/debugger.md:135
+#: src/debugger.md:120 src/debugger.md:122 src/debugger.md:137
 msgid "\"build\""
 msgstr ""
 
-#: src/debugger.md:119
+#: src/debugger.md:121
 msgid "\"command\""
 msgstr ""
 
-#: src/debugger.md:119
+#: src/debugger.md:121
 msgid "\"make\""
 msgstr ""
 
-#: src/debugger.md:120 src/debugger.md:352
+#: src/debugger.md:122 src/debugger.md:362
 msgid "\"args\""
 msgstr ""
 
-#: src/debugger.md:120
+#: src/debugger.md:122
 msgid "\"-j8\""
 msgstr ""
 
-#: src/debugger.md:126
+#: src/debugger.md:128
 msgid ""
 "Build tasks can also refer to the existing tasks by unsubstituted label:"
 msgstr ""
 
-#: src/debugger.md:135
+#: src/debugger.md:137
 msgid "\"my build task\" // Or \"my build task for $ZED_FILE\"\n"
 msgstr ""
 
-#: src/debugger.md:140
+#: src/debugger.md:142
 msgid "Automatic scenario creation"
 msgstr ""
 
-#: src/debugger.md:142
+#: src/debugger.md:144
 msgid ""
 "Given a Zed task, Zed can automatically create a scenario for you. Automatic "
 "scenario creation also powers our scenario creation from gutter. Automatic "
@@ -388,11 +388,11 @@ msgid ""
 "and TypeScript."
 msgstr ""
 
-#: src/debugger.md:145
+#: src/debugger.md:147
 msgid "Breakpoints"
 msgstr ""
 
-#: src/debugger.md:147
+#: src/debugger.md:149
 msgid ""
 "To set a breakpoint, simply click next to the line number in the editor "
 "gutter. Breakpoints can be tweaked depending on your needs; to access "
@@ -400,38 +400,38 @@ msgid ""
 "in the gutter and select the desired option. At present, you can:"
 msgstr ""
 
-#: src/debugger.md:151
+#: src/debugger.md:153
 msgid ""
 "Add a log to a breakpoint, which will output a log message whenever that "
 "breakpoint is hit."
 msgstr ""
 
-#: src/debugger.md:152
+#: src/debugger.md:154
 msgid ""
 "Make the breakpoint conditional, which will only stop at the breakpoint when "
 "the condition is met. The syntax for conditions is adapter-specific."
 msgstr ""
 
-#: src/debugger.md:153
+#: src/debugger.md:155
 msgid ""
 "Add a hit count to a breakpoint, which will only stop at the breakpoint "
 "after it's hit a certain number of times."
 msgstr ""
 
-#: src/debugger.md:154
+#: src/debugger.md:156
 msgid ""
 "Disable a breakpoint, which will prevent it from being hit while leaving it "
 "visible in the gutter."
 msgstr ""
 
-#: src/debugger.md:156
+#: src/debugger.md:158
 msgid ""
 "Some debug adapters (e.g. CodeLLDB and JavaScript) will also _verify_ "
 "whether your breakpoints can be hit; breakpoints that cannot be hit are "
 "surfaced more prominently in the UI."
 msgstr ""
 
-#: src/debugger.md:158
+#: src/debugger.md:160
 msgid ""
 "All breakpoints enabled for a given project are also listed in "
 "\"Breakpoints\" item in your debugging session UI. From \"Breakpoints\" item "
@@ -440,117 +440,144 @@ msgid ""
 "types are supported depends on the debug adapter."
 msgstr ""
 
-#: src/debugger.md:161
+#: src/debugger.md:163
+msgid "Working with Split Panes"
+msgstr ""
+
+#: src/debugger.md:165
+msgid ""
+"When debugging with multiple split panes open, Zed shows the active debug "
+"line in one pane and preserves your layout in others. If you have the same "
+"file open in multiple panes, the debugger picks a pane where the file is "
+"already the active tab—it won't switch tabs in panes where the file is "
+"inactive."
+msgstr ""
+
+#: src/debugger.md:167
+msgid ""
+"Once the debugger picks a pane, it continues using that pane for subsequent "
+"breakpoints during the session. If you drag the tab with the active debug "
+"line to a different split, the debugger tracks the move and uses the new "
+"pane."
+msgstr ""
+
+#: src/debugger.md:169
+msgid ""
+"This ensures the debugger doesn't disrupt your workflow when stepping "
+"through code across different files."
+msgstr ""
+
+#: src/debugger.md:171
 msgid "Settings"
 msgstr ""
 
-#: src/debugger.md:163
+#: src/debugger.md:173
 msgid ""
 "The settings for the debugger are grouped under the `debugger` key in "
 "`settings.json`:"
 msgstr ""
 
-#: src/debugger.md:165
+#: src/debugger.md:175
 msgid "`dock`: Determines the position of the debug panel in the UI."
 msgstr ""
 
-#: src/debugger.md:166
+#: src/debugger.md:176
 msgid "`stepping_granularity`: Determines the stepping granularity."
 msgstr ""
 
-#: src/debugger.md:167
+#: src/debugger.md:177
 msgid ""
 "`save_breakpoints`: Whether the breakpoints should be reused across Zed "
 "sessions."
 msgstr ""
 
-#: src/debugger.md:168
+#: src/debugger.md:178
 msgid "`button`: Whether to show the debug button in the status bar."
 msgstr ""
 
-#: src/debugger.md:169
+#: src/debugger.md:179
 msgid ""
 "`timeout`: Time in milliseconds until timeout error when connecting to a TCP "
 "debug adapter."
 msgstr ""
 
-#: src/debugger.md:170
+#: src/debugger.md:180
 msgid ""
 "`log_dap_communications`: Whether to log messages between active debug "
 "adapters and Zed."
 msgstr ""
 
-#: src/debugger.md:171
+#: src/debugger.md:181
 msgid ""
 "`format_dap_log_messages`: Whether to format DAP messages when adding them "
 "to the debug adapter logger."
 msgstr ""
 
-#: src/debugger.md:173
+#: src/debugger.md:183
 msgid "Dock"
 msgstr ""
 
-#: src/debugger.md:175
+#: src/debugger.md:185
 msgid "Description: The position of the debug panel in the UI."
 msgstr ""
 
-#: src/debugger.md:176
+#: src/debugger.md:186
 msgid "Default: `bottom`"
 msgstr ""
 
-#: src/debugger.md:177
+#: src/debugger.md:187
 msgid "Setting: debugger.dock"
 msgstr ""
 
-#: src/debugger.md:179 src/debugger.md:197 src/debugger.md:237
-#: src/debugger.md:255 src/debugger.md:273 src/debugger.md:291
-#: src/debugger.md:309 src/debugger.md:327
+#: src/debugger.md:189 src/debugger.md:207 src/debugger.md:247
+#: src/debugger.md:265 src/debugger.md:283 src/debugger.md:301
+#: src/debugger.md:319 src/debugger.md:337
 msgid "**Options**"
 msgstr ""
 
-#: src/debugger.md:181
+#: src/debugger.md:191
 msgid "`left` - The debug panel will be docked to the left side of the UI."
 msgstr ""
 
-#: src/debugger.md:182
+#: src/debugger.md:192
 msgid "`right` - The debug panel will be docked to the right side of the UI."
 msgstr ""
 
-#: src/debugger.md:183
+#: src/debugger.md:193
 msgid "`bottom` - The debug panel will be docked to the bottom of the UI."
 msgstr ""
 
-#: src/debugger.md:186 src/debugger.md:205 src/debugger.md:215
-#: src/debugger.md:225 src/debugger.md:243 src/debugger.md:261
-#: src/debugger.md:279 src/debugger.md:315 src/debugger.md:333
+#: src/debugger.md:196 src/debugger.md:215 src/debugger.md:225
+#: src/debugger.md:235 src/debugger.md:253 src/debugger.md:271
+#: src/debugger.md:289 src/debugger.md:325 src/debugger.md:343
 msgid "\"debugger\""
 msgstr ""
 
-#: src/debugger.md:187
+#: src/debugger.md:197
 msgid "\"dock\""
 msgstr ""
 
-#: src/debugger.md:187
+#: src/debugger.md:197
 msgid "\"bottom\""
 msgstr ""
 
-#: src/debugger.md:191
+#: src/debugger.md:201
 msgid "Stepping granularity"
 msgstr ""
 
-#: src/debugger.md:193
+#: src/debugger.md:203
 msgid "Description: The Step granularity that the debugger will use"
 msgstr ""
 
-#: src/debugger.md:194
+#: src/debugger.md:204
 msgid "Default: `line`"
 msgstr ""
 
-#: src/debugger.md:195
+#: src/debugger.md:205
 msgid "Setting: `debugger.stepping_granularity`"
 msgstr ""
 
-#: src/debugger.md:199
+#: src/debugger.md:209
 msgid ""
 "Statement - The step should allow the program to run until the current "
 "statement has finished executing. The meaning of a statement is determined "
@@ -559,190 +586,190 @@ msgid ""
 "i = 0`, `i < 10`, and `i++`."
 msgstr ""
 
-#: src/debugger.md:206 src/debugger.md:216 src/debugger.md:226
+#: src/debugger.md:216 src/debugger.md:226 src/debugger.md:236
 msgid "\"stepping_granularity\""
 msgstr ""
 
-#: src/debugger.md:206
+#: src/debugger.md:216
 msgid "\"statement\""
 msgstr ""
 
-#: src/debugger.md:211
+#: src/debugger.md:221
 msgid ""
 "Line - The step should allow the program to run until the current source "
 "line has executed."
 msgstr ""
 
-#: src/debugger.md:216
+#: src/debugger.md:226
 msgid "\"line\""
 msgstr ""
 
-#: src/debugger.md:221
+#: src/debugger.md:231
 msgid ""
 "Instruction - The step should allow one instruction to execute (e.g. one x86 "
 "instruction)."
 msgstr ""
 
-#: src/debugger.md:226
+#: src/debugger.md:236
 msgid "\"instruction\""
 msgstr ""
 
-#: src/debugger.md:231
+#: src/debugger.md:241
 msgid "Save Breakpoints"
 msgstr ""
 
-#: src/debugger.md:233
+#: src/debugger.md:243
 msgid ""
 "Description: Whether the breakpoints should be saved across Zed sessions."
 msgstr ""
 
-#: src/debugger.md:234 src/debugger.md:252 src/debugger.md:288
+#: src/debugger.md:244 src/debugger.md:262 src/debugger.md:298
 msgid "Default: `true`"
 msgstr ""
 
-#: src/debugger.md:235
+#: src/debugger.md:245
 msgid "Setting: `debugger.save_breakpoints`"
 msgstr ""
 
-#: src/debugger.md:239 src/debugger.md:257 src/debugger.md:311
-#: src/debugger.md:329
+#: src/debugger.md:249 src/debugger.md:267 src/debugger.md:321
+#: src/debugger.md:339
 msgid "`boolean` values"
 msgstr ""
 
-#: src/debugger.md:244
+#: src/debugger.md:254
 msgid "\"save_breakpoints\""
 msgstr ""
 
-#: src/debugger.md:249
+#: src/debugger.md:259
 msgid "Button"
 msgstr ""
 
-#: src/debugger.md:251
+#: src/debugger.md:261
 msgid ""
 "Description: Whether the button should be displayed in the debugger toolbar."
 msgstr ""
 
-#: src/debugger.md:253
-msgid "Setting: `debugger.show_button`"
+#: src/debugger.md:263
+msgid "Setting: `debugger.button`"
 msgstr ""
 
-#: src/debugger.md:262
-msgid "\"show_button\""
+#: src/debugger.md:272
+msgid "\"button\""
 msgstr ""
 
-#: src/debugger.md:267
+#: src/debugger.md:277
 msgid "Timeout"
 msgstr ""
 
-#: src/debugger.md:269
+#: src/debugger.md:279
 msgid ""
 "Description: Time in milliseconds until timeout error when connecting to a "
 "TCP debug adapter."
 msgstr ""
 
-#: src/debugger.md:270
+#: src/debugger.md:280
 msgid "Default: `2000`"
 msgstr ""
 
-#: src/debugger.md:271
+#: src/debugger.md:281
 msgid "Setting: `debugger.timeout`"
 msgstr ""
 
-#: src/debugger.md:275
+#: src/debugger.md:285
 msgid "`integer` values"
 msgstr ""
 
-#: src/debugger.md:280
+#: src/debugger.md:290
 msgid "\"timeout\""
 msgstr ""
 
-#: src/debugger.md:285
+#: src/debugger.md:295
 msgid "Inline Values"
 msgstr ""
 
-#: src/debugger.md:287
+#: src/debugger.md:297
 msgid ""
 "Description: Whether to enable editor inlay hints showing the values of "
 "variables in your code during debugging sessions."
 msgstr ""
 
-#: src/debugger.md:289
+#: src/debugger.md:299
 msgid "Setting: `inlay_hints.show_value_hints`"
 msgstr ""
 
-#: src/debugger.md:295
+#: src/debugger.md:305
 msgid "\"inlay_hints\""
 msgstr ""
 
-#: src/debugger.md:296
+#: src/debugger.md:306
 msgid "\"show_value_hints\""
 msgstr ""
 
-#: src/debugger.md:301
+#: src/debugger.md:311
 msgid ""
 "Inline value hints can also be toggled from the Editor Controls menu in the "
 "editor toolbar."
 msgstr ""
 
-#: src/debugger.md:303
+#: src/debugger.md:313
 msgid "Log Dap Communications"
 msgstr ""
 
-#: src/debugger.md:305
+#: src/debugger.md:315
 msgid ""
 "Description: Whether to log messages between active debug adapters and Zed. "
 "(Used for DAP development)"
 msgstr ""
 
-#: src/debugger.md:306 src/debugger.md:324
+#: src/debugger.md:316 src/debugger.md:334
 msgid "Default: false"
 msgstr ""
 
-#: src/debugger.md:307
+#: src/debugger.md:317
 msgid "Setting: debugger.log_dap_communications"
 msgstr ""
 
-#: src/debugger.md:316
+#: src/debugger.md:326
 msgid "\"log_dap_communications\""
 msgstr ""
 
-#: src/debugger.md:321
+#: src/debugger.md:331
 msgid "Format Dap Log Messages"
 msgstr ""
 
-#: src/debugger.md:323
+#: src/debugger.md:333
 msgid ""
 "Description: Whether to format DAP messages when adding them to the debug "
 "adapter logger. (Used for DAP development)"
 msgstr ""
 
-#: src/debugger.md:325
+#: src/debugger.md:335
 msgid "Setting: debugger.format_dap_log_messages"
 msgstr ""
 
-#: src/debugger.md:334
+#: src/debugger.md:344
 msgid "\"format_dap_log_messages\""
 msgstr ""
 
-#: src/debugger.md:339
+#: src/debugger.md:349
 msgid "Customizing Debug Adapters"
 msgstr ""
 
-#: src/debugger.md:341
+#: src/debugger.md:351
 msgid ""
 "Description: Custom program path and arguments to override how Zed launches "
 "a specific debug adapter."
 msgstr ""
 
-#: src/debugger.md:342
+#: src/debugger.md:352
 msgid "Default: Adapter-specific"
 msgstr ""
 
-#: src/debugger.md:343
+#: src/debugger.md:353
 msgid "Setting: `dap.$ADAPTER.binary` and `dap.$ADAPTER.args`"
 msgstr ""
 
-#: src/debugger.md:345
+#: src/debugger.md:355
 msgid ""
 "You can pass `binary`, `args`, or both. `binary` should be a path to a "
 "_debug adapter_ (like `lldb-dap`) not a _debugger_ (like `lldb` itself). The "
@@ -750,47 +777,47 @@ msgid ""
 "adapter."
 msgstr ""
 
-#: src/debugger.md:349
+#: src/debugger.md:359
 msgid "\"dap\""
 msgstr ""
 
-#: src/debugger.md:351
+#: src/debugger.md:361
 msgid "\"binary\""
 msgstr ""
 
-#: src/debugger.md:351
+#: src/debugger.md:361
 msgid "\"/Users/name/bin/lldb-dap\""
 msgstr ""
 
-#: src/debugger.md:352
+#: src/debugger.md:362
 msgid "\"--wait-for-debugger\""
 msgstr ""
 
-#: src/debugger.md:358
+#: src/debugger.md:368
 msgid "Theme"
 msgstr ""
 
-#: src/debugger.md:360
+#: src/debugger.md:370
 msgid "The Debugger supports the following theme options:"
 msgstr ""
 
-#: src/debugger.md:362
+#: src/debugger.md:372
 msgid ""
 "`debugger.accent`: Color used to accent breakpoint & breakpoint-related "
 "symbols"
 msgstr ""
 
-#: src/debugger.md:363
+#: src/debugger.md:373
 msgid ""
 "`editor.debugger_active_line.background`: Background color of active debug "
 "line"
 msgstr ""
 
-#: src/debugger.md:365
+#: src/debugger.md:375
 msgid "Troubleshooting"
 msgstr ""
 
-#: src/debugger.md:367
+#: src/debugger.md:377
 msgid ""
 "If you're running into problems with the debugger, please [open a GitHub "
 "issue](https://github.com/zed-industries/zed/issues/new?"
@@ -799,7 +826,7 @@ msgid ""
 "problem:"
 msgstr ""
 
-#: src/debugger.md:369
+#: src/debugger.md:379
 msgid ""
 "When you have a session running in the debug panel, you can run the <code "
 "class=\"hljs\">dev: copy debug adapter arguments</code> action to copy a "
@@ -808,7 +835,7 @@ msgid ""
 "context to add if you open a GitHub issue."
 msgstr ""
 
-#: src/debugger.md:370
+#: src/debugger.md:380
 msgid ""
 "You can also use the <code class=\"hljs\">dev: open debug adapter logs</"
 "code> action to see a trace of all of Zed's communications with debug "

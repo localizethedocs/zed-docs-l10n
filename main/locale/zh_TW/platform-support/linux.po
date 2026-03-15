@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-02-09T09:25:06Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,53 +11,53 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/linux.md:1
+#: src/linux.md:3
 msgid "Zed on Linux"
 msgstr ""
 
-#: src/linux.md:3
+#: src/linux.md:5
 msgid "Standard Installation"
 msgstr "標準安裝"
 
-#: src/linux.md:5
+#: src/linux.md:7
 msgid ""
 "The installation script on the [download](https://zed.dev/download) page is "
 "the fastest way to install Zed:"
 msgstr ""
 
-#: src/linux.md:11
+#: src/linux.md:13
 msgid ""
 "We also offer a preview build of Zed which receives updates about a week "
 "ahead of stable. You can install it with:"
 msgstr ""
 
-#: src/linux.md:14
+#: src/linux.md:16
 msgid "preview"
 msgstr ""
 
-#: src/linux.md:17
+#: src/linux.md:19
 msgid "The Zed installed by the script works best on systems that:"
 msgstr ""
 
-#: src/linux.md:19
+#: src/linux.md:21
 msgid ""
 "have a Vulkan compatible GPU available (for example Linux on an M-series "
 "macBook)"
 msgstr ""
 
-#: src/linux.md:20
+#: src/linux.md:22
 msgid "have a system-wide glibc (NixOS and Alpine do not by default)"
 msgstr ""
 
-#: src/linux.md:21
+#: src/linux.md:23
 msgid "x86_64 (Intel/AMD): glibc version >= 2.31 (Ubuntu 20 and newer)"
 msgstr ""
 
-#: src/linux.md:22
+#: src/linux.md:24
 msgid "aarch64 (ARM): glibc version >= 2.35 (Ubuntu 22 and newer)"
 msgstr ""
 
-#: src/linux.md:24
+#: src/linux.md:26
 msgid ""
 "Both Nix and Alpine have third-party Zed packages available (though they are "
 "currently a few weeks out of date). If you'd like to use our builds they do "
@@ -66,82 +66,82 @@ msgid ""
 "alpinelinux.org/wiki/Running_glibc_programs)."
 msgstr ""
 
-#: src/linux.md:26
+#: src/linux.md:28
 msgid "You will need to build from source for:"
 msgstr ""
 
-#: src/linux.md:28
+#: src/linux.md:30
 msgid ""
 "architectures other than 64-bit Intel or 64-bit ARM (for example a 32-bit or "
 "RISC-V machine)"
 msgstr ""
 
-#: src/linux.md:29
+#: src/linux.md:31
 msgid ""
 "Redhat Enterprise Linux 8.x, Rocky Linux 8, AlmaLinux 8, Amazon Linux 2 on "
 "all architectures"
 msgstr ""
 
-#: src/linux.md:30
+#: src/linux.md:32
 msgid ""
 "Redhat Enterprise Linux 9.x, Rocky Linux 9.3, AlmaLinux 8, Amazon Linux 2023 "
 "on aarch64 (x86_x64 OK)"
 msgstr ""
 
-#: src/linux.md:32
+#: src/linux.md:34
 msgid "Other ways to install Zed on Linux"
 msgstr ""
 
-#: src/linux.md:34
+#: src/linux.md:36
 msgid ""
 "Zed is open source, and [you can install from source](./development/linux."
 "md)."
 msgstr ""
 
-#: src/linux.md:36
+#: src/linux.md:38
 msgid "Installing via a package manager"
 msgstr ""
 
-#: src/linux.md:38
+#: src/linux.md:40
 msgid ""
 "There are several third-party Zed packages for various Linux distributions "
 "and package managers, sometimes under `zed-editor`. You may be able to "
 "install Zed using these packages:"
 msgstr ""
 
-#: src/linux.md:40
+#: src/linux.md:42
 msgid "Flathub: [`dev.zed.Zed`](https://flathub.org/apps/dev.zed.Zed)"
 msgstr ""
 
-#: src/linux.md:41
+#: src/linux.md:43
 msgid "Arch: [`zed`](https://archlinux.org/packages/extra/x86_64/zed/)"
 msgstr ""
 
-#: src/linux.md:42
+#: src/linux.md:44
 msgid ""
 "Arch (AUR): [`zed-git`](https://aur.archlinux.org/packages/zed-git), [`zed-"
 "preview`](https://aur.archlinux.org/packages/zed-preview), [`zed-preview-"
 "bin`](https://aur.archlinux.org/packages/zed-preview-bin)"
 msgstr ""
 
-#: src/linux.md:43
+#: src/linux.md:45
 msgid ""
 "Alpine: `zed` ([aarch64](https://pkgs.alpinelinux.org/package/edge/testing/"
 "aarch64/zed)) ([x86_64](https://pkgs.alpinelinux.org/package/edge/testing/"
 "x86_64/zed))"
 msgstr ""
 
-#: src/linux.md:44
+#: src/linux.md:46
 msgid "Conda: [`zed`](https://anaconda.org/conda-forge/zed)"
 msgstr ""
 
-#: src/linux.md:45
+#: src/linux.md:47
 msgid ""
 "Nix: `zed-editor` ([unstable](https://search.nixos.org/packages?"
 "channel=unstable&show=zed-editor))"
 msgstr ""
 
-#: src/linux.md:46
+#: src/linux.md:48
 msgid ""
 "Fedora/Ultramarine (Terra): [`zed`](https://github.com/terrapkg/packages/"
 "tree/frawhide/anda/devs/zed/stable), [`zed-preview`](https://github.com/"
@@ -149,40 +149,40 @@ msgid ""
 "(https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/nightly)"
 msgstr ""
 
-#: src/linux.md:47
+#: src/linux.md:49
 msgid ""
 "Solus: [`zed`](https://github.com/getsolus/packages/tree/main/packages/z/zed)"
 msgstr ""
 
-#: src/linux.md:48
+#: src/linux.md:50
 msgid "Parabola: [`zed`](https://www.parabola.nu/packages/extra/x86_64/zed/)"
 msgstr ""
 
-#: src/linux.md:49
+#: src/linux.md:51
 msgid "Manjaro: [`zed`](https://packages.manjaro.org/?query=zed)"
 msgstr ""
 
-#: src/linux.md:50
+#: src/linux.md:52
 msgid ""
 "ALT Linux (Sisyphus): [`zed`](https://packages.altlinux.org/en/sisyphus/"
 "srpms/zed/)"
 msgstr ""
 
-#: src/linux.md:51
+#: src/linux.md:53
 msgid "AOSC OS: [`zed`](https://packages.aosc.io/packages/zed)"
 msgstr ""
 
-#: src/linux.md:53
+#: src/linux.md:55
 msgid ""
 "See [Repology](https://repology.org/project/zed-editor/versions) for a list "
 "of Zed packages in various repositories."
 msgstr ""
 
-#: src/linux.md:55
+#: src/linux.md:57
 msgid "Community"
 msgstr ""
 
-#: src/linux.md:57
+#: src/linux.md:59
 msgid ""
 "When installing a third-party package please be aware that it may not be "
 "completely up to date and may be slightly different from the Zed we package "
@@ -190,14 +190,14 @@ msgid ""
 "conflicting with other packages)."
 msgstr ""
 
-#: src/linux.md:59
+#: src/linux.md:61
 msgid ""
 "We'd love your help making Zed available for everyone. If Zed is not yet "
 "available for your package manager, and you would like to fix that, we have "
 "some notes on [how to do it](./development/linux.md#notes-for-packaging-zed)."
 msgstr ""
 
-#: src/linux.md:61
+#: src/linux.md:63
 msgid ""
 "The packages in this section provide binary installs for Zed but are not "
 "official packages within the associated distributions. These packages are "
@@ -205,17 +205,17 @@ msgid ""
 "be taken when installing them."
 msgstr ""
 
-#: src/linux.md:63
-msgid "Debian"
+#: src/linux.md:65
+msgid "Debian and Ubuntu"
 msgstr ""
 
-#: src/linux.md:65
+#: src/linux.md:67
 msgid ""
 "Zed is available in [this community-maintained repository](https://debian."
 "griffo.io/)."
 msgstr ""
 
-#: src/linux.md:67
+#: src/linux.md:69
 msgid ""
 "Instructions for each version are available in the README of the repository "
 "where packages are built. Build, packaging and instructions for each version "
@@ -223,11 +223,11 @@ msgid ""
 "dariogriffo/zed-debian)"
 msgstr ""
 
-#: src/linux.md:70
+#: src/linux.md:72
 msgid "Downloading manually"
 msgstr ""
 
-#: src/linux.md:72
+#: src/linux.md:74
 msgid ""
 "If you'd prefer, you can install Zed by downloading our pre-built .tar.gz. "
 "This is the same artifact that our install script uses, but you can "
@@ -235,11 +235,11 @@ msgid ""
 "below:"
 msgstr ""
 
-#: src/linux.md:74
+#: src/linux.md:76
 msgid "Download the `.tar.gz` file:"
 msgstr ""
 
-#: src/linux.md:76
+#: src/linux.md:78
 msgid ""
 "[zed-linux-x86_64.tar.gz](https://cloud.zed.dev/releases/stable/latest/"
 "download?asset=zed&arch=x86_64&os=linux&source=docs) ([preview](https://"
@@ -247,7 +247,7 @@ msgid ""
 "asset=zed&arch=x86_64&os=linux&source=docs))"
 msgstr ""
 
-#: src/linux.md:78
+#: src/linux.md:80
 msgid ""
 "[zed-linux-aarch64.tar.gz](https://cloud.zed.dev/releases/stable/latest/"
 "download?asset=zed&arch=aarch64&os=linux&source=docs) ([preview](https://"
@@ -255,97 +255,97 @@ msgid ""
 "asset=zed&arch=aarch64&os=linux&source=docs))"
 msgstr ""
 
-#: src/linux.md:81
+#: src/linux.md:83
 msgid ""
 "Then ensure that the `zed` binary in the tarball is on your path. The "
 "easiest way is to unpack the tarball and create a symlink:"
 msgstr ""
 
-#: src/linux.md:84
+#: src/linux.md:86
 msgid "# extract zed to ~/.local/zed.app/\n"
 msgstr ""
 
-#: src/linux.md:86
+#: src/linux.md:88
 msgid ""
 "# link the zed binary to ~/.local/bin (or another directory in your $PATH)\n"
 msgstr ""
 
-#: src/linux.md:91
+#: src/linux.md:93
 msgid ""
 "If you'd like integration with an XDG-compatible desktop environment, you "
 "will also need to install the `.desktop` file:"
 msgstr ""
 
-#: src/linux.md:95
+#: src/linux.md:97
 msgid ""
 "\"s|Icon=zed|Icon=$HOME/.local/zed.app/share/icons/hicolor/512x512/apps/zed."
 "png|g\""
 msgstr ""
 
-#: src/linux.md:96
-msgid "\"s|Exec=zed|Exec=$HOME/.local/zed.app/libexec/zed-editor|g\""
-msgstr ""
-
-#: src/linux.md:99
-msgid "Uninstalling Zed"
+#: src/linux.md:98
+msgid "\"s|Exec=zed|Exec=$HOME/.local/zed.app/bin/zed|g\""
 msgstr ""
 
 #: src/linux.md:101
+msgid "Uninstalling Zed"
+msgstr ""
+
+#: src/linux.md:103
 msgid "Standard Uninstall"
 msgstr "標準解除安裝"
 
-#: src/linux.md:103
+#: src/linux.md:105
 msgid ""
 "If Zed was installed using the default installation script, it can be "
 "uninstalled by supplying the `--uninstall` flag to the `zed` shell command"
 msgstr ""
 
-#: src/linux.md:109
+#: src/linux.md:111
 msgid ""
 "If there are no errors, the shell will then prompt you whether you'd like to "
 "keep your preferences or delete them. After making a choice, you should see "
 "a message that Zed was successfully uninstalled."
 msgstr ""
 
-#: src/linux.md:111
+#: src/linux.md:113
 msgid ""
 "In the case that the `zed` shell command was not found in your PATH, you can "
 "try one of the following commands"
 msgstr ""
 
-#: src/linux.md:117
+#: src/linux.md:119
 msgid "or"
 msgstr ""
 
-#: src/linux.md:123
+#: src/linux.md:125
 msgid ""
 "The first case might fail if a symlink was not properly established between "
 "`$HOME/.local/bin/zed` and `$HOME/.local/zed.app/bin.zed`. But the second "
 "case should work as long as Zed was installed to its default location."
 msgstr ""
 
-#: src/linux.md:125
+#: src/linux.md:127
 msgid ""
 "If Zed was installed to a different location, you must invoke the `zed` "
 "binary stored in that installation directory and pass the `--uninstall` flag "
 "to it in the same format as the previous commands."
 msgstr ""
 
-#: src/linux.md:127
+#: src/linux.md:129
 msgid "Package Manager"
 msgstr "軟體包管理器"
 
-#: src/linux.md:129
+#: src/linux.md:131
 msgid ""
 "If Zed was installed using a package manager, please consult the "
 "documentation for that package manager on how to uninstall a package."
 msgstr ""
 
-#: src/linux.md:131
+#: src/linux.md:133
 msgid "Troubleshooting"
 msgstr "疑難排解"
 
-#: src/linux.md:133
+#: src/linux.md:135
 msgid ""
 "Linux works on a large variety of systems configured in many different ways. "
 "We primarily test Zed on a vanilla Ubuntu setup, as it is the most common "
@@ -353,11 +353,11 @@ msgid ""
 "variety of machines."
 msgstr ""
 
-#: src/linux.md:135
+#: src/linux.md:137
 msgid "Zed fails to start"
 msgstr ""
 
-#: src/linux.md:137
+#: src/linux.md:139
 msgid ""
 "If you see an error like \"/lib64/libc.so.6: version 'GLIBC_2.29' not "
 "found\" it means that your distribution's version of glibc is too old. You "
@@ -365,15 +365,15 @@ msgid ""
 "linux.md)."
 msgstr ""
 
-#: src/linux.md:139
+#: src/linux.md:141
 msgid "Graphics issues"
 msgstr ""
 
-#: src/linux.md:141
+#: src/linux.md:143
 msgid "Zed fails to open windows"
 msgstr ""
 
-#: src/linux.md:143
+#: src/linux.md:145
 msgid ""
 "Zed requires a GPU to run effectively. Under the hood, we use [Vulkan]"
 "(https://www.vulkan.org/) to communicate with your GPU. If you are seeing "
@@ -381,7 +381,7 @@ msgid ""
 "is the culprit."
 msgstr ""
 
-#: src/linux.md:145
+#: src/linux.md:147
 msgid ""
 "If you see a notification saying `Zed failed to open a window: "
 "NoSupportedDeviceFound` this means that Vulkan cannot find a compatible GPU. "
@@ -390,14 +390,14 @@ msgid ""
 "distributions) to try to troubleshoot where the issue is coming from like so:"
 msgstr ""
 
-#: src/linux.md:151
+#: src/linux.md:153
 msgid ""
 "**_Note_**: Try running in both X11 and wayland modes by running `vkcube -m "
 "[x11|wayland]`. Some versions of `vkcube` use `vkcube` to run in X11 and "
 "`vkcube-wayland` to run in wayland."
 msgstr ""
 
-#: src/linux.md:153
+#: src/linux.md:155
 msgid ""
 "This should output a line describing your current graphics setup and show a "
 "rotating cube. If this does not work, you should be able to fix it by "
@@ -405,13 +405,13 @@ msgid ""
 "Vulkan support yet."
 msgstr ""
 
-#: src/linux.md:155
+#: src/linux.md:157
 msgid ""
 "You can find out which graphics card Zed is using by looking in the Zed log "
 "(`~/.local/share/zed/logs/Zed.log`) for `Using GPU: ...`."
 msgstr ""
 
-#: src/linux.md:157
+#: src/linux.md:159
 msgid ""
 "If you see errors like `ERROR_INITIALIZATION_FAILED` or `GPU Crashed` or "
 "`ERROR_SURFACE_LOST_KHR` then you may be able to work around this by "
@@ -420,7 +420,7 @@ msgid ""
 "issues/14225))"
 msgstr ""
 
-#: src/linux.md:159
+#: src/linux.md:161
 msgid ""
 "On some systems the file `/etc/prime-discrete` can be used to enforce the "
 "use of a discrete GPU using [PRIME](https://wiki.archlinux.org/title/PRIME). "
@@ -429,17 +429,10 @@ msgid ""
 "integrated graphics)."
 msgstr ""
 
-#: src/linux.md:161
+#: src/linux.md:163
 msgid ""
 "On others, you may be able to the environment variable `DRI_PRIME=1` when "
 "running Zed to force the use of the discrete GPU."
-msgstr ""
-
-#: src/linux.md:163
-msgid ""
-"If you're using an AMD GPU and Zed crashes when selecting long lines, try "
-"setting the `ZED_PATH_SAMPLE_COUNT=0` environment variable. (See [\\#26143]"
-"(https://github.com/zed-industries/zed/issues/26143))"
 msgstr ""
 
 #: src/linux.md:165
@@ -576,7 +569,7 @@ msgid "Or, if you have the Zed cli setup, you can do"
 msgstr ""
 
 #: src/linux.md:227
-msgid "blade_graphics=info"
+msgid "wgpu=info"
 msgstr ""
 
 #: src/linux.md:231
@@ -872,8 +865,7 @@ msgstr ""
 
 #: src/linux.md:387
 msgid ""
-"When using Blade rendering (Linux platforms and self-compiled builds with "
-"the Blade renderer enabled), Zed reads `ZED_FONTS_GAMMA` and "
+"On Linux, Zed reads `ZED_FONTS_GAMMA` and "
 "`ZED_FONTS_GRAYSCALE_ENHANCED_CONTRAST` environment variables for the values "
 "to use for font rendering."
 msgstr ""

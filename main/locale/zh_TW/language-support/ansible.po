@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,283 +11,275 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/ansible.md:1
+#: src/languages/ansible.md:3
 msgid "Ansible"
 msgstr "Ansible"
 
-#: src/languages/ansible.md:3
+#: src/languages/ansible.md:5
 msgid ""
 "Support for Ansible in Zed is provided via a community-maintained [Ansible "
 "extension](https://github.com/kartikvashistha/zed-ansible)."
 msgstr ""
 
-#: src/languages/ansible.md:5
+#: src/languages/ansible.md:7
 msgid ""
 "Tree-sitter: [zed-industries/tree-sitter-yaml](https://github.com/zed-"
 "industries/tree-sitter-yaml)"
 msgstr ""
 
-#: src/languages/ansible.md:6
+#: src/languages/ansible.md:8
 msgid ""
 "Language Server: [ansible/vscode-ansible](https://github.com/ansible/vscode-"
 "ansible/tree/main/packages/ansible-language-server)"
 msgstr ""
 
-#: src/languages/ansible.md:8
+#: src/languages/ansible.md:10
 msgid "Setup"
 msgstr ""
 
-#: src/languages/ansible.md:10
+#: src/languages/ansible.md:12
 msgid "File detection"
 msgstr ""
 
-#: src/languages/ansible.md:12
+#: src/languages/ansible.md:14
 msgid ""
 "To avoid mishandling non-Ansible YAML files, the Ansible Language is not "
-"associated with any file extensions by default. To change this behavior you "
-"can add a `\"file_types\"` section to Zed settings inside your project (`."
-"zed/settings.json`) or your Zed user settings (`~/.config/zed/settings."
-"json`) to match your folder/naming conventions. For example:"
-msgstr ""
-
-#: src/languages/ansible.md:15
-msgid "\"file_types\""
+"associated with any file extensions by default."
 msgstr ""
 
 #: src/languages/ansible.md:16
-msgid "\"Ansible\""
-msgstr ""
-
-#: src/languages/ansible.md:17
-msgid "\"**.ansible.yml\""
-msgstr ""
-
-#: src/languages/ansible.md:18
-msgid "\"**.ansible.yaml\""
-msgstr ""
-
-#: src/languages/ansible.md:19
-msgid "\"**/defaults/*.yml\""
+msgid ""
+"To change this behavior, you can add a `\"file_types\"` section to Zed "
+"settings inside your project (`.zed/settings.json`) or your Zed user "
+"settings (`~/.config/zed/settings.json`) to match your folder/naming "
+"conventions. For example:"
 msgstr ""
 
 #: src/languages/ansible.md:20
-msgid "\"**/defaults/*.yaml\""
+msgid "\"file_types\""
 msgstr ""
 
 #: src/languages/ansible.md:21
-msgid "\"**/meta/*.yml\""
+msgid "\"Ansible\""
 msgstr ""
 
 #: src/languages/ansible.md:22
-msgid "\"**/meta/*.yaml\""
+msgid "\"**.ansible.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:23
-msgid "\"**/tasks/*.yml\""
+msgid "\"**.ansible.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:24
-msgid "\"**/tasks/*.yaml\""
+msgid "\"**/defaults/*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:25
-msgid "\"**/handlers/*.yml\""
+msgid "\"**/defaults/*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:26
-msgid "\"**/handlers/*.yaml\""
+msgid "\"**/meta/*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:27
-msgid "\"**/group_vars/*.yml\""
+msgid "\"**/meta/*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:28
-msgid "\"**/group_vars/*.yaml\""
+msgid "\"**/tasks/*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:29
-msgid "\"**/host_vars/*.yml\""
+msgid "\"**/tasks/*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:30
-msgid "\"**/host_vars/*.yaml\""
+msgid "\"**/handlers/*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:31
-msgid "\"**/playbooks/*.yml\""
+msgid "\"**/handlers/*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:32
-msgid "\"**/playbooks/*.yaml\""
+msgid "\"**/group_vars/*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:33
-msgid "\"**playbook*.yml\""
+msgid "\"**/group_vars/*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:34
-msgid "\"**playbook*.yaml\""
+msgid "\"**/host_vars/*.yml\""
+msgstr ""
+
+#: src/languages/ansible.md:35
+msgid "\"**/host_vars/*.yaml\""
+msgstr ""
+
+#: src/languages/ansible.md:36
+msgid "\"**/playbooks/*.yml\""
+msgstr ""
+
+#: src/languages/ansible.md:37
+msgid "\"**/playbooks/*.yaml\""
+msgstr ""
+
+#: src/languages/ansible.md:38
+msgid "\"**playbook*.yml\""
 msgstr ""
 
 #: src/languages/ansible.md:39
-msgid "Feel free to modify this list as per your needs."
-msgstr ""
-
-#: src/languages/ansible.md:41
-msgid "Inventory"
-msgstr ""
-
-#: src/languages/ansible.md:43
-msgid "If your inventory file is in the YAML format, you can either:"
+msgid "\"**playbook*.yaml\""
 msgstr ""
 
 #: src/languages/ansible.md:45
+msgid "Feel free to modify this list as per your needs."
+msgstr ""
+
+#: src/languages/ansible.md:47
+msgid "Inventory"
+msgstr ""
+
+#: src/languages/ansible.md:49
+msgid "If your inventory file is in the YAML format, you can either:"
+msgstr ""
+
+#: src/languages/ansible.md:51
 msgid ""
-"Append the `ansible-lint` inventory json schema to it via the following "
+"Append the `ansible-lint` inventory JSON schema to it via the following "
 "comment at the top of your inventory file:"
 msgstr ""
 
-#: src/languages/ansible.md:48
+#: src/languages/ansible.md:54
 msgid ""
 "# yaml-language-server: $schema=https://raw.githubusercontent.com/ansible/"
 "ansible-lint/main/src/ansiblelint/schemas/inventory.json\n"
 msgstr ""
 
-#: src/languages/ansible.md:51
+#: src/languages/ansible.md:57
 msgid ""
-"Or configure the yaml language server settings to set this schema for all "
+"or, configure the YAML language server settings to set this schema for all "
 "your inventory files, that match your inventory pattern, under your Zed "
 "settings ([ref](https://zed.dev/docs/languages/yaml)):"
 msgstr ""
 
-#: src/languages/ansible.md:54 src/languages/ansible.md:103
+#: src/languages/ansible.md:61 src/languages/ansible.md:111
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/ansible.md:55
+#: src/languages/ansible.md:62
 msgid "\"yaml-language-server\""
 msgstr ""
 
-#: src/languages/ansible.md:56 src/languages/ansible.md:107
+#: src/languages/ansible.md:63 src/languages/ansible.md:115
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/ansible.md:57
+#: src/languages/ansible.md:64
 msgid "\"yaml\""
 msgstr ""
 
-#: src/languages/ansible.md:58
+#: src/languages/ansible.md:65
 msgid "\"schemas\""
 msgstr ""
 
-#: src/languages/ansible.md:59
+#: src/languages/ansible.md:66
 msgid ""
 "\"https://raw.githubusercontent.com/ansible/ansible-lint/main/src/"
 "ansiblelint/schemas/inventory.json\""
 msgstr ""
 
-#: src/languages/ansible.md:60
+#: src/languages/ansible.md:67
 msgid "\"./inventory/*.yaml\""
 msgstr ""
 
-#: src/languages/ansible.md:61
+#: src/languages/ansible.md:68
 msgid "\"hosts.yml\""
 msgstr ""
 
-#: src/languages/ansible.md:70
+#: src/languages/ansible.md:78
 msgid "LSP Configuration"
 msgstr ""
 
-#: src/languages/ansible.md:72
+#: src/languages/ansible.md:80
 msgid ""
-"By default, the following default config is passed to the Ansible language "
+"By default, the following configuration is passed to the Ansible language "
 "server. It conveniently mirrors the defaults set by [nvim-lspconfig](https://"
 "github.com/neovim/nvim-lspconfig/"
 "blob/03bc581e05e81d33808b42b2d7e76d70adb3b595/lua/lspconfig/configs/"
 "ansiblels.lua) for the Ansible language server:"
 msgstr ""
 
-#: src/languages/ansible.md:76 src/languages/ansible.md:77
-#: src/languages/ansible.md:78 src/languages/ansible.md:108
-#: src/languages/ansible.md:109
+#: src/languages/ansible.md:84 src/languages/ansible.md:85
+#: src/languages/ansible.md:86 src/languages/ansible.md:116
+#: src/languages/ansible.md:117
 msgid "\"ansible\""
 msgstr ""
 
-#: src/languages/ansible.md:78 src/languages/ansible.md:90
-#: src/languages/ansible.md:109
+#: src/languages/ansible.md:86 src/languages/ansible.md:98
+#: src/languages/ansible.md:117 src/languages/ansible.md:129
 msgid "\"path\""
 msgstr ""
 
-#: src/languages/ansible.md:80 src/languages/ansible.md:111
+#: src/languages/ansible.md:88 src/languages/ansible.md:119
 msgid "\"executionEnvironment\""
 msgstr ""
 
-#: src/languages/ansible.md:81 src/languages/ansible.md:87
-#: src/languages/ansible.md:89 src/languages/ansible.md:112
-#: src/languages/ansible.md:118 src/languages/ansible.md:120
+#: src/languages/ansible.md:89 src/languages/ansible.md:95
+#: src/languages/ansible.md:97 src/languages/ansible.md:120
+#: src/languages/ansible.md:126 src/languages/ansible.md:128
 msgid "\"enabled\""
 msgstr ""
 
-#: src/languages/ansible.md:83 src/languages/ansible.md:114
+#: src/languages/ansible.md:91 src/languages/ansible.md:122
 msgid "\"python\""
 msgstr ""
 
-#: src/languages/ansible.md:84 src/languages/ansible.md:115
+#: src/languages/ansible.md:92 src/languages/ansible.md:123
 msgid "\"interpreterPath\""
 msgstr ""
 
-#: src/languages/ansible.md:84 src/languages/ansible.md:115
+#: src/languages/ansible.md:92 src/languages/ansible.md:123
 msgid "\"python3\""
 msgstr ""
 
-#: src/languages/ansible.md:86 src/languages/ansible.md:117
+#: src/languages/ansible.md:94 src/languages/ansible.md:125
 msgid "\"validation\""
 msgstr ""
 
-#: src/languages/ansible.md:88
+#: src/languages/ansible.md:96 src/languages/ansible.md:127
 msgid "\"lint\""
 msgstr ""
 
-#: src/languages/ansible.md:90 src/languages/ansible.md:121
+#: src/languages/ansible.md:98 src/languages/ansible.md:129
 msgid "\"ansible-lint\""
 msgstr ""
 
-#: src/languages/ansible.md:97
+#: src/languages/ansible.md:105
 msgid ""
-"\\[!NOTE\\] In order for linting to work, ensure that `ansible-lint` is "
-"installed and discoverable on your PATH"
+"**Note:** In order for linting to work, ensure that `ansible-lint` is "
+"installed and discoverable on your `$PATH`."
 msgstr ""
 
-#: src/languages/ansible.md:100
+#: src/languages/ansible.md:107
 msgid ""
 "When desired, any of the above default settings can be overridden under the "
 "`\"lsp\"` section of your Zed settings file. For example:"
 msgstr ""
 
-#: src/languages/ansible.md:104
+#: src/languages/ansible.md:112
 msgid ""
-"// Note, the Zed Ansible extension prefixes all settings with `ansible`\n"
-"  // so instead of using `ansible.ansible.path` use `ansible.path`.\n"
-"  \"ansible-language-server\""
+"// The Zed Ansible extension prefixes all settings with `ansible`\n"
+"    // so use `ansible.path` instead of `ansible.ansible.path`.\n"
+"    \"ansible-language-server\""
 msgstr ""
 
-#: src/languages/ansible.md:118
+#: src/languages/ansible.md:138
 msgid ""
-"// disable validation\n"
-"        \"lint\""
-msgstr ""
-
-#: src/languages/ansible.md:120
-msgid ""
-"// disable ansible-lint\n"
-"          \"path\""
-msgstr ""
-
-#: src/languages/ansible.md:129
-msgid ""
-"A full list of options/settings, that can be passed to the server, can be "
+"A full list of options/settings that can be passed to the server can be "
 "found at the project's page [here](https://github.com/ansible/vscode-ansible/"
-"blob/5a89836d66d470fb9d20e7ea8aa2af96f12f61fb/docs/als/settings.md). Feel "
-"free to modify option values as needed."
+"blob/main/docs/als/settings.md)."
 msgstr ""

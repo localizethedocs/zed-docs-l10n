@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,23 +11,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: src/languages/clojure.md:1
+#: src/languages/clojure.md:3
 msgid "Clojure"
 msgstr "Clojure"
 
-#: src/languages/clojure.md:3
+#: src/languages/clojure.md:5
 msgid ""
 "Clojure support is available through the [Clojure extension](https://github."
 "com/zed-extensions/clojure)."
 msgstr ""
 
-#: src/languages/clojure.md:5
+#: src/languages/clojure.md:7
 msgid ""
 "Tree-sitter: [prcastro/tree-sitter-clojure](https://github.com/prcastro/tree-"
 "sitter-clojure)"
 msgstr ""
 
-#: src/languages/clojure.md:6
+#: src/languages/clojure.md:8
 msgid ""
 "Language Server: [clojure-lsp/clojure-lsp](https://github.com/clojure-lsp/"
 "clojure-lsp)"
