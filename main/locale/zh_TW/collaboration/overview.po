@@ -125,6 +125,3 @@ msgstr ""
 #: src/collaboration/overview.md:45
 msgid "Set either value to `null` to use system defaults."
 msgstr ""
-
-#~ msgid "Collaboration panel"
-#~ msgstr "協作面板"

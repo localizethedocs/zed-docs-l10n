@@ -344,7 +344,7 @@ msgstr ""
 
 #: src/languages/php.md:168 src/languages/php.md:204
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/php.md:169 src/languages/php.md:205
 msgid "\"includeLanguages\""

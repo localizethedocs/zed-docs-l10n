@@ -148,6 +148,3 @@ msgid ""
 "back here to set up AI. For a higher-level overview, see [zed.dev/ai]"
 "(https://zed.dev/ai)."
 msgstr ""
-
-#~ msgid "Edit Prediction"
-#~ msgstr "編輯預測"

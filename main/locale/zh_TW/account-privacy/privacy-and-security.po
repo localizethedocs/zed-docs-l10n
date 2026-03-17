@@ -114,12 +114,3 @@ msgstr ""
 #: src/ai/privacy-and-security.md:36
 msgid "[Subprocessors](https://zed.dev/subprocessors)"
 msgstr ""
-
-#~ msgid "Documentation"
-#~ msgstr "文件"
-
-#~ msgid "[Terms of Service](https://zed.dev/terms-of-service)"
-#~ msgstr "[服務條款](https://zed.dev/terms-of-service)"
-
-#~ msgid "[Terms of Use](https://zed.dev/terms)"
-#~ msgstr "[使用條款](https://zed.dev/terms)"

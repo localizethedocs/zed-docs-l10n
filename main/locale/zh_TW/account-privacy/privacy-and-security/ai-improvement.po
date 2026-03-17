@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/ai/ai-improvement.md:5
 msgid "Overview"
-msgstr ""
+msgstr "概覽"
 
 #: src/ai/ai-improvement.md:7
 msgid "AI features in Zed include:"
@@ -423,6 +423,3 @@ msgstr ""
 #: src/ai/ai-improvement.md:136
 msgid "Please see the [Zed Terms of Service](https://zed.dev/terms) for more."
 msgstr ""
-
-#~ msgid "Data we collect"
-#~ msgstr "我們收集的資料"

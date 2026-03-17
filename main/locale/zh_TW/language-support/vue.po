@@ -59,7 +59,7 @@ msgstr ""
 
 #: src/languages/vue.md:23 src/languages/vue.md:41 src/languages/vue.md:68
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/vue.md:24 src/languages/vue.md:42 src/languages/vue.md:72
 msgid "\"vue\""
@@ -94,7 +94,7 @@ msgstr ""
 
 #: src/languages/vue.md:43 src/languages/vue.md:70
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/vue.md:44
 msgid ""

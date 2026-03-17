@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/ai/tool-permissions.md:1
@@ -253,7 +253,7 @@ msgstr ""
 
 #: src/ai/tool-permissions.md:62
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: src/ai/tool-permissions.md:70
 msgid "\"<tool_name>\""
@@ -517,7 +517,7 @@ msgstr ""
 
 #: src/ai/tool-permissions.md:190
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/ai/tool-permissions.md:192
 msgid "Terminal: Auto-Approve Build Commands"

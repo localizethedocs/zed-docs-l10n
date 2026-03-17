@@ -430,7 +430,7 @@ msgstr ""
 
 #: src/configuring-languages.md:128
 msgid "Examples"
-msgstr ""
+msgstr "範例"
 
 #: src/configuring-languages.md:130
 msgid "Suppose you're working with Ruby. The default configuration is:"
@@ -470,7 +470,7 @@ msgstr ""
 
 #: src/configuring-languages.md:148
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: src/configuring-languages.md:148
 msgid "Result"

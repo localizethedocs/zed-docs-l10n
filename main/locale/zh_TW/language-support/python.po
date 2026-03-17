@@ -963,6 +963,3 @@ msgid ""
 "environment Zed is sending to the language server—look for the `* "
 "Configuration` section at the end."
 msgstr ""
-
-#~ msgid "\"external\""
-#~ msgstr "\"external\""

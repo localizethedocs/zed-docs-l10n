@@ -187,7 +187,7 @@ msgstr ""
 
 #: src/languages/svelte.md:85
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/svelte.md:86
 msgid "\"includeLanguages\""

@@ -266,12 +266,3 @@ msgid ""
 "called `my-cool-theme.json` in that directory. It will be available in the "
 "theme selector the next time Zed loads."
 msgstr ""
-
-#~ msgid "Installing more Themes"
-#~ msgstr "安裝更多主題"
-
-#~ msgid "Theme Development"
-#~ msgstr "主題開發"
-
-#~ msgid "See: [Developing Zed Themes](./extensions/themes.md)"
-#~ msgstr "請參見：[開發 Zed 主題](./extensions/themes.md)"

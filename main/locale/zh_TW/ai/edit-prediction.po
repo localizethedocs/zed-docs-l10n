@@ -491,11 +491,11 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:263
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/ai/edit-prediction.md:264
 msgid "\"Python\""
-msgstr ""
+msgstr "\"Python\""
 
 #: src/ai/edit-prediction.md:271
 msgid "In Specific Directories"
@@ -720,7 +720,7 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:408
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: src/ai/edit-prediction.md:410
 msgid ""

@@ -68,6 +68,3 @@ msgid ""
 "See [this blog post](https://zed.dev/blog/disable-ai-features) for further "
 "context on this option."
 msgstr ""
-
-#~ msgid "When using AI in Zed, you can configure multiple dimensions:"
-#~ msgstr "在 Zed 中使用 AI 時，您可以從多個維度進行組態："

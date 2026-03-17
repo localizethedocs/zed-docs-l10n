@@ -136,12 +136,3 @@ msgstr ""
 #: src/snippets.md:42
 msgid "Currently only the `json` snippet file format is supported."
 msgstr ""
-
-#~ msgid "See also"
-#~ msgstr "另請參見"
-
-#~ msgid "\"lsp\""
-#~ msgstr "\"lsp\""
-
-#~ msgid "\"settings\""
-#~ msgstr "\"settings\""

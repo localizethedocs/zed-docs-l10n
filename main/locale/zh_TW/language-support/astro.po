@@ -48,7 +48,7 @@ msgstr ""
 
 #: src/languages/astro.md:16
 msgid "\"lsp\""
-msgstr ""
+msgstr "\"lsp\""
 
 #: src/languages/astro.md:17
 msgid "\"tailwindcss-language-server\""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/languages/astro.md:18
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/astro.md:19
 msgid "\"includeLanguages\""

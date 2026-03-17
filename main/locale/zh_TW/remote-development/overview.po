@@ -662,7 +662,7 @@ msgstr ""
 
 #: src/remote-development.md:262
 msgid "See also"
-msgstr ""
+msgstr "另請參見"
 
 #: src/remote-development.md:264
 msgid ""

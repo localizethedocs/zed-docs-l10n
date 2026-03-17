@@ -219,6 +219,3 @@ msgid ""
 "default prompts. For more details, see the [Rules Templates](./text-threads."
 "md#rule-templates) section under [Text Threads](./text-threads.md)."
 msgstr ""
-
-#~ msgid "Editing the Default Rules"
-#~ msgstr "編輯預設規則"

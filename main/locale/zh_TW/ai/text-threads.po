@@ -620,6 +620,3 @@ msgid ""
 "![Viewing assistant history](https://zed.dev/img/assistant/assistant-history."
 "png)"
 msgstr ""
-
-#~ msgid "Overview"
-#~ msgstr "概覽"

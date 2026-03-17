@@ -745,7 +745,7 @@ msgstr ""
 
 #: src/tasks.md:313
 msgid "\"program\""
-msgstr ""
+msgstr "\"program\""
 
 #: src/tasks.md:313
 msgid "\"/bin/zsh\""

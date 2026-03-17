@@ -50,7 +50,7 @@ msgstr ""
 
 #: src/languages/csharp.md:16
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/csharp.md:17
 msgid "\"CSharp\""
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/languages/csharp.md:18
 msgid "\"language_servers\""
-msgstr ""
+msgstr "\"language_servers\""
 
 #: src/languages/csharp.md:18 src/languages/csharp.md:119
 msgid "\"omnisharp\""
@@ -94,7 +94,7 @@ msgstr ""
 
 #: src/languages/csharp.md:34
 msgid "\"settings\""
-msgstr ""
+msgstr "\"settings\""
 
 #: src/languages/csharp.md:35
 msgid ""
@@ -376,6 +376,3 @@ msgstr ""
 #: src/languages/csharp.md:122
 msgid "\"-lsp\" /* add extra arguments */"
 msgstr ""
-
-#~ msgid "\"args\""
-#~ msgstr "\"args\""
