@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/tab-switcher.md:13
 msgid ""
-"When the Tab Switcher is opened using <kbd class=\"keybinding\">ctrl-tab|"
+"When the Tab Switcher is opened using <kbd class=\"keybinding\">ctrl-tab\\|"
 "ctrl-tab</kbd>, instead of running the <code class=\"hljs\">tab switcher: "
 "toggle</code> from the command palette, it'll stay active as long as the "
 "<kbd class=\"keybinding\">ctrl</kbd> key is held down."
@@ -57,8 +57,8 @@ msgstr ""
 #: src/tab-switcher.md:25
 msgid ""
 "The Tab Switcher can also be opened with either <code class=\"hljs\">tab "
-"switcher: toggle</code> (<kbd class=\"keybinding\">ctrl-tab|ctrl-tab</kbd>) "
-"or <code class=\"hljs\">tab switcher: toggle all</code>."
+"switcher: toggle</code> (<kbd class=\"keybinding\">ctrl-tab\\|ctrl-tab</"
+"kbd>) or <code class=\"hljs\">tab switcher: toggle all</code>."
 msgstr ""
 
 #: src/tab-switcher.md:28
@@ -67,12 +67,13 @@ msgstr ""
 
 #: src/tab-switcher.md:30
 msgid ""
-"Press <kbd class=\"keybinding\">down|down</kbd> to move to the next tab in "
+"Press <kbd class=\"keybinding\">down\\|down</kbd> to move to the next tab in "
 "the list"
 msgstr ""
 
 #: src/tab-switcher.md:31
-msgid "Press <kbd class=\"keybinding\">up|up</kbd> to move to the previous tab"
+msgid ""
+"Press <kbd class=\"keybinding\">up\\|up</kbd> to move to the previous tab"
 msgstr ""
 
 #: src/tab-switcher.md:32
@@ -89,8 +90,8 @@ msgstr ""
 
 #: src/tab-switcher.md:35
 msgid ""
-"Press <kbd class=\"keybinding\">ctrl-backspace|ctrl-backspace</kbd> to close "
-"the currently selected tab"
+"Press <kbd class=\"keybinding\">ctrl-backspace\\|ctrl-backspace</kbd> to "
+"close the currently selected tab"
 msgstr ""
 
 #: src/tab-switcher.md:37

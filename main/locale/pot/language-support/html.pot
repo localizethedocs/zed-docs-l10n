@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: src/languages/html.md:24
 msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > HTML, or add to your settings file:"
 msgstr ""
 
@@ -81,8 +81,8 @@ msgstr ""
 #: src/languages/html.md:34
 msgid ""
 "You can still trigger formatting manually with <kbd class=\"keybinding\">cmd-"
-"shift-i|ctrl-shift-i</kbd> or by opening the [command palette](..//getting-"
-"started.md#command-palette) (<kbd class=\"keybinding\">cmd-shift-p|ctrl-"
+"shift-i\\|ctrl-shift-i</kbd> or by opening the [command palette](..//getting-"
+"started.md#command-palette) (<kbd class=\"keybinding\">cmd-shift-p\\|ctrl-"
 "shift-p</kbd>) and selecting \"Format Document\"."
 msgstr ""
 
@@ -94,7 +94,7 @@ msgstr ""
 msgid ""
 "To use the `vscode-html-language-server` language server auto-formatting "
 "instead of Prettier, configure the formatter in Settings (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > HTML, or add to "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > HTML, or add to "
 "your settings file:"
 msgstr ""
 

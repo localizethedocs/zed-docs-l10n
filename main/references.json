@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-03-14 02:14:25 -0300",
-      "hash" : "e79429b51b626e0120278b694351cd34a83386be",
-      "title" : "agent_ui: Add more UI refinements to sidebar (#51545)"
+      "date" : "2026-04-07 05:21:47 -0400",
+      "hash" : "ccb9e60a6258d57104cc56db87fe03024dd231ef",
+      "title" : "agent_panel: Add new thread git worktree/branch pickers (#52979)"
     }
   },
   "type" : "branch",

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -73,7 +73,7 @@ msgstr ""
 #: src/languages/java.md:24
 msgid ""
 "You can install by opening <code class=\"hljs\">zed: extensions</code>(<kbd "
-"class=\"keybinding\">cmd-shift-x|ctrl-shift-x</kbd>) and searching for "
+"class=\"keybinding\">cmd-shift-x\\|ctrl-shift-x</kbd>) and searching for "
 "`java`."
 msgstr ""
 
