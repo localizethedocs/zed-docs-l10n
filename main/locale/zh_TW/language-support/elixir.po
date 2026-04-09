@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 
 #: src/languages/elixir.md:7
-msgid "Tree-sitter:"
+msgid "Tree-sitter Grammars:"
 msgstr ""
 
 #: src/languages/elixir.md:8
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 
 #: src/languages/elixir.md:10
-msgid "Language servers:"
+msgid "Language Servers:"
 msgstr ""
 
 #: src/languages/elixir.md:11
@@ -58,291 +58,413 @@ msgid "[lexical-lsp/lexical](https://github.com/lexical-lsp/lexical)"
 msgstr ""
 
 #: src/languages/elixir.md:16
-msgid "Choosing a language server"
-msgstr "選擇語言伺服器"
+msgid ""
+"Furthermore, the extension provides support for [EEx](https://hexdocs.pm/eex/"
+"EEx.html) (Embedded Elixir) templates and [HEEx](https://hexdocs.pm/phoenix/"
+"components.html#heex) templates, a mix of HTML and EEx used by Phoenix "
+"LiveView applications."
+msgstr ""
 
 #: src/languages/elixir.md:18
-msgid ""
-"The Elixir extension offers language server support for `expert`, `elixir-"
-"ls`, `next-ls`, and `lexical`."
+msgid "Language Servers"
 msgstr ""
 
 #: src/languages/elixir.md:20
-msgid "`elixir-ls` is enabled by default."
+msgid ""
+"The Elixir extension offers language server support for ElixirLS, Expert, "
+"Next LS, and Lexical. By default, only ElixirLS is enabled. You can change "
+"or disable the enabled language servers in your settings (<kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > Elixir/EEx/HEEx "
+"or directly within your settings file."
 msgstr ""
 
 #: src/languages/elixir.md:22
-msgid "Expert"
-msgstr ""
-
-#: src/languages/elixir.md:24 src/languages/elixir.md:39
-#: src/languages/elixir.md:54
 msgid ""
-"Configure language servers in Settings (<kbd class=\"keybinding\">cmd-,|"
-"ctrl-,</kbd>) under Languages > Elixir, or add to your settings file:"
+"Some of the language servers can also accept initialization or workspace "
+"configuration options. See the sections below for an outline of what each "
+"server supports. The configuration can be passed in your settings file via "
+"`lsp.{language-server-id}.initialization_options` and `lsp.{language-server-"
+"id}.settings` respectively."
 msgstr ""
 
-#: src/languages/elixir.md:27 src/languages/elixir.md:42
-#: src/languages/elixir.md:57 src/languages/elixir.md:93
-msgid "\"languages\""
-msgstr ""
-
-#: src/languages/elixir.md:28 src/languages/elixir.md:43
-#: src/languages/elixir.md:58 src/languages/elixir.md:94
-msgid "\"Elixir\""
-msgstr ""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"language_servers\""
-msgstr "\"language_servers\""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-msgid "\"expert\""
-msgstr ""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"!elixir-ls\""
-msgstr ""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"!next-ls\""
-msgstr ""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-msgid "\"!lexical\""
-msgstr ""
-
-#: src/languages/elixir.md:29 src/languages/elixir.md:32
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"...\""
-msgstr ""
-
-#: src/languages/elixir.md:31 src/languages/elixir.md:46
-#: src/languages/elixir.md:61
-msgid "\"HEEX\""
-msgstr ""
-
-#: src/languages/elixir.md:37
-msgid "Next LS"
-msgstr ""
-
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-msgid "\"next-ls\""
-msgstr ""
-
-#: src/languages/elixir.md:44 src/languages/elixir.md:47
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"!expert\""
-msgstr ""
-
-#: src/languages/elixir.md:52
-msgid "Lexical"
-msgstr ""
-
-#: src/languages/elixir.md:59 src/languages/elixir.md:62
-msgid "\"lexical\""
-msgstr ""
-
-#: src/languages/elixir.md:67
-msgid "Setting up `elixir-ls`"
-msgstr ""
-
-#: src/languages/elixir.md:69
-msgid "Install `elixir`:"
-msgstr ""
-
-#: src/languages/elixir.md:75
-msgid "Install `elixir-ls`:"
-msgstr ""
-
-#: src/languages/elixir.md:81
-msgid "Restart Zed"
-msgstr ""
-
-#: src/languages/elixir.md:83
+#: src/languages/elixir.md:24
 msgid ""
-"If `elixir-ls` is not running in an elixir project, check the error log via "
-"the command palette action `zed: open log`. If you find an error message "
-"mentioning: `invalid LSP message header \"Shall I install Hex? (if running "
-"non-interactively, use \\\"mix local.hex --force\\\") [Yn]`, you might need "
-"to install [`Hex`](https://hex.pm). You run `elixir-ls` from the command "
-"line and accept the prompt to install `Hex`."
+"Visit the [Configuring Zed](../configuring-zed.md#settings-files) guide for "
+"more information on how to edit your settings file."
 msgstr ""
 
-#: src/languages/elixir.md:85
-msgid "Formatting with Mix"
+#: src/languages/elixir.md:26
+msgid "Using ElixirLS"
 msgstr ""
 
-#: src/languages/elixir.md:87
+#: src/languages/elixir.md:28
+msgid "ElixirLS can accept workspace configuration options."
+msgstr ""
+
+#: src/languages/elixir.md:30
 msgid ""
-"If you prefer to format your code with [Mix](https://hexdocs.pm/mix/Mix."
-"html), configure it as an external formatter. Formatting will occur on file "
-"save."
+"The following example disables [Dialyzer](https://github.com/elixir-lsp/"
+"elixir-ls#dialyzer-integration):"
 msgstr ""
 
-#: src/languages/elixir.md:89
-msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
-"kbd>) under Languages > Elixir, or add to your settings file:"
-msgstr ""
-
-#: src/languages/elixir.md:95
-msgid "\"format_on_save\""
-msgstr ""
-
-#: src/languages/elixir.md:95
-msgid "\"on\""
-msgstr ""
-
-#: src/languages/elixir.md:96
-msgid "\"formatter\""
-msgstr ""
-
-#: src/languages/elixir.md:97
-msgid "\"external\""
-msgstr ""
-
-#: src/languages/elixir.md:98
-msgid "\"command\""
-msgstr ""
-
-#: src/languages/elixir.md:98
-msgid "\"mix\""
-msgstr ""
-
-#: src/languages/elixir.md:99
-msgid "\"arguments\""
-msgstr ""
-
-#: src/languages/elixir.md:99
-msgid "\"format\""
-msgstr ""
-
-#: src/languages/elixir.md:99
-msgid "\"--stdin-filename\""
-msgstr "\"--stdin-filename\""
-
-#: src/languages/elixir.md:99
-msgid "\"{buffer_path}\""
-msgstr ""
-
-#: src/languages/elixir.md:99
-msgid "\"-\""
-msgstr "\"-\""
-
-#: src/languages/elixir.md:107
-msgid "Additional workspace configuration options"
-msgstr ""
-
-#: src/languages/elixir.md:109
-msgid ""
-"You can pass additional elixir-ls workspace configuration options via `lsp` "
-"settings in your settings file ([how to edit](../configuring-zed.md#settings-"
-"files))."
-msgstr ""
-
-#: src/languages/elixir.md:111
-msgid "The following example disables dialyzer:"
-msgstr ""
-
-#: src/languages/elixir.md:114 src/languages/elixir.md:137
+#: src/languages/elixir.md:33 src/languages/elixir.md:67
+#: src/languages/elixir.md:83 src/languages/elixir.md:116
+#: src/languages/elixir.md:132 src/languages/elixir.md:148
+#: src/languages/elixir.md:225
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/languages/elixir.md:115
+#: src/languages/elixir.md:34
 msgid "\"elixir-ls\""
 msgstr ""
 
-#: src/languages/elixir.md:116 src/languages/elixir.md:139
+#: src/languages/elixir.md:35 src/languages/elixir.md:69
+#: src/languages/elixir.md:227
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/languages/elixir.md:117
+#: src/languages/elixir.md:36
 msgid "\"dialyzerEnabled\""
 msgstr ""
 
-#: src/languages/elixir.md:123
+#: src/languages/elixir.md:42
 msgid ""
-"See [ElixirLS configuration settings](https://github.com/elixir-lsp/elixir-"
-"ls#elixirls-configuration-settings) for more options."
+"See the official list of [ElixirLS configuration settings](https://github."
+"com/elixir-lsp/elixir-ls#elixirls-configuration-settings) for all available "
+"options."
 msgstr ""
 
-#: src/languages/elixir.md:125
-msgid "HEEx"
+#: src/languages/elixir.md:44
+msgid "Using Expert"
 msgstr ""
 
-#: src/languages/elixir.md:127
+#: src/languages/elixir.md:46
+msgid "Enable Expert by adding the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:49 src/languages/elixir.md:98
+#: src/languages/elixir.md:168 src/languages/elixir.md:186
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/elixir.md:50 src/languages/elixir.md:99
+#: src/languages/elixir.md:169 src/languages/elixir.md:187
+msgid "\"Elixir\""
+msgstr ""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:100
+#: src/languages/elixir.md:103 src/languages/elixir.md:106
+#: src/languages/elixir.md:170 src/languages/elixir.md:173
+#: src/languages/elixir.md:176
+msgid "\"language_servers\""
+msgstr "\"language_servers\""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:68
+#: src/languages/elixir.md:84
+msgid "\"expert\""
+msgstr ""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:100
+#: src/languages/elixir.md:103 src/languages/elixir.md:106
+#: src/languages/elixir.md:170 src/languages/elixir.md:173
+#: src/languages/elixir.md:176
+msgid "\"!elixir-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:170
+#: src/languages/elixir.md:173 src/languages/elixir.md:176
+msgid "\"!next-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:100
+#: src/languages/elixir.md:103 src/languages/elixir.md:106
+msgid "\"!lexical\""
+msgstr ""
+
+#: src/languages/elixir.md:51 src/languages/elixir.md:54
+#: src/languages/elixir.md:57 src/languages/elixir.md:100
+#: src/languages/elixir.md:103 src/languages/elixir.md:106
+#: src/languages/elixir.md:170 src/languages/elixir.md:173
+#: src/languages/elixir.md:176
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/elixir.md:53 src/languages/elixir.md:102
+#: src/languages/elixir.md:172 src/languages/elixir.md:197
+msgid "\"EEx\""
+msgstr ""
+
+#: src/languages/elixir.md:56 src/languages/elixir.md:105
+#: src/languages/elixir.md:175 src/languages/elixir.md:207
+msgid "\"HEEx\""
+msgstr ""
+
+#: src/languages/elixir.md:62
+msgid "Expert can accept workspace configuration options."
+msgstr ""
+
+#: src/languages/elixir.md:64
 msgid ""
-"Zed also supports HEEx templates. HEEx is a mix of [EEx](https://hexdocs.pm/"
-"eex/1.12.3/EEx.html) (Embedded Elixir) and HTML, and is used in Phoenix "
-"LiveView applications."
+"The following example sets the minimum number of characters required for a "
+"project symbol search to return results:"
+msgstr ""
+
+#: src/languages/elixir.md:70
+msgid "\"workspaceSymbols\""
+msgstr ""
+
+#: src/languages/elixir.md:71
+msgid "\"minQueryLength\""
+msgstr ""
+
+#: src/languages/elixir.md:78
+msgid ""
+"See the [Expert configuration](https://expert-lsp.org/docs/configuration/) "
+"page for all available options."
+msgstr ""
+
+#: src/languages/elixir.md:80
+msgid "To use a custom Expert build, add the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:85
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/elixir.md:86
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/elixir.md:86
+msgid "\"/path/to/expert\""
+msgstr ""
+
+#: src/languages/elixir.md:87 src/languages/elixir.md:193
+#: src/languages/elixir.md:203 src/languages/elixir.md:213
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/elixir.md:87
+msgid "\"--stdio\""
+msgstr ""
+
+#: src/languages/elixir.md:93
+msgid "Using Next LS"
+msgstr ""
+
+#: src/languages/elixir.md:95
+msgid "Enable Next LS by adding the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:100 src/languages/elixir.md:103
+#: src/languages/elixir.md:106 src/languages/elixir.md:117
+#: src/languages/elixir.md:133 src/languages/elixir.md:149
+msgid "\"next-ls\""
+msgstr ""
+
+#: src/languages/elixir.md:100 src/languages/elixir.md:103
+#: src/languages/elixir.md:106 src/languages/elixir.md:170
+#: src/languages/elixir.md:173 src/languages/elixir.md:176
+msgid "\"!expert\""
+msgstr ""
+
+#: src/languages/elixir.md:111
+msgid "Next LS can accept initialization options."
+msgstr ""
+
+#: src/languages/elixir.md:113
+msgid ""
+"Completions are an experimental feature within Next LS, they are enabled by "
+"default in Zed. Disable them by adding the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:118 src/languages/elixir.md:134
+#: src/languages/elixir.md:150
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/elixir.md:119 src/languages/elixir.md:232
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/elixir.md:120
+msgid "\"completions\""
+msgstr ""
+
+#: src/languages/elixir.md:121 src/languages/elixir.md:137
+msgid "\"enable\""
 msgstr ""
 
 #: src/languages/elixir.md:129
 msgid ""
-"Tree-sitter: [phoenixframework/tree-sitter-heex](https://github.com/"
-"phoenixframework/tree-sitter-heex)"
+"Next LS also has an extension for [Credo](https://hexdocs.pm/credo/overview."
+"html) integration which is enabled by default. You can disable this by "
+"adding the following section to your settings file:"
 msgstr ""
 
-#: src/languages/elixir.md:131
-msgid "Using the Tailwind CSS Language Server with HEEx"
+#: src/languages/elixir.md:135 src/languages/elixir.md:151
+msgid "\"extensions\""
 msgstr ""
 
-#: src/languages/elixir.md:133
+#: src/languages/elixir.md:136 src/languages/elixir.md:152
+msgid "\"credo\""
+msgstr ""
+
+#: src/languages/elixir.md:145
+msgid ""
+"Next LS can also pass CLI options directly to Credo. The following example "
+"passes `--min-priority high` to it:"
+msgstr ""
+
+#: src/languages/elixir.md:153
+msgid "\"cli_options\""
+msgstr ""
+
+#: src/languages/elixir.md:153
+msgid "\"--min-priority high\""
+msgstr ""
+
+#: src/languages/elixir.md:161
+msgid ""
+"See the [Credo Command Line Switches](https://hexdocs.pm/credo/"
+"suggest_command.html#command-line-switches) page for more CLI options."
+msgstr ""
+
+#: src/languages/elixir.md:163
+msgid "Using Lexical"
+msgstr ""
+
+#: src/languages/elixir.md:165
+msgid "Enable Lexical by adding the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:170 src/languages/elixir.md:173
+#: src/languages/elixir.md:176
+msgid "\"lexical\""
+msgstr ""
+
+#: src/languages/elixir.md:181
+msgid "Formatting without a language server"
+msgstr ""
+
+#: src/languages/elixir.md:183
+msgid ""
+"If you prefer to work without a language server but would still like code "
+"formatting from [Mix](https://hexdocs.pm/mix/Mix.html), you can configure it "
+"as an external formatter by adding the following to your settings file:"
+msgstr ""
+
+#: src/languages/elixir.md:188 src/languages/elixir.md:198
+#: src/languages/elixir.md:208
+msgid "\"enable_language_server\""
+msgstr ""
+
+#: src/languages/elixir.md:189 src/languages/elixir.md:199
+#: src/languages/elixir.md:209
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/elixir.md:189 src/languages/elixir.md:199
+#: src/languages/elixir.md:209
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/elixir.md:190 src/languages/elixir.md:200
+#: src/languages/elixir.md:210
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/elixir.md:191 src/languages/elixir.md:201
+#: src/languages/elixir.md:211
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/elixir.md:192 src/languages/elixir.md:202
+#: src/languages/elixir.md:212
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/elixir.md:192 src/languages/elixir.md:202
+#: src/languages/elixir.md:212
+msgid "\"mix\""
+msgstr ""
+
+#: src/languages/elixir.md:193 src/languages/elixir.md:203
+#: src/languages/elixir.md:213
+msgid "\"format\""
+msgstr ""
+
+#: src/languages/elixir.md:193 src/languages/elixir.md:203
+#: src/languages/elixir.md:213
+msgid "\"--stdin-filename\""
+msgstr "\"--stdin-filename\""
+
+#: src/languages/elixir.md:193 src/languages/elixir.md:203
+#: src/languages/elixir.md:213
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/languages/elixir.md:193 src/languages/elixir.md:203
+#: src/languages/elixir.md:213
+msgid "\"-\""
+msgstr "\"-\""
+
+#: src/languages/elixir.md:220
+msgid "Using the Tailwind CSS Language Server with HEEx templates"
+msgstr ""
+
+#: src/languages/elixir.md:222
 msgid ""
 "To get all features (autocomplete, linting, and hover docs) from the "
 "[Tailwind CSS language server](https://github.com/tailwindlabs/tailwindcss-"
 "intellisense/tree/HEAD/packages/tailwindcss-language-server#readme) in HEEx "
-"files, add the following to your settings file ([how to edit](../configuring-"
-"zed.md#settings-files)):"
+"templates, add the following to your settings file:"
 msgstr ""
 
-#: src/languages/elixir.md:138
+#: src/languages/elixir.md:226
 msgid "\"tailwindcss-language-server\""
 msgstr ""
 
-#: src/languages/elixir.md:140
+#: src/languages/elixir.md:228
 msgid "\"includeLanguages\""
 msgstr ""
 
-#: src/languages/elixir.md:141
-msgid "\"phoenix-heex\""
+#: src/languages/elixir.md:229
+msgid "\"elixir\""
 msgstr ""
 
-#: src/languages/elixir.md:141
+#: src/languages/elixir.md:229 src/languages/elixir.md:230
 msgid "\"html\""
 msgstr ""
 
-#: src/languages/elixir.md:143
-msgid "\"experimental\""
+#: src/languages/elixir.md:230
+msgid "\"heex\""
 msgstr ""
 
-#: src/languages/elixir.md:144
+#: src/languages/elixir.md:233
 msgid "\"classRegex\""
 msgstr ""
 
-#: src/languages/elixir.md:144
+#: src/languages/elixir.md:233
 msgid "\"class=\\\"([^\\\"]*)\\\"\""
 msgstr ""
 
-#: src/languages/elixir.md:144
+#: src/languages/elixir.md:233
 msgid "\"class='([^']*)'\""
 msgstr ""
 
-#: src/languages/elixir.md:152
+#: src/languages/elixir.md:240
 msgid ""
 "With these settings, you will get completions for Tailwind CSS classes in "
-"HEEx template files. Examples:"
+"HEEx templates. Examples:"
 msgstr ""
 
-#: src/languages/elixir.md:154
+#: src/languages/elixir.md:242
 msgid ""
 "```heex\n"
 "<%!-- Standard class attribute --%>\n"
@@ -362,3 +484,18 @@ msgid ""
 "</div>\n"
 "```"
 msgstr ""
+
+#: src/languages/elixir.md:259
+msgid "See also"
+msgstr ""
+
+#: src/languages/elixir.md:261
+msgid "[Erlang](./erlang.md)"
+msgstr ""
+
+#: src/languages/elixir.md:262
+msgid "[Gleam](./gleam.md)"
+msgstr ""
+
+#~ msgid "Choosing a language server"
+#~ msgstr "選擇語言伺服器"

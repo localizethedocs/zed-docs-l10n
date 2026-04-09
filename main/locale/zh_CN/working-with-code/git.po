@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -137,9 +137,9 @@ msgstr ""
 #: src/git.md:48
 msgid ""
 "You can see all of the changes captured by Git in Zed by opening the Project "
-"Diff (<kbd class=\"keybinding\">ctrl-g d|ctrl-g d</kbd>), accessible via the "
-"<code class=\"hljs\">git: diff</code> action in the Command Palette or the "
-"Git Panel."
+"Diff (<kbd class=\"keybinding\">ctrl-g d\\|ctrl-g d</kbd>), accessible via "
+"the <code class=\"hljs\">git: diff</code> action in the Command Palette or "
+"the Git Panel."
 msgstr ""
 
 #: src/git.md:50
@@ -200,8 +200,8 @@ msgstr ""
 
 #: src/git.md:76
 msgid ""
-"Open the Settings Editor (<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) and "
-"search for \"diff view style\". Select either **Split** or **Unified**."
+"Open the Settings Editor (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) "
+"and search for \"diff view style\". Select either **Split** or **Unified**."
 msgstr ""
 
 #: src/git.md:78
@@ -349,17 +349,17 @@ msgstr ""
 msgid ""
 "In the Project Diff view, you can focus on each hunk and stage them "
 "individually by clicking on the tab bar buttons or via the keybindings <code "
-"class=\"hljs\">git: stage and next</code> (<kbd class=\"keybinding\">cmd-y|"
+"class=\"hljs\">git: stage and next</code> (<kbd class=\"keybinding\">cmd-y\\|"
 "alt-y</kbd>)."
 msgstr ""
 
 #: src/git.md:132
 msgid ""
 "Similarly, stage all hunks at the same time with the <code "
-"class=\"hljs\">git: stage all</code> (<kbd class=\"keybinding\">cmd-ctrl-y|"
+"class=\"hljs\">git: stage all</code> (<kbd class=\"keybinding\">cmd-ctrl-y\\|"
 "ctrl-space</kbd>) keybinding and then immediately commit with <code "
-"class=\"hljs\">git: commit</code> (<kbd class=\"keybinding\">cmd-enter|ctrl-"
-"enter</kbd>)."
+"class=\"hljs\">git: commit</code> (<kbd class=\"keybinding\">cmd-enter\\|"
+"ctrl-enter</kbd>)."
 msgstr ""
 
 #: src/git.md:134
@@ -392,15 +392,15 @@ msgstr ""
 #: src/git.md:148
 msgid ""
 "The first one is available right at the bottom of the Git Panel. Hitting "
-"<kbd class=\"keybinding\">cmd-enter|ctrl-enter</kbd> immediately commits all "
-"of your staged changes."
+"<kbd class=\"keybinding\">cmd-enter\\|ctrl-enter</kbd> immediately commits "
+"all of your staged changes."
 msgstr ""
 
 #: src/git.md:149
 msgid ""
 "The second is available via the action <code class=\"hljs\">git: expand "
 "commit editor</code> or via hitting the <kbd class=\"keybinding\">shift-"
-"escape|</kbd> while focused in the Git Panel commit textarea."
+"escape\\|</kbd> while focused in the Git Panel commit textarea."
 msgstr ""
 
 #: src/git.md:151
@@ -620,7 +620,7 @@ msgstr ""
 #: src/git.md:224
 msgid ""
 "To view a stash's contents, select it in the stash picker and press <kbd "
-"class=\"keybinding\">ctrl-shift-v|ctrl-shift-v</kbd>. From the diff view, "
+"class=\"keybinding\">ctrl-shift-v\\|ctrl-shift-v</kbd>. From the diff view, "
 "you can use these keybindings:"
 msgstr ""
 
@@ -637,7 +637,7 @@ msgid "Apply stash"
 msgstr ""
 
 #: src/git.md:228
-msgid "<kbd class=\"keybinding\">ctrl-space"
+msgid "<kbd class=\"keybinding\">ctrl-space\\|ctrl-space</kbd>"
 msgstr ""
 
 #: src/git.md:229
@@ -645,7 +645,7 @@ msgid "Pop stash (apply and remove)"
 msgstr ""
 
 #: src/git.md:229
-msgid "<kbd class=\"keybinding\">ctrl-shift-space"
+msgid "<kbd class=\"keybinding\">ctrl-shift-space\\|ctrl-shift-space</kbd>"
 msgstr ""
 
 #: src/git.md:230
@@ -653,7 +653,8 @@ msgid "Drop stash (remove without applying)"
 msgstr ""
 
 #: src/git.md:230
-msgid "<kbd class=\"keybinding\">ctrl-shift-backspace"
+msgid ""
+"<kbd class=\"keybinding\">ctrl-shift-backspace\\|ctrl-shift-backspace</kbd>"
 msgstr ""
 
 #: src/git.md:232
@@ -666,7 +667,7 @@ msgid ""
 "to generate a commit message by focusing on the message editor within the "
 "Git Panel and either clicking on the pencil icon in the bottom left, or "
 "reaching for the <code class=\"hljs\">git: generate commit message</code> "
-"(<kbd class=\"keybinding\">alt-tab|alt-l</kbd>) keybinding."
+"(<kbd class=\"keybinding\">alt-tab\\|alt-l</kbd>) keybinding."
 msgstr ""
 
 #: src/git.md:237
@@ -829,7 +830,7 @@ msgstr ""
 #: src/git.md:307
 msgid ""
 "**Expand all diff hunks**: <code class=\"hljs\">editor: expand all diff "
-"hunks</code> (<kbd class=\"keybinding\">cmd-\"|ctrl-\"</kbd>)"
+"hunks</code> (<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>)"
 msgstr ""
 
 #: src/git.md:308
@@ -841,7 +842,7 @@ msgstr ""
 #: src/git.md:309
 msgid ""
 "**Toggle selected diff hunks**: <code class=\"hljs\">editor: toggle selected "
-"diff hunks</code> (<kbd class=\"keybinding\">cmd-'|ctrl-'</kbd>)"
+"diff hunks</code> (<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>)"
 msgstr ""
 
 #: src/git.md:310
@@ -874,7 +875,7 @@ msgid "<code class=\"hljs\">git: stage all</code>"
 msgstr ""
 
 #: src/git.md:319
-msgid "<kbd class=\"keybinding\">cmd-ctrl-y"
+msgid "<kbd class=\"keybinding\">cmd-ctrl-y\\|ctrl-space</kbd>"
 msgstr ""
 
 #: src/git.md:320
@@ -882,7 +883,7 @@ msgid "<code class=\"hljs\">git: unstage all</code>"
 msgstr ""
 
 #: src/git.md:320
-msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y"
+msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y\\|ctrl-shift-space</kbd>"
 msgstr ""
 
 #: src/git.md:321
@@ -890,7 +891,7 @@ msgid "<code class=\"hljs\">git: toggle staged</code>"
 msgstr ""
 
 #: src/git.md:321
-msgid "<kbd class=\"keybinding\">space"
+msgid "<kbd class=\"keybinding\">space\\|space</kbd>"
 msgstr ""
 
 #: src/git.md:322
@@ -898,7 +899,7 @@ msgid "<code class=\"hljs\">git: stage and next</code>"
 msgstr ""
 
 #: src/git.md:322
-msgid "<kbd class=\"keybinding\">cmd-y"
+msgid "<kbd class=\"keybinding\">cmd-y\\|alt-y</kbd>"
 msgstr ""
 
 #: src/git.md:323
@@ -906,7 +907,7 @@ msgid "<code class=\"hljs\">git: unstage and next</code>"
 msgstr ""
 
 #: src/git.md:323
-msgid "<kbd class=\"keybinding\">cmd-shift-y"
+msgid "<kbd class=\"keybinding\">cmd-shift-y\\|alt-shift-y</kbd>"
 msgstr ""
 
 #: src/git.md:324
@@ -914,7 +915,7 @@ msgid "<code class=\"hljs\">git: commit</code>"
 msgstr ""
 
 #: src/git.md:324
-msgid "<kbd class=\"keybinding\">cmd-enter"
+msgid "<kbd class=\"keybinding\">cmd-enter\\|ctrl-enter</kbd>"
 msgstr ""
 
 #: src/git.md:325
@@ -922,7 +923,7 @@ msgid "<code class=\"hljs\">git: expand commit editor</code>"
 msgstr ""
 
 #: src/git.md:325
-msgid "<kbd class=\"keybinding\">shift-escape"
+msgid "<kbd class=\"keybinding\">shift-escape\\|</kbd>"
 msgstr ""
 
 #: src/git.md:326
@@ -930,7 +931,7 @@ msgid "<code class=\"hljs\">git: push</code>"
 msgstr ""
 
 #: src/git.md:326
-msgid "<kbd class=\"keybinding\">ctrl-g up"
+msgid "<kbd class=\"keybinding\">ctrl-g up\\|ctrl-g up</kbd>"
 msgstr ""
 
 #: src/git.md:327
@@ -938,7 +939,7 @@ msgid "<code class=\"hljs\">git: force push</code>"
 msgstr ""
 
 #: src/git.md:327
-msgid "<kbd class=\"keybinding\">ctrl-g shift-up"
+msgid "<kbd class=\"keybinding\">ctrl-g shift-up\\|ctrl-g shift-up</kbd>"
 msgstr ""
 
 #: src/git.md:328
@@ -946,7 +947,7 @@ msgid "<code class=\"hljs\">git: pull</code>"
 msgstr ""
 
 #: src/git.md:328
-msgid "<kbd class=\"keybinding\">ctrl-g down"
+msgid "<kbd class=\"keybinding\">ctrl-g down\\|ctrl-g down</kbd>"
 msgstr ""
 
 #: src/git.md:329
@@ -954,7 +955,7 @@ msgid "<code class=\"hljs\">git: pull rebase</code>"
 msgstr ""
 
 #: src/git.md:329
-msgid "<kbd class=\"keybinding\">ctrl-g shift-down"
+msgid "<kbd class=\"keybinding\">ctrl-g shift-down\\|ctrl-g shift-down</kbd>"
 msgstr ""
 
 #: src/git.md:330
@@ -962,7 +963,7 @@ msgid "<code class=\"hljs\">git: fetch</code>"
 msgstr ""
 
 #: src/git.md:330
-msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g"
+msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g\\|ctrl-g ctrl-g</kbd>"
 msgstr ""
 
 #: src/git.md:331
@@ -970,7 +971,7 @@ msgid "<code class=\"hljs\">git: diff</code>"
 msgstr ""
 
 #: src/git.md:331
-msgid "<kbd class=\"keybinding\">ctrl-g d"
+msgid "<kbd class=\"keybinding\">ctrl-g d\\|ctrl-g d</kbd>"
 msgstr ""
 
 #: src/git.md:332
@@ -978,7 +979,7 @@ msgid "<code class=\"hljs\">git: restore</code>"
 msgstr ""
 
 #: src/git.md:332
-msgid "<kbd class=\"keybinding\">cmd-alt-z"
+msgid "<kbd class=\"keybinding\">cmd-alt-z\\|ctrl-k ctrl-r</kbd>"
 msgstr ""
 
 #: src/git.md:333
@@ -986,7 +987,7 @@ msgid "<code class=\"hljs\">git: restore file</code>"
 msgstr ""
 
 #: src/git.md:333
-msgid "<kbd class=\"keybinding\">cmd-delete"
+msgid "<kbd class=\"keybinding\">cmd-delete\\|ctrl-delete</kbd>"
 msgstr ""
 
 #: src/git.md:334
@@ -1006,7 +1007,7 @@ msgid "<code class=\"hljs\">git: blame</code>"
 msgstr ""
 
 #: src/git.md:337
-msgid "<kbd class=\"keybinding\">cmd-alt-g b"
+msgid "<kbd class=\"keybinding\">cmd-alt-g b\\|alt-g b</kbd>"
 msgstr ""
 
 #: src/git.md:338
@@ -1034,7 +1035,7 @@ msgid "<code class=\"hljs\">editor: expand all diff hunks</code>"
 msgstr ""
 
 #: src/git.md:343
-msgid "<kbd class=\"keybinding\">cmd-\""
+msgid "<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>"
 msgstr ""
 
 #: src/git.md:344
@@ -1042,7 +1043,7 @@ msgid "<code class=\"hljs\">editor: toggle selected diff hunks</code>"
 msgstr ""
 
 #: src/git.md:344
-msgid "<kbd class=\"keybinding\">cmd-'"
+msgid "<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>"
 msgstr ""
 
 #: src/git.md:346

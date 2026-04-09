@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -444,10 +444,13 @@ msgstr ""
 msgid "Zed-Hosted Context Window"
 msgstr ""
 
-#: src/ai/models.md:82 src/ai/models.md:83 src/ai/models.md:84
-#: src/ai/models.md:85 src/ai/models.md:86 src/ai/models.md:91
-#: src/ai/models.md:92
+#: src/ai/models.md:82 src/ai/models.md:84 src/ai/models.md:86
+#: src/ai/models.md:91 src/ai/models.md:92
 msgid "200k"
+msgstr ""
+
+#: src/ai/models.md:83 src/ai/models.md:85
+msgid "1M"
 msgstr ""
 
 #: src/ai/models.md:87 src/ai/models.md:88 src/ai/models.md:89
@@ -457,15 +460,15 @@ msgstr ""
 
 #: src/ai/models.md:94
 msgid ""
-"Context window limits for hosted Sonnet 4.5/4.6 and Gemini 3.1 Pro/3 Pro/"
-"Flash may increase in future releases."
+"Context window limits for hosted Gemini 3.1 Pro/3 Pro/Flash may increase in "
+"future releases."
 msgstr ""
 
 #: src/ai/models.md:96
 msgid ""
-"Each Agent thread and text thread in Zed maintains its own context window. "
-"The more prompts, attached files, and responses included in a session, the "
-"larger the context window grows."
+"Each Agent thread in Zed maintains its own context window. The more prompts, "
+"attached files, and responses included in a session, the larger the context "
+"window grows."
 msgstr ""
 
 #: src/ai/models.md:99

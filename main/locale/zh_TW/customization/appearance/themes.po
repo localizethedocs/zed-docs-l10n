@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -29,7 +29,8 @@ msgstr ""
 msgid ""
 "See what themes are installed and preview them via the Theme Selector, which "
 "you can open from the command palette with the `theme selector: toggle` "
-"(bound to <kbd class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</kbd>) action."
+"(bound to <kbd class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-t</kbd>) "
+"action."
 msgstr ""
 
 #: src/themes.md:11
@@ -82,8 +83,8 @@ msgstr "組態主題"
 msgid ""
 "Your selected theme is stored in your settings file. You can open your "
 "settings file from the command palette with <code class=\"hljs\">zed: open "
-"settings file</code> (bound to <kbd class=\"keybinding\">cmd-alt-,|ctrl-alt-,"
-"</kbd>)."
+"settings file</code> (bound to <kbd class=\"keybinding\">cmd-alt-,\\|ctrl-"
+"alt-,</kbd>)."
 msgstr ""
 
 #: src/themes.md:31
@@ -127,8 +128,8 @@ msgstr ""
 
 #: src/themes.md:46
 msgid ""
-"Use <kbd class=\"keybinding\">cmd-k cmd-shift-t|ctrl-k ctrl-shift-t</kbd> to "
-"switch the current theme mode between light and dark."
+"Use <kbd class=\"keybinding\">cmd-k cmd-shift-t\\|ctrl-k ctrl-shift-t</kbd> "
+"to switch the current theme mode between light and dark."
 msgstr ""
 
 #: src/themes.md:48

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -996,7 +996,7 @@ msgid ""
 msgstr ""
 
 #: src/vim.md:250 src/vim.md:297 src/vim.md:307 src/vim.md:316 src/vim.md:326
-#: src/vim.md:334 src/vim.md:345 src/vim.md:394 src/vim.md:556 src/vim.md:601
+#: src/vim.md:334 src/vim.md:345 src/vim.md:394 src/vim.md:556 src/vim.md:603
 msgid "Description"
 msgstr ""
 
@@ -1744,7 +1744,7 @@ msgstr ""
 msgid "\"VimControl && !menu && vim_mode != operator\""
 msgstr ""
 
-#: src/vim.md:469 src/vim.md:630
+#: src/vim.md:469 src/vim.md:632
 msgid "\"w\""
 msgstr ""
 
@@ -1996,11 +1996,11 @@ msgstr ""
 msgid "You can change the following settings to modify vim mode's behavior:"
 msgstr ""
 
-#: src/vim.md:556 src/vim.md:601
+#: src/vim.md:556 src/vim.md:603
 msgid "Property"
 msgstr ""
 
-#: src/vim.md:556 src/vim.md:601
+#: src/vim.md:556 src/vim.md:603
 msgid "Default Value"
 msgstr ""
 
@@ -2051,320 +2051,336 @@ msgid ""
 "is lowercase."
 msgstr ""
 
-#: src/vim.md:561 src/vim.md:562 src/vim.md:563
+#: src/vim.md:561 src/vim.md:563 src/vim.md:564
 msgid "false"
 msgstr ""
 
 #: src/vim.md:562
-msgid "gdefault"
+msgid "use_regex_search"
 msgstr ""
 
 #: src/vim.md:562
+msgid "If `true`, then vim search will use regex mode"
+msgstr ""
+
+#: src/vim.md:562
+msgid "true"
+msgstr ""
+
+#: src/vim.md:563
+msgid "gdefault"
+msgstr ""
+
+#: src/vim.md:563
 msgid ""
 "If `true`, the `:substitute` command replaces all matches in a line by "
 "default (as if `g` flag was given). The `g` flag then toggles this, "
 "replacing only the first match."
 msgstr ""
 
-#: src/vim.md:563
+#: src/vim.md:564
 msgid "toggle_relative_line_numbers"
 msgstr ""
 
-#: src/vim.md:563
+#: src/vim.md:564
 msgid ""
 "If `true`, line numbers are relative in normal mode and absolute in insert "
 "mode, giving you the best of both options."
 msgstr ""
 
-#: src/vim.md:564
+#: src/vim.md:565
 msgid "custom_digraphs"
 msgstr ""
 
-#: src/vim.md:564
+#: src/vim.md:565
 msgid ""
 "An object that allows you to add custom digraphs. Read below for an example."
 msgstr ""
 
-#: src/vim.md:564
+#: src/vim.md:565
 msgid "{}"
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:566
 msgid "highlight_on_yank_duration"
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:566
 msgid "The duration of the highlight animation(in ms). Set to `0` to disable"
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:566
 msgid "200"
 msgstr ""
 
-#: src/vim.md:567
+#: src/vim.md:568
 msgid ""
 "Here's an example of adding a digraph for the zombie emoji. This allows you "
 "to type `ctrl-k f z` to insert a zombie emoji. You can add as many digraphs "
 "as you like."
 msgstr ""
 
-#: src/vim.md:571 src/vim.md:583
+#: src/vim.md:572 src/vim.md:584
 msgid "\"vim\""
 msgstr ""
 
-#: src/vim.md:572 src/vim.md:590
+#: src/vim.md:573 src/vim.md:592
 msgid "\"custom_digraphs\""
 msgstr ""
 
-#: src/vim.md:573 src/vim.md:591
+#: src/vim.md:574 src/vim.md:593
 msgid "\"fz\""
 msgstr ""
 
-#: src/vim.md:573 src/vim.md:591
+#: src/vim.md:574 src/vim.md:593
 msgid "\"🧟‍♀️\""
 msgstr ""
 
-#: src/vim.md:579 src/vim.md:611
+#: src/vim.md:580 src/vim.md:613
 msgid "Here's an example of these settings changed:"
 msgstr ""
 
-#: src/vim.md:584
+#: src/vim.md:585
 msgid "\"default_mode\""
 msgstr ""
 
-#: src/vim.md:584
+#: src/vim.md:585
 msgid "\"insert\""
 msgstr ""
 
-#: src/vim.md:585
+#: src/vim.md:586
 msgid "\"use_system_clipboard\""
 msgstr ""
 
-#: src/vim.md:585 src/vim.md:620
+#: src/vim.md:586 src/vim.md:622
 msgid "\"never\""
 msgstr ""
 
-#: src/vim.md:586
+#: src/vim.md:587
 msgid "\"use_smartcase_find\""
 msgstr ""
 
-#: src/vim.md:587
-msgid "\"gdefault\""
-msgstr ""
-
 #: src/vim.md:588
-msgid "\"toggle_relative_line_numbers\""
+msgid "\"use_regex_search\""
 msgstr ""
 
 #: src/vim.md:589
+msgid "\"gdefault\""
+msgstr ""
+
+#: src/vim.md:590
+msgid "\"toggle_relative_line_numbers\""
+msgstr ""
+
+#: src/vim.md:591
 msgid "\"highlight_on_yank_duration\""
 msgstr ""
 
-#: src/vim.md:597
+#: src/vim.md:599
 msgid "Useful core Zed settings for vim mode"
 msgstr ""
 
-#: src/vim.md:599
+#: src/vim.md:601
 msgid ""
 "Here are a few general Zed settings that can help you fine-tune your Vim "
 "experience:"
 msgstr ""
 
-#: src/vim.md:603
+#: src/vim.md:605
 msgid "cursor_blink"
 msgstr ""
 
-#: src/vim.md:603
+#: src/vim.md:605
 msgid "If `true`, the cursor blinks."
 msgstr ""
 
-#: src/vim.md:603 src/vim.md:608
+#: src/vim.md:605 src/vim.md:610
 msgid "`true`"
 msgstr ""
 
-#: src/vim.md:604
+#: src/vim.md:606
 msgid "relative_line_numbers"
 msgstr ""
 
-#: src/vim.md:604
+#: src/vim.md:606
 msgid ""
 "If `\"enabled\"`, line numbers in the left gutter are relative to the "
 "cursor. If `\"wrapped\"`, they also display for wrapped lines."
 msgstr ""
 
-#: src/vim.md:604
+#: src/vim.md:606
 msgid "`\"disabled\"`"
 msgstr ""
 
-#: src/vim.md:605
+#: src/vim.md:607
 msgid "scrollbar"
 msgstr ""
 
-#: src/vim.md:605
+#: src/vim.md:607
 msgid ""
 "Object that controls the scrollbar display. Set to `{ \"show\": \"never\" }` "
 "to hide the scroll bar."
 msgstr ""
 
-#: src/vim.md:605
+#: src/vim.md:607
 msgid "`{ \"show\": \"auto\" }`"
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:608
 msgid "scroll_beyond_last_line"
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:608
 msgid ""
 "If set to `\"one_page\"`, allows scrolling up to one page beyond the last "
 "line. Set to `\"off\"` to prevent this behavior."
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:608
 msgid "`\"one_page\"`"
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:609
 msgid "vertical_scroll_margin"
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:609
 msgid ""
 "The number of lines to keep above or below the cursor when scrolling. Set to "
 "`0` to allow the cursor to go up to the edges of the screen vertically."
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:609
 msgid "`3`"
 msgstr ""
 
-#: src/vim.md:608
+#: src/vim.md:610
 msgid "gutter.line_numbers"
 msgstr ""
 
-#: src/vim.md:608
+#: src/vim.md:610
 msgid ""
 "Controls the display of line numbers in the gutter. Set the "
 "`\"line_numbers\"` property to `false` to hide line numbers."
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:611
 msgid "command_aliases"
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:611
 msgid ""
 "Object that defines aliases for commands in the command palette. You can use "
 "it to define shortcut names for commands you use often. Read below for "
 "examples."
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:611
 msgid "`{}`"
 msgstr ""
 
-#: src/vim.md:615
+#: src/vim.md:617
 msgid ""
 "// Disable cursor blink\n"
 "  \"cursor_blink\""
 msgstr ""
 
-#: src/vim.md:617
+#: src/vim.md:619
 msgid ""
 "// Use relative line numbers\n"
 "  \"relative_line_numbers\""
 msgstr ""
 
-#: src/vim.md:618
+#: src/vim.md:620
 msgid "\"enabled\""
 msgstr ""
 
-#: src/vim.md:619
+#: src/vim.md:621
 msgid ""
 "// Hide the scroll bar\n"
 "  \"scrollbar\""
 msgstr ""
 
-#: src/vim.md:620
+#: src/vim.md:622
 msgid "\"show\""
 msgstr ""
 
-#: src/vim.md:621
+#: src/vim.md:623
 msgid ""
 "// Prevent the buffer from scrolling beyond the last line\n"
 "  \"scroll_beyond_last_line\""
 msgstr ""
 
-#: src/vim.md:622
+#: src/vim.md:624
 msgid "\"off\""
 msgstr ""
 
-#: src/vim.md:623
+#: src/vim.md:625
 msgid ""
 "// Allow the cursor to reach the edges of the screen\n"
 "  \"vertical_scroll_margin\""
 msgstr ""
 
-#: src/vim.md:625
+#: src/vim.md:627
 msgid "\"gutter\""
 msgstr ""
 
-#: src/vim.md:626
+#: src/vim.md:628
 msgid ""
 "// Disable line numbers completely\n"
 "    \"line_numbers\""
 msgstr ""
 
-#: src/vim.md:629
+#: src/vim.md:631
 msgid "\"command_aliases\""
 msgstr ""
 
-#: src/vim.md:630
+#: src/vim.md:632
 msgid "\"W\""
 msgstr ""
 
-#: src/vim.md:631
+#: src/vim.md:633
 msgid "\"Wq\""
 msgstr ""
 
-#: src/vim.md:631
+#: src/vim.md:633
 msgid "\"wq\""
 msgstr ""
 
-#: src/vim.md:632
+#: src/vim.md:634
 msgid "\"Q\""
 msgstr ""
 
-#: src/vim.md:632
+#: src/vim.md:634
 msgid "\"q\""
 msgstr ""
 
-#: src/vim.md:637
+#: src/vim.md:639
 msgid ""
 "The `command_aliases` property is a single object that maps keys or key "
 "sequences to vim mode commands. The example above defines multiple aliases: "
 "`W` for `w`, `Wq` for `wq`, and `Q` for `q`."
 msgstr ""
 
-#: src/vim.md:639
+#: src/vim.md:641
 msgid "Regex differences"
 msgstr ""
 
-#: src/vim.md:641
+#: src/vim.md:643
 msgid ""
 "Zed uses a different regular expression engine from Vim. This means that you "
 "will have to use a different syntax in some cases. Here are the most common "
 "differences:"
 msgstr ""
 
-#: src/vim.md:643
+#: src/vim.md:645
 msgid ""
 "**Capture groups**: Vim uses `\\(` and `\\)` to represent capture groups, in "
 "Zed these are `(` and `)`. On the flip side, in Vim, `(` and `)` represent "
 "literal parentheses, but in Zed these must be escaped to `\\(` and `\\)`."
 msgstr ""
 
-#: src/vim.md:644
+#: src/vim.md:646
 msgid ""
 "**Matches**: When replacing, Vim uses the backslash character followed by a "
 "number to represent a matched capture group. For example, `\\1`. Zed uses "
@@ -2373,22 +2389,22 @@ msgid ""
 "groups: `\\1` in Vim is `$1` in Zed."
 msgstr ""
 
-#: src/vim.md:645
+#: src/vim.md:647
 msgid ""
 "**Global option**: By default, in Vim, regex searches only match the first "
 "occurrence on a line, and you append `/g` at the end of your query to find "
 "all matches. In Zed, regex searches are global by default."
 msgstr ""
 
-#: src/vim.md:646
+#: src/vim.md:648
 msgid ""
 "**Case sensitivity**: Vim uses `/i` to indicate a case-insensitive search. "
 "In Zed you can either write `(?i)` at the start of the pattern or toggle "
-"case-sensitivity with the shortcut <kbd class=\"keybinding\">alt-cmd-c|alt-"
+"case-sensitivity with the shortcut <kbd class=\"keybinding\">alt-cmd-c\\|alt-"
 "c</kbd>."
 msgstr ""
 
-#: src/vim.md:648
+#: src/vim.md:650
 msgid ""
 "**Note**: To help with the transition, the command palette will fix "
 "parentheses and replace groups for you when you write a Vim-style substitute "
@@ -2396,7 +2412,7 @@ msgid ""
 "for \"(a)(b)\" and a replacement of \"$1\"."
 msgstr ""
 
-#: src/vim.md:650
+#: src/vim.md:652
 msgid ""
 "For the full syntax supported by Zed's regex engine [see the regex crate "
 "documentation](https://docs.rs/regex/latest/regex/#syntax)."

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,7 +65,7 @@ msgid ""
 "If you missed that step, you can change it anytime:"
 msgstr ""
 
-#: src/migrate/pycharm.md:37 src/migrate/pycharm.md:358
+#: src/migrate/pycharm.md:37 src/migrate/pycharm.md:357
 msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 #: src/migrate/pycharm.md:45
 msgid ""
 "You can configure most settings in the Settings Editor (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>). For advanced settings, run `zed: "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>). For advanced settings, run `zed: "
 "open settings file` from the Command Palette to edit your settings file "
 "directly."
 msgstr ""
@@ -1058,7 +1058,7 @@ msgstr ""
 msgid "\"--debug\""
 msgstr ""
 
-#: src/migrate/pycharm.md:294 src/migrate/pycharm.md:398
+#: src/migrate/pycharm.md:294 src/migrate/pycharm.md:397
 msgid "\"env\""
 msgstr ""
 
@@ -1122,311 +1122,307 @@ msgid "Themes"
 msgstr ""
 
 #: src/migrate/pycharm.md:319
-msgid "Slash commands for AI"
-msgstr ""
-
-#: src/migrate/pycharm.md:320
 msgid "Context servers"
 msgstr ""
 
-#: src/migrate/pycharm.md:322
+#: src/migrate/pycharm.md:321
 msgid "Several features that require plugins in PyCharm are built into Zed:"
 msgstr ""
 
-#: src/migrate/pycharm.md:324
+#: src/migrate/pycharm.md:323
 msgid "Real-time collaboration with voice chat"
 msgstr ""
 
-#: src/migrate/pycharm.md:325
+#: src/migrate/pycharm.md:324
 msgid "AI coding assistance"
 msgstr ""
 
-#: src/migrate/pycharm.md:326
+#: src/migrate/pycharm.md:325
 msgid "Built-in terminal"
 msgstr ""
 
-#: src/migrate/pycharm.md:327
+#: src/migrate/pycharm.md:326
 msgid "Task runner"
 msgstr ""
 
-#: src/migrate/pycharm.md:328
+#: src/migrate/pycharm.md:327
 msgid "LSP-based code intelligence"
 msgstr ""
 
-#: src/migrate/pycharm.md:329
+#: src/migrate/pycharm.md:328
 msgid "Ruff formatting and linting"
 msgstr ""
 
-#: src/migrate/pycharm.md:331
+#: src/migrate/pycharm.md:330
 msgid "What's Not in Zed"
 msgstr ""
 
-#: src/migrate/pycharm.md:333
+#: src/migrate/pycharm.md:332
 msgid ""
 "To set expectations clearly, here's what PyCharm offers that Zed doesn't "
 "have:"
 msgstr ""
 
-#: src/migrate/pycharm.md:335
+#: src/migrate/pycharm.md:334
 msgid ""
 "**Scientific Mode / Jupyter integration** — For notebooks and data science "
 "workflows, use JupyterLab or VS Code with the Jupyter extension alongside "
 "Zed for your Python editing"
 msgstr ""
 
-#: src/migrate/pycharm.md:336
+#: src/migrate/pycharm.md:335
 msgid "**Database tools** — Use DataGrip, DBeaver, or TablePlus"
 msgstr ""
 
-#: src/migrate/pycharm.md:337
+#: src/migrate/pycharm.md:336
 msgid "**Django/Flask template navigation** — Use file search and grep"
 msgstr ""
 
-#: src/migrate/pycharm.md:338
+#: src/migrate/pycharm.md:337
 msgid "**Visual package manager** — Use pip, uv, or poetry from the terminal"
 msgstr ""
 
-#: src/migrate/pycharm.md:339
+#: src/migrate/pycharm.md:338
 msgid ""
 "**Remote interpreters** — Zed has remote development, but it works "
 "differently"
 msgstr ""
 
-#: src/migrate/pycharm.md:340
+#: src/migrate/pycharm.md:339
 msgid ""
 "**Profiler integration** — Use cProfile, py-spy, or similar tools externally"
 msgstr ""
 
-#: src/migrate/pycharm.md:342
+#: src/migrate/pycharm.md:341
 msgid "Collaboration in Zed vs. PyCharm"
 msgstr ""
 
-#: src/migrate/pycharm.md:344
+#: src/migrate/pycharm.md:343
 msgid ""
 "PyCharm offers Code With Me as a separate plugin for collaboration. Zed has "
 "collaboration built into the core experience."
 msgstr ""
 
-#: src/migrate/pycharm.md:346
+#: src/migrate/pycharm.md:345
 msgid "Open the Collab Panel in the left dock"
 msgstr ""
 
-#: src/migrate/pycharm.md:347
+#: src/migrate/pycharm.md:346
 msgid ""
 "Create a channel and [invite your collaborators](https://zed.dev/docs/"
 "collaboration#inviting-a-collaborator) to join"
 msgstr ""
 
-#: src/migrate/pycharm.md:348
+#: src/migrate/pycharm.md:347
 msgid ""
 "[Share your screen or your codebase](https://zed.dev/docs/"
 "collaboration#share-a-project) directly"
 msgstr ""
 
-#: src/migrate/pycharm.md:350
+#: src/migrate/pycharm.md:349
 msgid ""
 "Once connected, you'll see each other's cursors, selections, and edits in "
 "real time. Voice chat is included. There's no need for separate tools or "
 "third-party logins."
 msgstr ""
 
-#: src/migrate/pycharm.md:352
+#: src/migrate/pycharm.md:351
 msgid "Using AI in Zed"
 msgstr ""
 
-#: src/migrate/pycharm.md:354
+#: src/migrate/pycharm.md:353
 msgid ""
 "If you're used to AI assistants in PyCharm (like GitHub Copilot or JetBrains "
 "AI Assistant), Zed offers similar capabilities with more flexibility."
 msgstr ""
 
-#: src/migrate/pycharm.md:356
+#: src/migrate/pycharm.md:355
 msgid "Configuring GitHub Copilot"
 msgstr ""
 
-#: src/migrate/pycharm.md:359
+#: src/migrate/pycharm.md:358
 msgid "Navigate to **AI → Edit Predictions**"
 msgstr ""
 
-#: src/migrate/pycharm.md:360
+#: src/migrate/pycharm.md:359
 msgid "Click **Configure** next to \"Configure Providers\""
 msgstr ""
 
-#: src/migrate/pycharm.md:361
+#: src/migrate/pycharm.md:360
 msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
 msgstr ""
 
-#: src/migrate/pycharm.md:363
+#: src/migrate/pycharm.md:362
 msgid ""
 "Once signed in, just start typing. Zed will offer suggestions inline for you "
 "to accept."
 msgstr ""
 
-#: src/migrate/pycharm.md:365
+#: src/migrate/pycharm.md:364
 msgid "Additional AI Options"
 msgstr ""
 
-#: src/migrate/pycharm.md:367
+#: src/migrate/pycharm.md:366
 msgid "To use other AI models in Zed, you have several options:"
 msgstr ""
 
-#: src/migrate/pycharm.md:369
+#: src/migrate/pycharm.md:368
 msgid ""
 "Use Zed's hosted models, with higher rate limits. Requires [authentication]"
 "(https://zed.dev/docs/authentication) and subscription to [Zed Pro](https://"
 "zed.dev/docs/ai/subscription.html)."
 msgstr ""
 
-#: src/migrate/pycharm.md:370
+#: src/migrate/pycharm.md:369
 msgid ""
 "Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
 "authentication needed"
 msgstr ""
 
-#: src/migrate/pycharm.md:371
+#: src/migrate/pycharm.md:370
 msgid ""
 "Use [external agents like Claude Agent](https://zed.dev/docs/ai/external-"
 "agents.html)"
 msgstr ""
 
-#: src/migrate/pycharm.md:373
+#: src/migrate/pycharm.md:372
 msgid "Advanced Config and Productivity Tweaks"
 msgstr ""
 
-#: src/migrate/pycharm.md:375
+#: src/migrate/pycharm.md:374
 msgid ""
 "Zed exposes advanced settings for power users who want to fine-tune their "
 "environment."
 msgstr ""
 
-#: src/migrate/pycharm.md:377
+#: src/migrate/pycharm.md:376
 msgid "Here are a few useful tweaks:"
 msgstr ""
 
-#: src/migrate/pycharm.md:379
+#: src/migrate/pycharm.md:378
 msgid "**Format on Save:**"
 msgstr ""
 
-#: src/migrate/pycharm.md:382
+#: src/migrate/pycharm.md:381
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/migrate/pycharm.md:382 src/migrate/pycharm.md:397
+#: src/migrate/pycharm.md:381 src/migrate/pycharm.md:396
 msgid "\"on\""
 msgstr ""
 
-#: src/migrate/pycharm.md:385
+#: src/migrate/pycharm.md:384
 msgid "**Enable direnv support (useful for Python projects using direnv):**"
 msgstr ""
 
-#: src/migrate/pycharm.md:388
+#: src/migrate/pycharm.md:387
 msgid "\"load_direnv\""
 msgstr ""
 
-#: src/migrate/pycharm.md:388
+#: src/migrate/pycharm.md:387
 msgid "\"shell_hook\""
 msgstr ""
 
-#: src/migrate/pycharm.md:391
+#: src/migrate/pycharm.md:390
 msgid ""
 "**Customize virtual environment detection** (requires manual JSON editing):"
 msgstr ""
 
-#: src/migrate/pycharm.md:395
+#: src/migrate/pycharm.md:394
 msgid "\"terminal\""
 msgstr ""
 
-#: src/migrate/pycharm.md:396
+#: src/migrate/pycharm.md:395
 msgid "\"detect_venv\""
 msgstr ""
 
-#: src/migrate/pycharm.md:398
+#: src/migrate/pycharm.md:397
 msgid "\"directories\""
 msgstr ""
 
-#: src/migrate/pycharm.md:398
+#: src/migrate/pycharm.md:397
 msgid "\".venv\""
 msgstr ""
 
-#: src/migrate/pycharm.md:398
+#: src/migrate/pycharm.md:397
 msgid "\"venv\""
 msgstr ""
 
-#: src/migrate/pycharm.md:398
+#: src/migrate/pycharm.md:397
 msgid "\".env\""
 msgstr ""
 
-#: src/migrate/pycharm.md:399
+#: src/migrate/pycharm.md:398
 msgid "\"activate_script\""
 msgstr ""
 
-#: src/migrate/pycharm.md:399
+#: src/migrate/pycharm.md:398
 msgid "\"default\""
 msgstr ""
 
-#: src/migrate/pycharm.md:406
+#: src/migrate/pycharm.md:405
 msgid "**Configure basedpyright type checking strictness:**"
 msgstr ""
 
-#: src/migrate/pycharm.md:408
+#: src/migrate/pycharm.md:407
 msgid ""
 "If you find basedpyright too strict or too lenient, configure it in your "
 "project's `pyrightconfig.json`:"
 msgstr ""
 
-#: src/migrate/pycharm.md:412
+#: src/migrate/pycharm.md:411
 msgid "\"typeCheckingMode\""
 msgstr ""
 
-#: src/migrate/pycharm.md:412
+#: src/migrate/pycharm.md:411
 msgid "\"basic\""
 msgstr ""
 
-#: src/migrate/pycharm.md:416
+#: src/migrate/pycharm.md:415
 msgid ""
 "Options are `\"off\"`, `\"basic\"`, `\"standard\"` (default), `\"strict\"`, "
 "or `\"all\"`."
 msgstr ""
 
-#: src/migrate/pycharm.md:418
+#: src/migrate/pycharm.md:417
 msgid "Next Steps"
 msgstr ""
 
-#: src/migrate/pycharm.md:420
+#: src/migrate/pycharm.md:419
 msgid ""
 "Now that you're set up, here are some resources to help you get the most out "
 "of Zed:"
 msgstr ""
 
-#: src/migrate/pycharm.md:422
+#: src/migrate/pycharm.md:421
 msgid ""
 "[All Settings](../reference/all-settings.md) — Customize settings, themes, "
 "and editor behavior"
 msgstr ""
 
-#: src/migrate/pycharm.md:423
+#: src/migrate/pycharm.md:422
 msgid ""
 "[Key Bindings](../key-bindings.md) — Learn how to customize and extend your "
 "keymap"
 msgstr ""
 
-#: src/migrate/pycharm.md:424
+#: src/migrate/pycharm.md:423
 msgid "[Tasks](../tasks.md) — Set up build and run commands for your projects"
 msgstr ""
 
-#: src/migrate/pycharm.md:425
+#: src/migrate/pycharm.md:424
 msgid ""
 "[AI Features](../ai/overview.md) — Explore Zed's AI capabilities beyond code "
 "completion"
 msgstr ""
 
-#: src/migrate/pycharm.md:426
+#: src/migrate/pycharm.md:425
 msgid ""
 "[Collaboration](../collaboration/overview.md) — Share your projects and code "
 "together in real time"
 msgstr ""
 
-#: src/migrate/pycharm.md:427
+#: src/migrate/pycharm.md:426
 msgid ""
 "[Python in Zed](../languages/python.md) — Python-specific setup and "
 "configuration"

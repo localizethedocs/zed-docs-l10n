@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -78,7 +78,7 @@ msgid ""
 "profiler-0.13.0-macos-aarch64)"
 msgstr ""
 
-#: src/performance.md:41 src/performance.md:72
+#: src/performance.md:41 src/performance.md:109
 msgid "Alternative: Building it yourself"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr ""
 msgid "`cd profiler && mkdir build && cd build`"
 msgstr ""
 
-#: src/performance.md:45 src/performance.md:76
+#: src/performance.md:45 src/performance.md:113
 msgid ""
 "Run cmake to generate build files: `cmake -G Ninja -"
 "DCMAKE_BUILD_TYPE=Release ..`"
@@ -112,40 +112,91 @@ msgstr ""
 #: src/performance.md:51
 msgid ""
 "Open the profiler (tracy-profiler), you should see zed in the list of "
-"`Discovered clients` click it. <img width=\"392\" height=\"287\" "
-"alt=\"image\" src=\"https://github.com/user-attachments/assets/"
-"b6f06fc3-6b25-41c7-ade9-558cc93d6033\" />"
+"`Discovered clients` click it."
 msgstr ""
 
-#: src/performance.md:54
+#: src/performance.md:55
 msgid ""
-"To find functions that take a long time follow this image: <img "
-"width=\"888\" height=\"1159\" alt=\"image\" src=\"https://github.com/user-"
-"attachments/assets/77087617-f53a-4331-863d-e59f8a5b6f0b\" />"
+"Tracy is an incredibly powerful profiler which can do a lot however it's UI "
+"is not that friendly. This is not the place for an in depth guide to Tracy, "
+"I do however want to highlight one particular workflow that is helpful when "
+"figuring out why a piece of code is _sometimes_ slow."
 msgstr ""
 
 #: src/performance.md:57
-msgid "Task/Async profiling"
+msgid "Here are the steps:"
 msgstr ""
 
 #: src/performance.md:59
+msgid "Click the flamechart button at the top."
+msgstr ""
+
+#: src/performance.md:63
+msgid "Click on a function that takes a lot of time."
+msgstr ""
+
+#: src/performance.md:67
+msgid "Expand the list of function calls by clicking on main thread."
+msgstr ""
+
+#: src/performance.md:71
+msgid ""
+"Filter that list to the slower calls then click on one of the slow calls in "
+"the list"
+msgstr ""
+
+#: src/performance.md:75
+msgid "Click zoom to zone to go to that specific function call in the timeline"
+msgstr ""
+
+#: src/performance.md:79
+msgid "Scroll to zoom in and see more detail about the callers"
+msgstr ""
+
+#: src/performance.md:83
+msgid "Click on a caller to to get statistics on _it_."
+msgstr ""
+
+#: src/performance.md:87
+msgid ""
+"While normally the blue bars in the Tracy timeline correspond to function "
+"calls they can time any part of a codebase. In the example below we have "
+"added an extra span \"for block in edits\" and added metadata to it: the "
+"block_height. You can do that like this:"
+msgstr ""
+
+#: src/performance.md:90
+msgid "\"for block in edits\""
+msgstr ""
+
+#: src/performance.md:91
+msgid ""
+"// span guard, when this is dropped the span ends (and its duration is "
+"recorded)\n"
+msgstr ""
+
+#: src/performance.md:94
+msgid "Task/Async profiling"
+msgstr ""
+
+#: src/performance.md:96
 msgid ""
 "Get a profile of the zed foreground executor and background executors. Check "
 "if anything is blocking the foreground too long or taking too much (clock) "
 "time in the background."
 msgstr ""
 
-#: src/performance.md:63
+#: src/performance.md:100
 msgid ""
 "The profiler always runs in the background. You can save a trace from its UI "
 "or look at the results live."
 msgstr ""
 
-#: src/performance.md:66
+#: src/performance.md:103
 msgid "Setup/Building the importer:"
 msgstr ""
 
-#: src/performance.md:68
+#: src/performance.md:105
 msgid ""
 "Download the importer [linux x86_64](https://zed-tracy-import-miniprofiler."
 "nyc3.digitaloceanspaces.com/tracy-import-miniprofiler-linux-x86_64) [mac "
@@ -153,77 +204,77 @@ msgid ""
 "tracy-import-miniprofiler-macos-aarch64)"
 msgstr ""
 
-#: src/performance.md:74
+#: src/performance.md:111
 msgid ""
 "Clone the repo at git@github.com:zed-industries/tracy.git on v0.12.2 branch"
 msgstr ""
 
-#: src/performance.md:75
+#: src/performance.md:112
 msgid "`cd import && mkdir build && cd build`"
 msgstr ""
 
-#: src/performance.md:77
+#: src/performance.md:114
 msgid "Build the importer: `ninja`"
 msgstr ""
 
-#: src/performance.md:78
+#: src/performance.md:115
 msgid ""
 "Run the importer on the trace file: `./tracy-import-miniprofiler /path/to/"
 "trace.miniprof.json /path/to/output.tracy`"
 msgstr ""
 
-#: src/performance.md:79
+#: src/performance.md:116
 msgid "Open the trace in tracy:"
 msgstr ""
 
-#: src/performance.md:80
+#: src/performance.md:117
 msgid ""
 "If you're on windows download the v0.12.2 version from the releases on the "
 "upstream repo"
 msgstr ""
 
-#: src/performance.md:81
+#: src/performance.md:118
 msgid ""
 "If you're on other platforms open it on the website: https://tracy.nereid."
 "pl/ (the version might mismatch so your luck might vary, we need to host our "
 "own ideally..)"
 msgstr ""
 
-#: src/performance.md:83
+#: src/performance.md:120
 msgid "To Save a Trace:"
 msgstr ""
 
-#: src/performance.md:85
+#: src/performance.md:122
 msgid "Run the action: `zed open performance profiler`"
 msgstr ""
 
-#: src/performance.md:86
+#: src/performance.md:123
 msgid ""
 "Hit the save button. This opens a save dialog or if that fails to open the "
 "trace gets saved in your working directory."
 msgstr ""
 
-#: src/performance.md:87
+#: src/performance.md:124
 msgid ""
 "Convert the profile so it can be imported in tracy using the importer: `./"
 "tracy-import-miniprofiler <path to performance_profile.miniprof.json> output."
 "tracy`"
 msgstr ""
 
-#: src/performance.md:88
+#: src/performance.md:125
 msgid ""
 "Go to <https://tracy.nereid.pl/> hit the 'power button' in the top left and "
 "then open saved trace."
 msgstr ""
 
-#: src/performance.md:89
+#: src/performance.md:126
 msgid "Now zoom in to see the tasks and how long they took"
 msgstr ""
 
-#: src/performance.md:91
+#: src/performance.md:128
 msgid "Warn if function is slow"
 msgstr ""
 
-#: src/performance.md:94
+#: src/performance.md:131
 msgid "\"my_function_name\""
 msgstr ""

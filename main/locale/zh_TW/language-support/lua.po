@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -265,7 +265,7 @@ msgstr ""
 
 #: src/languages/lua.md:93
 msgid ""
-"Configure inlay hints in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure inlay hints in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > Lua, or add to your settings file:"
 msgstr ""
 
@@ -324,7 +324,7 @@ msgstr ""
 
 #: src/languages/lua.md:125 src/languages/lua.md:145
 msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > Lua, or add to your settings file:"
 msgstr ""
 

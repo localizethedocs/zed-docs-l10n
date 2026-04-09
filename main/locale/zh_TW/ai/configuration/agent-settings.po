@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -41,13 +41,12 @@ msgstr ""
 
 #: src/ai/agent-settings.md:15 src/ai/agent-settings.md:34
 #: src/ai/agent-settings.md:65 src/ai/agent-settings.md:89
-#: src/ai/agent-settings.md:114 src/ai/agent-settings.md:147
-#: src/ai/agent-settings.md:177 src/ai/agent-settings.md:200
-#: src/ai/agent-settings.md:242 src/ai/agent-settings.md:269
-#: src/ai/agent-settings.md:297 src/ai/agent-settings.md:310
-#: src/ai/agent-settings.md:323 src/ai/agent-settings.md:336
-#: src/ai/agent-settings.md:349 src/ai/agent-settings.md:362
-#: src/ai/agent-settings.md:375
+#: src/ai/agent-settings.md:114 src/ai/agent-settings.md:164
+#: src/ai/agent-settings.md:187 src/ai/agent-settings.md:229
+#: src/ai/agent-settings.md:256 src/ai/agent-settings.md:284
+#: src/ai/agent-settings.md:300 src/ai/agent-settings.md:313
+#: src/ai/agent-settings.md:326 src/ai/agent-settings.md:339
+#: src/ai/agent-settings.md:352 src/ai/agent-settings.md:365
 msgid "\"agent\""
 msgstr ""
 
@@ -243,256 +242,238 @@ msgid ""
 msgstr ""
 
 #: src/ai/agent-settings.md:140
-msgid "Default View"
-msgstr ""
-
-#: src/ai/agent-settings.md:142
-msgid ""
-"Use the `default_view` setting to change the default view of the Agent "
-"Panel. You can choose between `thread` (the default) and `text_thread`:"
-msgstr ""
-
-#: src/ai/agent-settings.md:148
-msgid "\"default_view\""
-msgstr ""
-
-#: src/ai/agent-settings.md:148
-msgid "\"text_thread\""
-msgstr ""
-
-#: src/ai/agent-settings.md:153
 msgid "Font Size"
 msgstr "字型大小"
 
-#: src/ai/agent-settings.md:155
+#: src/ai/agent-settings.md:142
 msgid ""
 "Use the `agent_ui_font_size` setting to change the font size of rendered "
 "agent responses in the panel."
 msgstr ""
 
-#: src/ai/agent-settings.md:159
+#: src/ai/agent-settings.md:146
 msgid "\"agent_ui_font_size\""
 msgstr ""
 
-#: src/ai/agent-settings.md:163
+#: src/ai/agent-settings.md:150
 msgid ""
 "Editors in the Agent Panel—such as the main message textarea—use monospace "
 "fonts and are controlled by `agent_buffer_font_size` (which defaults to "
 "`buffer_font_size` when unset)."
 msgstr ""
 
-#: src/ai/agent-settings.md:165
+#: src/ai/agent-settings.md:152
 msgid "Default Tool Permissions"
 msgstr ""
 
-#: src/ai/agent-settings.md:167
+#: src/ai/agent-settings.md:154
 msgid ""
 "**Note:** In Zed v0.224.0 and above, tool approval uses the `agent."
 "tool_permissions` settings described below."
 msgstr ""
 
-#: src/ai/agent-settings.md:169
+#: src/ai/agent-settings.md:156
 msgid ""
 "The `agent.tool_permissions.default` setting controls the baseline tool "
 "approval behavior for Zed's native agent:"
 msgstr ""
 
-#: src/ai/agent-settings.md:171
+#: src/ai/agent-settings.md:158
 msgid ""
 "`\"confirm\"` (default) — Prompts for approval before running any tool action"
 msgstr ""
 
-#: src/ai/agent-settings.md:172
+#: src/ai/agent-settings.md:159
 msgid "`\"allow\"` — Auto-approves tool actions without prompting"
 msgstr ""
 
-#: src/ai/agent-settings.md:173
+#: src/ai/agent-settings.md:160
 msgid "`\"deny\"` — Blocks all tool actions"
 msgstr ""
 
-#: src/ai/agent-settings.md:178 src/ai/agent-settings.md:201
-#: src/ai/agent-settings.md:243 src/ai/agent-settings.md:270
+#: src/ai/agent-settings.md:165 src/ai/agent-settings.md:188
+#: src/ai/agent-settings.md:230 src/ai/agent-settings.md:257
 msgid "\"tool_permissions\""
 msgstr ""
 
-#: src/ai/agent-settings.md:179 src/ai/agent-settings.md:202
-#: src/ai/agent-settings.md:205 src/ai/agent-settings.md:273
-#: src/ai/agent-settings.md:276
+#: src/ai/agent-settings.md:166 src/ai/agent-settings.md:189
+#: src/ai/agent-settings.md:192 src/ai/agent-settings.md:260
+#: src/ai/agent-settings.md:263
 msgid "\"default\""
 msgstr ""
 
-#: src/ai/agent-settings.md:179 src/ai/agent-settings.md:205
-#: src/ai/agent-settings.md:273
+#: src/ai/agent-settings.md:166 src/ai/agent-settings.md:192
+#: src/ai/agent-settings.md:260
 msgid "\"confirm\""
 msgstr ""
 
-#: src/ai/agent-settings.md:185
+#: src/ai/agent-settings.md:172
 msgid ""
 "Even with `\"default\": \"allow\"`, per-tool `always_deny` and "
 "`always_confirm` patterns are still respected, so you can auto-approve most "
 "actions while keeping guardrails on dangerous or sensitive ones."
 msgstr ""
 
-#: src/ai/agent-settings.md:187
+#: src/ai/agent-settings.md:174
 msgid "Per-tool Permission Rules"
 msgstr ""
 
-#: src/ai/agent-settings.md:189
+#: src/ai/agent-settings.md:176
 msgid ""
 "For granular control over individual tool actions, use the `tools` key "
 "inside `tool_permissions` to configure regex-based rules that auto-approve, "
 "auto-deny, or always require confirmation for specific inputs."
 msgstr ""
 
-#: src/ai/agent-settings.md:191
+#: src/ai/agent-settings.md:178
 msgid "Each tool entry supports the following keys:"
 msgstr ""
 
-#: src/ai/agent-settings.md:193
+#: src/ai/agent-settings.md:180
 msgid ""
 "`default` — Fallback when no patterns match: `\"confirm\"`, `\"allow\"`, or "
 "`\"deny\"`"
 msgstr ""
 
-#: src/ai/agent-settings.md:194
+#: src/ai/agent-settings.md:181
 msgid "`always_allow` — Array of patterns that auto-approve matching actions"
 msgstr ""
 
-#: src/ai/agent-settings.md:195
+#: src/ai/agent-settings.md:182
 msgid ""
 "`always_deny` — Array of patterns that block matching actions immediately"
 msgstr ""
 
-#: src/ai/agent-settings.md:196
+#: src/ai/agent-settings.md:183
 msgid ""
 "`always_confirm` — Array of patterns that always prompt for confirmation"
 msgstr ""
 
-#: src/ai/agent-settings.md:202
+#: src/ai/agent-settings.md:189
 msgid "\"allow\""
 msgstr ""
 
-#: src/ai/agent-settings.md:203 src/ai/agent-settings.md:244
-#: src/ai/agent-settings.md:271
+#: src/ai/agent-settings.md:190 src/ai/agent-settings.md:231
+#: src/ai/agent-settings.md:258
 msgid "\"tools\""
 msgstr ""
 
-#: src/ai/agent-settings.md:204
+#: src/ai/agent-settings.md:191
 msgid "\"terminal\""
 msgstr ""
 
-#: src/ai/agent-settings.md:206
+#: src/ai/agent-settings.md:193
 msgid "\"always_allow\""
 msgstr ""
 
-#: src/ai/agent-settings.md:207 src/ai/agent-settings.md:208
-#: src/ai/agent-settings.md:210 src/ai/agent-settings.md:211
-#: src/ai/agent-settings.md:215 src/ai/agent-settings.md:216
-#: src/ai/agent-settings.md:248
+#: src/ai/agent-settings.md:194 src/ai/agent-settings.md:195
+#: src/ai/agent-settings.md:197 src/ai/agent-settings.md:198
+#: src/ai/agent-settings.md:202 src/ai/agent-settings.md:203
+#: src/ai/agent-settings.md:235
 msgid "\"pattern\""
 msgstr ""
 
-#: src/ai/agent-settings.md:207
+#: src/ai/agent-settings.md:194
 msgid "\"^cargo\\\\s+(build|test|check)\""
 msgstr ""
 
-#: src/ai/agent-settings.md:208
+#: src/ai/agent-settings.md:195
 msgid "\"^git\\\\s+(status|log|diff)\""
 msgstr ""
 
-#: src/ai/agent-settings.md:210 src/ai/agent-settings.md:214
-#: src/ai/agent-settings.md:246
+#: src/ai/agent-settings.md:197 src/ai/agent-settings.md:201
+#: src/ai/agent-settings.md:233
 msgid "\"always_deny\""
 msgstr ""
 
-#: src/ai/agent-settings.md:210
+#: src/ai/agent-settings.md:197
 msgid "\"rm\\\\s+-rf\\\\s+(/|~)\""
 msgstr ""
 
-#: src/ai/agent-settings.md:211
+#: src/ai/agent-settings.md:198
 msgid "\"always_confirm\""
 msgstr ""
 
-#: src/ai/agent-settings.md:211
+#: src/ai/agent-settings.md:198
 msgid "\"sudo\\\\s\""
 msgstr ""
 
-#: src/ai/agent-settings.md:213 src/ai/agent-settings.md:245
+#: src/ai/agent-settings.md:200 src/ai/agent-settings.md:232
 msgid "\"edit_file\""
 msgstr ""
 
-#: src/ai/agent-settings.md:215
+#: src/ai/agent-settings.md:202
 msgid "\"\\\\.env\""
 msgstr ""
 
-#: src/ai/agent-settings.md:216
+#: src/ai/agent-settings.md:203
 msgid "\"\\\\.(pem|key)$\""
 msgstr ""
 
-#: src/ai/agent-settings.md:225
+#: src/ai/agent-settings.md:212
 msgid "Pattern Precedence"
 msgstr ""
 
-#: src/ai/agent-settings.md:227
+#: src/ai/agent-settings.md:214
 msgid ""
 "When evaluating a tool action, rules are checked in the following order "
 "(highest priority first):"
 msgstr ""
 
-#: src/ai/agent-settings.md:229
+#: src/ai/agent-settings.md:216
 msgid ""
 "**Built-in security rules** — Hardcoded protections (e.g., `rm -rf /`) that "
 "cannot be overridden"
 msgstr ""
 
-#: src/ai/agent-settings.md:230
+#: src/ai/agent-settings.md:217
 msgid "**`always_deny`** — Blocks matching actions immediately"
 msgstr ""
 
-#: src/ai/agent-settings.md:231
+#: src/ai/agent-settings.md:218
 msgid "**`always_confirm`** — Requires confirmation for matching actions"
 msgstr ""
 
-#: src/ai/agent-settings.md:232
+#: src/ai/agent-settings.md:219
 msgid ""
 "**`always_allow`** — Auto-approves matching actions. For the terminal tool "
 "with chained commands (e.g., `echo hello && rm file`), **all** sub-commands "
 "must match an `always_allow` pattern"
 msgstr ""
 
-#: src/ai/agent-settings.md:233
+#: src/ai/agent-settings.md:220
 msgid ""
 "**Tool-specific `default`** — Per-tool fallback when no patterns match (e."
 "g., `tools.terminal.default`)"
 msgstr ""
 
-#: src/ai/agent-settings.md:234
+#: src/ai/agent-settings.md:221
 msgid "**Global `default`** — Falls back to `tool_permissions.default`"
 msgstr ""
 
-#: src/ai/agent-settings.md:236
+#: src/ai/agent-settings.md:223
 msgid "Case Sensitivity"
 msgstr ""
 
-#: src/ai/agent-settings.md:238
+#: src/ai/agent-settings.md:225
 msgid ""
 "Patterns are **case-insensitive** by default. To make a pattern case-"
 "sensitive, set `case_sensitive` to `true`:"
 msgstr ""
 
-#: src/ai/agent-settings.md:248
+#: src/ai/agent-settings.md:235
 msgid "\"^Makefile$\""
 msgstr ""
 
-#: src/ai/agent-settings.md:249
+#: src/ai/agent-settings.md:236
 msgid "\"case_sensitive\""
 msgstr ""
 
-#: src/ai/agent-settings.md:259
+#: src/ai/agent-settings.md:246
 msgid "`copy_path` and `move_path` Patterns"
 msgstr ""
 
-#: src/ai/agent-settings.md:261
+#: src/ai/agent-settings.md:248
 msgid ""
 "For the `copy_path` and `move_path` tools, patterns are matched "
 "independently against both the source and destination paths. A `deny` or "
@@ -500,29 +481,29 @@ msgid ""
 "**both** paths must match for auto-approval."
 msgstr ""
 
-#: src/ai/agent-settings.md:263
+#: src/ai/agent-settings.md:250
 msgid "MCP Tool Permissions"
 msgstr ""
 
-#: src/ai/agent-settings.md:265
+#: src/ai/agent-settings.md:252
 msgid ""
 "MCP tools use the key format `mcp:<server_name>:<tool_name>` in the `tools` "
 "configuration. For example:"
 msgstr ""
 
-#: src/ai/agent-settings.md:272
+#: src/ai/agent-settings.md:259
 msgid "\"mcp:github:create_issue\""
 msgstr ""
 
-#: src/ai/agent-settings.md:275
+#: src/ai/agent-settings.md:262
 msgid "\"mcp:github:create_pull_request\""
 msgstr ""
 
-#: src/ai/agent-settings.md:276
+#: src/ai/agent-settings.md:263
 msgid "\"deny\""
 msgstr ""
 
-#: src/ai/agent-settings.md:284
+#: src/ai/agent-settings.md:271
 msgid ""
 "The `default` key on each MCP tool entry is the primary mechanism for "
 "controlling MCP tool permissions. Pattern-based rules (`always_allow`, "
@@ -530,13 +511,13 @@ msgid ""
 "tools, so most patterns won't match — use the tool-level `default` instead."
 msgstr ""
 
-#: src/ai/agent-settings.md:286
+#: src/ai/agent-settings.md:273
 msgid ""
 "See the [Tool Permissions](./tool-permissions.md) documentation for more "
 "examples and complete details."
 msgstr ""
 
-#: src/ai/agent-settings.md:288
+#: src/ai/agent-settings.md:275
 msgid ""
 "**Note:** Before Zed v0.224.0, tool approval was controlled by the `agent."
 "always_allow_tool_actions` boolean (default `false`). Set it to `true` to "
@@ -544,69 +525,86 @@ msgid ""
 "edits and tool calls."
 msgstr ""
 
-#: src/ai/agent-settings.md:290
+#: src/ai/agent-settings.md:277
 msgid "Edit Display Mode"
 msgstr ""
 
-#: src/ai/agent-settings.md:292
+#: src/ai/agent-settings.md:279
 msgid ""
 "Control whether to display review actions (accept & reject) in single "
 "buffers after the agent is done performing edits. The default value is "
 "`false`."
 msgstr ""
 
-#: src/ai/agent-settings.md:298
+#: src/ai/agent-settings.md:285
 msgid "\"single_file_review\""
 msgstr ""
 
-#: src/ai/agent-settings.md:303
+#: src/ai/agent-settings.md:290
 msgid "Sound Notification"
 msgstr ""
 
-#: src/ai/agent-settings.md:305
+#: src/ai/agent-settings.md:292
 msgid ""
 "Control whether to hear a notification sound when the agent is done "
-"generating changes or needs your input. The default value is `false`."
+"generating changes or needs your input. The default value is `never`."
 msgstr ""
 
-#: src/ai/agent-settings.md:311
+#: src/ai/agent-settings.md:294
+msgid "`\"never\"` (default) — Never play the sound."
+msgstr ""
+
+#: src/ai/agent-settings.md:295
+msgid ""
+"`\"when_hidden\"` — Only play the sound when the agent panel is not visible."
+msgstr ""
+
+#: src/ai/agent-settings.md:296
+msgid "`\"always\"` — Always play the sound on completion."
+msgstr ""
+
+#: src/ai/agent-settings.md:301
 msgid "\"play_sound_when_agent_done\""
 msgstr ""
 
-#: src/ai/agent-settings.md:316
+#: src/ai/agent-settings.md:301
+msgid "\"never\""
+msgstr ""
+
+#: src/ai/agent-settings.md:306
 msgid "Message Editor Size"
 msgstr ""
 
-#: src/ai/agent-settings.md:318
+#: src/ai/agent-settings.md:308
 msgid ""
 "Use the `message_editor_min_lines` setting to control the minimum number of "
 "lines of height the agent message editor should have. It is set to `4` by "
 "default, and the max number of lines is always double of the minimum."
 msgstr ""
 
-#: src/ai/agent-settings.md:324
+#: src/ai/agent-settings.md:314
 msgid "\"message_editor_min_lines\""
 msgstr ""
 
-#: src/ai/agent-settings.md:329
+#: src/ai/agent-settings.md:319
 msgid "Modifier to Send"
 msgstr ""
 
-#: src/ai/agent-settings.md:331
+#: src/ai/agent-settings.md:321
 msgid ""
 "Require a modifier (`cmd` on macOS, `ctrl` on Linux) to send messages. "
 "Prevents accidental sends while editing. The default value is `false`."
 msgstr ""
 
-#: src/ai/agent-settings.md:337
+#: src/ai/agent-settings.md:327
 msgid "\"use_modifier_to_send\""
 msgstr ""
 
-#: src/ai/agent-settings.md:342
+#: src/ai/agent-settings.md:332
 msgid "Edit Card"
 msgstr ""
 
-#: src/ai/agent-settings.md:344
+#: src/ai/agent-settings.md:334
 msgid ""
 "Use the `expand_edit_card` setting to control whether edit cards show the "
 "full diff in the Agent Panel. It is set to `true` by default, but if set to "
@@ -614,15 +612,15 @@ msgid ""
 "click to be expanded."
 msgstr ""
 
-#: src/ai/agent-settings.md:350
+#: src/ai/agent-settings.md:340
 msgid "\"expand_edit_card\""
 msgstr ""
 
-#: src/ai/agent-settings.md:355
+#: src/ai/agent-settings.md:345
 msgid "Terminal Card"
 msgstr ""
 
-#: src/ai/agent-settings.md:357
+#: src/ai/agent-settings.md:347
 msgid ""
 "Use the `expand_terminal_card` setting to control whether terminal cards "
 "show the command output in the Agent Panel. It is set to `true` by default, "
@@ -630,21 +628,21 @@ msgid ""
 "is running, requiring a click to be expanded."
 msgstr ""
 
-#: src/ai/agent-settings.md:363
+#: src/ai/agent-settings.md:353
 msgid "\"expand_terminal_card\""
 msgstr ""
 
-#: src/ai/agent-settings.md:368
+#: src/ai/agent-settings.md:358
 msgid "Feedback Controls"
 msgstr ""
 
-#: src/ai/agent-settings.md:370
+#: src/ai/agent-settings.md:360
 msgid ""
 "Control whether to display the thumbs up/down buttons at the bottom of each "
 "agent response, allowing you to give Zed feedback about the agent's "
 "performance. The default value is `true`."
 msgstr ""
 
-#: src/ai/agent-settings.md:376
+#: src/ai/agent-settings.md:366
 msgid "\"enable_feedback\""
 msgstr ""

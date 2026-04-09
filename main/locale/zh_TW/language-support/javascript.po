@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -64,7 +64,7 @@ msgstr ""
 
 #: src/languages/javascript.md:21
 msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > JavaScript, or add to your settings file:"
 msgstr ""
 
@@ -144,9 +144,8 @@ msgstr ""
 
 #: src/languages/javascript.md:53
 msgid ""
-"Configure code actions on format in Settings (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > JavaScript, or "
-"add to your settings file:"
+"Configure code actions on format in Settings (<kbd class=\"keybinding\">cmd-,"
+"\\|ctrl-,</kbd>) under Languages > JavaScript, or add to your settings file:"
 msgstr ""
 
 #: src/languages/javascript.md:59 src/languages/javascript.md:73
@@ -209,7 +208,7 @@ msgstr ""
 
 #: src/languages/javascript.md:97
 msgid ""
-"Configure in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) under "
+"Configure in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under "
 "Languages > JavaScript, or add to your settings file:"
 msgstr ""
 
@@ -390,7 +389,7 @@ msgstr ""
 #: src/languages/javascript.md:221
 msgid ""
 "Run <code class=\"hljs\">debugger: start</code> (<kbd "
-"class=\"keybinding\">f4|f4</kbd>) to see a contextual list of these "
+"class=\"keybinding\">f4\\|f4</kbd>) to see a contextual list of these "
 "predefined debug tasks."
 msgstr ""
 

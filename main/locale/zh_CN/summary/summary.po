@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -72,107 +72,107 @@ msgid "Edit Prediction"
 msgstr ""
 
 #: src/SUMMARY.md:20
-msgid "Text Threads"
-msgstr ""
-
-#: src/SUMMARY.md:21
 msgid "Rules"
 msgstr ""
 
-#: src/SUMMARY.md:22
+#: src/SUMMARY.md:21
 msgid "Model Context Protocol"
 msgstr ""
 
-#: src/SUMMARY.md:23
+#: src/SUMMARY.md:22
 msgid "Configuration"
 msgstr ""
 
-#: src/SUMMARY.md:24
+#: src/SUMMARY.md:23
 msgid "LLM Providers"
 msgstr ""
 
-#: src/SUMMARY.md:25
+#: src/SUMMARY.md:24
 msgid "Agent Settings"
 msgstr ""
 
-#: src/SUMMARY.md:26
+#: src/SUMMARY.md:25
 msgid "Subscription"
 msgstr ""
 
-#: src/SUMMARY.md:27
+#: src/SUMMARY.md:26
 msgid "Models"
 msgstr ""
 
-#: src/SUMMARY.md:28
+#: src/SUMMARY.md:27
 msgid "Plans and Usage"
 msgstr ""
 
-#: src/SUMMARY.md:29
+#: src/SUMMARY.md:28
 msgid "Billing"
 msgstr ""
 
-#: src/SUMMARY.md:31
+#: src/SUMMARY.md:30
 msgid "Working with Code"
 msgstr ""
 
-#: src/SUMMARY.md:33
+#: src/SUMMARY.md:32
 msgid "Editing Code"
 msgstr ""
 
-#: src/SUMMARY.md:34
+#: src/SUMMARY.md:33
 msgid "Code Completions"
 msgstr ""
 
-#: src/SUMMARY.md:35
+#: src/SUMMARY.md:34
 msgid "Snippets"
 msgstr ""
 
-#: src/SUMMARY.md:36
+#: src/SUMMARY.md:35
 msgid "Diagnostics & Quick Fixes"
 msgstr ""
 
-#: src/SUMMARY.md:37
+#: src/SUMMARY.md:36
 msgid "Multibuffers"
 msgstr ""
 
-#: src/SUMMARY.md:38
+#: src/SUMMARY.md:37
 msgid "Finding & Navigating"
 msgstr ""
 
-#: src/SUMMARY.md:39
+#: src/SUMMARY.md:38
 msgid "Command Palette"
 msgstr ""
 
-#: src/SUMMARY.md:40
+#: src/SUMMARY.md:39
 msgid "Outline Panel"
 msgstr ""
 
-#: src/SUMMARY.md:41
+#: src/SUMMARY.md:40
 msgid "Tab Switcher"
 msgstr ""
 
-#: src/SUMMARY.md:42
+#: src/SUMMARY.md:41
 msgid "Running & Testing"
 msgstr ""
 
-#: src/SUMMARY.md:43
+#: src/SUMMARY.md:42
 msgid "Terminal"
 msgstr ""
 
-#: src/SUMMARY.md:44
+#: src/SUMMARY.md:43
 msgid "Tasks"
 msgstr ""
 
-#: src/SUMMARY.md:45
+#: src/SUMMARY.md:44
 msgid "Debugger"
 msgstr ""
 
-#: src/SUMMARY.md:46
+#: src/SUMMARY.md:45
 msgid "REPL"
 msgstr ""
 
-#: src/SUMMARY.md:47
+#: src/SUMMARY.md:46
 msgid "Git"
+msgstr ""
+
+#: src/SUMMARY.md:47
+msgid "Modelines"
 msgstr ""
 
 #: src/SUMMARY.md:49
@@ -203,15 +203,15 @@ msgstr ""
 msgid "Platform Support"
 msgstr ""
 
-#: src/SUMMARY.md:63 src/SUMMARY.md:195
+#: src/SUMMARY.md:63 src/SUMMARY.md:194
 msgid "macOS"
 msgstr ""
 
-#: src/SUMMARY.md:64 src/SUMMARY.md:197
+#: src/SUMMARY.md:64 src/SUMMARY.md:196
 msgid "Windows"
 msgstr ""
 
-#: src/SUMMARY.md:65 src/SUMMARY.md:196
+#: src/SUMMARY.md:65 src/SUMMARY.md:195
 msgid "Linux"
 msgstr ""
 
@@ -584,109 +584,105 @@ msgid "Snippets Extensions"
 msgstr ""
 
 #: src/SUMMARY.md:165
-msgid "Slash Command Extensions"
-msgstr ""
-
-#: src/SUMMARY.md:166
 msgid "Agent Server Extensions"
 msgstr ""
 
-#: src/SUMMARY.md:167
+#: src/SUMMARY.md:166
 msgid "MCP Server Extensions"
 msgstr ""
 
-#: src/SUMMARY.md:169
+#: src/SUMMARY.md:168
 msgid "Coming From…"
 msgstr ""
 
-#: src/SUMMARY.md:171
+#: src/SUMMARY.md:170
 msgid "VS Code"
 msgstr ""
 
-#: src/SUMMARY.md:172
+#: src/SUMMARY.md:171
 msgid "IntelliJ IDEA"
 msgstr ""
 
-#: src/SUMMARY.md:173
+#: src/SUMMARY.md:172
 msgid "PyCharm"
 msgstr ""
 
-#: src/SUMMARY.md:174
+#: src/SUMMARY.md:173
 msgid "WebStorm"
 msgstr ""
 
-#: src/SUMMARY.md:175
+#: src/SUMMARY.md:174
 msgid "RustRover"
 msgstr ""
 
-#: src/SUMMARY.md:177
+#: src/SUMMARY.md:176
 msgid "Reference"
 msgstr ""
 
-#: src/SUMMARY.md:179
+#: src/SUMMARY.md:178
 msgid "All Settings"
 msgstr ""
 
-#: src/SUMMARY.md:180
+#: src/SUMMARY.md:179
 msgid "All Actions"
 msgstr ""
 
-#: src/SUMMARY.md:181
+#: src/SUMMARY.md:180
 msgid "CLI Reference"
 msgstr ""
 
-#: src/SUMMARY.md:183
+#: src/SUMMARY.md:182
 msgid "Account & Privacy"
 msgstr ""
 
-#: src/SUMMARY.md:185
+#: src/SUMMARY.md:184
 msgid "Authenticate"
 msgstr ""
 
-#: src/SUMMARY.md:186
+#: src/SUMMARY.md:185
 msgid "Roles"
 msgstr ""
 
-#: src/SUMMARY.md:187
+#: src/SUMMARY.md:186
 msgid "Privacy and Security"
 msgstr ""
 
-#: src/SUMMARY.md:188
+#: src/SUMMARY.md:187
 msgid "Worktree Trust"
 msgstr ""
 
-#: src/SUMMARY.md:189
+#: src/SUMMARY.md:188
 msgid "AI Improvement"
 msgstr ""
 
-#: src/SUMMARY.md:190
+#: src/SUMMARY.md:189
 msgid "Telemetry"
 msgstr ""
 
-#: src/SUMMARY.md:192 src/SUMMARY.md:194
+#: src/SUMMARY.md:191 src/SUMMARY.md:193
 msgid "Developing Zed"
 msgstr ""
 
-#: src/SUMMARY.md:198
+#: src/SUMMARY.md:197
 msgid "FreeBSD"
 msgstr ""
 
-#: src/SUMMARY.md:199
+#: src/SUMMARY.md:198
 msgid "Using Debuggers"
 msgstr ""
 
-#: src/SUMMARY.md:200
+#: src/SUMMARY.md:199
 msgid "Performance"
 msgstr ""
 
-#: src/SUMMARY.md:201
+#: src/SUMMARY.md:200
 msgid "Glossary"
 msgstr ""
 
-#: src/SUMMARY.md:202
+#: src/SUMMARY.md:201
 msgid "Release Notes"
 msgstr ""
 
-#: src/SUMMARY.md:203
+#: src/SUMMARY.md:202
 msgid "Debugging Crashes"
 msgstr ""

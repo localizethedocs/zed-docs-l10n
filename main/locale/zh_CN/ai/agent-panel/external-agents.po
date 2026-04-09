@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:21
 msgid ""
-"First open the agent panel with <kbd class=\"keybinding\">cmd-?|ctrl-?</"
+"First open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</"
 "kbd>, and then use the `+` button in the top right to start a new Gemini CLI "
 "thread."
 msgstr ""
@@ -184,8 +184,9 @@ msgstr ""
 
 #: src/ai/external-agents.md:67
 msgid ""
-"Open the agent panel with <kbd class=\"keybinding\">cmd-?|ctrl-?</kbd>, and "
-"then use the `+` button in the top right to start a new Claude Agent thread."
+"Open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</kbd>, "
+"and then use the `+` button in the top right to start a new Claude Agent "
+"thread."
 msgstr ""
 
 #: src/ai/external-agents.md:75 src/ai/external-agents.md:150
@@ -334,8 +335,8 @@ msgstr ""
 #: src/ai/external-agents.md:141
 msgid ""
 "As of version `0.208`, you should be able to use Codex directly from Zed. "
-"Open the agent panel with <kbd class=\"keybinding\">cmd-?|ctrl-?</kbd>, and "
-"then use the `+` button in the top right to start a new Codex thread."
+"Open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</kbd>, "
+"and then use the `+` button in the top right to start a new Codex thread."
 msgstr ""
 
 #: src/ai/external-agents.md:152

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -66,8 +66,8 @@ msgid ""
 "keymap. If you missed that step, you can change it anytime:"
 msgstr ""
 
-#: src/migrate/webstorm.md:37 src/migrate/webstorm.md:359
-msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
+#: src/migrate/webstorm.md:37 src/migrate/webstorm.md:351
+msgid "Open Settings with <kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:38
@@ -80,8 +80,9 @@ msgstr ""
 
 #: src/migrate/webstorm.md:41
 msgid ""
-"This maps familiar shortcuts like `Shift Shift` for Search Everywhere, "
-"`Cmd+O` for Go to Class, and `Cmd+Shift+A` for Find Action."
+"This maps familiar shortcuts like <kbd class=\"keybinding\">cmd-o\\|ctrl-alt-"
+"shift-n</kbd> for Go to Class and <kbd class=\"keybinding\">shift shift\\|"
+"shift shift</kbd> for Find Action."
 msgstr ""
 
 #: src/migrate/webstorm.md:43
@@ -91,7 +92,7 @@ msgstr "設定編輯器偏好設定"
 #: src/migrate/webstorm.md:45
 msgid ""
 "You can configure most settings in the Settings Editor (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>). For advanced settings, run `zed: "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>). For advanced settings, run `zed: "
 "open settings file` from the Command Palette to edit your settings file "
 "directly."
 msgstr ""
@@ -170,10 +171,10 @@ msgstr "開啟或建立專案"
 
 #: src/migrate/webstorm.md:63
 msgid ""
-"After setup, press `Cmd+Shift+O` (with JetBrains keymap) to open a folder. "
-"This becomes your workspace in Zed. Unlike WebStorm, there's no project "
-"configuration wizard, no framework selection dialog, and no project "
-"structure setup required."
+"After setup, use <kbd class=\"keybinding\">cmd-shift-n\\|ctrl-alt-n</kbd> to "
+"open a folder. This becomes your workspace in Zed. Unlike WebStorm, there's "
+"no project configuration wizard, no framework selection dialog, and no "
+"project structure setup required."
 msgstr ""
 
 #: src/migrate/webstorm.md:65
@@ -196,25 +197,27 @@ msgstr ""
 
 #: src/migrate/webstorm.md:72
 msgid ""
-"Use `Cmd+Shift+O` or `Cmd+E` to jump between files quickly (like WebStorm's "
-"\"Recent Files\")"
+"Use <kbd class=\"keybinding\">cmd-shift-n\\|ctrl-alt-n</kbd> to jump between "
+"files quickly (like WebStorm's \"Recent Files\")"
 msgstr ""
 
 #: src/migrate/webstorm.md:73
 msgid ""
-"Use `Cmd+Shift+A` or `Shift Shift` to open the Command Palette (like "
-"WebStorm's \"Search Everywhere\")"
+"Use <kbd class=\"keybinding\">shift shift\\|shift shift</kbd> to open the "
+"Command Palette (like WebStorm's \"Search Everywhere\")"
 msgstr ""
 
 #: src/migrate/webstorm.md:74
-msgid "Use `Cmd+O` to search for symbols (like WebStorm's \"Go to Symbol\")"
+msgid ""
+"Use <kbd class=\"keybinding\">cmd-o\\|ctrl-alt-shift-n</kbd> to search for "
+"symbols (like WebStorm's \"Go to Symbol\")"
 msgstr ""
 
 #: src/migrate/webstorm.md:76
 msgid ""
 "Open buffers appear as tabs across the top. The Project Panel shows your "
-"file tree and Git status. Toggle it with `Cmd+1` (just like WebStorm's "
-"Project tool window)."
+"file tree and Git status. Toggle it with <kbd class=\"keybinding\">cmd-1\\|"
+"alt-1</kbd> (just like WebStorm's Project tool window)."
 msgstr ""
 
 #: src/migrate/webstorm.md:78
@@ -224,298 +227,259 @@ msgstr ""
 #: src/migrate/webstorm.md:80
 msgid ""
 "If you chose the JetBrains keymap during onboarding, most of your shortcuts "
-"should already feel familiar. Here's a quick reference for how Zed compares "
-"to WebStorm."
+"should already feel familiar. Here's a quick reference of common actions and "
+"their keybindings with the JetBrains keymap active."
 msgstr ""
 
 #: src/migrate/webstorm.md:82
-msgid "Common Shared Keybindings"
+msgid "Common Keybindings"
 msgstr ""
 
-#: src/migrate/webstorm.md:84 src/migrate/webstorm.md:107
-#: src/migrate/webstorm.md:117
+#: src/migrate/webstorm.md:84 src/migrate/webstorm.md:110
 msgid "Action"
 msgstr ""
 
-#: src/migrate/webstorm.md:84 src/migrate/webstorm.md:117
-msgid "Shortcut"
+#: src/migrate/webstorm.md:84 src/migrate/webstorm.md:227
+msgid "Zed Keybinding"
 msgstr ""
 
 #: src/migrate/webstorm.md:86
-msgid "Search Everywhere"
+msgid "Command Palette"
 msgstr ""
 
 #: src/migrate/webstorm.md:86
-msgid "`Shift Shift`"
+msgid "<kbd class=\"keybinding\">shift shift\\|shift shift</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:87
-msgid "Find Action / Command Palette"
-msgstr ""
-
-#: src/migrate/webstorm.md:87
-msgid "`Cmd + Shift + A`"
-msgstr ""
-
-#: src/migrate/webstorm.md:88
 msgid "Go to File"
 msgstr "前往檔案"
 
-#: src/migrate/webstorm.md:88
-msgid "`Cmd + Shift + O`"
+#: src/migrate/webstorm.md:87
+msgid "<kbd class=\"keybinding\">cmd-shift-n\\|ctrl-alt-n</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:89
+#: src/migrate/webstorm.md:88
 msgid "Go to Symbol"
 msgstr ""
 
+#: src/migrate/webstorm.md:88
+msgid "<kbd class=\"keybinding\">cmd-o\\|ctrl-alt-shift-n</kbd>"
+msgstr ""
+
 #: src/migrate/webstorm.md:89
-msgid "`Cmd + O`"
+msgid "File Outline"
+msgstr ""
+
+#: src/migrate/webstorm.md:89
+msgid "<kbd class=\"keybinding\">cmd-f12\\|ctrl-f12</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:90
-msgid "Recent Files"
-msgstr ""
-
-#: src/migrate/webstorm.md:90
-msgid "`Cmd + E`"
-msgstr ""
-
-#: src/migrate/webstorm.md:91
 msgid "Go to Definition"
 msgstr "前往定義"
 
-#: src/migrate/webstorm.md:91
-msgid "`Cmd + B`"
-msgstr "`Cmd + B`"
+#: src/migrate/webstorm.md:90
+msgid "<kbd class=\"keybinding\">cmd-b\\|ctrl-b</kbd>"
+msgstr ""
 
-#: src/migrate/webstorm.md:92
+#: src/migrate/webstorm.md:91
 msgid "Find Usages"
 msgstr ""
 
-#: src/migrate/webstorm.md:92
-msgid "`Alt + F7`"
+#: src/migrate/webstorm.md:91
+msgid "<kbd class=\"keybinding\">cmd-alt-f7\\|ctrl-alt-f7</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:93
+#: src/migrate/webstorm.md:92
 msgid "Rename Symbol"
 msgstr ""
 
-#: src/migrate/webstorm.md:93
-msgid "`Shift + F6`"
+#: src/migrate/webstorm.md:92
+msgid "<kbd class=\"keybinding\">shift-f6\\|shift-f6</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:94
+#: src/migrate/webstorm.md:93
 msgid "Reformat Code"
 msgstr "重新格式化程式碼"
 
-#: src/migrate/webstorm.md:94
-msgid "`Cmd + Alt + L`"
-msgstr "`Cmd + Alt + L`"
+#: src/migrate/webstorm.md:93
+msgid "<kbd class=\"keybinding\">cmd-alt-l\\|ctrl-alt-l</kbd>"
+msgstr ""
 
-#: src/migrate/webstorm.md:95
+#: src/migrate/webstorm.md:94
 msgid "Toggle Project Panel"
 msgstr ""
 
-#: src/migrate/webstorm.md:95 src/migrate/webstorm.md:236
-msgid "`Cmd + 1`"
+#: src/migrate/webstorm.md:94 src/migrate/webstorm.md:229
+msgid "<kbd class=\"keybinding\">cmd-1\\|alt-1</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:96
+#: src/migrate/webstorm.md:95
 msgid "Toggle Terminal"
 msgstr ""
 
-#: src/migrate/webstorm.md:96 src/migrate/webstorm.md:238
-msgid "`Alt + F12`"
+#: src/migrate/webstorm.md:95 src/migrate/webstorm.md:231
+msgid "<kbd class=\"keybinding\">alt-f12\\|alt-f12</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:97
+#: src/migrate/webstorm.md:96
 msgid "Duplicate Line"
 msgstr ""
 
-#: src/migrate/webstorm.md:97
-msgid "`Cmd + D`"
-msgstr "`Cmd + D`"
+#: src/migrate/webstorm.md:96
+msgid "<kbd class=\"keybinding\">cmd-d\\|ctrl-d</kbd>"
+msgstr ""
 
-#: src/migrate/webstorm.md:98
+#: src/migrate/webstorm.md:97
 msgid "Delete Line"
 msgstr ""
 
+#: src/migrate/webstorm.md:97
+msgid "<kbd class=\"keybinding\">cmd-backspace\\|ctrl-y</kbd>"
+msgstr ""
+
 #: src/migrate/webstorm.md:98
-msgid "`Cmd + Backspace`"
+msgid "Move Line Up"
+msgstr ""
+
+#: src/migrate/webstorm.md:98
+msgid "<kbd class=\"keybinding\">shift-alt-up\\|shift-alt-up</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:99
-msgid "Move Line Up/Down"
+msgid "Move Line Down"
 msgstr ""
 
 #: src/migrate/webstorm.md:99
-msgid "`Shift + Alt + Up/Down`"
+msgid "<kbd class=\"keybinding\">shift-alt-down\\|shift-alt-down</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:100
-msgid "Expand/Shrink Selection"
+msgid "Expand Selection"
 msgstr ""
 
 #: src/migrate/webstorm.md:100
-msgid "`Alt + Up/Down`"
+msgid "<kbd class=\"keybinding\">alt-up\\|ctrl-w</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:101
+msgid "Shrink Selection"
+msgstr ""
+
+#: src/migrate/webstorm.md:101
+msgid "<kbd class=\"keybinding\">alt-down\\|ctrl-shift-w</kbd>"
+msgstr ""
+
+#: src/migrate/webstorm.md:102
 msgid "Comment Line"
 msgstr ""
 
-#: src/migrate/webstorm.md:101
-msgid "`Cmd + /`"
-msgstr ""
-
 #: src/migrate/webstorm.md:102
-msgid "Go Back / Forward"
-msgstr ""
-
-#: src/migrate/webstorm.md:102
-msgid "`Cmd + [` / `Cmd + ]`"
+msgid "<kbd class=\"keybinding\">cmd-/\\|ctrl-/</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:103
-msgid "Toggle Breakpoint"
+msgid "Go Back"
 msgstr ""
 
 #: src/migrate/webstorm.md:103
-msgid "`Ctrl + F8`"
+msgid "<kbd class=\"keybinding\">cmd-alt-left\\|ctrl-alt-left</kbd>"
+msgstr ""
+
+#: src/migrate/webstorm.md:104
+msgid "Go Forward"
+msgstr ""
+
+#: src/migrate/webstorm.md:104
+msgid "<kbd class=\"keybinding\">cmd-alt-right\\|ctrl-alt-right</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:105
-msgid "Different Keybindings (WebStorm → Zed)"
+msgid "Toggle Breakpoint"
 msgstr ""
 
-#: src/migrate/webstorm.md:107
-msgid "WebStorm"
+#: src/migrate/webstorm.md:105
+msgid "<kbd class=\"keybinding\">ctrl-f8\\|ctrl-f8</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:107
-msgid "Zed (JetBrains keymap)"
-msgstr ""
-
-#: src/migrate/webstorm.md:109
-msgid "File Structure"
-msgstr ""
-
-#: src/migrate/webstorm.md:109
-msgid "`Cmd + F12`"
-msgstr ""
-
-#: src/migrate/webstorm.md:109
-msgid "`Cmd + F12` (outline)"
-msgstr ""
-
-#: src/migrate/webstorm.md:110
+#: src/migrate/webstorm.md:106
 msgid "Navigate to Next Error"
 msgstr ""
 
-#: src/migrate/webstorm.md:110
-msgid "`F2`"
+#: src/migrate/webstorm.md:106
+msgid "<kbd class=\"keybinding\">f2\\|f2</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:111
-msgid "Run"
-msgstr ""
-
-#: src/migrate/webstorm.md:111
-msgid "`Ctrl + R`"
-msgstr ""
-
-#: src/migrate/webstorm.md:111
-msgid "`Ctrl + Alt + R` (tasks)"
-msgstr ""
-
-#: src/migrate/webstorm.md:112
-msgid "Debug"
-msgstr ""
-
-#: src/migrate/webstorm.md:112
-msgid "`Ctrl + D`"
-msgstr ""
-
-#: src/migrate/webstorm.md:112
-msgid "`Alt + Shift + F9`"
-msgstr ""
-
-#: src/migrate/webstorm.md:113
-msgid "Stop"
-msgstr ""
-
-#: src/migrate/webstorm.md:113
-msgid "`Cmd + F2`"
-msgstr ""
-
-#: src/migrate/webstorm.md:113
-msgid "`Ctrl + F2`"
-msgstr ""
-
-#: src/migrate/webstorm.md:115
+#: src/migrate/webstorm.md:108
 msgid "Unique to Zed"
 msgstr ""
 
-#: src/migrate/webstorm.md:117
+#: src/migrate/webstorm.md:110
+msgid "Keybinding"
+msgstr ""
+
+#: src/migrate/webstorm.md:110
 msgid "Notes"
 msgstr ""
 
-#: src/migrate/webstorm.md:119
+#: src/migrate/webstorm.md:112
 msgid "Toggle Right Dock"
 msgstr ""
 
-#: src/migrate/webstorm.md:119
-msgid "`Cmd + R`"
+#: src/migrate/webstorm.md:112
+msgid "<kbd class=\"keybinding\">cmd-r\\|ctrl-alt-b</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:119
+#: src/migrate/webstorm.md:112
 msgid "Assistant panel, notifications"
 msgstr ""
 
-#: src/migrate/webstorm.md:120
-msgid "Split Panes"
+#: src/migrate/webstorm.md:113
+msgid "Split Pane Right"
 msgstr ""
 
-#: src/migrate/webstorm.md:120
-msgid "`Cmd + K`, then arrow keys"
+#: src/migrate/webstorm.md:113
+msgid "<kbd class=\"keybinding\">cmd-d\\|ctrl-shift-5</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:120
-msgid "Create splits in any direction"
+#: src/migrate/webstorm.md:113
+msgid "Use other arrow keys to create splits in different directions"
 msgstr ""
 
-#: src/migrate/webstorm.md:122
+#: src/migrate/webstorm.md:115
 msgid "How to Customize Keybindings"
 msgstr ""
 
-#: src/migrate/webstorm.md:124
-msgid "Open the Command Palette (`Cmd+Shift+A` or `Shift Shift`)"
+#: src/migrate/webstorm.md:117
+msgid ""
+"Open the Command Palette (<kbd class=\"keybinding\">shift shift\\|shift "
+"shift</kbd>)"
 msgstr ""
 
-#: src/migrate/webstorm.md:125
-msgid "Run `Zed: Open Keymap Editor`"
+#: src/migrate/webstorm.md:118
+msgid "Run `zed: open keymap`"
 msgstr ""
 
-#: src/migrate/webstorm.md:127
+#: src/migrate/webstorm.md:120
 msgid ""
 "This opens a list of all available bindings. You can override individual "
 "shortcuts or remove conflicts."
 msgstr ""
 
-#: src/migrate/webstorm.md:129
+#: src/migrate/webstorm.md:122
 msgid "Zed also supports key sequences (multi-key shortcuts)."
 msgstr ""
 
-#: src/migrate/webstorm.md:131
+#: src/migrate/webstorm.md:124
 msgid "Differences in User Interfaces"
 msgstr ""
 
-#: src/migrate/webstorm.md:133
+#: src/migrate/webstorm.md:126
 msgid "No Indexing"
 msgstr ""
 
-#: src/migrate/webstorm.md:135
+#: src/migrate/webstorm.md:128
 msgid ""
 "If you've used WebStorm on large projects, you know the wait. Opening a "
 "project with many dependencies can mean watching \"Indexing...\" for "
@@ -524,7 +488,7 @@ msgid ""
 "when dependencies change."
 msgstr ""
 
-#: src/migrate/webstorm.md:137
+#: src/migrate/webstorm.md:130
 msgid ""
 "Zed doesn't index. You open a folder and start coding immediately—no "
 "progress bars, no \"Indexing paused\" banners. File search and navigation "
@@ -532,7 +496,7 @@ msgid ""
 "you have."
 msgstr ""
 
-#: src/migrate/webstorm.md:139
+#: src/migrate/webstorm.md:132
 msgid ""
 "WebStorm's index enables features like finding all usages across your entire "
 "codebase, tracking import hierarchies, and flagging unused exports project-"
@@ -540,36 +504,40 @@ msgid ""
 "as much ground."
 msgstr ""
 
-#: src/migrate/webstorm.md:141 src/migrate/webstorm.md:167
-#: src/migrate/webstorm.md:186 src/migrate/webstorm.md:221
+#: src/migrate/webstorm.md:134 src/migrate/webstorm.md:160
+#: src/migrate/webstorm.md:179 src/migrate/webstorm.md:214
 msgid "**How to adapt:**"
 msgstr ""
 
-#: src/migrate/webstorm.md:143
+#: src/migrate/webstorm.md:136
 msgid ""
-"Search symbols across the project with `Cmd+O` (powered by the TypeScript "
-"language server)"
+"Search symbols across the project with <kbd class=\"keybinding\">cmd-o\\|"
+"ctrl-alt-shift-n</kbd> (powered by the TypeScript language server)"
 msgstr ""
 
-#: src/migrate/webstorm.md:144
-msgid "Find files by name with `Cmd+Shift+O`"
+#: src/migrate/webstorm.md:137
+msgid ""
+"Find files by name with <kbd class=\"keybinding\">cmd-shift-n\\|ctrl-alt-n</"
+"kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:145
-msgid "Use `Cmd+Shift+F` for text search—it stays fast even in large monorepos"
+#: src/migrate/webstorm.md:138
+msgid ""
+"Use <kbd class=\"keybinding\">cmd-shift-h\\|ctrl-shift-h</kbd> for text "
+"search—it stays fast even in large monorepos"
 msgstr ""
 
-#: src/migrate/webstorm.md:146
+#: src/migrate/webstorm.md:139
 msgid ""
 "Run `tsc --noEmit` or `eslint .` from the terminal when you need deeper "
 "project-wide analysis"
 msgstr ""
 
-#: src/migrate/webstorm.md:148
+#: src/migrate/webstorm.md:141
 msgid "LSP vs. Native Language Intelligence"
 msgstr ""
 
-#: src/migrate/webstorm.md:150
+#: src/migrate/webstorm.md:143
 msgid ""
 "WebStorm has its own JavaScript and TypeScript analysis engine built by "
 "JetBrains. This engine understands your code deeply: it resolves types, "
@@ -577,32 +545,32 @@ msgid ""
 "specialized refactorings."
 msgstr ""
 
-#: src/migrate/webstorm.md:152
+#: src/migrate/webstorm.md:145
 msgid ""
 "Zed uses the Language Server Protocol (LSP) for code intelligence. For "
 "JavaScript and TypeScript, Zed supports:"
 msgstr ""
 
-#: src/migrate/webstorm.md:154
+#: src/migrate/webstorm.md:147
 msgid ""
 "**vtsls** (default) — Fast TypeScript language server with excellent "
 "performance"
 msgstr ""
 
-#: src/migrate/webstorm.md:155
+#: src/migrate/webstorm.md:148
 msgid ""
 "**typescript-language-server** — The standard TypeScript LSP implementation"
 msgstr ""
 
-#: src/migrate/webstorm.md:156
+#: src/migrate/webstorm.md:149
 msgid "**ESLint** — Linting integration"
 msgstr ""
 
-#: src/migrate/webstorm.md:157
+#: src/migrate/webstorm.md:150
 msgid "**Prettier** — Code formatting (built-in)"
 msgstr ""
 
-#: src/migrate/webstorm.md:159
+#: src/migrate/webstorm.md:152
 msgid ""
 "The TypeScript LSP experience is well-supported. You get accurate "
 "completions, type checking, go-to-definition, and find-references. The "
@@ -610,57 +578,57 @@ msgid ""
 "TypeScript services."
 msgstr ""
 
-#: src/migrate/webstorm.md:161
+#: src/migrate/webstorm.md:154
 msgid "Where you might notice differences:"
 msgstr ""
 
-#: src/migrate/webstorm.md:163
+#: src/migrate/webstorm.md:156
 msgid ""
 "Framework-specific intelligence (Angular templates, Vue SFCs) may be less "
 "integrated"
 msgstr ""
 
-#: src/migrate/webstorm.md:164
+#: src/migrate/webstorm.md:157
 msgid ""
 "Some complex refactorings (extract component with proper imports) may be "
 "less sophisticated"
 msgstr ""
 
-#: src/migrate/webstorm.md:165
+#: src/migrate/webstorm.md:158
 msgid ""
 "Auto-import suggestions depend on what the language server knows about your "
 "project"
 msgstr ""
 
-#: src/migrate/webstorm.md:169
+#: src/migrate/webstorm.md:162
 msgid ""
-"Use `Alt+Enter` for available code actions—the list will vary by language "
-"server"
+"Use <kbd class=\"keybinding\">alt-enter\\|alt-enter</kbd> for available code "
+"actions—the list will vary by language server"
 msgstr ""
 
-#: src/migrate/webstorm.md:170
+#: src/migrate/webstorm.md:163
 msgid ""
 "Ensure your `tsconfig.json` is properly configured so the language server "
 "understands your project structure"
 msgstr ""
 
-#: src/migrate/webstorm.md:171
+#: src/migrate/webstorm.md:164
 msgid ""
 "Use Prettier for consistent formatting (it's enabled by default for JS/TS)"
 msgstr ""
 
-#: src/migrate/webstorm.md:172
+#: src/migrate/webstorm.md:165
 msgid ""
 "For code inspection similar to WebStorm's \"Inspect Code,\" check the "
-"Diagnostics panel (`Cmd+6`)—ESLint and TypeScript together catch many of the "
-"same issues"
+"Diagnostics panel (<kbd class=\"keybinding\">cmd-6\\|alt-6</kbd>)—ESLint and "
+"TypeScript together catch many of the same issues"
 msgstr ""
 
-#: src/migrate/webstorm.md:174
+#: src/migrate/webstorm.md:167
 msgid "No Project Model"
 msgstr ""
 
-#: src/migrate/webstorm.md:176
+#: src/migrate/webstorm.md:169
 msgid ""
 "WebStorm manages projects through `.idea` folders containing XML "
 "configuration files, framework detection, and run configurations. This model "
@@ -668,105 +636,109 @@ msgid ""
 "UI, and persist run/debug setups."
 msgstr ""
 
-#: src/migrate/webstorm.md:178
+#: src/migrate/webstorm.md:171
 msgid ""
 "Zed takes a different approach: a project is just a folder. There's no setup "
 "wizard, no framework detection dialog, no project structure to configure."
 msgstr ""
 
-#: src/migrate/webstorm.md:180
+#: src/migrate/webstorm.md:173
 msgid "What this means in practice:"
 msgstr ""
 
-#: src/migrate/webstorm.md:182
+#: src/migrate/webstorm.md:175
 msgid ""
 "Run configurations aren't a thing. Define reusable commands in `tasks.json` "
 "instead. Note that your existing `.idea/` configurations won't carry over—"
 "you'll set up the ones you need fresh."
 msgstr ""
 
-#: src/migrate/webstorm.md:183
+#: src/migrate/webstorm.md:176
 msgid ""
 "npm scripts live in the terminal. Run `npm run dev`, `pnpm build`, or `yarn "
 "test` directly—there's no dedicated npm panel."
 msgstr ""
 
-#: src/migrate/webstorm.md:184
+#: src/migrate/webstorm.md:177
 msgid ""
 "No framework detection. Zed treats React, Angular, Vue, and vanilla JS/TS "
 "the same way."
 msgstr ""
 
-#: src/migrate/webstorm.md:188
+#: src/migrate/webstorm.md:181
 msgid ""
 "Create a `.zed/settings.json` in your project root for project-specific "
 "settings"
 msgstr ""
 
-#: src/migrate/webstorm.md:189
+#: src/migrate/webstorm.md:182
 msgid ""
 "Define common commands in `tasks.json` (open via Command Palette: `zed: open "
 "tasks`):"
 msgstr ""
 
-#: src/migrate/webstorm.md:194 src/migrate/webstorm.md:198
-#: src/migrate/webstorm.md:202 src/migrate/webstorm.md:206
-#: src/migrate/webstorm.md:269 src/migrate/webstorm.md:275
-#: src/migrate/webstorm.md:281
+#: src/migrate/webstorm.md:187 src/migrate/webstorm.md:191
+#: src/migrate/webstorm.md:195 src/migrate/webstorm.md:199
+#: src/migrate/webstorm.md:262 src/migrate/webstorm.md:268
+#: src/migrate/webstorm.md:274
 msgid "\"label\""
 msgstr "\"label\""
 
-#: src/migrate/webstorm.md:194
+#: src/migrate/webstorm.md:187
 msgid "\"dev\""
 msgstr ""
 
-#: src/migrate/webstorm.md:195 src/migrate/webstorm.md:199
-#: src/migrate/webstorm.md:203 src/migrate/webstorm.md:207
-#: src/migrate/webstorm.md:392
+#: src/migrate/webstorm.md:188 src/migrate/webstorm.md:192
+#: src/migrate/webstorm.md:196 src/migrate/webstorm.md:200
+#: src/migrate/webstorm.md:384
 msgid "\"command\""
 msgstr ""
 
-#: src/migrate/webstorm.md:195
+#: src/migrate/webstorm.md:188
 msgid "\"npm run dev\""
 msgstr ""
 
-#: src/migrate/webstorm.md:198
+#: src/migrate/webstorm.md:191
 msgid "\"build\""
 msgstr ""
 
-#: src/migrate/webstorm.md:199
+#: src/migrate/webstorm.md:192
 msgid "\"npm run build\""
 msgstr ""
 
-#: src/migrate/webstorm.md:202
+#: src/migrate/webstorm.md:195
 msgid "\"test\""
 msgstr ""
 
-#: src/migrate/webstorm.md:203
+#: src/migrate/webstorm.md:196
 msgid "\"npm test\""
 msgstr ""
 
-#: src/migrate/webstorm.md:206
+#: src/migrate/webstorm.md:199
 msgid "\"test current file\""
 msgstr ""
 
-#: src/migrate/webstorm.md:207
+#: src/migrate/webstorm.md:200
 msgid "\"npm test -- $ZED_FILE\""
 msgstr ""
 
-#: src/migrate/webstorm.md:212
-msgid "Use `Ctrl+Alt+R` to run tasks quickly"
+#: src/migrate/webstorm.md:205
+msgid ""
+"Use <kbd class=\"keybinding\">shift-f10\\|shift-f10</kbd> to run tasks "
+"quickly"
 msgstr ""
 
-#: src/migrate/webstorm.md:213
-msgid "Lean on your terminal (`Alt+F12`) for anything tasks don't cover"
+#: src/migrate/webstorm.md:206
+msgid ""
+"Lean on your terminal (<kbd class=\"keybinding\">alt-f12\\|alt-f12</kbd>) "
+"for anything tasks don't cover"
 msgstr ""
 
-#: src/migrate/webstorm.md:215
+#: src/migrate/webstorm.md:208
 msgid "No Framework Integration"
 msgstr ""
 
-#: src/migrate/webstorm.md:217
+#: src/migrate/webstorm.md:210
 msgid ""
 "WebStorm's value for web development comes largely from its framework "
 "integration. React components get special treatment. Angular has dedicated "
@@ -774,675 +746,694 @@ msgid ""
 "window shows all your scripts."
 msgstr ""
 
-#: src/migrate/webstorm.md:219
+#: src/migrate/webstorm.md:212
 msgid ""
 "Zed has none of this built-in. The TypeScript language server sees your code "
 "as TypeScript—it doesn't understand that a function is a React component or "
 "that a file is an Angular service."
 msgstr ""
 
-#: src/migrate/webstorm.md:223
+#: src/migrate/webstorm.md:216
 msgid ""
-"Use grep and file search liberally. `Cmd+Shift+F` with a regex can find "
-"component definitions, route configurations, or API endpoints."
+"Use grep and file search liberally. <kbd class=\"keybinding\">cmd-shift-h\\|"
+"ctrl-shift-h</kbd> with a regex can find component definitions, route "
+"configurations, or API endpoints."
 msgstr ""
 
-#: src/migrate/webstorm.md:224
+#: src/migrate/webstorm.md:217
 msgid ""
-"Rely on your language server's \"find references\" (`Alt+F7`) for navigation—"
-"it works, just without framework context"
+"Rely on your language server's \"find references\" (<kbd "
+"class=\"keybinding\">cmd-alt-f7\\|ctrl-alt-f7</kbd>) for navigation—it "
+"works, just without framework context"
 msgstr ""
 
-#: src/migrate/webstorm.md:225
+#: src/migrate/webstorm.md:218
 msgid ""
 "Consider using framework-specific CLI tools (`ng`, `next`, `vite`) from "
 "Zed's terminal"
 msgstr ""
 
-#: src/migrate/webstorm.md:226
+#: src/migrate/webstorm.md:219
 msgid ""
 "For React, JSX/TSX syntax and TypeScript types still provide good "
 "intelligence"
 msgstr ""
 
-#: src/migrate/webstorm.md:228
+#: src/migrate/webstorm.md:221
 msgid ""
 "**Tip:** For projects with complex configurations, keep your framework's "
 "documentation handy. Zed's speed comes with less hand-holding for framework-"
 "specific features."
 msgstr ""
 
-#: src/migrate/webstorm.md:230
+#: src/migrate/webstorm.md:223
 msgid "Tool Windows vs. Docks"
 msgstr ""
 
-#: src/migrate/webstorm.md:232
+#: src/migrate/webstorm.md:225
 msgid ""
-"WebStorm organizes auxiliary views into numbered tool windows (Project = 1, "
-"npm = Alt+F11, Terminal = Alt+F12, etc.). Zed uses a similar concept called "
-"\"docks\":"
+"WebStorm organizes auxiliary views into numbered tool windows. Zed uses a "
+"similar concept called \"docks\":"
 msgstr ""
 
-#: src/migrate/webstorm.md:234
+#: src/migrate/webstorm.md:227
 msgid "WebStorm Tool Window"
 msgstr "WebStorm 工具視窗"
 
-#: src/migrate/webstorm.md:234
+#: src/migrate/webstorm.md:227
 msgid "Zed Equivalent"
 msgstr ""
 
-#: src/migrate/webstorm.md:234
-msgid "Shortcut (JetBrains keymap)"
+#: src/migrate/webstorm.md:229
+msgid "Project"
 msgstr ""
 
-#: src/migrate/webstorm.md:236
-msgid "Project (1)"
-msgstr "專案 (1)"
-
-#: src/migrate/webstorm.md:236
+#: src/migrate/webstorm.md:229
 msgid "Project Panel"
 msgstr "專案面板"
 
-#: src/migrate/webstorm.md:237
-msgid "Git (9 or Cmd+0)"
+#: src/migrate/webstorm.md:230
+msgid "Git"
 msgstr ""
 
-#: src/migrate/webstorm.md:237
+#: src/migrate/webstorm.md:230
 msgid "Git Panel"
 msgstr "Git 面板"
 
-#: src/migrate/webstorm.md:237
-msgid "`Cmd + 0`"
+#: src/migrate/webstorm.md:230
+msgid "<kbd class=\"keybinding\">cmd-0\\|alt-0</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:238
-msgid "Terminal (Alt+F12)"
-msgstr "終端機 (Alt+F12)"
+#: src/migrate/webstorm.md:231
+msgid "Terminal"
+msgstr ""
 
-#: src/migrate/webstorm.md:238
+#: src/migrate/webstorm.md:231
 msgid "Terminal Panel"
 msgstr "終端機面板"
 
-#: src/migrate/webstorm.md:239
-msgid "Structure (7)"
-msgstr "結構 (7)"
+#: src/migrate/webstorm.md:232
+msgid "Structure"
+msgstr ""
 
-#: src/migrate/webstorm.md:239
+#: src/migrate/webstorm.md:232
 msgid "Outline Panel"
 msgstr "大綱面板"
 
-#: src/migrate/webstorm.md:239
-msgid "`Cmd + 7`"
-msgstr "`Cmd + 7`"
+#: src/migrate/webstorm.md:232
+msgid "<kbd class=\"keybinding\">cmd-7\\|alt-7</kbd>"
+msgstr ""
 
-#: src/migrate/webstorm.md:240
-msgid "Problems (6)"
-msgstr "問題 (6)"
+#: src/migrate/webstorm.md:233
+msgid "Problems"
+msgstr ""
 
-#: src/migrate/webstorm.md:240
+#: src/migrate/webstorm.md:233
 msgid "Diagnostics"
 msgstr "診斷"
 
-#: src/migrate/webstorm.md:240
-msgid "`Cmd + 6`"
+#: src/migrate/webstorm.md:233
+msgid "<kbd class=\"keybinding\">cmd-6\\|alt-6</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:241
-msgid "Debug (5)"
+#: src/migrate/webstorm.md:234
+msgid "Debug"
 msgstr ""
 
-#: src/migrate/webstorm.md:241
+#: src/migrate/webstorm.md:234
 msgid "Debug Panel"
 msgstr "除錯面板"
 
-#: src/migrate/webstorm.md:241
-msgid "`Cmd + 5`"
+#: src/migrate/webstorm.md:234
+msgid "<kbd class=\"keybinding\">cmd-5\\|alt-5</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:243
+#: src/migrate/webstorm.md:236
 msgid ""
 "Zed has three dock positions: left, bottom, and right. Panels can be moved "
 "between docks by dragging or through settings."
 msgstr ""
 
-#: src/migrate/webstorm.md:245
+#: src/migrate/webstorm.md:238
 msgid ""
 "Note that there's no dedicated npm tool window in Zed. Use the terminal or "
 "define tasks for your common npm scripts."
 msgstr ""
 
-#: src/migrate/webstorm.md:247
+#: src/migrate/webstorm.md:240
 msgid "Debugging"
 msgstr "除錯"
 
-#: src/migrate/webstorm.md:249
+#: src/migrate/webstorm.md:242
 msgid ""
 "Both WebStorm and Zed offer integrated debugging for JavaScript and "
 "TypeScript:"
 msgstr ""
 
-#: src/migrate/webstorm.md:251
+#: src/migrate/webstorm.md:244
 msgid "Zed uses `vscode-js-debug` (the same debug adapter that VS Code uses)"
 msgstr ""
 
-#: src/migrate/webstorm.md:252
-msgid "Set breakpoints with `Ctrl+F8`"
+#: src/migrate/webstorm.md:245
+msgid "Set breakpoints with <kbd class=\"keybinding\">ctrl-f8\\|ctrl-f8</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:253
+#: src/migrate/webstorm.md:246
 msgid ""
-"Start debugging with `Alt+Shift+F9` or press `F4` and select a debug target"
+"Start debugging with <kbd class=\"keybinding\">alt-shift-f9\\|alt-shift-f9</"
+"kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:254
+#: src/migrate/webstorm.md:247
 msgid ""
-"Step through code with `F7` (step into), `F8` (step over), `Shift+F8` (step "
-"out)"
+"Step through code with <kbd class=\"keybinding\">f7\\|f7</kbd> (step into), "
+"<kbd class=\"keybinding\">f8\\|f8</kbd> (step over), <kbd "
+"class=\"keybinding\">shift-f8\\|shift-f8</kbd> (step out)"
 msgstr ""
 
-#: src/migrate/webstorm.md:255
-msgid "Continue execution with `F9`"
+#: src/migrate/webstorm.md:248
+msgid "Continue execution with <kbd class=\"keybinding\">f9\\|f9</kbd>"
 msgstr ""
 
-#: src/migrate/webstorm.md:257
+#: src/migrate/webstorm.md:250
 msgid "Zed can debug:"
 msgstr ""
 
-#: src/migrate/webstorm.md:259
+#: src/migrate/webstorm.md:252
 msgid "Node.js applications and scripts"
 msgstr ""
 
-#: src/migrate/webstorm.md:260
+#: src/migrate/webstorm.md:253
 msgid "Chrome/browser JavaScript"
 msgstr ""
 
-#: src/migrate/webstorm.md:261
+#: src/migrate/webstorm.md:254
 msgid "Jest, Mocha, Vitest, and other test frameworks"
 msgstr ""
 
-#: src/migrate/webstorm.md:262
+#: src/migrate/webstorm.md:255
 msgid "Next.js (both server and client-side)"
 msgstr ""
 
-#: src/migrate/webstorm.md:264
+#: src/migrate/webstorm.md:257
 msgid "For more control, create a `.zed/debug.json` file:"
 msgstr ""
 
-#: src/migrate/webstorm.md:269
+#: src/migrate/webstorm.md:262
 msgid "\"Debug Current File\""
 msgstr ""
 
-#: src/migrate/webstorm.md:270 src/migrate/webstorm.md:276
-#: src/migrate/webstorm.md:282
+#: src/migrate/webstorm.md:263 src/migrate/webstorm.md:269
+#: src/migrate/webstorm.md:275
 msgid "\"adapter\""
 msgstr "\"adapter\""
 
-#: src/migrate/webstorm.md:270 src/migrate/webstorm.md:276
-#: src/migrate/webstorm.md:282
+#: src/migrate/webstorm.md:263 src/migrate/webstorm.md:269
+#: src/migrate/webstorm.md:275
 msgid "\"JavaScript\""
 msgstr ""
 
-#: src/migrate/webstorm.md:271 src/migrate/webstorm.md:278
+#: src/migrate/webstorm.md:264 src/migrate/webstorm.md:271
 msgid "\"program\""
 msgstr ""
 
-#: src/migrate/webstorm.md:271
+#: src/migrate/webstorm.md:264
 msgid "\"$ZED_FILE\""
 msgstr ""
 
-#: src/migrate/webstorm.md:272 src/migrate/webstorm.md:277
-#: src/migrate/webstorm.md:283
+#: src/migrate/webstorm.md:265 src/migrate/webstorm.md:270
+#: src/migrate/webstorm.md:276
 msgid "\"request\""
 msgstr ""
 
-#: src/migrate/webstorm.md:272 src/migrate/webstorm.md:277
+#: src/migrate/webstorm.md:265 src/migrate/webstorm.md:270
 msgid "\"launch\""
 msgstr ""
 
-#: src/migrate/webstorm.md:275
+#: src/migrate/webstorm.md:268
 msgid "\"Debug Node Server\""
 msgstr ""
 
-#: src/migrate/webstorm.md:278
+#: src/migrate/webstorm.md:271
 msgid "\"${workspaceFolder}/src/server.js\""
 msgstr ""
 
-#: src/migrate/webstorm.md:281
+#: src/migrate/webstorm.md:274
 msgid "\"Attach to Chrome\""
 msgstr ""
 
-#: src/migrate/webstorm.md:283
+#: src/migrate/webstorm.md:276
 msgid "\"attach\""
 msgstr ""
 
-#: src/migrate/webstorm.md:284
+#: src/migrate/webstorm.md:277
 msgid "\"port\""
 msgstr ""
 
-#: src/migrate/webstorm.md:289
+#: src/migrate/webstorm.md:282
 msgid ""
 "Zed also recognizes `.vscode/launch.json` configurations, so existing VS "
 "Code debug setups often work out of the box."
 msgstr ""
 
-#: src/migrate/webstorm.md:291
+#: src/migrate/webstorm.md:284
 msgid "Running Tests"
 msgstr "執行測試"
 
-#: src/migrate/webstorm.md:293
+#: src/migrate/webstorm.md:286
 msgid ""
 "WebStorm has a dedicated test runner with a visual interface showing pass/"
 "fail status for each test. Zed provides test running through:"
 msgstr ""
 
-#: src/migrate/webstorm.md:295
+#: src/migrate/webstorm.md:288
 msgid ""
 "**Gutter icons** — Click the play button next to test functions or describe "
 "blocks"
 msgstr ""
 
-#: src/migrate/webstorm.md:296
+#: src/migrate/webstorm.md:289
 msgid "**Tasks** — Define test commands in `tasks.json`"
 msgstr ""
 
-#: src/migrate/webstorm.md:297
+#: src/migrate/webstorm.md:290
 msgid "**Terminal** — Run `npm test`, `jest`, `vitest`, etc. directly"
 msgstr ""
 
-#: src/migrate/webstorm.md:299
+#: src/migrate/webstorm.md:292
 msgid "Zed supports auto-detection for common test frameworks:"
 msgstr ""
 
-#: src/migrate/webstorm.md:301
+#: src/migrate/webstorm.md:294
 msgid "Jest"
 msgstr ""
 
-#: src/migrate/webstorm.md:302
+#: src/migrate/webstorm.md:295
 msgid "Mocha"
 msgstr ""
 
-#: src/migrate/webstorm.md:303
+#: src/migrate/webstorm.md:296
 msgid "Vitest"
 msgstr ""
 
-#: src/migrate/webstorm.md:304
+#: src/migrate/webstorm.md:297
 msgid "Jasmine"
 msgstr ""
 
-#: src/migrate/webstorm.md:305
+#: src/migrate/webstorm.md:298
 msgid "Bun test"
 msgstr ""
 
-#: src/migrate/webstorm.md:306
+#: src/migrate/webstorm.md:299
 msgid "Node.js test runner"
 msgstr ""
 
-#: src/migrate/webstorm.md:308
+#: src/migrate/webstorm.md:301
 msgid ""
 "The test output appears in the terminal panel. For Jest, use `--verbose` for "
 "detailed output or `--watch` for continuous testing during development."
 msgstr ""
 
-#: src/migrate/webstorm.md:310
+#: src/migrate/webstorm.md:303
 msgid "Extensions vs. Plugins"
 msgstr ""
 
-#: src/migrate/webstorm.md:312
+#: src/migrate/webstorm.md:305
 msgid ""
 "WebStorm has a plugin catalog covering additional language support, themes, "
 "and tool integrations."
 msgstr ""
 
-#: src/migrate/webstorm.md:314
+#: src/migrate/webstorm.md:307
 msgid "Zed's extension catalog is smaller and more focused:"
 msgstr ""
 
-#: src/migrate/webstorm.md:316
+#: src/migrate/webstorm.md:309
 msgid "Language support and syntax highlighting"
 msgstr "語言支援與語法標明"
 
-#: src/migrate/webstorm.md:317
+#: src/migrate/webstorm.md:310
 msgid "Themes"
 msgstr ""
 
-#: src/migrate/webstorm.md:318
-msgid "Slash commands for AI"
-msgstr ""
-
-#: src/migrate/webstorm.md:319
+#: src/migrate/webstorm.md:311
 msgid "Context servers"
 msgstr "上下文伺服器"
 
-#: src/migrate/webstorm.md:321
+#: src/migrate/webstorm.md:313
 msgid "Several features that require plugins in WebStorm are built into Zed:"
 msgstr ""
 
-#: src/migrate/webstorm.md:323
+#: src/migrate/webstorm.md:315
 msgid "Real-time collaboration with voice chat"
 msgstr ""
 
-#: src/migrate/webstorm.md:324
+#: src/migrate/webstorm.md:316
 msgid "AI coding assistance"
 msgstr ""
 
-#: src/migrate/webstorm.md:325
+#: src/migrate/webstorm.md:317
 msgid "Built-in terminal"
 msgstr ""
 
-#: src/migrate/webstorm.md:326
+#: src/migrate/webstorm.md:318
 msgid "Task runner"
 msgstr ""
 
-#: src/migrate/webstorm.md:327
+#: src/migrate/webstorm.md:319
 msgid "LSP-based code intelligence"
 msgstr ""
 
-#: src/migrate/webstorm.md:328
+#: src/migrate/webstorm.md:320
 msgid "Prettier formatting"
 msgstr ""
 
-#: src/migrate/webstorm.md:329
+#: src/migrate/webstorm.md:321
 msgid "ESLint integration"
 msgstr ""
 
-#: src/migrate/webstorm.md:331
+#: src/migrate/webstorm.md:323
 msgid "What's Not in Zed"
 msgstr ""
 
-#: src/migrate/webstorm.md:333
+#: src/migrate/webstorm.md:325
 msgid ""
 "To set expectations clearly, here's what WebStorm offers that Zed doesn't "
 "have:"
 msgstr ""
 
-#: src/migrate/webstorm.md:335
+#: src/migrate/webstorm.md:327
 msgid "**npm tool window** — Use the terminal or tasks instead"
 msgstr ""
 
-#: src/migrate/webstorm.md:336
+#: src/migrate/webstorm.md:328
 msgid "**HTTP Client** — Use tools like Postman, Insomnia, or curl"
 msgstr ""
 
-#: src/migrate/webstorm.md:337
+#: src/migrate/webstorm.md:329
 msgid "**Database tools** — Use DataGrip, DBeaver, or TablePlus"
 msgstr ""
 
-#: src/migrate/webstorm.md:338
+#: src/migrate/webstorm.md:330
 msgid ""
 "**Framework-specific tooling** (Angular schematics, React refactorings) — "
 "Use CLI tools"
 msgstr ""
 
-#: src/migrate/webstorm.md:339
+#: src/migrate/webstorm.md:331
 msgid "**Visual package.json editor** — Edit the file directly"
 msgstr ""
 
-#: src/migrate/webstorm.md:340
+#: src/migrate/webstorm.md:332
 msgid "**Built-in REST client** — Use external tools or extensions"
 msgstr ""
 
-#: src/migrate/webstorm.md:341
+#: src/migrate/webstorm.md:333
 msgid ""
 "**Profiler integration** — Use Chrome DevTools or Node.js profiling tools"
 msgstr ""
 
-#: src/migrate/webstorm.md:343
+#: src/migrate/webstorm.md:335
 msgid "Collaboration in Zed vs. WebStorm"
 msgstr ""
 
-#: src/migrate/webstorm.md:345
+#: src/migrate/webstorm.md:337
 msgid ""
 "WebStorm offers Code With Me as a separate feature for collaboration. Zed "
 "has collaboration built into the core experience."
 msgstr ""
 
-#: src/migrate/webstorm.md:347
+#: src/migrate/webstorm.md:339
 msgid "Open the Collab Panel in the left dock"
 msgstr ""
 
-#: src/migrate/webstorm.md:348
+#: src/migrate/webstorm.md:340
 msgid ""
 "Create a channel and [invite your collaborators](https://zed.dev/docs/"
 "collaboration#inviting-a-collaborator) to join"
 msgstr ""
 
-#: src/migrate/webstorm.md:349
+#: src/migrate/webstorm.md:341
 msgid ""
 "[Share your screen or your codebase](https://zed.dev/docs/"
 "collaboration#share-a-project) directly"
 msgstr ""
 
-#: src/migrate/webstorm.md:351
+#: src/migrate/webstorm.md:343
 msgid ""
 "Once connected, you'll see each other's cursors, selections, and edits in "
 "real time. Voice chat is included. There's no need for separate tools or "
 "third-party logins."
 msgstr ""
 
-#: src/migrate/webstorm.md:353
+#: src/migrate/webstorm.md:345
 msgid "Using AI in Zed"
 msgstr "在 Zed 中使用 AI"
 
-#: src/migrate/webstorm.md:355
+#: src/migrate/webstorm.md:347
 msgid ""
 "If you're used to AI assistants in WebStorm (like GitHub Copilot, JetBrains "
 "AI Assistant, or Junie), Zed offers similar capabilities with more "
 "flexibility."
 msgstr ""
 
-#: src/migrate/webstorm.md:357
+#: src/migrate/webstorm.md:349
 msgid "Configuring GitHub Copilot"
 msgstr ""
 
-#: src/migrate/webstorm.md:360
+#: src/migrate/webstorm.md:352
 msgid "Navigate to **AI → Edit Predictions**"
 msgstr ""
 
-#: src/migrate/webstorm.md:361
+#: src/migrate/webstorm.md:353
 msgid "Click **Configure** next to \"Configure Providers\""
 msgstr ""
 
-#: src/migrate/webstorm.md:362
+#: src/migrate/webstorm.md:354
 msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
 msgstr ""
 
-#: src/migrate/webstorm.md:364
+#: src/migrate/webstorm.md:356
 msgid ""
 "Once signed in, just start typing. Zed will offer suggestions inline for you "
 "to accept."
 msgstr ""
 
-#: src/migrate/webstorm.md:366
+#: src/migrate/webstorm.md:358
 msgid "Additional AI Options"
 msgstr ""
 
-#: src/migrate/webstorm.md:368
+#: src/migrate/webstorm.md:360
 msgid "To use other AI models in Zed, you have several options:"
 msgstr ""
 
-#: src/migrate/webstorm.md:370
+#: src/migrate/webstorm.md:362
 msgid ""
 "Use Zed's hosted models, with higher rate limits. Requires [authentication]"
 "(https://zed.dev/docs/authentication) and subscription to [Zed Pro](https://"
 "zed.dev/docs/ai/subscription.html)."
 msgstr ""
 
-#: src/migrate/webstorm.md:371
+#: src/migrate/webstorm.md:363
 msgid ""
 "Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
 "authentication needed"
 msgstr ""
 
-#: src/migrate/webstorm.md:372
+#: src/migrate/webstorm.md:364
 msgid ""
 "Use [external agents like Claude Agent](https://zed.dev/docs/ai/external-"
 "agents.html)"
 msgstr ""
 
-#: src/migrate/webstorm.md:374
+#: src/migrate/webstorm.md:366
 msgid "Advanced Config and Productivity Tweaks"
 msgstr ""
 
-#: src/migrate/webstorm.md:376
+#: src/migrate/webstorm.md:368
 msgid ""
 "Zed exposes advanced settings for power users who want to fine-tune their "
 "environment."
 msgstr ""
 
-#: src/migrate/webstorm.md:378
+#: src/migrate/webstorm.md:370
 msgid "Here are a few useful tweaks for JavaScript/TypeScript developers:"
 msgstr ""
 
-#: src/migrate/webstorm.md:380
+#: src/migrate/webstorm.md:372
 msgid "**Format on Save:**"
 msgstr ""
 
-#: src/migrate/webstorm.md:383
+#: src/migrate/webstorm.md:375
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/migrate/webstorm.md:383
+#: src/migrate/webstorm.md:375
 msgid "\"on\""
 msgstr ""
 
-#: src/migrate/webstorm.md:386
+#: src/migrate/webstorm.md:378
 msgid ""
 "**Configure Prettier as the default formatter** (requires manual JSON "
 "editing):"
 msgstr ""
 
-#: src/migrate/webstorm.md:390
+#: src/migrate/webstorm.md:382
 msgid "\"formatter\""
 msgstr ""
 
-#: src/migrate/webstorm.md:391
+#: src/migrate/webstorm.md:383
 msgid "\"external\""
 msgstr ""
 
-#: src/migrate/webstorm.md:392
+#: src/migrate/webstorm.md:384
 msgid "\"prettier\""
 msgstr ""
 
-#: src/migrate/webstorm.md:393
+#: src/migrate/webstorm.md:385
 msgid "\"arguments\""
 msgstr ""
 
-#: src/migrate/webstorm.md:393
+#: src/migrate/webstorm.md:385
 msgid "\"--stdin-filepath\""
 msgstr ""
 
-#: src/migrate/webstorm.md:393
+#: src/migrate/webstorm.md:385
 msgid "\"{buffer_path}\""
 msgstr ""
 
-#: src/migrate/webstorm.md:399
+#: src/migrate/webstorm.md:391
 msgid "**Enable ESLint code actions** (requires manual JSON editing):"
 msgstr ""
 
-#: src/migrate/webstorm.md:403
+#: src/migrate/webstorm.md:395
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/migrate/webstorm.md:404
+#: src/migrate/webstorm.md:396
 msgid "\"eslint\""
 msgstr "\"eslint\""
 
-#: src/migrate/webstorm.md:405
+#: src/migrate/webstorm.md:397
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/migrate/webstorm.md:406
+#: src/migrate/webstorm.md:398
 msgid "\"codeActionOnSave\""
 msgstr "\"codeActionOnSave\""
 
-#: src/migrate/webstorm.md:407
+#: src/migrate/webstorm.md:399
 msgid "\"rules\""
 msgstr ""
 
-#: src/migrate/webstorm.md:407
+#: src/migrate/webstorm.md:399
 msgid "\"import/order\""
 msgstr ""
 
-#: src/migrate/webstorm.md:415
+#: src/migrate/webstorm.md:407
 msgid "**Configure TypeScript strict mode hints:**"
 msgstr ""
 
-#: src/migrate/webstorm.md:417
+#: src/migrate/webstorm.md:409
 msgid "In your `tsconfig.json`, enable strict mode for better type checking:"
 msgstr ""
 
-#: src/migrate/webstorm.md:421
+#: src/migrate/webstorm.md:413
 msgid "\"compilerOptions\""
 msgstr ""
 
-#: src/migrate/webstorm.md:422
+#: src/migrate/webstorm.md:414
 msgid "\"strict\""
 msgstr ""
 
-#: src/migrate/webstorm.md:423
+#: src/migrate/webstorm.md:415
 msgid "\"noUncheckedIndexedAccess\""
 msgstr ""
 
-#: src/migrate/webstorm.md:428
+#: src/migrate/webstorm.md:420
 msgid ""
 "**Enable direnv support (useful for projects using direnv for environment "
 "variables):**"
 msgstr ""
 
-#: src/migrate/webstorm.md:431
+#: src/migrate/webstorm.md:423
 msgid "\"load_direnv\""
 msgstr ""
 
-#: src/migrate/webstorm.md:431
+#: src/migrate/webstorm.md:423
 msgid "\"shell_hook\""
 msgstr ""
 
-#: src/migrate/webstorm.md:434
+#: src/migrate/webstorm.md:426
 msgid "Next Steps"
 msgstr "下一步"
 
-#: src/migrate/webstorm.md:436
+#: src/migrate/webstorm.md:428
 msgid ""
 "Now that you're set up, here are some resources to help you get the most out "
 "of Zed:"
 msgstr ""
 
-#: src/migrate/webstorm.md:438
+#: src/migrate/webstorm.md:430
 msgid ""
 "[All Settings](../reference/all-settings.md) — Customize settings, themes, "
 "and editor behavior"
 msgstr ""
 
-#: src/migrate/webstorm.md:439
+#: src/migrate/webstorm.md:431
 msgid ""
 "[Key Bindings](../key-bindings.md) — Learn how to customize and extend your "
 "keymap"
 msgstr ""
 
-#: src/migrate/webstorm.md:440
+#: src/migrate/webstorm.md:432
 msgid "[Tasks](../tasks.md) — Set up build and run commands for your projects"
 msgstr ""
 
-#: src/migrate/webstorm.md:441
+#: src/migrate/webstorm.md:433
 msgid ""
 "[AI Features](../ai/overview.md) — Explore Zed's AI capabilities beyond code "
 "completion"
 msgstr ""
 
-#: src/migrate/webstorm.md:442
+#: src/migrate/webstorm.md:434
 msgid ""
 "[Collaboration](../collaboration/overview.md) — Share your projects and code "
 "together in real time"
 msgstr ""
 
-#: src/migrate/webstorm.md:443
+#: src/migrate/webstorm.md:435
 msgid ""
 "[JavaScript in Zed](../languages/javascript.md) — JavaScript-specific setup "
 "and configuration"
 msgstr ""
 
-#: src/migrate/webstorm.md:444
+#: src/migrate/webstorm.md:436
 msgid ""
 "[TypeScript in Zed](../languages/typescript.md) — TypeScript-specific setup "
 "and configuration"
 msgstr ""
+
+#~ msgid "`Cmd + B`"
+#~ msgstr "`Cmd + B`"
+
+#~ msgid "`Cmd + Alt + L`"
+#~ msgstr "`Cmd + Alt + L`"
+
+#~ msgid "`Cmd + D`"
+#~ msgstr "`Cmd + D`"
+
+#~ msgid "Project (1)"
+#~ msgstr "專案 (1)"
+
+#~ msgid "Terminal (Alt+F12)"
+#~ msgstr "終端機 (Alt+F12)"
+
+#~ msgid "Structure (7)"
+#~ msgstr "結構 (7)"
+
+#~ msgid "`Cmd + 7`"
+#~ msgstr "`Cmd + 7`"
+
+#~ msgid "Problems (6)"
+#~ msgstr "問題 (6)"

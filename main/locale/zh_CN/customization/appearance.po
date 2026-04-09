@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -37,15 +37,15 @@ msgstr ""
 
 #: src/appearance.md:13
 msgid ""
-"**Pick a theme**: Press <kbd class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</"
-"kbd> to open the Theme Selector. Arrow through the list to preview themes in "
-"real time, and press Enter to apply."
+"**Pick a theme**: Press <kbd class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-"
+"t</kbd> to open the Theme Selector. Arrow through the list to preview themes "
+"in real time, and press Enter to apply."
 msgstr ""
 
 #: src/appearance.md:15
 msgid ""
 "**Toggle light/dark mode quickly**: Press <kbd class=\"keybinding\">cmd-k "
-"cmd-shift-t|ctrl-k ctrl-shift-t</kbd>. If you currently use a static "
+"cmd-shift-t\\|ctrl-k ctrl-shift-t</kbd>. If you currently use a static "
 "`\"theme\": \"...\"` value, the first toggle converts it to dynamic mode "
 "settings with default themes."
 msgstr ""
@@ -59,8 +59,8 @@ msgstr ""
 #: src/appearance.md:19
 msgid ""
 "**Set your font**: Open the Settings Editor with <kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd> and search for `buffer_font_family`. "
-"Set it to your preferred coding font."
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd> and search for "
+"`buffer_font_family`. Set it to your preferred coding font."
 msgstr ""
 
 #: src/appearance.md:21
@@ -82,7 +82,7 @@ msgstr ""
 msgid ""
 "Install themes from the Extensions page (<code class=\"hljs\">zed: "
 "extensions</code>), then switch between them with the Theme Selector (<kbd "
-"class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</kbd>)."
+"class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-t</kbd>)."
 msgstr ""
 
 #: src/appearance.md:29

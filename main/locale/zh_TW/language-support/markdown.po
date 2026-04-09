@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -55,13 +55,13 @@ msgstr ""
 msgid ""
 "Zed supports using Prettier to automatically re-format Markdown documents. "
 "You can trigger this manually via the <code class=\"hljs\">editor: format</"
-"code> action or via the <kbd class=\"keybinding\">cmd-shift-i|ctrl-shift-i</"
-"kbd> keyboard shortcut. Alternately, you can enable format on save."
+"code> action or via the <kbd class=\"keybinding\">cmd-shift-i\\|ctrl-shift-"
+"i</kbd> keyboard shortcut. Alternately, you can enable format on save."
 msgstr ""
 
 #: src/languages/markdown.md:30
 msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > Markdown, or add to your settings file:"
 msgstr ""
 
@@ -113,8 +113,8 @@ msgstr ""
 #: src/languages/markdown.md:50 src/languages/markdown.md:64
 msgid ""
 "To disable this behavior, configure in Settings (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > Markdown, or add "
-"to your settings file:"
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > Markdown, or "
+"add to your settings file:"
 msgstr ""
 
 #: src/languages/markdown.md:55
@@ -149,7 +149,7 @@ msgstr ""
 
 #: src/languages/markdown.md:78
 msgid ""
-"Configure in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) under "
+"Configure in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under "
 "Languages > Markdown, or add to your settings file:"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -18,8 +18,8 @@ msgstr ""
 #: src/visual-customization.md:5
 msgid ""
 "Various aspects of Zed's visual layout can be configured in the Settings "
-"Editor (<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) or in your settings "
-"file (<kbd class=\"keybinding\">cmd-alt-,|ctrl-alt-,</kbd>)."
+"Editor (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) or in your settings "
+"file (<kbd class=\"keybinding\">cmd-alt-,\\|ctrl-alt-,</kbd>)."
 msgstr ""
 
 #: src/visual-customization.md:7
@@ -43,7 +43,7 @@ msgstr ""
 msgid ""
 "You can preview/choose amongst your installed themes and icon themes with "
 "<code class=\"hljs\">theme selector: toggle</code> (<kbd "
-"class=\"keybinding\">cmd-k cmd-t|ctrl-k ctrl-t</kbd>) and <code "
+"class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-t</kbd>) and <code "
 "class=\"hljs\">icon theme selector: toggle</code> which will modify the "
 "following settings:"
 msgstr ""
@@ -151,8 +151,8 @@ msgid ""
 "  \"buffer_line_height\""
 msgstr ""
 
-#: src/visual-customization.md:56 src/visual-customization.md:450
-#: src/visual-customization.md:530
+#: src/visual-customization.md:56 src/visual-customization.md:449
+#: src/visual-customization.md:529
 msgid "\"comfortable\""
 msgstr ""
 
@@ -170,11 +170,11 @@ msgstr ""
 msgid "\"\""
 msgstr ""
 
-#: src/visual-customization.md:61 src/visual-customization.md:527
+#: src/visual-customization.md:61 src/visual-customization.md:526
 msgid "\"font_size\""
 msgstr ""
 
-#: src/visual-customization.md:62 src/visual-customization.md:529
+#: src/visual-customization.md:62 src/visual-customization.md:528
 msgid ""
 "// Terminal line height: comfortable (1.618), standard(1.3) or "
 "`{ \"custom\": 2 }`\n"
@@ -185,14 +185,14 @@ msgstr ""
 msgid "\"standard\""
 msgstr ""
 
-#: src/visual-customization.md:66 src/visual-customization.md:490
+#: src/visual-customization.md:66 src/visual-customization.md:489
 msgid ""
 "// Controls the font size for agent responses in the agent panel.\n"
 "  // If not specified, it falls back to the UI font size.\n"
 "  \"agent_ui_font_size\""
 msgstr ""
 
-#: src/visual-customization.md:69 src/visual-customization.md:493
+#: src/visual-customization.md:69 src/visual-customization.md:492
 msgid ""
 "// Controls the font size for the agent panel's message editor, user "
 "message,\n"
@@ -378,9 +378,9 @@ msgid ""
 "  \"resize_all_panels_in_dock\""
 msgstr ""
 
-#: src/visual-customization.md:153 src/visual-customization.md:449
-#: src/visual-customization.md:544 src/visual-customization.md:563
-#: src/visual-customization.md:586
+#: src/visual-customization.md:153 src/visual-customization.md:448
+#: src/visual-customization.md:543 src/visual-customization.md:562
+#: src/visual-customization.md:585
 msgid "\"left\""
 msgstr ""
 
@@ -407,7 +407,7 @@ msgid ""
 msgstr ""
 
 #: src/visual-customization.md:181 src/visual-customization.md:271
-#: src/visual-customization.md:463
+#: src/visual-customization.md:462
 msgid "\"all\""
 msgstr ""
 
@@ -551,7 +551,7 @@ msgstr ""
 
 #: src/visual-customization.md:215 src/visual-customization.md:219
 #: src/visual-customization.md:227 src/visual-customization.md:236
-#: src/visual-customization.md:403 src/visual-customization.md:484
+#: src/visual-customization.md:402 src/visual-customization.md:483
 msgid "\"enabled\""
 msgstr ""
 
@@ -775,8 +775,8 @@ msgid ""
 msgstr ""
 
 #: src/visual-customization.md:280 src/visual-customization.md:308
-#: src/visual-customization.md:523 src/visual-customization.md:549
-#: src/visual-customization.md:569
+#: src/visual-customization.md:522 src/visual-customization.md:548
+#: src/visual-customization.md:568
 msgid "\"show\""
 msgstr ""
 
@@ -800,7 +800,7 @@ msgid ""
 "    \"thumb\""
 msgstr ""
 
-#: src/visual-customization.md:282 src/visual-customization.md:467
+#: src/visual-customization.md:282 src/visual-customization.md:466
 msgid "\"always\""
 msgstr ""
 
@@ -913,8 +913,8 @@ msgid ""
 "    \"close_position\""
 msgstr ""
 
-#: src/visual-customization.md:314 src/visual-customization.md:486
-#: src/visual-customization.md:596
+#: src/visual-customization.md:314 src/visual-customization.md:485
+#: src/visual-customization.md:595
 msgid "\"right\""
 msgstr ""
 
@@ -1114,274 +1114,266 @@ msgid "\"mode\""
 msgstr ""
 
 #: src/visual-customization.md:392
-msgid "\"eager\""
-msgstr ""
-
-#: src/visual-customization.md:392
 msgid ""
-"// Automatically show (eager) or hold-alt (subtle)\n"
-"    \"enabled_in_text_threads\""
+"\"eager\"                  // Automatically show (eager) or hold-alt "
+"(subtle)\n"
 msgstr ""
 
-#: src/visual-customization.md:393
-msgid "// Show/hide predictions in agent text threads\n"
-msgstr ""
-
-#: src/visual-customization.md:395
+#: src/visual-customization.md:394
 msgid "\"show_edit_predictions\""
 msgstr ""
 
-#: src/visual-customization.md:395
+#: src/visual-customization.md:394
 msgid "// Show/hide predictions in editor\n"
 msgstr ""
 
-#: src/visual-customization.md:398
+#: src/visual-customization.md:397
 msgid "Editor Inlay Hints"
 msgstr ""
 
-#: src/visual-customization.md:402
+#: src/visual-customization.md:401
 msgid "\"inlay_hints\""
 msgstr ""
 
-#: src/visual-customization.md:404
+#: src/visual-customization.md:403
 msgid ""
 "// Toggle certain types of hints on and off, all switched on by default.\n"
 "    \"show_type_hints\""
 msgstr ""
 
-#: src/visual-customization.md:406
+#: src/visual-customization.md:405
 msgid "\"show_parameter_hints\""
 msgstr ""
 
-#: src/visual-customization.md:407
+#: src/visual-customization.md:406
 msgid "\"show_other_hints\""
 msgstr ""
 
-#: src/visual-customization.md:409
+#: src/visual-customization.md:408
 msgid ""
 "// Whether to show a background for inlay hints (theme `hint.background`)\n"
 "    \"show_background\""
 msgstr ""
 
-#: src/visual-customization.md:410
+#: src/visual-customization.md:409
 msgid "//\n"
 msgstr ""
 
-#: src/visual-customization.md:412
+#: src/visual-customization.md:411
 msgid ""
 "// Time to wait after editing before requesting hints (0 to disable "
 "debounce)\n"
 "    \"edit_debounce_ms\""
 msgstr ""
 
-#: src/visual-customization.md:414
+#: src/visual-customization.md:413
 msgid ""
 "// Time to wait after scrolling before requesting hints (0 to disable "
 "debounce)\n"
 "    \"scroll_debounce_ms\""
 msgstr ""
 
-#: src/visual-customization.md:417
+#: src/visual-customization.md:416
 msgid ""
 "// A set of modifiers which, when pressed, will toggle the visibility of "
 "inlay hints.\n"
 "    \"toggle_on_modifiers_press\""
 msgstr ""
 
-#: src/visual-customization.md:419
+#: src/visual-customization.md:418
 msgid "\"control\""
 msgstr ""
 
-#: src/visual-customization.md:420
+#: src/visual-customization.md:419
 msgid "\"shift\""
 msgstr ""
 
-#: src/visual-customization.md:421
+#: src/visual-customization.md:420
 msgid "\"alt\""
 msgstr ""
 
-#: src/visual-customization.md:422
+#: src/visual-customization.md:421
 msgid "\"platform\""
 msgstr ""
 
-#: src/visual-customization.md:423
+#: src/visual-customization.md:422
 msgid "\"function\""
 msgstr ""
 
-#: src/visual-customization.md:429
+#: src/visual-customization.md:428
 msgid "File Finder"
 msgstr ""
 
-#: src/visual-customization.md:432
+#: src/visual-customization.md:431
 msgid ""
 "// File Finder Settings\n"
 "  \"file_finder\""
 msgstr ""
 
-#: src/visual-customization.md:434
+#: src/visual-customization.md:433
 msgid "\"file_icons\""
 msgstr ""
 
-#: src/visual-customization.md:434
+#: src/visual-customization.md:433
 msgid ""
 "// Show/hide file icons\n"
 "    \"modal_max_width\""
 msgstr ""
 
-#: src/visual-customization.md:435
+#: src/visual-customization.md:434
 msgid "\"small\""
 msgstr ""
 
-#: src/visual-customization.md:435
+#: src/visual-customization.md:434
 msgid ""
 "// Horizontal size: small, medium, large, xlarge, full\n"
 "    \"include_ignored\""
 msgstr ""
 
-#: src/visual-customization.md:436
+#: src/visual-customization.md:435
 msgid "// gitignored files in results: true, false, null\n"
 msgstr ""
 
-#: src/visual-customization.md:440
+#: src/visual-customization.md:439
 msgid "Project Panel"
 msgstr ""
 
-#: src/visual-customization.md:442
+#: src/visual-customization.md:441
 msgid ""
 "Project panel can be shown/hidden with <code class=\"hljs\">project panel: "
-"toggle focus</code> (<kbd class=\"keybinding\">cmd-shift-e|ctrl-shift-e</"
+"toggle focus</code> (<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</"
 "kbd>) or with <code class=\"hljs\">pane: reveal in project panel</code> "
-"(<kbd class=\"keybinding\">cmd-shift-e|ctrl-shift-e</kbd>)."
+"(<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</kbd>)."
 msgstr ""
 
-#: src/visual-customization.md:445
+#: src/visual-customization.md:444
 msgid ""
 "// Project Panel Settings\n"
 "  \"project_panel\""
 msgstr ""
 
-#: src/visual-customization.md:447 src/visual-customization.md:543
-#: src/visual-customization.md:561 src/visual-customization.md:585
+#: src/visual-customization.md:446 src/visual-customization.md:542
+#: src/visual-customization.md:560 src/visual-customization.md:584
 msgid "\"button\""
 msgstr ""
 
-#: src/visual-customization.md:447
+#: src/visual-customization.md:446
 msgid ""
 "// Show/hide button in the status bar\n"
 "    \"default_width\""
 msgstr ""
 
-#: src/visual-customization.md:448
+#: src/visual-customization.md:447
 msgid ""
 "// Default panel width\n"
 "    \"dock\""
 msgstr ""
 
-#: src/visual-customization.md:449
+#: src/visual-customization.md:448
 msgid ""
 "// Position of the dock (left, right)\n"
 "    \"entry_spacing\""
 msgstr ""
 
-#: src/visual-customization.md:450
+#: src/visual-customization.md:449
 msgid ""
 "// Vertical spacing (comfortable, standard)\n"
 "    \"file_icons\""
 msgstr ""
 
-#: src/visual-customization.md:451
+#: src/visual-customization.md:450
 msgid ""
 "// Show/hide file icons\n"
 "    \"folder_icons\""
 msgstr ""
 
-#: src/visual-customization.md:452
+#: src/visual-customization.md:451
 msgid ""
 "// Show/hide folder icons\n"
 "    \"git_status\""
 msgstr ""
 
-#: src/visual-customization.md:453
+#: src/visual-customization.md:452
 msgid ""
 "// Indicate new/updated files\n"
 "    \"indent_size\""
 msgstr ""
 
-#: src/visual-customization.md:454
+#: src/visual-customization.md:453
 msgid ""
 "// Pixels for each successive indent\n"
 "    \"auto_reveal_entries\""
 msgstr ""
 
-#: src/visual-customization.md:455 src/visual-customization.md:571
+#: src/visual-customization.md:454 src/visual-customization.md:570
 msgid ""
 "// Show file in panel when activating its buffer\n"
 "    \"auto_fold_dirs\""
 msgstr ""
 
-#: src/visual-customization.md:456
+#: src/visual-customization.md:455
 msgid ""
 "// Fold dirs with single subdir\n"
 "    \"bold_folder_labels\""
 msgstr ""
 
-#: src/visual-customization.md:457
+#: src/visual-customization.md:456
 msgid ""
 "// Show folder names with bold text\n"
 "    \"sticky_scroll\""
 msgstr ""
 
-#: src/visual-customization.md:458
+#: src/visual-customization.md:457
 msgid ""
 "// Stick parent directories at top of the project panel.\n"
 "    \"drag_and_drop\""
 msgstr ""
 
-#: src/visual-customization.md:459
+#: src/visual-customization.md:458
 msgid ""
 "// Whether drag and drop is enabled\n"
 "    \"scrollbar\""
 msgstr ""
 
-#: src/visual-customization.md:460 src/visual-customization.md:573
+#: src/visual-customization.md:459 src/visual-customization.md:572
 msgid ""
 "// Project panel scrollbar settings\n"
 "      \"show\""
 msgstr ""
 
-#: src/visual-customization.md:461 src/visual-customization.md:523
-#: src/visual-customization.md:549 src/visual-customization.md:574
+#: src/visual-customization.md:460 src/visual-customization.md:522
+#: src/visual-customization.md:548 src/visual-customization.md:573
 msgid "// Show/hide: (auto, system, always, never)\n"
 msgstr ""
 
-#: src/visual-customization.md:463
+#: src/visual-customization.md:462
 msgid "\"show_diagnostics\""
 msgstr ""
 
-#: src/visual-customization.md:463
+#: src/visual-customization.md:462
 msgid ""
 "//\n"
 "    // Settings related to indent guides in the project panel.\n"
 "    \"indent_guides\""
 msgstr ""
 
-#: src/visual-customization.md:466
+#: src/visual-customization.md:465
 msgid ""
 "// When to show indent guides in the project panel. (always, never)\n"
 "      \"show\""
 msgstr ""
 
-#: src/visual-customization.md:469
+#: src/visual-customization.md:468
 msgid ""
 "// Sort order for entries (directories_first, mixed, files_first)\n"
 "    \"sort_mode\""
 msgstr ""
 
-#: src/visual-customization.md:470
+#: src/visual-customization.md:469
 msgid "\"directories_first\""
 msgstr ""
 
-#: src/visual-customization.md:471
+#: src/visual-customization.md:470
 msgid ""
 "// Whether to hide the root entry when only one folder is open in the "
 "window;\n"
@@ -1389,301 +1381,301 @@ msgid ""
 "    \"hide_root\""
 msgstr ""
 
-#: src/visual-customization.md:474
+#: src/visual-customization.md:473
 msgid ""
 "// Whether to hide the hidden entries in the project panel.\n"
 "    \"hide_hidden\""
 msgstr ""
 
-#: src/visual-customization.md:479
+#: src/visual-customization.md:478
 msgid "Agent Panel"
 msgstr ""
 
-#: src/visual-customization.md:483
+#: src/visual-customization.md:482
 msgid "\"agent\""
 msgstr ""
 
-#: src/visual-customization.md:484
+#: src/visual-customization.md:483
 msgid ""
 "// Enable/disable the agent\n"
 "    \"button\""
 msgstr ""
 
-#: src/visual-customization.md:485
+#: src/visual-customization.md:484
 msgid ""
 "// Show/hide the icon in the status bar\n"
 "    \"dock\""
 msgstr ""
 
-#: src/visual-customization.md:486
+#: src/visual-customization.md:485
 msgid ""
 "// Where to dock: left, right, bottom\n"
 "    \"default_width\""
 msgstr ""
 
-#: src/visual-customization.md:487 src/visual-customization.md:508
+#: src/visual-customization.md:486 src/visual-customization.md:507
 msgid ""
 "// Default width (left/right docked)\n"
 "    \"default_height\""
 msgstr ""
 
-#: src/visual-customization.md:488 src/visual-customization.md:509
+#: src/visual-customization.md:487 src/visual-customization.md:508
 msgid "// Default height (bottom docked)\n"
 msgstr ""
 
-#: src/visual-customization.md:499
+#: src/visual-customization.md:498
 msgid ""
 "See [Zed AI Documentation](./ai/overview.md) for additional non-visual AI "
 "settings."
 msgstr ""
 
-#: src/visual-customization.md:501
+#: src/visual-customization.md:500
 msgid "Terminal Panel"
 msgstr ""
 
-#: src/visual-customization.md:504
+#: src/visual-customization.md:503
 msgid ""
 "// Terminal Panel Settings\n"
 "  \"terminal\""
 msgstr ""
 
-#: src/visual-customization.md:506 src/visual-customization.md:555
+#: src/visual-customization.md:505 src/visual-customization.md:554
 msgid "\"dock\""
 msgstr ""
 
-#: src/visual-customization.md:506 src/visual-customization.md:555
+#: src/visual-customization.md:505 src/visual-customization.md:554
 msgid "\"bottom\""
 msgstr ""
 
-#: src/visual-customization.md:506 src/visual-customization.md:555
+#: src/visual-customization.md:505 src/visual-customization.md:554
 msgid ""
 "// Where to dock: left, right, bottom\n"
 "    \"button\""
 msgstr ""
 
-#: src/visual-customization.md:507 src/visual-customization.md:561
+#: src/visual-customization.md:506 src/visual-customization.md:560
 msgid ""
 "// Show/hide status bar icon\n"
 "    \"default_width\""
 msgstr ""
 
-#: src/visual-customization.md:511
+#: src/visual-customization.md:510
 msgid ""
 "// Set the cursor blinking behavior in the terminal (on, off, "
 "terminal_controlled)\n"
 "    \"blinking\""
 msgstr ""
 
-#: src/visual-customization.md:512
+#: src/visual-customization.md:511
 msgid "\"terminal_controlled\""
 msgstr ""
 
-#: src/visual-customization.md:513
+#: src/visual-customization.md:512
 msgid ""
 "// Default cursor shape for the terminal cursor (block, bar, underline, "
 "hollow)\n"
 "    \"cursor_shape\""
 msgstr ""
 
-#: src/visual-customization.md:514
+#: src/visual-customization.md:513
 msgid "\"block\""
 msgstr ""
 
-#: src/visual-customization.md:516
+#: src/visual-customization.md:515
 msgid ""
 "// Environment variables to add to terminal's process environment\n"
 "    \"env\""
 msgstr ""
 
-#: src/visual-customization.md:518
+#: src/visual-customization.md:517
 msgid "// \"KEY\": \"value\"\n"
 msgstr ""
 
-#: src/visual-customization.md:521
+#: src/visual-customization.md:520
 msgid ""
 "// Terminal scrollbar\n"
 "    \"scrollbar\""
 msgstr ""
 
-#: src/visual-customization.md:525
+#: src/visual-customization.md:524
 msgid ""
 "// Terminal Font Settings\n"
 "    \"font_family\""
 msgstr ""
 
-#: src/visual-customization.md:526
+#: src/visual-customization.md:525
 msgid "\"Fira Code\""
 msgstr ""
 
-#: src/visual-customization.md:528
+#: src/visual-customization.md:527
 msgid "\"font_weight\""
 msgstr ""
 
-#: src/visual-customization.md:532
+#: src/visual-customization.md:531
 msgid "\"max_scroll_history_lines\""
 msgstr ""
 
-#: src/visual-customization.md:532
+#: src/visual-customization.md:531
 msgid "// Scrollback history (0=disable, max=100000)\n"
 msgstr ""
 
-#: src/visual-customization.md:536
+#: src/visual-customization.md:535
 msgid ""
 "See [Terminal settings](./reference/all-settings.md#terminal) for additional "
 "non-visual customization options."
 msgstr ""
 
-#: src/visual-customization.md:538
+#: src/visual-customization.md:537
 msgid "Other Panels"
 msgstr ""
 
-#: src/visual-customization.md:541
+#: src/visual-customization.md:540
 msgid ""
 "// Git Panel\n"
 "  \"git_panel\""
 msgstr ""
 
-#: src/visual-customization.md:543 src/visual-customization.md:585
+#: src/visual-customization.md:542 src/visual-customization.md:584
 msgid ""
 "// Show/hide status bar icon\n"
 "    \"dock\""
 msgstr ""
 
-#: src/visual-customization.md:544 src/visual-customization.md:586
+#: src/visual-customization.md:543 src/visual-customization.md:585
 msgid ""
 "// Where to dock: left, right\n"
 "    \"default_width\""
 msgstr ""
 
-#: src/visual-customization.md:545
+#: src/visual-customization.md:544
 msgid ""
 "// Default width of the git panel.\n"
 "    \"status_style\""
 msgstr ""
 
-#: src/visual-customization.md:546
+#: src/visual-customization.md:545
 msgid "\"icon\""
 msgstr ""
 
-#: src/visual-customization.md:546
+#: src/visual-customization.md:545
 msgid ""
 "// label_color, icon\n"
 "    \"sort_by_path\""
 msgstr ""
 
-#: src/visual-customization.md:547
+#: src/visual-customization.md:546
 msgid ""
 "// Sort by path (false) or status (true)\n"
 "    \"scrollbar\""
 msgstr ""
 
-#: src/visual-customization.md:553
+#: src/visual-customization.md:552
 msgid ""
 "// Debugger Panel\n"
 "  \"debugger\""
 msgstr ""
 
-#: src/visual-customization.md:556
+#: src/visual-customization.md:555
 msgid "// Show/hide status bar icon\n"
 msgstr ""
 
-#: src/visual-customization.md:559
+#: src/visual-customization.md:558
 msgid ""
 "// Outline Panel\n"
 "  \"outline_panel\""
 msgstr ""
 
-#: src/visual-customization.md:562
+#: src/visual-customization.md:561
 msgid ""
 "// Default width of the git panel\n"
 "    \"dock\""
 msgstr ""
 
-#: src/visual-customization.md:563
+#: src/visual-customization.md:562
 msgid ""
 "// Where to dock: left, right\n"
 "    \"file_icons\""
 msgstr ""
 
-#: src/visual-customization.md:564
+#: src/visual-customization.md:563
 msgid ""
 "// Show/hide file_icons\n"
 "    \"folder_icons\""
 msgstr ""
 
-#: src/visual-customization.md:565
+#: src/visual-customization.md:564
 msgid ""
 "// Show file_icons (true), chevrons (false) for dirs\n"
 "    \"git_status\""
 msgstr ""
 
-#: src/visual-customization.md:566
+#: src/visual-customization.md:565
 msgid ""
 "// Show git status\n"
 "    \"indent_size\""
 msgstr ""
 
-#: src/visual-customization.md:567
+#: src/visual-customization.md:566
 msgid ""
 "// Indentation for nested items (pixels)\n"
 "    \"indent_guides\""
 msgstr ""
 
-#: src/visual-customization.md:569
+#: src/visual-customization.md:568
 msgid "\"always\"            // Show indent guides (always, never)\n"
 msgstr ""
 
-#: src/visual-customization.md:571
+#: src/visual-customization.md:570
 msgid "\"auto_reveal_entries\""
 msgstr ""
 
-#: src/visual-customization.md:572
+#: src/visual-customization.md:571
 msgid ""
 "// Fold dirs with single subdir\n"
 "    \"scrollbar\""
 msgstr ""
 
-#: src/visual-customization.md:579
+#: src/visual-customization.md:578
 msgid "Collaboration Panels"
 msgstr ""
 
-#: src/visual-customization.md:583
+#: src/visual-customization.md:582
 msgid ""
 "// Collaboration Panel\n"
 "  \"collaboration_panel\""
 msgstr ""
 
-#: src/visual-customization.md:587
+#: src/visual-customization.md:586
 msgid "// Default width of the collaboration panel.\n"
 msgstr ""
 
-#: src/visual-customization.md:589
+#: src/visual-customization.md:588
 msgid "\"show_call_status_icon\""
 msgstr ""
 
-#: src/visual-customization.md:589
+#: src/visual-customization.md:588
 msgid "// Shown call status in the OS status bar.\n"
 msgstr ""
 
-#: src/visual-customization.md:591
+#: src/visual-customization.md:590
 msgid ""
 "// Notification Panel\n"
 "  \"notification_panel\""
 msgstr ""
 
-#: src/visual-customization.md:593
+#: src/visual-customization.md:592
 msgid ""
 "// Whether to show the notification panel button in the status bar.\n"
 "    \"button\""
 msgstr ""
 
-#: src/visual-customization.md:595
+#: src/visual-customization.md:594
 msgid ""
 "// Where to dock the notification panel. Can be 'left' or 'right'.\n"
 "    \"dock\""
 msgstr ""
 
-#: src/visual-customization.md:597
+#: src/visual-customization.md:596
 msgid ""
 "// Default width of the notification panel.\n"
 "    \"default_width\""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -188,30 +188,32 @@ msgstr ""
 
 #: src/development/macos.md:118
 msgid ""
-"If you're on macOS 26, try `xcodebuild -downloadComponent MetalToolchain`"
+"If you're on macOS 26, try `xcodebuild -downloadComponent MetalToolchain`. "
+"If that command fails, run `xcodebuild -runFirstLaunch` and try downloading "
+"the toolchain again."
 msgstr ""
 
-#: src/development/macos.md:120
+#: src/development/macos.md:121
 msgid "Cargo errors claiming that a dependency is using unstable features"
 msgstr ""
 
-#: src/development/macos.md:122
+#: src/development/macos.md:123
 msgid "Try `cargo clean` and `cargo build`."
 msgstr ""
 
-#: src/development/macos.md:124
+#: src/development/macos.md:125
 msgid "Error: 'dispatch/dispatch.h' file not found"
 msgstr ""
 
-#: src/development/macos.md:126
+#: src/development/macos.md:127
 msgid "If you encounter an error similar to:"
 msgstr ""
 
-#: src/development/macos.md:129
+#: src/development/macos.md:130
 msgid "'dispatch/dispatch.h'"
 msgstr ""
 
-#: src/development/macos.md:132
+#: src/development/macos.md:133
 msgid ""
 "'t exit successfully\n"
 "\n"
@@ -224,57 +226,57 @@ msgid ""
 "  cargo:rerun-if-env-changed=BINDGEN_EXTRA_CLANG_ARGS\n"
 msgstr ""
 
-#: src/development/macos.md:143
+#: src/development/macos.md:144
 msgid ""
 "This file is part of Xcode. Make sure the Xcode command line tools are "
 "installed and the path is set correctly:"
 msgstr ""
 
-#: src/development/macos.md:150
+#: src/development/macos.md:151
 msgid "Additionally, set the `BINDGEN_EXTRA_CLANG_ARGS` environment variable:"
 msgstr ""
 
-#: src/development/macos.md:153
+#: src/development/macos.md:154
 msgid "\"--sysroot=$(xcrun --show-sdk-path)\""
 msgstr ""
 
-#: src/development/macos.md:156
+#: src/development/macos.md:157
 msgid "Then clean and rebuild the project:"
 msgstr ""
 
-#: src/development/macos.md:163
+#: src/development/macos.md:164
 msgid "Tests failing due to `Too many open files (os error 24)`"
 msgstr ""
 
-#: src/development/macos.md:165
+#: src/development/macos.md:166
 msgid ""
 "This error seems to be caused by OS resource constraints. Installing and "
 "running tests with `cargo-nextest` should resolve the issue."
 msgstr ""
 
-#: src/development/macos.md:167
+#: src/development/macos.md:168
 msgid "`cargo install cargo-nextest --locked`"
 msgstr ""
 
-#: src/development/macos.md:168
+#: src/development/macos.md:169
 msgid "`cargo nextest run --workspace --no-fail-fast`"
 msgstr ""
 
-#: src/development/macos.md:170
+#: src/development/macos.md:171
 msgid "Tips & Tricks"
 msgstr ""
 
-#: src/development/macos.md:172
+#: src/development/macos.md:173
 msgid "Avoiding continual rebuilds"
 msgstr ""
 
-#: src/development/macos.md:174
+#: src/development/macos.md:175
 msgid ""
 "If Zed continually rebuilds root crates, you may be opening the Zed codebase "
 "itself in your development build."
 msgstr ""
 
-#: src/development/macos.md:176
+#: src/development/macos.md:177
 msgid ""
 "This causes problems because `cargo run` exports a bunch of environment "
 "variables which are picked up by the `rust-analyzer` that runs in the "
@@ -283,44 +285,44 @@ msgid ""
 "depend on."
 msgstr ""
 
-#: src/development/macos.md:181
+#: src/development/macos.md:182
 msgid ""
 "To avoid this, run the built binary against a different project, for example "
 "`cargo run ~/path/to/other/project`."
 msgstr ""
 
-#: src/development/macos.md:183
+#: src/development/macos.md:184
 msgid "Speeding up verification"
 msgstr ""
 
-#: src/development/macos.md:185
+#: src/development/macos.md:186
 msgid ""
 "If you build Zed frequently, macOS may keep verifying new builds, which can "
 "add a few seconds to each iteration."
 msgstr ""
 
-#: src/development/macos.md:187
+#: src/development/macos.md:188
 msgid "To fix this, you can:"
 msgstr ""
 
-#: src/development/macos.md:189
+#: src/development/macos.md:190
 msgid ""
 "Run `sudo spctl developer-mode enable-terminal` to enable the Developer "
 "Tools panel in System Settings."
 msgstr ""
 
-#: src/development/macos.md:190
+#: src/development/macos.md:191
 msgid ""
 "In System Settings, search for \"Developer Tools\" and add your terminal (e."
 "g. iTerm or Ghostty) to the list under \"Allow applications to use developer "
 "tools\""
 msgstr ""
 
-#: src/development/macos.md:191
+#: src/development/macos.md:192
 msgid "Restart your terminal."
 msgstr ""
 
-#: src/development/macos.md:193
+#: src/development/macos.md:194
 msgid ""
 "Thanks to the nextest developers for publishing [this](https://nexte.st/docs/"
 "installation/macos/#gatekeeper)."

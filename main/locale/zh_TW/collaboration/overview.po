@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -24,9 +24,9 @@ msgstr ""
 
 #: src/collaboration/overview.md:7
 msgid ""
-"Open the Collaboration Panel with <kbd class=\"keybinding\">cmd-shift-c|ctrl-"
-"shift-c</kbd>. You'll need to [sign in](../authentication.md#signing-in) to "
-"access collaboration features."
+"Open the Collaboration Panel with <kbd class=\"keybinding\">cmd-shift-c\\|"
+"ctrl-shift-c</kbd>. You'll need to [sign in](../authentication.md#signing-"
+"in) to access collaboration features."
 msgstr ""
 
 #: src/collaboration/overview.md:9
@@ -76,7 +76,7 @@ msgid ""
 msgstr ""
 
 #: src/collaboration/overview.md:26
-msgid "Open <kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>"
+msgid "Open <kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>"
 msgstr ""
 
 #: src/collaboration/overview.md:27

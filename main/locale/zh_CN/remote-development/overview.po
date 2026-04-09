@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -73,7 +73,7 @@ msgstr ""
 
 #: src/remote-development.md:23
 msgid ""
-"Use <kbd class=\"keybinding\">ctrl-cmd-shift-o|alt-ctrl-shift-o</kbd> to "
+"Use <kbd class=\"keybinding\">ctrl-cmd-shift-o\\|alt-ctrl-shift-o</kbd> to "
 "open the \"Remote Projects\" dialog."
 msgstr ""
 
@@ -145,8 +145,8 @@ msgstr ""
 #: src/remote-development.md:41
 msgid ""
 "The list of remote servers is stored in your settings file <kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>. You can edit this list using the "
-"Remote Projects dialog <kbd class=\"keybinding\">ctrl-cmd-shift-o|alt-ctrl-"
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>. You can edit this list using the "
+"Remote Projects dialog <kbd class=\"keybinding\">ctrl-cmd-shift-o\\|alt-ctrl-"
 "shift-o</kbd>, which provides some robustness - for example it checks that "
 "the connection can be established before writing it to the settings file."
 msgstr ""

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -52,13 +52,9 @@ msgid "[Developing Snippets](./extensions/snippets.md)"
 msgstr ""
 
 #: src/extensions.md:15
-msgid "[Developing Slash Commands](./extensions/slash-commands.md)"
-msgstr ""
-
-#: src/extensions.md:16
 msgid "[Developing Agent Servers](./extensions/agent-servers.md)"
 msgstr ""
 
-#: src/extensions.md:17
+#: src/extensions.md:16
 msgid "[Developing MCP Servers](./extensions/mcp-extensions.md)"
 msgstr ""

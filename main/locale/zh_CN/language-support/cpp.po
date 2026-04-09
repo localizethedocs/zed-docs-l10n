@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -181,14 +181,14 @@ msgstr ""
 
 #: src/languages/cpp.md:97
 msgid ""
-"You can trigger formatting via <kbd class=\"keybinding\">cmd-shift-i|ctrl-"
+"You can trigger formatting via <kbd class=\"keybinding\">cmd-shift-i\\|ctrl-"
 "shift-i</kbd> or the `editor: format` action from the command palette or by "
 "enabling format on save."
 msgstr ""
 
 #: src/languages/cpp.md:99
 msgid ""
-"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,|ctrl-,</"
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
 "kbd>) under Languages > C++, or add to your settings file:"
 msgstr ""
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -65,7 +65,7 @@ msgid ""
 "keymap. If you missed that step, you can change it anytime:"
 msgstr ""
 
-#: src/migrate/intellij.md:37 src/migrate/intellij.md:290
+#: src/migrate/intellij.md:37 src/migrate/intellij.md:289
 msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
 msgstr ""
 
@@ -90,7 +90,7 @@ msgstr "設定編輯器偏好設定"
 #: src/migrate/intellij.md:45
 msgid ""
 "You can configure most settings in the Settings Editor (<kbd "
-"class=\"keybinding\">cmd-,|ctrl-,</kbd>). For advanced settings, run `zed: "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>). For advanced settings, run `zed: "
 "open settings file` from the Command Palette to edit your settings file "
 "directly."
 msgstr ""
@@ -950,39 +950,35 @@ msgid "Themes"
 msgstr ""
 
 #: src/migrate/intellij.md:261
-msgid "Slash commands for AI"
-msgstr ""
-
-#: src/migrate/intellij.md:262
 msgid "Context servers"
 msgstr "上下文伺服器"
 
-#: src/migrate/intellij.md:264
+#: src/migrate/intellij.md:263
 msgid ""
 "Several features that require plugins in other editors are built into Zed:"
 msgstr ""
 
-#: src/migrate/intellij.md:266
+#: src/migrate/intellij.md:265
 msgid "Real-time collaboration with voice chat"
 msgstr ""
 
-#: src/migrate/intellij.md:267
+#: src/migrate/intellij.md:266
 msgid "AI coding assistance"
 msgstr ""
 
-#: src/migrate/intellij.md:268
+#: src/migrate/intellij.md:267
 msgid "Built-in terminal"
 msgstr ""
 
-#: src/migrate/intellij.md:269
+#: src/migrate/intellij.md:268
 msgid "Task runner"
 msgstr ""
 
-#: src/migrate/intellij.md:270
+#: src/migrate/intellij.md:269
 msgid "LSP-based code intelligence"
 msgstr ""
 
-#: src/migrate/intellij.md:272
+#: src/migrate/intellij.md:271
 msgid ""
 "You won't find one-to-one replacements for every IntelliJ plugin, especially "
 "for framework-specific tools, database clients, or application server "
@@ -990,202 +986,202 @@ msgid ""
 "alongside Zed."
 msgstr ""
 
-#: src/migrate/intellij.md:274
+#: src/migrate/intellij.md:273
 msgid "Collaboration in Zed vs. IntelliJ"
 msgstr ""
 
-#: src/migrate/intellij.md:276
+#: src/migrate/intellij.md:275
 msgid ""
 "IntelliJ offers Code With Me as a separate plugin for collaboration. Zed has "
 "collaboration built into the core experience."
 msgstr ""
 
-#: src/migrate/intellij.md:278
+#: src/migrate/intellij.md:277
 msgid "Open the Collab Panel in the left dock"
 msgstr ""
 
-#: src/migrate/intellij.md:279
+#: src/migrate/intellij.md:278
 msgid ""
 "Create a channel and [invite your collaborators](https://zed.dev/docs/"
 "collaboration#inviting-a-collaborator) to join"
 msgstr ""
 
-#: src/migrate/intellij.md:280
+#: src/migrate/intellij.md:279
 msgid ""
 "[Share your screen or your codebase](https://zed.dev/docs/"
 "collaboration#share-a-project) directly"
 msgstr ""
 
-#: src/migrate/intellij.md:282
+#: src/migrate/intellij.md:281
 msgid ""
 "Once connected, you'll see each other's cursors, selections, and edits in "
 "real time. Voice chat is included. There's no need for separate tools or "
 "third-party logins."
 msgstr ""
 
-#: src/migrate/intellij.md:284
+#: src/migrate/intellij.md:283
 msgid "Using AI in Zed"
 msgstr "在 Zed 中使用 AI"
 
-#: src/migrate/intellij.md:286
+#: src/migrate/intellij.md:285
 msgid ""
 "If you're used to AI assistants in IntelliJ (like GitHub Copilot or "
 "JetBrains AI), Zed offers similar capabilities with more flexibility."
 msgstr ""
 
-#: src/migrate/intellij.md:288
+#: src/migrate/intellij.md:287
 msgid "Configuring GitHub Copilot"
 msgstr ""
 
-#: src/migrate/intellij.md:291
+#: src/migrate/intellij.md:290
 msgid "Navigate to **AI → Edit Predictions**"
 msgstr ""
 
-#: src/migrate/intellij.md:292
+#: src/migrate/intellij.md:291
 msgid "Click **Configure** next to \"Configure Providers\""
 msgstr ""
 
-#: src/migrate/intellij.md:293
+#: src/migrate/intellij.md:292
 msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
 msgstr ""
 
-#: src/migrate/intellij.md:295
+#: src/migrate/intellij.md:294
 msgid ""
 "Once signed in, just start typing. Zed will offer suggestions inline for you "
 "to accept."
 msgstr ""
 
-#: src/migrate/intellij.md:297
+#: src/migrate/intellij.md:296
 msgid "Additional AI Options"
 msgstr ""
 
-#: src/migrate/intellij.md:299
+#: src/migrate/intellij.md:298
 msgid "To use other AI models in Zed, you have several options:"
 msgstr ""
 
-#: src/migrate/intellij.md:301
+#: src/migrate/intellij.md:300
 msgid ""
 "Use Zed's hosted models, with higher rate limits. Requires [authentication]"
 "(https://zed.dev/docs/authentication) and subscription to [Zed Pro](https://"
 "zed.dev/docs/ai/subscription.html)."
 msgstr ""
 
-#: src/migrate/intellij.md:302
+#: src/migrate/intellij.md:301
 msgid ""
 "Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
 "authentication needed"
 msgstr ""
 
-#: src/migrate/intellij.md:303
+#: src/migrate/intellij.md:302
 msgid ""
 "Use [external agents like Claude Agent](https://zed.dev/docs/ai/external-"
 "agents.html)"
 msgstr ""
 
-#: src/migrate/intellij.md:305
+#: src/migrate/intellij.md:304
 msgid "Advanced Config and Productivity Tweaks"
 msgstr ""
 
-#: src/migrate/intellij.md:307
+#: src/migrate/intellij.md:306
 msgid ""
 "Zed exposes advanced settings for power users who want to fine-tune their "
 "environment."
 msgstr ""
 
-#: src/migrate/intellij.md:309
+#: src/migrate/intellij.md:308
 msgid "Here are a few useful tweaks:"
 msgstr ""
 
-#: src/migrate/intellij.md:311
+#: src/migrate/intellij.md:310
 msgid "**Format on Save:**"
 msgstr ""
 
-#: src/migrate/intellij.md:314
+#: src/migrate/intellij.md:313
 msgid "\"format_on_save\""
 msgstr ""
 
-#: src/migrate/intellij.md:314
+#: src/migrate/intellij.md:313
 msgid "\"on\""
 msgstr ""
 
-#: src/migrate/intellij.md:317
+#: src/migrate/intellij.md:316
 msgid "**Enable direnv support:**"
 msgstr ""
 
-#: src/migrate/intellij.md:320
+#: src/migrate/intellij.md:319
 msgid "\"load_direnv\""
 msgstr ""
 
-#: src/migrate/intellij.md:320
+#: src/migrate/intellij.md:319
 msgid "\"shell_hook\""
 msgstr ""
 
-#: src/migrate/intellij.md:323
+#: src/migrate/intellij.md:322
 msgid ""
 "**Configure language servers** (requires manual JSON editing): For Java "
 "development, you may want to configure the Java language server in your "
 "settings:"
 msgstr ""
 
-#: src/migrate/intellij.md:327
+#: src/migrate/intellij.md:326
 msgid "\"lsp\""
 msgstr "\"lsp\""
 
-#: src/migrate/intellij.md:328
+#: src/migrate/intellij.md:327
 msgid "\"jdtls\""
 msgstr ""
 
-#: src/migrate/intellij.md:329
+#: src/migrate/intellij.md:328
 msgid "\"settings\""
 msgstr "\"settings\""
 
-#: src/migrate/intellij.md:330
+#: src/migrate/intellij.md:329
 msgid "\"java_home\""
 msgstr ""
 
-#: src/migrate/intellij.md:330
+#: src/migrate/intellij.md:329
 msgid "\"/path/to/jdk\""
 msgstr ""
 
-#: src/migrate/intellij.md:337
+#: src/migrate/intellij.md:336
 msgid "Next Steps"
 msgstr "下一步"
 
-#: src/migrate/intellij.md:339
+#: src/migrate/intellij.md:338
 msgid ""
 "Now that you're set up, here are some resources to help you get the most out "
 "of Zed:"
 msgstr ""
 
-#: src/migrate/intellij.md:341
+#: src/migrate/intellij.md:340
 msgid ""
 "[All Settings](../reference/all-settings.md) — Customize settings, themes, "
 "and editor behavior"
 msgstr ""
 
-#: src/migrate/intellij.md:342
+#: src/migrate/intellij.md:341
 msgid ""
 "[Key Bindings](../key-bindings.md) — Learn how to customize and extend your "
 "keymap"
 msgstr ""
 
-#: src/migrate/intellij.md:343
+#: src/migrate/intellij.md:342
 msgid "[Tasks](../tasks.md) — Set up build and run commands for your projects"
 msgstr ""
 
-#: src/migrate/intellij.md:344
+#: src/migrate/intellij.md:343
 msgid ""
 "[AI Features](../ai/overview.md) — Explore Zed's AI capabilities beyond code "
 "completion"
 msgstr ""
 
-#: src/migrate/intellij.md:345
+#: src/migrate/intellij.md:344
 msgid ""
 "[Collaboration](../collaboration/overview.md) — Share your projects and code "
 "together in real time"
 msgstr ""
 
-#: src/migrate/intellij.md:346
+#: src/migrate/intellij.md:345
 msgid ""
 "[Languages](../languages.md) — Language-specific setup guides, including "
 "Java and Kotlin"

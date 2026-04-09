@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -127,48 +127,54 @@ msgid "With Zed running, open Instruments"
 msgstr ""
 
 #: src/troubleshooting.md:44
-msgid "Select `Time Profiler` as the profiling template"
+msgid ""
+"Select `Time Profiler` as the profiling template ![Instruments template "
+"picker with Time Profiler selected](https://images.zed.dev/docs/"
+"troubleshooting/instruments-template-picker.webp)"
 msgstr ""
 
-#: src/troubleshooting.md:45
+#: src/troubleshooting.md:46
 msgid ""
 "In the `Time Profiler` configuration, set the target to the running Zed "
 "process"
 msgstr ""
 
-#: src/troubleshooting.md:46
-msgid "Start recording"
-msgstr "開始錄製"
-
 #: src/troubleshooting.md:47
 msgid ""
-"If the performance issue occurs when performing a specific action in Zed, "
-"perform that action now"
+"Start recording ![Time Profiler configuration showing the target dropdown "
+"and record button](https://images.zed.dev/docs/troubleshooting/instruments-"
+"target-and-record.webp)"
 msgstr ""
 
-#: src/troubleshooting.md:48
-msgid "Stop recording"
-msgstr "停止錄製"
-
 #: src/troubleshooting.md:49
-msgid "Save the trace file"
+msgid "Perform the action in Zed that causes performance issues"
 msgstr ""
 
 #: src/troubleshooting.md:50
+msgid ""
+"Stop recording ![A completed Time Profiler recording in Instruments](https://"
+"images.zed.dev/docs/troubleshooting/instruments-recording.webp)"
+msgstr ""
+
+#: src/troubleshooting.md:52
+msgid "Save the trace file"
+msgstr ""
+
+#: src/troubleshooting.md:53
 msgid "Compress the trace file into a zip archive"
 msgstr ""
 
-#: src/troubleshooting.md:51
+#: src/troubleshooting.md:54
 msgid ""
 "File a [GitHub issue](https://github.com/zed-industries/zed/issues/new/"
 "choose) with the trace zip attached"
 msgstr ""
 
-#: src/troubleshooting.md:57
+#: src/troubleshooting.md:60
 msgid "Startup and Workspace Issues"
 msgstr ""
 
-#: src/troubleshooting.md:59
+#: src/troubleshooting.md:62
 msgid ""
 "Zed creates local SQLite databases to persist data relating to its workspace "
 "and your projects. These databases store, for instance, the tabs and panes "
@@ -177,43 +183,43 @@ msgid ""
 "You can find and explore these databases in the following locations:"
 msgstr ""
 
-#: src/troubleshooting.md:61
+#: src/troubleshooting.md:64
 msgid "macOS: `~/Library/Application Support/Zed/db`"
 msgstr ""
 
-#: src/troubleshooting.md:62
+#: src/troubleshooting.md:65
 msgid ""
 "Linux and FreeBSD: `~/.local/share/zed/db` (or within `XDG_DATA_HOME` or "
 "`FLATPAK_XDG_DATA_HOME`)"
 msgstr ""
 
-#: src/troubleshooting.md:63
+#: src/troubleshooting.md:66
 msgid "Windows: `%LOCALAPPDATA%\\Zed\\db`"
 msgstr ""
 
-#: src/troubleshooting.md:65
+#: src/troubleshooting.md:68
 msgid ""
 "The naming convention of these databases takes on the form of `0-"
 "<zed_channel>`:"
 msgstr ""
 
-#: src/troubleshooting.md:67
+#: src/troubleshooting.md:70
 msgid "Stable: `0-stable`"
 msgstr ""
 
-#: src/troubleshooting.md:68
+#: src/troubleshooting.md:71
 msgid "Preview: `0-preview`"
 msgstr ""
 
-#: src/troubleshooting.md:69
+#: src/troubleshooting.md:72
 msgid "Nightly: `0-nightly`"
 msgstr ""
 
-#: src/troubleshooting.md:70
+#: src/troubleshooting.md:73
 msgid "Dev: `0-dev`"
 msgstr ""
 
-#: src/troubleshooting.md:72
+#: src/troubleshooting.md:75
 msgid ""
 "While rare, we've seen a few cases where workspace databases became "
 "corrupted, which prevented Zed from starting. If you're experiencing startup "
@@ -221,23 +227,23 @@ msgid ""
 "the database from its location, then trying to start Zed again."
 msgstr ""
 
-#: src/troubleshooting.md:75
+#: src/troubleshooting.md:78
 msgid ""
 "**Note**: Moving the workspace database will cause Zed to create a fresh "
 "one. Your recent projects, open tabs, etc. will be reset to \"factory\"."
 msgstr ""
 
-#: src/troubleshooting.md:78
+#: src/troubleshooting.md:81
 msgid ""
 "If your issue persists after regenerating the database, please [file an "
 "issue](https://github.com/zed-industries/zed/issues/new/choose)."
 msgstr ""
 
-#: src/troubleshooting.md:80
+#: src/troubleshooting.md:83
 msgid "Language Server Issues"
 msgstr ""
 
-#: src/troubleshooting.md:82
+#: src/troubleshooting.md:85
 msgid ""
 "If you're experiencing language-server related issues, such as stale "
 "diagnostics or issues jumping to definitions, restarting the language server "
@@ -245,54 +251,60 @@ msgid ""
 "command palette will often resolve the issue."
 msgstr ""
 
-#: src/troubleshooting.md:84
+#: src/troubleshooting.md:87
 msgid "Agent Error Messages"
 msgstr ""
 
-#: src/troubleshooting.md:86
+#: src/troubleshooting.md:89
 msgid "\"Max tokens reached\""
 msgstr ""
 
-#: src/troubleshooting.md:88
+#: src/troubleshooting.md:91
 msgid ""
 "You see this error when the agent's response exceeds the model's maximum "
 "token limit. This happens when:"
 msgstr ""
 
-#: src/troubleshooting.md:90
+#: src/troubleshooting.md:93
 msgid "The agent generates an extremely long response"
 msgstr ""
 
-#: src/troubleshooting.md:91
+#: src/troubleshooting.md:94
 msgid "The conversation context plus the response exceeds the model's capacity"
 msgstr ""
 
-#: src/troubleshooting.md:92
+#: src/troubleshooting.md:95
 msgid "Tool outputs are large and consume the available token budget"
 msgstr ""
 
-#: src/troubleshooting.md:94
+#: src/troubleshooting.md:97
 msgid "**To resolve this:**"
 msgstr ""
 
-#: src/troubleshooting.md:96
+#: src/troubleshooting.md:99
 msgid "Start a new thread to reduce context size"
 msgstr ""
 
-#: src/troubleshooting.md:97
+#: src/troubleshooting.md:100
 msgid "Use a model with a larger token limit in AI settings"
 msgstr ""
 
-#: src/troubleshooting.md:98
+#: src/troubleshooting.md:101
 msgid "Break your request into smaller, focused tasks"
 msgstr ""
 
-#: src/troubleshooting.md:99
+#: src/troubleshooting.md:102
 msgid "Clear tool outputs or previous messages using the thread controls"
 msgstr ""
 
-#: src/troubleshooting.md:101
+#: src/troubleshooting.md:104
 msgid ""
 "The token limit varies by model—check your model provider's documentation "
 "for specific limits."
 msgstr ""
+
+#~ msgid "Start recording"
+#~ msgstr "開始錄製"
+
+#~ msgid "Stop recording"
+#~ msgstr "停止錄製"
