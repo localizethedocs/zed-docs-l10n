@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,9 +21,9 @@ msgstr ""
 
 #: src/ai/inline-assistant.md:7
 msgid ""
-"Use <kbd class=\"keybinding\">ctrl-enter|ctrl-enter</kbd> to open the Inline "
-"Assistant in editors, text threads, the rules library, channel notes, and "
-"the terminal panel."
+"Use <kbd class=\"keybinding\">ctrl-enter\\|ctrl-enter</kbd> to open the "
+"Inline Assistant in editors, the rules library, channel notes, and the "
+"terminal panel."
 msgstr ""
 
 #: src/ai/inline-assistant.md:9
@@ -107,7 +107,7 @@ msgstr ""
 
 #: src/ai/inline-assistant.md:39
 msgid ""
-"With multiple cursors, pressing <kbd class=\"keybinding\">ctrl-enter|ctrl-"
+"With multiple cursors, pressing <kbd class=\"keybinding\">ctrl-enter\\|ctrl-"
 "enter</kbd> sends the same prompt to each cursor position, generating "
 "changes at all locations simultaneously."
 msgstr ""

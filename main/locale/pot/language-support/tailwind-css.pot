@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -48,7 +48,9 @@ msgid "[Gleam](./gleam.md)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:15
-msgid "[HEEx](./elixir.md#using-the-tailwind-css-language-server-with-heex)"
+msgid ""
+"[HEEx](./elixir.md#using-the-tailwind-css-language-server-with-heex-"
+"templates)"
 msgstr ""
 
 #: src/languages/tailwindcss.md:16
@@ -143,8 +145,8 @@ msgid ""
 "Zed includes support for the Tailwind CSS language mode, which provides full "
 "CSS IntelliSense support even when using Tailwind-specific at-rules like "
 "`@apply`, `@layer`, and `@theme`. Configure language servers in Settings "
-"(<kbd class=\"keybinding\">cmd-,|ctrl-,</kbd>) under Languages > CSS, or add "
-"to your settings file:"
+"(<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > CSS, or "
+"add to your settings file:"
 msgstr ""
 
 #: src/languages/tailwindcss.md:51
