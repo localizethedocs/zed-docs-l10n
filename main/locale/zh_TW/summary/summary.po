@@ -686,6 +686,3 @@ msgstr ""
 #: src/SUMMARY.md:202
 msgid "Debugging Crashes"
 msgstr ""
-
-#~ msgid "Slash Command Extensions"
-#~ msgstr "斜線命令擴充功能"

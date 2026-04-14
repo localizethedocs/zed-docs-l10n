@@ -245,7 +245,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:86
 msgid "Command Palette"
-msgstr ""
+msgstr "命令選擇區"
 
 #: src/migrate/webstorm.md:86
 msgid "<kbd class=\"keybinding\">shift shift\\|shift shift</kbd>"
@@ -814,7 +814,7 @@ msgstr "專案面板"
 
 #: src/migrate/webstorm.md:230
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: src/migrate/webstorm.md:230
 msgid "Git Panel"
@@ -1413,27 +1413,3 @@ msgid ""
 "[TypeScript in Zed](../languages/typescript.md) — TypeScript-specific setup "
 "and configuration"
 msgstr ""
-
-#~ msgid "`Cmd + B`"
-#~ msgstr "`Cmd + B`"
-
-#~ msgid "`Cmd + Alt + L`"
-#~ msgstr "`Cmd + Alt + L`"
-
-#~ msgid "`Cmd + D`"
-#~ msgstr "`Cmd + D`"
-
-#~ msgid "Project (1)"
-#~ msgstr "專案 (1)"
-
-#~ msgid "Terminal (Alt+F12)"
-#~ msgstr "終端機 (Alt+F12)"
-
-#~ msgid "Structure (7)"
-#~ msgstr "結構 (7)"
-
-#~ msgid "`Cmd + 7`"
-#~ msgstr "`Cmd + 7`"
-
-#~ msgid "Problems (6)"
-#~ msgstr "問題 (6)"

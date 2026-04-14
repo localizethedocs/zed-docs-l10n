@@ -5,10 +5,10 @@ msgstr ""
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: src/modelines.md:1
@@ -25,7 +25,7 @@ msgstr ""
 
 #: src/modelines.md:5
 msgid "Configuration"
-msgstr ""
+msgstr "組態"
 
 #: src/modelines.md:7
 msgid ""
@@ -74,7 +74,7 @@ msgstr ""
 
 #: src/modelines.md:29 src/modelines.md:51
 msgid "Zed Setting"
-msgstr ""
+msgstr "Zed 設定"
 
 #: src/modelines.md:31
 msgid "`mode`"
@@ -131,7 +131,7 @@ msgstr ""
 
 #: src/modelines.md:35
 msgid "Auto-indentation"
-msgstr ""
+msgstr "自動縮排"
 
 #: src/modelines.md:35 src/modelines.md:58 src/modelines.md:59
 msgid "[`auto_indent`](./reference/all-settings.md#auto-indent)"
@@ -295,7 +295,7 @@ msgstr ""
 
 #: src/modelines.md:63
 msgid "Notes"
-msgstr ""
+msgstr "備註"
 
 #: src/modelines.md:65
 msgid "The first kilobyte of a file is searched for modelines."

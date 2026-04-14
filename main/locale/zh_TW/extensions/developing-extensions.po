@@ -513,6 +513,3 @@ msgid ""
 "to update it to be one of the [accepted extension licenses](#extension-"
 "license-requirements) before publishing your update."
 msgstr ""
-
-#~ msgid "[Slash Commands](./slash-commands.md)"
-#~ msgstr "[斜線命令](./slash-commands.md)"

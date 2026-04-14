@@ -58,6 +58,3 @@ msgstr ""
 #: src/extensions.md:16
 msgid "[Developing MCP Servers](./extensions/mcp-extensions.md)"
 msgstr "[開發 MCP 伺服器](./extensions/mcp-extensions.md)"
-
-#~ msgid "[Developing Slash Commands](./extensions/slash-commands.md)"
-#~ msgstr "[開發斜線命令](./extensions/slash-commands.md)"

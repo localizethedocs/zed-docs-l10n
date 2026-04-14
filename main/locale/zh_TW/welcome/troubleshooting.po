@@ -302,9 +302,3 @@ msgid ""
 "The token limit varies by model—check your model provider's documentation "
 "for specific limits."
 msgstr ""
-
-#~ msgid "Start recording"
-#~ msgstr "開始錄製"
-
-#~ msgid "Stop recording"
-#~ msgstr "停止錄製"
