@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -572,8 +572,8 @@ msgid ""
 "If you are struggling with connection issues, you should be able to see more "
 "information in the Zed log `cmd-shift-p Open Log`. If you are seeing things "
 "that are unexpected, please file a [GitHub issue](https://github.com/zed-"
-"industries/zed/issues/new) or reach out in the #remoting-feedback channel in "
-"the [Zed Discord](https://zed.dev/community-links)."
+"industries/zed/issues/new) or reach out in the #support forums on [Discord]"
+"(https://zed.dev/community-links)."
 msgstr ""
 
 #: src/remote-development.md:236
@@ -651,37 +651,27 @@ msgid ""
 msgstr ""
 
 #: src/remote-development.md:258
-msgid "Feedback"
-msgstr ""
-
-#: src/remote-development.md:260
-msgid ""
-"Please join the #remoting-feedback channel in the [Zed Discord](https://zed."
-"dev/community-links)."
-msgstr ""
-
-#: src/remote-development.md:262
 msgid "See also"
 msgstr ""
 
-#: src/remote-development.md:264
+#: src/remote-development.md:260
 msgid ""
 "[Running & Testing](./running-testing.md): Run tasks, terminal commands, and "
 "debugger sessions while you work remotely."
 msgstr ""
 
-#: src/remote-development.md:266
+#: src/remote-development.md:262
 msgid ""
 "[Configuring Zed](./configuring-zed.md): Manage shared and project settings, "
 "including `.zed/settings.json`."
 msgstr ""
 
-#: src/remote-development.md:268
+#: src/remote-development.md:264
 msgid ""
 "[Agent Panel](./ai/agent-panel.md): Use AI workflows in remote projects."
 msgstr ""
 
-#: src/remote-development.md:269
+#: src/remote-development.md:265
 msgid ""
 "[Remote Development on zed.dev](https://zed.dev/remote-development): Product "
 "overview and release updates."

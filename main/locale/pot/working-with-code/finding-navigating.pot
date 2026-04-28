@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,7 +21,7 @@ msgid ""
 "overview of the main navigation tools."
 msgstr ""
 
-#: src/finding-navigating.md:7 src/finding-navigating.md:48
+#: src/finding-navigating.md:7 src/finding-navigating.md:54
 msgid "Command Palette"
 msgstr ""
 
@@ -36,65 +36,81 @@ msgstr ""
 msgid "[Learn more about the Command Palette →](./command-palette.md)"
 msgstr ""
 
-#: src/finding-navigating.md:13
-msgid "File Finder"
+#: src/finding-navigating.md:13 src/finding-navigating.md:63
+msgid "Project Panel"
 msgstr ""
 
 #: src/finding-navigating.md:15
+msgid ""
+"The Project Panel (<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</"
+"kbd>) shows a tree view of your workspace's files and directories. Browse, "
+"create, rename, move, and delete files without leaving the editor. It also "
+"surfaces git status and diagnostics at a glance."
+msgstr ""
+
+#: src/finding-navigating.md:17
+msgid "[Learn more about the Project Panel →](./project-panel.md)"
+msgstr ""
+
+#: src/finding-navigating.md:19
+msgid "File Finder"
+msgstr ""
+
+#: src/finding-navigating.md:21
 msgid ""
 "Open any file in your project with <kbd class=\"keybinding\">cmd-p\\|ctrl-p</"
 "kbd>. Type part of the filename or path to narrow results."
 msgstr ""
 
-#: src/finding-navigating.md:17
+#: src/finding-navigating.md:23
 msgid "Project Search"
 msgstr ""
 
-#: src/finding-navigating.md:19
+#: src/finding-navigating.md:25
 msgid ""
-"Search across all files with <kbd class=\"keybinding\">cmd-shift-h\\|ctrl-"
-"shift-h</kbd>. Start typing in the search field to begin searching—results "
+"Search across all files with <kbd class=\"keybinding\">cmd-shift-f\\|ctrl-"
+"shift-f</kbd>. Start typing in the search field to begin searching—results "
 "appear as you type."
 msgstr ""
 
-#: src/finding-navigating.md:21
+#: src/finding-navigating.md:27
 msgid ""
 "Results appear in a [multibuffer](./multibuffers.md), letting you edit "
 "matches in place."
 msgstr ""
 
-#: src/finding-navigating.md:23
+#: src/finding-navigating.md:29
 msgid "Go to Definition"
 msgstr ""
 
-#: src/finding-navigating.md:25
+#: src/finding-navigating.md:31
 msgid ""
 "Jump to where a symbol is defined with <kbd class=\"keybinding\">f12\\|f12</"
 "kbd> (or `Cmd+Click` / `Ctrl+Click`). If there are multiple definitions, "
 "they open in a multibuffer."
 msgstr ""
 
-#: src/finding-navigating.md:27
+#: src/finding-navigating.md:33
 msgid "Go to Symbol"
 msgstr ""
 
-#: src/finding-navigating.md:29
+#: src/finding-navigating.md:35
 msgid ""
 "**Current file:** <kbd class=\"keybinding\">cmd-shift-o\\|ctrl-shift-o</kbd> "
 "opens an outline of symbols in the active file"
 msgstr ""
 
-#: src/finding-navigating.md:30
+#: src/finding-navigating.md:36
 msgid ""
 "**Entire project:** <kbd class=\"keybinding\">cmd-t\\|ctrl-t</kbd> searches "
 "symbols across all files"
 msgstr ""
 
-#: src/finding-navigating.md:32 src/finding-navigating.md:55
+#: src/finding-navigating.md:38 src/finding-navigating.md:61
 msgid "Outline Panel"
 msgstr ""
 
-#: src/finding-navigating.md:34
+#: src/finding-navigating.md:40
 msgid ""
 "The Outline Panel (<kbd class=\"keybinding\">cmd-shift-b\\|ctrl-shift-b</"
 "kbd>) shows a persistent tree view of symbols in the current file. It's "
@@ -102,93 +118,97 @@ msgid ""
 "search results or diagnostics."
 msgstr ""
 
-#: src/finding-navigating.md:36
+#: src/finding-navigating.md:42
 msgid "[Learn more about the Outline Panel →](./outline-panel.md)"
 msgstr ""
 
-#: src/finding-navigating.md:38 src/finding-navigating.md:56
+#: src/finding-navigating.md:44 src/finding-navigating.md:62
 msgid "Tab Switcher"
 msgstr ""
 
-#: src/finding-navigating.md:40
+#: src/finding-navigating.md:46
 msgid ""
 "Quickly switch between open tabs with <kbd class=\"keybinding\">ctrl-tab\\|"
 "ctrl-tab</kbd>. Tabs are sorted by recent use—keep holding Ctrl and press "
 "Tab to cycle through them."
 msgstr ""
 
-#: src/finding-navigating.md:42
+#: src/finding-navigating.md:48
 msgid "[Learn more about the Tab Switcher →](./tab-switcher.md)"
 msgstr ""
 
-#: src/finding-navigating.md:44
+#: src/finding-navigating.md:50
 msgid "Quick Reference"
 msgstr ""
 
-#: src/finding-navigating.md:46
+#: src/finding-navigating.md:52
 msgid "Task"
 msgstr ""
 
-#: src/finding-navigating.md:46
+#: src/finding-navigating.md:52
 msgid "Keybinding"
 msgstr ""
 
-#: src/finding-navigating.md:48
+#: src/finding-navigating.md:54
 msgid "<kbd class=\"keybinding\">cmd-shift-p\\|ctrl-shift-p</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:49
+#: src/finding-navigating.md:55
 msgid "Open file"
 msgstr ""
 
-#: src/finding-navigating.md:49
+#: src/finding-navigating.md:55
 msgid "<kbd class=\"keybinding\">cmd-p\\|ctrl-p</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:50
+#: src/finding-navigating.md:56
 msgid "Project search"
 msgstr ""
 
-#: src/finding-navigating.md:50
-msgid "<kbd class=\"keybinding\">cmd-shift-h\\|ctrl-shift-h</kbd>"
+#: src/finding-navigating.md:56
+msgid "<kbd class=\"keybinding\">cmd-shift-f\\|ctrl-shift-f</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:51
+#: src/finding-navigating.md:57
 msgid "Go to definition"
 msgstr ""
 
-#: src/finding-navigating.md:51
+#: src/finding-navigating.md:57
 msgid "<kbd class=\"keybinding\">f12\\|f12</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:52
+#: src/finding-navigating.md:58
 msgid "Find references"
 msgstr ""
 
-#: src/finding-navigating.md:52
+#: src/finding-navigating.md:58
 msgid "<kbd class=\"keybinding\">alt-shift-f12\\|alt-shift-f12</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:53
+#: src/finding-navigating.md:59
 msgid "Symbol in file"
 msgstr ""
 
-#: src/finding-navigating.md:53
+#: src/finding-navigating.md:59
 msgid "<kbd class=\"keybinding\">cmd-shift-o\\|ctrl-shift-o</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:54
+#: src/finding-navigating.md:60
 msgid "Symbol in project"
 msgstr ""
 
-#: src/finding-navigating.md:54
+#: src/finding-navigating.md:60
 msgid "<kbd class=\"keybinding\">cmd-t\\|ctrl-t</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:55
+#: src/finding-navigating.md:61
 msgid "<kbd class=\"keybinding\">cmd-shift-b\\|ctrl-shift-b</kbd>"
 msgstr ""
 
-#: src/finding-navigating.md:56
+#: src/finding-navigating.md:62
 msgid "<kbd class=\"keybinding\">ctrl-tab\\|ctrl-tab</kbd>"
+msgstr ""
+
+#: src/finding-navigating.md:63
+msgid "<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</kbd>"
 msgstr ""
