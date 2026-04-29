@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -89,15 +89,15 @@ msgid "Popular servers available as an extension include:"
 msgstr ""
 
 #: src/ai/mcp.md:31
-msgid "[Context7](https://zed.dev/extensions/context7-mcp-server)"
+msgid "[Context7](https://zed.dev/extensions/mcp-server-context7)"
 msgstr ""
 
 #: src/ai/mcp.md:32
-msgid "[GitHub](https://zed.dev/extensions/github-mcp-server)"
+msgid "[GitHub](https://zed.dev/extensions/mcp-server-github)"
 msgstr ""
 
 #: src/ai/mcp.md:33
-msgid "[Puppeteer](https://zed.dev/extensions/puppeteer-mcp-server)"
+msgid "[Puppeteer](https://zed.dev/extensions/mcp-server-puppeteer)"
 msgstr ""
 
 #: src/ai/mcp.md:34
@@ -105,7 +105,7 @@ msgid "[Gem](https://zed.dev/extensions/gem)"
 msgstr ""
 
 #: src/ai/mcp.md:35
-msgid "[Brave Search](https://zed.dev/extensions/brave-search-mcp-server)"
+msgid "[Brave Search](https://zed.dev/extensions/mcp-server-brave-search)"
 msgstr ""
 
 #: src/ai/mcp.md:36
@@ -113,12 +113,11 @@ msgid "[Prisma](https://github.com/aqrln/prisma-mcp-zed)"
 msgstr ""
 
 #: src/ai/mcp.md:37
-msgid ""
-"[Framelink Figma](https://zed.dev/extensions/framelink-figma-mcp-server)"
+msgid "[Framelink Figma](https://zed.dev/extensions/mcp-server-figma)"
 msgstr ""
 
 #: src/ai/mcp.md:38
-msgid "[Resend](https://zed.dev/extensions/resend-mcp-server)"
+msgid "[Resend](https://zed.dev/extensions/mcp-server-resend)"
 msgstr ""
 
 #: src/ai/mcp.md:40
@@ -455,44 +454,43 @@ msgstr ""
 
 #: src/ai/mcp.md:157
 msgid ""
-"Note that for [external agents](./external-agents.md) connected through the "
-"[Agent Client Protocol](https://agentclientprotocol.com/), access to MCP "
-"servers installed from Zed may vary depending on the ACP agent "
-"implementation."
+"MCP servers configured in Zed are forwarded to [external agents](./external-"
+"agents.md) via the [Agent Client Protocol](https://agentclientprotocol."
+"com/). External agents can also access MCP servers from their own native "
+"configuration files."
 msgstr ""
 
 #: src/ai/mcp.md:159
 msgid ""
-"Regarding the built-in ones, Claude Agent and Codex both support it, and "
-"Gemini CLI does not yet. In the meantime, learn how to add MCP server "
-"support to Gemini CLI through [their documentation](https://github.com/"
-"google-gemini/gemini-cli?tab=readme-ov-file#using-mcp-servers)."
+"For details on what configuration is shared between Zed and external agents, "
+"see [Configuration Boundaries](./external-agents.md#configuration-"
+"boundaries)."
 msgstr ""
 
-#: src/ai/mcp.md:162
+#: src/ai/mcp.md:161
 msgid "Error Handling"
 msgstr ""
 
-#: src/ai/mcp.md:164
+#: src/ai/mcp.md:163
 msgid ""
 "When a MCP server encounters an error while processing a tool call, the "
 "agent receives the error message directly and the operation fails. Common "
 "error scenarios include:"
 msgstr ""
 
-#: src/ai/mcp.md:167
+#: src/ai/mcp.md:166
 msgid "Invalid parameters passed to the tool"
 msgstr ""
 
-#: src/ai/mcp.md:168
+#: src/ai/mcp.md:167
 msgid "Server-side failures (database connection issues, rate limits)"
 msgstr ""
 
-#: src/ai/mcp.md:169
+#: src/ai/mcp.md:168
 msgid "Unsupported operations or missing resources"
 msgstr ""
 
-#: src/ai/mcp.md:171
+#: src/ai/mcp.md:170
 msgid ""
 "The error message from the context server will be shown in the agent's "
 "response, allowing you to diagnose and correct the issue. Check the context "

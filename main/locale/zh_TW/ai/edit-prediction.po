@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -25,10 +25,9 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:8
 msgid ""
-"The default provider is [Zeta, a proprietary open source and open dataset "
-"model](https://huggingface.co/zed-industries/zeta), but you can also use "
-"[other providers](#other-providers) like GitHub Copilot, Mercury Coder, and "
-"Codestral."
+"The default provider is [Zeta, an open source model developed by Zed]"
+"(https://zed.dev/blog/zeta2), but you can also use [other providers](#other-"
+"providers) like GitHub Copilot, Mercury Coder, and Codestral."
 msgstr ""
 
 #: src/ai/edit-prediction.md:10
@@ -328,9 +327,7 @@ msgid ""
 msgstr ""
 
 #: src/ai/edit-prediction.md:146
-msgid ""
-"Alternatively, if you have Zed set as your provider, consider [using Subtle "
-"Mode](#switching-modes)."
+msgid "Alternatively, consider [using Subtle Mode](#switching-modes)."
 msgstr ""
 
 #: src/ai/edit-prediction.md:148
@@ -350,10 +347,10 @@ msgstr ""
 #: src/ai/edit-prediction.md:158
 msgid ""
 "This hides every indication that there is a prediction available, regardless "
-"of [the display mode](#switching-modes) you're in (valid only if you have "
-"Zed as your provider). Still, you can trigger edit predictions manually by "
-"executing <code class=\"hljs\">editor: show edit prediction</code> or "
-"hitting <kbd class=\"keybinding\">alt-tab\\|alt-\\\\</kbd>."
+"of [the display mode](#switching-modes) you're in. Still, you can trigger "
+"edit predictions manually by executing <code class=\"hljs\">editor: show "
+"edit prediction</code> or hitting <kbd class=\"keybinding\">alt-tab\\|alt-\\"
+"\\</kbd>."
 msgstr ""
 
 #: src/ai/edit-prediction.md:161

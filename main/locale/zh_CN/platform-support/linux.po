@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -110,43 +110,43 @@ msgid ""
 msgstr ""
 
 #: src/linux.md:42
-msgid "Flathub: [`dev.zed.Zed`](https://flathub.org/apps/dev.zed.Zed)"
-msgstr ""
-
-#: src/linux.md:43
 msgid "Arch: [`zed`](https://archlinux.org/packages/extra/x86_64/zed/)"
 msgstr ""
 
-#: src/linux.md:44
+#: src/linux.md:43
 msgid ""
 "Arch (AUR): [`zed-git`](https://aur.archlinux.org/packages/zed-git), [`zed-"
 "preview`](https://aur.archlinux.org/packages/zed-preview), [`zed-preview-"
 "bin`](https://aur.archlinux.org/packages/zed-preview-bin)"
 msgstr ""
 
-#: src/linux.md:45
+#: src/linux.md:44
 msgid ""
 "Alpine: `zed` ([aarch64](https://pkgs.alpinelinux.org/package/edge/testing/"
 "aarch64/zed)) ([x86_64](https://pkgs.alpinelinux.org/package/edge/testing/"
 "x86_64/zed))"
 msgstr ""
 
-#: src/linux.md:46
-msgid "Conda: [`zed`](https://anaconda.org/conda-forge/zed)"
-msgstr ""
-
-#: src/linux.md:47
-msgid ""
-"Nix: `zed-editor` ([unstable](https://search.nixos.org/packages?"
-"channel=unstable&show=zed-editor))"
-msgstr ""
-
-#: src/linux.md:48
+#: src/linux.md:45
 msgid ""
 "Fedora/Ultramarine (Terra): [`zed`](https://github.com/terrapkg/packages/"
 "tree/frawhide/anda/devs/zed/stable), [`zed-preview`](https://github.com/"
 "terrapkg/packages/tree/frawhide/anda/devs/zed/preview), [`zed-nightly`]"
 "(https://github.com/terrapkg/packages/tree/frawhide/anda/devs/zed/nightly)"
+msgstr ""
+
+#: src/linux.md:46
+msgid "Manjaro: [`zed`](https://manjaristas.org/branch_compare?q=zed)"
+msgstr ""
+
+#: src/linux.md:47
+msgid "Conda: [`zed`](https://anaconda.org/conda-forge/zed)"
+msgstr ""
+
+#: src/linux.md:48
+msgid ""
+"Nix: `zed-editor` ([unstable](https://search.nixos.org/packages?"
+"channel=unstable&show=zed-editor))"
 msgstr ""
 
 #: src/linux.md:49
@@ -159,17 +159,20 @@ msgid "Parabola: [`zed`](https://www.parabola.nu/packages/extra/x86_64/zed/)"
 msgstr ""
 
 #: src/linux.md:51
-msgid "Manjaro: [`zed`](https://packages.manjaro.org/?query=zed)"
-msgstr ""
-
-#: src/linux.md:52
 msgid ""
 "ALT Linux (Sisyphus): [`zed`](https://packages.altlinux.org/en/sisyphus/"
 "srpms/zed/)"
 msgstr ""
 
-#: src/linux.md:53
+#: src/linux.md:52
 msgid "AOSC OS: [`zed`](https://packages.aosc.io/packages/zed)"
+msgstr ""
+
+#: src/linux.md:53
+msgid ""
+"Flathub: [`dev.zed.Zed`](https://flathub.org/apps/dev.zed.Zed) (WARNING: "
+"[Sandboxing causes problems](https://github.com/flathub/dev.zed.Zed/"
+"pull/275))"
 msgstr ""
 
 #: src/linux.md:55

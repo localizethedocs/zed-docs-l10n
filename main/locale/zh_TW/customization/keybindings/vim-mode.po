@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -874,7 +874,7 @@ msgstr ""
 msgid "Prefer current-line priority when searching"
 msgstr ""
 
-#: src/vim.md:212
+#: src/vim.md:212 src/vim.md:356
 msgid "Example Configuration"
 msgstr "範例組態"
 
@@ -885,9 +885,9 @@ msgid ""
 "operators (`i` and `a`) or change-surrounds (`cs`):"
 msgstr ""
 
-#: src/vim.md:218 src/vim.md:371 src/vim.md:383 src/vim.md:414 src/vim.md:420
-#: src/vim.md:426 src/vim.md:432 src/vim.md:452 src/vim.md:467 src/vim.md:484
-#: src/vim.md:497 src/vim.md:511 src/vim.md:523 src/vim.md:536
+#: src/vim.md:218 src/vim.md:392 src/vim.md:404 src/vim.md:435 src/vim.md:441
+#: src/vim.md:447 src/vim.md:453 src/vim.md:473 src/vim.md:488 src/vim.md:505
+#: src/vim.md:518 src/vim.md:532 src/vim.md:544 src/vim.md:557
 msgid "\"context\""
 msgstr ""
 
@@ -895,9 +895,9 @@ msgstr ""
 msgid "\"vim_operator == a || vim_operator == i || vim_operator == cs\""
 msgstr ""
 
-#: src/vim.md:219 src/vim.md:372 src/vim.md:384 src/vim.md:415 src/vim.md:421
-#: src/vim.md:427 src/vim.md:433 src/vim.md:453 src/vim.md:468 src/vim.md:485
-#: src/vim.md:498 src/vim.md:512 src/vim.md:524 src/vim.md:537
+#: src/vim.md:219 src/vim.md:393 src/vim.md:405 src/vim.md:436 src/vim.md:442
+#: src/vim.md:448 src/vim.md:454 src/vim.md:474 src/vim.md:489 src/vim.md:506
+#: src/vim.md:519 src/vim.md:533 src/vim.md:545 src/vim.md:558
 msgid "\"bindings\""
 msgstr ""
 
@@ -911,7 +911,7 @@ msgstr ""
 msgid "\"vim::AnyQuotes\""
 msgstr ""
 
-#: src/vim.md:222 src/vim.md:470
+#: src/vim.md:222 src/vim.md:491
 msgid "\"b\""
 msgstr ""
 
@@ -937,7 +937,7 @@ msgstr ""
 msgid "\"vim::MiniBrackets\""
 msgstr ""
 
-#: src/vim.md:231
+#: src/vim.md:231 src/vim.md:374
 msgid "With this configuration, you can use commands like:"
 msgstr ""
 
@@ -996,7 +996,7 @@ msgid ""
 msgstr ""
 
 #: src/vim.md:250 src/vim.md:297 src/vim.md:307 src/vim.md:316 src/vim.md:326
-#: src/vim.md:334 src/vim.md:345 src/vim.md:394 src/vim.md:556 src/vim.md:603
+#: src/vim.md:334 src/vim.md:345 src/vim.md:415 src/vim.md:577 src/vim.md:624
 msgid "Description"
 msgstr ""
 
@@ -1445,43 +1445,115 @@ msgstr ""
 
 #: src/vim.md:354
 msgid ""
-"As any Zed command is available, you may find that it's helpful to remember "
-"mnemonics that run the correct command. For example:"
-msgstr ""
-
-#: src/vim.md:356
-msgid "`:diffs` for \"toggle all hunk diffs\""
-msgstr ""
-
-#: src/vim.md:357
-msgid "`:cpp` for \"copy path to file\""
+"Zed does not ship with any command mnemonics by default, but you can define "
+"short aliases for Zed commands using the `command_aliases` setting in your "
+"settings file. When you type an alias from this map in the command palette, "
+"it resolves to the mapped command."
 msgstr ""
 
 #: src/vim.md:358
-msgid "`:crp` for \"copy relative path\""
+msgid ""
+"To configure command mnemonics, add the `command_aliases` key to your "
+"settings file. Here's an example configuration with useful mnemonics:"
 msgstr ""
 
-#: src/vim.md:359
-msgid "`:reveal` for \"reveal in finder\""
-msgstr ""
-
-#: src/vim.md:360
-msgid "`:zlog` for \"open zed log\""
-msgstr ""
-
-#: src/vim.md:361
-msgid "`:clank` for \"cancel language server work\""
+#: src/vim.md:362 src/vim.md:652
+msgid "\"command_aliases\""
 msgstr ""
 
 #: src/vim.md:363
-msgid "Customizing key bindings"
+msgid "\"zlog\""
+msgstr ""
+
+#: src/vim.md:363
+msgid "\"zed::OpenLog\""
+msgstr ""
+
+#: src/vim.md:364
+msgid "\"newf\""
+msgstr ""
+
+#: src/vim.md:364
+msgid "\"workspace::NewFile\""
 msgstr ""
 
 #: src/vim.md:365
-msgid "Selecting the correct context"
+msgid "\"diffs\""
+msgstr ""
+
+#: src/vim.md:365
+msgid "\"editor::ToggleSelectedDiffHunks\""
+msgstr ""
+
+#: src/vim.md:366
+msgid "\"crp\""
+msgstr ""
+
+#: src/vim.md:366
+msgid "\"workspace::CopyRelativePath\""
 msgstr ""
 
 #: src/vim.md:367
+msgid "\"cpp\""
+msgstr ""
+
+#: src/vim.md:367
+msgid "\"workspace::CopyPath\""
+msgstr ""
+
+#: src/vim.md:368
+msgid "\"reveal\""
+msgstr ""
+
+#: src/vim.md:368
+msgid "\"editor::RevealInFileManager\""
+msgstr ""
+
+#: src/vim.md:369
+msgid "\"clank\""
+msgstr ""
+
+#: src/vim.md:369
+msgid "\"editor::CancelLanguageServerWork\""
+msgstr ""
+
+#: src/vim.md:376
+msgid "`:zlog` - Open the Zed log"
+msgstr ""
+
+#: src/vim.md:377
+msgid "`:newf` - Create a new file"
+msgstr ""
+
+#: src/vim.md:378
+msgid "`:diffs` - Toggle selected diff hunks"
+msgstr ""
+
+#: src/vim.md:379
+msgid "`:crp` - Copy the relative path to the current file"
+msgstr ""
+
+#: src/vim.md:380
+msgid "`:cpp` - Copy the full path to the current file"
+msgstr ""
+
+#: src/vim.md:381
+msgid "`:reveal` - Reveal the current file in the file manager"
+msgstr ""
+
+#: src/vim.md:382
+msgid "`:clank` - Cancel language server work"
+msgstr ""
+
+#: src/vim.md:384
+msgid "Customizing key bindings"
+msgstr ""
+
+#: src/vim.md:386
+msgid "Selecting the correct context"
+msgstr ""
+
+#: src/vim.md:388
 msgid ""
 "Zed's key bindings are evaluated only when the `\"context\"` property "
 "matches your location in the editor. For example, if you add key bindings to "
@@ -1491,19 +1563,19 @@ msgid ""
 "editing a file:"
 msgstr ""
 
-#: src/vim.md:371
+#: src/vim.md:392
 msgid "\"Editor\""
 msgstr ""
 
-#: src/vim.md:373 src/vim.md:385
+#: src/vim.md:394 src/vim.md:406
 msgid "\"ctrl-s\""
 msgstr ""
 
-#: src/vim.md:373 src/vim.md:385 src/vim.md:546
+#: src/vim.md:394 src/vim.md:406 src/vim.md:567
 msgid "\"workspace::Save\""
 msgstr ""
 
-#: src/vim.md:378
+#: src/vim.md:399
 msgid ""
 "Contexts are nested, so when you're editing a file, the context is the "
 "`\"Editor\"` context, which is inside the `\"Pane\"` context, which is "
@@ -1512,17 +1584,17 @@ msgid ""
 "example:"
 msgstr ""
 
-#: src/vim.md:381
+#: src/vim.md:402
 msgid ""
 "// This key binding will work when you're editing a file. It comes built "
 "into Zed by default as the workspace: save command.\n"
 msgstr ""
 
-#: src/vim.md:383
+#: src/vim.md:404
 msgid "\"Workspace\""
 msgstr ""
 
-#: src/vim.md:390
+#: src/vim.md:411
 msgid ""
 "Contexts are expressions. They support boolean operators like `&&` (and) and "
 "`||` (or). For example, you can use the context `\"Editor && vim_mode == "
@@ -1530,85 +1602,85 @@ msgid ""
 "_and_ you're in vim's normal mode."
 msgstr ""
 
-#: src/vim.md:392
+#: src/vim.md:413
 msgid "Vim mode adds several contexts to the `\"Editor\"` context:"
 msgstr ""
 
-#: src/vim.md:394
+#: src/vim.md:415
 msgid "Operator"
 msgstr ""
 
-#: src/vim.md:396
+#: src/vim.md:417
 msgid "VimControl"
 msgstr ""
 
-#: src/vim.md:396
+#: src/vim.md:417
 msgid ""
 "Indicates that vim keybindings should work. Currently an alias for `vim_mode "
 "== normal \\|\\| vim_mode == visual \\|\\| vim_mode == operator`, but the "
 "definition may change over time"
 msgstr ""
 
-#: src/vim.md:397
+#: src/vim.md:418
 msgid "vim_mode == normal"
 msgstr ""
 
-#: src/vim.md:397
+#: src/vim.md:418
 msgid "Normal mode"
 msgstr "普通模式"
 
-#: src/vim.md:398
+#: src/vim.md:419
 msgid "vim_mode == visual"
 msgstr ""
 
-#: src/vim.md:398
+#: src/vim.md:419
 msgid "Visual mode"
 msgstr ""
 
-#: src/vim.md:399
+#: src/vim.md:420
 msgid "vim_mode == insert"
 msgstr ""
 
-#: src/vim.md:399
+#: src/vim.md:420
 msgid "Insert mode"
 msgstr "插入模式"
 
-#: src/vim.md:400
+#: src/vim.md:421
 msgid "vim_mode == replace"
 msgstr ""
 
-#: src/vim.md:400
+#: src/vim.md:421
 msgid "Replace mode"
 msgstr "取代模式"
 
-#: src/vim.md:401
+#: src/vim.md:422
 msgid "vim_mode == waiting"
 msgstr ""
 
-#: src/vim.md:401
+#: src/vim.md:422
 msgid "Waiting for an arbitrary key (e.g., after typing `f` or `t`)"
 msgstr ""
 
-#: src/vim.md:402
+#: src/vim.md:423
 msgid "vim_mode == operator"
 msgstr ""
 
-#: src/vim.md:402
+#: src/vim.md:423
 msgid "Waiting for another binding to trigger (e.g., after typing `c` or `d`)"
 msgstr ""
 
-#: src/vim.md:403
+#: src/vim.md:424
 msgid "vim_operator"
 msgstr ""
 
-#: src/vim.md:403
+#: src/vim.md:424
 msgid ""
 "Set to `none` unless `vim_mode == operator`, in which case it is set to the "
 "current operator's default keybinding (e.g., after typing `d`, `vim_operator "
 "== d`)"
 msgstr ""
 
-#: src/vim.md:405
+#: src/vim.md:426
 msgid ""
 "**Note**: Contexts are matched only on one level at a time. So it is "
 "possible to use the expression `\"Editor && vim_mode == normal\"`, but "
@@ -1616,51 +1688,51 @@ msgid ""
 "vim context at the `\"Editor\"` level."
 msgstr ""
 
-#: src/vim.md:407
+#: src/vim.md:428
 msgid "Useful contexts for vim mode key bindings"
 msgstr ""
 
-#: src/vim.md:409
+#: src/vim.md:430
 msgid ""
 "Here's a template with useful vim mode contexts to help you customize your "
 "vim mode key bindings. You can copy it and integrate it into your user "
 "keymap."
 msgstr ""
 
-#: src/vim.md:414 src/vim.md:497
+#: src/vim.md:435 src/vim.md:518
 msgid "\"VimControl && !menu\""
 msgstr ""
 
-#: src/vim.md:416
+#: src/vim.md:437
 msgid ""
 "// Put key bindings here if you want them to work in normal & visual mode.\n"
 msgstr ""
 
-#: src/vim.md:420
+#: src/vim.md:441
 msgid "\"vim_mode == normal && !menu\""
 msgstr ""
 
-#: src/vim.md:422
+#: src/vim.md:443
 msgid ""
 "// \"shift-y\": [\"workspace::SendKeystrokes\", \"y $\"] // Use neovim's "
 "yank behavior: yank to end of line.\n"
 msgstr ""
 
-#: src/vim.md:426
+#: src/vim.md:447
 msgid "\"vim_mode == insert\""
 msgstr ""
 
-#: src/vim.md:428
+#: src/vim.md:449
 msgid ""
 "// \"j k\": \"vim::NormalBefore\" // In insert mode, make jk escape to "
 "normal mode.\n"
 msgstr ""
 
-#: src/vim.md:432
+#: src/vim.md:453
 msgid "\"EmptyPane || SharedScreen\""
 msgstr ""
 
-#: src/vim.md:434
+#: src/vim.md:455
 msgid ""
 "// Put key bindings here (in addition to the context above) if you want them "
 "to\n"
@@ -1668,117 +1740,117 @@ msgid ""
 "      // \"space f\": \"file_finder::Toggle\"\n"
 msgstr ""
 
-#: src/vim.md:442
+#: src/vim.md:463
 msgid ""
 "**Note**: If you would like to emulate Vim's `map` commands (`nmap`, etc.), "
 "you can use the action `workspace::SendKeystrokes` in the correct context."
 msgstr ""
 
-#: src/vim.md:444
+#: src/vim.md:465
 msgid "Optional key bindings"
 msgstr ""
 
-#: src/vim.md:446
+#: src/vim.md:467
 msgid ""
 "By default, you can navigate between the different files open in the editor "
 "with shortcuts like `ctrl+w` followed by one of `hjkl` to move to the left, "
 "down, up, or right, respectively."
 msgstr ""
 
-#: src/vim.md:448
+#: src/vim.md:469
 msgid ""
 "But you cannot use the same shortcuts to move between all the editor docks "
-"(the terminal, project panel, assistant panel, ...). If you want to use the "
-"same shortcuts to navigate to the docks, you can add the following key "
-"bindings to your user keymap."
+"(the terminal, project panel, agent panel, ...). If you want to use the same "
+"shortcuts to navigate to the docks, you can add the following key bindings "
+"to your user keymap."
 msgstr ""
 
-#: src/vim.md:452
+#: src/vim.md:473
 msgid "\"Dock\""
 msgstr ""
 
-#: src/vim.md:454
+#: src/vim.md:475
 msgid "\"ctrl-w h\""
 msgstr ""
 
-#: src/vim.md:454
+#: src/vim.md:475
 msgid "\"workspace::ActivatePaneLeft\""
 msgstr ""
 
-#: src/vim.md:455
+#: src/vim.md:476
 msgid "\"ctrl-w l\""
 msgstr ""
 
-#: src/vim.md:455
+#: src/vim.md:476
 msgid "\"workspace::ActivatePaneRight\""
 msgstr ""
 
-#: src/vim.md:456
+#: src/vim.md:477
 msgid "\"ctrl-w k\""
 msgstr ""
 
-#: src/vim.md:456
+#: src/vim.md:477
 msgid "\"workspace::ActivatePaneUp\""
 msgstr ""
 
-#: src/vim.md:457
+#: src/vim.md:478
 msgid "\"ctrl-w j\""
 msgstr ""
 
-#: src/vim.md:457
+#: src/vim.md:478
 msgid "\"workspace::ActivatePaneDown\""
 msgstr ""
 
-#: src/vim.md:458
+#: src/vim.md:479
 msgid "// ... or other keybindings\n"
 msgstr ""
 
-#: src/vim.md:463
+#: src/vim.md:484
 msgid ""
 "Subword motion, which allows you to navigate and select individual words in "
 "`camelCase` or `snake_case`, is not enabled by default. To enable it, add "
 "these bindings to your keymap."
 msgstr ""
 
-#: src/vim.md:467
+#: src/vim.md:488
 msgid "\"VimControl && !menu && vim_mode != operator\""
 msgstr ""
 
-#: src/vim.md:469 src/vim.md:632
+#: src/vim.md:490 src/vim.md:653
 msgid "\"w\""
 msgstr ""
 
-#: src/vim.md:469
+#: src/vim.md:490
 msgid "\"vim::NextSubwordStart\""
 msgstr ""
 
-#: src/vim.md:470
+#: src/vim.md:491
 msgid "\"vim::PreviousSubwordStart\""
 msgstr ""
 
-#: src/vim.md:471
+#: src/vim.md:492
 msgid "\"e\""
 msgstr ""
 
-#: src/vim.md:471
+#: src/vim.md:492
 msgid "\"vim::NextSubwordEnd\""
 msgstr ""
 
-#: src/vim.md:472
+#: src/vim.md:493
 msgid "\"g e\""
 msgstr ""
 
-#: src/vim.md:472
+#: src/vim.md:493
 msgid "\"vim::PreviousSubwordEnd\""
 msgstr ""
 
-#: src/vim.md:477
+#: src/vim.md:498
 msgid ""
 "Note: Operations like `dw` remain unaffected. If you would like operations "
 "to also use subword motion, remove `vim_mode != operator` from the `context`."
 msgstr ""
 
-#: src/vim.md:480
+#: src/vim.md:501
 msgid ""
 "Vim mode comes with shortcuts to surround the selection in normal mode "
 "(`ys`), but it doesn't have a shortcut to add surrounds in visual mode. By "
@@ -1787,19 +1859,19 @@ msgid ""
 "the following object to your keymap."
 msgstr ""
 
-#: src/vim.md:484 src/vim.md:523
+#: src/vim.md:505 src/vim.md:544
 msgid "\"vim_mode == visual\""
 msgstr ""
 
-#: src/vim.md:486 src/vim.md:514
+#: src/vim.md:507 src/vim.md:535
 msgid "\"shift-s\""
 msgstr ""
 
-#: src/vim.md:486
+#: src/vim.md:507
 msgid "\"vim::PushAddSurrounds\""
 msgstr ""
 
-#: src/vim.md:491
+#: src/vim.md:512
 msgid ""
 "In non-modal text editors, cursor navigation typically wraps when moving "
 "past line ends. Zed, however, handles this behavior exactly like Vim by "
@@ -1807,37 +1879,37 @@ msgid ""
 "wrap between lines, override these keybindings:"
 msgstr ""
 
-#: src/vim.md:494
+#: src/vim.md:515
 msgid ""
 "// In VimScript, this would look like this:\n"
 "// set whichwrap+=<,>,[,],h,l\n"
 msgstr ""
 
-#: src/vim.md:499
+#: src/vim.md:520
 msgid "\"left\""
 msgstr ""
 
-#: src/vim.md:499 src/vim.md:501
+#: src/vim.md:520 src/vim.md:522
 msgid "\"vim::WrappingLeft\""
 msgstr ""
 
-#: src/vim.md:500
+#: src/vim.md:521
 msgid "\"right\""
 msgstr ""
 
-#: src/vim.md:500 src/vim.md:502
+#: src/vim.md:521 src/vim.md:523
 msgid "\"vim::WrappingRight\""
 msgstr ""
 
-#: src/vim.md:501
+#: src/vim.md:522
 msgid "\"h\""
 msgstr ""
 
-#: src/vim.md:502
+#: src/vim.md:523
 msgid "\"l\""
 msgstr ""
 
-#: src/vim.md:507
+#: src/vim.md:528
 msgid ""
 "The [Sneak motion](https://github.com/justinmk/vim-sneak) feature allows for "
 "quick navigation to any two-character sequence in your text. You can enable "
@@ -1846,23 +1918,23 @@ msgid ""
 "behavior, so ensure this change aligns with your workflow preferences."
 msgstr ""
 
-#: src/vim.md:511
+#: src/vim.md:532
 msgid "\"vim_mode == normal || vim_mode == visual\""
 msgstr ""
 
-#: src/vim.md:513
+#: src/vim.md:534
 msgid "\"s\""
 msgstr ""
 
-#: src/vim.md:513
+#: src/vim.md:534
 msgid "\"vim::PushSneak\""
 msgstr ""
 
-#: src/vim.md:514
+#: src/vim.md:535
 msgid "\"vim::PushSneakBackward\""
 msgstr ""
 
-#: src/vim.md:519
+#: src/vim.md:540
 msgid ""
 "The [vim-exchange](https://github.com/tommcdo/vim-exchange) feature does not "
 "have a default binding for visual mode, as the `shift-x` binding conflicts "
@@ -1871,516 +1943,512 @@ msgid ""
 "following keybinding to your keymap:"
 msgstr ""
 
-#: src/vim.md:525
+#: src/vim.md:546
 msgid "\"shift-x\""
 msgstr ""
 
-#: src/vim.md:525
+#: src/vim.md:546
 msgid "\"vim::Exchange\""
 msgstr ""
 
-#: src/vim.md:530
+#: src/vim.md:551
 msgid "Restoring common text editing and Zed keybindings"
 msgstr ""
 
-#: src/vim.md:532
+#: src/vim.md:553
 msgid ""
 "If you're using vim mode on Linux or Windows, you may find it overrides "
 "keybindings you can't live without: `ctrl+v` to paste, `ctrl+f` to search, "
 "etc. You can restore them by copying this data into your keymap:"
 msgstr ""
 
-#: src/vim.md:536
+#: src/vim.md:557
 msgid "\"Editor && !menu\""
 msgstr ""
 
-#: src/vim.md:538
+#: src/vim.md:559
 msgid "\"ctrl-f\""
 msgstr ""
 
-#: src/vim.md:538
+#: src/vim.md:559
 msgid "\"buffer_search::Deploy\""
 msgstr ""
 
-#: src/vim.md:538
+#: src/vim.md:559
 msgid ""
 "// vim default: page down\n"
 "    \"ctrl-c\""
 msgstr ""
 
-#: src/vim.md:539
+#: src/vim.md:560
 msgid "\"editor::Copy\""
 msgstr ""
 
-#: src/vim.md:539
+#: src/vim.md:560
 msgid ""
 "// vim default: return to normal mode\n"
 "    \"ctrl-x\""
 msgstr ""
 
-#: src/vim.md:540
+#: src/vim.md:561
 msgid "\"editor::Cut\""
 msgstr ""
 
-#: src/vim.md:540
+#: src/vim.md:561
 msgid ""
 "// vim default: decrement\n"
 "    \"ctrl-v\""
 msgstr ""
 
-#: src/vim.md:541
+#: src/vim.md:562
 msgid "\"editor::Paste\""
 msgstr ""
 
-#: src/vim.md:541
+#: src/vim.md:562
 msgid ""
 "// vim default: visual block mode\n"
 "    \"ctrl-a\""
 msgstr ""
 
-#: src/vim.md:542
+#: src/vim.md:563
 msgid "\"editor::SelectAll\""
 msgstr ""
 
-#: src/vim.md:542
+#: src/vim.md:563
 msgid ""
 "// vim default: increment\n"
 "    \"ctrl-y\""
 msgstr ""
 
-#: src/vim.md:543
+#: src/vim.md:564
 msgid "\"editor::Undo\""
 msgstr ""
 
-#: src/vim.md:543
+#: src/vim.md:564
 msgid ""
 "// vim default: line up\n"
 "    \"ctrl-t\""
 msgstr ""
 
-#: src/vim.md:544
+#: src/vim.md:565
 msgid "\"project_symbols::Toggle\""
 msgstr ""
 
-#: src/vim.md:544
+#: src/vim.md:565
 msgid ""
 "// vim default: go to older tag\n"
 "    \"ctrl-o\""
 msgstr ""
 
-#: src/vim.md:545
+#: src/vim.md:566
 msgid "\"workspace::Open\""
 msgstr ""
 
-#: src/vim.md:545
+#: src/vim.md:566
 msgid ""
 "// vim default: go back\n"
 "    \"ctrl-s\""
 msgstr ""
 
-#: src/vim.md:546
+#: src/vim.md:567
 msgid ""
 "// vim default: show signature\n"
 "    \"ctrl-b\""
 msgstr ""
 
-#: src/vim.md:547
+#: src/vim.md:568
 msgid "\"workspace::ToggleLeftDock\"   // vim default: down\n"
 msgstr ""
 
-#: src/vim.md:552
+#: src/vim.md:573
 msgid "Changing vim mode settings"
 msgstr ""
 
-#: src/vim.md:554
+#: src/vim.md:575
 msgid "You can change the following settings to modify vim mode's behavior:"
 msgstr ""
 
-#: src/vim.md:556 src/vim.md:603
+#: src/vim.md:577 src/vim.md:624
 msgid "Property"
 msgstr ""
 
-#: src/vim.md:556 src/vim.md:603
+#: src/vim.md:577 src/vim.md:624
 msgid "Default Value"
 msgstr ""
 
-#: src/vim.md:558
+#: src/vim.md:579
 msgid "default_mode"
 msgstr ""
 
-#: src/vim.md:558
+#: src/vim.md:579
 msgid ""
 "The default mode to start in. One of \"normal\", \"insert\", \"replace\", "
 "\"visual\", \"visual_line\", \"visual_block\", \"helix_normal\"."
 msgstr ""
 
-#: src/vim.md:558
+#: src/vim.md:579
 msgid "\"normal\""
 msgstr ""
 
-#: src/vim.md:559
+#: src/vim.md:580
 msgid "use_system_clipboard"
 msgstr ""
 
-#: src/vim.md:559
+#: src/vim.md:580
 msgid ""
 "Determines how system clipboard is used:<br><ul><li>\"always\": use for all "
 "operations</li><li>\"never\": only use when explicitly specified</"
 "li><li>\"on_yank\": use for yank operations</li></ul>"
 msgstr ""
 
-#: src/vim.md:559
+#: src/vim.md:580
 msgid "\"always\""
 msgstr ""
 
-#: src/vim.md:560
+#: src/vim.md:581
 msgid "use_multiline_find"
 msgstr ""
 
-#: src/vim.md:560
+#: src/vim.md:581
 msgid "deprecated"
 msgstr ""
 
-#: src/vim.md:561
+#: src/vim.md:582
 msgid "use_smartcase_find"
 msgstr ""
 
-#: src/vim.md:561
+#: src/vim.md:582
 msgid ""
 "If `true`, `f` and `t` motions are case-insensitive when the target letter "
 "is lowercase."
 msgstr ""
 
-#: src/vim.md:561 src/vim.md:563 src/vim.md:564
+#: src/vim.md:582 src/vim.md:584 src/vim.md:585
 msgid "false"
 msgstr ""
 
-#: src/vim.md:562
+#: src/vim.md:583
 msgid "use_regex_search"
 msgstr ""
 
-#: src/vim.md:562
+#: src/vim.md:583
 msgid "If `true`, then vim search will use regex mode"
 msgstr ""
 
-#: src/vim.md:562
+#: src/vim.md:583
 msgid "true"
 msgstr ""
 
-#: src/vim.md:563
+#: src/vim.md:584
 msgid "gdefault"
 msgstr ""
 
-#: src/vim.md:563
+#: src/vim.md:584
 msgid ""
 "If `true`, the `:substitute` command replaces all matches in a line by "
 "default (as if `g` flag was given). The `g` flag then toggles this, "
 "replacing only the first match."
 msgstr ""
 
-#: src/vim.md:564
+#: src/vim.md:585
 msgid "toggle_relative_line_numbers"
 msgstr ""
 
-#: src/vim.md:564
+#: src/vim.md:585
 msgid ""
 "If `true`, line numbers are relative in normal mode and absolute in insert "
 "mode, giving you the best of both options."
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:586
 msgid "custom_digraphs"
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:586
 msgid ""
 "An object that allows you to add custom digraphs. Read below for an example."
 msgstr ""
 
-#: src/vim.md:565
+#: src/vim.md:586
 msgid "{}"
 msgstr ""
 
-#: src/vim.md:566
+#: src/vim.md:587
 msgid "highlight_on_yank_duration"
 msgstr ""
 
-#: src/vim.md:566
+#: src/vim.md:587
 msgid "The duration of the highlight animation(in ms). Set to `0` to disable"
 msgstr ""
 
-#: src/vim.md:566
+#: src/vim.md:587
 msgid "200"
 msgstr ""
 
-#: src/vim.md:568
+#: src/vim.md:589
 msgid ""
 "Here's an example of adding a digraph for the zombie emoji. This allows you "
 "to type `ctrl-k f z` to insert a zombie emoji. You can add as many digraphs "
 "as you like."
 msgstr ""
 
-#: src/vim.md:572 src/vim.md:584
+#: src/vim.md:593 src/vim.md:605
 msgid "\"vim\""
 msgstr ""
 
-#: src/vim.md:573 src/vim.md:592
+#: src/vim.md:594 src/vim.md:613
 msgid "\"custom_digraphs\""
 msgstr ""
 
-#: src/vim.md:574 src/vim.md:593
+#: src/vim.md:595 src/vim.md:614
 msgid "\"fz\""
 msgstr ""
 
-#: src/vim.md:574 src/vim.md:593
+#: src/vim.md:595 src/vim.md:614
 msgid "\"🧟‍♀️\""
 msgstr ""
 
-#: src/vim.md:580 src/vim.md:613
+#: src/vim.md:601 src/vim.md:634
 msgid "Here's an example of these settings changed:"
 msgstr ""
 
-#: src/vim.md:585
+#: src/vim.md:606
 msgid "\"default_mode\""
 msgstr ""
 
-#: src/vim.md:585
+#: src/vim.md:606
 msgid "\"insert\""
 msgstr ""
 
-#: src/vim.md:586
+#: src/vim.md:607
 msgid "\"use_system_clipboard\""
 msgstr ""
 
-#: src/vim.md:586 src/vim.md:622
+#: src/vim.md:607 src/vim.md:643
 msgid "\"never\""
 msgstr ""
 
-#: src/vim.md:587
+#: src/vim.md:608
 msgid "\"use_smartcase_find\""
 msgstr ""
 
-#: src/vim.md:588
+#: src/vim.md:609
 msgid "\"use_regex_search\""
 msgstr ""
 
-#: src/vim.md:589
+#: src/vim.md:610
 msgid "\"gdefault\""
 msgstr ""
 
-#: src/vim.md:590
+#: src/vim.md:611
 msgid "\"toggle_relative_line_numbers\""
 msgstr ""
 
-#: src/vim.md:591
+#: src/vim.md:612
 msgid "\"highlight_on_yank_duration\""
 msgstr ""
 
-#: src/vim.md:599
+#: src/vim.md:620
 msgid "Useful core Zed settings for vim mode"
 msgstr ""
 
-#: src/vim.md:601
+#: src/vim.md:622
 msgid ""
 "Here are a few general Zed settings that can help you fine-tune your Vim "
 "experience:"
 msgstr ""
 
-#: src/vim.md:605
+#: src/vim.md:626
 msgid "cursor_blink"
 msgstr ""
 
-#: src/vim.md:605
+#: src/vim.md:626
 msgid "If `true`, the cursor blinks."
 msgstr ""
 
-#: src/vim.md:605 src/vim.md:610
+#: src/vim.md:626 src/vim.md:631
 msgid "`true`"
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:627
 msgid "relative_line_numbers"
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:627
 msgid ""
 "If `\"enabled\"`, line numbers in the left gutter are relative to the "
 "cursor. If `\"wrapped\"`, they also display for wrapped lines."
 msgstr ""
 
-#: src/vim.md:606
+#: src/vim.md:627
 msgid "`\"disabled\"`"
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:628
 msgid "scrollbar"
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:628
 msgid ""
 "Object that controls the scrollbar display. Set to `{ \"show\": \"never\" }` "
 "to hide the scroll bar."
 msgstr ""
 
-#: src/vim.md:607
+#: src/vim.md:628
 msgid "`{ \"show\": \"auto\" }`"
 msgstr ""
 
-#: src/vim.md:608
+#: src/vim.md:629
 msgid "scroll_beyond_last_line"
 msgstr ""
 
-#: src/vim.md:608
+#: src/vim.md:629
 msgid ""
 "If set to `\"one_page\"`, allows scrolling up to one page beyond the last "
 "line. Set to `\"off\"` to prevent this behavior."
 msgstr ""
 
-#: src/vim.md:608
+#: src/vim.md:629
 msgid "`\"one_page\"`"
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:630
 msgid "vertical_scroll_margin"
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:630
 msgid ""
 "The number of lines to keep above or below the cursor when scrolling. Set to "
 "`0` to allow the cursor to go up to the edges of the screen vertically."
 msgstr ""
 
-#: src/vim.md:609
+#: src/vim.md:630
 msgid "`3`"
 msgstr ""
 
-#: src/vim.md:610
+#: src/vim.md:631
 msgid "gutter.line_numbers"
 msgstr ""
 
-#: src/vim.md:610
+#: src/vim.md:631
 msgid ""
 "Controls the display of line numbers in the gutter. Set the "
 "`\"line_numbers\"` property to `false` to hide line numbers."
 msgstr ""
 
-#: src/vim.md:611
+#: src/vim.md:632
 msgid "command_aliases"
 msgstr ""
 
-#: src/vim.md:611
+#: src/vim.md:632
 msgid ""
 "Object that defines aliases for commands in the command palette. You can use "
 "it to define shortcut names for commands you use often. Read below for "
 "examples."
 msgstr ""
 
-#: src/vim.md:611
+#: src/vim.md:632
 msgid "`{}`"
 msgstr ""
 
-#: src/vim.md:617
+#: src/vim.md:638
 msgid ""
 "// Disable cursor blink\n"
 "  \"cursor_blink\""
 msgstr ""
 
-#: src/vim.md:619
+#: src/vim.md:640
 msgid ""
 "// Use relative line numbers\n"
 "  \"relative_line_numbers\""
 msgstr ""
 
-#: src/vim.md:620
+#: src/vim.md:641
 msgid "\"enabled\""
 msgstr ""
 
-#: src/vim.md:621
+#: src/vim.md:642
 msgid ""
 "// Hide the scroll bar\n"
 "  \"scrollbar\""
 msgstr ""
 
-#: src/vim.md:622
+#: src/vim.md:643
 msgid "\"show\""
 msgstr ""
 
-#: src/vim.md:623
+#: src/vim.md:644
 msgid ""
 "// Prevent the buffer from scrolling beyond the last line\n"
 "  \"scroll_beyond_last_line\""
 msgstr ""
 
-#: src/vim.md:624
+#: src/vim.md:645
 msgid "\"off\""
 msgstr ""
 
-#: src/vim.md:625
+#: src/vim.md:646
 msgid ""
 "// Allow the cursor to reach the edges of the screen\n"
 "  \"vertical_scroll_margin\""
 msgstr ""
 
-#: src/vim.md:627
+#: src/vim.md:648
 msgid "\"gutter\""
 msgstr ""
 
-#: src/vim.md:628
+#: src/vim.md:649
 msgid ""
 "// Disable line numbers completely\n"
 "    \"line_numbers\""
 msgstr ""
 
-#: src/vim.md:631
-msgid "\"command_aliases\""
-msgstr ""
-
-#: src/vim.md:632
+#: src/vim.md:653
 msgid "\"W\""
 msgstr ""
 
-#: src/vim.md:633
+#: src/vim.md:654
 msgid "\"Wq\""
 msgstr ""
 
-#: src/vim.md:633
+#: src/vim.md:654
 msgid "\"wq\""
 msgstr ""
 
-#: src/vim.md:634
+#: src/vim.md:655
 msgid "\"Q\""
 msgstr ""
 
-#: src/vim.md:634
+#: src/vim.md:655
 msgid "\"q\""
 msgstr ""
 
-#: src/vim.md:639
+#: src/vim.md:660
 msgid ""
 "The `command_aliases` property is a single object that maps keys or key "
 "sequences to vim mode commands. The example above defines multiple aliases: "
 "`W` for `w`, `Wq` for `wq`, and `Q` for `q`."
 msgstr ""
 
-#: src/vim.md:641
+#: src/vim.md:662
 msgid "Regex differences"
 msgstr ""
 
-#: src/vim.md:643
+#: src/vim.md:664
 msgid ""
 "Zed uses a different regular expression engine from Vim. This means that you "
 "will have to use a different syntax in some cases. Here are the most common "
 "differences:"
 msgstr ""
 
-#: src/vim.md:645
+#: src/vim.md:666
 msgid ""
 "**Capture groups**: Vim uses `\\(` and `\\)` to represent capture groups, in "
 "Zed these are `(` and `)`. On the flip side, in Vim, `(` and `)` represent "
 "literal parentheses, but in Zed these must be escaped to `\\(` and `\\)`."
 msgstr ""
 
-#: src/vim.md:646
+#: src/vim.md:667
 msgid ""
 "**Matches**: When replacing, Vim uses the backslash character followed by a "
 "number to represent a matched capture group. For example, `\\1`. Zed uses "
@@ -2389,14 +2457,14 @@ msgid ""
 "groups: `\\1` in Vim is `$1` in Zed."
 msgstr ""
 
-#: src/vim.md:647
+#: src/vim.md:668
 msgid ""
 "**Global option**: By default, in Vim, regex searches only match the first "
 "occurrence on a line, and you append `/g` at the end of your query to find "
 "all matches. In Zed, regex searches are global by default."
 msgstr ""
 
-#: src/vim.md:648
+#: src/vim.md:669
 msgid ""
 "**Case sensitivity**: Vim uses `/i` to indicate a case-insensitive search. "
 "In Zed you can either write `(?i)` at the start of the pattern or toggle "
@@ -2404,7 +2472,7 @@ msgid ""
 "c</kbd>."
 msgstr ""
 
-#: src/vim.md:650
+#: src/vim.md:671
 msgid ""
 "**Note**: To help with the transition, the command palette will fix "
 "parentheses and replace groups for you when you write a Vim-style substitute "
@@ -2412,7 +2480,7 @@ msgid ""
 "for \"(a)(b)\" and a replacement of \"$1\"."
 msgstr ""
 
-#: src/vim.md:652
+#: src/vim.md:673
 msgid ""
 "For the full syntax supported by Zed's regex engine [see the regex crate "
 "documentation](https://docs.rs/regex/latest/regex/#syntax)."

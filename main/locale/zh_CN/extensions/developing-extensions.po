@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -372,33 +372,41 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:162
 msgid ""
+"Prior to publishing your extension, you should have installed as well as "
+"tested it locally thoroughly. Note that untested extension submissions where "
+"the extension is not functioning at all will be closed eagerly without "
+"further feedback."
+msgstr ""
+
+#: src/extensions/developing-extensions.md:164
+msgid ""
 "To publish an extension, open a PR to [the `zed-industries/extensions` repo]"
 "(https://github.com/zed-industries/extensions)."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:164
+#: src/extensions/developing-extensions.md:166
 msgid "In your PR, do the following:"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:166
+#: src/extensions/developing-extensions.md:168
 msgid ""
 "Add your extension as a Git submodule within the `extensions/` directory "
 "under the `extensions/{extension-id}` path"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:173
+#: src/extensions/developing-extensions.md:175
 msgid ""
 "All extension submodules must use HTTPS URLs and not SSH URLS (`git@github."
 "com`)."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:175
+#: src/extensions/developing-extensions.md:177
 msgid ""
 "Add a new entry to the top-level `extensions.toml` file containing your "
 "extension:"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:177
+#: src/extensions/developing-extensions.md:179
 msgid ""
 "```toml\n"
 "[my-extension]\n"
@@ -407,13 +415,13 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:183
+#: src/extensions/developing-extensions.md:185
 msgid ""
 "If your extension is in a subdirectory within the submodule, you can use the "
 "`path` field to point to where the extension resides:"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:185
+#: src/extensions/developing-extensions.md:187
 msgid ""
 "```toml\n"
 "[my-extension]\n"
@@ -423,7 +431,7 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:192
+#: src/extensions/developing-extensions.md:194
 msgid ""
 "Note that the [required extension license](#extension-license-requirements) "
 "must reside at the specified path, a license at the root of the repository "
@@ -432,65 +440,65 @@ msgid ""
 "licenses for the extension code."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:194
+#: src/extensions/developing-extensions.md:196
 msgid ""
 "Run `pnpm sort-extensions` to ensure `extensions.toml` and `.gitmodules` are "
 "sorted"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:196
+#: src/extensions/developing-extensions.md:198
 msgid ""
 "Once your PR is merged, the extension will be packaged and published to the "
 "Zed extension registry."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:198
+#: src/extensions/developing-extensions.md:200
 msgid "Updating an extension"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:200
+#: src/extensions/developing-extensions.md:202
 msgid ""
 "To update an extension, open a PR to [the `zed-industries/extensions` repo]"
 "(https://github.com/zed-industries/extensions)."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:202
+#: src/extensions/developing-extensions.md:204
 msgid "In your PR do the following:"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:204
+#: src/extensions/developing-extensions.md:206
 msgid ""
 "Update the extension's submodule to the commit of the new version. For this, "
 "you can run"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:207
+#: src/extensions/developing-extensions.md:209
 msgid "# From the root of the repository:\n"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:211
+#: src/extensions/developing-extensions.md:213
 msgid ""
 "to update your extension to the latest commit available in your remote "
 "repository."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:213
+#: src/extensions/developing-extensions.md:215
 msgid "Update the `version` field for the extension in `extensions.toml`"
 msgstr ""
 
-#: src/extensions/developing-extensions.md:214
+#: src/extensions/developing-extensions.md:216
 msgid ""
 "Make sure the `version` matches the one set in `extension.toml` at the "
 "particular commit."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:216
+#: src/extensions/developing-extensions.md:218
 msgid ""
 "If you'd like to automate this process, there is a [community GitHub Action]"
 "(https://github.com/huacnlee/zed-extension-action) you can use."
 msgstr ""
 
-#: src/extensions/developing-extensions.md:218
+#: src/extensions/developing-extensions.md:220
 msgid ""
 "**Note:** If your extension repository has a different license, you'll need "
 "to update it to be one of the [accepted extension licenses](#extension-"

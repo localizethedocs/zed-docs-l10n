@@ -16,9 +16,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-07 05:21:47 -0400",
-        "hash" : "ccb9e60a6258d57104cc56db87fe03024dd231ef",
-        "title" : "agent_panel: Add new thread git worktree/branch pickers (#52979)"
+        "date" : "2026-04-28 10:00:07 +0000",
+        "hash" : "e712f3c6df3d4f6de312fea05328f5e79d397055",
+        "title" : "gpui: Remove naga dependency (#55070)"
       }
     },
     "zh_TW" : 
@@ -26,9 +26,9 @@
       "branch" : "main",
       "commit" : 
       {
-        "date" : "2026-04-07 05:21:47 -0400",
-        "hash" : "ccb9e60a6258d57104cc56db87fe03024dd231ef",
-        "title" : "agent_panel: Add new thread git worktree/branch pickers (#52979)"
+        "date" : "2026-04-28 10:00:07 +0000",
+        "hash" : "e712f3c6df3d4f6de312fea05328f5e79d397055",
+        "title" : "gpui: Remove naga dependency (#55070)"
       }
     }
   },

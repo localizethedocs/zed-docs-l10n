@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -62,7 +62,7 @@ msgstr ""
 #: src/configuring-languages.md:21 src/configuring-languages.md:113
 #: src/configuring-languages.md:274 src/configuring-languages.md:292
 #: src/configuring-languages.md:314 src/configuring-languages.md:342
-#: src/configuring-languages.md:368
+#: src/configuring-languages.md:373
 msgid "\"languages\""
 msgstr "\"languages\""
 
@@ -76,7 +76,7 @@ msgstr ""
 
 #: src/configuring-languages.md:24 src/configuring-languages.md:29
 #: src/configuring-languages.md:294 src/configuring-languages.md:303
-#: src/configuring-languages.md:344 src/configuring-languages.md:370
+#: src/configuring-languages.md:344 src/configuring-languages.md:375
 msgid "\"formatter\""
 msgstr "\"formatter\""
 
@@ -86,47 +86,47 @@ msgstr ""
 
 #: src/configuring-languages.md:25 src/configuring-languages.md:300
 #: src/configuring-languages.md:304 src/configuring-languages.md:316
-#: src/configuring-languages.md:381
+#: src/configuring-languages.md:386
 msgid "\"format_on_save\""
 msgstr ""
 
 #: src/configuring-languages.md:25 src/configuring-languages.md:300
-#: src/configuring-languages.md:304 src/configuring-languages.md:381
+#: src/configuring-languages.md:304 src/configuring-languages.md:386
 msgid "\"on\""
 msgstr ""
 
 #: src/configuring-languages.md:27 src/configuring-languages.md:293
-#: src/configuring-languages.md:343 src/configuring-languages.md:369
+#: src/configuring-languages.md:343 src/configuring-languages.md:374
 msgid "\"JavaScript\""
 msgstr ""
 
 #: src/configuring-languages.md:30 src/configuring-languages.md:295
-#: src/configuring-languages.md:375
+#: src/configuring-languages.md:380
 msgid "\"external\""
 msgstr "\"external\""
 
 #: src/configuring-languages.md:31 src/configuring-languages.md:174
-#: src/configuring-languages.md:296 src/configuring-languages.md:376
+#: src/configuring-languages.md:296 src/configuring-languages.md:381
 msgid "\"command\""
 msgstr "\"command\""
 
 #: src/configuring-languages.md:31 src/configuring-languages.md:296
-#: src/configuring-languages.md:376
+#: src/configuring-languages.md:381
 msgid "\"prettier\""
 msgstr ""
 
 #: src/configuring-languages.md:32 src/configuring-languages.md:260
-#: src/configuring-languages.md:297 src/configuring-languages.md:377
+#: src/configuring-languages.md:297 src/configuring-languages.md:382
 msgid "\"arguments\""
 msgstr "\"arguments\""
 
 #: src/configuring-languages.md:32 src/configuring-languages.md:297
-#: src/configuring-languages.md:377
+#: src/configuring-languages.md:382
 msgid "\"--stdin-filepath\""
 msgstr ""
 
 #: src/configuring-languages.md:32 src/configuring-languages.md:297
-#: src/configuring-languages.md:377
+#: src/configuring-languages.md:382
 msgid "\"{buffer_path}\""
 msgstr "\"{buffer_path}\""
 
@@ -845,11 +845,11 @@ msgstr ""
 msgid "To run linter fixes automatically on save:"
 msgstr ""
 
-#: src/configuring-languages.md:345 src/configuring-languages.md:372
+#: src/configuring-languages.md:345 src/configuring-languages.md:377
 msgid "\"code_action\""
 msgstr ""
 
-#: src/configuring-languages.md:345 src/configuring-languages.md:372
+#: src/configuring-languages.md:345 src/configuring-languages.md:377
 msgid "\"source.fixAll.eslint\""
 msgstr ""
 
@@ -866,320 +866,334 @@ msgstr ""
 
 #: src/configuring-languages.md:356
 msgid ""
-"**Language server**: Sends an LSP range formatting request for each "
-"selection. This provides the most precise selection-only formatting."
+"The action is only shown when the active formatter can actually format "
+"ranges for at least one selected buffer."
 msgstr ""
 
 #: src/configuring-languages.md:358
+msgid ""
+"**Language server**: Sends an LSP range formatting request for each "
+"selection. This provides the most precise selection-only formatting, and is "
+"only available when the configured language server advertises range-"
+"formatting support."
+msgstr ""
+
+#: src/configuring-languages.md:361
 msgid ""
 "**Prettier**: Uses Prettier's built-in range formatting to format the "
 "encompassing range of all selections. Any resulting edits that fall outside "
 "the selected ranges are discarded, so only the selected code is modified."
 msgstr ""
 
-#: src/configuring-languages.md:360
+#: src/configuring-languages.md:363
 msgid ""
 "**External commands**: External command formatters do not support range "
 "formatting and are skipped when formatting selections."
 msgstr ""
 
-#: src/configuring-languages.md:363
+#: src/configuring-languages.md:365
+msgid ""
+"**Code action formatters**: Code actions operate on the whole buffer, so "
+"they do not enable `format selections` on their own."
+msgstr ""
+
+#: src/configuring-languages.md:368
 msgid "Integrating Formatting and Linting"
 msgstr ""
 
-#: src/configuring-languages.md:365
+#: src/configuring-languages.md:370
 msgid ""
 "Zed allows you to run both formatting and linting on save. Here's an example "
 "that uses Prettier for formatting and ESLint for linting JavaScript files:"
 msgstr ""
 
-#: src/configuring-languages.md:386
+#: src/configuring-languages.md:391
 msgid "Troubleshooting"
 msgstr "疑難排解"
 
-#: src/configuring-languages.md:388
+#: src/configuring-languages.md:393
 msgid "If you encounter issues with formatting or linting:"
 msgstr ""
 
-#: src/configuring-languages.md:390
+#: src/configuring-languages.md:395
 msgid ""
 "Check Zed's log file for error messages (Use the command palette: `zed: open "
 "log`)"
 msgstr ""
 
-#: src/configuring-languages.md:391
+#: src/configuring-languages.md:396
 msgid ""
 "Ensure external tools (formatters, linters) are correctly installed and in "
 "your PATH"
 msgstr ""
 
-#: src/configuring-languages.md:392
+#: src/configuring-languages.md:397
 msgid ""
 "Verify configurations in both Zed settings and language-specific config "
 "files (e.g., `.eslintrc`, `.prettierrc`)"
 msgstr ""
 
-#: src/configuring-languages.md:394
+#: src/configuring-languages.md:399
 msgid "Syntax Highlighting and Themes"
 msgstr "語法標明與主題"
 
-#: src/configuring-languages.md:396
+#: src/configuring-languages.md:401
 msgid ""
 "Zed offers customization options for syntax highlighting and themes, "
 "allowing you to tailor the visual appearance of your code."
 msgstr ""
 
-#: src/configuring-languages.md:398
+#: src/configuring-languages.md:403
 msgid "Customizing Syntax Highlighting"
 msgstr "自訂語法標明"
 
-#: src/configuring-languages.md:400
+#: src/configuring-languages.md:405
 msgid ""
 "Zed uses Tree-sitter grammars for syntax highlighting. Override the default "
 "highlighting using the `theme_overrides` setting."
 msgstr ""
 
-#: src/configuring-languages.md:402
+#: src/configuring-languages.md:407
 msgid "This example makes comments italic and changes the color of strings:"
 msgstr ""
 
-#: src/configuring-languages.md:405
+#: src/configuring-languages.md:410
 msgid "\"theme_overrides\""
 msgstr ""
 
-#: src/configuring-languages.md:406 src/configuring-languages.md:429
+#: src/configuring-languages.md:411 src/configuring-languages.md:434
 msgid "\"One Dark\""
 msgstr ""
 
-#: src/configuring-languages.md:407
+#: src/configuring-languages.md:412
 msgid "\"syntax\""
 msgstr ""
 
-#: src/configuring-languages.md:408
+#: src/configuring-languages.md:413
 msgid "\"comment\""
 msgstr ""
 
-#: src/configuring-languages.md:409
+#: src/configuring-languages.md:414
 msgid "\"font_style\""
 msgstr ""
 
-#: src/configuring-languages.md:409
+#: src/configuring-languages.md:414
 msgid "\"italic\""
 msgstr ""
 
-#: src/configuring-languages.md:411
+#: src/configuring-languages.md:416
 msgid "\"string\""
 msgstr ""
 
-#: src/configuring-languages.md:412
+#: src/configuring-languages.md:417
 msgid "\"color\""
 msgstr ""
 
-#: src/configuring-languages.md:412
+#: src/configuring-languages.md:417
 msgid "\"#00AA00\""
 msgstr ""
 
-#: src/configuring-languages.md:419
+#: src/configuring-languages.md:424
 msgid "Selecting and Customizing Themes"
 msgstr ""
 
-#: src/configuring-languages.md:421
+#: src/configuring-languages.md:426
 msgid "Change your theme:"
 msgstr "變更主題："
 
-#: src/configuring-languages.md:423
+#: src/configuring-languages.md:428
 msgid ""
 "Use the theme selector (<kbd class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-"
 "t</kbd>)"
 msgstr ""
 
-#: src/configuring-languages.md:424
+#: src/configuring-languages.md:429
 msgid "Or set it in your `settings.json`:"
 msgstr ""
 
-#: src/configuring-languages.md:427
+#: src/configuring-languages.md:432
 msgid "\"theme\""
 msgstr ""
 
-#: src/configuring-languages.md:428
+#: src/configuring-languages.md:433
 msgid "\"mode\""
 msgstr ""
 
-#: src/configuring-languages.md:428 src/configuring-languages.md:429
+#: src/configuring-languages.md:433 src/configuring-languages.md:434
 msgid "\"dark\""
 msgstr ""
 
-#: src/configuring-languages.md:430
+#: src/configuring-languages.md:435
 msgid "\"light\""
 msgstr ""
 
-#: src/configuring-languages.md:430
+#: src/configuring-languages.md:435
 msgid "\"GitHub Light\""
 msgstr ""
 
-#: src/configuring-languages.md:434
+#: src/configuring-languages.md:439
 msgid ""
 "Create custom themes by creating a JSON file in `~/.config/zed/themes/`. Zed "
 "will automatically detect and make available any themes in this directory."
 msgstr ""
 
-#: src/configuring-languages.md:436
+#: src/configuring-languages.md:441
 msgid "Using Theme Extensions"
 msgstr "使用主題擴充"
 
-#: src/configuring-languages.md:438
+#: src/configuring-languages.md:443
 msgid ""
 "Zed supports theme extensions. Browse and install theme extensions from the "
 "Extensions panel (<kbd class=\"keybinding\">cmd-shift-x\\|ctrl-shift-x</"
 "kbd>)."
 msgstr ""
 
-#: src/configuring-languages.md:440
+#: src/configuring-languages.md:445
 msgid ""
 "To create your own theme extension, refer to the [Developing Theme "
 "Extensions](./extensions/themes.md) guide."
 msgstr ""
 
-#: src/configuring-languages.md:442
+#: src/configuring-languages.md:447
 msgid "Using Language Server Features"
 msgstr ""
 
-#: src/configuring-languages.md:444
+#: src/configuring-languages.md:449
 msgid "Semantic Tokens"
 msgstr ""
 
-#: src/configuring-languages.md:446
+#: src/configuring-languages.md:451
 msgid ""
 "Semantic tokens provide richer syntax highlighting by using type and scope "
 "information from language servers. Enable them with the `semantic_tokens` "
 "setting:"
 msgstr ""
 
-#: src/configuring-languages.md:449
+#: src/configuring-languages.md:454
 msgid "\"semantic_tokens\""
 msgstr ""
 
-#: src/configuring-languages.md:449
+#: src/configuring-languages.md:454
 msgid "\"combined\""
 msgstr ""
 
-#: src/configuring-languages.md:452
+#: src/configuring-languages.md:457
 msgid "`\"off\"` — Tree-sitter highlighting only (default)"
 msgstr ""
 
-#: src/configuring-languages.md:453
+#: src/configuring-languages.md:458
 msgid "`\"combined\"` — LSP semantic tokens overlaid on tree-sitter"
 msgstr ""
 
-#: src/configuring-languages.md:454
+#: src/configuring-languages.md:459
 msgid "`\"full\"` — LSP semantic tokens replace tree-sitter entirely"
 msgstr ""
 
-#: src/configuring-languages.md:456
+#: src/configuring-languages.md:461
 msgid ""
 "You can customize token colors and styles through `global_lsp_settings."
 "semantic_token_rules` in your settings."
 msgstr ""
 
-#: src/configuring-languages.md:458
+#: src/configuring-languages.md:463
 msgid "→ [Semantic Tokens documentation](./semantic-tokens.md)"
 msgstr ""
 
-#: src/configuring-languages.md:460
+#: src/configuring-languages.md:465
 msgid "Inlay Hints"
 msgstr ""
 
-#: src/configuring-languages.md:462
+#: src/configuring-languages.md:467
 msgid ""
 "Inlay hints provide additional information inline in your code, such as "
 "parameter names or inferred types. Configure inlay hints in your `settings."
 "json`:"
 msgstr ""
 
-#: src/configuring-languages.md:465
+#: src/configuring-languages.md:470
 msgid "\"inlay_hints\""
 msgstr ""
 
-#: src/configuring-languages.md:466
+#: src/configuring-languages.md:471
 msgid "\"enabled\""
 msgstr ""
 
-#: src/configuring-languages.md:467
+#: src/configuring-languages.md:472
 msgid "\"show_type_hints\""
 msgstr ""
 
-#: src/configuring-languages.md:468
+#: src/configuring-languages.md:473
 msgid "\"show_parameter_hints\""
 msgstr ""
 
-#: src/configuring-languages.md:469
+#: src/configuring-languages.md:474
 msgid "\"show_other_hints\""
 msgstr ""
 
-#: src/configuring-languages.md:473
+#: src/configuring-languages.md:478
 msgid ""
 "For language-specific inlay hint settings, refer to the documentation for "
 "each language."
 msgstr ""
 
-#: src/configuring-languages.md:475
+#: src/configuring-languages.md:480
 msgid "Code Actions"
 msgstr ""
 
-#: src/configuring-languages.md:477
+#: src/configuring-languages.md:482
 msgid ""
 "Code actions provide quick fixes and refactoring options. Access code "
 "actions using the `editor: Toggle Code Actions` command or by clicking the "
 "lightbulb icon that appears next to your cursor when actions are available."
 msgstr ""
 
-#: src/configuring-languages.md:479
+#: src/configuring-languages.md:484
 msgid "Go To Definition and References"
 msgstr ""
 
-#: src/configuring-languages.md:481
+#: src/configuring-languages.md:486
 msgid "Use these commands to navigate your codebase:"
 msgstr ""
 
-#: src/configuring-languages.md:483
+#: src/configuring-languages.md:488
 msgid "`editor: Go to Definition` (<kbd>f12|f12</kbd>)"
 msgstr ""
 
-#: src/configuring-languages.md:484
+#: src/configuring-languages.md:489
 msgid "`editor: Go to Type Definition` (<kbd>cmd-f12|ctrl-f12</kbd>)"
 msgstr ""
 
-#: src/configuring-languages.md:485
+#: src/configuring-languages.md:490
 msgid "`editor: Find All References` (<kbd>shift-f12|shift-f12</kbd>)"
 msgstr ""
 
-#: src/configuring-languages.md:487
+#: src/configuring-languages.md:492
 msgid "Rename Symbol"
 msgstr "重新命名符號"
 
-#: src/configuring-languages.md:489
+#: src/configuring-languages.md:494
 msgid "To rename a symbol across your project:"
 msgstr ""
 
-#: src/configuring-languages.md:491
+#: src/configuring-languages.md:496
 msgid "Place your cursor on the symbol"
 msgstr ""
 
-#: src/configuring-languages.md:492
+#: src/configuring-languages.md:497
 msgid "Use the `editor: Rename Symbol` command (<kbd>f2|f2</kbd>)"
 msgstr ""
 
-#: src/configuring-languages.md:493
+#: src/configuring-languages.md:498
 msgid "Enter the new name and press Enter"
 msgstr ""
 
-#: src/configuring-languages.md:495
+#: src/configuring-languages.md:500
 msgid ""
 "These features depend on the capabilities of the language server for each "
 "language."
 msgstr ""
 
-#: src/configuring-languages.md:497
+#: src/configuring-languages.md:502
 msgid ""
 "When renaming a symbol that spans multiple files, Zed will open a preview in "
 "a multibuffer. This allows you to review all the changes across your project "
@@ -1188,44 +1202,44 @@ msgid ""
 "the multibuffer without saving."
 msgstr ""
 
-#: src/configuring-languages.md:499
+#: src/configuring-languages.md:504
 msgid "Hover Information"
 msgstr ""
 
-#: src/configuring-languages.md:501
+#: src/configuring-languages.md:506
 msgid ""
 "Use the `editor: Hover` command to display information about the symbol "
 "under the cursor. This often includes type information, documentation, and "
 "links to relevant resources."
 msgstr ""
 
-#: src/configuring-languages.md:503
+#: src/configuring-languages.md:508
 msgid "Workspace Symbol Search"
 msgstr "工作空間符號搜尋"
 
-#: src/configuring-languages.md:505
+#: src/configuring-languages.md:510
 msgid ""
 "The <code class=\"hljs\">project symbols: toggle</code> command allows you "
 "to search for symbols (functions, classes, variables) across your entire "
 "project. This is useful for quickly navigating large codebases."
 msgstr ""
 
-#: src/configuring-languages.md:507
+#: src/configuring-languages.md:512
 msgid "Code Completion"
 msgstr ""
 
-#: src/configuring-languages.md:509
+#: src/configuring-languages.md:514
 msgid ""
 "Zed provides intelligent code completion suggestions as you type. You can "
 "manually trigger completion with the `editor: Show Completions` command. Use "
 "<kbd>tab|tab</kbd> or <kbd>enter|enter</kbd> to accept suggestions."
 msgstr ""
 
-#: src/configuring-languages.md:511
+#: src/configuring-languages.md:516
 msgid "Diagnostics"
 msgstr "診斷"
 
-#: src/configuring-languages.md:513
+#: src/configuring-languages.md:518
 msgid ""
 "Language servers provide real-time diagnostics (errors, warnings, hints) as "
 "you code. View all diagnostics for your project using the <code "

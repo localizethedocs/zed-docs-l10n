@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -237,7 +237,7 @@ msgid "The URL"
 msgstr ""
 
 #: src/ai/tool-permissions.md:57
-msgid "`web_search`"
+msgid "`search_web`"
 msgstr ""
 
 #: src/ai/tool-permissions.md:57

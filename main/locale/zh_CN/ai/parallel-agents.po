@@ -1,0 +1,271 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/parallel-agents.md:3
+msgid "Parallel Agents"
+msgstr ""
+
+#: src/ai/parallel-agents.md:5
+msgid ""
+"Parallel Agents lets you run multiple agent threads at once, each working "
+"independently with its own agent, context window, and conversation history. "
+"The Threads Sidebar is where you start, manage, and switch between them."
+msgstr ""
+
+#: src/ai/parallel-agents.md:7
+msgid ""
+"Open the Threads Sidebar with <kbd class=\"keybinding\">cmd-alt-j\\|ctrl-alt-"
+"j</kbd>."
+msgstr ""
+
+#: src/ai/parallel-agents.md:9
+msgid ""
+"**Note:** From version 0.233.0 onward, the Agent Panel and Threads Sidebar "
+"are on the left by default. The Project Panel, Git Panel, and other panels "
+"move to the right, keeping the thread list and conversation next to each "
+"other. To rearrange panels, right-click any panel icon."
+msgstr ""
+
+#: src/ai/parallel-agents.md:11
+msgid "Threads Sidebar"
+msgstr ""
+
+#: src/ai/parallel-agents.md:13
+msgid ""
+"The sidebar shows your threads grouped by project. Each project gets its own "
+"section with a header. Threads appear below with their title, status "
+"indicator, and which agent is running them. Threads running in linked Git "
+"worktrees appear under the same project as their main worktree. See "
+"[Worktree Isolation](#worktree-isolation)."
+msgstr ""
+
+#: src/ai/parallel-agents.md:15
+msgid ""
+"To focus the sidebar without toggling it, use <kbd class=\"keybinding\">cmd-"
+"alt-;\\|ctrl-alt-;</kbd>. To search your threads, press <kbd "
+"class=\"keybinding\">cmd-f\\|ctrl-f</kbd> while the sidebar is focused."
+msgstr ""
+
+#: src/ai/parallel-agents.md:17
+msgid "Switching Threads"
+msgstr ""
+
+#: src/ai/parallel-agents.md:19
+msgid ""
+"Click any thread in the sidebar to switch to it. The Agent Panel updates to "
+"show that thread's conversation."
+msgstr ""
+
+#: src/ai/parallel-agents.md:21
+msgid ""
+"For quick switching without opening the sidebar, use the thread switcher: "
+"press <kbd class=\"keybinding\">ctrl-tab\\|ctrl-tab</kbd> to cycle forward "
+"through recent threads, or hold `Shift` while pressing that binding to go "
+"backward. This works from both the Agent Panel and the Threads Sidebar."
+msgstr ""
+
+#: src/ai/parallel-agents.md:23
+msgid "Thread History"
+msgstr ""
+
+#: src/ai/parallel-agents.md:25
+msgid ""
+"To remove a thread from the sidebar, you can archive it by hovering over it "
+"and clicking the archive icon that appears. You can also select a thread and "
+"press <kbd class=\"keybinding\">shift-backspace\\|shift-backspace</kbd>. "
+"Running threads cannot be moved to history until they finish."
+msgstr ""
+
+#: src/ai/parallel-agents.md:27
+msgid ""
+"The Thread History view holds all your threads, including ones that you have "
+"archived. Toggle it with <kbd class=\"keybinding\">cmd-g\\|ctrl-g</kbd> or "
+"by clicking the clock icon in the sidebar bottom bar, next to the sidebar "
+"toggle."
+msgstr ""
+
+#: src/ai/parallel-agents.md:29
+msgid ""
+"To restore a thread, open Thread History and click the thread you want to "
+"bring back. Zed moves it back to the thread list and opens it in the Agent "
+"Panel. If the thread was running in a Git worktree that was removed, Zed "
+"restores the worktree automatically."
+msgstr ""
+
+#: src/ai/parallel-agents.md:31
+msgid ""
+"To permanently delete a thread, open Thread History, hover over the thread, "
+"and click the trash icon. This removes the thread's conversation history and "
+"cleans up any associated worktree data. Deleted threads cannot be recovered."
+msgstr ""
+
+#: src/ai/parallel-agents.md:33
+msgid ""
+"You can search your threads in history; search will fuzzy match on thread "
+"titles."
+msgstr ""
+
+#: src/ai/parallel-agents.md:35
+msgid "Importing External Agent Threads"
+msgstr ""
+
+#: src/ai/parallel-agents.md:37
+msgid ""
+"If you have external agents installed, Zed will detect whether you have "
+"existing threads and invite you to import them into Zed. Once you open "
+"Thread History, you'll find an import icon button in the Thread History "
+"toolbar that lets you import threads at any time. Clicking on it opens a "
+"modal where you can select the agents whose threads you want to import."
+msgstr ""
+
+#: src/ai/parallel-agents.md:39
+msgid ""
+"**Note:** Thread import is subject to agent support. Some agents (such as "
+"Cursor and Gemini CLI) are not currently supported."
+msgstr ""
+
+#: src/ai/parallel-agents.md:41
+msgid "Running Multiple Threads"
+msgstr ""
+
+#: src/ai/parallel-agents.md:43
+msgid ""
+"Each thread runs independently, so you can send a prompt, open a second "
+"thread, and give it a different task while the first continues working. To "
+"scope a new thread to a specific project, hover over that project's header "
+"in the Threads Sidebar and click the `+` button, or use <code "
+"class=\"hljs\">agents sidebar: new thread in group</code> from the keyboard. "
+"See [Creating New Threads](./agent-panel.md#new-thread) for the other entry "
+"points."
+msgstr ""
+
+#: src/ai/parallel-agents.md:45
+msgid ""
+"Each thread can use a different agent, so you can run Zed's built-in agent "
+"in one thread and an [external agent](./external-agents.md) like Claude Code "
+"or Codex in another."
+msgstr ""
+
+#: src/ai/parallel-agents.md:47
+msgid "Multiple Projects"
+msgstr ""
+
+#: src/ai/parallel-agents.md:49
+msgid ""
+"The Threads Sidebar can hold multiple projects at once. Each project gets "
+"its own group with its own threads and conversation history."
+msgstr ""
+
+#: src/ai/parallel-agents.md:51
+msgid ""
+"To add another project to the sidebar, click the **Add Project** button "
+"(open-folder icon) in the sidebar bottom bar. The popover that opens lists "
+"your recent projects and also provides **Add Local Folders** and **Add "
+"Remote Folder** buttons at the bottom."
+msgstr ""
+
+#: src/ai/parallel-agents.md:53
+msgid "Multi-Root Folder Projects"
+msgstr ""
+
+#: src/ai/parallel-agents.md:55
+msgid ""
+"A single project can contain multiple folders (a multi-root folder project). "
+"Agents can then read and write across all of those folders in a single "
+"thread. There are multiple ways to set one up:"
+msgstr ""
+
+#: src/ai/parallel-agents.md:57
+msgid ""
+"**From the sidebar:** Click the **Add Project** button, choose **Add Local "
+"Folders**, and select multiple folders in the file picker. They open "
+"together as one multi-root project."
+msgstr ""
+
+#: src/ai/parallel-agents.md:58
+msgid ""
+"**From the title bar:** Click the project picker (the leftmost project "
+"name). For any local entry in the recent projects list, hover it and click "
+"the folder-with-plus icon (**Add Folder to this Project**) to merge that "
+"project's folders into the current project."
+msgstr ""
+
+#: src/ai/parallel-agents.md:59
+msgid ""
+"**From the Project panel:** Right-click a root folder or any empty space in "
+"the Project panel and choose **Add Folders to Project** to add more folders "
+"to the current project."
+msgstr ""
+
+#: src/ai/parallel-agents.md:61
+msgid "Worktree Isolation"
+msgstr ""
+
+#: src/ai/parallel-agents.md:63
+msgid ""
+"If two threads might edit the same files, start one in a new Git worktree to "
+"give it an isolated checkout."
+msgstr ""
+
+#: src/ai/parallel-agents.md:65
+msgid ""
+"Worktrees are managed from the title bar. Click the worktree picker (to the "
+"right of the project picker) to switch between existing worktrees or create "
+"a new one. New worktrees are created in a detached HEAD state, so you won't "
+"accidentally share a branch between worktrees."
+msgstr ""
+
+#: src/ai/parallel-agents.md:67
+msgid ""
+"Once you're in a new worktree, use the branch picker next to the worktree "
+"picker to create a new branch or check out an existing one. If the branch "
+"you pick is already checked out in another worktree, the current worktree "
+"stays in detached HEAD until you choose a different branch."
+msgstr ""
+
+#: src/ai/parallel-agents.md:69
+msgid ""
+"To automate setup steps whenever a new worktree is created use a [Task hook]"
+"(../tasks.md#hooks). The `create_worktree` hook runs automatically after Zed "
+"creates a linked worktree, with `ZED_WORKTREE_ROOT` pointing at the new "
+"worktree and `ZED_MAIN_GIT_WORKTREE` pointing at the original repository."
+msgstr ""
+
+#: src/ai/parallel-agents.md:71
+msgid ""
+"After the agent finishes, review the diff and merge the changes through your "
+"normal Git workflow. If the thread was running in a linked worktree and no "
+"other active threads use it, moving the thread to Thread History saves the "
+"worktree's Git state and removes it from disk. Restoring the thread from "
+"history restores the worktree."
+msgstr ""
+
+#: src/ai/parallel-agents.md:73
+msgid "See Also"
+msgstr ""
+
+#: src/ai/parallel-agents.md:75
+msgid ""
+"[Agent Panel](./agent-panel.md): Manage individual threads and configure the "
+"agent"
+msgstr ""
+
+#: src/ai/parallel-agents.md:76
+msgid ""
+"[External Agents](./external-agents.md): Use Claude Code, Gemini CLI, and "
+"other agents"
+msgstr ""
+
+#: src/ai/parallel-agents.md:77
+msgid "[Tools](./tools.md): Built-in tools available in each thread"
+msgstr ""
