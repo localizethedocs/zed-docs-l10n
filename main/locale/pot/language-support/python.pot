@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -773,6 +773,7 @@ msgid "Debug Active File"
 msgstr ""
 
 #: src/languages/python.md:341 src/languages/python.md:373
+#: src/languages/python.md:419
 msgid "\"label\""
 msgstr ""
 
@@ -781,14 +782,16 @@ msgid "\"Python Active File\""
 msgstr ""
 
 #: src/languages/python.md:342 src/languages/python.md:374
+#: src/languages/python.md:420
 msgid "\"adapter\""
 msgstr ""
 
 #: src/languages/python.md:342 src/languages/python.md:374
+#: src/languages/python.md:420
 msgid "\"Debugpy\""
 msgstr ""
 
-#: src/languages/python.md:343
+#: src/languages/python.md:343 src/languages/python.md:422
 msgid "\"program\""
 msgstr ""
 
@@ -797,10 +800,12 @@ msgid "\"$ZED_FILE\""
 msgstr ""
 
 #: src/languages/python.md:344 src/languages/python.md:375
+#: src/languages/python.md:421
 msgid "\"request\""
 msgstr ""
 
 #: src/languages/python.md:344 src/languages/python.md:375
+#: src/languages/python.md:421
 msgid "\"launch\""
 msgstr ""
 
@@ -816,7 +821,7 @@ msgstr ""
 msgid "For projects using Flask, you can define a full launch configuration:"
 msgstr ""
 
-#: src/languages/python.md:368
+#: src/languages/python.md:368 src/languages/python.md:414
 msgid "…the following configuration can be used:"
 msgstr ""
 
@@ -856,7 +861,7 @@ msgstr ""
 msgid "\"1\""
 msgstr ""
 
-#: src/languages/python.md:382
+#: src/languages/python.md:382 src/languages/python.md:423
 msgid "\"args\""
 msgstr ""
 
@@ -897,26 +902,50 @@ msgid ""
 msgstr ""
 
 #: src/languages/python.md:398
-msgid "Troubleshooting"
+msgid "Debug a Django App"
 msgstr ""
 
 #: src/languages/python.md:400
+msgid "For projects using Django with a structure similar to the following:"
+msgstr ""
+
+#: src/languages/python.md:419
+msgid "\"Python: Django\""
+msgstr ""
+
+#: src/languages/python.md:422
+msgid "\"manage.py\""
+msgstr ""
+
+#: src/languages/python.md:423
+msgid "\"runserver\""
+msgstr ""
+
+#: src/languages/python.md:424
+msgid "\"django\""
+msgstr ""
+
+#: src/languages/python.md:429
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/languages/python.md:431
 msgid ""
 "Issues with Python in Zed typically involve virtual environments, language "
 "servers, or tooling configuration."
 msgstr ""
 
-#: src/languages/python.md:402
+#: src/languages/python.md:433
 msgid "Resolve Language Server Startup Issues"
 msgstr ""
 
-#: src/languages/python.md:404
+#: src/languages/python.md:435
 msgid ""
 "If a language server isn't responding or features like diagnostics or "
 "autocomplete aren't available:"
 msgstr ""
 
-#: src/languages/python.md:406
+#: src/languages/python.md:437
 msgid ""
 "Check your Zed log (using the <code class=\"hljs\">zed: open log</code> "
 "action) for errors related to the language server you're trying to use. This "
@@ -924,7 +953,7 @@ msgid ""
 "failed to start up at all."
 msgstr ""
 
-#: src/languages/python.md:407
+#: src/languages/python.md:438
 msgid ""
 "Use the language server logs view to understand the lifecycle of the "
 "affected language server. You can access this view using the <code "
@@ -933,29 +962,29 @@ msgid ""
 "server. The most useful pieces of data in this view are:"
 msgstr ""
 
-#: src/languages/python.md:408
+#: src/languages/python.md:439
 msgid "\"Server Logs\", which shows any errors printed by the language server"
 msgstr ""
 
-#: src/languages/python.md:409
+#: src/languages/python.md:440
 msgid ""
 "\"Server Info\", which shows details about how the language server was "
 "started"
 msgstr ""
 
-#: src/languages/python.md:410
+#: src/languages/python.md:441
 msgid ""
 "Verify your `settings.json` or `pyrightconfig.json` is syntactically correct."
 msgstr ""
 
-#: src/languages/python.md:411
+#: src/languages/python.md:442
 msgid ""
 "Restart Zed to reinitialize language server connections, or try restarting "
 "the language server using the <code class=\"hljs\">editor: restart language "
 "server</code>"
 msgstr ""
 
-#: src/languages/python.md:413
+#: src/languages/python.md:444
 msgid ""
 "If the language server is failing to resolve imports, and you're using a "
 "virtual environment, make sure that the right environment is chosen in the "

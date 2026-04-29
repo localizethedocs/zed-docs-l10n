@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,31 +21,31 @@ msgid ""
 "running the next action.<br> Keymap Name: <code>action::Sequence</code><br>"
 msgstr ""
 
-#: src/all-actions.md:522
+#: src/all-actions.md:497
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::ActivateMenuLeft</code><br>"
 msgstr ""
 
-#: src/all-actions.md:530
+#: src/all-actions.md:505
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::ActivateMenuRight</code><br>"
 msgstr ""
 
-#: src/all-actions.md:538
+#: src/all-actions.md:513
 msgid ""
 "Does not apply to platform menu bars (e.g. on macOS).<br> Keymap Name: "
 "<code>app_menu::OpenApplicationMenu</code><br>"
 msgstr ""
 
-#: src/all-actions.md:706
+#: src/all-actions.md:687
 msgid ""
 "Use `collab_panel::OpenSelectedChannelNotes` to open the channel notes for "
 "the selected channel in the collab panel."
 msgstr ""
 
-#: src/all-actions.md:709
+#: src/all-actions.md:690
 msgid ""
 "If you want to open a specific channel, use `zed::OpenZedUrl` with a channel "
 "notes URL - can be copied via \"Copy link to section\" in the context menu "
@@ -54,28 +54,30 @@ msgid ""
 "OpenChannelNotes</code><br>"
 msgstr ""
 
-#: src/all-actions.md:803
+#: src/all-actions.md:784
 msgid ""
 "Use `collab::OpenChannelNotes` to open the channel notes for the current "
 "call.<br> Keymap Name: <code>collab_panel::OpenSelectedChannelNotes</"
 "code><br>"
 msgstr ""
 
-#: src/all-actions.md:1826
+#: src/all-actions.md:1825
 msgid ""
+"This action is only available when the active formatter can format ranges. "
 "When using a language server, this sends an LSP range formatting request for "
-"each selection. When using Prettier, Prettier's own range formatting is used "
-"to format the encompassing range of all selections, and resulting edits "
-"outside the selected ranges are discarded. External command formatters do "
-"not support range formatting and are skipped.<br> Keymap Name: <code>editor::"
-"FormatSelections</code><br>"
+"each selection, and is hidden when the selected buffer's configured language "
+"server does not advertise range-formatting support. When using Prettier, "
+"Prettier's own range formatting is used to format the encompassing range of "
+"all selections, and resulting edits outside the selected ranges are "
+"discarded. External command formatters do not support range formatting and "
+"are skipped.<br> Keymap Name: <code>editor::FormatSelections</code><br>"
 msgstr ""
 
-#: src/all-actions.md:7578
+#: src/all-actions.md:7728
 msgid "In keymap JSON this is written as:"
 msgstr ""
 
-#: src/all-actions.md:7580
+#: src/all-actions.md:7730
 msgid ""
 "`[\"zed::Unbind\", \"editor::NewLine\"]`<br> Keymap Name: <code>zed::Unbind</"
 "code><br>"

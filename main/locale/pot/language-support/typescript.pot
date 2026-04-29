@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -86,7 +86,7 @@ msgstr ""
 msgid "\"TSX\""
 msgstr ""
 
-#: src/languages/typescript.md:30 src/languages/typescript.md:221
+#: src/languages/typescript.md:30 src/languages/typescript.md:266
 msgid "\"JavaScript\""
 msgstr ""
 
@@ -124,6 +124,7 @@ msgstr ""
 
 #: src/languages/typescript.md:56 src/languages/typescript.md:84
 #: src/languages/typescript.md:105 src/languages/typescript.md:130
+#: src/languages/typescript.md:203
 msgid "\"lsp\""
 msgstr ""
 
@@ -132,7 +133,7 @@ msgid "\"tailwindcss-language-server\""
 msgstr ""
 
 #: src/languages/typescript.md:58 src/languages/typescript.md:86
-#: src/languages/typescript.md:132
+#: src/languages/typescript.md:132 src/languages/typescript.md:205
 msgid "\"settings\""
 msgstr ""
 
@@ -196,6 +197,7 @@ msgid ""
 msgstr ""
 
 #: src/languages/typescript.md:85 src/languages/typescript.md:131
+#: src/languages/typescript.md:204
 msgid "\"vtsls\""
 msgstr ""
 
@@ -306,6 +308,8 @@ msgstr ""
 #: src/languages/typescript.md:162 src/languages/typescript.md:166
 #: src/languages/typescript.md:169 src/languages/typescript.md:173
 #: src/languages/typescript.md:176 src/languages/typescript.md:179
+#: src/languages/typescript.md:208 src/languages/typescript.md:213
+#: src/languages/typescript.md:219 src/languages/typescript.md:224
 msgid "\"enabled\""
 msgstr ""
 
@@ -338,63 +342,116 @@ msgid "\"enumMemberValues\""
 msgstr ""
 
 #: src/languages/typescript.md:189
-msgid "Debugging"
+msgid "Code Lens"
 msgstr ""
 
 #: src/languages/typescript.md:191
+msgid ""
+"Zed enables references and implementations code lenses for `vtsls` by "
+"default. These show reference counts and implementation counts above "
+"functions, classes, and interfaces. To use them, enable the `code_lens` "
+"setting:"
+msgstr ""
+
+#: src/languages/typescript.md:195
+msgid "\"code_lens\""
+msgstr ""
+
+#: src/languages/typescript.md:195
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/typescript.md:199
+msgid ""
+"You can override the default code lens settings in your `settings.json`:"
+msgstr ""
+
+#: src/languages/typescript.md:206
+msgid "\"typescript\""
+msgstr ""
+
+#: src/languages/typescript.md:207 src/languages/typescript.md:218
+msgid "\"implementationsCodeLens\""
+msgstr ""
+
+#: src/languages/typescript.md:209 src/languages/typescript.md:220
+msgid "\"showOnAllClassMethods\""
+msgstr ""
+
+#: src/languages/typescript.md:210 src/languages/typescript.md:221
+msgid "\"showOnInterfaceMethods\""
+msgstr ""
+
+#: src/languages/typescript.md:212 src/languages/typescript.md:223
+msgid "\"referencesCodeLens\""
+msgstr ""
+
+#: src/languages/typescript.md:214 src/languages/typescript.md:225
+msgid "\"showOnAllFunctions\""
+msgstr ""
+
+#: src/languages/typescript.md:217
+msgid "\"javascript\""
+msgstr ""
+
+#: src/languages/typescript.md:234
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/typescript.md:236
 msgid ""
 "Zed supports debugging TypeScript code out of the box with `vscode-js-"
 "debug`. The following can be debugged without writing additional "
 "configuration:"
 msgstr ""
 
-#: src/languages/typescript.md:194
+#: src/languages/typescript.md:239
 msgid "Tasks from `package.json`"
 msgstr ""
 
-#: src/languages/typescript.md:195
+#: src/languages/typescript.md:240
 msgid ""
 "Tests written using several popular frameworks (Jest, Mocha, Vitest, "
 "Jasmine, Bun, Node)"
 msgstr ""
 
-#: src/languages/typescript.md:197
+#: src/languages/typescript.md:242
 msgid ""
 "Run <code class=\"hljs\">debugger: start</code> (<kbd "
 "class=\"keybinding\">f4\\|f4</kbd>) to see a contextual list of these "
 "predefined debug tasks."
 msgstr ""
 
-#: src/languages/typescript.md:199
+#: src/languages/typescript.md:244
 msgid ""
 "**Note:** Bun test is automatically detected when `@types/bun` is present in "
 "`package.json`."
 msgstr ""
 
-#: src/languages/typescript.md:201
+#: src/languages/typescript.md:246
 msgid ""
 "**Note:** Node test is automatically detected when `@types/node` is present "
 "in `package.json` (requires Node.js 20+)."
 msgstr ""
 
-#: src/languages/typescript.md:203
+#: src/languages/typescript.md:248
 msgid ""
 "As for all languages, configurations from `.vscode/launch.json` are also "
 "available for debugging in Zed."
 msgstr ""
 
-#: src/languages/typescript.md:205
+#: src/languages/typescript.md:250
 msgid ""
 "If your use-case isn't covered by any of these, you can take full control by "
 "adding debug configurations to `.zed/debug.json`. See below for example "
 "configurations."
 msgstr ""
 
-#: src/languages/typescript.md:207
+#: src/languages/typescript.md:252
 msgid "Configuring JavaScript debug tasks"
 msgstr ""
 
-#: src/languages/typescript.md:209
+#: src/languages/typescript.md:254
 msgid ""
 "JavaScript debugging is more complicated than other languages because there "
 "are two different environments: Node.js and the browser. `vscode-js-debug` "
@@ -402,112 +459,112 @@ msgid ""
 "`node` or `chrome`."
 msgstr ""
 
-#: src/languages/typescript.md:211
+#: src/languages/typescript.md:256
 msgid ""
 "[vscode-js-debug configuration documentation](https://github.com/microsoft/"
 "vscode-js-debug/blob/main/OPTIONS.md)"
 msgstr ""
 
-#: src/languages/typescript.md:213
+#: src/languages/typescript.md:258
 msgid "Attach debugger to a server running in web browser (`npx serve`)"
 msgstr ""
 
-#: src/languages/typescript.md:215
+#: src/languages/typescript.md:260
 msgid ""
 "Given an externally-ran web server (e.g., with `npx serve` or `npx live-"
 "server`) one can attach to it and open it with a browser."
 msgstr ""
 
-#: src/languages/typescript.md:220
+#: src/languages/typescript.md:265
 msgid "\"label\""
 msgstr ""
 
-#: src/languages/typescript.md:220
+#: src/languages/typescript.md:265
 msgid "\"Launch Chrome (TypeScript)\""
 msgstr ""
 
-#: src/languages/typescript.md:221
+#: src/languages/typescript.md:266
 msgid "\"adapter\""
 msgstr ""
 
-#: src/languages/typescript.md:222
+#: src/languages/typescript.md:267
 msgid "\"type\""
 msgstr ""
 
-#: src/languages/typescript.md:222
+#: src/languages/typescript.md:267
 msgid "\"chrome\""
 msgstr ""
 
-#: src/languages/typescript.md:223
+#: src/languages/typescript.md:268
 msgid "\"request\""
 msgstr ""
 
-#: src/languages/typescript.md:223
+#: src/languages/typescript.md:268
 msgid "\"launch\""
 msgstr ""
 
-#: src/languages/typescript.md:224
+#: src/languages/typescript.md:269
 msgid "\"url\""
 msgstr ""
 
-#: src/languages/typescript.md:224
+#: src/languages/typescript.md:269
 msgid "\"http://localhost:5500\""
 msgstr ""
 
-#: src/languages/typescript.md:225
+#: src/languages/typescript.md:270
 msgid "\"program\""
 msgstr ""
 
-#: src/languages/typescript.md:225
+#: src/languages/typescript.md:270
 msgid "\"$ZED_FILE\""
 msgstr ""
 
-#: src/languages/typescript.md:226
+#: src/languages/typescript.md:271
 msgid "\"webRoot\""
 msgstr ""
 
-#: src/languages/typescript.md:226
+#: src/languages/typescript.md:271
 msgid "\"${ZED_WORKTREE_ROOT}\""
 msgstr ""
 
-#: src/languages/typescript.md:227
+#: src/languages/typescript.md:272
 msgid "\"build\""
 msgstr ""
 
-#: src/languages/typescript.md:228
+#: src/languages/typescript.md:273
 msgid "\"command\""
 msgstr ""
 
-#: src/languages/typescript.md:228
+#: src/languages/typescript.md:273
 msgid "\"npx\""
 msgstr ""
 
-#: src/languages/typescript.md:229
+#: src/languages/typescript.md:274
 msgid "\"args\""
 msgstr ""
 
-#: src/languages/typescript.md:229
+#: src/languages/typescript.md:274
 msgid "\"tsc\""
 msgstr ""
 
-#: src/languages/typescript.md:231
+#: src/languages/typescript.md:276
 msgid "\"skipFiles\""
 msgstr ""
 
-#: src/languages/typescript.md:231
+#: src/languages/typescript.md:276
 msgid "\"<node_internals>/**\""
 msgstr ""
 
-#: src/languages/typescript.md:236
+#: src/languages/typescript.md:281
 msgid "See also"
 msgstr ""
 
-#: src/languages/typescript.md:238
+#: src/languages/typescript.md:283
 msgid ""
 "[Zed Yarn documentation](./yarn.md) for a walkthrough of configuring your "
 "project to use Yarn."
 msgstr ""
 
-#: src/languages/typescript.md:239
+#: src/languages/typescript.md:284
 msgid "[Zed Deno documentation](./deno.md)"
 msgstr ""

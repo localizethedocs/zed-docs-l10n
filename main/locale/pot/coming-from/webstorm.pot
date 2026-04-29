@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -432,7 +432,7 @@ msgid "<kbd class=\"keybinding\">cmd-r\\|ctrl-alt-b</kbd>"
 msgstr ""
 
 #: src/migrate/webstorm.md:112
-msgid "Assistant panel, notifications"
+msgid "Agent panel, notifications"
 msgstr ""
 
 #: src/migrate/webstorm.md:113
@@ -523,7 +523,7 @@ msgstr ""
 
 #: src/migrate/webstorm.md:138
 msgid ""
-"Use <kbd class=\"keybinding\">cmd-shift-h\\|ctrl-shift-h</kbd> for text "
+"Use <kbd class=\"keybinding\">cmd-shift-f\\|ctrl-shift-f</kbd> for text "
 "search—it stays fast even in large monorepos"
 msgstr ""
 
@@ -755,8 +755,8 @@ msgstr ""
 
 #: src/migrate/webstorm.md:216
 msgid ""
-"Use grep and file search liberally. <kbd class=\"keybinding\">cmd-shift-h\\|"
-"ctrl-shift-h</kbd> with a regex can find component definitions, route "
+"Use grep and file search liberally. <kbd class=\"keybinding\">cmd-shift-f\\|"
+"ctrl-shift-f</kbd> with a regex can find component definitions, route "
 "configurations, or API endpoints."
 msgstr ""
 
