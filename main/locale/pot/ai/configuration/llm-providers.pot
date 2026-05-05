@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -113,18 +113,14 @@ msgid "[Vercel AI Gateway](#vercel-ai-gateway)"
 msgstr ""
 
 #: src/ai/llm-providers.md:34
-msgid "[Vercel](#vercel-v0)"
-msgstr ""
-
-#: src/ai/llm-providers.md:35
 msgid "[xAI](#xai)"
 msgstr ""
 
-#: src/ai/llm-providers.md:37
+#: src/ai/llm-providers.md:36
 msgid "Amazon Bedrock"
 msgstr ""
 
-#: src/ai/llm-providers.md:39
+#: src/ai/llm-providers.md:38
 msgid ""
 "Supports tool use with models that support streaming tool use. More details "
 "can be found in the [Amazon Bedrock's Tool Use documentation](https://docs."
@@ -132,203 +128,203 @@ msgid ""
 "models-features.html)."
 msgstr ""
 
-#: src/ai/llm-providers.md:42
+#: src/ai/llm-providers.md:41
 msgid ""
 "To use Amazon Bedrock's models, an AWS authentication is required. Ensure "
 "your credentials have the following permissions set up:"
 msgstr ""
 
-#: src/ai/llm-providers.md:45
+#: src/ai/llm-providers.md:44
 msgid "`bedrock:InvokeModelWithResponseStream`"
 msgstr ""
 
-#: src/ai/llm-providers.md:46
+#: src/ai/llm-providers.md:45
 msgid "`bedrock:InvokeModel`"
 msgstr ""
 
-#: src/ai/llm-providers.md:48
+#: src/ai/llm-providers.md:47
 msgid "Your IAM policy should look similar to:"
 msgstr ""
 
-#: src/ai/llm-providers.md:52
+#: src/ai/llm-providers.md:51
 msgid "\"Version\""
 msgstr ""
 
-#: src/ai/llm-providers.md:52
+#: src/ai/llm-providers.md:51
 msgid "\"2012-10-17\""
 msgstr ""
 
-#: src/ai/llm-providers.md:53
+#: src/ai/llm-providers.md:52
 msgid "\"Statement\""
 msgstr ""
 
-#: src/ai/llm-providers.md:55
+#: src/ai/llm-providers.md:54
 msgid "\"Effect\""
 msgstr ""
 
-#: src/ai/llm-providers.md:55
+#: src/ai/llm-providers.md:54
 msgid "\"Allow\""
 msgstr ""
 
-#: src/ai/llm-providers.md:56
+#: src/ai/llm-providers.md:55
 msgid "\"Action\""
 msgstr ""
 
-#: src/ai/llm-providers.md:57
+#: src/ai/llm-providers.md:56
 msgid "\"bedrock:InvokeModel\""
 msgstr ""
 
-#: src/ai/llm-providers.md:58
+#: src/ai/llm-providers.md:57
 msgid "\"bedrock:InvokeModelWithResponseStream\""
 msgstr ""
 
-#: src/ai/llm-providers.md:60
+#: src/ai/llm-providers.md:59
 msgid "\"Resource\""
 msgstr ""
 
-#: src/ai/llm-providers.md:60
+#: src/ai/llm-providers.md:59
 msgid "\"*\""
 msgstr ""
 
-#: src/ai/llm-providers.md:66
+#: src/ai/llm-providers.md:65
 msgid "With that done, choose one of the three authentication methods:"
 msgstr ""
 
-#: src/ai/llm-providers.md:68
+#: src/ai/llm-providers.md:67
 msgid "Authentication via Named Profile (Recommended)"
 msgstr ""
 
-#: src/ai/llm-providers.md:70
+#: src/ai/llm-providers.md:69
 msgid ""
 "Ensure you have the AWS CLI installed and configured with a named profile"
 msgstr ""
 
-#: src/ai/llm-providers.md:71
+#: src/ai/llm-providers.md:70
 msgid ""
 "Open your settings file (`zed: open settings file`) and include the "
 "`bedrock` key under `language_models` with the following settings:"
 msgstr ""
 
+#: src/ai/llm-providers.md:73 src/ai/llm-providers.md:103
+#: src/ai/llm-providers.md:130 src/ai/llm-providers.md:156
+#: src/ai/llm-providers.md:192 src/ai/llm-providers.md:246
+#: src/ai/llm-providers.md:304 src/ai/llm-providers.md:368
+#: src/ai/llm-providers.md:415 src/ai/llm-providers.md:444
+#: src/ai/llm-providers.md:456 src/ai/llm-providers.md:526
+#: src/ai/llm-providers.md:577 src/ai/llm-providers.md:637
+#: src/ai/llm-providers.md:653 src/ai/llm-providers.md:721
+#: src/ai/llm-providers.md:777 src/ai/llm-providers.md:821
+#: src/ai/llm-providers.md:847 src/ai/llm-providers.md:877
+msgid "\"language_models\""
+msgstr ""
+
 #: src/ai/llm-providers.md:74 src/ai/llm-providers.md:104
 #: src/ai/llm-providers.md:131 src/ai/llm-providers.md:157
-#: src/ai/llm-providers.md:193 src/ai/llm-providers.md:247
-#: src/ai/llm-providers.md:305 src/ai/llm-providers.md:369
-#: src/ai/llm-providers.md:416 src/ai/llm-providers.md:445
-#: src/ai/llm-providers.md:457 src/ai/llm-providers.md:527
-#: src/ai/llm-providers.md:578 src/ai/llm-providers.md:638
-#: src/ai/llm-providers.md:654 src/ai/llm-providers.md:720
-#: src/ai/llm-providers.md:776 src/ai/llm-providers.md:820
-#: src/ai/llm-providers.md:858 src/ai/llm-providers.md:888
-msgid "\"language_models\""
+msgid "\"bedrock\""
 msgstr ""
 
 #: src/ai/llm-providers.md:75 src/ai/llm-providers.md:105
 #: src/ai/llm-providers.md:132 src/ai/llm-providers.md:158
-msgid "\"bedrock\""
+msgid "\"authentication_method\""
+msgstr ""
+
+#: src/ai/llm-providers.md:75 src/ai/llm-providers.md:132
+#: src/ai/llm-providers.md:158
+msgid "\"named_profile\""
 msgstr ""
 
 #: src/ai/llm-providers.md:76 src/ai/llm-providers.md:106
 #: src/ai/llm-providers.md:133 src/ai/llm-providers.md:159
-msgid "\"authentication_method\""
-msgstr ""
-
-#: src/ai/llm-providers.md:76 src/ai/llm-providers.md:133
-#: src/ai/llm-providers.md:159
-msgid "\"named_profile\""
-msgstr ""
-
-#: src/ai/llm-providers.md:77 src/ai/llm-providers.md:107
-#: src/ai/llm-providers.md:134 src/ai/llm-providers.md:160
 msgid "\"region\""
 msgstr ""
 
-#: src/ai/llm-providers.md:77 src/ai/llm-providers.md:107
-#: src/ai/llm-providers.md:134 src/ai/llm-providers.md:160
+#: src/ai/llm-providers.md:76 src/ai/llm-providers.md:106
+#: src/ai/llm-providers.md:133 src/ai/llm-providers.md:159
 msgid "\"your-aws-region\""
 msgstr ""
 
-#: src/ai/llm-providers.md:78 src/ai/llm-providers.md:135
-#: src/ai/llm-providers.md:161
+#: src/ai/llm-providers.md:77 src/ai/llm-providers.md:134
+#: src/ai/llm-providers.md:160
 msgid "\"profile\""
 msgstr ""
 
-#: src/ai/llm-providers.md:78 src/ai/llm-providers.md:135
-#: src/ai/llm-providers.md:161
+#: src/ai/llm-providers.md:77 src/ai/llm-providers.md:134
+#: src/ai/llm-providers.md:160
 msgid "\"your-profile-name\""
 msgstr ""
 
-#: src/ai/llm-providers.md:84
+#: src/ai/llm-providers.md:83
 msgid "Authentication via Static Credentials"
 msgstr ""
 
-#: src/ai/llm-providers.md:86
+#: src/ai/llm-providers.md:85
 msgid ""
 "While it's possible to configure through the Agent Panel settings UI by "
 "entering your AWS access key and secret directly, we recommend using named "
 "profiles instead for better security practices. To do this:"
 msgstr ""
 
-#: src/ai/llm-providers.md:89
+#: src/ai/llm-providers.md:88
 msgid ""
 "Create an IAM User in the [IAM Console](https://us-east-1.console.aws.amazon."
 "com/iam/home?region=us-east-1#/users)."
 msgstr ""
 
-#: src/ai/llm-providers.md:90
+#: src/ai/llm-providers.md:89
 msgid ""
 "Create security credentials for that User, save them and keep them secure."
 msgstr ""
 
-#: src/ai/llm-providers.md:91 src/ai/llm-providers.md:99
+#: src/ai/llm-providers.md:90 src/ai/llm-providers.md:98
 msgid ""
 "Open the Agent Configuration with (`agent: open settings`) and go to the "
 "Amazon Bedrock section"
 msgstr ""
 
-#: src/ai/llm-providers.md:92
+#: src/ai/llm-providers.md:91
 msgid ""
 "Copy the credentials from Step 2 into the respective **Access Key ID**, "
 "**Secret Access Key**, and **Region** fields."
 msgstr ""
 
-#: src/ai/llm-providers.md:94
+#: src/ai/llm-providers.md:93
 msgid "Authentication via Bedrock API Key"
 msgstr ""
 
-#: src/ai/llm-providers.md:96
+#: src/ai/llm-providers.md:95
 msgid ""
 "Amazon Bedrock also supports [API Keys](https://docs.aws.amazon.com/bedrock/"
 "latest/userguide/api-keys-use.html), which authenticate directly without "
 "requiring IAM users or named profiles."
 msgstr ""
 
-#: src/ai/llm-providers.md:98
+#: src/ai/llm-providers.md:97
 msgid ""
 "Create an API Key in the [Amazon Bedrock Console](https://console.aws.amazon."
 "com/bedrock/)"
 msgstr ""
 
-#: src/ai/llm-providers.md:100
+#: src/ai/llm-providers.md:99
 msgid ""
 "Enter your Bedrock API key in the **API Key** field and select your "
 "**Region**"
 msgstr ""
 
-#: src/ai/llm-providers.md:106
+#: src/ai/llm-providers.md:105
 msgid "\"api_key\""
 msgstr ""
 
-#: src/ai/llm-providers.md:113
+#: src/ai/llm-providers.md:112
 msgid ""
 "The API key itself is stored securely in your OS keychain, not in your "
 "settings file."
 msgstr ""
 
-#: src/ai/llm-providers.md:115
+#: src/ai/llm-providers.md:114
 msgid "Cross-Region Inference"
 msgstr ""
 
-#: src/ai/llm-providers.md:117
+#: src/ai/llm-providers.md:116
 msgid ""
 "The Zed implementation of Amazon Bedrock uses [Cross-Region inference]"
 "(https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference."
@@ -337,39 +333,39 @@ msgid ""
 "throughput."
 msgstr ""
 
-#: src/ai/llm-providers.md:120
+#: src/ai/llm-providers.md:119
 msgid "Regional vs Global Inference Profiles"
 msgstr ""
 
-#: src/ai/llm-providers.md:122
+#: src/ai/llm-providers.md:121
 msgid "Bedrock supports two types of cross-region inference profiles:"
 msgstr ""
 
-#: src/ai/llm-providers.md:124
+#: src/ai/llm-providers.md:123
 msgid ""
 "**Regional profiles** (default): Route requests within a specific geography "
 "(US, EU, APAC). For example, `us-east-1` uses the `us.*` profile which "
 "routes across `us-east-1`, `us-east-2`, and `us-west-2`."
 msgstr ""
 
-#: src/ai/llm-providers.md:125
+#: src/ai/llm-providers.md:124
 msgid ""
 "**Global profiles**: Route requests across all commercial AWS Regions for "
 "maximum availability and performance."
 msgstr ""
 
-#: src/ai/llm-providers.md:127
+#: src/ai/llm-providers.md:126
 msgid ""
 "By default, Zed uses **regional profiles** which keep your data within the "
 "same geography. You can opt into global profiles by adding "
 "`\"allow_global\": true` to your Bedrock configuration:"
 msgstr ""
 
-#: src/ai/llm-providers.md:136
+#: src/ai/llm-providers.md:135
 msgid "\"allow_global\""
 msgstr ""
 
-#: src/ai/llm-providers.md:142
+#: src/ai/llm-providers.md:141
 msgid ""
 "**Note:** Only select newer models support global inference profiles. See "
 "the [AWS Bedrock supported models documentation](https://docs.aws.amazon.com/"
@@ -379,7 +375,7 @@ msgid ""
 "enabling `allow_global` may resolve them."
 msgstr ""
 
-#: src/ai/llm-providers.md:144
+#: src/ai/llm-providers.md:143
 msgid ""
 "Although the data remains stored only in the source Region, your input "
 "prompts and output results might move outside of your source Region during "
@@ -387,7 +383,7 @@ msgid ""
 "Amazon's secure network."
 msgstr ""
 
-#: src/ai/llm-providers.md:147
+#: src/ai/llm-providers.md:146
 msgid ""
 "We will support Cross-Region inference for each of the models on a best-"
 "effort basis, please refer to the [Cross-Region Inference method Code]"
@@ -395,114 +391,130 @@ msgid ""
 "rs#L297)."
 msgstr ""
 
-#: src/ai/llm-providers.md:149
+#: src/ai/llm-providers.md:148
 msgid ""
 "For the most up-to-date supported regions and models, refer to the "
 "[Supported Models and Regions for Cross Region inference](https://docs.aws."
 "amazon.com/bedrock/latest/userguide/inference-profiles-support.html)."
 msgstr ""
 
-#: src/ai/llm-providers.md:151
+#: src/ai/llm-providers.md:150
 msgid "Extended Context Window"
 msgstr ""
 
-#: src/ai/llm-providers.md:153
+#: src/ai/llm-providers.md:152
 msgid ""
 "Anthropic models on Bedrock support a 1M token extended context window "
 "through the `anthropic_beta` API parameter. To enable this feature, set "
 "`\"allow_extended_context\": true` in your Bedrock configuration:"
 msgstr ""
 
-#: src/ai/llm-providers.md:162
+#: src/ai/llm-providers.md:161
 msgid "\"allow_extended_context\""
 msgstr ""
 
-#: src/ai/llm-providers.md:168
+#: src/ai/llm-providers.md:167
 msgid ""
 "Zed enables extended context for supported models (Claude Sonnet 4.5, Claude "
 "Opus 4.6, and Claude Opus 4.7). Extended context usage may increase API costs"
 "—refer to AWS Bedrock pricing for details."
 msgstr ""
 
-#: src/ai/llm-providers.md:170
+#: src/ai/llm-providers.md:169
 msgid "Image Support"
 msgstr ""
 
-#: src/ai/llm-providers.md:172
+#: src/ai/llm-providers.md:171
 msgid ""
 "Bedrock models that support vision (Claude 3 and later, Amazon Nova Pro and "
 "Lite, Meta Llama 3.2 Vision models, Mistral Pixtral) can receive images in "
 "conversations and tool results."
 msgstr ""
 
-#: src/ai/llm-providers.md:174
+#: src/ai/llm-providers.md:173
 msgid "Anthropic"
 msgstr ""
 
-#: src/ai/llm-providers.md:176
+#: src/ai/llm-providers.md:175
 msgid ""
 "You can use Anthropic models by choosing them via the model dropdown in the "
 "Agent Panel."
 msgstr ""
 
-#: src/ai/llm-providers.md:178
+#: src/ai/llm-providers.md:177
 msgid ""
 "Sign up for Anthropic and [create an API key](https://console.anthropic.com/"
 "settings/keys)"
 msgstr ""
 
-#: src/ai/llm-providers.md:179
+#: src/ai/llm-providers.md:178
 msgid "Make sure that your Anthropic account has credits"
 msgstr ""
 
-#: src/ai/llm-providers.md:180
+#: src/ai/llm-providers.md:179
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the Anthropic "
 "section"
 msgstr ""
 
-#: src/ai/llm-providers.md:181
+#: src/ai/llm-providers.md:180
 msgid "Enter your Anthropic API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:183
+#: src/ai/llm-providers.md:182
 msgid ""
 "Even if you pay for Claude Pro, you will still have to [pay for additional "
 "credits](https://console.anthropic.com/settings/plans) to use it via the API."
 msgstr ""
 
-#: src/ai/llm-providers.md:185
+#: src/ai/llm-providers.md:184
 msgid ""
 "Zed will also use the `ANTHROPIC_API_KEY` environment variable if it's "
 "defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:187 src/ai/llm-providers.md:240
-#: src/ai/llm-providers.md:297 src/ai/llm-providers.md:361
-#: src/ai/llm-providers.md:520 src/ai/llm-providers.md:648
-#: src/ai/llm-providers.md:714 src/ai/llm-providers.md:852
+#: src/ai/llm-providers.md:186 src/ai/llm-providers.md:239
+#: src/ai/llm-providers.md:296 src/ai/llm-providers.md:360
+#: src/ai/llm-providers.md:519 src/ai/llm-providers.md:647
+#: src/ai/llm-providers.md:715 src/ai/llm-providers.md:841
 msgid "Custom Models"
 msgstr ""
 
-#: src/ai/llm-providers.md:189
+#: src/ai/llm-providers.md:188
 msgid ""
 "You can add custom models to the Anthropic provider by adding the following "
 "to your Zed settings file ([how to edit](../configuring-zed.md#settings-"
 "files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:194 src/ai/llm-providers.md:786
-#: src/ai/llm-providers.md:789
+#: src/ai/llm-providers.md:193 src/ai/llm-providers.md:787
+#: src/ai/llm-providers.md:790
 msgid "\"anthropic\""
 msgstr ""
 
-#: src/ai/llm-providers.md:195 src/ai/llm-providers.md:250
-#: src/ai/llm-providers.md:307 src/ai/llm-providers.md:372
-#: src/ai/llm-providers.md:420 src/ai/llm-providers.md:460
-#: src/ai/llm-providers.md:529 src/ai/llm-providers.md:583
-#: src/ai/llm-providers.md:656 src/ai/llm-providers.md:723
-#: src/ai/llm-providers.md:779 src/ai/llm-providers.md:861
+#: src/ai/llm-providers.md:194 src/ai/llm-providers.md:249
+#: src/ai/llm-providers.md:306 src/ai/llm-providers.md:371
+#: src/ai/llm-providers.md:419 src/ai/llm-providers.md:459
+#: src/ai/llm-providers.md:528 src/ai/llm-providers.md:582
+#: src/ai/llm-providers.md:655 src/ai/llm-providers.md:724
+#: src/ai/llm-providers.md:780 src/ai/llm-providers.md:850
 msgid "\"available_models\""
+msgstr ""
+
+#: src/ai/llm-providers.md:196 src/ai/llm-providers.md:219
+#: src/ai/llm-providers.md:251 src/ai/llm-providers.md:257
+#: src/ai/llm-providers.md:308 src/ai/llm-providers.md:317
+#: src/ai/llm-providers.md:373 src/ai/llm-providers.md:421
+#: src/ai/llm-providers.md:461 src/ai/llm-providers.md:530
+#: src/ai/llm-providers.md:537 src/ai/llm-providers.md:542
+#: src/ai/llm-providers.md:584 src/ai/llm-providers.md:657
+#: src/ai/llm-providers.md:726 src/ai/llm-providers.md:782
+#: src/ai/llm-providers.md:852 src/ai/llm-providers.md:858
+msgid "\"name\""
+msgstr ""
+
+#: src/ai/llm-providers.md:196
+msgid "\"claude-3-5-sonnet-20240620\""
 msgstr ""
 
 #: src/ai/llm-providers.md:197 src/ai/llm-providers.md:220
@@ -512,81 +524,65 @@ msgstr ""
 #: src/ai/llm-providers.md:462 src/ai/llm-providers.md:531
 #: src/ai/llm-providers.md:538 src/ai/llm-providers.md:543
 #: src/ai/llm-providers.md:585 src/ai/llm-providers.md:658
-#: src/ai/llm-providers.md:725 src/ai/llm-providers.md:781
-#: src/ai/llm-providers.md:863 src/ai/llm-providers.md:869
-msgid "\"name\""
+#: src/ai/llm-providers.md:727 src/ai/llm-providers.md:783
+#: src/ai/llm-providers.md:853 src/ai/llm-providers.md:859
+msgid "\"display_name\""
 msgstr ""
 
 #: src/ai/llm-providers.md:197
-msgid "\"claude-3-5-sonnet-20240620\""
+msgid "\"Sonnet 2024-June\""
 msgstr ""
 
 #: src/ai/llm-providers.md:198 src/ai/llm-providers.md:221
 #: src/ai/llm-providers.md:253 src/ai/llm-providers.md:259
 #: src/ai/llm-providers.md:310 src/ai/llm-providers.md:319
 #: src/ai/llm-providers.md:375 src/ai/llm-providers.md:423
-#: src/ai/llm-providers.md:463 src/ai/llm-providers.md:532
+#: src/ai/llm-providers.md:463 src/ai/llm-providers.md:533
 #: src/ai/llm-providers.md:539 src/ai/llm-providers.md:544
 #: src/ai/llm-providers.md:586 src/ai/llm-providers.md:659
-#: src/ai/llm-providers.md:726 src/ai/llm-providers.md:782
-#: src/ai/llm-providers.md:864 src/ai/llm-providers.md:870
-msgid "\"display_name\""
-msgstr ""
-
-#: src/ai/llm-providers.md:198
-msgid "\"Sonnet 2024-June\""
-msgstr ""
-
-#: src/ai/llm-providers.md:199 src/ai/llm-providers.md:222
-#: src/ai/llm-providers.md:254 src/ai/llm-providers.md:260
-#: src/ai/llm-providers.md:311 src/ai/llm-providers.md:320
-#: src/ai/llm-providers.md:376 src/ai/llm-providers.md:424
-#: src/ai/llm-providers.md:464 src/ai/llm-providers.md:534
-#: src/ai/llm-providers.md:540 src/ai/llm-providers.md:545
-#: src/ai/llm-providers.md:587 src/ai/llm-providers.md:660
-#: src/ai/llm-providers.md:727 src/ai/llm-providers.md:783
-#: src/ai/llm-providers.md:865 src/ai/llm-providers.md:871
+#: src/ai/llm-providers.md:728 src/ai/llm-providers.md:784
+#: src/ai/llm-providers.md:854 src/ai/llm-providers.md:860
 msgid "\"max_tokens\""
 msgstr ""
 
-#: src/ai/llm-providers.md:200 src/ai/llm-providers.md:255
-#: src/ai/llm-providers.md:261 src/ai/llm-providers.md:377
-#: src/ai/llm-providers.md:661 src/ai/llm-providers.md:728
-#: src/ai/llm-providers.md:866 src/ai/llm-providers.md:872
+#: src/ai/llm-providers.md:199 src/ai/llm-providers.md:254
+#: src/ai/llm-providers.md:260 src/ai/llm-providers.md:376
+#: src/ai/llm-providers.md:660 src/ai/llm-providers.md:729
+#: src/ai/llm-providers.md:855 src/ai/llm-providers.md:861
 msgid "\"max_output_tokens\""
 msgstr ""
 
-#: src/ai/llm-providers.md:201
+#: src/ai/llm-providers.md:200
 msgid "\"cache_configuration\""
 msgstr ""
 
-#: src/ai/llm-providers.md:202
+#: src/ai/llm-providers.md:201
 msgid "\"max_cache_anchors\""
 msgstr ""
 
-#: src/ai/llm-providers.md:203
+#: src/ai/llm-providers.md:202
 msgid "\"min_total_token\""
 msgstr ""
 
-#: src/ai/llm-providers.md:204
+#: src/ai/llm-providers.md:203
 msgid "\"should_speculate\""
 msgstr ""
 
-#: src/ai/llm-providers.md:206
+#: src/ai/llm-providers.md:205
 msgid "\"tool_override\""
 msgstr ""
 
-#: src/ai/llm-providers.md:206
+#: src/ai/llm-providers.md:205
 msgid "\"some-model-that-supports-toolcalling\""
 msgstr ""
 
-#: src/ai/llm-providers.md:214 src/ai/llm-providers.md:332
-#: src/ai/llm-providers.md:388 src/ai/llm-providers.md:562
-#: src/ai/llm-providers.md:682 src/ai/llm-providers.md:755
+#: src/ai/llm-providers.md:213 src/ai/llm-providers.md:331
+#: src/ai/llm-providers.md:387 src/ai/llm-providers.md:561
+#: src/ai/llm-providers.md:683 src/ai/llm-providers.md:756
 msgid "Custom models will be listed in the model dropdown in the Agent Panel."
 msgstr ""
 
-#: src/ai/llm-providers.md:216
+#: src/ai/llm-providers.md:215
 msgid ""
 "You can configure a model to use [extended thinking](https://docs.anthropic."
 "com/en/docs/about-claude/models/extended-thinking-models) (if it supports "
@@ -594,65 +590,65 @@ msgid ""
 "example:"
 msgstr ""
 
-#: src/ai/llm-providers.md:220
+#: src/ai/llm-providers.md:219
 msgid "\"claude-sonnet-4-latest\""
 msgstr ""
 
-#: src/ai/llm-providers.md:221
+#: src/ai/llm-providers.md:220
 msgid "\"claude-sonnet-4-thinking\""
 msgstr ""
 
-#: src/ai/llm-providers.md:223 src/ai/llm-providers.md:312
-#: src/ai/llm-providers.md:321 src/ai/llm-providers.md:731
+#: src/ai/llm-providers.md:222 src/ai/llm-providers.md:311
+#: src/ai/llm-providers.md:320 src/ai/llm-providers.md:732
 msgid "\"mode\""
 msgstr ""
 
-#: src/ai/llm-providers.md:224 src/ai/llm-providers.md:313
-#: src/ai/llm-providers.md:322 src/ai/llm-providers.md:732
+#: src/ai/llm-providers.md:223 src/ai/llm-providers.md:312
+#: src/ai/llm-providers.md:321 src/ai/llm-providers.md:733
 msgid "\"type\""
 msgstr ""
 
-#: src/ai/llm-providers.md:224 src/ai/llm-providers.md:313
-#: src/ai/llm-providers.md:322 src/ai/llm-providers.md:732
+#: src/ai/llm-providers.md:223 src/ai/llm-providers.md:312
+#: src/ai/llm-providers.md:321 src/ai/llm-providers.md:733
 msgid "\"thinking\""
 msgstr ""
 
-#: src/ai/llm-providers.md:225 src/ai/llm-providers.md:314
-#: src/ai/llm-providers.md:323 src/ai/llm-providers.md:733
+#: src/ai/llm-providers.md:224 src/ai/llm-providers.md:313
+#: src/ai/llm-providers.md:322 src/ai/llm-providers.md:734
 msgid "\"budget_tokens\""
 msgstr ""
 
-#: src/ai/llm-providers.md:230
+#: src/ai/llm-providers.md:229
 msgid "DeepSeek"
 msgstr ""
 
-#: src/ai/llm-providers.md:232
+#: src/ai/llm-providers.md:231
 msgid ""
 "Visit the DeepSeek platform and [create an API key](https://platform."
 "deepseek.com/api_keys)"
 msgstr ""
 
-#: src/ai/llm-providers.md:233
+#: src/ai/llm-providers.md:232
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the DeepSeek "
 "section"
 msgstr ""
 
-#: src/ai/llm-providers.md:234
+#: src/ai/llm-providers.md:233
 msgid "Enter your DeepSeek API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:236
+#: src/ai/llm-providers.md:235
 msgid "The DeepSeek API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:238
+#: src/ai/llm-providers.md:237
 msgid ""
 "Zed will also use the `DEEPSEEK_API_KEY` environment variable if it's "
 "defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:242
+#: src/ai/llm-providers.md:241
 msgid ""
 "The Zed agent comes pre-configured to use DeepSeek V4 Flash and DeepSeek V4 "
 "Pro. If you wish to use alternate models or customize the API endpoint, you "
@@ -660,124 +656,124 @@ msgid ""
 "(../configuring-zed.md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:248
+#: src/ai/llm-providers.md:247
 msgid "\"deepseek\""
 msgstr ""
 
-#: src/ai/llm-providers.md:249 src/ai/llm-providers.md:371
-#: src/ai/llm-providers.md:418 src/ai/llm-providers.md:459
-#: src/ai/llm-providers.md:582 src/ai/llm-providers.md:722
-#: src/ai/llm-providers.md:778 src/ai/llm-providers.md:822
-#: src/ai/llm-providers.md:860 src/ai/llm-providers.md:890
+#: src/ai/llm-providers.md:248 src/ai/llm-providers.md:370
+#: src/ai/llm-providers.md:417 src/ai/llm-providers.md:458
+#: src/ai/llm-providers.md:581 src/ai/llm-providers.md:723
+#: src/ai/llm-providers.md:779 src/ai/llm-providers.md:823
+#: src/ai/llm-providers.md:849 src/ai/llm-providers.md:879
 msgid "\"api_url\""
 msgstr ""
 
-#: src/ai/llm-providers.md:249
+#: src/ai/llm-providers.md:248
 msgid "\"https://api.deepseek.com\""
 msgstr ""
 
-#: src/ai/llm-providers.md:252
+#: src/ai/llm-providers.md:251
 msgid "\"deepseek-v4-flash\""
 msgstr ""
 
-#: src/ai/llm-providers.md:253
+#: src/ai/llm-providers.md:252
 msgid "\"DeepSeek V4 Flash\""
 msgstr ""
 
-#: src/ai/llm-providers.md:258
+#: src/ai/llm-providers.md:257
 msgid "\"deepseek-v4-pro\""
 msgstr ""
 
-#: src/ai/llm-providers.md:259
+#: src/ai/llm-providers.md:258
 msgid "\"DeepSeek V4 Pro\""
 msgstr ""
 
-#: src/ai/llm-providers.md:269
+#: src/ai/llm-providers.md:268
 msgid ""
 "Custom models will be listed in the model dropdown in the Agent Panel. You "
 "can also modify the `api_url` to use a custom endpoint if needed."
 msgstr ""
 
-#: src/ai/llm-providers.md:272
+#: src/ai/llm-providers.md:271
 msgid "GitHub Copilot Chat"
 msgstr ""
 
-#: src/ai/llm-providers.md:274
+#: src/ai/llm-providers.md:273
 msgid ""
 "You can use GitHub Copilot Chat with the Zed agent by choosing it via the "
 "model dropdown in the Agent Panel."
 msgstr ""
 
-#: src/ai/llm-providers.md:276
+#: src/ai/llm-providers.md:275
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the GitHub Copilot "
 "Chat section"
 msgstr ""
 
-#: src/ai/llm-providers.md:277
+#: src/ai/llm-providers.md:276
 msgid ""
 "Click on `Sign in to use GitHub Copilot`, follow the steps shown in the "
 "modal."
 msgstr ""
 
-#: src/ai/llm-providers.md:279
+#: src/ai/llm-providers.md:278
 msgid ""
 "Alternatively, you can provide an OAuth token via the `GH_COPILOT_TOKEN` "
 "environment variable."
 msgstr ""
 
-#: src/ai/llm-providers.md:281
+#: src/ai/llm-providers.md:280
 msgid ""
 "**Note**: If you don't see specific models in the dropdown, you may need to "
 "enable them in your [GitHub Copilot settings](https://github.com/settings/"
 "copilot/features)."
 msgstr ""
 
-#: src/ai/llm-providers.md:283
+#: src/ai/llm-providers.md:282
 msgid ""
 "To use Copilot Enterprise with Zed (for both agent and completions), you "
 "must configure your enterprise endpoint as described in [Configuring GitHub "
 "Copilot Enterprise](./edit-prediction.md#using-github-copilot-enterprise)."
 msgstr ""
 
-#: src/ai/llm-providers.md:285
+#: src/ai/llm-providers.md:284
 msgid "Google AI"
 msgstr ""
 
-#: src/ai/llm-providers.md:287
+#: src/ai/llm-providers.md:286
 msgid ""
 "You can use Gemini models with the Zed agent by choosing it via the model "
 "dropdown in the Agent Panel."
 msgstr ""
 
-#: src/ai/llm-providers.md:289
+#: src/ai/llm-providers.md:288
 msgid ""
 "Go to the Google AI Studio site and [create an API key](https://aistudio."
 "google.com/app/apikey)."
 msgstr ""
 
-#: src/ai/llm-providers.md:290
+#: src/ai/llm-providers.md:289
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the Google AI "
 "section"
 msgstr ""
 
-#: src/ai/llm-providers.md:291
+#: src/ai/llm-providers.md:290
 msgid "Enter your Google AI API key and press enter."
 msgstr ""
 
-#: src/ai/llm-providers.md:293
+#: src/ai/llm-providers.md:292
 msgid "The Google AI API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:295
+#: src/ai/llm-providers.md:294
 msgid ""
 "Zed will also use the `GEMINI_API_KEY` environment variable if it's defined. "
 "See [Using Gemini API keys](https://ai.google.dev/gemini-api/docs/api-key) "
 "in the Gemini docs for more."
 msgstr ""
 
-#: src/ai/llm-providers.md:299
+#: src/ai/llm-providers.md:298
 msgid ""
 "By default, Zed will use `stable` versions of models, but you can use "
 "specific versions of models, including [experimental models](https://ai."
@@ -788,89 +784,89 @@ msgid ""
 "specified, Gemini will automatically choose the thinking budget."
 msgstr ""
 
-#: src/ai/llm-providers.md:301
+#: src/ai/llm-providers.md:300
 msgid ""
 "Here is an example of a custom Google AI model you could add to your Zed "
 "settings file ([how to edit](../configuring-zed.md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:306 src/ai/llm-providers.md:789
+#: src/ai/llm-providers.md:305 src/ai/llm-providers.md:790
 msgid "\"google\""
 msgstr ""
 
-#: src/ai/llm-providers.md:309
+#: src/ai/llm-providers.md:308
 msgid "\"gemini-3.1-pro-preview\""
 msgstr ""
 
-#: src/ai/llm-providers.md:310
+#: src/ai/llm-providers.md:309
 msgid "\"Gemini 3.1 Pro\""
 msgstr ""
 
-#: src/ai/llm-providers.md:318
+#: src/ai/llm-providers.md:317
 msgid "\"gemini-3-flash-preview\""
 msgstr ""
 
-#: src/ai/llm-providers.md:319
+#: src/ai/llm-providers.md:318
 msgid "\"Gemini 3 Flash (Thinking)\""
 msgstr ""
 
-#: src/ai/llm-providers.md:334
+#: src/ai/llm-providers.md:333
 msgid "LM Studio"
 msgstr ""
 
-#: src/ai/llm-providers.md:336
+#: src/ai/llm-providers.md:335
 msgid ""
 "Download and install [the latest version of LM Studio](https://lmstudio.ai/"
 "download)"
 msgstr ""
 
-#: src/ai/llm-providers.md:337
+#: src/ai/llm-providers.md:336
 msgid ""
 "In the app press `cmd/ctrl-shift-m` and download at least one model (e.g., "
 "qwen2.5-coder-7b). Alternatively, you can get models via the LM Studio CLI:"
 msgstr ""
 
-#: src/ai/llm-providers.md:343
+#: src/ai/llm-providers.md:342
 msgid "Make sure the LM Studio API server is running by executing:"
 msgstr ""
 
-#: src/ai/llm-providers.md:349
+#: src/ai/llm-providers.md:348
 msgid ""
 "Tip: Set [LM Studio as a login item](https://lmstudio.ai/docs/advanced/"
 "headless#run-the-llm-service-on-machine-login) to automate running the LM "
 "Studio server."
 msgstr ""
 
-#: src/ai/llm-providers.md:351
+#: src/ai/llm-providers.md:350
 msgid "Mistral"
 msgstr ""
 
-#: src/ai/llm-providers.md:353
+#: src/ai/llm-providers.md:352
 msgid ""
 "Visit the Mistral platform and [create an API key](https://console.mistral."
 "ai/api-keys/)"
 msgstr ""
 
-#: src/ai/llm-providers.md:354
+#: src/ai/llm-providers.md:353
 msgid ""
 "Open the configuration view (`agent: open settings`) and navigate to the "
 "Mistral section"
 msgstr ""
 
-#: src/ai/llm-providers.md:355
+#: src/ai/llm-providers.md:354
 msgid "Enter your Mistral API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:357
+#: src/ai/llm-providers.md:356
 msgid "The Mistral API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:359
+#: src/ai/llm-providers.md:358
 msgid ""
 "Zed will also use the `MISTRAL_API_KEY` environment variable if it's defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:363
+#: src/ai/llm-providers.md:362
 msgid ""
 "The Zed agent comes pre-configured with several Mistral models (codestral-"
 "latest, mistral-large-latest, mistral-medium-latest, mistral-small-latest, "
@@ -880,147 +876,147 @@ msgid ""
 "edit](../configuring-zed.md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:370
+#: src/ai/llm-providers.md:369
 msgid "\"mistral\""
 msgstr ""
 
-#: src/ai/llm-providers.md:371
+#: src/ai/llm-providers.md:370
 msgid "\"https://api.mistral.ai/v1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:374
+#: src/ai/llm-providers.md:373
 msgid "\"mistral-tiny-latest\""
 msgstr ""
 
-#: src/ai/llm-providers.md:375
+#: src/ai/llm-providers.md:374
 msgid "\"Mistral Tiny\""
 msgstr ""
 
-#: src/ai/llm-providers.md:378 src/ai/llm-providers.md:535
+#: src/ai/llm-providers.md:377 src/ai/llm-providers.md:534
 msgid "\"max_completion_tokens\""
 msgstr ""
 
-#: src/ai/llm-providers.md:379 src/ai/llm-providers.md:425
-#: src/ai/llm-providers.md:465 src/ai/llm-providers.md:729
-#: src/ai/llm-providers.md:784
+#: src/ai/llm-providers.md:378 src/ai/llm-providers.md:424
+#: src/ai/llm-providers.md:464 src/ai/llm-providers.md:730
+#: src/ai/llm-providers.md:785
 msgid "\"supports_tools\""
 msgstr ""
 
-#: src/ai/llm-providers.md:380 src/ai/llm-providers.md:427
-#: src/ai/llm-providers.md:467 src/ai/llm-providers.md:730
-#: src/ai/llm-providers.md:873
+#: src/ai/llm-providers.md:379 src/ai/llm-providers.md:426
+#: src/ai/llm-providers.md:466 src/ai/llm-providers.md:731
+#: src/ai/llm-providers.md:862
 msgid "\"supports_images\""
 msgstr ""
 
-#: src/ai/llm-providers.md:390
+#: src/ai/llm-providers.md:389
 msgid "Ollama"
 msgstr ""
 
-#: src/ai/llm-providers.md:392
+#: src/ai/llm-providers.md:391
 msgid ""
 "Download and install Ollama from [ollama.com/download](https://ollama.com/"
 "download) (Linux or macOS) and ensure it's running with `ollama --version`."
 msgstr ""
 
-#: src/ai/llm-providers.md:394
+#: src/ai/llm-providers.md:393
 msgid ""
 "Download one of the [available models](https://ollama.com/models), for "
 "example, for `mistral`:"
 msgstr ""
 
-#: src/ai/llm-providers.md:400
+#: src/ai/llm-providers.md:399
 msgid ""
 "Make sure that the Ollama server is running. You can start it either via "
 "running Ollama.app (macOS) or launching:"
 msgstr ""
 
-#: src/ai/llm-providers.md:406
+#: src/ai/llm-providers.md:405
 msgid ""
 "In the Agent Panel, select one of the Ollama models using the model dropdown."
 msgstr ""
 
-#: src/ai/llm-providers.md:408
+#: src/ai/llm-providers.md:407
 msgid "Ollama Autodiscovery"
 msgstr ""
 
-#: src/ai/llm-providers.md:410
+#: src/ai/llm-providers.md:409
 msgid ""
 "Zed will automatically discover models that Ollama has pulled. You can turn "
 "this off by setting the `auto_discover` field in the Ollama settings. If you "
 "do this, you should manually specify which models are available."
 msgstr ""
 
-#: src/ai/llm-providers.md:417 src/ai/llm-providers.md:446
-#: src/ai/llm-providers.md:458
+#: src/ai/llm-providers.md:416 src/ai/llm-providers.md:445
+#: src/ai/llm-providers.md:457
 msgid "\"ollama\""
 msgstr ""
 
-#: src/ai/llm-providers.md:418 src/ai/llm-providers.md:459
-#: src/ai/llm-providers.md:890
+#: src/ai/llm-providers.md:417 src/ai/llm-providers.md:458
+#: src/ai/llm-providers.md:879
 msgid "\"http://localhost:11434\""
 msgstr ""
 
-#: src/ai/llm-providers.md:419
+#: src/ai/llm-providers.md:418
 msgid "\"auto_discover\""
 msgstr ""
 
-#: src/ai/llm-providers.md:422 src/ai/llm-providers.md:462
+#: src/ai/llm-providers.md:421 src/ai/llm-providers.md:461
 msgid "\"qwen2.5-coder\""
 msgstr ""
 
-#: src/ai/llm-providers.md:423
+#: src/ai/llm-providers.md:422
 msgid "\"qwen 2.5 coder\""
 msgstr ""
 
-#: src/ai/llm-providers.md:426 src/ai/llm-providers.md:466
+#: src/ai/llm-providers.md:425 src/ai/llm-providers.md:465
 msgid "\"supports_thinking\""
 msgstr ""
 
-#: src/ai/llm-providers.md:435
+#: src/ai/llm-providers.md:434
 msgid "Ollama Context Length"
 msgstr ""
 
-#: src/ai/llm-providers.md:437
+#: src/ai/llm-providers.md:436
 msgid ""
 "Zed API requests to Ollama include the context length as the `num_ctx` "
 "parameter. By default, Zed uses a context length of `4096` tokens for all "
 "Ollama models."
 msgstr ""
 
-#: src/ai/llm-providers.md:439
+#: src/ai/llm-providers.md:438
 msgid ""
 "**Note**: Token counts displayed in the Agent Panel are only estimates and "
 "will differ from the model's native tokenizer."
 msgstr ""
 
-#: src/ai/llm-providers.md:441
+#: src/ai/llm-providers.md:440
 msgid ""
 "You can set a context length for all Ollama models using the "
 "`context_window` setting. This can also be configured in the Ollama provider "
 "settings UI:"
 msgstr ""
 
-#: src/ai/llm-providers.md:447
+#: src/ai/llm-providers.md:446
 msgid "\"context_window\""
 msgstr ""
 
-#: src/ai/llm-providers.md:453
+#: src/ai/llm-providers.md:452
 msgid ""
 "Alternatively, you can configure the context length per-model using the "
 "`max_tokens` field in `available_models`:"
 msgstr ""
 
-#: src/ai/llm-providers.md:463
+#: src/ai/llm-providers.md:462
 msgid "\"qwen 2.5 coder 32K\""
 msgstr ""
 
-#: src/ai/llm-providers.md:475
+#: src/ai/llm-providers.md:474
 msgid ""
 "**Note**: If `context_window` is set, it overrides any per-model "
 "`max_tokens` values."
 msgstr ""
 
-#: src/ai/llm-providers.md:477
+#: src/ai/llm-providers.md:476
 msgid ""
 "If you specify a context length that is too large for your hardware, Ollama "
 "will log an error. You can watch these logs by running: `tail -f ~/.ollama/"
@@ -1029,7 +1025,7 @@ msgid ""
 "length to a smaller value."
 msgstr ""
 
-#: src/ai/llm-providers.md:481
+#: src/ai/llm-providers.md:480
 msgid ""
 "You may also optionally specify a value for `keep_alive` for each available "
 "model. This can be an integer (seconds) or alternatively a string duration "
@@ -1038,7 +1034,7 @@ msgid ""
 "VRAM) after 120 seconds."
 msgstr ""
 
-#: src/ai/llm-providers.md:485
+#: src/ai/llm-providers.md:484
 msgid ""
 "The `supports_tools` option controls whether the model will use additional "
 "tools. If the model is tagged with `tools` in the Ollama catalog, this "
@@ -1048,7 +1044,7 @@ msgid ""
 "only the `Minimal` built-in profile will work."
 msgstr ""
 
-#: src/ai/llm-providers.md:489
+#: src/ai/llm-providers.md:488
 msgid ""
 "The `supports_thinking` option controls whether the model will perform an "
 "explicit \"thinking\" (reasoning) pass before producing its final answer. If "
@@ -1056,7 +1052,7 @@ msgid ""
 "and you can use it in Zed."
 msgstr ""
 
-#: src/ai/llm-providers.md:492
+#: src/ai/llm-providers.md:491
 msgid ""
 "The `supports_images` option enables the model's vision capabilities, "
 "allowing it to process images included in the conversation context. If the "
@@ -1064,84 +1060,84 @@ msgid ""
 "can use it in Zed."
 msgstr ""
 
-#: src/ai/llm-providers.md:495
+#: src/ai/llm-providers.md:494
 msgid "Ollama Authentication"
 msgstr ""
 
-#: src/ai/llm-providers.md:497
+#: src/ai/llm-providers.md:496
 msgid ""
 "In addition to running Ollama on your own hardware, which generally does not "
 "require authentication, Zed also supports connecting to remote Ollama "
 "instances. API keys are required for authentication."
 msgstr ""
 
-#: src/ai/llm-providers.md:499
+#: src/ai/llm-providers.md:498
 msgid ""
 "One such service is [Ollama Turbo](https://ollama.com/turbo). To configure "
 "Zed to use Ollama Turbo:"
 msgstr ""
 
-#: src/ai/llm-providers.md:501
+#: src/ai/llm-providers.md:500
 msgid "Sign in to your Ollama account and subscribe to Ollama Turbo"
 msgstr ""
 
-#: src/ai/llm-providers.md:502
+#: src/ai/llm-providers.md:501
 msgid ""
 "Visit [ollama.com/settings/keys](https://ollama.com/settings/keys) and "
 "create an API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:503
+#: src/ai/llm-providers.md:502
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the Ollama section"
 msgstr ""
 
-#: src/ai/llm-providers.md:504
+#: src/ai/llm-providers.md:503
 msgid "Paste your API key and press enter."
 msgstr ""
 
-#: src/ai/llm-providers.md:505
+#: src/ai/llm-providers.md:504
 msgid "For the API URL enter `https://ollama.com`"
 msgstr ""
 
-#: src/ai/llm-providers.md:507
+#: src/ai/llm-providers.md:506
 msgid ""
 "Zed will also use the `OLLAMA_API_KEY` environment variables if defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:509
+#: src/ai/llm-providers.md:508
 msgid "OpenAI"
 msgstr ""
 
-#: src/ai/llm-providers.md:511
+#: src/ai/llm-providers.md:510
 msgid ""
 "Visit the OpenAI platform and [create an API key](https://platform.openai."
 "com/account/api-keys)"
 msgstr ""
 
-#: src/ai/llm-providers.md:512
+#: src/ai/llm-providers.md:511
 msgid "Make sure that your OpenAI account has credits"
 msgstr ""
 
-#: src/ai/llm-providers.md:513
+#: src/ai/llm-providers.md:512
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the OpenAI section"
 msgstr ""
 
-#: src/ai/llm-providers.md:514
+#: src/ai/llm-providers.md:513
 msgid "Enter your OpenAI API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:516
+#: src/ai/llm-providers.md:515
 msgid "The OpenAI API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:518
+#: src/ai/llm-providers.md:517
 msgid ""
 "Zed will also use the `OPENAI_API_KEY` environment variable if it's defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:522
+#: src/ai/llm-providers.md:521
 msgid ""
 "The Zed agent comes pre-configured to use the latest version for common "
 "OpenAI models (GPT-5.2, GPT-5 mini, GPT-5.2 Codex, and others). To use "
@@ -1150,76 +1146,76 @@ msgid ""
 "settings file ([how to edit](../configuring-zed.md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:528 src/ai/llm-providers.md:786
-#: src/ai/llm-providers.md:789
+#: src/ai/llm-providers.md:527 src/ai/llm-providers.md:787
+#: src/ai/llm-providers.md:790
 msgid "\"openai\""
 msgstr ""
 
-#: src/ai/llm-providers.md:531
+#: src/ai/llm-providers.md:530
 msgid "\"gpt-5.2\""
 msgstr ""
 
-#: src/ai/llm-providers.md:532
+#: src/ai/llm-providers.md:531
 msgid "\"gpt-5.2 high\""
 msgstr ""
 
-#: src/ai/llm-providers.md:533
+#: src/ai/llm-providers.md:532
 msgid "\"reasoning_effort\""
 msgstr ""
 
-#: src/ai/llm-providers.md:533
+#: src/ai/llm-providers.md:532 src/ai/llm-providers.md:662
 msgid "\"high\""
 msgstr ""
 
-#: src/ai/llm-providers.md:538
+#: src/ai/llm-providers.md:537
 msgid "\"gpt-5-nano\""
 msgstr ""
 
-#: src/ai/llm-providers.md:539
+#: src/ai/llm-providers.md:538
 msgid "\"GPT-5 Nano\""
 msgstr ""
 
-#: src/ai/llm-providers.md:543
+#: src/ai/llm-providers.md:542
 msgid "\"gpt-5.2-codex\""
 msgstr ""
 
-#: src/ai/llm-providers.md:544
+#: src/ai/llm-providers.md:543
 msgid "\"GPT-5.2 Codex\""
 msgstr ""
 
-#: src/ai/llm-providers.md:546 src/ai/llm-providers.md:588
+#: src/ai/llm-providers.md:545 src/ai/llm-providers.md:587
 msgid "\"capabilities\""
 msgstr ""
 
-#: src/ai/llm-providers.md:547
+#: src/ai/llm-providers.md:546
 msgid "\"chat_completions\""
 msgstr ""
 
-#: src/ai/llm-providers.md:556
+#: src/ai/llm-providers.md:555
 msgid ""
 "You must provide the model's context window in the `max_tokens` parameter; "
 "this can be found in the [OpenAI model documentation](https://platform."
 "openai.com/docs/models)."
 msgstr ""
 
-#: src/ai/llm-providers.md:558
+#: src/ai/llm-providers.md:557
 msgid ""
 "For reasoning-focused models, set `max_completion_tokens` as well to avoid "
 "incurring high reasoning token costs."
 msgstr ""
 
-#: src/ai/llm-providers.md:560
+#: src/ai/llm-providers.md:559
 msgid ""
 "If a model does not support the `/chat/completions` endpoint (for example "
 "`gpt-5.2-codex`), disable it by setting `capabilities.chat_completions` to "
 "`false`. Zed will use the Responses endpoint instead."
 msgstr ""
 
-#: src/ai/llm-providers.md:564
+#: src/ai/llm-providers.md:563
 msgid "OpenAI API Compatible"
 msgstr ""
 
-#: src/ai/llm-providers.md:566
+#: src/ai/llm-providers.md:565
 msgid ""
 "Zed supports using [OpenAI compatible APIs](https://platform.openai.com/docs/"
 "api-reference/chat) by specifying a custom `api_url` and `available_models` "
@@ -1227,13 +1223,13 @@ msgid ""
 "services (like Together AI, Anyscale, etc.) or local models."
 msgstr ""
 
-#: src/ai/llm-providers.md:569
+#: src/ai/llm-providers.md:568
 msgid ""
 "You can add a custom, OpenAI-compatible model either via the UI or by "
 "editing your settings file."
 msgstr ""
 
-#: src/ai/llm-providers.md:571
+#: src/ai/llm-providers.md:570
 msgid ""
 "To do it via the UI, go to the Agent Panel settings (`agent: open settings`) "
 "and look for the \"Add Provider\" button to the right of the \"LLM "
@@ -1241,93 +1237,93 @@ msgid ""
 "modal."
 msgstr ""
 
-#: src/ai/llm-providers.md:574
+#: src/ai/llm-providers.md:573
 msgid ""
 "To do it via your settings file ([how to edit](../configuring-zed."
 "md#settings-files)), add the following snippet under `language_models`:"
 msgstr ""
 
-#: src/ai/llm-providers.md:579
+#: src/ai/llm-providers.md:578
 msgid "\"openai_compatible\""
 msgstr ""
 
-#: src/ai/llm-providers.md:580
+#: src/ai/llm-providers.md:579
 msgid ""
 "// Using Together AI as an example\n"
 "      \"Together AI\""
 msgstr ""
 
-#: src/ai/llm-providers.md:582
+#: src/ai/llm-providers.md:581
 msgid "\"https://api.together.xyz/v1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:585
+#: src/ai/llm-providers.md:584
 msgid "\"mistralai/Mixtral-8x7B-Instruct-v0.1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:586
+#: src/ai/llm-providers.md:585
 msgid "\"Together Mixtral 8x7B\""
 msgstr ""
 
-#: src/ai/llm-providers.md:589
+#: src/ai/llm-providers.md:588
 msgid "\"tools\""
 msgstr ""
 
-#: src/ai/llm-providers.md:590
+#: src/ai/llm-providers.md:589
 msgid "\"images\""
 msgstr ""
 
-#: src/ai/llm-providers.md:591
+#: src/ai/llm-providers.md:590
 msgid "\"parallel_tool_calls\""
 msgstr ""
 
-#: src/ai/llm-providers.md:592
+#: src/ai/llm-providers.md:591
 msgid "\"prompt_cache_key\""
 msgstr ""
 
-#: src/ai/llm-providers.md:602
+#: src/ai/llm-providers.md:601
 msgid ""
 "By default, OpenAI-compatible models inherit the following capabilities:"
 msgstr ""
 
-#: src/ai/llm-providers.md:604
+#: src/ai/llm-providers.md:603
 msgid "`tools`: true (supports tool/function calling)"
 msgstr ""
 
-#: src/ai/llm-providers.md:605
+#: src/ai/llm-providers.md:604
 msgid "`images`: false (does not support image inputs)"
 msgstr ""
 
-#: src/ai/llm-providers.md:606
+#: src/ai/llm-providers.md:605
 msgid ""
 "`parallel_tool_calls`: false (does not support `parallel_tool_calls` "
 "parameter)"
 msgstr ""
 
-#: src/ai/llm-providers.md:607
+#: src/ai/llm-providers.md:606
 msgid ""
 "`prompt_cache_key`: false (does not support `prompt_cache_key` parameter)"
 msgstr ""
 
-#: src/ai/llm-providers.md:608
+#: src/ai/llm-providers.md:607
 msgid "`chat_completions`: true (calls the `/chat/completions` endpoint)"
 msgstr ""
 
-#: src/ai/llm-providers.md:609
+#: src/ai/llm-providers.md:608
 msgid ""
 "`interleaved_reasoning`: false (thinking tokens are sent inline in message "
 "text; set to true to send them as a dedicated `reasoning_content` field for "
 "models that expect it)"
 msgstr ""
 
-#: src/ai/llm-providers.md:611
+#: src/ai/llm-providers.md:610
 msgid ""
 "If a provider exposes models that only work with the Responses API, set "
 "`chat_completions` to `false` for those entries. Zed uses the Responses "
 "endpoint for these models."
 msgstr ""
 
-#: src/ai/llm-providers.md:613
+#: src/ai/llm-providers.md:612
 msgid ""
 "Note that LLM API keys aren't stored in your settings file. So, ensure you "
 "have it set in your environment variables (`<PROVIDER_NAME>_API_KEY=<your "
@@ -1335,92 +1331,92 @@ msgid ""
 "be `TOGETHER_AI_API_KEY=<your api key>`."
 msgstr ""
 
-#: src/ai/llm-providers.md:616
+#: src/ai/llm-providers.md:615
 msgid "OpenCode"
 msgstr ""
 
-#: src/ai/llm-providers.md:618
+#: src/ai/llm-providers.md:617
 msgid "OpenCode offers multiple ways to access AI models:"
 msgstr ""
 
-#: src/ai/llm-providers.md:620
+#: src/ai/llm-providers.md:619
 msgid ""
 "[OpenCode Zen](https://opencode.ai/zen/): a pay-as-you-go subscription with "
 "access to a large number of tested and verified models"
 msgstr ""
 
-#: src/ai/llm-providers.md:621
+#: src/ai/llm-providers.md:620
 msgid ""
 "[OpenCode Zen Free](https://opencode.ai/docs/zen/#pricing): free access to a "
 "limited set of models, with data and feedback collected to improve the models"
 msgstr ""
 
-#: src/ai/llm-providers.md:622
+#: src/ai/llm-providers.md:621
 msgid ""
 "[OpenCode Go](https://opencode.ai/go): a low-cost monthly subscription with "
 "access to a validated set of open coding models"
 msgstr ""
 
-#: src/ai/llm-providers.md:624
+#: src/ai/llm-providers.md:623
 msgid ""
 "Visit [OpenCode Console](https://opencode.ai/auth) and create an account"
 msgstr ""
 
-#: src/ai/llm-providers.md:625
+#: src/ai/llm-providers.md:624
 msgid ""
 "Free models are available without payment. To use Zen or Go models, make "
 "sure you have enough credits or an active subscription"
 msgstr ""
 
-#: src/ai/llm-providers.md:626
+#: src/ai/llm-providers.md:625
 msgid ""
 "Generate an API key from the \"API Keys\" section in the OpenCode Console"
 msgstr ""
 
-#: src/ai/llm-providers.md:627
+#: src/ai/llm-providers.md:626
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the OpenCode "
 "section"
 msgstr ""
 
-#: src/ai/llm-providers.md:628
+#: src/ai/llm-providers.md:627
 msgid "Enter your OpenCode API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:630
+#: src/ai/llm-providers.md:629
 msgid "The OpenCode API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:632
+#: src/ai/llm-providers.md:631
 msgid ""
 "Zed will also use the `OPENCODE_API_KEY` environment variable if it's "
 "defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:634
+#: src/ai/llm-providers.md:633
 msgid ""
 "By default, models from all subscription types are shown. Optionally, you "
 "can hide subscriptions that are not relevant to you by clicking the toggles "
 "or by adding the following to your settings:"
 msgstr ""
 
-#: src/ai/llm-providers.md:639 src/ai/llm-providers.md:655
+#: src/ai/llm-providers.md:638 src/ai/llm-providers.md:654
 msgid "\"opencode\""
 msgstr ""
 
-#: src/ai/llm-providers.md:640
+#: src/ai/llm-providers.md:639
 msgid "\"show_zen_models\""
 msgstr ""
 
-#: src/ai/llm-providers.md:641
+#: src/ai/llm-providers.md:640
 msgid "\"show_go_models\""
 msgstr ""
 
-#: src/ai/llm-providers.md:642
+#: src/ai/llm-providers.md:641
 msgid "\"show_free_models\""
 msgstr ""
 
-#: src/ai/llm-providers.md:650
+#: src/ai/llm-providers.md:649
 msgid ""
 "The Zed agent comes pre-configured with OpenCode models. If you wish to use "
 "newer models or models with custom endpoints, you can do so by adding the "
@@ -1428,20 +1424,32 @@ msgid ""
 "md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:658
+#: src/ai/llm-providers.md:657
 msgid "\"my-custom-model\""
 msgstr ""
 
-#: src/ai/llm-providers.md:659
+#: src/ai/llm-providers.md:658
 msgid "\"My Custom Model\""
 msgstr ""
 
-#: src/ai/llm-providers.md:662
+#: src/ai/llm-providers.md:661
 msgid "\"protocol\""
 msgstr ""
 
-#: src/ai/llm-providers.md:662
+#: src/ai/llm-providers.md:661
 msgid "\"openai_chat\""
+msgstr ""
+
+#: src/ai/llm-providers.md:662
+msgid "\"reasoning_effort_levels\""
+msgstr ""
+
+#: src/ai/llm-providers.md:662
+msgid "\"low\""
+msgstr ""
+
+#: src/ai/llm-providers.md:662
+msgid "\"medium\""
 msgstr ""
 
 #: src/ai/llm-providers.md:663
@@ -1494,398 +1502,374 @@ msgstr ""
 
 #: src/ai/llm-providers.md:679
 msgid ""
+"`reasoning_effort_levels` (optional): list of supported reasoning effort "
+"levels, for example `[\"low\", \"medium\", \"high\"]`. The latest value in "
+"the list is used as the default"
+msgstr ""
+
+#: src/ai/llm-providers.md:680
+msgid ""
 "`subscription` (optional): `\"zen\"`, `\"go\"`, or `\"free\"` (defaults to "
 "`\"zen\"`)"
 msgstr ""
 
-#: src/ai/llm-providers.md:680
+#: src/ai/llm-providers.md:681
 msgid ""
 "`custom_model_api_url` (optional): custom API base URL to use instead of the "
 "default OpenCode API"
 msgstr ""
 
-#: src/ai/llm-providers.md:684
+#: src/ai/llm-providers.md:685
 msgid "OpenRouter"
 msgstr ""
 
-#: src/ai/llm-providers.md:686
+#: src/ai/llm-providers.md:687
 msgid ""
 "OpenRouter provides access to multiple AI models through a single API. It "
 "supports tool use for compatible models."
 msgstr ""
 
-#: src/ai/llm-providers.md:688
+#: src/ai/llm-providers.md:689
 msgid "Visit [OpenRouter](https://openrouter.ai) and create an account"
 msgstr ""
 
-#: src/ai/llm-providers.md:689
+#: src/ai/llm-providers.md:690
 msgid ""
 "Generate an API key from your [OpenRouter keys page](https://openrouter.ai/"
 "keys)"
 msgstr ""
 
-#: src/ai/llm-providers.md:690
+#: src/ai/llm-providers.md:691
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the OpenRouter "
 "section"
 msgstr ""
 
-#: src/ai/llm-providers.md:691
+#: src/ai/llm-providers.md:692
 msgid "Enter your OpenRouter API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:693
+#: src/ai/llm-providers.md:694
 msgid "The OpenRouter API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:695
+#: src/ai/llm-providers.md:696
 msgid ""
 "Zed will also use the `OPENROUTER_API_KEY` environment variable if it's "
 "defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:697
+#: src/ai/llm-providers.md:698
 msgid ""
 "When using OpenRouter as your assistant provider, you must explicitly select "
 "a model in your settings. OpenRouter no longer provides a default model "
 "selection."
 msgstr ""
 
-#: src/ai/llm-providers.md:699
+#: src/ai/llm-providers.md:700
 msgid "Configure your preferred OpenRouter model in `settings.json`:"
 msgstr ""
 
-#: src/ai/llm-providers.md:703
+#: src/ai/llm-providers.md:704
 msgid "\"agent\""
 msgstr ""
 
-#: src/ai/llm-providers.md:704
+#: src/ai/llm-providers.md:705
 msgid "\"default_model\""
 msgstr ""
 
-#: src/ai/llm-providers.md:705 src/ai/llm-providers.md:785
+#: src/ai/llm-providers.md:706 src/ai/llm-providers.md:786
 msgid "\"provider\""
 msgstr ""
 
-#: src/ai/llm-providers.md:705
+#: src/ai/llm-providers.md:706
 msgid "\"openrouter\""
 msgstr ""
 
-#: src/ai/llm-providers.md:706
+#: src/ai/llm-providers.md:707
 msgid "\"model\""
 msgstr ""
 
-#: src/ai/llm-providers.md:706 src/ai/llm-providers.md:781
+#: src/ai/llm-providers.md:707 src/ai/llm-providers.md:782
 msgid "\"openrouter/auto\""
 msgstr ""
 
-#: src/ai/llm-providers.md:712
+#: src/ai/llm-providers.md:713
 msgid ""
 "The `openrouter/auto` model automatically routes your requests to the most "
 "appropriate available model. You can also specify any model available "
 "through OpenRouter's API."
 msgstr ""
 
-#: src/ai/llm-providers.md:716
+#: src/ai/llm-providers.md:717
 msgid ""
 "You can add custom models to the OpenRouter provider by adding the following "
 "to your Zed settings file ([how to edit](../configuring-zed.md#settings-"
 "files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:721 src/ai/llm-providers.md:777
+#: src/ai/llm-providers.md:722 src/ai/llm-providers.md:778
 msgid "\"open_router\""
 msgstr ""
 
-#: src/ai/llm-providers.md:722 src/ai/llm-providers.md:778
+#: src/ai/llm-providers.md:723 src/ai/llm-providers.md:779
 msgid "\"https://openrouter.ai/api/v1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:725
+#: src/ai/llm-providers.md:726
 msgid "\"google/gemini-2.0-flash-thinking-exp\""
 msgstr ""
 
-#: src/ai/llm-providers.md:726
+#: src/ai/llm-providers.md:727
 msgid "\"Gemini 2.0 Flash (Thinking)\""
 msgstr ""
 
-#: src/ai/llm-providers.md:742
+#: src/ai/llm-providers.md:743
 msgid "The available configuration options for each model are:"
 msgstr ""
 
-#: src/ai/llm-providers.md:744
+#: src/ai/llm-providers.md:745
 msgid "`name` (required): The model identifier used by OpenRouter"
 msgstr ""
 
-#: src/ai/llm-providers.md:745
+#: src/ai/llm-providers.md:746
 msgid "`display_name` (optional): A human-readable name shown in the UI"
 msgstr ""
 
-#: src/ai/llm-providers.md:746
+#: src/ai/llm-providers.md:747
 msgid "`max_tokens` (required): The model's context window size"
 msgstr ""
 
-#: src/ai/llm-providers.md:747
+#: src/ai/llm-providers.md:748
 msgid "`max_output_tokens` (optional): Maximum tokens the model can generate"
 msgstr ""
 
-#: src/ai/llm-providers.md:748
+#: src/ai/llm-providers.md:749
 msgid "`max_completion_tokens` (optional): Maximum completion tokens"
 msgstr ""
 
-#: src/ai/llm-providers.md:749
+#: src/ai/llm-providers.md:750
 msgid ""
 "`supports_tools` (optional): Whether the model supports tool/function calling"
 msgstr ""
 
-#: src/ai/llm-providers.md:750
+#: src/ai/llm-providers.md:751
 msgid "`supports_images` (optional): Whether the model supports image inputs"
 msgstr ""
 
-#: src/ai/llm-providers.md:751
+#: src/ai/llm-providers.md:752
 msgid "`mode` (optional): Special mode configuration for thinking models"
 msgstr ""
 
-#: src/ai/llm-providers.md:753
+#: src/ai/llm-providers.md:754
 msgid ""
 "You can find available models and their specifications on the [OpenRouter "
 "models page](https://openrouter.ai/models)."
 msgstr ""
 
-#: src/ai/llm-providers.md:757
+#: src/ai/llm-providers.md:758
 msgid "Provider Routing"
 msgstr ""
 
-#: src/ai/llm-providers.md:759
+#: src/ai/llm-providers.md:760
 msgid ""
 "You can optionally control how OpenRouter routes a given custom model "
 "request among underlying upstream providers via the `provider` object on "
 "each model entry."
 msgstr ""
 
-#: src/ai/llm-providers.md:761
+#: src/ai/llm-providers.md:762
 msgid "Supported fields (all optional):"
 msgstr ""
 
-#: src/ai/llm-providers.md:763
+#: src/ai/llm-providers.md:764
 msgid ""
 "`order`: Array of provider slugs to try first, in order (e.g. "
 "`[\"anthropic\", \"openai\"]`)"
 msgstr ""
 
-#: src/ai/llm-providers.md:764
+#: src/ai/llm-providers.md:765
 msgid ""
 "`allow_fallbacks` (default: `true`): Whether fallback providers may be used "
 "if preferred ones are unavailable"
 msgstr ""
 
-#: src/ai/llm-providers.md:765
+#: src/ai/llm-providers.md:766
 msgid ""
 "`require_parameters` (default: `false`): Only use providers that support "
 "every parameter you supplied"
 msgstr ""
 
-#: src/ai/llm-providers.md:766
+#: src/ai/llm-providers.md:767
 msgid ""
 "`data_collection` (default: `allow`): `\"allow\"` or `\"disallow\"` "
 "(controls use of providers that may store data)"
 msgstr ""
 
-#: src/ai/llm-providers.md:767
+#: src/ai/llm-providers.md:768
 msgid "`only`: Whitelist of provider slugs allowed for this request"
 msgstr ""
 
-#: src/ai/llm-providers.md:768
+#: src/ai/llm-providers.md:769
 msgid "`ignore`: Provider slugs to skip"
 msgstr ""
 
-#: src/ai/llm-providers.md:769
+#: src/ai/llm-providers.md:770
 msgid ""
 "`quantizations`: Restrict to specific quantization variants (e.g. `[\"int4\","
 "\"int8\"]`)"
 msgstr ""
 
-#: src/ai/llm-providers.md:770
+#: src/ai/llm-providers.md:771
 msgid ""
 "`sort`: Sort strategy for candidate providers (e.g. `\"price\"` or "
 "`\"throughput\"`)"
 msgstr ""
 
-#: src/ai/llm-providers.md:772
+#: src/ai/llm-providers.md:773
 msgid "Example adding routing preferences to a model:"
 msgstr ""
 
-#: src/ai/llm-providers.md:782
+#: src/ai/llm-providers.md:783
 msgid "\"Auto Router (Tools Preferred)\""
 msgstr ""
 
-#: src/ai/llm-providers.md:786
+#: src/ai/llm-providers.md:787
 msgid "\"order\""
 msgstr ""
 
-#: src/ai/llm-providers.md:787
+#: src/ai/llm-providers.md:788
 msgid "\"allow_fallbacks\""
 msgstr ""
 
-#: src/ai/llm-providers.md:788
+#: src/ai/llm-providers.md:789
 msgid "\"require_parameters\""
 msgstr ""
 
-#: src/ai/llm-providers.md:789
+#: src/ai/llm-providers.md:790
 msgid "\"only\""
 msgstr ""
 
-#: src/ai/llm-providers.md:790
+#: src/ai/llm-providers.md:791
 msgid "\"ignore\""
 msgstr ""
 
-#: src/ai/llm-providers.md:790
+#: src/ai/llm-providers.md:791
 msgid "\"cohere\""
 msgstr ""
 
-#: src/ai/llm-providers.md:791
+#: src/ai/llm-providers.md:792
 msgid "\"quantizations\""
 msgstr ""
 
-#: src/ai/llm-providers.md:791
+#: src/ai/llm-providers.md:792
 msgid "\"int8\""
 msgstr ""
 
-#: src/ai/llm-providers.md:792
+#: src/ai/llm-providers.md:793
 msgid "\"sort\""
 msgstr ""
 
-#: src/ai/llm-providers.md:792
+#: src/ai/llm-providers.md:793
 msgid "\"price\""
 msgstr ""
 
-#: src/ai/llm-providers.md:793
+#: src/ai/llm-providers.md:794
 msgid "\"data_collection\""
 msgstr ""
 
-#: src/ai/llm-providers.md:793
+#: src/ai/llm-providers.md:794
 msgid "\"allow\""
 msgstr ""
 
-#: src/ai/llm-providers.md:802
+#: src/ai/llm-providers.md:803
 msgid ""
 "These routing controls let you fine‑tune cost, capability, and reliability "
 "trade‑offs without changing the model name you select in the UI."
 msgstr ""
 
-#: src/ai/llm-providers.md:804
+#: src/ai/llm-providers.md:805
 msgid "Vercel AI Gateway"
 msgstr ""
 
-#: src/ai/llm-providers.md:806
+#: src/ai/llm-providers.md:807
 msgid ""
 "[Vercel AI Gateway](https://vercel.com/ai-gateway) provides access to many "
 "models through a single OpenAI-compatible endpoint."
 msgstr ""
 
-#: src/ai/llm-providers.md:808
+#: src/ai/llm-providers.md:809
 msgid ""
 "Create an API key from your [Vercel AI Gateway keys page](https://vercel.com/"
 "d?to=%2F%5Bteam%5D%2F%7E%2Fai%2Fapi-keys&title=Go+to+AI+Gateway)"
 msgstr ""
 
-#: src/ai/llm-providers.md:809
+#: src/ai/llm-providers.md:810
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the **Vercel AI "
 "Gateway** section"
 msgstr ""
 
-#: src/ai/llm-providers.md:810
+#: src/ai/llm-providers.md:811
 msgid "Enter your Vercel AI Gateway API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:812
+#: src/ai/llm-providers.md:813
 msgid "The Vercel AI Gateway API key will be saved in your keychain."
 msgstr ""
 
-#: src/ai/llm-providers.md:814
+#: src/ai/llm-providers.md:815
 msgid ""
 "Zed will also use the `VERCEL_AI_GATEWAY_API_KEY` environment variable if "
 "it's defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:816
+#: src/ai/llm-providers.md:817
 msgid ""
 "You can also set a custom endpoint for Vercel AI Gateway in your settings "
 "file:"
 msgstr ""
 
-#: src/ai/llm-providers.md:821
+#: src/ai/llm-providers.md:822
 msgid "\"vercel_ai_gateway\""
 msgstr ""
 
-#: src/ai/llm-providers.md:822
+#: src/ai/llm-providers.md:823
 msgid "\"https://ai-gateway.vercel.sh/v1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:828
-msgid "Vercel v0"
-msgstr ""
-
-#: src/ai/llm-providers.md:830
-msgid ""
-"[Vercel v0](https://v0.app/docs/api/model) is a model for generating full-"
-"stack apps, with framework-aware completions for stacks like Next.js and "
-"Vercel. It supports text and image inputs and provides fast streaming "
-"responses."
-msgstr ""
-
-#: src/ai/llm-providers.md:833
-msgid ""
-"The v0 models are [OpenAI-compatible models](#openai-api-compatible), and "
-"Vercel appears as a dedicated provider in the panel's settings view."
-msgstr ""
-
-#: src/ai/llm-providers.md:835
-msgid ""
-"To start using it with Zed, ensure you have first created a [v0 API key]"
-"(https://v0.dev/chat/settings/keys). Once you have it, paste it directly "
-"into the Vercel provider section in the panel's settings view."
-msgstr ""
-
-#: src/ai/llm-providers.md:838
-msgid ""
-"You should then find it as `v0-1.5-md` in the model dropdown in the Agent "
-"Panel."
-msgstr ""
-
-#: src/ai/llm-providers.md:840
+#: src/ai/llm-providers.md:829
 msgid "xAI"
 msgstr ""
 
-#: src/ai/llm-providers.md:842
+#: src/ai/llm-providers.md:831
 msgid ""
 "Zed includes a dedicated [xAI](https://x.ai/) provider. You can use your own "
 "API key to access Grok models."
 msgstr ""
 
-#: src/ai/llm-providers.md:844
+#: src/ai/llm-providers.md:833
 msgid ""
 "[Create an API key in the xAI Console](https://console.x.ai/team/default/api-"
 "keys)"
 msgstr ""
 
-#: src/ai/llm-providers.md:845
+#: src/ai/llm-providers.md:834
 msgid ""
 "Open the settings view (`agent: open settings`) and go to the **xAI** section"
 msgstr ""
 
-#: src/ai/llm-providers.md:846
+#: src/ai/llm-providers.md:835
 msgid "Enter your xAI API key"
 msgstr ""
 
-#: src/ai/llm-providers.md:848
+#: src/ai/llm-providers.md:837
 msgid ""
 "The xAI API key will be saved in your keychain. Zed will also use the "
 "`XAI_API_KEY` environment variable if it's defined."
 msgstr ""
 
-#: src/ai/llm-providers.md:850
+#: src/ai/llm-providers.md:839
 msgid ""
 "**Note:** The xAI API is OpenAI-compatible, and Zed also includes a "
 "dedicated xAI provider. We recommend using the dedicated `x_ai` provider "
@@ -1893,7 +1877,7 @@ msgid ""
 "method."
 msgstr ""
 
-#: src/ai/llm-providers.md:854
+#: src/ai/llm-providers.md:843
 msgid ""
 "The Zed agent comes pre-configured with common Grok models. If you wish to "
 "use alternate models or customize their parameters, you can do so by adding "
@@ -1901,52 +1885,52 @@ msgid ""
 "md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:859
+#: src/ai/llm-providers.md:848
 msgid "\"x_ai\""
 msgstr ""
 
-#: src/ai/llm-providers.md:860
+#: src/ai/llm-providers.md:849
 msgid "\"https://api.x.ai/v1\""
 msgstr ""
 
-#: src/ai/llm-providers.md:863
+#: src/ai/llm-providers.md:852
 msgid "\"grok-1.5\""
 msgstr ""
 
-#: src/ai/llm-providers.md:864
+#: src/ai/llm-providers.md:853
 msgid "\"Grok 1.5\""
 msgstr ""
 
-#: src/ai/llm-providers.md:869
+#: src/ai/llm-providers.md:858
 msgid "\"grok-1.5v\""
 msgstr ""
 
-#: src/ai/llm-providers.md:870
+#: src/ai/llm-providers.md:859
 msgid "\"Grok 1.5V (Vision)\""
 msgstr ""
 
-#: src/ai/llm-providers.md:881
+#: src/ai/llm-providers.md:870
 msgid "Custom Provider Endpoints"
 msgstr ""
 
-#: src/ai/llm-providers.md:883
+#: src/ai/llm-providers.md:872
 msgid ""
 "You can use a custom API endpoint for different providers, as long as it's "
 "compatible with the provider's API structure. To do so, add the following to "
 "your settings file ([how to edit](../configuring-zed.md#settings-files)):"
 msgstr ""
 
-#: src/ai/llm-providers.md:889
+#: src/ai/llm-providers.md:878
 msgid "\"some-provider\""
 msgstr ""
 
-#: src/ai/llm-providers.md:896
+#: src/ai/llm-providers.md:885
 msgid ""
 "Currently, `some-provider` can be any of the following values: `anthropic`, "
 "`google`, `ollama`, `openai`."
 msgstr ""
 
-#: src/ai/llm-providers.md:898
+#: src/ai/llm-providers.md:887
 msgid ""
 "This is the same infrastructure that powers models that are, for example, "
 "[OpenAI-compatible](#openai-api-compatible)."

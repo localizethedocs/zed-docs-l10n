@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -416,13 +416,12 @@ msgstr ""
 
 #: src/visual-customization.md:183
 msgid ""
-"// When does the mouse cursor hide: never, on_typing, "
-"on_typing_and_movement\n"
+"// When does the mouse cursor hide: never, on_typing, on_typing_and_action\n"
 "  \"hide_mouse\""
 msgstr ""
 
 #: src/visual-customization.md:184
-msgid "\"on_typing_and_movement\""
+msgid "\"on_typing_and_action\""
 msgstr ""
 
 #: src/visual-customization.md:186

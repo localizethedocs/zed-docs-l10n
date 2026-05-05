@@ -1,0 +1,77 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/sml.md:3
+msgid "Standard ML"
+msgstr ""
+
+#: src/languages/sml.md:5
+msgid ""
+"Standard ML support is available through the community-maintained [Standard "
+"ML extension](https://github.com/omarjatoi/zed-sml)."
+msgstr ""
+
+#: src/languages/sml.md:7
+msgid ""
+"Tree-sitter: [MatthewFluet/tree-sitter-sml](https://github.com/MatthewFluet/"
+"tree-sitter-sml)"
+msgstr ""
+
+#: src/languages/sml.md:8
+msgid "Language Server: [Millet](https://github.com/azdavis/millet)"
+msgstr ""
+
+#: src/languages/sml.md:10
+msgid "Setup"
+msgstr ""
+
+#: src/languages/sml.md:12
+msgid ""
+"Install a Standard ML implementation such as [SML/NJ](https://www.smlnj."
+"org/) or [MLton](http://mlton.org/) to compile and run your code."
+msgstr ""
+
+#: src/languages/sml.md:13
+msgid ""
+"[Install Millet](https://github.com/azdavis/millet#install) and ensure "
+"`millet-ls` is on your `$PATH`."
+msgstr ""
+
+#: src/languages/sml.md:15
+msgid "Project setup"
+msgstr ""
+
+#: src/languages/sml.md:17
+msgid ""
+"For projects with more than one source file, Millet expects a single root "
+"group file. Create a `millet.toml` in the directory you open in Zed:"
+msgstr ""
+
+#: src/languages/sml.md:19
+msgid ""
+"```toml\n"
+"version = 1\n"
+"[workspace]\n"
+"root = \"sources.mlb\"\n"
+"```"
+msgstr ""
+
+#: src/languages/sml.md:25
+msgid ""
+"The root must be either a [ML Basis (MLB)](http://mlton.org/MLBasis) file (`."
+"mlb`, used with MLton) or a [SML/NJ Compilation Manager (CM)](https://www."
+"smlnj.org/doc/CM/new.pdf) file (`.cm`, used with SML/NJ). Files not "
+"transitively reachable from the root are not analyzed. See the [Millet "
+"manual](https://github.com/azdavis/millet/blob/main/docs/manual.md) for more "
+"options."
+msgstr ""
