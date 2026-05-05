@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -61,7 +61,7 @@ msgid ""
 "code><br>"
 msgstr ""
 
-#: src/all-actions.md:1825
+#: src/all-actions.md:1837
 msgid ""
 "This action is only available when the active formatter can format ranges. "
 "When using a language server, this sends an LSP range formatting request for "
@@ -73,11 +73,11 @@ msgid ""
 "are skipped.<br> Keymap Name: <code>editor::FormatSelections</code><br>"
 msgstr ""
 
-#: src/all-actions.md:7728
+#: src/all-actions.md:7776
 msgid "In keymap JSON this is written as:"
 msgstr ""
 
-#: src/all-actions.md:7730
+#: src/all-actions.md:7778
 msgid ""
 "`[\"zed::Unbind\", \"editor::NewLine\"]`<br> Keymap Name: <code>zed::Unbind</"
 "code><br>"

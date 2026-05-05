@@ -37,9 +37,9 @@
     "branch" : "main",
     "commit" : 
     {
-      "date" : "2026-04-28 10:00:07 +0000",
-      "hash" : "e712f3c6df3d4f6de312fea05328f5e79d397055",
-      "title" : "gpui: Remove naga dependency (#55070)"
+      "date" : "2026-05-05 09:58:05 +0000",
+      "hash" : "d6cc34c1679ddf1fdee48e2ebf5da104ddffe6fc",
+      "title" : "agent: Cleanup edit_file evals (#55750)"
     }
   },
   "type" : "branch",

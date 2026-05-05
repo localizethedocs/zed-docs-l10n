@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -662,16 +662,23 @@ msgstr ""
 
 #: src/remote-development.md:262
 msgid ""
+"[Git Worktrees](./git.md#git-worktrees): Create and switch between linked "
+"Git worktrees. Zed supports the worktree picker in remote projects when the "
+"remote connection is active."
+msgstr ""
+
+#: src/remote-development.md:265
+msgid ""
 "[Configuring Zed](./configuring-zed.md): Manage shared and project settings, "
 "including `.zed/settings.json`."
 msgstr ""
 
-#: src/remote-development.md:264
+#: src/remote-development.md:267
 msgid ""
 "[Agent Panel](./ai/agent-panel.md): Use AI workflows in remote projects."
 msgstr ""
 
-#: src/remote-development.md:265
+#: src/remote-development.md:268
 msgid ""
 "[Remote Development on zed.dev](https://zed.dev/remote-development): Product "
 "overview and release updates."

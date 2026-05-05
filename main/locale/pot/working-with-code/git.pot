@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -400,7 +400,7 @@ msgstr ""
 msgid ""
 "The second is available via the action <code class=\"hljs\">git: expand "
 "commit editor</code> or via hitting the <kbd class=\"keybinding\">shift-"
-"escape\\|</kbd> while focused in the Git Panel commit textarea."
+"escape\\|shift-escape</kbd> while focused in the Git Panel commit textarea."
 msgstr ""
 
 #: src/git.md:151
@@ -447,96 +447,194 @@ msgid ""
 msgstr ""
 
 #: src/git.md:168
-msgid "Deleting Branches"
+msgid ""
+"When you are working in a [Git worktree](#git-worktrees), use the branch "
+"picker after switching to the worktree to create or check out the branch you "
+"want to use there."
 msgstr ""
 
 #: src/git.md:170
+msgid "Deleting Branches"
+msgstr ""
+
+#: src/git.md:172
 msgid ""
 "To delete a branch, open the branch switcher with <code class=\"hljs\">git: "
 "switch</code>, find the branch you want to delete, and use the delete "
 "option. Zed will confirm before deleting to prevent accidental data loss."
 msgstr ""
 
-#: src/git.md:172
+#: src/git.md:174
 msgid ""
 "**Note:** You cannot delete the branch you currently have checked out. "
 "Switch to a different branch first."
 msgstr ""
 
-#: src/git.md:174
+#: src/git.md:176
+msgid "Git Worktrees"
+msgstr ""
+
+#: src/git.md:178
+msgid ""
+"Git worktrees let you keep multiple checkouts of the same repository on disk "
+"at the same time. This is useful when you want to work on more than one "
+"branch or task without stashing, rebuilding, or disturbing the files in your "
+"main checkout."
+msgstr ""
+
+#: src/git.md:181
+msgid ""
+"Open the worktree picker from the title bar, next to the project picker, or "
+"by running <code class=\"hljs\">git: worktree</code>. From the picker, you "
+"can:"
+msgstr ""
+
+#: src/git.md:184
+msgid ""
+"Create a new linked worktree either from the current branch or default branch"
+msgstr ""
+
+#: src/git.md:185
+msgid ""
+"Type a name to create a named worktree or let Zed automatically pick one for "
+"you"
+msgstr ""
+
+#: src/git.md:186
+msgid "Switch the current workspace to an existing worktree"
+msgstr ""
+
+#: src/git.md:187
+msgid "Open an existing worktree in a new window"
+msgstr ""
+
+#: src/git.md:188
+msgid "Delete linked worktrees that are not currently open in the project"
+msgstr ""
+
+#: src/git.md:190
+msgid "Worktree Management"
+msgstr ""
+
+#: src/git.md:192
+msgid ""
+"New worktrees are created in detached HEAD state. After switching to the new "
+"worktree, use the branch picker next to the worktree picker to create a new "
+"branch or check out an existing, unused branch. This keeps Zed from "
+"accidentally checking out the same branch in multiple worktrees."
+msgstr ""
+
+#: src/git.md:196
+msgid ""
+"The directory used for new worktrees is controlled by the `git."
+"worktree_directory` setting. By default, Zed creates worktrees under `../"
+"worktrees` relative to the repository's working directory."
+msgstr ""
+
+#: src/git.md:199
+msgid ""
+"See [All Settings](./reference/all-settings.md#git-worktree-directory) for "
+"examples."
+msgstr ""
+
+#: src/git.md:201
+msgid "Init Setup"
+msgstr ""
+
+#: src/git.md:203
+msgid ""
+"To run setup steps after Zed creates a linked worktree, use the "
+"[`create_worktree` task hook](./tasks.md#hooks). For agent-specific "
+"workflows, see [Worktree Isolation](./ai/parallel-agents.md#worktree-"
+"isolation)."
+msgstr ""
+
+#: src/git.md:206
+msgid "Multi-root Workspaces"
+msgstr ""
+
+#: src/git.md:208
+msgid ""
+"If your project contains multiple Git repositories (i.e., multi-root "
+"folders), Zed creates a linked worktree for each repository when creating a "
+"new worktree from the picker. Non-Git folders in the same project are "
+"included in the new workspace as-is."
+msgstr ""
+
+#: src/git.md:211
 msgid "Merge Conflicts"
 msgstr ""
 
-#: src/git.md:176
+#: src/git.md:213
 msgid ""
 "When you encounter merge conflicts after a merge, rebase, or pull, Zed "
 "highlights the conflicting regions in your files and displays resolution "
 "buttons above each conflict."
 msgstr ""
 
-#: src/git.md:178
+#: src/git.md:215
 msgid "Viewing Conflicts"
 msgstr ""
 
-#: src/git.md:180
+#: src/git.md:217
 msgid ""
 "Conflicting files appear in the Git Panel with a warning icon. You can also "
 "see conflicts in the Project Diff view, where each conflict region is "
 "highlighted:"
 msgstr ""
 
-#: src/git.md:182
+#: src/git.md:219
 msgid "Changes from your current branch are highlighted in green"
 msgstr ""
 
-#: src/git.md:183
+#: src/git.md:220
 msgid "Changes from the incoming branch are highlighted in blue"
 msgstr ""
 
-#: src/git.md:185
+#: src/git.md:222
 msgid "Resolving Conflicts"
 msgstr ""
 
-#: src/git.md:187
+#: src/git.md:224
 msgid "Each conflict shows three buttons:"
 msgstr ""
 
-#: src/git.md:189
+#: src/git.md:226
 msgid ""
 "**Use \\[branch-name\\]**: Keep the changes from one branch (shows the "
 "actual branch name, like \"main\")"
 msgstr ""
 
-#: src/git.md:190
+#: src/git.md:227
 msgid ""
 "**Use \\[other-branch\\]**: Keep the changes from the other branch (like "
 "\"feature-branch\")"
 msgstr ""
 
-#: src/git.md:191
+#: src/git.md:228
 msgid ""
 "**Use Both**: Keep both sets of changes, with your branch's changes first"
 msgstr ""
 
-#: src/git.md:193
+#: src/git.md:230
 msgid ""
 "Click a button to resolve that conflict. The conflict markers are removed "
 "and replaced with your chosen content. After resolving all conflicts in a "
 "file, stage it and commit to complete the merge."
 msgstr ""
 
-#: src/git.md:195
+#: src/git.md:232
 msgid ""
 "**Tip:** For complex conflicts that need manual editing, you can edit the "
 "file directly. Remove the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) "
 "and keep the content you want."
 msgstr ""
 
-#: src/git.md:197
+#: src/git.md:234
 msgid "Stashing"
 msgstr ""
 
-#: src/git.md:199
+#: src/git.md:236
 msgid ""
 "Git stash allows you to temporarily save your uncommitted changes and revert "
 "your working directory to a clean state. This is particularly useful when "
@@ -544,124 +642,124 @@ msgid ""
 "incomplete work."
 msgstr ""
 
-#: src/git.md:201
+#: src/git.md:238
 msgid "Creating Stashes"
 msgstr ""
 
-#: src/git.md:203
+#: src/git.md:240
 msgid ""
 "To stash all your current changes, use the <code class=\"hljs\">git: stash "
 "all</code> action. This will save both staged and unstaged changes to a new "
 "stash entry and clean your working directory."
 msgstr ""
 
-#: src/git.md:205
+#: src/git.md:242
 msgid "Managing Stashes"
 msgstr ""
 
-#: src/git.md:207
+#: src/git.md:244
 msgid ""
 "Zed provides a stash picker accessible via <code class=\"hljs\">git: view "
 "stash</code> or from the Git Panel's overflow menu. From the stash picker, "
 "you can:"
 msgstr ""
 
-#: src/git.md:209
+#: src/git.md:246
 msgid ""
 "**View stash list**: Browse all your saved stashes with their descriptions "
 "and timestamps"
 msgstr ""
 
-#: src/git.md:210
+#: src/git.md:247
 msgid "**Open diffs**: See exactly what changes are stored in each stash"
 msgstr ""
 
-#: src/git.md:211
+#: src/git.md:248
 msgid ""
 "**Apply stashes**: Apply stash changes to your working directory while "
 "keeping the stash entry"
 msgstr ""
 
-#: src/git.md:212
+#: src/git.md:249
 msgid ""
 "**Pop stashes**: Apply stash changes and remove the stash entry from the list"
 msgstr ""
 
-#: src/git.md:213
+#: src/git.md:250
 msgid "**Drop stashes**: Delete unwanted stash entries without applying them"
 msgstr ""
 
-#: src/git.md:215
+#: src/git.md:252
 msgid "Quick Stash Operations"
 msgstr ""
 
-#: src/git.md:217
+#: src/git.md:254
 msgid ""
 "For faster workflows, Zed provides direct actions to work with the most "
 "recent stash:"
 msgstr ""
 
-#: src/git.md:219
+#: src/git.md:256
 msgid ""
 "**Apply latest stash**: Use <code class=\"hljs\">git: stash apply</code> to "
 "apply the most recent stash without removing it"
 msgstr ""
 
-#: src/git.md:220
+#: src/git.md:257
 msgid ""
 "**Pop latest stash**: Use <code class=\"hljs\">git: stash pop</code> to "
 "apply and remove the most recent stash"
 msgstr ""
 
-#: src/git.md:222
+#: src/git.md:259
 msgid "Stash Diff View"
 msgstr ""
 
-#: src/git.md:224
+#: src/git.md:261
 msgid ""
 "To view a stash's contents, select it in the stash picker and press <kbd "
 "class=\"keybinding\">ctrl-shift-v\\|ctrl-shift-v</kbd>. From the diff view, "
 "you can use these keybindings:"
 msgstr ""
 
-#: src/git.md:226 src/git.md:316
+#: src/git.md:263 src/git.md:353
 msgid "Action"
 msgstr ""
 
-#: src/git.md:226 src/git.md:316
+#: src/git.md:263 src/git.md:353
 msgid "Keybinding"
 msgstr ""
 
-#: src/git.md:228
+#: src/git.md:265
 msgid "Apply stash"
 msgstr ""
 
-#: src/git.md:228
+#: src/git.md:265
 msgid "<kbd class=\"keybinding\">ctrl-space\\|ctrl-space</kbd>"
 msgstr ""
 
-#: src/git.md:229
+#: src/git.md:266
 msgid "Pop stash (apply and remove)"
 msgstr ""
 
-#: src/git.md:229
+#: src/git.md:266
 msgid "<kbd class=\"keybinding\">ctrl-shift-space\\|ctrl-shift-space</kbd>"
 msgstr ""
 
-#: src/git.md:230
+#: src/git.md:267
 msgid "Drop stash (remove without applying)"
 msgstr ""
 
-#: src/git.md:230
+#: src/git.md:267
 msgid ""
 "<kbd class=\"keybinding\">ctrl-shift-backspace\\|ctrl-shift-backspace</kbd>"
 msgstr ""
 
-#: src/git.md:232
+#: src/git.md:269
 msgid "AI Support in Git"
 msgstr ""
 
-#: src/git.md:234
+#: src/git.md:271
 msgid ""
 "Zed currently supports LLM-powered commit message generation. You can ask AI "
 "to generate a commit message by focusing on the message editor within the "
@@ -670,45 +768,45 @@ msgid ""
 "(<kbd class=\"keybinding\">alt-tab\\|alt-l</kbd>) keybinding."
 msgstr ""
 
-#: src/git.md:237
+#: src/git.md:274
 msgid ""
 "Note that you need to have an LLM provider configured either via your own "
 "API keys or through Zed's hosted AI models. Visit [the AI configuration page]"
 "(./ai/configuration.md) to learn how to do so."
 msgstr ""
 
-#: src/git.md:240
+#: src/git.md:277
 msgid ""
 "You can specify your preferred model to use by providing a "
 "`commit_message_model` agent setting. See [Feature-specific models](./ai/"
 "agent-settings.md#feature-specific-models) for more information."
 msgstr ""
 
-#: src/git.md:245
+#: src/git.md:282
 msgid "\"agent\""
 msgstr ""
 
-#: src/git.md:246
+#: src/git.md:283
 msgid "\"commit_message_model\""
 msgstr ""
 
-#: src/git.md:247 src/git.md:282
+#: src/git.md:284 src/git.md:319
 msgid "\"provider\""
 msgstr ""
 
-#: src/git.md:247
+#: src/git.md:284
 msgid "\"anthropic\""
 msgstr ""
 
-#: src/git.md:248
+#: src/git.md:285
 msgid "\"model\""
 msgstr ""
 
-#: src/git.md:248
+#: src/git.md:285
 msgid "\"claude-3-5-haiku\""
 msgstr ""
 
-#: src/git.md:254
+#: src/git.md:291
 msgid ""
 "To customize the format of generated commit messages, run <code "
 "class=\"hljs\">agent: open rules library</code> and select the \"Commit "
@@ -716,36 +814,36 @@ msgid ""
 "match your desired format."
 msgstr ""
 
-#: src/git.md:259
+#: src/git.md:296
 msgid ""
 "Any specific instructions for commit messages added to [Rules files](./ai/"
 "rules.md) are also picked up by the model tasked with writing your commit "
 "message."
 msgstr ""
 
-#: src/git.md:261
+#: src/git.md:298
 msgid "Git Integrations"
 msgstr ""
 
-#: src/git.md:263
+#: src/git.md:300
 msgid ""
 "Zed integrates with popular Git hosting services to ensure that Git commit "
 "hashes and references to Issues, Pull Requests, and Merge Requests become "
 "clickable links."
 msgstr ""
 
-#: src/git.md:265
+#: src/git.md:302
 msgid ""
 "Zed currently supports links to the hosted versions of [GitHub](https://"
 "github.com), [GitLab](https://gitlab.com), [Bitbucket](https://bitbucket."
 "org), [SourceHut](https://sr.ht) and [Codeberg](https://codeberg.org)."
 msgstr ""
 
-#: src/git.md:272
+#: src/git.md:309
 msgid "Self-Hosted Instances"
 msgstr ""
 
-#: src/git.md:274
+#: src/git.md:311
 msgid ""
 "Zed automatically identifies Git hosting providers by checking for keywords "
 "in your Git remote URL. For example, if your self-hosted URL contains "
@@ -754,7 +852,7 @@ msgid ""
 "needed."
 msgstr ""
 
-#: src/git.md:276
+#: src/git.md:313
 msgid ""
 "However, if your self-hosted Git instance URL doesn't contain identifying "
 "keywords, you can manually configure Zed to create clickable links to your "
@@ -762,31 +860,31 @@ msgid ""
 "permalinks resolve to your domain:"
 msgstr ""
 
-#: src/git.md:280
+#: src/git.md:317
 msgid "\"git_hosting_providers\""
 msgstr ""
 
-#: src/git.md:282
+#: src/git.md:319
 msgid "\"gitlab\""
 msgstr ""
 
-#: src/git.md:283
+#: src/git.md:320
 msgid "\"name\""
 msgstr ""
 
-#: src/git.md:283
+#: src/git.md:320
 msgid "\"Corp GitLab\""
 msgstr ""
 
-#: src/git.md:284
+#: src/git.md:321
 msgid "\"base_url\""
 msgstr ""
 
-#: src/git.md:284
+#: src/git.md:321
 msgid "\"https://git.example.corp\""
 msgstr ""
 
-#: src/git.md:290
+#: src/git.md:327
 msgid ""
 "The `provider` field specifies which type of hosting service you're using. "
 "Supported `provider` values are `github`, `gitlab`, `bitbucket`, `gitea`, "
@@ -795,17 +893,17 @@ msgid ""
 "server."
 msgstr ""
 
-#: src/git.md:292
+#: src/git.md:329
 msgid ""
 "You can configure multiple custom providers if you work with several self-"
 "hosted instances."
 msgstr ""
 
-#: src/git.md:294
+#: src/git.md:331
 msgid "Permalinks"
 msgstr ""
 
-#: src/git.md:296
+#: src/git.md:333
 msgid ""
 "Zed also has a Copy Permalink feature to create a permanent link to a code "
 "snippet on your Git hosting service. These links are useful for sharing a "
@@ -817,246 +915,254 @@ msgid ""
 "Permalink` with line(s) selected in your editor."
 msgstr ""
 
-#: src/git.md:303
+#: src/git.md:340
 msgid "Diff Hunk Keyboard Shortcuts"
 msgstr ""
 
-#: src/git.md:305
+#: src/git.md:342
 msgid ""
 "When viewing files with changes, Zed displays diff hunks that can be "
 "expanded or collapsed for detailed review:"
 msgstr ""
 
-#: src/git.md:307
+#: src/git.md:344
 msgid ""
 "**Expand all diff hunks**: <code class=\"hljs\">editor: expand all diff "
 "hunks</code> (<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>)"
 msgstr ""
 
-#: src/git.md:308
+#: src/git.md:345
 msgid ""
 "**Collapse all diff hunks**: Press `Escape` (bound to <code "
 "class=\"hljs\">editor: cancel</code>)"
 msgstr ""
 
-#: src/git.md:309
+#: src/git.md:346
 msgid ""
 "**Toggle selected diff hunks**: <code class=\"hljs\">editor: toggle selected "
 "diff hunks</code> (<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>)"
 msgstr ""
 
-#: src/git.md:310
+#: src/git.md:347
 msgid ""
 "**Navigate between hunks**: <code class=\"hljs\">editor: go to hunk</code> "
 "and <code class=\"hljs\">editor: go to previous hunk</code>"
 msgstr ""
 
-#: src/git.md:312
+#: src/git.md:349
 msgid ""
 "**Tip:** The `Escape` key is the quickest way to collapse all expanded diff "
 "hunks and return to an overview of your changes."
 msgstr ""
 
-#: src/git.md:314
+#: src/git.md:351
 msgid "Action Reference"
 msgstr ""
 
-#: src/git.md:318
+#: src/git.md:355
 msgid "<code class=\"hljs\">git: add</code>"
 msgstr ""
 
-#: src/git.md:318 src/git.md:334 src/git.md:335 src/git.md:336 src/git.md:338
-#: src/git.md:339 src/git.md:340 src/git.md:341 src/git.md:342
+#: src/git.md:355 src/git.md:371 src/git.md:372 src/git.md:373 src/git.md:376
+#: src/git.md:377 src/git.md:378 src/git.md:379 src/git.md:380
 msgid "<div>No default binding</div>"
 msgstr ""
 
-#: src/git.md:319
+#: src/git.md:356
 msgid "<code class=\"hljs\">git: stage all</code>"
 msgstr ""
 
-#: src/git.md:319
+#: src/git.md:356
 msgid "<kbd class=\"keybinding\">cmd-ctrl-y\\|ctrl-space</kbd>"
 msgstr ""
 
-#: src/git.md:320
+#: src/git.md:357
 msgid "<code class=\"hljs\">git: unstage all</code>"
 msgstr ""
 
-#: src/git.md:320
+#: src/git.md:357
 msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y\\|ctrl-shift-space</kbd>"
 msgstr ""
 
-#: src/git.md:321
+#: src/git.md:358
 msgid "<code class=\"hljs\">git: toggle staged</code>"
 msgstr ""
 
-#: src/git.md:321
+#: src/git.md:358
 msgid "<kbd class=\"keybinding\">space\\|space</kbd>"
 msgstr ""
 
-#: src/git.md:322
+#: src/git.md:359
 msgid "<code class=\"hljs\">git: stage and next</code>"
 msgstr ""
 
-#: src/git.md:322
+#: src/git.md:359
 msgid "<kbd class=\"keybinding\">cmd-y\\|alt-y</kbd>"
 msgstr ""
 
-#: src/git.md:323
+#: src/git.md:360
 msgid "<code class=\"hljs\">git: unstage and next</code>"
 msgstr ""
 
-#: src/git.md:323
+#: src/git.md:360
 msgid "<kbd class=\"keybinding\">cmd-shift-y\\|alt-shift-y</kbd>"
 msgstr ""
 
-#: src/git.md:324
+#: src/git.md:361
 msgid "<code class=\"hljs\">git: commit</code>"
 msgstr ""
 
-#: src/git.md:324
+#: src/git.md:361
 msgid "<kbd class=\"keybinding\">cmd-enter\\|ctrl-enter</kbd>"
 msgstr ""
 
-#: src/git.md:325
+#: src/git.md:362
 msgid "<code class=\"hljs\">git: expand commit editor</code>"
 msgstr ""
 
-#: src/git.md:325
-msgid "<kbd class=\"keybinding\">shift-escape\\|</kbd>"
+#: src/git.md:362
+msgid "<kbd class=\"keybinding\">shift-escape\\|shift-escape</kbd>"
 msgstr ""
 
-#: src/git.md:326
+#: src/git.md:363
 msgid "<code class=\"hljs\">git: push</code>"
 msgstr ""
 
-#: src/git.md:326
+#: src/git.md:363
 msgid "<kbd class=\"keybinding\">ctrl-g up\\|ctrl-g up</kbd>"
 msgstr ""
 
-#: src/git.md:327
+#: src/git.md:364
 msgid "<code class=\"hljs\">git: force push</code>"
 msgstr ""
 
-#: src/git.md:327
+#: src/git.md:364
 msgid "<kbd class=\"keybinding\">ctrl-g shift-up\\|ctrl-g shift-up</kbd>"
 msgstr ""
 
-#: src/git.md:328
+#: src/git.md:365
 msgid "<code class=\"hljs\">git: pull</code>"
 msgstr ""
 
-#: src/git.md:328
+#: src/git.md:365
 msgid "<kbd class=\"keybinding\">ctrl-g down\\|ctrl-g down</kbd>"
 msgstr ""
 
-#: src/git.md:329
+#: src/git.md:366
 msgid "<code class=\"hljs\">git: pull rebase</code>"
 msgstr ""
 
-#: src/git.md:329
+#: src/git.md:366
 msgid "<kbd class=\"keybinding\">ctrl-g shift-down\\|ctrl-g shift-down</kbd>"
 msgstr ""
 
-#: src/git.md:330
+#: src/git.md:367
 msgid "<code class=\"hljs\">git: fetch</code>"
 msgstr ""
 
-#: src/git.md:330
+#: src/git.md:367
 msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g\\|ctrl-g ctrl-g</kbd>"
 msgstr ""
 
-#: src/git.md:331
+#: src/git.md:368
 msgid "<code class=\"hljs\">git: diff</code>"
 msgstr ""
 
-#: src/git.md:331
+#: src/git.md:368
 msgid "<kbd class=\"keybinding\">ctrl-g d\\|ctrl-g d</kbd>"
 msgstr ""
 
-#: src/git.md:332
+#: src/git.md:369
 msgid "<code class=\"hljs\">git: restore</code>"
 msgstr ""
 
-#: src/git.md:332
+#: src/git.md:369
 msgid "<kbd class=\"keybinding\">cmd-alt-z\\|ctrl-k ctrl-r</kbd>"
 msgstr ""
 
-#: src/git.md:333
+#: src/git.md:370
 msgid "<code class=\"hljs\">git: restore file</code>"
 msgstr ""
 
-#: src/git.md:333
+#: src/git.md:370
 msgid "<kbd class=\"keybinding\">cmd-delete\\|ctrl-delete</kbd>"
 msgstr ""
 
-#: src/git.md:334
+#: src/git.md:371
 msgid "<code class=\"hljs\">git: branch</code>"
 msgstr ""
 
-#: src/git.md:335
+#: src/git.md:372
 msgid "<code class=\"hljs\">git: switch</code>"
 msgstr ""
 
-#: src/git.md:336
+#: src/git.md:373
 msgid "<code class=\"hljs\">git: checkout branch</code>"
 msgstr ""
 
-#: src/git.md:337
+#: src/git.md:374
+msgid "<code class=\"hljs\">git: worktree</code>"
+msgstr ""
+
+#: src/git.md:374
+msgid "<kbd class=\"keybinding\">cmd-ctrl-w\\|alt-ctrl-shift-w</kbd>"
+msgstr ""
+
+#: src/git.md:375
 msgid "<code class=\"hljs\">git: blame</code>"
 msgstr ""
 
-#: src/git.md:337
+#: src/git.md:375
 msgid "<kbd class=\"keybinding\">cmd-alt-g b\\|alt-g b</kbd>"
 msgstr ""
 
-#: src/git.md:338
+#: src/git.md:376
 msgid "<code class=\"hljs\">git: stash all</code>"
 msgstr ""
 
-#: src/git.md:339
+#: src/git.md:377
 msgid "<code class=\"hljs\">git: stash pop</code>"
 msgstr ""
 
-#: src/git.md:340
+#: src/git.md:378
 msgid "<code class=\"hljs\">git: stash apply</code>"
 msgstr ""
 
-#: src/git.md:341
+#: src/git.md:379
 msgid "<code class=\"hljs\">git: view stash</code>"
 msgstr ""
 
-#: src/git.md:342
+#: src/git.md:380
 msgid "<code class=\"hljs\">editor: toggle git blame inline</code>"
 msgstr ""
 
-#: src/git.md:343
+#: src/git.md:381
 msgid "<code class=\"hljs\">editor: expand all diff hunks</code>"
 msgstr ""
 
-#: src/git.md:343
+#: src/git.md:381
 msgid "<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>"
 msgstr ""
 
-#: src/git.md:344
+#: src/git.md:382
 msgid "<code class=\"hljs\">editor: toggle selected diff hunks</code>"
 msgstr ""
 
-#: src/git.md:344
+#: src/git.md:382
 msgid "<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>"
 msgstr ""
 
-#: src/git.md:346
+#: src/git.md:384
 msgid ""
 "Not all actions have default keybindings, but can be bound by [customizing "
 "your keymap](./key-bindings.md#user-keymaps)."
 msgstr ""
 
-#: src/git.md:348
+#: src/git.md:386
 msgid "Git CLI Configuration"
 msgstr ""
 
-#: src/git.md:350
+#: src/git.md:388
 msgid ""
 "If you would like to also use Zed for your [git commit message editor]"
 "(https://git-scm.com/book/en/v2/Customizing-Git-Git-"
@@ -1064,11 +1170,11 @@ msgid ""
 "use `zed --wait`:"
 msgstr ""
 
-#: src/git.md:353 src/git.md:359
+#: src/git.md:391 src/git.md:397
 msgid "\"zed --wait\""
 msgstr ""
 
-#: src/git.md:356
+#: src/git.md:394
 msgid ""
 "Or add the following to your shell environment (in `~/.zshrc`, `~/.bashrc`, "
 "etc):"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Zed\n"
-"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"POT-Creation-Date: 2026-05-05T11:16:33Z\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -171,48 +171,57 @@ msgid ""
 msgstr ""
 
 #: src/ai/tools.md:63
-msgid "Edit Tools"
+msgid ""
+"**Note:** The built-in `search_web` tool is only available to [Zed Pro]"
+"(https://zed.dev/pricing) subscribers using the Zed provider. If you're on a "
+"free plan or using a different provider, you can get equivalent "
+"functionality by connecting an MCP server that provides web search "
+"capabilities. See [MCP servers](./mcp.md) for details."
 msgstr ""
 
 #: src/ai/tools.md:65
-msgid "`copy_path`"
+msgid "Edit Tools"
 msgstr ""
 
 #: src/ai/tools.md:67
+msgid "`copy_path`"
+msgstr ""
+
+#: src/ai/tools.md:69
 msgid ""
 "Copies a file or directory recursively in the project, more efficient than "
 "manually reading and writing files when duplicating content."
 msgstr ""
 
-#: src/ai/tools.md:69
+#: src/ai/tools.md:71
 msgid "`create_directory`"
 msgstr ""
 
-#: src/ai/tools.md:71
+#: src/ai/tools.md:73
 msgid ""
 "Creates a new directory at the specified path within the project, creating "
 "all necessary parent directories (similar to `mkdir -p`)."
 msgstr ""
 
-#: src/ai/tools.md:73
+#: src/ai/tools.md:75
 msgid "`delete_path`"
 msgstr ""
 
-#: src/ai/tools.md:75
+#: src/ai/tools.md:77
 msgid ""
 "Deletes a file or directory (including contents recursively) at the "
 "specified path and confirms the deletion."
 msgstr ""
 
-#: src/ai/tools.md:77
+#: src/ai/tools.md:79
 msgid "`edit_file`"
 msgstr ""
 
-#: src/ai/tools.md:79
+#: src/ai/tools.md:81
 msgid "Edits files by replacing specific text with new content."
 msgstr ""
 
-#: src/ai/tools.md:81
+#: src/ai/tools.md:83
 msgid ""
 "**Example:** Updating a function signature — the agent identifies the exact "
 "lines to replace and provides the updated version, leaving the surrounding "
@@ -220,48 +229,48 @@ msgid ""
 "every occurrence first."
 msgstr ""
 
-#: src/ai/tools.md:83
+#: src/ai/tools.md:85
 msgid "`move_path`"
 msgstr ""
 
-#: src/ai/tools.md:85
+#: src/ai/tools.md:87
 msgid ""
 "Moves or renames a file or directory in the project, performing a rename if "
 "only the filename differs."
 msgstr ""
 
-#: src/ai/tools.md:87
+#: src/ai/tools.md:89
 msgid "`restore_file_from_disk`"
 msgstr ""
 
-#: src/ai/tools.md:89
+#: src/ai/tools.md:91
 msgid ""
 "Discards unsaved changes in open buffers by reloading file contents from "
 "disk. Useful for resetting files to their on-disk state before retrying an "
 "edit."
 msgstr ""
 
-#: src/ai/tools.md:91
+#: src/ai/tools.md:93
 msgid "`save_file`"
 msgstr ""
 
-#: src/ai/tools.md:93
+#: src/ai/tools.md:95
 msgid ""
 "Saves files that have unsaved changes. Used when files need to be saved "
 "before further edits can be made."
 msgstr ""
 
-#: src/ai/tools.md:95
+#: src/ai/tools.md:97
 msgid "`terminal`"
 msgstr ""
 
-#: src/ai/tools.md:97
+#: src/ai/tools.md:99
 msgid ""
 "Executes shell commands and returns the combined output, creating a new "
 "shell process for each invocation."
 msgstr ""
 
-#: src/ai/tools.md:99
+#: src/ai/tools.md:101
 msgid ""
 "**Example:** After editing a Rust file, run `cargo test --package my_crate "
 "2>&1 | tail -30` to confirm the changes don't break existing tests. Or run "
@@ -269,15 +278,15 @@ msgid ""
 "up a task."
 msgstr ""
 
-#: src/ai/tools.md:101
+#: src/ai/tools.md:103
 msgid "Other Tools"
 msgstr ""
 
-#: src/ai/tools.md:103
+#: src/ai/tools.md:105
 msgid "`spawn_agent`"
 msgstr ""
 
-#: src/ai/tools.md:105
+#: src/ai/tools.md:107
 msgid ""
 "Spawns a subagent with its own context window to perform a delegated task. "
 "Useful for running parallel investigations, completing self-contained tasks, "
@@ -285,7 +294,7 @@ msgid ""
 "access to the same tools as the parent agent."
 msgstr ""
 
-#: src/ai/tools.md:107
+#: src/ai/tools.md:109
 msgid ""
 "**Example:** While refactoring the authentication module, spawn a subagent "
 "to investigate how session tokens are validated elsewhere in the codebase. "
