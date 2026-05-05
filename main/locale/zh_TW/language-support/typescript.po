@@ -44,7 +44,7 @@ msgstr ""
 
 #: src/languages/typescript.md:16
 msgid "Language servers"
-msgstr ""
+msgstr "語言伺服器"
 
 #: src/languages/typescript.md:18
 msgid ""
@@ -56,7 +56,7 @@ msgstr ""
 
 #: src/languages/typescript.md:23 src/languages/typescript.md:41
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/typescript.md:24 src/languages/typescript.md:42
 msgid "\"TypeScript\""
@@ -88,7 +88,7 @@ msgstr ""
 
 #: src/languages/typescript.md:30 src/languages/typescript.md:266
 msgid "\"JavaScript\""
-msgstr ""
+msgstr "\"JavaScript\""
 
 #: src/languages/typescript.md:37
 msgid ""
@@ -130,7 +130,7 @@ msgstr "\"lsp\""
 
 #: src/languages/typescript.md:57
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/typescript.md:58 src/languages/typescript.md:86
 #: src/languages/typescript.md:132 src/languages/typescript.md:205
@@ -139,51 +139,55 @@ msgstr "\"settings\""
 
 #: src/languages/typescript.md:59
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/typescript.md:60
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/typescript.md:61
 msgid "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:62
 msgid ""
 "\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
 "\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
+"\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:63
 msgid ""
 "\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:64
 msgid "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:65
 msgid "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:66
 msgid "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:67
 msgid "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:68
 msgid "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:69
 msgid ""
 "\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/typescript.md:78
 msgid "Large projects"

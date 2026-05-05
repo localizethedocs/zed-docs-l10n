@@ -63,7 +63,7 @@ msgstr ""
 
 #: src/languages/erlang.md:22
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/erlang.md:23
 msgid "\"Erlang\""

@@ -99,7 +99,7 @@ msgstr "\"lsp\""
 
 #: src/languages/tailwindcss.md:30
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/tailwindcss.md:31
 msgid "\"settings\""
@@ -119,11 +119,11 @@ msgstr ""
 
 #: src/languages/tailwindcss.md:33
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/tailwindcss.md:34
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/tailwindcss.md:34
 msgid "\"[cls|className]\\\\s\\\\:\\\\=\\\\s\\\"([^\\\"]*)\""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: src/languages/tailwindcss.md:51
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/tailwindcss.md:52
 msgid "\"CSS\""

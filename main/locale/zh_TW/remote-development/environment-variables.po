@@ -171,7 +171,7 @@ msgstr ""
 
 #: src/environment.md:63
 msgid "Built-in terminal"
-msgstr ""
+msgstr "內建終端機"
 
 #: src/environment.md:65
 msgid ""

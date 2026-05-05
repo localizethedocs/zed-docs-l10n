@@ -228,7 +228,7 @@ msgstr ""
 
 #: src/linux.md:72
 msgid "Downloading manually"
-msgstr ""
+msgstr "手動下載"
 
 #: src/linux.md:74
 msgid ""
@@ -240,7 +240,7 @@ msgstr ""
 
 #: src/linux.md:76
 msgid "Download the `.tar.gz` file:"
-msgstr ""
+msgstr "下載 `.tar.gz` 檔案："
 
 #: src/linux.md:78
 msgid ""
@@ -291,7 +291,7 @@ msgstr ""
 
 #: src/linux.md:101
 msgid "Uninstalling Zed"
-msgstr ""
+msgstr "解除安裝 Zed"
 
 #: src/linux.md:103
 msgid "Standard Uninstall"

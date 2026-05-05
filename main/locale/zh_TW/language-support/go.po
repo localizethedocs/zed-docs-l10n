@@ -183,7 +183,7 @@ msgstr ""
 
 #: src/languages/go.md:96 src/languages/go.md:156 src/languages/go.md:182
 msgid "\"test\""
-msgstr ""
+msgstr "\"test\""
 
 #: src/languages/go.md:97
 msgid "\"generate\""

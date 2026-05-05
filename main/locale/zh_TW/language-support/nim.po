@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/languages/nim.md:18
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/nim.md:19
 msgid "\"Nim\""

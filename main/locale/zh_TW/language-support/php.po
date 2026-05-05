@@ -40,7 +40,7 @@ msgstr ""
 
 #: src/languages/php.md:11
 msgid "Install PHP"
-msgstr ""
+msgstr "安裝 PHP"
 
 #: src/languages/php.md:13
 msgid ""
@@ -105,11 +105,11 @@ msgstr ""
 
 #: src/languages/php.md:48 src/languages/php.md:80 src/languages/php.md:116
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/php.md:49 src/languages/php.md:81 src/languages/php.md:117
 msgid "\"PHP\""
-msgstr ""
+msgstr "\"PHP\""
 
 #: src/languages/php.md:50 src/languages/php.md:82 src/languages/php.md:118
 msgid "\"language_servers\""
@@ -117,15 +117,15 @@ msgstr "\"language_servers\""
 
 #: src/languages/php.md:50 src/languages/php.md:63
 msgid "\"intelephense\""
-msgstr ""
+msgstr "\"intelephense\""
 
 #: src/languages/php.md:50 src/languages/php.md:82
 msgid "\"!phpactor\""
-msgstr ""
+msgstr "\"!phpactor\""
 
 #: src/languages/php.md:50 src/languages/php.md:118
 msgid "\"!phptools\""
-msgstr ""
+msgstr "\"!phptools\""
 
 #: src/languages/php.md:50 src/languages/php.md:82 src/languages/php.md:118
 msgid "\"...\""
@@ -207,6 +207,9 @@ msgid ""
 "DEVSENSE_PHP_LS_LICENSE=\"your_license_key\"\n"
 "```"
 msgstr ""
+"```env\n"
+"DEVSENSE_PHP_LS_LICENSE=\"your_license_key\"\n"
+"```"
 
 #: src/languages/php.md:108
 msgid ""
@@ -340,7 +343,7 @@ msgstr ""
 
 #: src/languages/php.md:167 src/languages/php.md:203
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/php.md:168 src/languages/php.md:204
 msgid "\"settings\""
@@ -360,11 +363,11 @@ msgstr ""
 
 #: src/languages/php.md:172 src/languages/php.md:209
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/php.md:173 src/languages/php.md:210
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/php.md:174 src/languages/php.md:211
 msgid "\"class=\\\"([^\\\"]*)\\\"\""
@@ -412,7 +415,7 @@ msgstr ""
 
 #: src/languages/php.md:214
 msgid "\"@class\\\\(\\\\[([^\\\\]]*)\\\\]\\\\)\""
-msgstr ""
+msgstr "\"@class\\\\(\\\\[([^\\\\]]*)\\\\]\\\\)\""
 
 #: src/languages/php.md:223
 msgid "This will also provide completions in Blade directives like:"

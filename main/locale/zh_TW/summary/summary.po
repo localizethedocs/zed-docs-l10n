@@ -21,7 +21,7 @@ msgstr ""
 
 #: src/SUMMARY.md:5
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/SUMMARY.md:6
 msgid "Installation"
@@ -149,7 +149,7 @@ msgstr "大綱面板"
 
 #: src/SUMMARY.md:41
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/SUMMARY.md:42
 msgid "Tab Switcher"

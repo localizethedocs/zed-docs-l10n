@@ -169,7 +169,7 @@ msgstr ""
 
 #: src/languages/yaml.md:66
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/yaml.md:67
 msgid "\"YAML\""

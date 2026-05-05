@@ -106,7 +106,7 @@ msgstr ""
 
 #: src/debugger.md:33
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/debugger.md:35
 msgid ""

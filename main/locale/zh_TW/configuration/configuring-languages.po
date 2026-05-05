@@ -106,7 +106,7 @@ msgstr ""
 #: src/configuring-languages.md:294 src/configuring-languages.md:322
 #: src/configuring-languages.md:336
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/configuring-languages.md:33
 msgid "\"Python\""
@@ -140,7 +140,7 @@ msgstr ""
 #: src/configuring-languages.md:38 src/configuring-languages.md:273
 #: src/configuring-languages.md:323 src/configuring-languages.md:337
 msgid "\"JavaScript\""
-msgstr ""
+msgstr "\"JavaScript\""
 
 #: src/configuring-languages.md:41 src/configuring-languages.md:275
 #: src/configuring-languages.md:343
@@ -417,7 +417,7 @@ msgstr ""
 
 #: src/configuring-languages.md:125
 msgid "\"PHP\""
-msgstr ""
+msgstr "\"PHP\""
 
 #: src/configuring-languages.md:126
 msgid "\"language_servers\""
@@ -425,15 +425,15 @@ msgstr "\"language_servers\""
 
 #: src/configuring-languages.md:126
 msgid "\"intelephense\""
-msgstr ""
+msgstr "\"intelephense\""
 
 #: src/configuring-languages.md:126
 msgid "\"!phpactor\""
-msgstr ""
+msgstr "\"!phpactor\""
 
 #: src/configuring-languages.md:126
 msgid "\"!phptools\""
-msgstr ""
+msgstr "\"!phptools\""
 
 #: src/configuring-languages.md:126
 msgid "\"...\""
@@ -619,7 +619,7 @@ msgstr ""
 
 #: src/configuring-languages.md:219
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/configuring-languages.md:220 src/configuring-languages.md:308
 msgid "\"settings\""

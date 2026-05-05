@@ -64,7 +64,7 @@ msgstr ""
 #: src/ai/edit-prediction.md:210 src/ai/edit-prediction.md:259
 #: src/ai/edit-prediction.md:281 src/ai/edit-prediction.md:297
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/ai/edit-prediction.md:22
 msgid "\"zed\""
@@ -593,7 +593,7 @@ msgstr ""
 
 #: src/ai/edit-prediction.md:300 src/ai/edit-prediction.md:322
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/ai/edit-prediction.md:300
 msgid "\"deepseek-coder-6.7b-base\""

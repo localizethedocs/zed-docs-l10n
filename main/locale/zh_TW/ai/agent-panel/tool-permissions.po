@@ -45,7 +45,7 @@ msgstr ""
 #: src/ai/tool-permissions.md:252 src/ai/tool-permissions.md:274
 #: src/ai/tool-permissions.md:295
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/tool-permissions.md:16 src/ai/tool-permissions.md:67
 #: src/ai/tool-permissions.md:96 src/ai/tool-permissions.md:133

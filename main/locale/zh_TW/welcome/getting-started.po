@@ -13,7 +13,7 @@ msgstr ""
 
 #: src/getting-started.md:3
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/getting-started.md:5
 msgid ""

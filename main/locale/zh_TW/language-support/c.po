@@ -132,7 +132,7 @@ msgstr ""
 
 #: src/languages/c.md:50
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/c.md:52
 msgid "\"format_on_save\""

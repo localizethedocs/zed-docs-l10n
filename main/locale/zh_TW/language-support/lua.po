@@ -271,7 +271,7 @@ msgstr ""
 
 #: src/languages/lua.md:97 src/languages/lua.md:129 src/languages/lua.md:149
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/lua.md:98 src/languages/lua.md:130 src/languages/lua.md:150
 msgid "\"Lua\""

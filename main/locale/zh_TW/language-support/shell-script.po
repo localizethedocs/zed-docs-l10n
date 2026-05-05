@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/languages/sh.md:14 src/languages/sh.md:47
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/sh.md:15 src/languages/sh.md:48
 msgid "\"Shell Script\""

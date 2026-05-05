@@ -52,7 +52,7 @@ msgstr "\"lsp\""
 
 #: src/languages/astro.md:17
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/astro.md:18
 msgid "\"settings\""
@@ -72,11 +72,11 @@ msgstr ""
 
 #: src/languages/astro.md:22
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/astro.md:23
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/astro.md:24
 msgid "\"class=\\\"([^\\\"]*)\\\"\""

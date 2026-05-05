@@ -325,7 +325,7 @@ msgstr ""
 
 #: src/languages/rust.md:204
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/rust.md:208
 msgid ""

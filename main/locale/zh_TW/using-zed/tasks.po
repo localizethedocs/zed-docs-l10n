@@ -374,7 +374,7 @@ msgstr ""
 
 #: src/tasks.md:143
 msgid "\"echo \\\"$ZED_SELECTED_TEXT\\\"\""
-msgstr ""
+msgstr "\"echo \\\"$ZED_SELECTED_TEXT\\\"\""
 
 #: src/tasks.md:147
 msgid ""

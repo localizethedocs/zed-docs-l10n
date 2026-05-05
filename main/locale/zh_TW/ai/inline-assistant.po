@@ -34,7 +34,7 @@ msgstr ""
 
 #: src/ai/inline-assistant.md:11
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/ai/inline-assistant.md:13
 msgid ""
@@ -134,41 +134,41 @@ msgstr ""
 
 #: src/ai/inline-assistant.md:51 src/ai/inline-assistant.md:75
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/inline-assistant.md:52 src/ai/inline-assistant.md:76
 msgid "\"default_model\""
-msgstr ""
+msgstr "\"default_model\""
 
 #: src/ai/inline-assistant.md:53 src/ai/inline-assistant.md:58
 #: src/ai/inline-assistant.md:77 src/ai/inline-assistant.md:82
 #: src/ai/inline-assistant.md:86
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/ai/inline-assistant.md:53 src/ai/inline-assistant.md:58
 #: src/ai/inline-assistant.md:77 src/ai/inline-assistant.md:82
 #: src/ai/inline-assistant.md:86
 msgid "\"zed.dev\""
-msgstr ""
+msgstr "\"zed.dev\""
 
 #: src/ai/inline-assistant.md:54 src/ai/inline-assistant.md:59
 #: src/ai/inline-assistant.md:78 src/ai/inline-assistant.md:83
 #: src/ai/inline-assistant.md:87
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/ai/inline-assistant.md:54 src/ai/inline-assistant.md:78
 msgid "\"claude-sonnet-4-5\""
-msgstr ""
+msgstr "\"claude-sonnet-4-5\""
 
 #: src/ai/inline-assistant.md:56 src/ai/inline-assistant.md:80
 msgid "\"inline_alternatives\""
-msgstr ""
+msgstr "\"inline_alternatives\""
 
 #: src/ai/inline-assistant.md:59 src/ai/inline-assistant.md:83
 msgid "\"gpt-4-mini\""
-msgstr ""
+msgstr "\"gpt-4-mini\""
 
 #: src/ai/inline-assistant.md:66
 msgid ""

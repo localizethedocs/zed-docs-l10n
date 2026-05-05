@@ -81,7 +81,7 @@ msgstr ""
 
 #: src/languages/luau.md:33
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/luau.md:34
 msgid "\"Luau\""

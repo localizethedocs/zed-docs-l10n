@@ -147,7 +147,7 @@ msgstr ""
 
 #: src/languages/vue.md:69
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/vue.md:71
 msgid "\"includeLanguages\""
@@ -159,11 +159,11 @@ msgstr ""
 
 #: src/languages/vue.md:74
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/vue.md:75
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/vue.md:76
 msgid "\"class=\\\"([^\\\"]*)\\\"\""

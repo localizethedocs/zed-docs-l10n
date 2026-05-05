@@ -38,7 +38,7 @@ msgstr ""
 
 #: src/finding-navigating.md:13 src/finding-navigating.md:63
 msgid "Project Panel"
-msgstr ""
+msgstr "專案面板"
 
 #: src/finding-navigating.md:15
 msgid ""
@@ -151,7 +151,7 @@ msgstr ""
 
 #: src/finding-navigating.md:54
 msgid "<kbd class=\"keybinding\">cmd-shift-p\\|ctrl-shift-p</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-p\\|ctrl-shift-p</kbd>"
 
 #: src/finding-navigating.md:55
 msgid "Open file"
@@ -159,7 +159,7 @@ msgstr ""
 
 #: src/finding-navigating.md:55
 msgid "<kbd class=\"keybinding\">cmd-p\\|ctrl-p</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-p\\|ctrl-p</kbd>"
 
 #: src/finding-navigating.md:56
 msgid "Project search"
@@ -167,7 +167,7 @@ msgstr "專案搜尋"
 
 #: src/finding-navigating.md:56
 msgid "<kbd class=\"keybinding\">cmd-shift-f\\|ctrl-shift-f</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-f\\|ctrl-shift-f</kbd>"
 
 #: src/finding-navigating.md:57
 msgid "Go to definition"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: src/finding-navigating.md:57
 msgid "<kbd class=\"keybinding\">f12\\|f12</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">f12\\|f12</kbd>"
 
 #: src/finding-navigating.md:58
 msgid "Find references"
@@ -183,7 +183,7 @@ msgstr ""
 
 #: src/finding-navigating.md:58
 msgid "<kbd class=\"keybinding\">alt-shift-f12\\|alt-shift-f12</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">alt-shift-f12\\|alt-shift-f12</kbd>"
 
 #: src/finding-navigating.md:59
 msgid "Symbol in file"
@@ -191,7 +191,7 @@ msgstr ""
 
 #: src/finding-navigating.md:59
 msgid "<kbd class=\"keybinding\">cmd-shift-o\\|ctrl-shift-o</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-o\\|ctrl-shift-o</kbd>"
 
 #: src/finding-navigating.md:60
 msgid "Symbol in project"
@@ -199,16 +199,16 @@ msgstr ""
 
 #: src/finding-navigating.md:60
 msgid "<kbd class=\"keybinding\">cmd-t\\|ctrl-t</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-t\\|ctrl-t</kbd>"
 
 #: src/finding-navigating.md:61
 msgid "<kbd class=\"keybinding\">cmd-shift-b\\|ctrl-shift-b</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-b\\|ctrl-shift-b</kbd>"
 
 #: src/finding-navigating.md:62
 msgid "<kbd class=\"keybinding\">ctrl-tab\\|ctrl-tab</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-tab\\|ctrl-tab</kbd>"
 
 #: src/finding-navigating.md:63
 msgid "<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</kbd>"

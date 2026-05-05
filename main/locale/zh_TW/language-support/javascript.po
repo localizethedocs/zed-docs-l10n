@@ -71,13 +71,13 @@ msgstr ""
 #: src/languages/javascript.md:25 src/languages/javascript.md:57
 #: src/languages/javascript.md:71 src/languages/javascript.md:101
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/javascript.md:26 src/languages/javascript.md:58
 #: src/languages/javascript.md:72 src/languages/javascript.md:102
 #: src/languages/javascript.md:242 src/languages/javascript.md:257
 msgid "\"JavaScript\""
-msgstr ""
+msgstr "\"JavaScript\""
 
 #: src/languages/javascript.md:27 src/languages/javascript.md:103
 msgid "\"formatter\""
@@ -222,11 +222,11 @@ msgstr ""
 
 #: src/languages/javascript.md:121
 msgid "\"nodePath\""
-msgstr ""
+msgstr "\"nodePath\""
 
 #: src/languages/javascript.md:121
 msgid "\".yarn/sdks\""
-msgstr ""
+msgstr "\".yarn/sdks\""
 
 #: src/languages/javascript.md:128
 msgid "Configure ESLint's `problems`:"
@@ -258,7 +258,7 @@ msgstr ""
 
 #: src/languages/javascript.md:157
 msgid "\"rulesCustomizations\""
-msgstr ""
+msgstr "\"rulesCustomizations\""
 
 #: src/languages/javascript.md:158
 msgid "// set all eslint errors/warnings to show as warnings\n"
@@ -315,55 +315,59 @@ msgstr ""
 
 #: src/languages/javascript.md:192
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/javascript.md:194
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/javascript.md:195
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/javascript.md:196
 msgid "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.className\\\\s*[+]?=\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:197
 msgid ""
 "\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
 "\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.setAttributeNS\\\\(.*,\\\\s*['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\"
+"\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:198
 msgid ""
 "\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.setAttribute\\\\(['\\\"]class['\\\"],\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:199
 msgid "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.add\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:200
 msgid "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.remove\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:201
 msgid "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.toggle\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:202
 msgid "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.contains\\\\(['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:203
 msgid "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
-msgstr ""
+msgstr "\"\\\\.classList\\\\.replace\\\\(\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:204
 msgid ""
 "\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 msgstr ""
+"\"\\\\.classList\\\\.replace\\\\([^,)]+,\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
 
 #: src/languages/javascript.md:213
 msgid "Debugging"

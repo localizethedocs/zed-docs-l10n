@@ -128,15 +128,15 @@ msgstr ""
 
 #: src/development/windows.md:45
 msgid "\"Microsoft.VisualStudio.Component.Roslyn.Compiler\""
-msgstr ""
+msgstr "\"Microsoft.VisualStudio.Component.Roslyn.Compiler\""
 
 #: src/development/windows.md:46
 msgid "\"Microsoft.Component.MSBuild\""
-msgstr ""
+msgstr "\"Microsoft.Component.MSBuild\""
 
 #: src/development/windows.md:47
 msgid "\"Microsoft.VisualStudio.Component.CoreBuildTools\""
-msgstr ""
+msgstr "\"Microsoft.VisualStudio.Component.CoreBuildTools\""
 
 #: src/development/windows.md:48
 msgid "\"Microsoft.VisualStudio.Workload.MSBuildTools\""

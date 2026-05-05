@@ -29,7 +29,7 @@ msgstr ""
 
 #: src/environment.md:8 src/environment.md:61
 msgid "Built-in terminal"
-msgstr ""
+msgstr "內建終端機"
 
 #: src/environment.md:9 src/environment.md:70
 msgid "Look-up of language servers"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: src/environment.md:10 src/environment.md:85
 msgid "Language servers"
-msgstr ""
+msgstr "語言伺服器"
 
 #: src/environment.md:12
 msgid ""

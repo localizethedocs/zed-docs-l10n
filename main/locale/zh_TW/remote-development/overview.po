@@ -676,6 +676,3 @@ msgid ""
 "[Remote Development on zed.dev](https://zed.dev/remote-development): Product "
 "overview and release updates."
 msgstr ""
-
-#~ msgid "Feedback"
-#~ msgstr "意見反饋"

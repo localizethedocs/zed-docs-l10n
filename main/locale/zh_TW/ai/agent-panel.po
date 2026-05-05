@@ -31,7 +31,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:10
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/ai/agent-panel.md:12
 msgid ""
@@ -224,7 +224,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:75
 msgid "Context Menu"
-msgstr ""
+msgstr "上下文選單"
 
 #: src/ai/agent-panel.md:77
 msgid ""
@@ -591,7 +591,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:206
 msgid "Tool Permissions"
-msgstr ""
+msgstr "工具權限"
 
 #: src/ai/agent-panel.md:208
 msgid ""
@@ -617,7 +617,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:215
 msgid "`\"deny\"` — Blocks all tool actions"
-msgstr ""
+msgstr "`\"deny\"` — 阻塞所有工具動作"
 
 #: src/ai/agent-panel.md:217
 msgid ""
@@ -644,7 +644,7 @@ msgstr ""
 
 #: src/ai/agent-panel.md:225
 msgid "Model Support"
-msgstr ""
+msgstr "模型支援"
 
 #: src/ai/agent-panel.md:227
 msgid ""

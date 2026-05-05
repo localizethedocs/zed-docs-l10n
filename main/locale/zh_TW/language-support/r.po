@@ -144,7 +144,7 @@ msgstr ""
 
 #: src/languages/r.md:65 src/languages/r.md:77
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/r.md:66 src/languages/r.md:78
 msgid "\"R\""

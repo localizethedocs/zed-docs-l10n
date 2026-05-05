@@ -68,7 +68,7 @@ msgstr ""
 #: src/languages/markdown.md:33 src/languages/markdown.md:53
 #: src/languages/markdown.md:67 src/languages/markdown.md:81
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/markdown.md:34 src/languages/markdown.md:54
 #: src/languages/markdown.md:68 src/languages/markdown.md:82

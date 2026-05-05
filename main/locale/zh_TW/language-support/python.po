@@ -372,23 +372,23 @@ msgstr ""
 
 #: src/languages/python.md:155
 msgid "\"typeCheckingMode\""
-msgstr ""
+msgstr "\"typeCheckingMode\""
 
 #: src/languages/python.md:155
 msgid "\"strict\""
-msgstr ""
+msgstr "\"strict\""
 
 #: src/languages/python.md:156
 msgid "\"ignore\""
-msgstr ""
+msgstr "\"ignore\""
 
 #: src/languages/python.md:156
 msgid "\"**/__pycache__\""
-msgstr ""
+msgstr "\"**/__pycache__\""
 
 #: src/languages/python.md:160
 msgid "PyLSP"
-msgstr ""
+msgstr "PyLSP"
 
 #: src/languages/python.md:162
 msgid ""
@@ -442,7 +442,7 @@ msgstr ""
 
 #: src/languages/python.md:182
 msgid "How Zed Uses Python Toolchains"
-msgstr ""
+msgstr "Zed 使用 Python 工具鏈的方式"
 
 #: src/languages/python.md:184
 msgid ""
@@ -507,7 +507,7 @@ msgstr ""
 
 #: src/languages/python.md:199
 msgid "Configuring Formatting"
-msgstr ""
+msgstr "設定格式化組態"
 
 #: src/languages/python.md:201
 msgid ""
@@ -524,11 +524,11 @@ msgstr ""
 
 #: src/languages/python.md:209 src/languages/python.md:230
 msgid "\"code_actions_on_format\""
-msgstr ""
+msgstr "\"code_actions_on_format\""
 
 #: src/languages/python.md:210
 msgid "\"source.organizeImports.ruff\""
-msgstr ""
+msgstr "\"source.organizeImports.ruff\""
 
 #: src/languages/python.md:212 src/languages/python.md:234
 msgid "\"formatter\""
@@ -536,15 +536,15 @@ msgstr "\"formatter\""
 
 #: src/languages/python.md:213
 msgid "\"language_server\""
-msgstr ""
+msgstr "\"language_server\""
 
 #: src/languages/python.md:214
 msgid "\"name\""
-msgstr ""
+msgstr "\"name\""
 
 #: src/languages/python.md:214 src/languages/python.md:271
 msgid "\"ruff\""
-msgstr ""
+msgstr "\"ruff\""
 
 #: src/languages/python.md:222
 msgid ""

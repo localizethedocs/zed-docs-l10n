@@ -64,7 +64,7 @@ msgstr ""
 
 #: src/languages/html.md:27 src/languages/html.md:41
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/html.md:28 src/languages/html.md:42
 msgid "\"HTML\""
@@ -170,15 +170,15 @@ msgstr ""
 
 #: src/languages/html.md:76
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/html.md:78
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/html.md:79
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/html.md:79
 msgid "\"class=\\\"([^\\\"]*)\\\"\""

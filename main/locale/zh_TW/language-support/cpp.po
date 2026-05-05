@@ -194,7 +194,7 @@ msgstr ""
 
 #: src/languages/cpp.md:102
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/cpp.md:103
 msgid "\"C++\""

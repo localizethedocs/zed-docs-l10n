@@ -1461,7 +1461,7 @@ msgstr ""
 #: src/configuring-zed.md:707 src/configuring-zed.md:2372
 #: src/configuring-zed.md:2673 src/configuring-zed.md:5082
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/configuring-zed.md:708
 msgid "\"Go\""
@@ -7653,7 +7653,7 @@ msgstr ""
 
 #: src/configuring-zed.md:4856
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/configuring-zed.md:4856
 msgid "\"github\""

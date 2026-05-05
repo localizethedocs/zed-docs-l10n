@@ -1404,7 +1404,7 @@ msgstr ""
 
 #: src/visual-customization.md:479
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/visual-customization.md:480
 msgid "\"version\""

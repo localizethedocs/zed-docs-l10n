@@ -183,7 +183,7 @@ msgstr ""
 
 #: src/languages/svelte.md:84
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/svelte.md:85
 msgid "\"settings\""
@@ -203,11 +203,11 @@ msgstr ""
 
 #: src/languages/svelte.md:89
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/svelte.md:90
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/svelte.md:91
 msgid "\"class=\\\"([^\\\"]*)\\\"\""

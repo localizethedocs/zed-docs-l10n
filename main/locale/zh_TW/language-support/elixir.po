@@ -151,7 +151,7 @@ msgstr ""
 #: src/languages/elixir.md:148 src/languages/elixir.md:218
 #: src/languages/elixir.md:236
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/elixir.md:51 src/languages/elixir.md:102
 #: src/languages/elixir.md:149 src/languages/elixir.md:219
@@ -367,7 +367,7 @@ msgstr ""
 
 #: src/languages/elixir.md:169 src/languages/elixir.md:282
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/elixir.md:170
 msgid "\"completions\""
@@ -505,7 +505,7 @@ msgstr ""
 
 #: src/languages/elixir.md:276
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/elixir.md:278
 msgid "\"includeLanguages\""
@@ -525,7 +525,7 @@ msgstr ""
 
 #: src/languages/elixir.md:283
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/elixir.md:283
 msgid "\"class=\\\"([^\\\"]*)\\\"\""

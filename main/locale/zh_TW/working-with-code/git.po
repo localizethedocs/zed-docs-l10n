@@ -686,7 +686,7 @@ msgstr ""
 
 #: src/git.md:245
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/git.md:246
 msgid "\"commit_message_model\""
@@ -694,7 +694,7 @@ msgstr ""
 
 #: src/git.md:247 src/git.md:282
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/git.md:247
 msgid "\"anthropic\""
@@ -702,7 +702,7 @@ msgstr ""
 
 #: src/git.md:248
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/git.md:248
 msgid "\"claude-3-5-haiku\""
@@ -876,7 +876,7 @@ msgstr ""
 
 #: src/git.md:319
 msgid "<kbd class=\"keybinding\">cmd-ctrl-y\\|ctrl-space</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-ctrl-y\\|ctrl-space</kbd>"
 
 #: src/git.md:320
 msgid "<code class=\"hljs\">git: unstage all</code>"
@@ -884,7 +884,7 @@ msgstr ""
 
 #: src/git.md:320
 msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y\\|ctrl-shift-space</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-ctrl-shift-y\\|ctrl-shift-space</kbd>"
 
 #: src/git.md:321
 msgid "<code class=\"hljs\">git: toggle staged</code>"
@@ -892,7 +892,7 @@ msgstr ""
 
 #: src/git.md:321
 msgid "<kbd class=\"keybinding\">space\\|space</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">space\\|space</kbd>"
 
 #: src/git.md:322
 msgid "<code class=\"hljs\">git: stage and next</code>"
@@ -900,7 +900,7 @@ msgstr ""
 
 #: src/git.md:322
 msgid "<kbd class=\"keybinding\">cmd-y\\|alt-y</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-y\\|alt-y</kbd>"
 
 #: src/git.md:323
 msgid "<code class=\"hljs\">git: unstage and next</code>"
@@ -908,7 +908,7 @@ msgstr ""
 
 #: src/git.md:323
 msgid "<kbd class=\"keybinding\">cmd-shift-y\\|alt-shift-y</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-shift-y\\|alt-shift-y</kbd>"
 
 #: src/git.md:324
 msgid "<code class=\"hljs\">git: commit</code>"
@@ -916,7 +916,7 @@ msgstr ""
 
 #: src/git.md:324
 msgid "<kbd class=\"keybinding\">cmd-enter\\|ctrl-enter</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-enter\\|ctrl-enter</kbd>"
 
 #: src/git.md:325
 msgid "<code class=\"hljs\">git: expand commit editor</code>"
@@ -924,7 +924,7 @@ msgstr ""
 
 #: src/git.md:325
 msgid "<kbd class=\"keybinding\">shift-escape\\|</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">shift-escape\\|</kbd>"
 
 #: src/git.md:326
 msgid "<code class=\"hljs\">git: push</code>"
@@ -932,7 +932,7 @@ msgstr ""
 
 #: src/git.md:326
 msgid "<kbd class=\"keybinding\">ctrl-g up\\|ctrl-g up</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g up\\|ctrl-g up</kbd>"
 
 #: src/git.md:327
 msgid "<code class=\"hljs\">git: force push</code>"
@@ -940,7 +940,7 @@ msgstr ""
 
 #: src/git.md:327
 msgid "<kbd class=\"keybinding\">ctrl-g shift-up\\|ctrl-g shift-up</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g shift-up\\|ctrl-g shift-up</kbd>"
 
 #: src/git.md:328
 msgid "<code class=\"hljs\">git: pull</code>"
@@ -948,7 +948,7 @@ msgstr ""
 
 #: src/git.md:328
 msgid "<kbd class=\"keybinding\">ctrl-g down\\|ctrl-g down</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g down\\|ctrl-g down</kbd>"
 
 #: src/git.md:329
 msgid "<code class=\"hljs\">git: pull rebase</code>"
@@ -956,7 +956,7 @@ msgstr ""
 
 #: src/git.md:329
 msgid "<kbd class=\"keybinding\">ctrl-g shift-down\\|ctrl-g shift-down</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g shift-down\\|ctrl-g shift-down</kbd>"
 
 #: src/git.md:330
 msgid "<code class=\"hljs\">git: fetch</code>"
@@ -964,7 +964,7 @@ msgstr ""
 
 #: src/git.md:330
 msgid "<kbd class=\"keybinding\">ctrl-g ctrl-g\\|ctrl-g ctrl-g</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g ctrl-g\\|ctrl-g ctrl-g</kbd>"
 
 #: src/git.md:331
 msgid "<code class=\"hljs\">git: diff</code>"
@@ -972,7 +972,7 @@ msgstr ""
 
 #: src/git.md:331
 msgid "<kbd class=\"keybinding\">ctrl-g d\\|ctrl-g d</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">ctrl-g d\\|ctrl-g d</kbd>"
 
 #: src/git.md:332
 msgid "<code class=\"hljs\">git: restore</code>"
@@ -980,7 +980,7 @@ msgstr ""
 
 #: src/git.md:332
 msgid "<kbd class=\"keybinding\">cmd-alt-z\\|ctrl-k ctrl-r</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-alt-z\\|ctrl-k ctrl-r</kbd>"
 
 #: src/git.md:333
 msgid "<code class=\"hljs\">git: restore file</code>"
@@ -988,7 +988,7 @@ msgstr ""
 
 #: src/git.md:333
 msgid "<kbd class=\"keybinding\">cmd-delete\\|ctrl-delete</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-delete\\|ctrl-delete</kbd>"
 
 #: src/git.md:334
 msgid "<code class=\"hljs\">git: branch</code>"
@@ -1008,7 +1008,7 @@ msgstr ""
 
 #: src/git.md:337
 msgid "<kbd class=\"keybinding\">cmd-alt-g b\\|alt-g b</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-alt-g b\\|alt-g b</kbd>"
 
 #: src/git.md:338
 msgid "<code class=\"hljs\">git: stash all</code>"
@@ -1036,7 +1036,7 @@ msgstr ""
 
 #: src/git.md:343
 msgid "<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-\"\\|ctrl-\"</kbd>"
 
 #: src/git.md:344
 msgid "<code class=\"hljs\">editor: toggle selected diff hunks</code>"
@@ -1044,7 +1044,7 @@ msgstr ""
 
 #: src/git.md:344
 msgid "<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-'\\|ctrl-'</kbd>"
 
 #: src/git.md:346
 msgid ""

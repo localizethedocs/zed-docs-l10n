@@ -1557,15 +1557,15 @@ msgstr ""
 
 #: src/ai/llm-providers.md:703
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/llm-providers.md:704
 msgid "\"default_model\""
-msgstr ""
+msgstr "\"default_model\""
 
 #: src/ai/llm-providers.md:705 src/ai/llm-providers.md:785
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/ai/llm-providers.md:705
 msgid "\"openrouter\""
@@ -1573,7 +1573,7 @@ msgstr ""
 
 #: src/ai/llm-providers.md:706
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/ai/llm-providers.md:706 src/ai/llm-providers.md:781
 msgid "\"openrouter/auto\""
@@ -1737,7 +1737,7 @@ msgstr ""
 
 #: src/ai/llm-providers.md:790
 msgid "\"ignore\""
-msgstr ""
+msgstr "\"ignore\""
 
 #: src/ai/llm-providers.md:790
 msgid "\"cohere\""

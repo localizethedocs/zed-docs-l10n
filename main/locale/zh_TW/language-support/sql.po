@@ -53,7 +53,7 @@ msgstr ""
 
 #: src/languages/sql.md:29 src/languages/sql.md:62
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/sql.md:30 src/languages/sql.md:63
 msgid "\"SQL\""

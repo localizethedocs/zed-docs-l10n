@@ -702,7 +702,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:195
 msgid "\"test current file\""
-msgstr ""
+msgstr "\"test current file\""
 
 #: src/migrate/intellij.md:196
 msgid "\"./gradlew test --tests $ZED_STEM\""
@@ -968,7 +968,7 @@ msgstr ""
 
 #: src/migrate/intellij.md:267
 msgid "Built-in terminal"
-msgstr ""
+msgstr "內建終端機"
 
 #: src/migrate/intellij.md:268
 msgid "Task runner"
@@ -1110,11 +1110,11 @@ msgstr ""
 
 #: src/migrate/intellij.md:319
 msgid "\"load_direnv\""
-msgstr ""
+msgstr "\"load_direnv\""
 
 #: src/migrate/intellij.md:319
 msgid "\"shell_hook\""
-msgstr ""
+msgstr "\"shell_hook\""
 
 #: src/migrate/intellij.md:322
 msgid ""

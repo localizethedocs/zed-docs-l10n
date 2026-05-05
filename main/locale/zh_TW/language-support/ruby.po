@@ -204,7 +204,7 @@ msgstr ""
 #: src/languages/ruby.md:223 src/languages/ruby.md:249
 #: src/languages/ruby.md:410
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/ruby.md:74 src/languages/ruby.md:104 src/languages/ruby.md:116
 #: src/languages/ruby.md:151 src/languages/ruby.md:191
@@ -471,15 +471,15 @@ msgstr ""
 
 #: src/languages/ruby.md:274
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/languages/ruby.md:276
 msgid "\"experimental\""
-msgstr ""
+msgstr "\"experimental\""
 
 #: src/languages/ruby.md:277
 msgid "\"classRegex\""
-msgstr ""
+msgstr "\"classRegex\""
 
 #: src/languages/ruby.md:277
 msgid "\"\\\\bclass:\\\\s*['\\\"]([^'\\\"]*)['\\\"]\""
@@ -570,7 +570,7 @@ msgstr "\"args\""
 
 #: src/languages/ruby.md:312
 msgid "\"test\""
-msgstr ""
+msgstr "\"test\""
 
 #: src/languages/ruby.md:313 src/languages/ruby.md:336
 msgid "\"$ZED_RELATIVE_FILE\""

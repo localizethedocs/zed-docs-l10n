@@ -48,12 +48,12 @@ msgstr ""
 #: src/ai/agent-settings.md:326 src/ai/agent-settings.md:339
 #: src/ai/agent-settings.md:352 src/ai/agent-settings.md:365
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/agent-settings.md:16 src/ai/agent-settings.md:35
 #: src/ai/agent-settings.md:66 src/ai/agent-settings.md:90
 msgid "\"default_model\""
-msgstr ""
+msgstr "\"default_model\""
 
 #: src/ai/agent-settings.md:17 src/ai/agent-settings.md:36
 #: src/ai/agent-settings.md:40 src/ai/agent-settings.md:44
@@ -62,7 +62,7 @@ msgstr ""
 #: src/ai/agent-settings.md:96 src/ai/agent-settings.md:100
 #: src/ai/agent-settings.md:118 src/ai/agent-settings.md:127
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/ai/agent-settings.md:17 src/ai/agent-settings.md:44
 #: src/ai/agent-settings.md:118
@@ -76,7 +76,7 @@ msgstr ""
 #: src/ai/agent-settings.md:97 src/ai/agent-settings.md:101
 #: src/ai/agent-settings.md:128
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/ai/agent-settings.md:18
 msgid "\"gpt-4o\""
@@ -109,12 +109,12 @@ msgstr ""
 #: src/ai/agent-settings.md:96 src/ai/agent-settings.md:100
 #: src/ai/agent-settings.md:127
 msgid "\"zed.dev\""
-msgstr ""
+msgstr "\"zed.dev\""
 
 #: src/ai/agent-settings.md:37 src/ai/agent-settings.md:68
 #: src/ai/agent-settings.md:92 src/ai/agent-settings.md:128
 msgid "\"claude-sonnet-4-5\""
-msgstr ""
+msgstr "\"claude-sonnet-4-5\""
 
 #: src/ai/agent-settings.md:39
 msgid "\"inline_assistant_model\""
@@ -172,7 +172,7 @@ msgstr ""
 
 #: src/ai/agent-settings.md:70 src/ai/agent-settings.md:94
 msgid "\"inline_alternatives\""
-msgstr ""
+msgstr "\"inline_alternatives\""
 
 #: src/ai/agent-settings.md:73 src/ai/agent-settings.md:97
 msgid "\"gpt-5-mini\""
@@ -289,7 +289,7 @@ msgstr ""
 
 #: src/ai/agent-settings.md:160
 msgid "`\"deny\"` — Blocks all tool actions"
-msgstr ""
+msgstr "`\"deny\"` — 阻塞所有工具動作"
 
 #: src/ai/agent-settings.md:165 src/ai/agent-settings.md:188
 #: src/ai/agent-settings.md:230 src/ai/agent-settings.md:257

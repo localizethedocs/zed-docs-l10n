@@ -49,7 +49,7 @@ msgstr ""
 
 #: src/languages/fish.md:24
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/fish.md:25
 msgid "\"Fish\""

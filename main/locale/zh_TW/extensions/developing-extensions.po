@@ -447,6 +447,12 @@ msgid ""
 "version = \"0.0.1\"\n"
 "```"
 msgstr ""
+"```toml\n"
+"[my-extension]\n"
+"submodule = \"extensions-my-extension\"\n"
+"path = \"packages/zed\"\n"
+"version = \"0.0.1\"\n"
+"```"
 
 #: src/extensions/developing-extensions.md:194
 msgid ""

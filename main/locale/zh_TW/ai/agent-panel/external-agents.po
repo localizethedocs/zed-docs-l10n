@@ -59,7 +59,7 @@ msgstr ""
 #: src/ai/external-agents.md:19 src/ai/external-agents.md:65
 #: src/ai/external-agents.md:139
 msgid "Getting Started"
-msgstr ""
+msgstr "開始使用"
 
 #: src/ai/external-agents.md:21
 msgid ""
@@ -92,7 +92,7 @@ msgstr ""
 #: src/ai/external-agents.md:31 src/ai/external-agents.md:77
 #: src/ai/external-agents.md:152
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/external-agents.md:31 src/ai/external-agents.md:77
 #: src/ai/external-agents.md:152 src/ai/external-agents.md:231
@@ -839,7 +839,7 @@ msgstr ""
 
 #: src/ai/external-agents.md:333
 msgid "Troubleshooting"
-msgstr ""
+msgstr "疑難排解"
 
 #: src/ai/external-agents.md:335
 msgid "**\"I enabled MCP tools in Zed but the agent can't see them\"**"
@@ -897,6 +897,3 @@ msgid ""
 "party agent. External agents have their own tool sets and don't use Zed's "
 "profile system."
 msgstr ""
-
-#~ msgid "MCP Servers"
-#~ msgstr "MCP 伺服器"

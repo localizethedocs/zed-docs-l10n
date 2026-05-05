@@ -3000,7 +3000,7 @@ msgstr ""
 #: src/reference/all-settings.md:1863 src/reference/all-settings.md:1873
 #: src/reference/all-settings.md:5377
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/reference/all-settings.md:1835 src/reference/all-settings.md:1853
 msgid "\"zed\""

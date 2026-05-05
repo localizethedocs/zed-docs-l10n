@@ -116,7 +116,7 @@ msgstr "範例"
 
 #: src/git.md:38
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/git.md:39
 msgid "\"Git Commit\""
@@ -405,7 +405,7 @@ msgstr ""
 
 #: src/git.md:144
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/git.md:145
 msgid "\"commit_message_model\""
@@ -413,7 +413,7 @@ msgstr ""
 
 #: src/git.md:146 src/git.md:174
 msgid "\"provider\""
-msgstr ""
+msgstr "\"provider\""
 
 #: src/git.md:146
 msgid "\"anthropic\""
@@ -421,7 +421,7 @@ msgstr ""
 
 #: src/git.md:147
 msgid "\"model\""
-msgstr ""
+msgstr "\"model\""
 
 #: src/git.md:147
 msgid "\"claude-3-5-haiku\""
@@ -559,7 +559,7 @@ msgstr ""
 
 #: src/git.md:205
 msgid "<kbd class=\"keybinding\">cmd-ctrl-y"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-ctrl-y"
 
 #: src/git.md:206
 msgid "<code class=\"hljs\">git: unstage all</code>"
@@ -567,7 +567,7 @@ msgstr ""
 
 #: src/git.md:206
 msgid "<kbd class=\"keybinding\">cmd-ctrl-shift-y"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">cmd-ctrl-shift-y"
 
 #: src/git.md:207
 msgid "<code class=\"hljs\">git: toggle staged</code>"
@@ -575,7 +575,7 @@ msgstr ""
 
 #: src/git.md:207
 msgid "<kbd class=\"keybinding\">space"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">space"
 
 #: src/git.md:208
 msgid "<code class=\"hljs\">git: stage and next</code>"
@@ -607,7 +607,7 @@ msgstr ""
 
 #: src/git.md:211
 msgid "<kbd class=\"keybinding\">shift-escape"
-msgstr ""
+msgstr "<kbd class=\"keybinding\">shift-escape"
 
 #: src/git.md:212
 msgid "<code class=\"hljs\">git: push</code>"

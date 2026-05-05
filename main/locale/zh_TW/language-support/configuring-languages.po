@@ -98,7 +98,7 @@ msgstr ""
 #: src/configuring-languages.md:27 src/configuring-languages.md:293
 #: src/configuring-languages.md:343 src/configuring-languages.md:374
 msgid "\"JavaScript\""
-msgstr ""
+msgstr "\"JavaScript\""
 
 #: src/configuring-languages.md:30 src/configuring-languages.md:295
 #: src/configuring-languages.md:380
@@ -376,7 +376,7 @@ msgstr ""
 
 #: src/configuring-languages.md:114
 msgid "\"PHP\""
-msgstr ""
+msgstr "\"PHP\""
 
 #: src/configuring-languages.md:115 src/configuring-languages.md:134
 msgid "\"language_servers\""
@@ -384,15 +384,15 @@ msgstr "\"language_servers\""
 
 #: src/configuring-languages.md:115
 msgid "\"intelephense\""
-msgstr ""
+msgstr "\"intelephense\""
 
 #: src/configuring-languages.md:115
 msgid "\"!phpactor\""
-msgstr ""
+msgstr "\"!phpactor\""
 
 #: src/configuring-languages.md:115
 msgid "\"!phptools\""
-msgstr ""
+msgstr "\"!phptools\""
 
 #: src/configuring-languages.md:115 src/configuring-languages.md:141
 msgid "\"...\""
@@ -680,7 +680,7 @@ msgstr ""
 
 #: src/configuring-languages.md:239
 msgid "\"tailwindcss-language-server\""
-msgstr ""
+msgstr "\"tailwindcss-language-server\""
 
 #: src/configuring-languages.md:240 src/configuring-languages.md:328
 msgid "\"settings\""

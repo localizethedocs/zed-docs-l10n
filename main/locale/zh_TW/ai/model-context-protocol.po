@@ -280,7 +280,7 @@ msgstr ""
 
 #: src/ai/mcp.md:96
 msgid "\"agent\""
-msgstr ""
+msgstr "\"agent\""
 
 #: src/ai/mcp.md:97
 msgid "\"profiles\""
@@ -431,7 +431,7 @@ msgstr ""
 
 #: src/ai/mcp.md:147
 msgid "`\"deny\"` — Blocks all tool actions"
-msgstr ""
+msgstr "`\"deny\"` — 阻塞所有工具動作"
 
 #: src/ai/mcp.md:149
 msgid ""

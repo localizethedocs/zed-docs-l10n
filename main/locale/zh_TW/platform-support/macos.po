@@ -183,7 +183,7 @@ msgstr ""
 
 #: src/macos.md:96
 msgid "CLI command not found"
-msgstr ""
+msgstr "找不到 CLI 命令"
 
 #: src/macos.md:98
 msgid "If the `zed` command isn't available after installation:"

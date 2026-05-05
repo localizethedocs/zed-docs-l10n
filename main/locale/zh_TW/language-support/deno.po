@@ -63,11 +63,11 @@ msgstr ""
 
 #: src/languages/deno.md:26
 msgid "\"languages\""
-msgstr ""
+msgstr "\"languages\""
 
 #: src/languages/deno.md:27 src/languages/deno.md:101
 msgid "\"JavaScript\""
-msgstr ""
+msgstr "\"JavaScript\""
 
 #: src/languages/deno.md:28 src/languages/deno.md:37 src/languages/deno.md:46
 msgid "\"language_servers\""

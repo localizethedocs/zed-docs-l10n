@@ -17,7 +17,7 @@ msgstr ""
 
 #: src/ai/privacy-and-security.md:5
 msgid "Philosophy"
-msgstr ""
+msgstr "理念"
 
 #: src/ai/privacy-and-security.md:7
 msgid ""
@@ -97,7 +97,7 @@ msgstr ""
 
 #: src/ai/privacy-and-security.md:31
 msgid "Legal Links"
-msgstr ""
+msgstr "合法連結"
 
 #: src/ai/privacy-and-security.md:33
 msgid "[Terms of Service](https://zed.dev/terms)"
