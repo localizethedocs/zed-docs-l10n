@@ -1,0 +1,122 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/editing-code.md:3
+msgid "Editing Code"
+msgstr ""
+
+#: src/editing-code.md:5
+msgid ""
+"Zed provides tools to help you write and modify code efficiently. This "
+"section covers the core editing features that work alongside your language "
+"server."
+msgstr ""
+
+#: src/editing-code.md:7
+msgid "What's in This Section"
+msgstr ""
+
+#: src/editing-code.md:9
+msgid ""
+"**[Code Completions](./completions.md)** — Autocomplete from language "
+"servers and AI-powered edit predictions"
+msgstr ""
+
+#: src/editing-code.md:10
+msgid ""
+"**[Snippets](./snippets.md)** — Insert reusable code templates with tab stops"
+msgstr ""
+
+#: src/editing-code.md:11
+msgid ""
+"**[Formatting & Linting](./configuring-languages.md#formatting-and-"
+"linting)** — Configure automatic code formatting and linter integration"
+msgstr ""
+
+#: src/editing-code.md:12
+msgid ""
+"**[Diagnostics & Quick Fixes](./diagnostics.md)** — View errors, warnings, "
+"and apply fixes from your language server"
+msgstr ""
+
+#: src/editing-code.md:13
+msgid ""
+"**[Multibuffers](./multibuffers.md)** — Edit multiple files simultaneously "
+"with multiple cursors"
+msgstr ""
+
+#: src/editing-code.md:15
+msgid "How These Features Work Together"
+msgstr ""
+
+#: src/editing-code.md:17
+msgid "When you're editing code, Zed combines input from multiple sources:"
+msgstr ""
+
+#: src/editing-code.md:19
+msgid ""
+"**Language servers** provide completions, diagnostics, and quick fixes based "
+"on your project's types and structure"
+msgstr ""
+
+#: src/editing-code.md:20
+msgid ""
+"**Edit predictions** suggest multi-character or multi-line changes as you "
+"type"
+msgstr ""
+
+#: src/editing-code.md:21
+msgid "**Multibuffers** let you apply changes across files in one operation"
+msgstr ""
+
+#: src/editing-code.md:23
+msgid "For example, you might:"
+msgstr ""
+
+#: src/editing-code.md:25
+msgid "Rename a function using your language server's rename refactor"
+msgstr ""
+
+#: src/editing-code.md:26
+msgid "See the results in a multibuffer showing all affected files"
+msgstr ""
+
+#: src/editing-code.md:27
+msgid "Use multiple cursors to make additional edits across all locations"
+msgstr ""
+
+#: src/editing-code.md:28
+msgid "Get immediate diagnostic feedback if something breaks"
+msgstr ""
+
+#: src/editing-code.md:30
+msgid "Related Features"
+msgstr ""
+
+#: src/editing-code.md:32
+msgid ""
+"[AI Features](./ai/overview.md) — Agentic editing, inline code "
+"transformations, and AI code completions"
+msgstr ""
+
+#: src/editing-code.md:33
+msgid ""
+"[Configuring Languages](./configuring-languages.md) — Set up language "
+"servers for your project"
+msgstr ""
+
+#: src/editing-code.md:34
+msgid ""
+"[Key Bindings](./key-bindings.md) — Customize keyboard shortcuts for editing "
+"commands"
+msgstr ""

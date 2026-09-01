@@ -1,0 +1,678 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/remote-development.md:3
+msgid "Remote Development"
+msgstr ""
+
+#: src/remote-development.md:5
+msgid ""
+"Remote Development lets you edit code on a remote server while running Zed "
+"locally. The UI stays responsive because it runs on your machine, while "
+"language servers, tasks, and terminals run on the server."
+msgstr ""
+
+#: src/remote-development.md:7
+msgid ""
+"For day-to-day workflows, pair remote development with [Tasks](./tasks.md), "
+"[Terminal](./terminal.md), and [Debugger](./debugger.md)."
+msgstr ""
+
+#: src/remote-development.md:10
+msgid "Overview"
+msgstr ""
+
+#: src/remote-development.md:12
+msgid ""
+"Remote development requires two computers, your local machine that runs the "
+"Zed UI and the remote server which runs a Zed headless server. The two "
+"communicate over SSH, so you will need to be able to SSH from your local "
+"machine into the remote server to use this feature."
+msgstr ""
+
+#: src/remote-development.md:14
+msgid ""
+"![Architectural overview of Zed Remote Development](https://zed.dev/img/"
+"remote-development/diagram.png)"
+msgstr ""
+
+#: src/remote-development.md:16
+msgid ""
+"On your local machine, Zed runs its UI, talks to language models, uses Tree-"
+"sitter to parse and syntax-highlight code, and store unsaved changes and "
+"recent projects. The source code, language servers, tasks, and the terminal "
+"all run on the remote server. [AI features](./ai/overview.md) work in remote "
+"sessions, including the Agent Panel and Inline Assistant."
+msgstr ""
+
+#: src/remote-development.md:18
+msgid ""
+"**Note:** The original version of remote development sent traffic via Zed's "
+"servers. As of Zed v0.157 you can no-longer use that mode."
+msgstr ""
+
+#: src/remote-development.md:20
+msgid "Setup"
+msgstr ""
+
+#: src/remote-development.md:22
+msgid ""
+"Download and install the latest [Zed](https://zed.dev/releases). You need at "
+"least Zed v0.159."
+msgstr ""
+
+#: src/remote-development.md:23
+msgid ""
+"Use <kbd class=\"keybinding\">ctrl-cmd-shift-o\\|alt-ctrl-shift-o</kbd> to "
+"open the \"Remote Projects\" dialog."
+msgstr ""
+
+#: src/remote-development.md:24
+msgid ""
+"Click \"Connect New Server\" and enter the command you use to SSH into the "
+"server. See [Supported SSH options](#supported-ssh-options) for options you "
+"can pass."
+msgstr ""
+
+#: src/remote-development.md:25
+msgid ""
+"Your local machine will attempt to connect to the remote server using the "
+"`ssh` binary on your path. Assuming the connection is successful, Zed will "
+"download the server on the remote host and start it."
+msgstr ""
+
+#: src/remote-development.md:26
+msgid ""
+"Once the Zed server is running, you will be prompted to choose a path to "
+"open on the remote server."
+msgstr ""
+
+#: src/remote-development.md:27
+msgid ""
+"**Note:** Zed does not currently handle opening very large directories (for "
+"example, `/` or `~` that may have >100,000 files) very well. We are working "
+"on improving this, but suggest in the meantime opening only specific "
+"projects, or subfolders of very large mono-repos."
+msgstr ""
+
+#: src/remote-development.md:29
+msgid ""
+"For simple cases where you don't need any SSH arguments, you can run `zed "
+"ssh://[<user>@]<host>[:<port>]/<path>` to open a remote folder/file "
+"directly. If you'd like to hotlink into an SSH project, use a link of the "
+"format: `zed://ssh/[<user>@]<host>[:<port>]/<path>`."
+msgstr ""
+
+#: src/remote-development.md:31
+msgid "Supported platforms"
+msgstr ""
+
+#: src/remote-development.md:33
+msgid ""
+"The remote machine must be able to run Zed's server. The following platforms "
+"should work, though note that we have not exhaustively tested every Linux "
+"distribution:"
+msgstr ""
+
+#: src/remote-development.md:35
+msgid "macOS Catalina or later (Intel or Apple Silicon)"
+msgstr ""
+
+#: src/remote-development.md:36
+msgid "Linux (x86_64 or arm64, we do not yet support 32-bit platforms)"
+msgstr ""
+
+#: src/remote-development.md:37
+msgid ""
+"Windows is not yet supported as a remote server, but Windows can be used as "
+"a local machine to connect to remote servers."
+msgstr ""
+
+#: src/remote-development.md:39
+msgid "Configuration"
+msgstr ""
+
+#: src/remote-development.md:41
+msgid ""
+"The list of remote servers is stored in your settings file <kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>. You can edit this list using the "
+"Remote Projects dialog <kbd class=\"keybinding\">ctrl-cmd-shift-o\\|alt-ctrl-"
+"shift-o</kbd>, which provides some robustness - for example it checks that "
+"the connection can be established before writing it to the settings file."
+msgstr ""
+
+#: src/remote-development.md:45 src/remote-development.md:58
+#: src/remote-development.md:76 src/remote-development.md:123
+#: src/remote-development.md:138 src/remote-development.md:157
+msgid "\"ssh_connections\""
+msgstr ""
+
+#: src/remote-development.md:47 src/remote-development.md:60
+#: src/remote-development.md:78 src/remote-development.md:125
+#: src/remote-development.md:140 src/remote-development.md:159
+msgid "\"host\""
+msgstr ""
+
+#: src/remote-development.md:47 src/remote-development.md:60
+#: src/remote-development.md:78 src/remote-development.md:125
+#: src/remote-development.md:140 src/remote-development.md:159
+msgid "\"192.168.1.10\""
+msgstr ""
+
+#: src/remote-development.md:48 src/remote-development.md:61
+#: src/remote-development.md:79
+msgid "\"projects\""
+msgstr ""
+
+#: src/remote-development.md:48 src/remote-development.md:61
+#: src/remote-development.md:79
+msgid "\"paths\""
+msgstr ""
+
+#: src/remote-development.md:48 src/remote-development.md:61
+#: src/remote-development.md:79
+msgid "\"~/code/zed/zed\""
+msgstr ""
+
+#: src/remote-development.md:54
+msgid ""
+"Zed shells out to the `ssh` on your path, and so it will inherit any "
+"configuration you have in `~/.ssh/config` for the given host. That said, if "
+"you need to override anything you can configure the following additional "
+"options on each connection:"
+msgstr ""
+
+#: src/remote-development.md:62
+msgid ""
+"// any argument to pass to the ssh master process\n"
+"      \"args\""
+msgstr ""
+
+#: src/remote-development.md:63
+msgid "\"-i\""
+msgstr ""
+
+#: src/remote-development.md:63
+msgid "\"~/.ssh/work_id_file\""
+msgstr ""
+
+#: src/remote-development.md:64
+msgid "\"port\""
+msgstr ""
+
+#: src/remote-development.md:64
+msgid ""
+"// defaults to 22\n"
+"      // defaults to your username on your local machine\n"
+"      \"username\""
+msgstr ""
+
+#: src/remote-development.md:66
+msgid "\"me\""
+msgstr ""
+
+#: src/remote-development.md:72
+msgid ""
+"There are two additional Zed-specific options per connection, "
+"`upload_binary_over_ssh` and `nickname`:"
+msgstr ""
+
+#: src/remote-development.md:80
+msgid ""
+"// by default Zed will download the server binary from the internet on the "
+"remote.\n"
+"      // When this is true, it'll be downloaded to your laptop and uploaded "
+"over SSH.\n"
+"      // This is useful when your remote server has restricted internet "
+"access.\n"
+"      \"upload_binary_over_ssh\""
+msgstr ""
+
+#: src/remote-development.md:84
+msgid ""
+"// Shown in the Zed UI to help distinguish multiple hosts.\n"
+"      \"nickname\""
+msgstr ""
+
+#: src/remote-development.md:85
+msgid "\"lil-linux\""
+msgstr ""
+
+#: src/remote-development.md:91
+msgid ""
+"If you use the command line to open a connection to a host by doing `zed "
+"ssh://192.168.1.10/~/.vimrc`, then extra options are read from your settings "
+"file by finding the first connection that matches the host/username/port of "
+"the URL on the command line."
+msgstr ""
+
+#: src/remote-development.md:93
+msgid ""
+"Additionally it's worth noting that while you can pass a password on the "
+"command line `zed ssh://user:password@host/~`, we do not support writing a "
+"password to your settings file. If you're connecting repeatedly to the same "
+"host, you should configure key-based authentication."
+msgstr ""
+
+#: src/remote-development.md:95
+msgid "Remote Development on Windows (SSH)"
+msgstr ""
+
+#: src/remote-development.md:97
+msgid ""
+"Zed on Windows supports SSH remoting and will prompt for credentials when "
+"needed."
+msgstr ""
+
+#: src/remote-development.md:99
+msgid ""
+"If you encounter authentication issues, confirm that your SSH key agent is "
+"running (e.g., ssh-agent or your Git client's agent) and that ssh.exe is on "
+"PATH."
+msgstr ""
+
+#: src/remote-development.md:101
+msgid "Troubleshooting SSH on Windows"
+msgstr ""
+
+#: src/remote-development.md:103
+msgid ""
+"When prompted for credentials, use the graphical askpass dialog. If it "
+"doesn't appear, check for credential manager conflicts and that GUI prompts "
+"aren't blocked by your terminal."
+msgstr ""
+
+#: src/remote-development.md:105
+msgid "WSL Support"
+msgstr ""
+
+#: src/remote-development.md:107
+msgid "Zed supports opening folders inside of WSL natively on Windows."
+msgstr ""
+
+#: src/remote-development.md:109
+msgid "Opening a local folder in WSL"
+msgstr ""
+
+#: src/remote-development.md:111
+msgid ""
+"To open a local folder inside a WSL container, use the `projects: open in "
+"wsl` action and select the folder you want to open. You will be presented "
+"with a list of available WSL distributions to open the folder in."
+msgstr ""
+
+#: src/remote-development.md:113
+msgid "Opening a folder already in WSL"
+msgstr ""
+
+#: src/remote-development.md:115
+msgid ""
+"To open a folder that's already located inside of a WSL container, use the "
+"`projects: open wsl` action and select the WSL distribution. The "
+"distribution will be added to the `Remote Projects` window where you will be "
+"able to open the folder."
+msgstr ""
+
+#: src/remote-development.md:117
+msgid "Port forwarding"
+msgstr ""
+
+#: src/remote-development.md:119
+msgid ""
+"If you'd like to be able to connect to ports on your remote server from your "
+"local machine, you can configure port forwarding in your settings file. This "
+"is particularly useful for developing websites so you can load the site in "
+"your browser while working."
+msgstr ""
+
+#: src/remote-development.md:126 src/remote-development.md:141
+#: src/remote-development.md:160
+msgid "\"port_forwards\""
+msgstr ""
+
+#: src/remote-development.md:126 src/remote-development.md:143
+#: src/remote-development.md:162
+msgid "\"local_port\""
+msgstr ""
+
+#: src/remote-development.md:126 src/remote-development.md:144
+#: src/remote-development.md:163
+msgid "\"remote_port\""
+msgstr ""
+
+#: src/remote-development.md:132
+msgid ""
+"This will cause requests from your local machine to `localhost:8080` to be "
+"forwarded to the remote machine's port 80. Under the hood this uses the `-L` "
+"argument to ssh."
+msgstr ""
+
+#: src/remote-development.md:134
+msgid ""
+"By default these ports are bound to localhost, so other computers in the "
+"same network as your development machine cannot access them. You can set the "
+"local_host to bind to a different interface, for example, 0.0.0.0 will bind "
+"to all local interfaces."
+msgstr ""
+
+#: src/remote-development.md:145
+msgid "\"local_host\""
+msgstr ""
+
+#: src/remote-development.md:145
+msgid "\"0.0.0.0\""
+msgstr ""
+
+#: src/remote-development.md:153
+msgid ""
+"These ports also default to the `localhost` interface on the remote host. If "
+"you need to change this, you can also set the remote host:"
+msgstr ""
+
+#: src/remote-development.md:164
+msgid "\"remote_host\""
+msgstr ""
+
+#: src/remote-development.md:164
+msgid "\"docker-host\""
+msgstr ""
+
+#: src/remote-development.md:172
+msgid "Zed settings"
+msgstr ""
+
+#: src/remote-development.md:174
+msgid ""
+"When opening a remote project there are three relevant settings locations:"
+msgstr ""
+
+#: src/remote-development.md:176
+msgid ""
+"The local Zed settings (in `~/.zed/settings.json` on macOS or `~/.config/zed/"
+"settings.json` on Linux) on your local machine."
+msgstr ""
+
+#: src/remote-development.md:177
+msgid "The server Zed settings (in the same place) on the remote server."
+msgstr ""
+
+#: src/remote-development.md:178
+msgid ""
+"The project settings (in `.zed/settings.json` or `.editorconfig` of your "
+"project)"
+msgstr ""
+
+#: src/remote-development.md:180
+msgid ""
+"Both the local Zed and the server Zed read the project settings, but they "
+"are not aware of the other's main settings file."
+msgstr ""
+
+#: src/remote-development.md:182
+msgid ""
+"Which settings file you should use depends on the kind of setting you want "
+"to make:"
+msgstr ""
+
+#: src/remote-development.md:184
+msgid ""
+"Project settings should be used for things that affect the project: "
+"indentation settings, which formatter / language server to use, etc."
+msgstr ""
+
+#: src/remote-development.md:185
+msgid ""
+"Server settings should be used for things that affect the server: paths to "
+"language servers, proxy settings, etc."
+msgstr ""
+
+#: src/remote-development.md:186
+msgid ""
+"Local settings should be used for things that affect the UI: font size, etc."
+msgstr ""
+
+#: src/remote-development.md:188
+msgid ""
+"In addition any extensions you have installed locally will be propagated to "
+"the remote server. This means that language servers, etc. will run correctly."
+msgstr ""
+
+#: src/remote-development.md:190
+msgid "Proxy Configuration"
+msgstr ""
+
+#: src/remote-development.md:192
+msgid ""
+"The remote server will not use your local machine's proxy configuration "
+"because they may be under different network policies. If your remote server "
+"requires a proxy to access the internet, you must configure it on the remote "
+"server itself."
+msgstr ""
+
+#: src/remote-development.md:194
+msgid ""
+"In most cases, your remote server will already have proxy environment "
+"variables configured. Zed will automatically use them when downloading "
+"language servers, communicating with LLM models, etc."
+msgstr ""
+
+#: src/remote-development.md:196
+msgid ""
+"If needed, you can set these environment variables in the server's shell "
+"configuration (e.g., `~/.bashrc`):"
+msgstr ""
+
+#: src/remote-development.md:199 src/remote-development.md:200
+#: src/remote-development.md:208
+msgid "\"http://proxy.example.com:8080\""
+msgstr ""
+
+#: src/remote-development.md:201
+msgid "\"localhost,127.0.0.1\""
+msgstr ""
+
+#: src/remote-development.md:204
+msgid ""
+"Alternatively, you can configure the proxy in the remote machine's `~/."
+"config/zed/settings.json` (Linux) or `~/.zed/settings.json` (macOS):"
+msgstr ""
+
+#: src/remote-development.md:208
+msgid "\"proxy\""
+msgstr ""
+
+#: src/remote-development.md:212
+msgid ""
+"See the [proxy documentation](./reference/all-settings.md#network-proxy) for "
+"supported proxy types and additional configuration options."
+msgstr ""
+
+#: src/remote-development.md:214
+msgid "Initializing the remote server"
+msgstr ""
+
+#: src/remote-development.md:216
+msgid ""
+"Once you provide the SSH options, Zed shells out to `ssh` on your local "
+"machine to create a ControlMaster connection with the options you provide."
+msgstr ""
+
+#: src/remote-development.md:218
+msgid ""
+"Any prompts that SSH needs will be shown in the UI, so you can verify host "
+"keys, type key passwords, etc."
+msgstr ""
+
+#: src/remote-development.md:220
+msgid ""
+"Once the master connection is established, Zed will check to see if the "
+"remote server binary is present in `~/.zed_server` on the remote, and that "
+"its version matches the current version of Zed that you're using."
+msgstr ""
+
+#: src/remote-development.md:222
+msgid ""
+"If it is not there or the version mismatches, Zed will try to download the "
+"latest version. By default, it will download from `https://zed.dev` "
+"directly, but if you set: `{\"upload_binary_over_ssh\":true}` in your "
+"settings for that server, it will download the binary to your local machine "
+"and then upload it to the remote server."
+msgstr ""
+
+#: src/remote-development.md:224
+msgid ""
+"If you'd like to maintain the server binary yourself you can. You can either "
+"download our prebuilt versions from [GitHub](https://github.com/zed-"
+"industries/zed/releases), or [build your own](https://zed.dev/docs/"
+"development) with `cargo build -p remote_server --release`. If you do this, "
+"you must upload it to `~/.zed_server/zed-remote-server-{RELEASE_CHANNEL}-"
+"{VERSION}` on the server, for example `~/.zed_server/zed-remote-server-"
+"stable-0.217.3+stable.105.80433cb239e868271457ac376673a5f75bc4adb1`. The "
+"version must exactly match the version of Zed itself you are using."
+msgstr ""
+
+#: src/remote-development.md:226
+msgid "Maintaining the SSH connection"
+msgstr ""
+
+#: src/remote-development.md:228
+msgid ""
+"Once the server is initialized. Zed will create new SSH connections (reusing "
+"the existing ControlMaster) to run the remote development server."
+msgstr ""
+
+#: src/remote-development.md:230
+msgid ""
+"Each connection tries to run the development server in proxy mode. This mode "
+"will start the daemon if it is not running, and reconnect to it if it is. "
+"This way when your connection drops and is restarted, you can continue to "
+"work without interruption."
+msgstr ""
+
+#: src/remote-development.md:232
+msgid ""
+"In the case that reconnecting fails, the daemon will not be re-used. That "
+"said, unsaved changes are by default persisted locally, so that you do not "
+"lose work. You can always reconnect to the project at a later date and Zed "
+"will restore unsaved changes."
+msgstr ""
+
+#: src/remote-development.md:234
+msgid ""
+"If you are struggling with connection issues, you should be able to see more "
+"information in the Zed log `cmd-shift-p Open Log`. If you are seeing things "
+"that are unexpected, please file a [GitHub issue](https://github.com/zed-"
+"industries/zed/issues/new) or reach out in the #support forums on [Discord]"
+"(https://zed.dev/community-links)."
+msgstr ""
+
+#: src/remote-development.md:236
+msgid "Supported SSH Options"
+msgstr ""
+
+#: src/remote-development.md:238
+msgid ""
+"Under the hood, Zed shells out to the `ssh` binary to connect to the remote "
+"server. We create one SSH control master per project, and then use that to "
+"multiplex SSH connections for the Zed protocol itself, any terminals you "
+"open and tasks you run. We read settings from your SSH config file, but if "
+"you want to specify additional options to the SSH control master you can "
+"configure Zed to set them."
+msgstr ""
+
+#: src/remote-development.md:240
+msgid ""
+"When typing in the \"Connect New Server\" dialog, you can use bash-style "
+"quoting to pass options containing a space. Once you have created a server "
+"it will be added to the `\"ssh_connections\": []` array in your settings "
+"file. You can edit the settings file directly to make changes to SSH "
+"connections."
+msgstr ""
+
+#: src/remote-development.md:242
+msgid "Supported options:"
+msgstr ""
+
+#: src/remote-development.md:244
+msgid ""
+"`-p` / `-l` - these are equivalent to passing the port and the username in "
+"the host string."
+msgstr ""
+
+#: src/remote-development.md:245
+msgid "`-L` / `-R` for port forwarding"
+msgstr ""
+
+#: src/remote-development.md:246
+msgid "`-i` - to use a specific key file"
+msgstr ""
+
+#: src/remote-development.md:247
+msgid "`-o` - to set custom options"
+msgstr ""
+
+#: src/remote-development.md:248
+msgid "`-J` / `-w` - to proxy the SSH connection"
+msgstr ""
+
+#: src/remote-development.md:249
+msgid "`-F` for specifying an `ssh_config`"
+msgstr ""
+
+#: src/remote-development.md:250
+msgid ""
+"And also... `-4`, `-6`, `-A`, `-B`, `-C`, `-D`, `-I`, `-K`, `-P`, `-X`, `-"
+"Y`, `-a`, `-b`, `-c`, `-i`, `-k`, `-l`, `-m`, `-o`, `-p`, `-w`, `-x`, `-y`"
+msgstr ""
+
+#: src/remote-development.md:252
+msgid ""
+"Note that we deliberately disallow some options (for example `-t` or `-T`) "
+"that Zed will set for you."
+msgstr ""
+
+#: src/remote-development.md:254
+msgid "Known Limitations"
+msgstr ""
+
+#: src/remote-development.md:256
+msgid ""
+"You can't open files from the remote Terminal by typing the `zed` command."
+msgstr ""
+
+#: src/remote-development.md:258
+msgid "See also"
+msgstr ""
+
+#: src/remote-development.md:260
+msgid ""
+"[Running & Testing](./running-testing.md): Run tasks, terminal commands, and "
+"debugger sessions while you work remotely."
+msgstr ""
+
+#: src/remote-development.md:262
+msgid ""
+"[Configuring Zed](./configuring-zed.md): Manage shared and project settings, "
+"including `.zed/settings.json`."
+msgstr ""
+
+#: src/remote-development.md:264
+msgid ""
+"[Agent Panel](./ai/agent-panel.md): Use AI workflows in remote projects."
+msgstr ""
+
+#: src/remote-development.md:265
+msgid ""
+"[Remote Development on zed.dev](https://zed.dev/remote-development): Product "
+"overview and release updates."
+msgstr ""

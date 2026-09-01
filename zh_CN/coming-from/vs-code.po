@@ -1,0 +1,1593 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/migrate/vs-code.md:3
+msgid "How to Migrate from VS Code to Zed"
+msgstr ""
+
+#: src/migrate/vs-code.md:5
+msgid ""
+"This guide explains how to move from VS Code to Zed without rebuilding your "
+"workflow."
+msgstr ""
+
+#: src/migrate/vs-code.md:7
+msgid ""
+"It covers which settings import automatically, which shortcuts map cleanly, "
+"and which behaviors differ so you can adjust quickly."
+msgstr ""
+
+#: src/migrate/vs-code.md:9
+msgid "Install Zed"
+msgstr ""
+
+#: src/migrate/vs-code.md:11
+msgid "Zed is available on macOS, Windows, and Linux."
+msgstr ""
+
+#: src/migrate/vs-code.md:13
+msgid ""
+"For macOS, you can download it from zed.dev/download, or install via "
+"Homebrew: `brew install zed-editor/zed/zed`"
+msgstr ""
+
+#: src/migrate/vs-code.md:16
+msgid ""
+"For most Linux users, the easiest way to install Zed is through our "
+"installation script: `curl -f https://zed.dev/install.sh | sh`"
+msgstr ""
+
+#: src/migrate/vs-code.md:19
+msgid ""
+"After installation, you can launch Zed from your Applications folder (macOS) "
+"or directly from the terminal (Linux) using: `zed .` This opens the current "
+"directory in Zed."
+msgstr ""
+
+#: src/migrate/vs-code.md:23
+msgid "Import Settings from VS Code"
+msgstr ""
+
+#: src/migrate/vs-code.md:25
+msgid ""
+"During setup, you have the option to import key settings from VS Code. Zed "
+"imports the following settings:"
+msgstr ""
+
+#: src/migrate/vs-code.md:27
+msgid "Settings Imported from VS Code"
+msgstr ""
+
+#: src/migrate/vs-code.md:29
+msgid ""
+"The following VS Code settings are automatically imported when you use "
+"**Import Settings from VS Code**:"
+msgstr ""
+
+#: src/migrate/vs-code.md:31
+msgid "**Editor**"
+msgstr ""
+
+#: src/migrate/vs-code.md:33 src/migrate/vs-code.md:81
+#: src/migrate/vs-code.md:95 src/migrate/vs-code.md:110
+#: src/migrate/vs-code.md:127 src/migrate/vs-code.md:137
+#: src/migrate/vs-code.md:146 src/migrate/vs-code.md:155
+msgid "VS Code Setting"
+msgstr ""
+
+#: src/migrate/vs-code.md:33 src/migrate/vs-code.md:81
+#: src/migrate/vs-code.md:95 src/migrate/vs-code.md:110
+#: src/migrate/vs-code.md:127 src/migrate/vs-code.md:137
+#: src/migrate/vs-code.md:146 src/migrate/vs-code.md:155
+msgid "Zed Setting"
+msgstr ""
+
+#: src/migrate/vs-code.md:35
+msgid "`editor.fontFamily`"
+msgstr ""
+
+#: src/migrate/vs-code.md:35
+msgid "`buffer_font_family`"
+msgstr ""
+
+#: src/migrate/vs-code.md:36
+msgid "`editor.fontSize`"
+msgstr ""
+
+#: src/migrate/vs-code.md:36
+msgid "`buffer_font_size`"
+msgstr ""
+
+#: src/migrate/vs-code.md:37
+msgid "`editor.fontWeight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:37
+msgid "`buffer_font_weight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:38
+msgid "`editor.tabSize`"
+msgstr ""
+
+#: src/migrate/vs-code.md:38
+msgid "`tab_size`"
+msgstr ""
+
+#: src/migrate/vs-code.md:39
+msgid "`editor.insertSpaces`"
+msgstr ""
+
+#: src/migrate/vs-code.md:39
+msgid "`hard_tabs` (inverted)"
+msgstr ""
+
+#: src/migrate/vs-code.md:40
+msgid "`editor.wordWrap`"
+msgstr ""
+
+#: src/migrate/vs-code.md:40
+msgid "`soft_wrap`"
+msgstr ""
+
+#: src/migrate/vs-code.md:41
+msgid "`editor.wordWrapColumn`"
+msgstr ""
+
+#: src/migrate/vs-code.md:41
+msgid "`preferred_line_length`"
+msgstr ""
+
+#: src/migrate/vs-code.md:42
+msgid "`editor.cursorStyle`"
+msgstr ""
+
+#: src/migrate/vs-code.md:42
+msgid "`cursor_shape`"
+msgstr ""
+
+#: src/migrate/vs-code.md:43
+msgid "`editor.cursorBlinking`"
+msgstr ""
+
+#: src/migrate/vs-code.md:43
+msgid "`cursor_blink`"
+msgstr ""
+
+#: src/migrate/vs-code.md:44
+msgid "`editor.renderLineHighlight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:44
+msgid "`current_line_highlight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:45
+msgid "`editor.lineNumbers`"
+msgstr ""
+
+#: src/migrate/vs-code.md:45
+msgid "`gutter.line_numbers`, `relative_line_numbers`"
+msgstr ""
+
+#: src/migrate/vs-code.md:46
+msgid "`editor.showFoldingControls`"
+msgstr ""
+
+#: src/migrate/vs-code.md:46
+msgid "`gutter.folds`"
+msgstr ""
+
+#: src/migrate/vs-code.md:47
+msgid "`editor.minimap.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:47 src/migrate/vs-code.md:48
+msgid "`minimap.show`"
+msgstr ""
+
+#: src/migrate/vs-code.md:48
+msgid "`editor.minimap.autohide`"
+msgstr ""
+
+#: src/migrate/vs-code.md:49
+msgid "`editor.minimap.showSlider`"
+msgstr ""
+
+#: src/migrate/vs-code.md:49
+msgid "`minimap.thumb`"
+msgstr ""
+
+#: src/migrate/vs-code.md:50
+msgid "`editor.minimap.maxColumn`"
+msgstr ""
+
+#: src/migrate/vs-code.md:50
+msgid "`minimap.max_width_columns`"
+msgstr ""
+
+#: src/migrate/vs-code.md:51
+msgid "`editor.stickyScroll.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:51
+msgid "`sticky_scroll.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:52
+msgid "`editor.scrollbar.horizontal`"
+msgstr ""
+
+#: src/migrate/vs-code.md:52
+msgid "`scrollbar.axes.horizontal`"
+msgstr ""
+
+#: src/migrate/vs-code.md:53
+msgid "`editor.scrollbar.vertical`"
+msgstr ""
+
+#: src/migrate/vs-code.md:53
+msgid "`scrollbar.axes.vertical`"
+msgstr ""
+
+#: src/migrate/vs-code.md:54
+msgid "`editor.mouseWheelScrollSensitivity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:54
+msgid "`scroll_sensitivity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:55
+msgid "`editor.fastScrollSensitivity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:55
+msgid "`fast_scroll_sensitivity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:56
+msgid "`editor.cursorSurroundingLines`"
+msgstr ""
+
+#: src/migrate/vs-code.md:56
+msgid "`vertical_scroll_margin`"
+msgstr ""
+
+#: src/migrate/vs-code.md:57
+msgid "`editor.hover.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:57
+msgid "`hover_popover_enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:58
+msgid "`editor.hover.delay`"
+msgstr ""
+
+#: src/migrate/vs-code.md:58
+msgid "`hover_popover_delay`"
+msgstr ""
+
+#: src/migrate/vs-code.md:59
+msgid "`editor.hover.sticky`"
+msgstr ""
+
+#: src/migrate/vs-code.md:59
+msgid "`hover_popover_sticky`"
+msgstr ""
+
+#: src/migrate/vs-code.md:60
+msgid "`editor.hover.hidingDelay`"
+msgstr ""
+
+#: src/migrate/vs-code.md:60
+msgid "`hover_popover_hiding_delay`"
+msgstr ""
+
+#: src/migrate/vs-code.md:61
+msgid "`editor.parameterHints.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:61
+msgid "`auto_signature_help`"
+msgstr ""
+
+#: src/migrate/vs-code.md:62
+msgid "`editor.multiCursorModifier`"
+msgstr ""
+
+#: src/migrate/vs-code.md:62
+msgid "`multi_cursor_modifier`"
+msgstr ""
+
+#: src/migrate/vs-code.md:63
+msgid "`editor.selectionHighlight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:63
+msgid "`selection_highlight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:64
+msgid "`editor.roundedSelection`"
+msgstr ""
+
+#: src/migrate/vs-code.md:64
+msgid "`rounded_selection`"
+msgstr ""
+
+#: src/migrate/vs-code.md:65
+msgid "`editor.find.seedSearchStringFromSelection`"
+msgstr ""
+
+#: src/migrate/vs-code.md:65
+msgid "`seed_search_query_from_cursor`"
+msgstr ""
+
+#: src/migrate/vs-code.md:66
+msgid "`editor.rulers`"
+msgstr ""
+
+#: src/migrate/vs-code.md:66
+msgid "`wrap_guides`"
+msgstr ""
+
+#: src/migrate/vs-code.md:67
+msgid "`editor.renderWhitespace`"
+msgstr ""
+
+#: src/migrate/vs-code.md:67
+msgid "`show_whitespaces`"
+msgstr ""
+
+#: src/migrate/vs-code.md:68
+msgid "`editor.guides.indentation`"
+msgstr ""
+
+#: src/migrate/vs-code.md:68
+msgid "`indent_guides.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:69
+msgid "`editor.linkedEditing`"
+msgstr ""
+
+#: src/migrate/vs-code.md:69
+msgid "`linked_edits`"
+msgstr ""
+
+#: src/migrate/vs-code.md:70
+msgid "`editor.autoSurround`"
+msgstr ""
+
+#: src/migrate/vs-code.md:70
+msgid "`use_auto_surround`"
+msgstr ""
+
+#: src/migrate/vs-code.md:71
+msgid "`editor.formatOnSave`"
+msgstr ""
+
+#: src/migrate/vs-code.md:71
+msgid "`format_on_save`"
+msgstr ""
+
+#: src/migrate/vs-code.md:72
+msgid "`editor.formatOnPaste`"
+msgstr ""
+
+#: src/migrate/vs-code.md:72
+msgid "`auto_indent_on_paste`"
+msgstr ""
+
+#: src/migrate/vs-code.md:73
+msgid "`editor.formatOnType`"
+msgstr ""
+
+#: src/migrate/vs-code.md:73
+msgid "`use_on_type_format`"
+msgstr ""
+
+#: src/migrate/vs-code.md:74
+msgid "`editor.trimAutoWhitespace`"
+msgstr ""
+
+#: src/migrate/vs-code.md:74
+msgid "`remove_trailing_whitespace_on_save`"
+msgstr ""
+
+#: src/migrate/vs-code.md:75
+msgid "`editor.suggestOnTriggerCharacters`"
+msgstr ""
+
+#: src/migrate/vs-code.md:75
+msgid "`show_completions_on_input`"
+msgstr ""
+
+#: src/migrate/vs-code.md:76
+msgid "`editor.suggest.showWords`"
+msgstr ""
+
+#: src/migrate/vs-code.md:76
+msgid "`completions.words`"
+msgstr ""
+
+#: src/migrate/vs-code.md:77
+msgid "`editor.inlineSuggest.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:77
+msgid "`show_edit_predictions`"
+msgstr ""
+
+#: src/migrate/vs-code.md:79
+msgid "**Files & Workspace**"
+msgstr ""
+
+#: src/migrate/vs-code.md:83
+msgid "`files.autoSave`"
+msgstr ""
+
+#: src/migrate/vs-code.md:83
+msgid "`autosave`"
+msgstr ""
+
+#: src/migrate/vs-code.md:84
+msgid "`files.autoSaveDelay`"
+msgstr ""
+
+#: src/migrate/vs-code.md:84
+msgid "`autosave.milliseconds`"
+msgstr ""
+
+#: src/migrate/vs-code.md:85
+msgid "`files.insertFinalNewline`"
+msgstr ""
+
+#: src/migrate/vs-code.md:85
+msgid "`ensure_final_newline_on_save`"
+msgstr ""
+
+#: src/migrate/vs-code.md:86
+msgid "`files.associations`"
+msgstr ""
+
+#: src/migrate/vs-code.md:86
+msgid "`file_types`"
+msgstr ""
+
+#: src/migrate/vs-code.md:87
+msgid "`files.watcherExclude`"
+msgstr ""
+
+#: src/migrate/vs-code.md:87
+msgid "`file_scan_exclusions`"
+msgstr ""
+
+#: src/migrate/vs-code.md:88
+msgid "`files.watcherInclude`"
+msgstr ""
+
+#: src/migrate/vs-code.md:88
+msgid "`file_scan_inclusions`"
+msgstr ""
+
+#: src/migrate/vs-code.md:89
+msgid "`files.simpleDialog.enable`"
+msgstr ""
+
+#: src/migrate/vs-code.md:89
+msgid "`use_system_path_prompts`"
+msgstr ""
+
+#: src/migrate/vs-code.md:90
+msgid "`search.smartCase`"
+msgstr ""
+
+#: src/migrate/vs-code.md:90
+msgid "`use_smartcase_search`"
+msgstr ""
+
+#: src/migrate/vs-code.md:91
+msgid "`search.useIgnoreFiles`"
+msgstr ""
+
+#: src/migrate/vs-code.md:91
+msgid "`search.include_ignored`"
+msgstr ""
+
+#: src/migrate/vs-code.md:93
+msgid "**Terminal**"
+msgstr ""
+
+#: src/migrate/vs-code.md:97
+msgid "`terminal.integrated.fontFamily`"
+msgstr ""
+
+#: src/migrate/vs-code.md:97
+msgid "`terminal.font_family`"
+msgstr ""
+
+#: src/migrate/vs-code.md:98
+msgid "`terminal.integrated.fontSize`"
+msgstr ""
+
+#: src/migrate/vs-code.md:98
+msgid "`terminal.font_size`"
+msgstr ""
+
+#: src/migrate/vs-code.md:99
+msgid "`terminal.integrated.lineHeight`"
+msgstr ""
+
+#: src/migrate/vs-code.md:99
+msgid "`terminal.line_height`"
+msgstr ""
+
+#: src/migrate/vs-code.md:100
+msgid "`terminal.integrated.cursorStyle`"
+msgstr ""
+
+#: src/migrate/vs-code.md:100
+msgid "`terminal.cursor_shape`"
+msgstr ""
+
+#: src/migrate/vs-code.md:101
+msgid "`terminal.integrated.cursorBlinking`"
+msgstr ""
+
+#: src/migrate/vs-code.md:101
+msgid "`terminal.blinking`"
+msgstr ""
+
+#: src/migrate/vs-code.md:102
+msgid "`terminal.integrated.copyOnSelection`"
+msgstr ""
+
+#: src/migrate/vs-code.md:102
+msgid "`terminal.copy_on_select`"
+msgstr ""
+
+#: src/migrate/vs-code.md:103
+msgid "`terminal.integrated.scrollback`"
+msgstr ""
+
+#: src/migrate/vs-code.md:103
+msgid "`terminal.max_scroll_history_lines`"
+msgstr ""
+
+#: src/migrate/vs-code.md:104
+msgid "`terminal.integrated.macOptionIsMeta`"
+msgstr ""
+
+#: src/migrate/vs-code.md:104
+msgid "`terminal.option_as_meta`"
+msgstr ""
+
+#: src/migrate/vs-code.md:105
+msgid "`terminal.integrated.{platform}Exec`"
+msgstr ""
+
+#: src/migrate/vs-code.md:105
+msgid "`terminal.shell`"
+msgstr ""
+
+#: src/migrate/vs-code.md:106
+msgid "`terminal.integrated.env.{platform}`"
+msgstr ""
+
+#: src/migrate/vs-code.md:106
+msgid "`terminal.env`"
+msgstr ""
+
+#: src/migrate/vs-code.md:108
+msgid "**Tabs & Panels**"
+msgstr ""
+
+#: src/migrate/vs-code.md:112
+msgid "`workbench.editor.showTabs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:112
+msgid "`tab_bar.show`"
+msgstr ""
+
+#: src/migrate/vs-code.md:113
+msgid "`workbench.editor.showIcons`"
+msgstr ""
+
+#: src/migrate/vs-code.md:113
+msgid "`tabs.file_icons`"
+msgstr ""
+
+#: src/migrate/vs-code.md:114
+msgid "`workbench.editor.tabActionLocation`"
+msgstr ""
+
+#: src/migrate/vs-code.md:114
+msgid "`tabs.close_position`"
+msgstr ""
+
+#: src/migrate/vs-code.md:115
+msgid "`workbench.editor.tabActionCloseVisibility`"
+msgstr ""
+
+#: src/migrate/vs-code.md:115
+msgid "`tabs.show_close_button`"
+msgstr ""
+
+#: src/migrate/vs-code.md:116
+msgid "`workbench.editor.focusRecentEditorAfterClose`"
+msgstr ""
+
+#: src/migrate/vs-code.md:116
+msgid "`tabs.activate_on_close`"
+msgstr ""
+
+#: src/migrate/vs-code.md:117
+msgid "`workbench.editor.enablePreview`"
+msgstr ""
+
+#: src/migrate/vs-code.md:117
+msgid "`preview_tabs.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:118
+msgid "`workbench.editor.enablePreviewFromQuickOpen`"
+msgstr ""
+
+#: src/migrate/vs-code.md:118
+msgid "`preview_tabs.enable_preview_from_file_finder`"
+msgstr ""
+
+#: src/migrate/vs-code.md:119
+msgid "`workbench.editor.enablePreviewFromCodeNavigation`"
+msgstr ""
+
+#: src/migrate/vs-code.md:119
+msgid "`preview_tabs.enable_preview_from_code_navigation`"
+msgstr ""
+
+#: src/migrate/vs-code.md:120
+msgid "`workbench.editor.editorActionsLocation`"
+msgstr ""
+
+#: src/migrate/vs-code.md:120
+msgid "`tab_bar.show_tab_bar_buttons`"
+msgstr ""
+
+#: src/migrate/vs-code.md:121
+msgid "`workbench.editor.limit.enabled` / `value`"
+msgstr ""
+
+#: src/migrate/vs-code.md:121
+msgid "`max_tabs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:122
+msgid "`workbench.editor.restoreViewState`"
+msgstr ""
+
+#: src/migrate/vs-code.md:122
+msgid "`restore_on_file_reopen`"
+msgstr ""
+
+#: src/migrate/vs-code.md:123
+msgid "`workbench.statusBar.visible`"
+msgstr ""
+
+#: src/migrate/vs-code.md:123
+msgid "`status_bar.show`"
+msgstr ""
+
+#: src/migrate/vs-code.md:125
+msgid "**Project Panel (File Explorer)**"
+msgstr ""
+
+#: src/migrate/vs-code.md:129
+msgid "`explorer.compactFolders`"
+msgstr ""
+
+#: src/migrate/vs-code.md:129
+msgid "`project_panel.auto_fold_dirs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:130
+msgid "`explorer.autoReveal`"
+msgstr ""
+
+#: src/migrate/vs-code.md:130
+msgid "`project_panel.auto_reveal_entries`"
+msgstr ""
+
+#: src/migrate/vs-code.md:131
+msgid "`explorer.excludeGitIgnore`"
+msgstr ""
+
+#: src/migrate/vs-code.md:131
+msgid "`project_panel.hide_gitignore`"
+msgstr ""
+
+#: src/migrate/vs-code.md:132
+msgid "`problems.decorations.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:132
+msgid "`project_panel.show_diagnostics`"
+msgstr ""
+
+#: src/migrate/vs-code.md:133
+msgid "`explorer.decorations.badges`"
+msgstr ""
+
+#: src/migrate/vs-code.md:133
+msgid "`project_panel.git_status`"
+msgstr ""
+
+#: src/migrate/vs-code.md:135
+msgid "**Git**"
+msgstr ""
+
+#: src/migrate/vs-code.md:139
+msgid "`git.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:139
+msgid "`git_panel.button`"
+msgstr ""
+
+#: src/migrate/vs-code.md:140
+msgid "`git.defaultBranchName`"
+msgstr ""
+
+#: src/migrate/vs-code.md:140
+msgid "`git_panel.fallback_branch_name`"
+msgstr ""
+
+#: src/migrate/vs-code.md:141
+msgid "`git.decorations.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:141
+msgid "`git.inline_blame`, `project_panel.git_status`"
+msgstr ""
+
+#: src/migrate/vs-code.md:142
+msgid "`git.blame.editorDecoration.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:142
+msgid "`git.inline_blame.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:144
+msgid "**Window & Behavior**"
+msgstr ""
+
+#: src/migrate/vs-code.md:148
+msgid "`window.confirmBeforeClose`"
+msgstr ""
+
+#: src/migrate/vs-code.md:148
+msgid "`confirm_quit`"
+msgstr ""
+
+#: src/migrate/vs-code.md:149
+msgid "`window.nativeTabs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:149
+msgid "`use_system_window_tabs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:150
+msgid "`window.closeWhenEmpty`"
+msgstr ""
+
+#: src/migrate/vs-code.md:150
+msgid "`when_closing_with_no_tabs`"
+msgstr ""
+
+#: src/migrate/vs-code.md:151
+msgid "`accessibility.dimUnfocused.enabled` / `opacity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:151
+msgid "`active_pane_modifiers.inactive_opacity`"
+msgstr ""
+
+#: src/migrate/vs-code.md:153
+msgid "**Other**"
+msgstr ""
+
+#: src/migrate/vs-code.md:157
+msgid "`http.proxy`"
+msgstr ""
+
+#: src/migrate/vs-code.md:157
+msgid "`proxy`"
+msgstr ""
+
+#: src/migrate/vs-code.md:158
+msgid "`npm.packageManager`"
+msgstr ""
+
+#: src/migrate/vs-code.md:158
+msgid "`node.npm_path`"
+msgstr ""
+
+#: src/migrate/vs-code.md:159
+msgid "`telemetry.telemetryLevel`"
+msgstr ""
+
+#: src/migrate/vs-code.md:159
+msgid "`telemetry.metrics`, `telemetry.diagnostics`"
+msgstr ""
+
+#: src/migrate/vs-code.md:160
+msgid "`outline.icons`"
+msgstr ""
+
+#: src/migrate/vs-code.md:160
+msgid "`outline_panel.file_icons`, `outline_panel.folder_icons`"
+msgstr ""
+
+#: src/migrate/vs-code.md:161
+msgid "`chat.agent.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:161
+msgid "`agent.enabled`"
+msgstr ""
+
+#: src/migrate/vs-code.md:162
+msgid "`mcp`"
+msgstr ""
+
+#: src/migrate/vs-code.md:162
+msgid "`context_servers`"
+msgstr ""
+
+#: src/migrate/vs-code.md:164
+msgid ""
+"Zed doesn’t import extensions or keybindings, but this import gets core "
+"editor behavior close to your VS Code setup. If you skip that step during "
+"setup, you can still import settings manually later via the command palette:"
+msgstr ""
+
+#: src/migrate/vs-code.md:166
+msgid "`Cmd+Shift+P → Zed: Import VS Code Settings`"
+msgstr ""
+
+#: src/migrate/vs-code.md:168
+msgid "Set Up Editor Preferences"
+msgstr ""
+
+#: src/migrate/vs-code.md:170
+msgid ""
+"You can configure most settings in the Settings Editor (<kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>). For advanced settings, run `zed: "
+"open settings file` from the Command Palette to edit your settings file "
+"directly."
+msgstr ""
+
+#: src/migrate/vs-code.md:172
+msgid "Here’s how common VS Code settings translate:"
+msgstr ""
+
+#: src/migrate/vs-code.md:173 src/migrate/vs-code.md:225
+msgid "VS Code"
+msgstr ""
+
+#: src/migrate/vs-code.md:173 src/migrate/vs-code.md:225
+msgid "Zed"
+msgstr ""
+
+#: src/migrate/vs-code.md:173 src/migrate/vs-code.md:234
+msgid "Notes"
+msgstr ""
+
+#: src/migrate/vs-code.md:175
+msgid "editor.fontFamily"
+msgstr ""
+
+#: src/migrate/vs-code.md:175
+msgid "buffer_font_family"
+msgstr ""
+
+#: src/migrate/vs-code.md:175
+msgid "Zed uses Zed Mono by default"
+msgstr ""
+
+#: src/migrate/vs-code.md:176
+msgid "editor.fontSize"
+msgstr ""
+
+#: src/migrate/vs-code.md:176
+msgid "buffer_font_size"
+msgstr ""
+
+#: src/migrate/vs-code.md:176
+msgid "Set in pixels"
+msgstr ""
+
+#: src/migrate/vs-code.md:177
+msgid "editor.tabSize"
+msgstr ""
+
+#: src/migrate/vs-code.md:177
+msgid "tab_size"
+msgstr ""
+
+#: src/migrate/vs-code.md:177
+msgid "Can override per language"
+msgstr ""
+
+#: src/migrate/vs-code.md:178
+msgid "editor.insertSpaces"
+msgstr ""
+
+#: src/migrate/vs-code.md:178
+msgid "insert_spaces"
+msgstr ""
+
+#: src/migrate/vs-code.md:178
+msgid "Boolean"
+msgstr ""
+
+#: src/migrate/vs-code.md:179
+msgid "editor.formatOnSave"
+msgstr ""
+
+#: src/migrate/vs-code.md:179
+msgid "format_on_save"
+msgstr ""
+
+#: src/migrate/vs-code.md:179
+msgid "Works with formatter enabled"
+msgstr ""
+
+#: src/migrate/vs-code.md:180
+msgid "editor.wordWrap"
+msgstr ""
+
+#: src/migrate/vs-code.md:180
+msgid "soft_wrap"
+msgstr ""
+
+#: src/migrate/vs-code.md:180
+msgid "Supports optional wrap column"
+msgstr ""
+
+#: src/migrate/vs-code.md:182
+msgid ""
+"Zed also supports per-project settings. You can find these in the Settings "
+"Editor as well."
+msgstr ""
+
+#: src/migrate/vs-code.md:184
+msgid "Open or Create a Project"
+msgstr ""
+
+#: src/migrate/vs-code.md:186
+msgid ""
+"After setup, press `Cmd+O` (`Ctrl+O` on Linux) to open a folder. This "
+"becomes your workspace in Zed. There's no support for multi-root workspaces "
+"or `.code-workspace` files like in VS Code. Zed keeps it simple: one folder, "
+"one workspace."
+msgstr ""
+
+#: src/migrate/vs-code.md:188
+msgid ""
+"To start a new project, create a directory using your terminal or file "
+"manager, then open it in Zed. The editor will treat that folder as the root "
+"of your project."
+msgstr ""
+
+#: src/migrate/vs-code.md:190
+msgid ""
+"You can also launch Zed from the terminal inside any folder with: `zed .`"
+msgstr ""
+
+#: src/migrate/vs-code.md:193
+msgid ""
+"Once inside a project, use `Cmd+P` to jump between files quickly. "
+"`Cmd+Shift+P` (`Ctrl+Shift+P` on Linux) opens the command palette for "
+"running actions / tasks, toggling settings, or starting a collaboration "
+"session."
+msgstr ""
+
+#: src/migrate/vs-code.md:195
+msgid ""
+"Open buffers appear as tabs across the top. The Project Panel shows your "
+"file tree and Git status. Collapse it with `Cmd+B` for a distraction-free "
+"view."
+msgstr ""
+
+#: src/migrate/vs-code.md:197
+msgid "Differences in Keybindings"
+msgstr ""
+
+#: src/migrate/vs-code.md:199
+msgid ""
+"If you chose the VS Code keymap during onboarding, most shortcuts should "
+"already feel familiar. Here’s a quick reference for where keybindings match "
+"and where they differ."
+msgstr ""
+
+#: src/migrate/vs-code.md:202
+msgid "Common Shared Keybindings (Zed \\<\\> VS Code)"
+msgstr ""
+
+#: src/migrate/vs-code.md:204 src/migrate/vs-code.md:225
+#: src/migrate/vs-code.md:234
+msgid "Action"
+msgstr ""
+
+#: src/migrate/vs-code.md:204 src/migrate/vs-code.md:234
+msgid "Shortcut"
+msgstr ""
+
+#: src/migrate/vs-code.md:206
+msgid "Find files"
+msgstr ""
+
+#: src/migrate/vs-code.md:206
+msgid "`Cmd + P`"
+msgstr ""
+
+#: src/migrate/vs-code.md:207
+msgid "Run a command"
+msgstr ""
+
+#: src/migrate/vs-code.md:207
+msgid "`Cmd + Shift + P`"
+msgstr ""
+
+#: src/migrate/vs-code.md:208
+msgid "Search text (project-wide)"
+msgstr ""
+
+#: src/migrate/vs-code.md:208
+msgid "`Cmd + Shift + F`"
+msgstr ""
+
+#: src/migrate/vs-code.md:209
+msgid "Find symbols (project-wide)"
+msgstr ""
+
+#: src/migrate/vs-code.md:209
+msgid "`Cmd + T`"
+msgstr ""
+
+#: src/migrate/vs-code.md:210
+msgid "Find symbols (file-wide)"
+msgstr ""
+
+#: src/migrate/vs-code.md:210
+msgid "`Cmd + Shift + O`"
+msgstr ""
+
+#: src/migrate/vs-code.md:211
+msgid "Toggle left dock"
+msgstr ""
+
+#: src/migrate/vs-code.md:211
+msgid "`Cmd + B`"
+msgstr ""
+
+#: src/migrate/vs-code.md:212
+msgid "Toggle bottom dock"
+msgstr ""
+
+#: src/migrate/vs-code.md:212
+msgid "`Cmd + J`"
+msgstr ""
+
+#: src/migrate/vs-code.md:213
+msgid "Open terminal"
+msgstr ""
+
+#: src/migrate/vs-code.md:213
+msgid "`Ctrl + ~`"
+msgstr ""
+
+#: src/migrate/vs-code.md:214
+msgid "Open file tree explorer"
+msgstr ""
+
+#: src/migrate/vs-code.md:214
+msgid "`Cmd + Shift + E`"
+msgstr ""
+
+#: src/migrate/vs-code.md:215
+msgid "Close current buffer"
+msgstr ""
+
+#: src/migrate/vs-code.md:215
+msgid "`Cmd + W`"
+msgstr ""
+
+#: src/migrate/vs-code.md:216
+msgid "Close whole project"
+msgstr ""
+
+#: src/migrate/vs-code.md:216
+msgid "`Cmd + Shift + W`"
+msgstr ""
+
+#: src/migrate/vs-code.md:217
+msgid "Refactor: rename symbol"
+msgstr ""
+
+#: src/migrate/vs-code.md:217
+msgid "`F2`"
+msgstr ""
+
+#: src/migrate/vs-code.md:218
+msgid "Change theme"
+msgstr ""
+
+#: src/migrate/vs-code.md:218
+msgid "`Cmd + K, Cmd + T`"
+msgstr ""
+
+#: src/migrate/vs-code.md:219
+msgid "Wrap text"
+msgstr ""
+
+#: src/migrate/vs-code.md:219
+msgid "`Opt + Z`"
+msgstr ""
+
+#: src/migrate/vs-code.md:220
+msgid "Navigate open tabs"
+msgstr ""
+
+#: src/migrate/vs-code.md:220
+msgid "`Cmd + Opt + Arrow`"
+msgstr ""
+
+#: src/migrate/vs-code.md:221
+msgid "Syntactic fold / unfold"
+msgstr ""
+
+#: src/migrate/vs-code.md:221
+msgid "`Cmd + Opt + {` or `}`"
+msgstr ""
+
+#: src/migrate/vs-code.md:223
+msgid "Different Keybindings (Zed \\<\\> VS Code)"
+msgstr ""
+
+#: src/migrate/vs-code.md:227
+msgid "Open recent project"
+msgstr ""
+
+#: src/migrate/vs-code.md:227
+msgid "`Ctrl + R`"
+msgstr ""
+
+#: src/migrate/vs-code.md:227
+msgid "`Cmd + Opt + O`"
+msgstr ""
+
+#: src/migrate/vs-code.md:228
+msgid "Move lines up/down"
+msgstr ""
+
+#: src/migrate/vs-code.md:228 src/migrate/vs-code.md:237
+msgid "`Opt + Up/Down`"
+msgstr ""
+
+#: src/migrate/vs-code.md:228
+msgid "`Cmd + Ctrl + Up/Down`"
+msgstr ""
+
+#: src/migrate/vs-code.md:229
+msgid "Split panes"
+msgstr ""
+
+#: src/migrate/vs-code.md:229
+msgid "`Cmd + \\`"
+msgstr ""
+
+#: src/migrate/vs-code.md:229
+msgid "`Cmd + K, Arrow Keys`"
+msgstr ""
+
+#: src/migrate/vs-code.md:230
+msgid "Expand Selection"
+msgstr ""
+
+#: src/migrate/vs-code.md:230
+msgid "`Shift + Alt + Right`"
+msgstr ""
+
+#: src/migrate/vs-code.md:230
+msgid "`Opt + Up`"
+msgstr ""
+
+#: src/migrate/vs-code.md:232
+msgid "Unique to Zed"
+msgstr ""
+
+#: src/migrate/vs-code.md:236
+msgid "Toggle right dock"
+msgstr ""
+
+#: src/migrate/vs-code.md:236
+msgid "`Cmd + R` or `Cmd + Alt + B`"
+msgstr ""
+
+#: src/migrate/vs-code.md:237
+msgid "Syntactic selection"
+msgstr ""
+
+#: src/migrate/vs-code.md:237
+msgid "Selects code by structure (e.g., inside braces)."
+msgstr ""
+
+#: src/migrate/vs-code.md:239
+msgid "How to Customize Keybindings"
+msgstr ""
+
+#: src/migrate/vs-code.md:241
+msgid "To edit your keybindings:"
+msgstr ""
+
+#: src/migrate/vs-code.md:243
+msgid "Open the command palette (`Cmd+Shift+P`)"
+msgstr ""
+
+#: src/migrate/vs-code.md:244
+msgid "Run `Zed: Open Keymap Editor`"
+msgstr ""
+
+#: src/migrate/vs-code.md:246
+msgid ""
+"This opens a list of all available bindings. You can override individual "
+"shortcuts, remove conflicts, or build a layout that works better for your "
+"setup."
+msgstr ""
+
+#: src/migrate/vs-code.md:248
+msgid ""
+"Zed also supports chords (multi-key sequences) like `Cmd+K Cmd+C`, like VS "
+"Code does."
+msgstr ""
+
+#: src/migrate/vs-code.md:250
+msgid "Differences in User Interfaces"
+msgstr ""
+
+#: src/migrate/vs-code.md:252
+msgid "No Workspace"
+msgstr ""
+
+#: src/migrate/vs-code.md:254
+msgid ""
+"VS Code uses a dedicated Workspace concept, with multi-root folders, `.code-"
+"workspace` files, and a clear distinction between “a window” and “a "
+"workspace.” Zed simplifies this model."
+msgstr ""
+
+#: src/migrate/vs-code.md:257
+msgid "In Zed:"
+msgstr ""
+
+#: src/migrate/vs-code.md:259
+msgid ""
+"There is no workspace file format. Opening a folder is your project context."
+msgstr ""
+
+#: src/migrate/vs-code.md:261
+msgid ""
+"Zed does not support multi-root workspaces. You can only open one folder at "
+"a time in a window."
+msgstr ""
+
+#: src/migrate/vs-code.md:263
+msgid ""
+"Most project-level behavior is scoped to the folder you open. Search, Git "
+"integration, tasks, and environment detection all treat the opened directory "
+"as the project root."
+msgstr ""
+
+#: src/migrate/vs-code.md:265
+msgid ""
+"Per-project settings are optional. You can add a `.zed/settings.json` file "
+"inside a project to override global settings, but Zed does not use `.code-"
+"workspace` files and won’t import them."
+msgstr ""
+
+#: src/migrate/vs-code.md:267
+msgid ""
+"You can start from a single file or an empty window. Zed doesn’t require you "
+"to open a folder to begin editing."
+msgstr ""
+
+#: src/migrate/vs-code.md:269
+msgid ""
+"The result is a simpler model: Open a folder → work inside that folder → no "
+"additional workspace layer."
+msgstr ""
+
+#: src/migrate/vs-code.md:272
+msgid "Navigating in a Project"
+msgstr ""
+
+#: src/migrate/vs-code.md:274
+msgid ""
+"In VS Code, the standard entry point is opening a folder. From there, the "
+"left-hand panel is central to navigation. Zed takes a different approach:"
+msgstr ""
+
+#: src/migrate/vs-code.md:277
+msgid ""
+"You can still open folders, but you don’t need to. Opening a single file or "
+"even starting with an empty workspace is valid."
+msgstr ""
+
+#: src/migrate/vs-code.md:278
+msgid ""
+"The Command Palette (`Cmd+Shift+P`) and File Finder (`Cmd+P`) are primary "
+"navigation tools. The File Finder searches files, symbols, and commands "
+"across the workspace."
+msgstr ""
+
+#: src/migrate/vs-code.md:279
+msgid "Instead of a persistent panel, Zed encourages you to:"
+msgstr ""
+
+#: src/migrate/vs-code.md:280
+msgid "Fuzzy-find files by name (`Cmd+P`)"
+msgstr ""
+
+#: src/migrate/vs-code.md:281
+msgid "Jump directly to symbols (`Cmd+Shift+O`)"
+msgstr ""
+
+#: src/migrate/vs-code.md:282
+msgid ""
+"Use split panes and tabs for context, rather than keeping a large file tree "
+"open (though you can do this with the Project Panel if you prefer)."
+msgstr ""
+
+#: src/migrate/vs-code.md:284
+msgid ""
+"The UI keeps auxiliary panels out of the way so navigation stays centered on "
+"code."
+msgstr ""
+
+#: src/migrate/vs-code.md:286
+msgid "Extensions vs. Marketplace"
+msgstr ""
+
+#: src/migrate/vs-code.md:288
+msgid ""
+"Zed does not offer as many extensions as VS Code. The available extensions "
+"are focused on language support, themes, syntax highlighting, and other core "
+"editing enhancements."
+msgstr ""
+
+#: src/migrate/vs-code.md:290
+msgid ""
+"Several features that typically require extensions in VS Code are built into "
+"Zed:"
+msgstr ""
+
+#: src/migrate/vs-code.md:292
+msgid ""
+"Real-time collaboration with voice and cursor sharing (no Live Share "
+"required)"
+msgstr ""
+
+#: src/migrate/vs-code.md:293
+msgid "AI coding assistance (no Copilot extension needed)"
+msgstr ""
+
+#: src/migrate/vs-code.md:294
+msgid "Built-in terminal panel"
+msgstr ""
+
+#: src/migrate/vs-code.md:295
+msgid "Project-wide fuzzy search"
+msgstr ""
+
+#: src/migrate/vs-code.md:296
+msgid "Task runner with JSON config"
+msgstr ""
+
+#: src/migrate/vs-code.md:297
+msgid "Inline diagnostics and code actions via LSP"
+msgstr ""
+
+#: src/migrate/vs-code.md:299
+msgid ""
+"You won’t find one-to-one replacements for every VS Code extension, "
+"especially if you rely on tools for DevOps, containers, or test runners. "
+"Zed's extension catalog is still growing and remains smaller."
+msgstr ""
+
+#: src/migrate/vs-code.md:301
+msgid "Collaboration in Zed vs. VS Code"
+msgstr ""
+
+#: src/migrate/vs-code.md:303
+msgid ""
+"Unlike VS Code, Zed doesn’t require an extension to collaborate. It’s built "
+"into the core experience."
+msgstr ""
+
+#: src/migrate/vs-code.md:305
+msgid "Open the Collab Panel in the left dock."
+msgstr ""
+
+#: src/migrate/vs-code.md:306
+msgid ""
+"Create a channel and [invite your collaborators](https://zed.dev/docs/"
+"collaboration#inviting-a-collaborator) to join."
+msgstr ""
+
+#: src/migrate/vs-code.md:307
+msgid ""
+"[Share your screen or your codebase](https://zed.dev/docs/"
+"collaboration#share-a-project) directly."
+msgstr ""
+
+#: src/migrate/vs-code.md:309
+msgid ""
+"Once connected, you’ll see each other's cursors, selections, and edits in "
+"real time. Voice chat is included, so you can talk as you work. There’s no "
+"need for separate tools or third-party logins."
+msgstr ""
+
+#: src/migrate/vs-code.md:311
+msgid ""
+"Learn how [Zed uses Zed](https://zed.dev/blog/zed-is-our-office) to plan "
+"work and collaborate."
+msgstr ""
+
+#: src/migrate/vs-code.md:313
+msgid "Using AI in Zed"
+msgstr ""
+
+#: src/migrate/vs-code.md:315
+msgid ""
+"If you’re used to GitHub Copilot in VS Code, you can do the same in Zed. You "
+"can also explore other agents through Zed Pro, or bring your own keys and "
+"connect without authentication. You can disable AI features entirely if you "
+"prefer."
+msgstr ""
+
+#: src/migrate/vs-code.md:317
+msgid "Configuring GitHub Copilot"
+msgstr ""
+
+#: src/migrate/vs-code.md:319
+msgid "Open Settings with `Cmd+,` (macOS) or `Ctrl+,` (Linux/Windows)"
+msgstr ""
+
+#: src/migrate/vs-code.md:320
+msgid "Navigate to **AI → Edit Predictions**"
+msgstr ""
+
+#: src/migrate/vs-code.md:321
+msgid "Click **Configure** next to \"Configure Providers\""
+msgstr ""
+
+#: src/migrate/vs-code.md:322
+msgid "Under **GitHub Copilot**, click **Sign in to GitHub**"
+msgstr ""
+
+#: src/migrate/vs-code.md:324
+msgid ""
+"Once signed in, just start typing. Zed will offer suggestions inline for you "
+"to accept."
+msgstr ""
+
+#: src/migrate/vs-code.md:326
+msgid "Additional AI Options"
+msgstr ""
+
+#: src/migrate/vs-code.md:328
+msgid "To use other AI models in Zed, you have several options:"
+msgstr ""
+
+#: src/migrate/vs-code.md:330
+msgid ""
+"Use Zed’s hosted models, with higher rate limits. Requires [authentication]"
+"(https://zed.dev/docs/authentication) and subscription to [Zed Pro](https://"
+"zed.dev/docs/ai/subscription.html)."
+msgstr ""
+
+#: src/migrate/vs-code.md:331
+msgid ""
+"Bring your own [API keys](https://zed.dev/docs/ai/llm-providers.html), no "
+"authentication needed"
+msgstr ""
+
+#: src/migrate/vs-code.md:332
+msgid ""
+"Use [external agents like Claude Agent](https://zed.dev/docs/ai/external-"
+"agents.html)."
+msgstr ""
+
+#: src/migrate/vs-code.md:334
+msgid "Advanced Config and Productivity Tweaks"
+msgstr ""
+
+#: src/migrate/vs-code.md:336
+msgid ""
+"Zed exposes advanced settings for power users who want to fine-tune their "
+"environment."
+msgstr ""
+
+#: src/migrate/vs-code.md:338
+msgid "Here are a few useful tweaks:"
+msgstr ""
+
+#: src/migrate/vs-code.md:340
+msgid "**Format on Save:**"
+msgstr ""
+
+#: src/migrate/vs-code.md:343
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/migrate/vs-code.md:343
+msgid "\"on\""
+msgstr ""
+
+#: src/migrate/vs-code.md:346
+msgid "**Enable direnv support:**"
+msgstr ""
+
+#: src/migrate/vs-code.md:349
+msgid "\"load_direnv\""
+msgstr ""
+
+#: src/migrate/vs-code.md:349
+msgid "\"shell_hook\""
+msgstr ""
+
+#: src/migrate/vs-code.md:352
+msgid ""
+"**Custom Tasks**: Define build or run commands in your `tasks.json` "
+"(accessed via command palette: `zed: open tasks`):"
+msgstr ""
+
+#: src/migrate/vs-code.md:357
+msgid "\"label\""
+msgstr ""
+
+#: src/migrate/vs-code.md:357
+msgid "\"build\""
+msgstr ""
+
+#: src/migrate/vs-code.md:358
+msgid "\"command\""
+msgstr ""
+
+#: src/migrate/vs-code.md:358
+msgid "\"cargo build\""
+msgstr ""
+
+#: src/migrate/vs-code.md:363
+msgid ""
+"**Bring over custom snippets** Copy your VS Code snippet JSON directly into "
+"Zed's snippets folder (`zed: configure snippets`)."
+msgstr ""

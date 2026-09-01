@@ -1,0 +1,619 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/semantic-tokens.md:3
+msgid "Semantic Tokens"
+msgstr ""
+
+#: src/semantic-tokens.md:5
+msgid ""
+"Semantic tokens provide richer syntax highlighting by using information from "
+"language servers. Unlike tree-sitter highlighting, which is based purely on "
+"syntax, semantic tokens understand the meaning of your code—distinguishing "
+"between local variables and parameters, or between a class definition and a "
+"class reference."
+msgstr ""
+
+#: src/semantic-tokens.md:7
+msgid "Enabling Semantic Tokens"
+msgstr ""
+
+#: src/semantic-tokens.md:9
+msgid ""
+"Semantic tokens are controlled by the `semantic_tokens` setting. By default, "
+"semantic tokens are disabled."
+msgstr ""
+
+#: src/semantic-tokens.md:13 src/semantic-tokens.md:29
+#: src/semantic-tokens.md:32 src/semantic-tokens.md:35
+msgid "\"semantic_tokens\""
+msgstr ""
+
+#: src/semantic-tokens.md:13 src/semantic-tokens.md:32
+msgid "\"combined\""
+msgstr ""
+
+#: src/semantic-tokens.md:17
+msgid "This setting accepts three values:"
+msgstr ""
+
+#: src/semantic-tokens.md:19
+msgid "Value"
+msgstr ""
+
+#: src/semantic-tokens.md:19 src/semantic-tokens.md:54
+#: src/semantic-tokens.md:156
+msgid "Description"
+msgstr ""
+
+#: src/semantic-tokens.md:21
+msgid "`\"off\"`"
+msgstr ""
+
+#: src/semantic-tokens.md:21
+msgid ""
+"Do not request semantic tokens from language servers. Uses tree-sitter "
+"highlighting only. (Default)"
+msgstr ""
+
+#: src/semantic-tokens.md:22
+msgid "`\"combined\"`"
+msgstr ""
+
+#: src/semantic-tokens.md:22
+msgid ""
+"Use LSP semantic tokens together with tree-sitter highlighting. Tree-sitter "
+"provides base highlighting, and semantic tokens overlay additional "
+"information."
+msgstr ""
+
+#: src/semantic-tokens.md:23
+msgid "`\"full\"`"
+msgstr ""
+
+#: src/semantic-tokens.md:23
+msgid ""
+"Use LSP semantic tokens exclusively. Tree-sitter highlighting is disabled "
+"entirely for buffers with semantic token support."
+msgstr ""
+
+#: src/semantic-tokens.md:25
+msgid "You can configure this globally or per-language:"
+msgstr ""
+
+#: src/semantic-tokens.md:29
+msgid "\"off\""
+msgstr ""
+
+#: src/semantic-tokens.md:30
+msgid "\"languages\""
+msgstr ""
+
+#: src/semantic-tokens.md:31
+msgid "\"Rust\""
+msgstr ""
+
+#: src/semantic-tokens.md:34
+msgid "\"TypeScript\""
+msgstr ""
+
+#: src/semantic-tokens.md:35
+msgid "\"full\""
+msgstr ""
+
+#: src/semantic-tokens.md:41
+msgid ""
+"**Note:** Changing the `semantic_tokens` mode may require a language server "
+"restart to take effect. Use the `lsp: restart language servers` command from "
+"the command palette if highlighting doesn't update immediately."
+msgstr ""
+
+#: src/semantic-tokens.md:43
+msgid "Customizing Token Colors"
+msgstr ""
+
+#: src/semantic-tokens.md:45
+msgid ""
+"Semantic tokens are styled using rules that map LSP token types and "
+"modifiers to theme styles or custom colors. Zed provides sensible defaults, "
+"but you can customize these in your settings.json: add rules under "
+"`global_lsp_settings.semantic_token_rules` key."
+msgstr ""
+
+#: src/semantic-tokens.md:47
+msgid ""
+"Rules are matched in order, and the first matching rule wins. User-defined "
+"rules take highest precedence, followed by extension-provided language "
+"rules, then Zed defaults."
+msgstr ""
+
+#: src/semantic-tokens.md:50
+msgid "Rule Structure"
+msgstr ""
+
+#: src/semantic-tokens.md:52
+msgid "Each rule can specify:"
+msgstr ""
+
+#: src/semantic-tokens.md:54
+msgid "Property"
+msgstr ""
+
+#: src/semantic-tokens.md:56
+msgid "`token_type`"
+msgstr ""
+
+#: src/semantic-tokens.md:56
+msgid ""
+"The LSP semantic token type to match (e.g., `\"variable\"`, `\"function\"`, "
+"`\"class\"`). If omitted, matches all types."
+msgstr ""
+
+#: src/semantic-tokens.md:57
+msgid "`token_modifiers`"
+msgstr ""
+
+#: src/semantic-tokens.md:57
+msgid ""
+"A list of modifiers that must all be present (e.g., `[\"declaration\"]`, "
+"`[\"readonly\", \"static\"]`)."
+msgstr ""
+
+#: src/semantic-tokens.md:58
+msgid "`style`"
+msgstr ""
+
+#: src/semantic-tokens.md:58
+msgid ""
+"A list of theme style names to try. The first one found in the current theme "
+"is used."
+msgstr ""
+
+#: src/semantic-tokens.md:59
+msgid "`foreground_color`"
+msgstr ""
+
+#: src/semantic-tokens.md:59
+msgid "Override foreground color in hex format (e.g., `\"#ff0000\"`)."
+msgstr ""
+
+#: src/semantic-tokens.md:60
+msgid "`background_color`"
+msgstr ""
+
+#: src/semantic-tokens.md:60
+msgid "Override background color in hex format."
+msgstr ""
+
+#: src/semantic-tokens.md:61
+msgid "`underline`"
+msgstr ""
+
+#: src/semantic-tokens.md:61
+msgid "Boolean or hex color. If `true`, underlines with the text color."
+msgstr ""
+
+#: src/semantic-tokens.md:62
+msgid "`strikethrough`"
+msgstr ""
+
+#: src/semantic-tokens.md:62
+msgid "Boolean or hex color. If `true`, strikes through with the text color."
+msgstr ""
+
+#: src/semantic-tokens.md:63
+msgid "`font_weight`"
+msgstr ""
+
+#: src/semantic-tokens.md:63
+msgid "`\"normal\"` or `\"bold\"`."
+msgstr ""
+
+#: src/semantic-tokens.md:64
+msgid "`font_style`"
+msgstr ""
+
+#: src/semantic-tokens.md:64
+msgid "`\"normal\"` or `\"italic\"`."
+msgstr ""
+
+#: src/semantic-tokens.md:66
+msgid "Example: Highlighting Unresolved References"
+msgstr ""
+
+#: src/semantic-tokens.md:68
+msgid "To make unresolved references stand out:"
+msgstr ""
+
+#: src/semantic-tokens.md:72 src/semantic-tokens.md:90
+#: src/semantic-tokens.md:109 src/semantic-tokens.md:129
+msgid "\"global_lsp_settings\""
+msgstr ""
+
+#: src/semantic-tokens.md:73 src/semantic-tokens.md:91
+#: src/semantic-tokens.md:110 src/semantic-tokens.md:130
+msgid "\"semantic_token_rules\""
+msgstr ""
+
+#: src/semantic-tokens.md:75 src/semantic-tokens.md:93
+#: src/semantic-tokens.md:112 src/semantic-tokens.md:132
+msgid "\"token_type\""
+msgstr ""
+
+#: src/semantic-tokens.md:75
+msgid "\"unresolvedReference\""
+msgstr ""
+
+#: src/semantic-tokens.md:76 src/semantic-tokens.md:95
+msgid "\"foreground_color\""
+msgstr ""
+
+#: src/semantic-tokens.md:76
+msgid "\"#c93f3f\""
+msgstr ""
+
+#: src/semantic-tokens.md:77 src/semantic-tokens.md:96
+msgid "\"font_weight\""
+msgstr ""
+
+#: src/semantic-tokens.md:77 src/semantic-tokens.md:96
+msgid "\"bold\""
+msgstr ""
+
+#: src/semantic-tokens.md:84
+msgid "Example: Highlighting Unsafe Code"
+msgstr ""
+
+#: src/semantic-tokens.md:86
+msgid "To highlight unsafe operations in Rust:"
+msgstr ""
+
+#: src/semantic-tokens.md:93
+msgid "\"punctuation\""
+msgstr ""
+
+#: src/semantic-tokens.md:94 src/semantic-tokens.md:113
+msgid "\"token_modifiers\""
+msgstr ""
+
+#: src/semantic-tokens.md:94
+msgid "\"unsafe\""
+msgstr ""
+
+#: src/semantic-tokens.md:95
+msgid "\"#AA1111\""
+msgstr ""
+
+#: src/semantic-tokens.md:103
+msgid "Example: Using Theme Styles"
+msgstr ""
+
+#: src/semantic-tokens.md:105
+msgid "Instead of hardcoding colors, reference styles from your theme:"
+msgstr ""
+
+#: src/semantic-tokens.md:112 src/semantic-tokens.md:114
+msgid "\"variable\""
+msgstr ""
+
+#: src/semantic-tokens.md:113
+msgid "\"mutable\""
+msgstr ""
+
+#: src/semantic-tokens.md:114
+msgid "\"style\""
+msgstr ""
+
+#: src/semantic-tokens.md:114
+msgid "\"variable.mutable\""
+msgstr ""
+
+#: src/semantic-tokens.md:121
+msgid ""
+"The first style found in the current theme is used, providing fallback "
+"options."
+msgstr ""
+
+#: src/semantic-tokens.md:123
+msgid "Example: Disabling a Token Type"
+msgstr ""
+
+#: src/semantic-tokens.md:125
+msgid ""
+"To disable highlighting for a specific token type, add an empty rule that "
+"matches it:"
+msgstr ""
+
+#: src/semantic-tokens.md:132
+msgid "\"comment\""
+msgstr ""
+
+#: src/semantic-tokens.md:139
+msgid ""
+"Since user rules take highest precedence and the first match wins, this "
+"empty rule prevents any styling from being applied to comment tokens."
+msgstr ""
+
+#: src/semantic-tokens.md:141
+msgid "Default Rules"
+msgstr ""
+
+#: src/semantic-tokens.md:143
+msgid ""
+"Zed's default semantic token rules map standard LSP token types to common "
+"theme styles. For example:"
+msgstr ""
+
+#: src/semantic-tokens.md:145
+msgid "`function` → `function` style"
+msgstr ""
+
+#: src/semantic-tokens.md:146
+msgid "`variable` with `constant` modifier → `constant` style"
+msgstr ""
+
+#: src/semantic-tokens.md:147
+msgid "`class` → `type.class`, `class`, or `type` style (first found)"
+msgstr ""
+
+#: src/semantic-tokens.md:148
+msgid ""
+"`comment` with `documentation` modifier → `comment.documentation` or "
+"`comment.doc` style"
+msgstr ""
+
+#: src/semantic-tokens.md:150
+msgid ""
+"The full default configuration can be shown in Zed with the `zed: show "
+"default semantic token rules` command."
+msgstr ""
+
+#: src/semantic-tokens.md:152
+msgid "Standard Token Types"
+msgstr ""
+
+#: src/semantic-tokens.md:154
+msgid ""
+"Language servers report tokens using standardized types. Common types "
+"include:"
+msgstr ""
+
+#: src/semantic-tokens.md:156
+msgid "Type"
+msgstr ""
+
+#: src/semantic-tokens.md:158
+msgid "`namespace`"
+msgstr ""
+
+#: src/semantic-tokens.md:158
+msgid "Namespace or module names"
+msgstr ""
+
+#: src/semantic-tokens.md:159
+msgid "`type`"
+msgstr ""
+
+#: src/semantic-tokens.md:159
+msgid "Type names"
+msgstr ""
+
+#: src/semantic-tokens.md:160
+msgid "`class`"
+msgstr ""
+
+#: src/semantic-tokens.md:160
+msgid "Class names"
+msgstr ""
+
+#: src/semantic-tokens.md:161
+msgid "`enum`"
+msgstr ""
+
+#: src/semantic-tokens.md:161
+msgid "Enum type names"
+msgstr ""
+
+#: src/semantic-tokens.md:162
+msgid "`interface`"
+msgstr ""
+
+#: src/semantic-tokens.md:162
+msgid "Interface names"
+msgstr ""
+
+#: src/semantic-tokens.md:163
+msgid "`struct`"
+msgstr ""
+
+#: src/semantic-tokens.md:163
+msgid "Struct names"
+msgstr ""
+
+#: src/semantic-tokens.md:164
+msgid "`typeParameter`"
+msgstr ""
+
+#: src/semantic-tokens.md:164
+msgid "Generic type parameters"
+msgstr ""
+
+#: src/semantic-tokens.md:165
+msgid "`parameter`"
+msgstr ""
+
+#: src/semantic-tokens.md:165
+msgid "Function/method parameters"
+msgstr ""
+
+#: src/semantic-tokens.md:166
+msgid "`variable`"
+msgstr ""
+
+#: src/semantic-tokens.md:166
+msgid "Variable names"
+msgstr ""
+
+#: src/semantic-tokens.md:167
+msgid "`property`"
+msgstr ""
+
+#: src/semantic-tokens.md:167
+msgid "Object properties or struct fields"
+msgstr ""
+
+#: src/semantic-tokens.md:168
+msgid "`enumMember`"
+msgstr ""
+
+#: src/semantic-tokens.md:168
+msgid "Enum variants"
+msgstr ""
+
+#: src/semantic-tokens.md:169
+msgid "`function`"
+msgstr ""
+
+#: src/semantic-tokens.md:169
+msgid "Function names"
+msgstr ""
+
+#: src/semantic-tokens.md:170
+msgid "`method`"
+msgstr ""
+
+#: src/semantic-tokens.md:170
+msgid "Method names"
+msgstr ""
+
+#: src/semantic-tokens.md:171
+msgid "`macro`"
+msgstr ""
+
+#: src/semantic-tokens.md:171
+msgid "Macro names"
+msgstr ""
+
+#: src/semantic-tokens.md:172
+msgid "`keyword`"
+msgstr ""
+
+#: src/semantic-tokens.md:172
+msgid "Language keywords"
+msgstr ""
+
+#: src/semantic-tokens.md:173
+msgid "`comment`"
+msgstr ""
+
+#: src/semantic-tokens.md:173
+msgid "Comments"
+msgstr ""
+
+#: src/semantic-tokens.md:174
+msgid "`string`"
+msgstr ""
+
+#: src/semantic-tokens.md:174
+msgid "String literals"
+msgstr ""
+
+#: src/semantic-tokens.md:175
+msgid "`number`"
+msgstr ""
+
+#: src/semantic-tokens.md:175
+msgid "Numeric literals"
+msgstr ""
+
+#: src/semantic-tokens.md:176
+msgid "`operator`"
+msgstr ""
+
+#: src/semantic-tokens.md:176
+msgid "Operators"
+msgstr ""
+
+#: src/semantic-tokens.md:178
+msgid ""
+"Common modifiers include: `declaration`, `definition`, `readonly`, `static`, "
+"`deprecated`, `async`, `documentation`, `defaultLibrary`, and language-"
+"specific modifiers like `unsafe` (Rust) or `abstract` (TypeScript)."
+msgstr ""
+
+#: src/semantic-tokens.md:180
+msgid ""
+"For the complete specification, see the [LSP Semantic Tokens documentation]"
+"(https://microsoft.github.io/language-server-protocol/specifications/"
+"lsp/3.17/specification/#semanticTokenTypes)."
+msgstr ""
+
+#: src/semantic-tokens.md:182
+msgid "Inspecting Semantic Tokens"
+msgstr ""
+
+#: src/semantic-tokens.md:184
+msgid ""
+"To see semantic tokens applied to your code in real-time, use the `dev: open "
+"highlights tree view` command from the command palette. This opens a panel "
+"showing all highlights (including semantic tokens) for the current buffer, "
+"making it easier to understand which tokens are being applied and debug your "
+"custom rules."
+msgstr ""
+
+#: src/semantic-tokens.md:186
+msgid "Troubleshooting"
+msgstr ""
+
+#: src/semantic-tokens.md:188
+msgid "Semantic highlighting not appearing"
+msgstr ""
+
+#: src/semantic-tokens.md:190
+msgid ""
+"Ensure `semantic_tokens` is set to `\"combined\"` or `\"full\"` for the "
+"language"
+msgstr ""
+
+#: src/semantic-tokens.md:191
+msgid "Verify the language server supports semantic tokens (not all do)"
+msgstr ""
+
+#: src/semantic-tokens.md:192
+msgid "Try restarting the language server with `lsp: restart language servers`"
+msgstr ""
+
+#: src/semantic-tokens.md:193
+msgid "Check the LSP logs (`workspace: open lsp log`) for errors"
+msgstr ""
+
+#: src/semantic-tokens.md:195
+msgid "Colors not updating after changing settings"
+msgstr ""
+
+#: src/semantic-tokens.md:197
+msgid ""
+"Changes to `semantic_tokens` mode may require a language server restart. Use "
+"`lsp: restart language servers` from the command palette."
+msgstr ""
+
+#: src/semantic-tokens.md:199
+msgid "Theme styles not being applied"
+msgstr ""
+
+#: src/semantic-tokens.md:201
+msgid ""
+"Ensure the style names in your rules match styles defined in your theme. The "
+"`style` array provides fallback options—if the first style isn't found, Zed "
+"tries the next one."
+msgstr ""

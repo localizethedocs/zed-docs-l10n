@@ -1,0 +1,498 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/mcp.md:3
+msgid "Model Context Protocol"
+msgstr "模型上下文協定"
+
+#: src/ai/mcp.md:5
+msgid ""
+"Zed uses the [Model Context Protocol](https://modelcontextprotocol.io/) to "
+"interact with context servers."
+msgstr ""
+"Zed 使用[模型上下文協定](https://modelcontextprotocol.io/)與上下文伺服器進行"
+"互動。"
+
+#: src/ai/mcp.md:7
+msgid ""
+"The Model Context Protocol (MCP) is an open protocol for connecting LLM "
+"applications to external tools and data sources through a standard interface."
+msgstr ""
+
+#: src/ai/mcp.md:9
+msgid "Supported Features"
+msgstr ""
+
+#: src/ai/mcp.md:11
+msgid ""
+"Zed currently supports MCP's [Tools](https://modelcontextprotocol.io/"
+"specification/2025-11-25/server/tools) and [Prompts](https://"
+"modelcontextprotocol.io/specification/2025-11-25/server/prompts) features. "
+"We welcome contributions that help advance Zed's MCP feature coverage "
+"(Discovery, Sampling, Elicitation, etc)."
+msgstr ""
+
+#: src/ai/mcp.md:14
+msgid ""
+"Zed also handles the `notifications/tools/list_changed` notification from "
+"MCP servers. When a server adds, removes, or modifies its available tools at "
+"runtime, Zed automatically reloads the tool list without requiring a server "
+"restart."
+msgstr ""
+
+#: src/ai/mcp.md:16
+msgid "Installing MCP Servers"
+msgstr ""
+
+#: src/ai/mcp.md:18
+msgid "As Extensions"
+msgstr ""
+
+#: src/ai/mcp.md:20
+msgid ""
+"One of the ways you can use MCP servers in Zed is by exposing them as an "
+"extension. Check out the [MCP Server Extensions](../extensions/mcp-"
+"extensions.md) page to learn how to create your own."
+msgstr ""
+
+#: src/ai/mcp.md:23
+msgid "Many MCP servers are available as extensions. Find them via:"
+msgstr ""
+
+#: src/ai/mcp.md:25
+msgid "[the Zed website](https://zed.dev/extensions?filter=context-servers)"
+msgstr ""
+
+#: src/ai/mcp.md:26
+msgid ""
+"in the app, open the Command Palette and run the `zed: extensions` action"
+msgstr ""
+
+#: src/ai/mcp.md:27
+msgid ""
+"in the app, go to the Agent Panel's top-right menu and look for the \"View "
+"Server Extensions\" menu item"
+msgstr ""
+
+#: src/ai/mcp.md:29
+msgid "Popular servers available as an extension include:"
+msgstr ""
+
+#: src/ai/mcp.md:31
+msgid "[Context7](https://zed.dev/extensions/mcp-server-context7)"
+msgstr ""
+
+#: src/ai/mcp.md:32
+msgid "[GitHub](https://zed.dev/extensions/mcp-server-github)"
+msgstr ""
+
+#: src/ai/mcp.md:33
+msgid "[Puppeteer](https://zed.dev/extensions/mcp-server-puppeteer)"
+msgstr ""
+
+#: src/ai/mcp.md:34
+msgid "[Gem](https://zed.dev/extensions/gem)"
+msgstr ""
+
+#: src/ai/mcp.md:35
+msgid "[Brave Search](https://zed.dev/extensions/mcp-server-brave-search)"
+msgstr ""
+
+#: src/ai/mcp.md:36
+msgid "[Prisma](https://github.com/aqrln/prisma-mcp-zed)"
+msgstr ""
+
+#: src/ai/mcp.md:37
+msgid "[Framelink Figma](https://zed.dev/extensions/mcp-server-figma)"
+msgstr ""
+
+#: src/ai/mcp.md:38
+msgid "[Resend](https://zed.dev/extensions/mcp-server-resend)"
+msgstr ""
+
+#: src/ai/mcp.md:40
+msgid "As Custom Servers"
+msgstr ""
+
+#: src/ai/mcp.md:42
+msgid ""
+"Creating an extension is not the only way to use MCP servers in Zed. You can "
+"connect them by adding their commands directly to your settings file ([how "
+"to edit](../configuring-zed.md#settings-files)), like so:"
+msgstr ""
+
+#: src/ai/mcp.md:47 src/ai/mcp.md:117
+msgid "\"context_servers\""
+msgstr ""
+
+#: src/ai/mcp.md:48
+msgid "\"local-mcp-server\""
+msgstr ""
+
+#: src/ai/mcp.md:49
+msgid "\"command\""
+msgstr ""
+
+#: src/ai/mcp.md:49
+msgid "\"some-command\""
+msgstr ""
+
+#: src/ai/mcp.md:50
+msgid "\"args\""
+msgstr "\"args\""
+
+#: src/ai/mcp.md:50
+msgid "\"arg-1\""
+msgstr ""
+
+#: src/ai/mcp.md:50
+msgid "\"arg-2\""
+msgstr ""
+
+#: src/ai/mcp.md:51
+msgid "\"env\""
+msgstr "\"env\""
+
+#: src/ai/mcp.md:53
+msgid "\"remote-mcp-server\""
+msgstr ""
+
+#: src/ai/mcp.md:54 src/ai/mcp.md:58
+msgid "\"url\""
+msgstr ""
+
+#: src/ai/mcp.md:54
+msgid "\"custom\""
+msgstr ""
+
+#: src/ai/mcp.md:55
+msgid "\"headers\""
+msgstr ""
+
+#: src/ai/mcp.md:55
+msgid "\"Authorization\""
+msgstr ""
+
+#: src/ai/mcp.md:55
+msgid "\"Bearer <token>\""
+msgstr ""
+
+#: src/ai/mcp.md:57
+msgid "\"remote-mcp-server-with-oauth\""
+msgstr ""
+
+#: src/ai/mcp.md:58
+msgid "\"https://mcp.example.com/mcp\""
+msgstr ""
+
+#: src/ai/mcp.md:64
+msgid ""
+"Alternatively, you can also add a custom server by accessing the Agent "
+"Panel's Settings view (also accessible via the `agent: open settings` "
+"action). From there, you can add it through the modal that appears when you "
+"click the \"Add Custom Server\" button."
+msgstr ""
+
+#: src/ai/mcp.md:67
+msgid ""
+"Note: When a remote MCP server has no configured `\"Authorization\"` header, "
+"Zed will prompt you to authenticate yourself against the MCP server using "
+"the standard MCP OAuth flow."
+msgstr ""
+
+#: src/ai/mcp.md:69
+msgid "Using MCP Servers"
+msgstr ""
+
+#: src/ai/mcp.md:71
+msgid "Configuration Check"
+msgstr ""
+
+#: src/ai/mcp.md:73
+msgid "Most MCP servers require configuration after installation."
+msgstr ""
+
+#: src/ai/mcp.md:75
+msgid ""
+"In the case of extensions, after installing it, Zed will pop up a modal "
+"displaying what is required for you to properly set it up. For example, the "
+"GitHub MCP extension requires you to add a [Personal Access Token](https://"
+"docs.github.com/en/authentication/keeping-your-account-and-data-secure/"
+"managing-your-personal-access-tokens)."
+msgstr ""
+
+#: src/ai/mcp.md:78
+msgid ""
+"In the case of custom servers, make sure you check the provider "
+"documentation to determine what type of command, arguments, and environment "
+"variables need to be added to the JSON."
+msgstr ""
+
+#: src/ai/mcp.md:80
+msgid ""
+"To check if your MCP server is properly configured, go to the Agent Panel's "
+"settings view and watch the indicator dot next to its name. If they're "
+"running correctly, the indicator will be green and its tooltip will say "
+"\"Server is active\". If not, other colors and tooltip messages will "
+"indicate what is happening."
+msgstr ""
+
+#: src/ai/mcp.md:84
+msgid "Agent Panel Usage"
+msgstr ""
+
+#: src/ai/mcp.md:86
+msgid ""
+"Once installation is complete, you can return to the Agent Panel and start "
+"prompting."
+msgstr ""
+
+#: src/ai/mcp.md:88
+msgid ""
+"How reliably MCP tools get called can vary from model to model. Mentioning "
+"the MCP server by name can help the model pick tools from that server."
+msgstr ""
+
+#: src/ai/mcp.md:91
+msgid ""
+"However, if you want to _ensure_ a given MCP server will be used, you can "
+"create [a custom profile](./agent-panel.md#custom-profiles) where all built-"
+"in tools (or the ones that could cause conflicts with the server's tools) "
+"are turned off and only the tools coming from the MCP server are turned on."
+msgstr ""
+
+#: src/ai/mcp.md:93
+msgid ""
+"As an example, [the Dagger team suggests](https://container-use.com/agent-"
+"integrations#zed) doing that with their [Container Use MCP server](https://"
+"zed.dev/extensions/mcp-server-container-use):"
+msgstr ""
+
+#: src/ai/mcp.md:96
+msgid "\"agent\""
+msgstr "\"agent\""
+
+#: src/ai/mcp.md:97
+msgid "\"profiles\""
+msgstr ""
+
+#: src/ai/mcp.md:98 src/ai/mcp.md:118
+msgid "\"container-use\""
+msgstr ""
+
+#: src/ai/mcp.md:99
+msgid "\"name\""
+msgstr ""
+
+#: src/ai/mcp.md:99
+msgid "\"Container Use\""
+msgstr ""
+
+#: src/ai/mcp.md:100 src/ai/mcp.md:119
+msgid "\"tools\""
+msgstr ""
+
+#: src/ai/mcp.md:101
+msgid "\"fetch\""
+msgstr ""
+
+#: src/ai/mcp.md:102
+msgid "\"thinking\""
+msgstr ""
+
+#: src/ai/mcp.md:103
+msgid "\"copy_path\""
+msgstr ""
+
+#: src/ai/mcp.md:104
+msgid "\"find_path\""
+msgstr ""
+
+#: src/ai/mcp.md:105
+msgid "\"delete_path\""
+msgstr ""
+
+#: src/ai/mcp.md:106
+msgid "\"create_directory\""
+msgstr ""
+
+#: src/ai/mcp.md:107
+msgid "\"list_directory\""
+msgstr ""
+
+#: src/ai/mcp.md:108
+msgid "\"diagnostics\""
+msgstr ""
+
+#: src/ai/mcp.md:109
+msgid "\"read_file\""
+msgstr ""
+
+#: src/ai/mcp.md:110
+msgid "\"open\""
+msgstr ""
+
+#: src/ai/mcp.md:111
+msgid "\"move_path\""
+msgstr ""
+
+#: src/ai/mcp.md:112
+msgid "\"grep\""
+msgstr ""
+
+#: src/ai/mcp.md:113
+msgid "\"edit_file\""
+msgstr ""
+
+#: src/ai/mcp.md:114
+msgid "\"terminal\""
+msgstr ""
+
+#: src/ai/mcp.md:116
+msgid "\"enable_all_context_servers\""
+msgstr ""
+
+#: src/ai/mcp.md:120
+msgid "\"environment_create\""
+msgstr ""
+
+#: src/ai/mcp.md:121
+msgid "\"environment_add_service\""
+msgstr ""
+
+#: src/ai/mcp.md:122
+msgid "\"environment_update\""
+msgstr ""
+
+#: src/ai/mcp.md:123
+msgid "\"environment_run_cmd\""
+msgstr ""
+
+#: src/ai/mcp.md:124
+msgid "\"environment_open\""
+msgstr ""
+
+#: src/ai/mcp.md:125
+msgid "\"environment_file_write\""
+msgstr ""
+
+#: src/ai/mcp.md:126
+msgid "\"environment_file_read\""
+msgstr ""
+
+#: src/ai/mcp.md:127
+msgid "\"environment_file_list\""
+msgstr ""
+
+#: src/ai/mcp.md:128
+msgid "\"environment_file_delete\""
+msgstr ""
+
+#: src/ai/mcp.md:129
+msgid "\"environment_checkpoint\""
+msgstr ""
+
+#: src/ai/mcp.md:138
+msgid "Tool Permissions"
+msgstr ""
+
+#: src/ai/mcp.md:140
+msgid ""
+"**Note:** In Zed v0.224.0 and above, tool approval is controlled by `agent."
+"tool_permissions.default`. In earlier versions, it was controlled by the "
+"`agent.always_allow_tool_actions` boolean (default `false`)."
+msgstr ""
+
+#: src/ai/mcp.md:143
+msgid ""
+"Zed's Agent Panel provides the `agent.tool_permissions.default` setting to "
+"control tool approval behavior for the native Zed agent:"
+msgstr ""
+
+#: src/ai/mcp.md:145
+msgid ""
+"`\"confirm\"` (default) — Prompts for approval before running any tool "
+"action, including MCP tool calls"
+msgstr ""
+
+#: src/ai/mcp.md:146
+msgid "`\"allow\"` — Auto-approves tool actions without prompting"
+msgstr ""
+
+#: src/ai/mcp.md:147
+msgid "`\"deny\"` — Blocks all tool actions"
+msgstr "`\"deny\"` — 阻塞所有工具動作"
+
+#: src/ai/mcp.md:149
+msgid ""
+"For granular control over specific MCP tools, you can configure per-tool "
+"permission rules. MCP tools use the key format `mcp:<server>:<tool_name>` — "
+"for example, `mcp:github:create_issue`. The `default` key on a per-tool "
+"entry is the primary mechanism for MCP tools, since pattern-based rules "
+"match against an empty string for MCP tools and most patterns won't match."
+msgstr ""
+
+#: src/ai/mcp.md:153
+msgid ""
+"Learn more about [how tool permissions work](./tool-permissions.md), how to "
+"further customize them, and other details."
+msgstr ""
+
+#: src/ai/mcp.md:155
+msgid "External Agents"
+msgstr ""
+
+#: src/ai/mcp.md:157
+msgid ""
+"MCP servers configured in Zed are forwarded to [external agents](./external-"
+"agents.md) via the [Agent Client Protocol](https://agentclientprotocol."
+"com/). External agents can also access MCP servers from their own native "
+"configuration files."
+msgstr ""
+
+#: src/ai/mcp.md:159
+msgid ""
+"For details on what configuration is shared between Zed and external agents, "
+"see [Configuration Boundaries](./external-agents.md#configuration-"
+"boundaries)."
+msgstr ""
+
+#: src/ai/mcp.md:161
+msgid "Error Handling"
+msgstr ""
+
+#: src/ai/mcp.md:163
+msgid ""
+"When a MCP server encounters an error while processing a tool call, the "
+"agent receives the error message directly and the operation fails. Common "
+"error scenarios include:"
+msgstr ""
+
+#: src/ai/mcp.md:166
+msgid "Invalid parameters passed to the tool"
+msgstr ""
+
+#: src/ai/mcp.md:167
+msgid "Server-side failures (database connection issues, rate limits)"
+msgstr ""
+
+#: src/ai/mcp.md:168
+msgid "Unsupported operations or missing resources"
+msgstr ""
+
+#: src/ai/mcp.md:170
+msgid ""
+"The error message from the context server will be shown in the agent's "
+"response, allowing you to diagnose and correct the issue. Check the context "
+"server's logs or documentation for details about specific error codes."
+msgstr ""

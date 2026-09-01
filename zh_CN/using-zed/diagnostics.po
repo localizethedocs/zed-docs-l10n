@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/diagnostics.md:1
+msgid "Diagnostics"
+msgstr ""
+
+#: src/diagnostics.md:3
+msgid ""
+"Zed gets its diagnostics from the language servers and supports both push "
+"and pull variants of the LSP which makes it compatible with all existing "
+"language servers."
+msgstr ""
+
+#: src/diagnostics.md:5
+msgid "Regular diagnostics"
+msgstr ""
+
+#: src/diagnostics.md:7
+msgid ""
+"By default, Zed displays all diagnostics as underlined text in the editor "
+"and the scrollbar."
+msgstr ""
+
+#: src/diagnostics.md:9
+msgid "Editor diagnostics could be filtered with the"
+msgstr ""
+
+#: src/diagnostics.md:12
+msgid "\"diagnostics_max_severity\""
+msgstr ""
+
+#: src/diagnostics.md:15
+msgid ""
+"editor setting (possible values: `\"off\"`, `\"error\"`, `\"warning\"`, "
+"`\"info\"`, `\"hint\"`, `null` (default, all diagnostics))."
+msgstr ""
+
+#: src/diagnostics.md:17
+msgid "The scrollbar ones are configured with the"
+msgstr ""
+
+#: src/diagnostics.md:20
+msgid "\"scrollbar\""
+msgstr ""
+
+#: src/diagnostics.md:21 src/diagnostics.md:36
+msgid "\"diagnostics\""
+msgstr ""
+
+#: src/diagnostics.md:21 src/diagnostics.md:54
+msgid "\"all\""
+msgstr ""
+
+#: src/diagnostics.md:25
+msgid ""
+"configuration (possible values: `\"none\"`, `\"error\"`, `\"warning\"`, "
+"`\"information\"`, `\"all\"` (default))"
+msgstr ""
+
+#: src/diagnostics.md:27
+msgid ""
+"The diagnostics could be hovered to display a tooltip with full, rendered "
+"diagnostic message. Or, `editor::GoToDiagnostic` and `editor::"
+"GoToPreviousDiagnostic` could be used to navigate between diagnostics in the "
+"editor, showing a popover for the currently active diagnostic."
+msgstr ""
+
+#: src/diagnostics.md:30
+msgid "Inline diagnostics (Error lens)"
+msgstr ""
+
+#: src/diagnostics.md:32
+msgid ""
+"Zed supports showing diagnostic as lens to the right of the code. This is "
+"disabled by default, but can either be temporarily turned on (or off) using "
+"the editor menu, or permanently, using the"
+msgstr ""
+
+#: src/diagnostics.md:37
+msgid "\"inline\""
+msgstr ""
+
+#: src/diagnostics.md:38
+msgid "\"enabled\""
+msgstr ""
+
+#: src/diagnostics.md:39
+msgid "\"max_severity\""
+msgstr ""
+
+#: src/diagnostics.md:39
+msgid ""
+"// same values as the `diagnostics_max_severity` from the editor settings\n"
+msgstr ""
+
+#: src/diagnostics.md:44
+msgid "Other UI places"
+msgstr ""
+
+#: src/diagnostics.md:46
+msgid "Project Panel"
+msgstr ""
+
+#: src/diagnostics.md:48
+msgid ""
+"Project panel can have its entries coloured based on the severity of the "
+"diagnostics in the file."
+msgstr ""
+
+#: src/diagnostics.md:50
+msgid "To configure, use"
+msgstr ""
+
+#: src/diagnostics.md:53
+msgid "\"project_panel\""
+msgstr ""
+
+#: src/diagnostics.md:54 src/diagnostics.md:66
+msgid "\"show_diagnostics\""
+msgstr ""
+
+#: src/diagnostics.md:58
+msgid ""
+"configuration (possible values: `\"off\"`, `\"errors\"`, `\"all\"` (default))"
+msgstr ""
+
+#: src/diagnostics.md:60
+msgid "Editor tabs"
+msgstr ""
+
+#: src/diagnostics.md:62
+msgid "Similar to the project panel, editor tabs can be colorized with the"
+msgstr ""
+
+#: src/diagnostics.md:65
+msgid "\"tabs\""
+msgstr ""
+
+#: src/diagnostics.md:66
+msgid "\"off\""
+msgstr ""
+
+#: src/diagnostics.md:70
+msgid ""
+"configuration (possible values: `\"off\"` (default), `\"errors\"`, `\"all\"`)"
+msgstr ""

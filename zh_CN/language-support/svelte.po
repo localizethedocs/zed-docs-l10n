@@ -1,0 +1,255 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/svelte.md:3
+msgid "Svelte"
+msgstr ""
+
+#: src/languages/svelte.md:5
+msgid ""
+"Svelte support is available through the [Svelte extension](https://github."
+"com/zed-extensions/svelte)."
+msgstr ""
+
+#: src/languages/svelte.md:7
+msgid ""
+"Tree-sitter: [tree-sitter-grammars/tree-sitter-svelte](https://github.com/"
+"tree-sitter-grammars/tree-sitter-svelte)"
+msgstr ""
+
+#: src/languages/svelte.md:8
+msgid ""
+"Language Server: [sveltejs/language-tools](https://github.com/sveltejs/"
+"language-tools)"
+msgstr ""
+
+#: src/languages/svelte.md:10
+msgid "Extra theme styling configuration"
+msgstr ""
+
+#: src/languages/svelte.md:12
+msgid ""
+"You can modify how certain styles, such as directives and modifiers, appear "
+"in attributes:"
+msgstr ""
+
+#: src/languages/svelte.md:15
+msgid "\"syntax\""
+msgstr ""
+
+#: src/languages/svelte.md:16
+msgid ""
+"// Styling for directives (e.g., `class:foo` or `on:click`) (the `on` or "
+"`class` part of the attribute).\n"
+"  \"attribute.function\""
+msgstr ""
+
+#: src/languages/svelte.md:18 src/languages/svelte.md:22
+msgid "\"color\""
+msgstr ""
+
+#: src/languages/svelte.md:18
+msgid "\"#ff0000\""
+msgstr ""
+
+#: src/languages/svelte.md:20
+msgid ""
+"// Styling for modifiers at the end of attributes, e.g. `on:<click|"
+"preventDefault|stopPropagation>`\n"
+"  \"attribute.special\""
+msgstr ""
+
+#: src/languages/svelte.md:22
+msgid "\"#00ff00\""
+msgstr ""
+
+#: src/languages/svelte.md:27
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/languages/svelte.md:29
+msgid ""
+"When inlay hints is enabled in Zed, to make the language server send them "
+"back, Zed sets the following initialization options:"
+msgstr ""
+
+#: src/languages/svelte.md:32
+msgid "\"inlayHints\""
+msgstr ""
+
+#: src/languages/svelte.md:33
+msgid "\"parameterNames\""
+msgstr ""
+
+#: src/languages/svelte.md:34 src/languages/svelte.md:38
+#: src/languages/svelte.md:41 src/languages/svelte.md:45
+#: src/languages/svelte.md:48 src/languages/svelte.md:51
+msgid "\"enabled\""
+msgstr ""
+
+#: src/languages/svelte.md:34
+msgid "\"all\""
+msgstr ""
+
+#: src/languages/svelte.md:35
+msgid "\"suppressWhenArgumentMatchesName\""
+msgstr ""
+
+#: src/languages/svelte.md:37
+msgid "\"parameterTypes\""
+msgstr ""
+
+#: src/languages/svelte.md:40
+msgid "\"variableTypes\""
+msgstr ""
+
+#: src/languages/svelte.md:42
+msgid "\"suppressWhenTypeMatchesName\""
+msgstr ""
+
+#: src/languages/svelte.md:44
+msgid "\"propertyDeclarationTypes\""
+msgstr ""
+
+#: src/languages/svelte.md:47
+msgid "\"functionLikeReturnTypes\""
+msgstr ""
+
+#: src/languages/svelte.md:50
+msgid "\"enumMemberValues\""
+msgstr ""
+
+#: src/languages/svelte.md:56
+msgid "To override these settings, use the following:"
+msgstr ""
+
+#: src/languages/svelte.md:59 src/languages/svelte.md:83
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/svelte.md:60
+msgid "\"svelte-language-server\""
+msgstr ""
+
+#: src/languages/svelte.md:61
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/svelte.md:62
+msgid "\"configuration\""
+msgstr ""
+
+#: src/languages/svelte.md:63
+msgid "\"typescript\""
+msgstr ""
+
+#: src/languages/svelte.md:64 src/languages/svelte.md:67
+msgid "// ......\n"
+msgstr ""
+
+#: src/languages/svelte.md:66
+msgid "\"javascript\""
+msgstr ""
+
+#: src/languages/svelte.md:75
+msgid ""
+"See [the TypeScript language server `package.json`](https://github.com/"
+"microsoft/vscode/blob/main/extensions/typescript-language-features/package."
+"json) for more information."
+msgstr ""
+
+#: src/languages/svelte.md:77
+msgid "Using the Tailwind CSS Language Server with Svelte"
+msgstr ""
+
+#: src/languages/svelte.md:79
+msgid ""
+"To get all the features (autocomplete, linting, etc.) from the [Tailwind CSS "
+"language server](https://github.com/tailwindlabs/tailwindcss-intellisense/"
+"tree/HEAD/packages/tailwindcss-language-server#readme) in Svelte files, you "
+"need to configure the language server so that it knows about where to look "
+"for CSS classes by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/svelte.md:84
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/svelte.md:85
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/svelte.md:86
+msgid "\"includeLanguages\""
+msgstr ""
+
+#: src/languages/svelte.md:87
+msgid "\"svelte\""
+msgstr ""
+
+#: src/languages/svelte.md:87
+msgid "\"html\""
+msgstr ""
+
+#: src/languages/svelte.md:89
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/svelte.md:90
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/svelte.md:91
+msgid "\"class=\\\"([^\\\"]*)\\\"\""
+msgstr ""
+
+#: src/languages/svelte.md:92
+msgid "\"class='([^']*)'\""
+msgstr ""
+
+#: src/languages/svelte.md:93
+msgid "\"class:\\\\s*([^\\\\s{]+)\""
+msgstr ""
+
+#: src/languages/svelte.md:94
+msgid "\"\\\\{\\\\s*class:\\\\s*\\\"([^\\\"]*)\\\"\""
+msgstr ""
+
+#: src/languages/svelte.md:95
+msgid "\"\\\\{\\\\s*class:\\\\s*'([^']*)'\""
+msgstr ""
+
+#: src/languages/svelte.md:104
+msgid ""
+"With these settings, you will get completions for Tailwind CSS classes in "
+"Svelte files. Examples:"
+msgstr ""
+
+#: src/languages/svelte.md:106
+msgid ""
+"```svelte\n"
+"<!-- Standard class attribute -->\n"
+"<div class=\"flex items-center <completion here>\">\n"
+"  <p class=\"text-lg font-bold <completion here>\">Hello World</p>\n"
+"</div>\n"
+"\n"
+"<!-- Class directive -->\n"
+"<button class:active=\"bg-blue-500 <completion here>\">Click me</button>\n"
+"\n"
+"<!-- Expression -->\n"
+"<div class={active ? \"flex <completion here>\" : \"hidden <completion "
+"here>\"}>\n"
+"  Content\n"
+"</div>\n"
+"```"
+msgstr ""

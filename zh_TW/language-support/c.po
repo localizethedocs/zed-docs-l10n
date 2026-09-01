@@ -1,0 +1,262 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/c.md:3
+msgid "C"
+msgstr ""
+
+#: src/languages/c.md:5
+msgid "C support is available natively in Zed."
+msgstr ""
+
+#: src/languages/c.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-c](https://github.com/tree-sitter/tree-"
+"sitter-c)"
+msgstr ""
+
+#: src/languages/c.md:8
+msgid "Language Server: [clangd/clangd](https://github.com/clangd/clangd)"
+msgstr ""
+
+#: src/languages/c.md:9
+msgid ""
+"Debug Adapter: [CodeLLDB](https://github.com/vadimcn) (primary), [GDB]"
+"(https://sourceware.org/gdb/) (secondary, not available on Apple silicon)"
+msgstr ""
+
+#: src/languages/c.md:11
+msgid "Clangd: Force detect as C"
+msgstr ""
+
+#: src/languages/c.md:13
+msgid ""
+"Clangd out of the box assumes mixed C++/C projects. If you have a C-only "
+"project you may wish to instruct clangd to treat all files as C using the `-"
+"xc` flag. To do this, create a `.clangd` file in the root of your project "
+"with the following:"
+msgstr ""
+
+#: src/languages/c.md:16
+msgid ""
+"# yaml-language-server: $schema=https://json.schemastore.org/clangd.json\n"
+"CompileFlags"
+msgstr ""
+
+#: src/languages/c.md:18
+msgid "Add"
+msgstr ""
+
+#: src/languages/c.md:18
+msgid "-xc"
+msgstr ""
+
+#: src/languages/c.md:21
+msgid ""
+"By default clang and gcc will recognize `*.C` and `*.H` (uppercase "
+"extensions) as C++ and not C and so Zed too follows this convention. If you "
+"are working with a C-only project (perhaps one with legacy uppercase pathing "
+"like `FILENAME.C`) you can override this behavior by adding this to your "
+"settings:"
+msgstr ""
+
+#: src/languages/c.md:25
+msgid "\"file_types\""
+msgstr ""
+
+#: src/languages/c.md:26 src/languages/c.md:51
+msgid "\"C\""
+msgstr ""
+
+#: src/languages/c.md:26
+msgid "\"H\""
+msgstr ""
+
+#: src/languages/c.md:31
+msgid "Formatting"
+msgstr "格式化"
+
+#: src/languages/c.md:33
+msgid ""
+"By default Zed will use the `clangd` language server for formatting C code "
+"like the `clang-format` CLI tool. To configure this you can add a `.clang-"
+"format` file. For example:"
+msgstr ""
+
+#: src/languages/c.md:36
+msgid ""
+"# yaml-language-server: $schema=https://json.schemastore.org/clang-format-21."
+"x.json\n"
+msgstr ""
+
+#: src/languages/c.md:37
+msgid "BasedOnStyle"
+msgstr ""
+
+#: src/languages/c.md:38
+msgid "GNU"
+msgstr ""
+
+#: src/languages/c.md:38
+msgid "IndentWidth"
+msgstr ""
+
+#: src/languages/c.md:43
+msgid ""
+"See [Clang-Format Style Options](https://clang.llvm.org/docs/"
+"ClangFormatStyleOptions.html) for a complete list of options."
+msgstr ""
+
+#: src/languages/c.md:45
+msgid ""
+"You can trigger formatting via <kbd class=\"keybinding\">cmd-shift-i\\|ctrl-"
+"shift-i</kbd> or the `editor: format` action from the command palette or by "
+"enabling format on save."
+msgstr ""
+
+#: src/languages/c.md:47
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
+"kbd>) under Languages > C, or add to your settings file:"
+msgstr ""
+
+#: src/languages/c.md:50
+msgid "\"languages\""
+msgstr "\"languages\""
+
+#: src/languages/c.md:52
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/c.md:52
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/c.md:53
+msgid "\"tab_size\""
+msgstr ""
+
+#: src/languages/c.md:58
+msgid "Compile Commands"
+msgstr "編譯命令"
+
+#: src/languages/c.md:60
+msgid ""
+"For some projects Clangd requires a `compile_commands.json` file to properly "
+"analyze your project. This file contains the compilation database that tells "
+"clangd how your project should be built."
+msgstr ""
+
+#: src/languages/c.md:62
+msgid "CMake Compile Commands"
+msgstr ""
+
+#: src/languages/c.md:64
+msgid ""
+"With CMake, you can generate `compile_commands.json` automatically by adding "
+"the following line to your `CMakeLists.txt`:"
+msgstr ""
+
+#: src/languages/c.md:70
+msgid ""
+"After building your project, CMake will generate the `compile_commands.json` "
+"file in the build directory and clangd will automatically pick it up."
+msgstr ""
+
+#: src/languages/c.md:72
+msgid "Debugging"
+msgstr "除錯"
+
+#: src/languages/c.md:74
+msgid ""
+"You can use CodeLLDB or GDB to debug native binaries. (Make sure that your "
+"build process passes `-g` to the C compiler, so that debug information is "
+"included in the resulting binary.) See below for examples of debug "
+"configurations that you can add to `.zed/debug.json`."
+msgstr ""
+
+#: src/languages/c.md:76
+msgid ""
+"[CodeLLDB configuration documentation](https://github.com/vadimcn/codelldb/"
+"blob/master/MANUAL.md#starting-a-new-debug-session)"
+msgstr ""
+
+#: src/languages/c.md:77
+msgid ""
+"[GDB configuration documentation](https://sourceware.org/gdb/current/"
+"onlinedocs/gdb.html/Debugger-Adapter-Protocol.html)"
+msgstr ""
+
+#: src/languages/c.md:79
+msgid "Build and Debug Binary"
+msgstr ""
+
+#: src/languages/c.md:84
+msgid "\"label\""
+msgstr "\"label\""
+
+#: src/languages/c.md:84
+msgid "\"Debug native binary\""
+msgstr ""
+
+#: src/languages/c.md:85
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/c.md:86
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/c.md:86
+msgid "\"make\""
+msgstr ""
+
+#: src/languages/c.md:87
+msgid "\"args\""
+msgstr "\"args\""
+
+#: src/languages/c.md:87
+msgid "\"-j8\""
+msgstr ""
+
+#: src/languages/c.md:88
+msgid "\"cwd\""
+msgstr "\"cwd\""
+
+#: src/languages/c.md:88
+msgid "\"$ZED_WORKTREE_ROOT\""
+msgstr "\"$ZED_WORKTREE_ROOT\""
+
+#: src/languages/c.md:90
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/c.md:90
+msgid "\"$ZED_WORKTREE_ROOT/build/prog\""
+msgstr ""
+
+#: src/languages/c.md:91
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/c.md:91
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/c.md:92
+msgid "\"adapter\""
+msgstr "\"adapter\""
+
+#: src/languages/c.md:92
+msgid "\"CodeLLDB\""
+msgstr ""
