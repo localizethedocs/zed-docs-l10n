@@ -1,0 +1,153 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/overview.md:3
+msgid "AI"
+msgstr ""
+
+#: src/ai/overview.md:5
+msgid ""
+"Zed is an open-source AI code editor. AI runs throughout the editing "
+"experience: agents that read and write your code, inline transformations, "
+"code completions on every keystroke, and conversations with models in any "
+"buffer."
+msgstr ""
+
+#: src/ai/overview.md:7
+msgid "How Zed approaches AI"
+msgstr ""
+
+#: src/ai/overview.md:9
+msgid ""
+"Zed's AI features run inside a native, GPU-accelerated application built in "
+"Rust. There is no Electron layer between you and the model output."
+msgstr ""
+
+#: src/ai/overview.md:11
+msgid ""
+"**Open source.** The editor and all AI features are [open source](https://"
+"github.com/zed-industries/zed). You can read how AI is implemented, how data "
+"flows to providers, and how tool calls execute."
+msgstr ""
+
+#: src/ai/overview.md:12
+msgid ""
+"**Multi-model.** Use Zed's hosted models or [bring your own API keys](./llm-"
+"providers.md) from Anthropic, OpenAI, Google, Ollama, and 8+ other "
+"providers. Run local models, connect to cloud APIs, or mix both. Switch "
+"models per task."
+msgstr ""
+
+#: src/ai/overview.md:13
+msgid ""
+"**External agents.** Run Claude Agent, Gemini CLI, Codex, and other CLI-"
+"based agents directly in Zed through the [Agent Client Protocol](https://zed."
+"dev/acp). See [External Agents](./external-agents.md)."
+msgstr ""
+
+#: src/ai/overview.md:14
+msgid ""
+"**Privacy by default.** AI data sharing is opt-in. When you use your own API "
+"keys, Zed maintains zero-data retention agreements with providers. See "
+"[Privacy and Security](./privacy-and-security.md)."
+msgstr ""
+
+#: src/ai/overview.md:16
+msgid "Agentic editing"
+msgstr ""
+
+#: src/ai/overview.md:18
+msgid ""
+"The [Threads Sidebar](./parallel-agents.md#threads-sidebar) is where you "
+"organize agent work. Start a thread, give it a task, and the agent reads, "
+"edits, and runs code in your project. You can run multiple threads at once, "
+"each using a different agent and working against different projects. See "
+"[Tools](./tools.md) for the capabilities available to Zed's built-in agent."
+msgstr ""
+
+#: src/ai/overview.md:20
+msgid ""
+"The [Agent Panel](./agent-panel.md) is the conversation view for the active "
+"thread. Use it to send prompts, review changes, add context, and interact "
+"with the agent as it works."
+msgstr ""
+
+#: src/ai/overview.md:22
+msgid ""
+"You can extend agents with additional tools through [MCP servers](./mcp.md), "
+"control what they can access with [tool permissions](./tool-permissions.md), "
+"and shape their behavior with [rules](./rules.md)."
+msgstr ""
+
+#: src/ai/overview.md:24
+msgid ""
+"The [Inline Assistant](./inline-assistant.md) works differently: select code "
+"or a terminal command, describe what you want, and the model rewrites the "
+"selection in place. It works with multiple cursors."
+msgstr ""
+
+#: src/ai/overview.md:26
+msgid "Code completions"
+msgstr ""
+
+#: src/ai/overview.md:28
+msgid ""
+"[Edit Prediction](./edit-prediction.md) provides AI code completions on "
+"every keystroke. Each keypress sends a request to the prediction provider, "
+"which returns single or multi-line suggestions you accept with `tab`."
+msgstr ""
+
+#: src/ai/overview.md:30
+msgid ""
+"The default provider is Zeta, Zed's open-source model trained on open data. "
+"You can also use GitHub Copilot, or Codestral."
+msgstr ""
+
+#: src/ai/overview.md:32
+msgid "Getting started"
+msgstr ""
+
+#: src/ai/overview.md:34
+msgid ""
+"[Configuration](./configuration.md): Connect to Anthropic, OpenAI, Ollama, "
+"Google AI, or other LLM providers."
+msgstr ""
+
+#: src/ai/overview.md:35
+msgid ""
+"[Parallel Agents](./parallel-agents.md): Run multiple threads at once with "
+"the Threads Sidebar."
+msgstr ""
+
+#: src/ai/overview.md:36
+msgid ""
+"[External Agents](./external-agents.md): Run Claude Agent, Codex, Aider, or "
+"other external agents inside Zed."
+msgstr ""
+
+#: src/ai/overview.md:37
+msgid "[Subscription](./subscription.md): Zed's hosted models and billing."
+msgstr ""
+
+#: src/ai/overview.md:38
+msgid ""
+"[Privacy and Security](./privacy-and-security.md): How Zed handles data when "
+"using AI features."
+msgstr ""
+
+#: src/ai/overview.md:40
+msgid ""
+"New to Zed? Start with [Getting Started](../getting-started.md), then come "
+"back here to set up AI. For a higher-level overview, see [zed.dev/ai]"
+"(https://zed.dev/ai)."
+msgstr ""

@@ -1,0 +1,296 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/reference/cli.md:3
+msgid "CLI Reference"
+msgstr ""
+
+#: src/reference/cli.md:5
+msgid ""
+"Use Zed's command-line interface (CLI) to open files and directories, "
+"integrate with other tools, and control Zed from scripts."
+msgstr ""
+
+#: src/reference/cli.md:7
+msgid "Installation"
+msgstr "安裝"
+
+#: src/reference/cli.md:9
+msgid ""
+"**macOS:** Run the `cli: install` command from the command palette (<kbd "
+"class=\"keybinding\">cmd-shift-p\\|ctrl-shift-p</kbd>) to install the `zed` "
+"CLI to `/usr/local/bin/zed`."
+msgstr ""
+
+#: src/reference/cli.md:11
+msgid ""
+"**Linux:** The CLI is included with Zed packages. The binary name may vary "
+"by distribution (commonly `zed` or `zeditor`)."
+msgstr ""
+
+#: src/reference/cli.md:13
+msgid ""
+"**Windows:** The CLI is included with Zed. Add Zed's installation directory "
+"to your PATH, or use the full path to `zed.exe`."
+msgstr ""
+
+#: src/reference/cli.md:15
+msgid "Usage"
+msgstr ""
+
+#: src/reference/cli.md:21
+msgid "Opening Files and Directories"
+msgstr ""
+
+#: src/reference/cli.md:23
+msgid "Open a file:"
+msgstr ""
+
+#: src/reference/cli.md:29
+msgid "Open a directory as a workspace:"
+msgstr ""
+
+#: src/reference/cli.md:35
+msgid "Open multiple files or directories:"
+msgstr ""
+
+#: src/reference/cli.md:41
+msgid "Open a file at a specific line and column:"
+msgstr ""
+
+#: src/reference/cli.md:44
+msgid "# Open at line 42\n"
+msgstr ""
+
+#: src/reference/cli.md:45
+msgid "# Open at line 42, column 10\n"
+msgstr ""
+
+#: src/reference/cli.md:48
+msgid "Options"
+msgstr ""
+
+#: src/reference/cli.md:50
+msgid "`-w`, `--wait`"
+msgstr ""
+
+#: src/reference/cli.md:52
+msgid ""
+"Wait for all opened files to be closed before the CLI exits. When opening a "
+"directory, waits until the window is closed."
+msgstr ""
+
+#: src/reference/cli.md:54
+msgid ""
+"This is useful for integrating Zed with tools that expect an editor to block "
+"until editing is complete (e.g., `git commit`):"
+msgstr ""
+
+#: src/reference/cli.md:57 src/reference/cli.md:166 src/reference/cli.md:167
+msgid "\"zed --wait\""
+msgstr ""
+
+#: src/reference/cli.md:58
+msgid "# Opens Zed and waits for you to close the commit message file\n"
+msgstr ""
+
+#: src/reference/cli.md:61
+msgid "`-n`, `--new`"
+msgstr ""
+
+#: src/reference/cli.md:63
+msgid ""
+"Open paths in a new workspace window, even if the paths are already open in "
+"an existing window:"
+msgstr ""
+
+#: src/reference/cli.md:69
+msgid "`-a`, `--add`"
+msgstr ""
+
+#: src/reference/cli.md:71
+msgid ""
+"Add paths to the currently focused workspace instead of opening a new "
+"window. When multiple workspace windows are open, files open in the focused "
+"window:"
+msgstr ""
+
+#: src/reference/cli.md:77
+msgid "`-r`, `--reuse`"
+msgstr ""
+
+#: src/reference/cli.md:79
+msgid ""
+"Reuse an existing window, replacing its current workspace with the new paths:"
+msgstr ""
+
+#: src/reference/cli.md:85
+msgid "`--diff <OLD_PATH> <NEW_PATH>`"
+msgstr ""
+
+#: src/reference/cli.md:87
+msgid "Open a diff view comparing two files. Can be specified multiple times:"
+msgstr ""
+
+#: src/reference/cli.md:94
+msgid "`--foreground`"
+msgstr ""
+
+#: src/reference/cli.md:96
+msgid ""
+"Run Zed in the foreground, keeping the terminal attached. Useful for "
+"debugging:"
+msgstr ""
+
+#: src/reference/cli.md:102
+msgid "`--user-data-dir <DIR>`"
+msgstr ""
+
+#: src/reference/cli.md:104
+msgid ""
+"Use a custom directory for all user data (database, extensions, logs) "
+"instead of the default location:"
+msgstr ""
+
+#: src/reference/cli.md:110
+msgid "Default locations:"
+msgstr ""
+
+#: src/reference/cli.md:112
+msgid "**macOS:** `~/Library/Application Support/Zed`"
+msgstr ""
+
+#: src/reference/cli.md:113
+msgid "**Linux:** `$XDG_DATA_HOME/zed` (typically `~/.local/share/zed`)"
+msgstr ""
+
+#: src/reference/cli.md:114
+msgid "**Windows:** `%LOCALAPPDATA%\\Zed`"
+msgstr ""
+
+#: src/reference/cli.md:116
+msgid "`-v`, `--version`"
+msgstr ""
+
+#: src/reference/cli.md:118
+msgid "Print Zed's version and exit:"
+msgstr ""
+
+#: src/reference/cli.md:124
+msgid "`--uninstall`"
+msgstr ""
+
+#: src/reference/cli.md:126
+msgid "Uninstall Zed and remove all related files (macOS and Linux only):"
+msgstr ""
+
+#: src/reference/cli.md:132
+msgid "`--zed <PATH>`"
+msgstr ""
+
+#: src/reference/cli.md:134
+msgid "Specify a custom path to the Zed application or binary:"
+msgstr ""
+
+#: src/reference/cli.md:140
+msgid "Reading from Standard Input"
+msgstr ""
+
+#: src/reference/cli.md:142
+msgid "Read content from stdin by passing `-` as the path:"
+msgstr ""
+
+#: src/reference/cli.md:145
+msgid "\"Hello, World!\""
+msgstr ""
+
+#: src/reference/cli.md:150
+msgid ""
+"This creates a temporary file with the stdin content and opens it in Zed."
+msgstr ""
+
+#: src/reference/cli.md:152
+msgid "URL Handling"
+msgstr ""
+
+#: src/reference/cli.md:154
+msgid "The CLI can open `zed://`, `http://`, and `https://` URLs:"
+msgstr ""
+
+#: src/reference/cli.md:161
+msgid "Using Zed as Your Default Editor"
+msgstr ""
+
+#: src/reference/cli.md:163
+msgid "Set Zed as your default editor for Git and other tools:"
+msgstr ""
+
+#: src/reference/cli.md:170
+msgid ""
+"Add these lines to your shell configuration file (e.g., `~/.bashrc`, `~/."
+"zshrc`)."
+msgstr ""
+
+#: src/reference/cli.md:172
+msgid "macOS: Switching Release Channels"
+msgstr ""
+
+#: src/reference/cli.md:174
+msgid ""
+"On macOS, you can launch a specific release channel by passing the channel "
+"name as the first argument:"
+msgstr ""
+
+#: src/reference/cli.md:182
+msgid "WSL Integration (Windows)"
+msgstr ""
+
+#: src/reference/cli.md:184
+msgid ""
+"On Windows, the CLI supports opening paths from WSL distributions. This is "
+"handled automatically when launching Zed from within WSL."
+msgstr ""
+
+#: src/reference/cli.md:186
+msgid "Exit Codes"
+msgstr ""
+
+#: src/reference/cli.md:188
+msgid "Code"
+msgstr ""
+
+#: src/reference/cli.md:188
+msgid "Meaning"
+msgstr ""
+
+#: src/reference/cli.md:190
+msgid "`0`"
+msgstr ""
+
+#: src/reference/cli.md:190
+msgid "Success"
+msgstr ""
+
+#: src/reference/cli.md:191
+msgid "`1`"
+msgstr ""
+
+#: src/reference/cli.md:191
+msgid "Error (details printed to stderr)"
+msgstr ""
+
+#: src/reference/cli.md:193
+msgid ""
+"When using `--wait`, the exit code reflects whether the files were saved "
+"before closing."
+msgstr ""
