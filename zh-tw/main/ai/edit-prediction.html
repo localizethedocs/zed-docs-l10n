@@ -1,0 +1,704 @@
+<!DOCTYPE HTML>
+<html lang="zh_TW" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Edit Prediction | AI Code Completion in Zed - Zeta, Copilot, Codestral, Mercury Coder</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Set up AI code completions in Zed with Zeta (built-in), GitHub Copilot, Codestral, or Mercury Coder. Multi-line predictions on every keystroke.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+        <link rel="stylesheet" href="../theme/consent-banner.css">
+
+        <meta name="amplitude-key" content="" />
+        <meta name="consent-io-instance" content="" />
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">開始使用</a></li><li class="chapter-item expanded "><a href="../installation.html">安裝</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">更新</a></li><li class="chapter-item expanded "><a href="../uninstall.html">解除安裝</a></li></ol></li><li class="chapter-item expanded "><a href="../troubleshooting.html">疑難排解</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">概覽</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">工具</a></li><li class="chapter-item expanded "><a href="../ai/tool-permissions.html">工具權限</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/parallel-agents.html">Parallel Agents</a></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html" class="active">Edit Prediction</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">模型上下文協定</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">組態</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html">LLM 供應商</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">訂閱方案</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Working with Code</li><li class="chapter-item expanded "><a href="../editing-code.html">Editing Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../completions.html">程式碼補全</a></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">Diagnostics & Quick Fixes</a></li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li></ol></li><li class="chapter-item expanded "><a href="../finding-navigating.html">Finding & Navigating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../command-palette.html">命令選擇區</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">大綱面板</a></li><li class="chapter-item expanded "><a href="../project-panel.html">專案面板</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">頁籤切換器</a></li></ol></li><li class="chapter-item expanded "><a href="../running-testing.html">Running & Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminal.html">Terminal</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../debugger.html">除錯器</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../modelines.html">Modelines</a></li><li class="chapter-item expanded affix "><li class="part-title">協作</li><li class="chapter-item expanded "><a href="../collaboration/overview.html">概覽</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">遠端開發</li><li class="chapter-item expanded "><a href="../remote-development.html">概覽</a></li><li class="chapter-item expanded "><a href="../environment.html">環境變數</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded affix "><li class="part-title">平臺支援</li><li class="chapter-item expanded "><a href="../macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Customization</li><li class="chapter-item expanded "><a href="../appearance.html">Appearance</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../themes.html">主題</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">圖示主題</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Fonts & Visual Tweaks</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Keybindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vim.html">Vim 模式</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix 模式</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">所有語言</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">組態語言</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">工具鏈</a></li><li class="chapter-item expanded "><a href="../semantic-tokens.html">Semantic Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">擴充功能</li><li class="chapter-item expanded "><a href="../extensions.html">概覽</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">安裝擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">開發擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">語言擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">除錯器擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">圖示主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/snippets.html">Snippets Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP 伺服器擴充功能</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From…</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Reference</li><li class="chapter-item expanded "><a href="../reference/all-settings.html">All Settings</a></li><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li><li class="chapter-item expanded "><a href="../reference/cli.html">CLI Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Account & Privacy</li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../roles.html">Roles</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded affix "><li class="part-title">開發 Zed</li><li class="chapter-item expanded "><a href="../development.html">開發 Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">使用除錯器</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">發行備註</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      
+<h1 id="edit-prediction"><a class="header" href="#edit-prediction">Edit Prediction</a></h1>
+<p>Edit Prediction is how Zed's AI code completions work: an LLM predicts the code you want to write. Each keystroke sends a new request to the edit prediction provider, which returns individual or multi-line suggestions you accept by pressing <code>tab</code>.</p>
+<p>The default provider is <a href="https://zed.dev/blog/zeta2">Zeta, an open source model developed by Zed</a>, but you can also use <a href="#other-providers">other providers</a> like GitHub Copilot, Mercury Coder, and Codestral.</p>
+<h2 id="configuring-zeta"><a class="header" href="#configuring-zeta">Configuring Zeta</a></h2>
+<p>To use Zeta, <a href="../authentication.html#what-features-require-signing-in">sign in</a>. Once signed in, predictions appear as you type.</p>
+<p>You can confirm that Zeta is properly configured by opening the <a href="zed://settings/edit_predictions.providers">Settings Editor</a> (<code>Cmd+,</code> on macOS or <code>Ctrl+,</code> on Linux/Windows) and searching for <code>edit_predictions</code>. The <code>provider</code> field should be set to <code>Zed AI</code>.</p>
+<p>Or verify this in your settings.json:</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "zed"
+  }
+}
+</code></pre>
+<p>The Z icon in the status bar also indicates Zeta is active.</p>
+<h3 id="pricing-and-plans"><a class="header" href="#pricing-and-plans">Pricing and Plans</a></h3>
+<p>The free plan includes 2,000 Zeta predictions per month. The <a href="../ai/plans-and-usage.html">Pro plan</a> removes this limit. See <a href="https://zed.dev/pricing">Zed's pricing page</a> for details.</p>
+<h3 id="switching-modes"><a class="header" href="#switching-modes">Switching Modes</a></h3>
+<p>Edit Prediction has two display modes:</p>
+<ol>
+<li><code>eager</code> (default): predictions are displayed inline as long as it doesn't conflict with language server completions</li>
+<li><code>subtle</code>: predictions only appear inline when holding a modifier key (<code>alt</code> by default)</li>
+</ol>
+<p>Toggle between them via the <code>mode</code> key:</p>
+<pre><code class="language-json">"edit_predictions": {
+  "mode": "eager" // or "subtle"
+},
+</code></pre>
+<p>Or directly via the UI through the status bar menu:</p>
+<p><img src="https://zed.dev/img/edit-prediction/status-bar-menu.webp" alt="Edit Prediction status bar menu, with the modes toggle." /></p>
+<blockquote>
+<p>Note that edit prediction modes work with any prediction provider.</p>
+</blockquote>
+<h2 id="default-key-bindings"><a class="header" href="#default-key-bindings">Default Key Bindings</a></h2>
+<p>On macOS and Windows, you can accept edit predictions with <code>alt-tab</code>. On Linux, <code>alt-tab</code> is often used by the window manager for switching windows, so <code>alt-l</code> is the default key binding for edit predictions.</p>
+<p>In <code>eager</code> mode, you can also use the <code>tab</code> key to accept edit predictions, unless the completion menu is open, in which case <code>tab</code> accepts LSP completions. To use <code>tab</code> to insert whitespace, you need to dismiss the prediction with <kbd class="keybinding">escape|escape</kbd> before hitting <code>tab</code>.</p>
+<p><code class="hljs">editor: accept next word edit prediction</code> (<kbd class="keybinding">ctrl-cmd-right|alt-k</kbd>) can be used to accept the current edit prediction up to the next word boundary. <code class="hljs">editor: accept next line edit prediction</code> (<kbd class="keybinding">ctrl-cmd-down|alt-j</kbd>) can be used to accept the current edit prediction up to the new line boundary.</p>
+<h2 id="edit-predictions-keybinding"><a class="header" href="#edit-predictions-keybinding">Configuring Edit Prediction Keybindings</a></h2>
+<h3 id="keybinding-example-always-use-tab"><a class="header" href="#keybinding-example-always-use-tab">Keybinding Example: Always Use Tab</a></h3>
+<p>To always use <code>tab</code> for accepting edit predictions, regardless of whether the LSP completions menu is open, you can add the following to your keymap:</p>
+<p>Open the keymap editor with <code class="hljs">zed: open keymap</code> (<kbd class="keybinding">cmd-k cmd-s|ctrl-k ctrl-s</kbd>), search for <code>AcceptEditPrediction</code>, right click on the binding for <code>tab</code> and hit <code>edit</code>. Then change the context the binding is active in to just <code>Editor &amp;&amp; edit_prediction</code> and save it.</p>
+<p>Alternatively, you can put the following in your <code>keymap.json</code>:</p>
+<pre><code class="language-json">[
+  {
+    "context": "Editor &amp;&amp; edit_prediction",
+    "bindings": {
+      "tab": "editor::AcceptEditPrediction"
+    }
+  }
+]
+</code></pre>
+<p>After that, <kbd class="keybinding">tab|tab</kbd> remains available for accepting LSP completions.</p>
+<h3 id="keybinding-example-always-use-alt-tab"><a class="header" href="#keybinding-example-always-use-alt-tab">Keybinding Example: Always Use Alt-Tab</a></h3>
+<p>To stop using <code>tab</code> for accepting edit predictions and always use <code>alt-tab</code> instead, unbind the default <code>tab</code> binding in the eager edit prediction context:</p>
+<p>Open the keymap editor with <code class="hljs">zed: open keymap</code> (<kbd class="keybinding">cmd-k cmd-s|ctrl-k ctrl-s</kbd>), search for <code>AcceptEditPrediction</code>, right click on the binding for <code>tab</code> and delete it.</p>
+<p>Alternatively, you can put the following in your <code>keymap.json</code>:</p>
+<pre><code class="language-json">[
+  {
+    "context": "Editor &amp;&amp; edit_prediction",
+    "unbind": {
+      "tab": "editor::AcceptEditPrediction"
+    }
+  }
+]
+</code></pre>
+<p>After that, <code>alt-tab</code> remains available for accepting edit predictions, and on Linux <code>alt-l</code> does too unless you unbind it.</p>
+<h3 id="keybinding-example-rebind-both-tab-and-alt-tab"><a class="header" href="#keybinding-example-rebind-both-tab-and-alt-tab">Keybinding Example: Rebind Both Tab and Alt-Tab</a></h3>
+<p>To move both default accept bindings to something else, unbind them and add your replacement:</p>
+<p>Open the keymap editor with <code class="hljs">zed: open keymap</code> (<kbd class="keybinding">cmd-k cmd-s|ctrl-k ctrl-s</kbd>), search for <code>AcceptEditPrediction</code>, right click on the binding for <code>tab</code> and delete it. Then right click on the binding for <code>alt-tab</code>, select "Edit", and record your desired keystrokes before hitting saving.</p>
+<p>Alternatively, you can put the following in your <code>keymap.json</code>:</p>
+<pre><code class="language-json">[
+  {
+    "context": "Editor &amp;&amp; edit_prediction",
+    "unbind": {
+      "alt-tab": "editor::AcceptEditPrediction",
+      // Add this as well on Windows/Linux
+      // "alt-l": "editor::AcceptEditPrediction",
+      "tab": "editor::AcceptEditPrediction"
+    },
+    "bindings": {
+      "ctrl-enter": "editor::AcceptEditPrediction"
+    }
+  }
+]
+</code></pre>
+<p>In this case, because the binding contains the modifier <code>ctrl</code>, it will be used to preview the prediction in subtle mode, or when the completions menu is open.</p>
+<h3 id="cleaning-up-older-keymap-entries"><a class="header" href="#cleaning-up-older-keymap-entries">Cleaning Up Older Keymap Entries</a></h3>
+<p>If you configured edit prediction keybindings before Zed <code>v0.229.0</code>, your <code>keymap.json</code> may have entries that are now redundant.</p>
+<p><strong>Old tab workaround</strong>: Before <code>unbind</code> existed, the only way to prevent <code>tab</code> from accepting edit predictions was to copy all the default non-edit-prediction <code>tab</code> bindings into your keymap alongside a custom <code>AcceptEditPrediction</code> binding. If your keymap still contains those copy-pasted entries, delete them and use a single <code>"unbind"</code> entry as shown in the examples above.</p>
+<p><strong>Renamed context</strong>: The <code>edit_prediction_conflict</code> context has been replaced by <code>edit_prediction &amp;&amp; (showing_completions || in_leading_whitespace)</code>. Zed automatically migrates any bindings that used <code>edit_prediction_conflict</code>, so no changes are required on your end.</p>
+<h2 id="disabling-automatic-edit-prediction"><a class="header" href="#disabling-automatic-edit-prediction">Disabling Automatic Edit Prediction</a></h2>
+<p>You can disable edit predictions at several levels, or turn them off entirely.</p>
+<p>Alternatively, consider <a href="#switching-modes">using Subtle Mode</a>.</p>
+<h3 id="on-buffers"><a class="header" href="#on-buffers">On Buffers</a></h3>
+<p>To not have predictions appear automatically as you type, set this in your settings file (<a href="../configuring-zed.html#settings-files">how to edit</a>):</p>
+<pre><code class="language-json">{
+  "show_edit_predictions": false
+}
+</code></pre>
+<p>This hides every indication that there is a prediction available, regardless of <a href="#switching-modes">the display mode</a> you're in. Still, you can trigger edit predictions manually by executing <code class="hljs">editor: show edit prediction</code> or hitting <kbd class="keybinding">alt-tab|alt-\</kbd>.</p>
+<h3 id="for-specific-languages"><a class="header" href="#for-specific-languages">For Specific Languages</a></h3>
+<p>To not have predictions appear automatically as you type when working with a specific language, set this in your settings file (<a href="../configuring-zed.html#settings-files">how to edit</a>):</p>
+<pre><code class="language-json">{
+  "languages": {
+    "Python": {
+      "show_edit_predictions": false
+    }
+  }
+}
+</code></pre>
+<h3 id="in-specific-directories"><a class="header" href="#in-specific-directories">In Specific Directories</a></h3>
+<p>To disable edit predictions for specific directories or files, set this in your settings file (<a href="../configuring-zed.html#settings-files">how to edit</a>):</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "disabled_globs": ["~/.config/zed/settings.json"]
+  }
+}
+</code></pre>
+<h3 id="turning-off-completely"><a class="header" href="#turning-off-completely">Turning Off Completely</a></h3>
+<p>To completely turn off edit prediction across all providers, explicitly set the settings to <code>none</code>, like so:</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "none"
+  }
+}
+</code></pre>
+<h2 id="other-providers"><a class="header" href="#other-providers">Configuring Other Providers</a></h2>
+<p>Edit Prediction also works with other providers.</p>
+<h3 id="github-copilot"><a class="header" href="#github-copilot">GitHub Copilot</a></h3>
+<p>To use GitHub Copilot as your provider, set this in your settings file (<a href="../configuring-zed.html#settings-files">how to edit</a>):</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "copilot"
+  }
+}
+</code></pre>
+<p>To sign in to GitHub Copilot, click on the Copilot icon in the status bar. A popup window appears displaying a device code. Click the copy button to copy the code, then click "Connect to GitHub" to open the GitHub verification page in your browser. Paste the code when prompted. The popup window closes automatically after successful authorization.</p>
+<h4 id="using-github-copilot-enterprise"><a class="header" href="#using-github-copilot-enterprise">Using GitHub Copilot Enterprise</a></h4>
+<p>If your organization uses GitHub Copilot Enterprise, you can configure Zed to use your enterprise instance by specifying the enterprise URI in your settings file (<a href="../configuring-zed.html#settings-files">how to edit</a>):</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "copilot": {
+      "enterprise_uri": "https://your.enterprise.domain"
+    }
+  }
+}
+</code></pre>
+<p>Replace <code>"https://your.enterprise.domain"</code> with the URL provided by your GitHub Enterprise administrator (e.g., <code>https://foo.ghe.com</code>).</p>
+<p>Once set, Zed routes Copilot requests through your enterprise endpoint. When you sign in by clicking the Copilot icon in the status bar, you are redirected to your configured enterprise URL to complete authentication. All other Copilot features and usage remain the same.</p>
+<p>Copilot can provide multiple completion alternatives, and these can be navigated with the following actions:</p>
+<ul>
+<li><code class="hljs">editor: next edit prediction</code> (<kbd class="keybinding">alt-tab|alt-]</kbd>): To cycle to the next edit prediction</li>
+<li><code class="hljs">editor: previous edit prediction</code> (<kbd class="keybinding">alt-shift-tab|alt-[</kbd>): To cycle to the previous edit prediction</li>
+</ul>
+<h3 id="mercury-coder"><a class="header" href="#mercury-coder">Mercury Coder</a></h3>
+<p>To use <a href="https://www.inceptionlabs.ai/">Mercury Coder</a> by Inception Labs as your provider:</p>
+<ol>
+<li>Open the Settings Editor (<kbd class="keybinding">cmd-,|ctrl-,</kbd>)</li>
+<li>Search for "Edit Predictions" and click <strong>Configure Providers</strong></li>
+<li>Find the Mercury section and enter your API key from the <a href="https://platform.inceptionlabs.ai/dashboard/api-keys">Inception Labs dashboard</a></li>
+</ol>
+<p>Alternatively, click the edit prediction icon in the status bar and select <strong>Configure Providers</strong> from the menu.</p>
+<p>After adding your API key, Mercury Coder will appear in the provider dropdown in the status bar menu, where you can select it. You can also set it directly in your settings file:</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "mercury"
+  }
+}
+</code></pre>
+<h3 id="codestral"><a class="header" href="#codestral">Codestral</a></h3>
+<p>To use Mistral's Codestral as your provider:</p>
+<ol>
+<li>Open the Settings Editor (<code>Cmd+,</code> on macOS, <code>Ctrl+,</code> on Linux/Windows)</li>
+<li>Search for "Edit Predictions" and click <strong>Configure Providers</strong></li>
+<li>Find the Codestral section and enter your API key from the <a href="https://console.mistral.ai/codestral">Codestral dashboard</a></li>
+</ol>
+<p>Alternatively, click the edit prediction icon in the status bar and select <strong>Configure Providers</strong> from the menu.</p>
+<p>After adding your API key, Codestral will appear in the provider dropdown in the status bar menu, where you can select it. You can also set it directly in your settings file:</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "codestral"
+  }
+}
+</code></pre>
+<h3 id="self-hosted-openai-compatible-servers"><a class="header" href="#self-hosted-openai-compatible-servers">Self-Hosted OpenAI-compatible servers</a></h3>
+<p>You can use any self-hosted server that implements the OpenAI completion API format. This works with vLLM, llama.cpp server, LocalAI, and other compatible servers.</p>
+<h4 id="組態"><a class="header" href="#組態">組態</a></h4>
+<p>Set <code>open_ai_compatible_api</code> as your provider and configure the API endpoint:</p>
+<pre><code class="language-json">{
+  "edit_predictions": {
+    "provider": "open_ai_compatible_api",
+    "open_ai_compatible_api": {
+      "api_url": "http://localhost:8080/v1/completions",
+      "model": "deepseek-coder-6.7b-base",
+      "prompt_format": "deepseek_coder",
+      "max_output_tokens": 64
+    }
+  }
+}
+</code></pre>
+<p>The <code>prompt_format</code> setting controls how code context is formatted for the model. Use <code>"infer"</code> to detect the format from the model name, or specify one explicitly:</p>
+<ul>
+<li><code>code_llama</code> - CodeLlama format: <code>&lt;PRE&gt; prefix &lt;SUF&gt; suffix &lt;MID&gt;</code></li>
+<li><code>star_coder</code> - StarCoder format: <code>&lt;fim_prefix&gt;prefix&lt;fim_suffix&gt;suffix&lt;fim_middle&gt;</code></li>
+<li><code>deepseek_coder</code> - DeepSeek format with special unicode markers</li>
+<li><code>qwen</code> - Qwen/CodeGemma format: <code>&lt;|fim_prefix|&gt;prefix&lt;|fim_suffix|&gt;suffix&lt;|fim_middle|&gt;</code></li>
+<li><code>codestral</code> - Codestral format: <code>[SUFFIX]suffix[PREFIX]prefix</code></li>
+<li><code>glm</code> - GLM-4 format with code markers</li>
+<li><code>infer</code> - Auto-detect from model name (default)</li>
+</ul>
+<p>Your server must implement the OpenAI <code>/v1/completions</code> endpoint. Edit predictions will send POST requests with this format:</p>
+<pre><code class="language-json">{
+  "model": "your-model-name",
+  "prompt": "formatted-code-context",
+  "max_tokens": 256,
+  "temperature": 0.2,
+  "stop": ["&lt;|endoftext|&gt;", ...]
+}
+</code></pre>
+<h2 id="另請參見"><a class="header" href="#另請參見">另請參見</a></h2>
+<ul>
+<li><a href="./agent-panel.html">Agent Panel</a>: Agentic editing with file read/write and terminal access</li>
+<li><a href="./inline-assistant.html">Inline Assistant</a>: Prompt-driven transformations on selected code</li>
+</ul>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../ai/inline-assistant.html" class="footer-button" title="Inline Assistant">
+                                <i class="fa fa-angle-left"></i>
+                                Inline Assistant
+                            </a>
+                            <a rel="next" href="../ai/rules.html" class="footer-button" title="Rules">
+                                Rules
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <footer class="footer">
+                            <a href="/" class="logo-nav">
+                                <img
+                                    src="https://zed.dev/logo_icon.webp"
+                                    class="footer-logo"
+                                    alt="Zed Industries"
+                                />
+                            </a>
+                            <span class="footer-separator">•</span>
+                            <a class="footer-link" href="https://zed.dev"
+                                >Back to Site</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/releases"
+                                >Releases</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/roadmap"
+                                >Roadmap</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://github.com/zed-industries/zed"
+                                >GitHub</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/blog"
+                                >Blog</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <button
+                                id="c15t-manage-consent-btn"
+                                class="footer-link"
+                            >
+                                Manage Site Cookies
+                            </button>
+                        </footer>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script>
+           (function () {
+                // Check for focused search result and bring into the view
+                const ensureVisible = () => {
+                    const focused = document.querySelector("#searchresults li.focus");
+
+                    if (focused) {
+                        focused.scrollIntoView({
+                            block: "nearest",
+                            inline: "nearest"
+                        });
+                    }
+                };
+
+                // 1. Listen for arrow key events
+                // 2. Wait for DOM to update
+                // 3. Call envsureVisible
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+                        requestAnimationFrame(ensureVisible);
+                    }
+                });
+            })();
+        </script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+        <script src="../theme/c15t@2.0.0-rc.3.js"></script>
+        <script src="../theme/analytics.js"></script>
+
+
+        <!-- c15t Consent Banner -->
+        <div id="c15t-banner" style="display: none;">
+            <div>
+                <p id="c15t-description">
+                    Zed uses cookies to improve your experience and for marketing. Read <a href="https://zed.dev/cookie-policy">our cookie policy</a> for more details.
+                </p>
+            </div>
+            <div id="c15t-configure-section" style="display: none">
+                <div>
+                    <label for="c15t-toggle-necessary"
+                        >Strictly Necessary</label
+                    >
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-necessary"
+                            checked
+                            disabled
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-measurement">Analytics</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-measurement"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-marketing">Marketing</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-marketing"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="c15t-footer">
+                <button
+                    id="c15t-configure-btn"
+                    class="c15t-button icon"
+                    title="Configure"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                </button>
+                <div>
+                    <button id="c15t-decline" class="c15t-button">
+                        Reject all
+                    </button>
+                    <button id="c15t-accept" class="c15t-button primary">
+                        Accept all
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

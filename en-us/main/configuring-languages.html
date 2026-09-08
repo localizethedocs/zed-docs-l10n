@@ -1,0 +1,881 @@
+<!DOCTYPE HTML>
+<html lang="en_US" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>Configuring Languages | Language Server and Tree-sitter Config - Zed</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="ltd-provenance.js"></script>
+        <script type="text/javascript" src="ltd-current.js"></script>
+        <script type="text/javascript" src="../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Configure language support in Zed with Tree-sitter for syntax highlighting and LSP for diagnostics, completion, and formatting.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/page-toc.css">
+        <link rel="stylesheet" href="theme/plugins.css">
+        <link rel="stylesheet" href="theme/highlight.css">
+        <link rel="stylesheet" href="theme/consent-banner.css">
+
+        <meta name="amplitude-key" content="" />
+        <meta name="consent-io-instance" content="" />
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="getting-started.html">Getting Started</a></li><li class="chapter-item expanded "><a href="installation.html">Installation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="update.html">Update</a></li><li class="chapter-item expanded "><a href="uninstall.html">Uninstall</a></li></ol></li><li class="chapter-item expanded "><a href="troubleshooting.html">Troubleshooting</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="ai/overview.html">Overview</a></li><li class="chapter-item expanded "><a href="ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/tools.html">Tools</a></li><li class="chapter-item expanded "><a href="ai/tool-permissions.html">Tool Permissions</a></li><li class="chapter-item expanded "><a href="ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="ai/parallel-agents.html">Parallel Agents</a></li><li class="chapter-item expanded "><a href="ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="ai/mcp.html">Model Context Protocol</a></li><li class="chapter-item expanded "><a href="ai/configuration.html">Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/llm-providers.html">LLM Providers</a></li><li class="chapter-item expanded "><a href="ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="ai/subscription.html">Subscription</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Working with Code</li><li class="chapter-item expanded "><a href="editing-code.html">Editing Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="completions.html">Code Completions</a></li><li class="chapter-item expanded "><a href="snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="diagnostics.html">Diagnostics & Quick Fixes</a></li><li class="chapter-item expanded "><a href="multibuffers.html">Multibuffers</a></li></ol></li><li class="chapter-item expanded "><a href="finding-navigating.html">Finding & Navigating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="command-palette.html">Command Palette</a></li><li class="chapter-item expanded "><a href="outline-panel.html">Outline Panel</a></li><li class="chapter-item expanded "><a href="project-panel.html">Project Panel</a></li><li class="chapter-item expanded "><a href="tab-switcher.html">Tab Switcher</a></li></ol></li><li class="chapter-item expanded "><a href="running-testing.html">Running & Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="terminal.html">Terminal</a></li><li class="chapter-item expanded "><a href="tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="debugger.html">Debugger</a></li><li class="chapter-item expanded "><a href="repl.html">REPL</a></li></ol></li><li class="chapter-item expanded "><a href="git.html">Git</a></li><li class="chapter-item expanded "><a href="modelines.html">Modelines</a></li><li class="chapter-item expanded affix "><li class="part-title">Collaboration</li><li class="chapter-item expanded "><a href="collaboration/overview.html">Overview</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Remote Development</li><li class="chapter-item expanded "><a href="remote-development.html">Overview</a></li><li class="chapter-item expanded "><a href="environment.html">Environment Variables</a></li><li class="chapter-item expanded "><a href="dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded affix "><li class="part-title">Platform Support</li><li class="chapter-item expanded "><a href="macos.html">macOS</a></li><li class="chapter-item expanded "><a href="windows.html">Windows</a></li><li class="chapter-item expanded "><a href="linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Customization</li><li class="chapter-item expanded "><a href="appearance.html">Appearance</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="themes.html">Themes</a></li><li class="chapter-item expanded "><a href="icon-themes.html">Icon Themes</a></li><li class="chapter-item expanded "><a href="visual-customization.html">Fonts & Visual Tweaks</a></li></ol></li><li class="chapter-item expanded "><a href="key-bindings.html">Keybindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vim.html">Vim Mode</a></li><li class="chapter-item expanded "><a href="helix.html">Helix Mode</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="languages.html">All Languages</a></li><li class="chapter-item expanded "><a href="configuring-languages.html" class="active">Configuring Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="toolchains.html">Toolchains</a></li><li class="chapter-item expanded "><a href="semantic-tokens.html">Semantic Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="languages/c.html">C</a></li><li class="chapter-item expanded "><a href="languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="languages/r.html">R</a></li><li class="chapter-item expanded "><a href="languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">Extensions</li><li class="chapter-item expanded "><a href="extensions.html">Overview</a></li><li class="chapter-item expanded "><a href="extensions/installing-extensions.html">Installing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/developing-extensions.html">Developing Extensions</a></li><li class="chapter-item expanded "><a href="extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="extensions/languages.html">Language Extensions</a></li><li class="chapter-item expanded "><a href="extensions/debugger-extensions.html">Debugger Extensions</a></li><li class="chapter-item expanded "><a href="extensions/themes.html">Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/icon-themes.html">Icon Theme Extensions</a></li><li class="chapter-item expanded "><a href="extensions/snippets.html">Snippets Extensions</a></li><li class="chapter-item expanded "><a href="extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="extensions/mcp-extensions.html">MCP Server Extensions</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From…</li><li class="chapter-item expanded "><a href="migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Reference</li><li class="chapter-item expanded "><a href="reference/all-settings.html">All Settings</a></li><li class="chapter-item expanded "><a href="all-actions.html">All Actions</a></li><li class="chapter-item expanded "><a href="reference/cli.html">CLI Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Account & Privacy</li><li class="chapter-item expanded "><a href="authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="roles.html">Roles</a></li><li class="chapter-item expanded "><a href="ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><a href="telemetry.html">Telemetry</a></li><li class="chapter-item expanded affix "><li class="part-title">Developing Zed</li><li class="chapter-item expanded "><a href="development.html">Developing Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="development/debuggers.html">Using Debuggers</a></li><li class="chapter-item expanded "><a href="performance.html">Performance</a></li><li class="chapter-item expanded "><a href="development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="development/release-notes.html">Release Notes</a></li><li class="chapter-item expanded "><a href="development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      
+<h1 id="configuring-supported-languages"><a class="header" href="#configuring-supported-languages">Configuring Supported Languages</a></h1>
+<p>Zed's language support is built on two technologies:</p>
+<ol>
+<li><strong>Tree-sitter</strong> handles syntax highlighting and structure-based features like the outline panel.</li>
+<li><strong>Language Server Protocol (LSP)</strong> provides semantic features: code completion, diagnostics, go-to-definition, and refactoring.</li>
+</ol>
+<p>This page covers language-specific settings, file associations, language server configuration, formatting, linting, and syntax highlighting.</p>
+<p>For a list of supported languages, see <a href="./languages.html">Supported Languages</a>. To add support for new languages, see <a href="./extensions/languages.html">Language Extensions</a>.</p>
+<h2 id="language-specific-settings"><a class="header" href="#language-specific-settings">Language-specific Settings</a></h2>
+<p>Zed allows you to override global settings for individual languages. These custom configurations are defined in your <code>settings.json</code> file under the <code>languages</code> key.</p>
+<p>Here's an example of language-specific settings:</p>
+<pre><code class="language-json">"languages": {
+  "Python": {
+    "tab_size": 4,
+    "formatter": "language_server",
+    "format_on_save": "on"
+  },
+  "JavaScript": {
+    "tab_size": 2,
+    "formatter": {
+      "external": {
+        "command": "prettier",
+        "arguments": ["--stdin-filepath", "{buffer_path}"]
+      }
+    }
+  }
+}
+</code></pre>
+<p>You can customize a wide range of settings for each language, including:</p>
+<ul>
+<li><a href="./reference/all-settings.html#tab-size"><code>tab_size</code></a>: The number of spaces for each indentation level</li>
+<li><a href="./reference/all-settings.html#formatter"><code>formatter</code></a>: The tool used for code formatting</li>
+<li><a href="./reference/all-settings.html#format-on-save"><code>format_on_save</code></a>: Whether to automatically format code when saving</li>
+<li><a href="./reference/all-settings.html#enable-language-server"><code>enable_language_server</code></a>: Toggle language server support</li>
+<li><a href="./reference/all-settings.html#hard-tabs"><code>hard_tabs</code></a>: Use tabs instead of spaces for indentation</li>
+<li><a href="./reference/all-settings.html#preferred-line-length"><code>preferred_line_length</code></a>: The recommended maximum line length</li>
+<li><a href="./reference/all-settings.html#soft-wrap"><code>soft_wrap</code></a>: How to wrap long lines of code</li>
+<li><a href="./reference/all-settings.html#show-completions-on-input"><code>show_completions_on_input</code></a>: Whether or not to show completions as you type</li>
+<li><a href="./reference/all-settings.html#show-completion-documentation"><code>show_completion_documentation</code></a>: Whether to display inline and alongside documentation for items in the completions menu</li>
+<li><a href="./reference/all-settings.html#colorize-brackets"><code>colorize_brackets</code></a>: Whether to use tree-sitter bracket queries to detect and colorize the brackets in the editor (also known as "rainbow brackets")</li>
+</ul>
+<p>These settings allow you to maintain specific coding styles across different languages and projects.</p>
+<h2 id="file-associations"><a class="header" href="#file-associations">File Associations</a></h2>
+<p>Zed automatically detects file types based on their extensions, but you can customize these associations to fit your workflow.</p>
+<p>To set up custom file associations, use the <a href="./reference/all-settings.html#file-types"><code>file_types</code></a> setting in your <code>settings.json</code>:</p>
+<pre><code class="language-json">"file_types": {
+  "C++": ["c"],
+  "TOML": ["MyLockFile"],
+  "Dockerfile": ["Dockerfile*"]
+}
+</code></pre>
+<p>This configuration tells Zed to:</p>
+<ul>
+<li>Treat <code>.c</code> files as C++ instead of C</li>
+<li>Recognize files named "MyLockFile" as TOML</li>
+<li>Apply Dockerfile syntax to any file starting with "Dockerfile"</li>
+</ul>
+<p>You can use glob patterns for more flexible matching, allowing you to handle complex naming conventions in your projects.</p>
+<h2 id="working-with-language-servers"><a class="header" href="#working-with-language-servers">Working with Language Servers</a></h2>
+<p>Language servers are a crucial part of Zed's intelligent coding features, providing capabilities like auto-completion, go-to-definition, and real-time error checking.</p>
+<h3 id="what-are-language-servers"><a class="header" href="#what-are-language-servers">What are Language Servers?</a></h3>
+<p>Language servers implement the Language Server Protocol (LSP), which standardizes communication between the editor and language-specific tools. This allows Zed to support advanced features for multiple programming languages without implementing each feature separately.</p>
+<p>Some key features provided by language servers include:</p>
+<ul>
+<li>Code completion</li>
+<li>Error checking and diagnostics</li>
+<li>Code navigation (go to definition, find references)</li>
+<li>Code actions (Rename, extract method)</li>
+<li>Hover information</li>
+<li>Workspace symbol search</li>
+</ul>
+<h3 id="managing-language-servers"><a class="header" href="#managing-language-servers">Managing Language Servers</a></h3>
+<p>Zed simplifies language server management for users:</p>
+<ol>
+<li>
+<p>Automatic Download: When you open a file with a matching file type, Zed automatically downloads the appropriate language server. Zed may prompt you to install an extension for known file types.</p>
+</li>
+<li>
+<p>Storage Location:</p>
+<ul>
+<li>macOS: <code>~/Library/Application Support/Zed/languages</code></li>
+<li>Linux: <code>$XDG_DATA_HOME/zed/languages</code>, <code>$FLATPAK_XDG_DATA_HOME/zed/languages</code>, or <code>$HOME/.local/share/zed/languages</code></li>
+</ul>
+</li>
+<li>
+<p>Automatic Updates: Zed keeps your language servers up-to-date, ensuring you always have the latest features and improvements.</p>
+</li>
+</ol>
+<h3 id="choosing-language-servers"><a class="header" href="#choosing-language-servers">Choosing Language Servers</a></h3>
+<p>Some languages in Zed offer multiple language server options. You might have multiple extensions installed that bundle language servers targeting the same language, potentially leading to overlapping capabilities. To ensure you get the functionality you prefer, Zed allows you to prioritize which language servers are used and in what order.</p>
+<p>You can specify your preference using the <code>language_servers</code> setting:</p>
+<pre><code class="language-json">  "languages": {
+    "PHP": {
+      "language_servers": ["intelephense", "!phpactor", "!phptools", "..."]
+    }
+  }
+</code></pre>
+<p>In this example:</p>
+<ul>
+<li><code>intelephense</code> is set as the primary language server.</li>
+<li><code>phpactor</code> and <code>phptools</code> are disabled (note the <code>!</code> prefix).</li>
+<li><code>"..."</code> expands to the rest of the language servers registered for PHP that are not already listed.</li>
+</ul>
+<p>The <code>"..."</code> entry acts as a wildcard that includes any registered language server you haven't explicitly mentioned. Servers you list by name keep their position, and <code>"..."</code> fills in the remaining ones at that point in the list. Servers prefixed with <code>!</code> are excluded entirely. This means that if a new language server extension is installed or a new server is registered for a language, <code>"..."</code> will automatically include it. If you want full control over which servers are enabled, omit <code>"..."</code> — only the servers you list by name will be used.</p>
+<h4 id="examples"><a class="header" href="#examples">Examples</a></h4>
+<p>Suppose you're working with Ruby. The default configuration is:</p>
+<pre><code class="language-json">{
+  "language_servers": [
+    "solargraph",
+    "!ruby-lsp",
+    "!rubocop",
+    "!sorbet",
+    "!steep",
+    "!kanayago",
+    "..."
+  ]
+}
+</code></pre>
+<p>When you override <code>language_servers</code> in your settings, your list <strong>replaces</strong> the default entirely. This means default-disabled servers like <code>kanayago</code> will be re-enabled by <code>"..."</code> unless you explicitly disable them again.</p>
+<div class="table-wrapper"><table><thead><tr><th>Configuration</th><th>Result</th></tr></thead><tbody>
+<tr><td><code>["..."]</code></td><td><code>solargraph</code>, <code>ruby-lsp</code>, <code>rubocop</code>, <code>sorbet</code>, <code>steep</code>, <code>kanayago</code></td></tr>
+<tr><td><code>["ruby-lsp", "..."]</code></td><td><code>ruby-lsp</code>, <code>solargraph</code>, <code>rubocop</code>, <code>sorbet</code>, <code>steep</code>, <code>kanayago</code></td></tr>
+<tr><td><code>["ruby-lsp", "!solargraph", "!kanayago", "..."]</code></td><td><code>ruby-lsp</code>, <code>rubocop</code>, <code>sorbet</code>, <code>steep</code></td></tr>
+<tr><td><code>["ruby-lsp", "solargraph"]</code></td><td><code>ruby-lsp</code>, <code>solargraph</code></td></tr>
+</tbody></table>
+</div>
+<blockquote>
+<p>Note: In the first example, <code>"..."</code> includes <code>kanayago</code> even though it is disabled by default. The override replaced the default list, so the <code>"!kanayago"</code> entry is no longer present. To keep it disabled, you must include <code>"!kanayago"</code> in your configuration.</p>
+</blockquote>
+<h3 id="toolchains"><a class="header" href="#toolchains">Toolchains</a></h3>
+<p>Some language servers need to be configured with a current "toolchain", which is an installation of a specific version of a programming language compiler or/and interpreter, which can possibly include a full set of dependencies of a project.
+An example of what Zed considers a toolchain is a virtual environment in Python.
+Not all languages in Zed support toolchain discovery and selection, but for those that do, you can specify the toolchain from a toolchain picker (via <code class="hljs">toolchain: select</code>). To learn more about toolchains in Zed, see <a href="./toolchains.html"><code>toolchains</code></a>.</p>
+<h3 id="configuring-language-servers"><a class="header" href="#configuring-language-servers">Configuring Language Servers</a></h3>
+<p>When configuring language servers in your <code>settings.json</code>, autocomplete suggestions include all available LSP adapters recognized by Zed, not only those currently active for loaded languages. This helps you discover and configure language servers before opening files that use them.</p>
+<p>Many language servers accept custom configuration options. You can set these in the <code>lsp</code> section of your <code>settings.json</code>:</p>
+<pre><code class="language-json">  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    }
+  }
+</code></pre>
+<p>This example configures the Rust Analyzer to use Clippy for additional linting when saving files.</p>
+<h4 id="nested-objects"><a class="header" href="#nested-objects">Nested objects</a></h4>
+<p>When configuring language server options in Zed, it's important to use nested objects rather than dot-delimited strings. This is particularly relevant when working with more complex configurations. Let's look at a real-world example using the TypeScript language server:</p>
+<p>Suppose you want to configure the following settings for TypeScript:</p>
+<ul>
+<li>Enable strict null checks</li>
+<li>Set the target ECMAScript version to ES2020</li>
+</ul>
+<p>Here's how you would structure these settings in Zed's <code>settings.json</code>:</p>
+<pre><code class="language-json">"lsp": {
+  "typescript-language-server": {
+    "initialization_options": {
+      // These are not supported (VSCode dotted style):
+      // "preferences.strictNullChecks": true,
+      // "preferences.target": "ES2020"
+      //
+      // These is correct (nested notation):
+      "preferences": {
+        "strictNullChecks": true,
+        "target": "ES2020"
+      },
+    }
+  }
+}
+</code></pre>
+<h4 id="possible-configuration-options"><a class="header" href="#possible-configuration-options">Possible configuration options</a></h4>
+<p>Depending on how a particular language server is implemented, they may depend on different configuration options, both specified in the LSP.</p>
+<ul>
+<li><a href="https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#version_3_17_0">initializationOptions</a></li>
+</ul>
+<p>Sent once during language server startup, requires server's restart to reapply changes.</p>
+<p>For example, rust-analyzer and clangd rely on this way of configuring only.</p>
+<pre><code class="language-json">  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": false
+      }
+    }
+  }
+</code></pre>
+<ul>
+<li><a href="https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#workspace_configuration">Configuration Request</a></li>
+</ul>
+<p>May be queried by the server multiple times.
+Most of the servers would rely on this way of configuring only.</p>
+<pre><code class="language-json">"lsp": {
+  "tailwindcss-language-server": {
+    "settings": {
+      "tailwindCSS": {
+        "emmetCompletions": true,
+      },
+    }
+  }
+}
+</code></pre>
+<p>Apart of the LSP-related server configuration options, certain servers in Zed allow configuring the way binary is launched by Zed.</p>
+<p>Language servers are automatically downloaded or launched if found in your path, if you wish to specify an explicit alternate binary you can specify that in settings:</p>
+<pre><code class="language-json">  "lsp": {
+    "rust-analyzer": {
+      "binary": {
+        // Whether to fetch the binary from the internet, or attempt to find locally.
+        "ignore_system_version": false,
+        "path": "/path/to/langserver/bin",
+        "arguments": ["--option", "value"],
+        "env": {
+          "FOO": "BAR"
+        }
+      }
+    }
+  }
+</code></pre>
+<h3 id="enabling-or-disabling-language-servers"><a class="header" href="#enabling-or-disabling-language-servers">Enabling or Disabling Language Servers</a></h3>
+<p>You can toggle language server support globally or per-language:</p>
+<pre><code class="language-json">  "languages": {
+    "Markdown": {
+      "enable_language_server": false
+    }
+  }
+</code></pre>
+<p>This disables the language server for Markdown files, which can be useful for performance in large documentation projects. You can configure this globally in your <code>~/.config/zed/settings.json</code> or inside a <code>.zed/settings.json</code> in your project directory.</p>
+<h2 id="formatting-and-linting"><a class="header" href="#formatting-and-linting">Formatting and Linting</a></h2>
+<p>Zed provides support for code formatting and linting to maintain consistent code style and catch potential issues early.</p>
+<h3 id="configuring-formatters"><a class="header" href="#configuring-formatters">Configuring Formatters</a></h3>
+<p>Zed supports both built-in and external formatters. See <a href="./reference/all-settings.html#formatter"><code>formatter</code></a> docs for more. You can configure formatters globally or per-language in your <code>settings.json</code>:</p>
+<pre><code class="language-json">"languages": {
+  "JavaScript": {
+    "formatter": {
+      "external": {
+        "command": "prettier",
+        "arguments": ["--stdin-filepath", "{buffer_path}"]
+      }
+    },
+    "format_on_save": "on"
+  },
+  "Rust": {
+    "formatter": "language_server",
+    "format_on_save": "on"
+  }
+}
+</code></pre>
+<p>This example uses Prettier for JavaScript and the language server's formatter for Rust, both set to format on save.</p>
+<p>To disable formatting for a specific language:</p>
+<pre><code class="language-json">"languages": {
+  "Markdown": {
+    "format_on_save": "off"
+  }
+}
+</code></pre>
+<h3 id="setting-up-linters"><a class="header" href="#setting-up-linters">Setting Up Linters</a></h3>
+<p>Linting in Zed is typically handled by language servers. Many language servers allow you to configure linting rules:</p>
+<pre><code class="language-json">"lsp": {
+  "eslint": {
+    "settings": {
+      "codeActionOnSave": {
+        "rules": ["import/order"]
+      }
+    }
+  }
+}
+</code></pre>
+<p>This configuration sets up ESLint to organize imports on save for JavaScript files.</p>
+<p>To run linter fixes automatically on save:</p>
+<pre><code class="language-json">"languages": {
+  "JavaScript": {
+    "formatter": {
+      "code_action": "source.fixAll.eslint"
+    }
+  }
+}
+</code></pre>
+<h3 id="formatting-selections"><a class="header" href="#formatting-selections">Formatting Selections</a></h3>
+<p>Zed supports formatting only the selected text via <code>editor: format selections</code> (<div>No default binding</div>). How
+this works depends on the configured formatter:</p>
+<ul>
+<li>The action is only shown when the active formatter can actually format ranges for at least one
+selected buffer.</li>
+<li><strong>Language server</strong>: Sends an LSP range formatting request for each selection. This provides the
+most precise selection-only formatting, and is only available when the configured language server
+advertises range-formatting support.</li>
+<li><strong>Prettier</strong>: Uses Prettier's built-in range formatting to format the encompassing range of all selections. Any
+resulting edits that fall outside the selected ranges are discarded, so only the selected code is modified.</li>
+<li><strong>External commands</strong>: External command formatters do not support range formatting and are skipped when formatting
+selections.</li>
+<li><strong>Code action formatters</strong>: Code actions operate on the whole buffer, so they do not enable
+<code>format selections</code> on their own.</li>
+</ul>
+<h3 id="integrating-formatting-and-linting"><a class="header" href="#integrating-formatting-and-linting">Integrating Formatting and Linting</a></h3>
+<p>Zed allows you to run both formatting and linting on save. Here's an example that uses Prettier for formatting and ESLint for linting JavaScript files:</p>
+<pre><code class="language-json">"languages": {
+  "JavaScript": {
+    "formatter": [
+      {
+        "code_action": "source.fixAll.eslint"
+      },
+      {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    ],
+    "format_on_save": "on"
+  }
+}
+</code></pre>
+<h3 id="troubleshooting"><a class="header" href="#troubleshooting">Troubleshooting</a></h3>
+<p>If you encounter issues with formatting or linting:</p>
+<ol>
+<li>Check Zed's log file for error messages (Use the command palette: <code>zed: open log</code>)</li>
+<li>Ensure external tools (formatters, linters) are correctly installed and in your PATH</li>
+<li>Verify configurations in both Zed settings and language-specific config files (e.g., <code>.eslintrc</code>, <code>.prettierrc</code>)</li>
+</ol>
+<h2 id="syntax-highlighting-and-themes"><a class="header" href="#syntax-highlighting-and-themes">Syntax Highlighting and Themes</a></h2>
+<p>Zed offers customization options for syntax highlighting and themes, allowing you to tailor the visual appearance of your code.</p>
+<h3 id="customizing-syntax-highlighting"><a class="header" href="#customizing-syntax-highlighting">Customizing Syntax Highlighting</a></h3>
+<p>Zed uses Tree-sitter grammars for syntax highlighting. Override the default highlighting using the <code>theme_overrides</code> setting.</p>
+<p>This example makes comments italic and changes the color of strings:</p>
+<pre><code class="language-json">"theme_overrides": {
+  "One Dark": {
+    "syntax": {
+      "comment": {
+        "font_style": "italic"
+      },
+      "string": {
+        "color": "#00AA00"
+      }
+    }
+  }
+}
+</code></pre>
+<h3 id="selecting-and-customizing-themes"><a class="header" href="#selecting-and-customizing-themes">Selecting and Customizing Themes</a></h3>
+<p>Change your theme:</p>
+<ol>
+<li>Use the theme selector (<kbd class="keybinding">cmd-k cmd-t|ctrl-k ctrl-t</kbd>)</li>
+<li>Or set it in your <code>settings.json</code>:</li>
+</ol>
+<pre><code class="language-json">"theme": {
+  "mode": "dark",
+  "dark": "One Dark",
+  "light": "GitHub Light"
+}
+</code></pre>
+<p>Create custom themes by creating a JSON file in <code>~/.config/zed/themes/</code>. Zed will automatically detect and make available any themes in this directory.</p>
+<h3 id="using-theme-extensions"><a class="header" href="#using-theme-extensions">Using Theme Extensions</a></h3>
+<p>Zed supports theme extensions. Browse and install theme extensions from the Extensions panel (<kbd class="keybinding">cmd-shift-x|ctrl-shift-x</kbd>).</p>
+<p>To create your own theme extension, refer to the <a href="./extensions/themes.html">Developing Theme Extensions</a> guide.</p>
+<h2 id="using-language-server-features"><a class="header" href="#using-language-server-features">Using Language Server Features</a></h2>
+<h3 id="semantic-tokens"><a class="header" href="#semantic-tokens">Semantic Tokens</a></h3>
+<p>Semantic tokens provide richer syntax highlighting by using type and scope information from language servers. Enable them with the <code>semantic_tokens</code> setting:</p>
+<pre><code class="language-json">"semantic_tokens": "combined"
+</code></pre>
+<ul>
+<li><code>"off"</code> — Tree-sitter highlighting only (default)</li>
+<li><code>"combined"</code> — LSP semantic tokens overlaid on tree-sitter</li>
+<li><code>"full"</code> — LSP semantic tokens replace tree-sitter entirely</li>
+</ul>
+<p>You can customize token colors and styles through <code>global_lsp_settings.semantic_token_rules</code> in your settings.</p>
+<p>→ <a href="./semantic-tokens.html">Semantic Tokens documentation</a></p>
+<h3 id="inlay-hints"><a class="header" href="#inlay-hints">Inlay Hints</a></h3>
+<p>Inlay hints provide additional information inline in your code, such as parameter names or inferred types. Configure inlay hints in your <code>settings.json</code>:</p>
+<pre><code class="language-json">"inlay_hints": {
+  "enabled": true,
+  "show_type_hints": true,
+  "show_parameter_hints": true,
+  "show_other_hints": true
+}
+</code></pre>
+<p>For language-specific inlay hint settings, refer to the documentation for each language.</p>
+<h3 id="code-actions"><a class="header" href="#code-actions">Code Actions</a></h3>
+<p>Code actions provide quick fixes and refactoring options. Access code actions using the <code>editor: Toggle Code Actions</code> command or by clicking the lightbulb icon that appears next to your cursor when actions are available.</p>
+<h3 id="go-to-definition-and-references"><a class="header" href="#go-to-definition-and-references">Go To Definition and References</a></h3>
+<p>Use these commands to navigate your codebase:</p>
+<ul>
+<li><code>editor: Go to Definition</code> (<kbd>f12|f12</kbd>)</li>
+<li><code>editor: Go to Type Definition</code> (<kbd>cmd-f12|ctrl-f12</kbd>)</li>
+<li><code>editor: Find All References</code> (<kbd>shift-f12|shift-f12</kbd>)</li>
+</ul>
+<h3 id="rename-symbol"><a class="header" href="#rename-symbol">Rename Symbol</a></h3>
+<p>To rename a symbol across your project:</p>
+<ol>
+<li>Place your cursor on the symbol</li>
+<li>Use the <code>editor: Rename Symbol</code> command (<kbd>f2|f2</kbd>)</li>
+<li>Enter the new name and press Enter</li>
+</ol>
+<p>These features depend on the capabilities of the language server for each language.</p>
+<p>When renaming a symbol that spans multiple files, Zed will open a preview in a multibuffer. This allows you to review all the changes across your project before applying them. To confirm the rename, simply save the multibuffer. If you decide not to proceed with the rename, you can undo the changes or close the multibuffer without saving.</p>
+<h3 id="hover-information"><a class="header" href="#hover-information">Hover Information</a></h3>
+<p>Use the <code>editor: Hover</code> command to display information about the symbol under the cursor. This often includes type information, documentation, and links to relevant resources.</p>
+<h3 id="workspace-symbol-search"><a class="header" href="#workspace-symbol-search">Workspace Symbol Search</a></h3>
+<p>The <code class="hljs">project symbols: toggle</code> command allows you to search for symbols (functions, classes, variables) across your entire project. This is useful for quickly navigating large codebases.</p>
+<h3 id="code-completion"><a class="header" href="#code-completion">Code Completion</a></h3>
+<p>Zed provides intelligent code completion suggestions as you type. You can manually trigger completion with the <code>editor: Show Completions</code> command. Use <kbd>tab|tab</kbd> or <kbd>enter|enter</kbd> to accept suggestions.</p>
+<h3 id="diagnostics"><a class="header" href="#diagnostics">Diagnostics</a></h3>
+<p>Language servers provide real-time diagnostics (errors, warnings, hints) as you code. View all diagnostics for your project using the <code class="hljs">diagnostics: deploy</code> command.</p>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="languages.html" class="footer-button" title="All Languages">
+                                <i class="fa fa-angle-left"></i>
+                                All Languages
+                            </a>
+                            <a rel="next" href="toolchains.html" class="footer-button" title="Toolchains">
+                                Toolchains
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <footer class="footer">
+                            <a href="/" class="logo-nav">
+                                <img
+                                    src="https://zed.dev/logo_icon.webp"
+                                    class="footer-logo"
+                                    alt="Zed Industries"
+                                />
+                            </a>
+                            <span class="footer-separator">•</span>
+                            <a class="footer-link" href="https://zed.dev"
+                                >Back to Site</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/releases"
+                                >Releases</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/roadmap"
+                                >Roadmap</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://github.com/zed-industries/zed"
+                                >GitHub</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/blog"
+                                >Blog</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <button
+                                id="c15t-manage-consent-btn"
+                                class="footer-link"
+                            >
+                                Manage Site Cookies
+                            </button>
+                        </footer>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script>
+           (function () {
+                // Check for focused search result and bring into the view
+                const ensureVisible = () => {
+                    const focused = document.querySelector("#searchresults li.focus");
+
+                    if (focused) {
+                        focused.scrollIntoView({
+                            block: "nearest",
+                            inline: "nearest"
+                        });
+                    }
+                };
+
+                // 1. Listen for arrow key events
+                // 2. Wait for DOM to update
+                // 3. Call envsureVisible
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+                        requestAnimationFrame(ensureVisible);
+                    }
+                });
+            })();
+        </script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/page-toc.js"></script>
+        <script src="theme/plugins.js"></script>
+        <script src="theme/c15t@2.0.0-rc.3.js"></script>
+        <script src="theme/analytics.js"></script>
+
+
+        <!-- c15t Consent Banner -->
+        <div id="c15t-banner" style="display: none;">
+            <div>
+                <p id="c15t-description">
+                    Zed uses cookies to improve your experience and for marketing. Read <a href="https://zed.dev/cookie-policy">our cookie policy</a> for more details.
+                </p>
+            </div>
+            <div id="c15t-configure-section" style="display: none">
+                <div>
+                    <label for="c15t-toggle-necessary"
+                        >Strictly Necessary</label
+                    >
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-necessary"
+                            checked
+                            disabled
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-measurement">Analytics</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-measurement"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-marketing">Marketing</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-marketing"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="c15t-footer">
+                <button
+                    id="c15t-configure-btn"
+                    class="c15t-button icon"
+                    title="Configure"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                </button>
+                <div>
+                    <button id="c15t-decline" class="c15t-button">
+                        Reject all
+                    </button>
+                    <button id="c15t-accept" class="c15t-button primary">
+                        Accept all
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
