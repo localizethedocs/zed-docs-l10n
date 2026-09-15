@@ -1,0 +1,57 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/helix.md:1
+msgid "Helix Mode"
+msgstr "Helix 模式"
+
+#: src/helix.md:3
+msgid "_Work in progress! Not all Helix keybindings are implemented yet._"
+msgstr ""
+
+#: src/helix.md:5
+msgid ""
+"Zed's Helix mode is an emulation layer that brings Helix-style keybindings "
+"and modal editing to Zed. It builds upon Zed's [Vim mode](./vim.md), so much "
+"of the core functionality is shared. Enabling `helix_mode` will also enable "
+"`vim_mode`."
+msgstr ""
+
+#: src/helix.md:7
+msgid ""
+"For a guide on Vim-related features that are also available in Helix mode, "
+"please refer to our [Vim mode documentation](./vim.md)."
+msgstr ""
+
+#: src/helix.md:9
+msgid ""
+"To check the current status of Helix mode, or to request a missing Helix "
+"feature, checkout out the [\"Are we Helix yet?\" discussion](https://github."
+"com/zed-industries/zed/discussions/33580)."
+msgstr ""
+
+#: src/helix.md:11
+msgid ""
+"For a detailed list of Helix's default keybindings, please visit the "
+"[official Helix documentation](https://docs.helix-editor.com/keymap.html)."
+msgstr ""
+
+#: src/helix.md:13
+msgid "Core differences"
+msgstr ""
+
+#: src/helix.md:15
+msgid ""
+"Any text object that works with `m i` or `m a` also works with `]` and `[`, "
+"so for example `] (` selects the next pair of parentheses after the cursor."
+msgstr ""

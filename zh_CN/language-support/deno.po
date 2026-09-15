@@ -1,0 +1,277 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/deno.md:3
+msgid "Deno"
+msgstr ""
+
+#: src/languages/deno.md:5
+msgid ""
+"Deno support is available through the [Deno extension](https://github.com/"
+"zed-extensions/deno)."
+msgstr ""
+
+#: src/languages/deno.md:7
+msgid ""
+"Language server: [Deno Language Server](https://docs.deno.com/runtime/manual/"
+"advanced/language_server/overview/)"
+msgstr ""
+
+#: src/languages/deno.md:9
+msgid "Deno Configuration"
+msgstr ""
+
+#: src/languages/deno.md:11
+msgid ""
+"To use the Deno Language Server with TypeScript and TSX files, you will "
+"likely wish to disable the default language servers and enable Deno."
+msgstr ""
+
+#: src/languages/deno.md:13
+msgid ""
+"Configure language servers and formatters in Settings (<kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > JavaScript/"
+"TypeScript/TSX, or add to your settings file:"
+msgstr ""
+
+#: src/languages/deno.md:17 src/languages/deno.md:69
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/deno.md:18 src/languages/deno.md:20 src/languages/deno.md:29
+#: src/languages/deno.md:38 src/languages/deno.md:47 src/languages/deno.md:107
+msgid "\"deno\""
+msgstr ""
+
+#: src/languages/deno.md:19 src/languages/deno.md:71
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/deno.md:21
+msgid "\"enable\""
+msgstr ""
+
+#: src/languages/deno.md:26
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/deno.md:27 src/languages/deno.md:101
+msgid "\"JavaScript\""
+msgstr ""
+
+#: src/languages/deno.md:28 src/languages/deno.md:37 src/languages/deno.md:46
+msgid "\"language_servers\""
+msgstr ""
+
+#: src/languages/deno.md:30 src/languages/deno.md:39 src/languages/deno.md:48
+msgid "\"!typescript-language-server\""
+msgstr ""
+
+#: src/languages/deno.md:31 src/languages/deno.md:40 src/languages/deno.md:49
+msgid "\"!vtsls\""
+msgstr ""
+
+#: src/languages/deno.md:32 src/languages/deno.md:41 src/languages/deno.md:50
+msgid "\"!eslint\""
+msgstr ""
+
+#: src/languages/deno.md:34 src/languages/deno.md:43 src/languages/deno.md:52
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/deno.md:34 src/languages/deno.md:43 src/languages/deno.md:52
+msgid "\"language_server\""
+msgstr ""
+
+#: src/languages/deno.md:36
+msgid "\"TypeScript\""
+msgstr ""
+
+#: src/languages/deno.md:45
+msgid "\"TSX\""
+msgstr ""
+
+#: src/languages/deno.md:58
+msgid ""
+"See [Configuring supported languages](../configuring-languages.md) in the "
+"Zed documentation for more information."
+msgstr ""
+
+#: src/languages/deno.md:64
+msgid "Configuration completion"
+msgstr ""
+
+#: src/languages/deno.md:66
+msgid ""
+"To get completions for `deno.json` or `package.json`, add the following to "
+"your settings file ([how to edit](../configuring-zed.md#settings-files)). "
+"For more details, see [JSON](./json.md)."
+msgstr ""
+
+#: src/languages/deno.md:70
+msgid "\"json-language-server\""
+msgstr ""
+
+#: src/languages/deno.md:72
+msgid "\"json\""
+msgstr ""
+
+#: src/languages/deno.md:73
+msgid "\"schemas\""
+msgstr ""
+
+#: src/languages/deno.md:75 src/languages/deno.md:82
+msgid "\"fileMatch\""
+msgstr ""
+
+#: src/languages/deno.md:76
+msgid "\"deno.json\""
+msgstr ""
+
+#: src/languages/deno.md:77
+msgid "\"deno.jsonc\""
+msgstr ""
+
+#: src/languages/deno.md:79 src/languages/deno.md:85
+msgid "\"url\""
+msgstr ""
+
+#: src/languages/deno.md:79
+msgid ""
+"\"https://raw.githubusercontent.com/denoland/deno/refs/heads/main/cli/"
+"schemas/config-file.v1.json\""
+msgstr ""
+
+#: src/languages/deno.md:83
+msgid "\"package.json\""
+msgstr ""
+
+#: src/languages/deno.md:85
+msgid "\"https://www.schemastore.org/package\""
+msgstr ""
+
+#: src/languages/deno.md:94
+msgid "DAP support"
+msgstr ""
+
+#: src/languages/deno.md:96
+msgid "To debug deno programs, add this to `.zed/debug.json`"
+msgstr ""
+
+#: src/languages/deno.md:101
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/deno.md:102 src/languages/deno.md:121
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/deno.md:102
+msgid "\"Deno\""
+msgstr ""
+
+#: src/languages/deno.md:103
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/deno.md:103
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/deno.md:104
+msgid "\"type\""
+msgstr ""
+
+#: src/languages/deno.md:104
+msgid "\"pwa-node\""
+msgstr ""
+
+#: src/languages/deno.md:105
+msgid "\"cwd\""
+msgstr ""
+
+#: src/languages/deno.md:105
+msgid "\"$ZED_WORKTREE_ROOT\""
+msgstr ""
+
+#: src/languages/deno.md:106
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/deno.md:106
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/languages/deno.md:107
+msgid "\"runtimeExecutable\""
+msgstr ""
+
+#: src/languages/deno.md:108
+msgid "\"runtimeArgs\""
+msgstr ""
+
+#: src/languages/deno.md:108
+msgid "\"run\""
+msgstr ""
+
+#: src/languages/deno.md:108
+msgid "\"--allow-all\""
+msgstr ""
+
+#: src/languages/deno.md:108
+msgid "\"--inspect-wait\""
+msgstr ""
+
+#: src/languages/deno.md:109
+msgid "\"attachSimplePort\""
+msgstr ""
+
+#: src/languages/deno.md:114
+msgid "Runnable support"
+msgstr ""
+
+#: src/languages/deno.md:116
+msgid "To run deno tasks like tests from the ui, add this to `.zed/tasks.json`"
+msgstr ""
+
+#: src/languages/deno.md:121
+msgid "\"deno test\""
+msgstr ""
+
+#: src/languages/deno.md:122
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/deno.md:122
+msgid "\"deno test -A '$ZED_FILE'\""
+msgstr ""
+
+#: src/languages/deno.md:123
+msgid "\"tags\""
+msgstr ""
+
+#: src/languages/deno.md:123
+msgid "\"js-test\""
+msgstr ""
+
+#: src/languages/deno.md:128
+msgid "See also:"
+msgstr ""
+
+#: src/languages/deno.md:130
+msgid "[TypeScript](./typescript.md)"
+msgstr ""
+
+#: src/languages/deno.md:131
+msgid "[JavaScript](./javascript.md)"
+msgstr ""
