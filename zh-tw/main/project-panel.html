@@ -1,0 +1,562 @@
+<!DOCTYPE HTML>
+<html lang="zh_TW" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>專案面板 | Project Panel - Zed</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="ltd-provenance.js"></script>
+        <script type="text/javascript" src="ltd-current.js"></script>
+        <script type="text/javascript" src="../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+        <meta name="description" content="Navigate workspace files and directories with Zed's project panel. Create, rename, trash and delete file and directories.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/page-toc.css">
+        <link rel="stylesheet" href="theme/plugins.css">
+        <link rel="stylesheet" href="theme/highlight.css">
+        <link rel="stylesheet" href="theme/consent-banner.css">
+
+        <meta name="amplitude-key" content="" />
+        <meta name="consent-io-instance" content="" />
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="getting-started.html">開始使用</a></li><li class="chapter-item expanded "><a href="installation.html">安裝</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="update.html">更新</a></li><li class="chapter-item expanded "><a href="uninstall.html">解除安裝</a></li></ol></li><li class="chapter-item expanded "><a href="troubleshooting.html">疑難排解</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="ai/overview.html">概覽</a></li><li class="chapter-item expanded "><a href="ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/tools.html">工具</a></li><li class="chapter-item expanded "><a href="ai/tool-permissions.html">工具權限</a></li><li class="chapter-item expanded "><a href="ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="ai/parallel-agents.html">Parallel Agents</a></li><li class="chapter-item expanded "><a href="ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="ai/mcp.html">模型上下文協定</a></li><li class="chapter-item expanded "><a href="ai/configuration.html">組態</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/llm-providers.html">LLM 供應商</a></li><li class="chapter-item expanded "><a href="ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="ai/subscription.html">訂閱方案</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Working with Code</li><li class="chapter-item expanded "><a href="editing-code.html">Editing Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="completions.html">程式碼補全</a></li><li class="chapter-item expanded "><a href="snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="diagnostics.html">Diagnostics & Quick Fixes</a></li><li class="chapter-item expanded "><a href="multibuffers.html">Multibuffers</a></li></ol></li><li class="chapter-item expanded "><a href="finding-navigating.html">Finding & Navigating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="command-palette.html">命令選擇區</a></li><li class="chapter-item expanded "><a href="outline-panel.html">大綱面板</a></li><li class="chapter-item expanded "><a href="project-panel.html" class="active">專案面板</a></li><li class="chapter-item expanded "><a href="tab-switcher.html">頁籤切換器</a></li></ol></li><li class="chapter-item expanded "><a href="running-testing.html">Running & Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="terminal.html">Terminal</a></li><li class="chapter-item expanded "><a href="tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="debugger.html">除錯器</a></li><li class="chapter-item expanded "><a href="repl.html">REPL</a></li></ol></li><li class="chapter-item expanded "><a href="git.html">Git</a></li><li class="chapter-item expanded "><a href="modelines.html">Modelines</a></li><li class="chapter-item expanded affix "><li class="part-title">協作</li><li class="chapter-item expanded "><a href="collaboration/overview.html">概覽</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">遠端開發</li><li class="chapter-item expanded "><a href="remote-development.html">概覽</a></li><li class="chapter-item expanded "><a href="environment.html">環境變數</a></li><li class="chapter-item expanded "><a href="dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded affix "><li class="part-title">平臺支援</li><li class="chapter-item expanded "><a href="macos.html">macOS</a></li><li class="chapter-item expanded "><a href="windows.html">Windows</a></li><li class="chapter-item expanded "><a href="linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Customization</li><li class="chapter-item expanded "><a href="appearance.html">Appearance</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="themes.html">主題</a></li><li class="chapter-item expanded "><a href="icon-themes.html">圖示主題</a></li><li class="chapter-item expanded "><a href="visual-customization.html">Fonts & Visual Tweaks</a></li></ol></li><li class="chapter-item expanded "><a href="key-bindings.html">Keybindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="vim.html">Vim 模式</a></li><li class="chapter-item expanded "><a href="helix.html">Helix 模式</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="languages.html">所有語言</a></li><li class="chapter-item expanded "><a href="configuring-languages.html">組態語言</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="toolchains.html">工具鏈</a></li><li class="chapter-item expanded "><a href="semantic-tokens.html">Semantic Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="languages/c.html">C</a></li><li class="chapter-item expanded "><a href="languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="languages/r.html">R</a></li><li class="chapter-item expanded "><a href="languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">擴充功能</li><li class="chapter-item expanded "><a href="extensions.html">概覽</a></li><li class="chapter-item expanded "><a href="extensions/installing-extensions.html">安裝擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/developing-extensions.html">開發擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="extensions/languages.html">語言擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/debugger-extensions.html">除錯器擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/themes.html">主題擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/icon-themes.html">圖示主題擴充功能</a></li><li class="chapter-item expanded "><a href="extensions/snippets.html">Snippets Extensions</a></li><li class="chapter-item expanded "><a href="extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="extensions/mcp-extensions.html">MCP 伺服器擴充功能</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From…</li><li class="chapter-item expanded "><a href="migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="migrate/webstorm.html">WebStorm</a></li><li class="chapter-item expanded "><a href="migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Reference</li><li class="chapter-item expanded "><a href="reference/all-settings.html">All Settings</a></li><li class="chapter-item expanded "><a href="all-actions.html">All Actions</a></li><li class="chapter-item expanded "><a href="reference/cli.html">CLI Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Account & Privacy</li><li class="chapter-item expanded "><a href="authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="roles.html">Roles</a></li><li class="chapter-item expanded "><a href="ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><a href="telemetry.html">Telemetry</a></li><li class="chapter-item expanded affix "><li class="part-title">開發 Zed</li><li class="chapter-item expanded "><a href="development.html">開發 Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="development/debuggers.html">使用除錯器</a></li><li class="chapter-item expanded "><a href="performance.html">Performance</a></li><li class="chapter-item expanded "><a href="development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="development/release-notes.html">發行備註</a></li><li class="chapter-item expanded "><a href="development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      
+<h1 id="專案面板"><a class="header" href="#專案面板">專案面板</a></h1>
+<p>The project panel shows a tree view of your workspace's files and directories. Toggle it with <code class="hljs">project panel: toggle focus</code> (<kbd class="keybinding">cmd-shift-e|ctrl-shift-e</kbd>), or click the <strong>Project Panel</strong> button in the status bar.</p>
+<p><img src="https://images.zed.dev/docs/project-panel/panel.png" alt="Project Panel" /></p>
+<h2 id="navigating"><a class="header" href="#navigating">Navigating</a></h2>
+<p>Use the arrow keys to move through entries. <kbd class="keybinding">right|right</kbd> expands a directory and <kbd class="keybinding">left|left</kbd> collapses it. <kbd class="keybinding">cmd-left|ctrl-left</kbd> collapses every directory at once. Press <kbd class="keybinding">space|space</kbd> or click to preview a selected file, without giving it a permanent tab. Editing the file or double-clicking it promotes it to a permanent tab.</p>
+<h3 id="auto-reveal"><a class="header" href="#auto-reveal">Auto-reveal</a></h3>
+<p>By default, switching files in the editor will automatically highlight it in the project panel and scroll it into view. This can be disabled with the <code>project_panel.auto_reveal_entries</code> setting.</p>
+<h3 id="sticky-scroll"><a class="header" href="#sticky-scroll">Sticky Scroll</a></h3>
+<p>When <code>project_panel.sticky_scroll</code> is enabled (the default), ancestor directories pin themselves to the top of the panel as you scroll, so you always know which directory you're on.</p>
+<p><img src="https://images.zed.dev/docs/project-panel/sticky-scroll-true.png" alt="Project Panel: Sticky Scroll Enabled" /></p>
+<p><img src="https://images.zed.dev/docs/project-panel/sticky-scroll-false.png" alt="Project Panel: Sticky Scroll Disabled" /></p>
+<h3 id="directory-folding"><a class="header" href="#directory-folding">Directory Folding</a></h3>
+<p>When <code>project_panel.auto_fold_dirs</code> is enabled (the default), chains of directories that each contain a single child directory are collapsed into one row (for example, <code>src/utils/helpers</code> instead of three separate levels). Right-click a folded directory and choose <strong>Unfold Directory</strong> to expand the chain, or <strong>Fold Directory</strong> to collapse it again.</p>
+<p><img src="https://images.zed.dev/docs/project-panel/auto-fold-dirs-true.png" alt="Project Panel: Auto Fold Directories Enabled" /></p>
+<p><img src="https://images.zed.dev/docs/project-panel/auto-fold-dirs-false.png" alt="Project Panel: Auto Fold Directories Disabled" /></p>
+<h2 id="selecting-multiple-entries"><a class="header" href="#selecting-multiple-entries">Selecting Multiple Entries</a></h2>
+<p>Hold <code>shift</code> while pressing the up/down arrow keys to mark additional entries. Most file operations, like cut, copy, trash, delete and drag, apply to the full set of marked entries.</p>
+<p>When exactly two files are marked, <code class="hljs">project panel: compare marked files</code> (<kbd class="keybinding">alt-d|alt-d</kbd>) opens a diff view comparing them.</p>
+<p><img src="https://images.zed.dev/docs/project-panel/compare-marked-files.png" alt="Project Panel: Compare Marked Files" /></p>
+<h2 id="file-operations"><a class="header" href="#file-operations">File Operations</a></h2>
+<p>Right-click an entry to see the full list of available operations, or use the keybindings below.</p>
+<h3 id="creating-files-and-directories"><a class="header" href="#creating-files-and-directories">Creating Files and Directories</a></h3>
+<ul>
+<li><code class="hljs">project panel: new file</code> (<kbd class="keybinding">cmd-n|ctrl-n</kbd>) creates a new file inside the selected directory.</li>
+<li><code class="hljs">project panel: new directory</code> (<kbd class="keybinding">alt-cmd-n|alt-ctrl-n</kbd>) creates a new directory.</li>
+</ul>
+<p>An inline editor appears so you can type the name. Press <code>enter</code> to confirm or <code>escape</code> to cancel.</p>
+<h3 id="renaming"><a class="header" href="#renaming">Renaming</a></h3>
+<p>Press <kbd class="keybinding">f2|f2</kbd> to rename the selected entry. The filename stem is pre-selected so you can type a new name without accidentally changing the extension. Press <code>enter</code> to confirm or <code>escape</code> to cancel.</p>
+<h3 id="cut-copy-and-paste"><a class="header" href="#cut-copy-and-paste">Cut, Copy, and Paste</a></h3>
+<ul>
+<li><code class="hljs">project panel: cut</code> (<kbd class="keybinding">cmd-x|ctrl-x</kbd>) marks entries for moving.</li>
+<li><code class="hljs">project panel: copy</code> (<kbd class="keybinding">cmd-c|ctrl-c</kbd>) marks entries for copying.</li>
+<li><code class="hljs">project panel: paste</code> (<kbd class="keybinding">cmd-v|ctrl-v</kbd>) places them in the selected directory.</li>
+</ul>
+<p>When pasting would create a name conflict, Zed appends a "copy" suffix (e.g., <code>file copy.txt</code>, <code>file copy 2.txt</code>). If a single file is pasted with a generated suffix, the rename editor opens automatically so you can adjust the name.</p>
+<h3 id="duplicate"><a class="header" href="#duplicate">Duplicate</a></h3>
+<p><code class="hljs">project panel: duplicate</code> (<kbd class="keybinding">cmd-d|</kbd>) copies and pastes the selected entries in one step.</p>
+<h3 id="trash-and-delete"><a class="header" href="#trash-and-delete">Trash and Delete</a></h3>
+<ul>
+<li><code class="hljs">project panel: trash</code> (<kbd class="keybinding">cmd-backspace|delete</kbd>) moves entries to the system trash.</li>
+<li><code class="hljs">project panel: delete</code> (<kbd class="keybinding">cmd-alt-backspace|ctrl-delete</kbd>) permanently deletes entries.</li>
+</ul>
+<p>Both actions show a confirmation prompt listing the affected files. If any of the files have unsaved changes, the prompt warns you.</p>
+<h3 id="drag-and-drop"><a class="header" href="#drag-and-drop">Drag and Drop</a></h3>
+<p>Drag entries within the panel to move them. Hold <code>alt</code> while dropping to copy instead of move. You can also drag files from your operating system's file manager into the project panel to copy them into the project. Drag and drop can be disabled with the <code>project_panel.drag_and_drop</code> setting.</p>
+<h2 id="git-integration"><a class="header" href="#git-integration">Git Integration</a></h2>
+<p>When <code>project_panel.git_status</code> is enabled (the default), file and directory names are tinted to reflect their git status—modified, added, deleted, untracked, or conflicting.</p>
+<p>Setting <code>project_panel.git_status_indicator</code> to <code>true</code> (disabled by default) adds a letter badge next to each name: <strong>M</strong> (modified), <strong>A</strong> (added), <strong>D</strong> (deleted), <strong>U</strong> (untracked) or <strong>!</strong> (conflict).</p>
+<p><img src="https://images.zed.dev/docs/project-panel/git-status.png" alt="Project Panel: Git Integration" /></p>
+<p>Use <code class="hljs">project panel: select next git entry</code> and {#action project_panel::SelectPrevGitEntry} to jump between tracked files with uncommitted changes. The right-click menu also offers <strong>Restore File</strong> to discard changes and <strong>View File History</strong> to browse a file's commit log.</p>
+<h2 id="診斷"><a class="header" href="#診斷">診斷</a></h2>
+<p>The <code>project_panel.show_diagnostics</code> setting controls whether error and warning indicators appear on file and folder icons. Set it to <code>"all"</code> to see both errors and warnings, <code>"errors"</code> for errors only, or <code>"off"</code> to hide them. Diagnostics propagate upward—if a file deep in a directory has an error, its ancestor folders show an indicator too.</p>
+<p>Enable <code>project_panel.diagnostic_badges</code> (disabled by default) to display numeric error and warning counts next to each entry. Use <code class="hljs">project panel: select next diagnostic</code> and <code class="hljs">project panel: select prev diagnostic</code> to navigate between files that have diagnostics.</p>
+<p>See also <a href="./diagnostics.html">Diagnostics &amp; Quick Fixes</a> for editor and tab diagnostic settings.</p>
+<h2 id="filtering-and-sorting"><a class="header" href="#filtering-and-sorting">Filtering and Sorting</a></h2>
+<h3 id="hiding-files"><a class="header" href="#hiding-files">Hiding Files</a></h3>
+<ul>
+<li><code>project_panel.hide_gitignore</code> hides files matched by <code>.gitignore</code>. Toggle this with <code class="hljs">project panel: toggle hide git ignore</code>.</li>
+<li><code>project_panel.hide_hidden</code> hides dotfiles and other hidden entries. Toggle with <code class="hljs">project panel: toggle hide hidden</code>.</li>
+</ul>
+<h3 id="sorting"><a class="header" href="#sorting">Sorting</a></h3>
+<p>The <code>project_panel.sort_mode</code> setting controls grouping:</p>
+<ul>
+<li><code>"directories_first"</code> (default) — directories appear before files at each level.</li>
+<li><code>"files_first"</code> — files appear before directories.</li>
+<li><code>"mixed"</code> — directories and files are sorted together.</li>
+</ul>
+<p>The <code>project_panel.sort_order</code> setting controls name comparison:</p>
+<ul>
+<li><code>"default"</code> — case-insensitive natural sort (<code>file2</code> before <code>file10</code>).</li>
+<li><code>"upper"</code> — uppercase names grouped first, then lowercase.</li>
+<li><code>"lower"</code> — lowercase names grouped first, then uppercase.</li>
+<li><code>"unicode"</code> — raw Unicode codepoint order with no case folding.</li>
+</ul>
+<h2 id="other-actions"><a class="header" href="#other-actions">Other Actions</a></h2>
+<ul>
+<li><code class="hljs">project panel: reveal in file manager</code> (<kbd class="keybinding">alt-cmd-r|alt-ctrl-r</kbd>) reveals the selected entry in Finder / File Explorer.</li>
+<li><code class="hljs">project panel: new search in directory</code> (<kbd class="keybinding">cmd-alt-shift-f|ctrl-alt-shift-f</kbd>) opens a project search scoped to the selected directory.</li>
+<li><code class="hljs">project panel: remove from project</code> removes a workspace root folder from the project.</li>
+</ul>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="outline-panel.html" class="footer-button" title="大綱面板">
+                                <i class="fa fa-angle-left"></i>
+                                大綱面板
+                            </a>
+                            <a rel="next" href="tab-switcher.html" class="footer-button" title="頁籤切換器">
+                                頁籤切換器
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <footer class="footer">
+                            <a href="/" class="logo-nav">
+                                <img
+                                    src="https://zed.dev/logo_icon.webp"
+                                    class="footer-logo"
+                                    alt="Zed Industries"
+                                />
+                            </a>
+                            <span class="footer-separator">•</span>
+                            <a class="footer-link" href="https://zed.dev"
+                                >Back to Site</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/releases"
+                                >Releases</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/roadmap"
+                                >Roadmap</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://github.com/zed-industries/zed"
+                                >GitHub</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/blog"
+                                >Blog</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <button
+                                id="c15t-manage-consent-btn"
+                                class="footer-link"
+                            >
+                                Manage Site Cookies
+                            </button>
+                        </footer>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script>
+           (function () {
+                // Check for focused search result and bring into the view
+                const ensureVisible = () => {
+                    const focused = document.querySelector("#searchresults li.focus");
+
+                    if (focused) {
+                        focused.scrollIntoView({
+                            block: "nearest",
+                            inline: "nearest"
+                        });
+                    }
+                };
+
+                // 1. Listen for arrow key events
+                // 2. Wait for DOM to update
+                // 3. Call envsureVisible
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+                        requestAnimationFrame(ensureVisible);
+                    }
+                });
+            })();
+        </script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="theme/page-toc.js"></script>
+        <script src="theme/plugins.js"></script>
+        <script src="theme/c15t@2.0.0-rc.3.js"></script>
+        <script src="theme/analytics.js"></script>
+
+
+        <!-- c15t Consent Banner -->
+        <div id="c15t-banner" style="display: none;">
+            <div>
+                <p id="c15t-description">
+                    Zed uses cookies to improve your experience and for marketing. Read <a href="https://zed.dev/cookie-policy">our cookie policy</a> for more details.
+                </p>
+            </div>
+            <div id="c15t-configure-section" style="display: none">
+                <div>
+                    <label for="c15t-toggle-necessary"
+                        >Strictly Necessary</label
+                    >
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-necessary"
+                            checked
+                            disabled
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-measurement">Analytics</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-measurement"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-marketing">Marketing</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-marketing"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="c15t-footer">
+                <button
+                    id="c15t-configure-btn"
+                    class="c15t-button icon"
+                    title="Configure"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                </button>
+                <div>
+                    <button id="c15t-decline" class="c15t-button">
+                        Reject all
+                    </button>
+                    <button id="c15t-accept" class="c15t-button primary">
+                        Accept all
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
