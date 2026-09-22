@@ -1,0 +1,224 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/vue.md:3
+msgid "Vue"
+msgstr ""
+
+#: src/languages/vue.md:5
+msgid ""
+"Vue support is available through the [Vue extension](https://github.com/zed-"
+"extensions/vue)."
+msgstr ""
+
+#: src/languages/vue.md:7
+msgid ""
+"Tree-sitter: [tree-sitter-grammars/tree-sitter-vue](https://github.com/tree-"
+"sitter-grammars/tree-sitter-vue)"
+msgstr ""
+
+#: src/languages/vue.md:8
+msgid ""
+"Language Server: [vuejs/language-tools](https://github.com/vuejs/language-"
+"tools)"
+msgstr ""
+
+#: src/languages/vue.md:10
+msgid "Initialization Options"
+msgstr ""
+
+#: src/languages/vue.md:12
+msgid "Specifying location of TypeScript SDK"
+msgstr ""
+
+#: src/languages/vue.md:14
+msgid ""
+"By default, this extension assumes that you are working in a project with a "
+"`node_modules` directory, and searches for the TypeScript SDK inside that "
+"directory."
+msgstr ""
+
+#: src/languages/vue.md:17
+msgid ""
+"This may not always be true; for example, when working in a project that "
+"uses Yarn PnP, there is no `node_modules`. For editor support, the "
+"[documented](https://yarnpkg.com/getting-started/editor-sdks) approach is to "
+"run something like `yarn dlx @yarnpkg/sdks`. In that case, you can provide "
+"the following initialization options in your Zed settings:"
+msgstr ""
+
+#: src/languages/vue.md:23 src/languages/vue.md:41 src/languages/vue.md:68
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/vue.md:24 src/languages/vue.md:42 src/languages/vue.md:72
+msgid "\"vue\""
+msgstr ""
+
+#: src/languages/vue.md:25
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/vue.md:26
+msgid "\"typescript\""
+msgstr ""
+
+#: src/languages/vue.md:27
+msgid "\"tsdk\""
+msgstr ""
+
+#: src/languages/vue.md:27
+msgid "\".yarn/sdks/typescript/lib\""
+msgstr ""
+
+#: src/languages/vue.md:35
+msgid "Settings Options"
+msgstr ""
+
+#: src/languages/vue.md:37
+msgid ""
+"`lsp.vue.settings` is passed through to the Vue language server (Volar / "
+"[`vuejs/language-tools`](https://github.com/vuejs/language-tools)). The "
+"following settings are enabled by default:"
+msgstr ""
+
+#: src/languages/vue.md:43 src/languages/vue.md:70
+msgid "\"settings\""
+msgstr ""
+
+#: src/languages/vue.md:44
+msgid ""
+"// Display inlay hints for the `$event` parameter in inline event handlers.\n"
+"        \"vue.inlayHints.inlineHandlerLeading\""
+msgstr ""
+
+#: src/languages/vue.md:46
+msgid ""
+"// Display hints when required component props are missing in templates.\n"
+"        \"vue.inlayHints.missingProps\""
+msgstr ""
+
+#: src/languages/vue.md:48
+msgid ""
+"// Display inlay hints for patterns that wrap component options.\n"
+"        \"vue.inlayHints.optionsWrapper\""
+msgstr ""
+
+#: src/languages/vue.md:50
+msgid ""
+"// Display inlay hints related to `v-bind` shorthand (`:`).\n"
+"        \"vue.inlayHints.vBindShorthand\""
+msgstr ""
+
+#: src/languages/vue.md:58
+msgid ""
+"You can find the upstream settings configuration schema [`here`](https://"
+"github.com/vuejs/language-tools/blob/"
+"ee5041d27940cf6f9a5150635d3b13140a9dff54/extensions/vscode/package."
+"json#L252)."
+msgstr ""
+
+#: src/languages/vue.md:60
+msgid "Note: Some settings (e.g. `vue.editor.focusMode`) may not take effect."
+msgstr ""
+
+#: src/languages/vue.md:62
+msgid "Using the Tailwind CSS Language Server with Vue"
+msgstr ""
+
+#: src/languages/vue.md:64
+msgid ""
+"To get all the features (autocomplete, linting, etc.) from the [Tailwind CSS "
+"language server](https://github.com/tailwindlabs/tailwindcss-intellisense/"
+"tree/HEAD/packages/tailwindcss-language-server#readme) in Vue files, you "
+"need to configure the language server so that it knows about where to look "
+"for CSS classes by adding the following to your `settings.json`:"
+msgstr ""
+
+#: src/languages/vue.md:69
+msgid "\"tailwindcss-language-server\""
+msgstr ""
+
+#: src/languages/vue.md:71
+msgid "\"includeLanguages\""
+msgstr ""
+
+#: src/languages/vue.md:72
+msgid "\"html\""
+msgstr ""
+
+#: src/languages/vue.md:74
+msgid "\"experimental\""
+msgstr ""
+
+#: src/languages/vue.md:75
+msgid "\"classRegex\""
+msgstr ""
+
+#: src/languages/vue.md:76
+msgid "\"class=\\\"([^\\\"]*)\\\"\""
+msgstr ""
+
+#: src/languages/vue.md:77
+msgid "\"class='([^']*)'\""
+msgstr ""
+
+#: src/languages/vue.md:78
+msgid "\":class=\\\"([^\\\"]*)\\\"\""
+msgstr ""
+
+#: src/languages/vue.md:79
+msgid "\":class='([^']*)'\""
+msgstr ""
+
+#: src/languages/vue.md:88
+msgid ""
+"With these settings, you will get completions for Tailwind CSS classes in "
+"Vue template files. Examples:"
+msgstr ""
+
+#: src/languages/vue.md:90
+msgid ""
+"```vue\n"
+"<template>\n"
+"  <!-- Static class attribute -->\n"
+"  <div class=\"flex items-center <completion here>\">\n"
+"    <p class=\"text-lg font-bold <completion here>\">Hello World</p>\n"
+"  </div>\n"
+"\n"
+"  <!-- Dynamic class binding -->\n"
+"  <div\n"
+"    :class=\"\n"
+"      active ? 'bg-blue-500 <completion here>' : 'bg-gray-200 <completion "
+"here>'\n"
+"    \"\n"
+"  >\n"
+"    Content\n"
+"  </div>\n"
+"\n"
+"  <!-- Array syntax -->\n"
+"  <div :class=\"['flex', 'items-center', '<completion here>']\">Content</"
+"div>\n"
+"\n"
+"  <!-- Object syntax -->\n"
+"  <div\n"
+"    :class=\"{\n"
+"      'flex <completion here>': isFlex,\n"
+"      'block <completion here>': isBlock,\n"
+"    }\"\n"
+"  >\n"
+"    Content\n"
+"  </div>\n"
+"</template>\n"
+"```"
+msgstr ""

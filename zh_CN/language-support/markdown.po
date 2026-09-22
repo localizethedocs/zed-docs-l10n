@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/markdown.md:3
+msgid "Markdown"
+msgstr ""
+
+#: src/languages/markdown.md:5
+msgid "Markdown support is available natively in Zed."
+msgstr ""
+
+#: src/languages/markdown.md:7
+msgid ""
+"Tree-sitter: [tree-sitter-markdown](https://github.com/tree-sitter-grammars/"
+"tree-sitter-markdown)"
+msgstr ""
+
+#: src/languages/markdown.md:8
+msgid "Language Server: N/A"
+msgstr ""
+
+#: src/languages/markdown.md:10
+msgid "Syntax Highlighting Code Blocks"
+msgstr ""
+
+#: src/languages/markdown.md:12
+msgid ""
+"Zed supports language-specific syntax highlighting of markdown code blocks "
+"by leveraging [tree-sitter language grammars](../extensions/languages."
+"md#grammar). All [Zed supported languages](../languages.md), including those "
+"provided by official or community extensions, are available for use in "
+"markdown code blocks. All you need to do is provide a language name after "
+"the opening <kbd>\\```</kbd> code fence like so:"
+msgstr ""
+
+#: src/languages/markdown.md:24
+msgid "Configuration"
+msgstr ""
+
+#: src/languages/markdown.md:26
+msgid "Format"
+msgstr ""
+
+#: src/languages/markdown.md:28
+msgid ""
+"Zed supports using Prettier to automatically re-format Markdown documents. "
+"You can trigger this manually via the <code class=\"hljs\">editor: format</"
+"code> action or via the <kbd class=\"keybinding\">cmd-shift-i\\|ctrl-shift-"
+"i</kbd> keyboard shortcut. Alternately, you can enable format on save."
+msgstr ""
+
+#: src/languages/markdown.md:30
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
+"kbd>) under Languages > Markdown, or add to your settings file:"
+msgstr ""
+
+#: src/languages/markdown.md:33 src/languages/markdown.md:53
+#: src/languages/markdown.md:67 src/languages/markdown.md:81
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/markdown.md:34 src/languages/markdown.md:54
+#: src/languages/markdown.md:68 src/languages/markdown.md:82
+msgid "\"Markdown\""
+msgstr ""
+
+#: src/languages/markdown.md:35
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/markdown.md:35
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/markdown.md:40
+msgid "List Continuation"
+msgstr ""
+
+#: src/languages/markdown.md:42
+msgid ""
+"Zed automatically continues lists when you press Enter at the end of a list "
+"item. Supported list types:"
+msgstr ""
+
+#: src/languages/markdown.md:44
+msgid "Unordered lists (`-`, `*`, or `+` markers)"
+msgstr ""
+
+#: src/languages/markdown.md:45
+msgid "Ordered lists (numbers are auto-incremented)"
+msgstr ""
+
+#: src/languages/markdown.md:46
+msgid "Task lists (`- [ ]` and `- [x]`)"
+msgstr ""
+
+#: src/languages/markdown.md:48
+msgid ""
+"Pressing Enter on an empty list item removes the marker and exits the list."
+msgstr ""
+
+#: src/languages/markdown.md:50 src/languages/markdown.md:64
+msgid ""
+"To disable this behavior, configure in Settings (<kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under Languages > Markdown, or "
+"add to your settings file:"
+msgstr ""
+
+#: src/languages/markdown.md:55
+msgid "\"extend_list_on_newline\""
+msgstr ""
+
+#: src/languages/markdown.md:60
+msgid "List Indentation"
+msgstr ""
+
+#: src/languages/markdown.md:62
+msgid ""
+"Zed indents list items when you press Tab while the cursor is on a line "
+"containing only a list marker. This allows you to quickly create nested "
+"lists."
+msgstr ""
+
+#: src/languages/markdown.md:69
+msgid "\"indent_list_on_tab\""
+msgstr ""
+
+#: src/languages/markdown.md:74
+msgid "Trailing Whitespace"
+msgstr ""
+
+#: src/languages/markdown.md:76
+msgid ""
+"By default Zed will remove trailing whitespace on save. If you rely on "
+"invisible trailing whitespace being converted to `<br />` in Markdown files "
+"you can disable this behavior."
+msgstr ""
+
+#: src/languages/markdown.md:78
+msgid ""
+"Configure in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>) under "
+"Languages > Markdown, or add to your settings file:"
+msgstr ""
+
+#: src/languages/markdown.md:83
+msgid "\"remove_trailing_whitespace_on_save\""
+msgstr ""

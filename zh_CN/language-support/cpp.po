@@ -1,0 +1,430 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/cpp.md:3
+msgid "C++"
+msgstr ""
+
+#: src/languages/cpp.md:5
+msgid "C++ support is available natively in Zed."
+msgstr ""
+
+#: src/languages/cpp.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-cpp](https://github.com/tree-sitter/"
+"tree-sitter-cpp)"
+msgstr ""
+
+#: src/languages/cpp.md:8
+msgid "Language Server: [clangd/clangd](https://github.com/clangd/clangd)"
+msgstr ""
+
+#: src/languages/cpp.md:10
+msgid "Binary"
+msgstr ""
+
+#: src/languages/cpp.md:12
+msgid "You can configure which `clangd` binary Zed should use."
+msgstr ""
+
+#: src/languages/cpp.md:14
+msgid ""
+"By default, Zed will try to find a `clangd` in your `$PATH` and try to use "
+"that. If that binary successfully executes, it's used. Otherwise, Zed will "
+"fall back to installing its own `clangd` version and use that."
+msgstr ""
+
+#: src/languages/cpp.md:16
+msgid ""
+"If you want to install a pre-release `clangd` version instead you can "
+"instruct Zed to do so by setting `pre_release` to `true` in your `settings."
+"json`:"
+msgstr ""
+
+#: src/languages/cpp.md:20 src/languages/cpp.md:34 src/languages/cpp.md:48
+#: src/languages/cpp.md:67
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/cpp.md:21 src/languages/cpp.md:35 src/languages/cpp.md:49
+#: src/languages/cpp.md:68
+msgid "\"clangd\""
+msgstr ""
+
+#: src/languages/cpp.md:22
+msgid "\"fetch\""
+msgstr ""
+
+#: src/languages/cpp.md:23
+msgid "\"pre_release\""
+msgstr ""
+
+#: src/languages/cpp.md:30
+msgid ""
+"If you want to disable Zed looking for a `clangd` binary, you can set "
+"`ignore_system_version` to `true` in your `settings.json`:"
+msgstr ""
+
+#: src/languages/cpp.md:36 src/languages/cpp.md:50 src/languages/cpp.md:69
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/cpp.md:37
+msgid "\"ignore_system_version\""
+msgstr ""
+
+#: src/languages/cpp.md:44
+msgid ""
+"If you want to use a binary in a custom location, you can specify a `path` "
+"and optional `arguments`:"
+msgstr ""
+
+#: src/languages/cpp.md:51 src/languages/cpp.md:70
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/cpp.md:51 src/languages/cpp.md:70
+msgid "\"/path/to/clangd\""
+msgstr ""
+
+#: src/languages/cpp.md:52 src/languages/cpp.md:71
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/cpp.md:59
+msgid "This `\"path\"` has to be an absolute path."
+msgstr ""
+
+#: src/languages/cpp.md:61
+msgid "Arguments"
+msgstr ""
+
+#: src/languages/cpp.md:63
+msgid ""
+"You can pass any number of arguments to clangd. To see a full set of "
+"available options, run `clangd --help` from the command line. For example "
+"with `--function-arg-placeholders=0` completions contain only parentheses "
+"for function calls, while the default (`--function-arg-placeholders=1`) "
+"completions also contain placeholders for method parameters."
+msgstr ""
+
+#: src/languages/cpp.md:71
+msgid "\"--function-arg-placeholders=0\""
+msgstr ""
+
+#: src/languages/cpp.md:78
+msgid "Formatting"
+msgstr ""
+
+#: src/languages/cpp.md:80
+msgid ""
+"By default Zed will use the `clangd` language server for formatting C++ "
+"code. The Clangd is the same as the `clang-format` CLI tool. To configure "
+"this you can add a `.clang-format` file. For example:"
+msgstr ""
+
+#: src/languages/cpp.md:83
+msgid ""
+"# yaml-language-server: $schema=https://json.schemastore.org/clang-format-21."
+"x.json\n"
+msgstr ""
+
+#: src/languages/cpp.md:84
+msgid "BasedOnStyle"
+msgstr ""
+
+#: src/languages/cpp.md:85
+msgid "LLVM"
+msgstr ""
+
+#: src/languages/cpp.md:85
+msgid "IndentWidth"
+msgstr ""
+
+#: src/languages/cpp.md:87
+msgid "Language"
+msgstr ""
+
+#: src/languages/cpp.md:88
+msgid "Cpp"
+msgstr ""
+
+#: src/languages/cpp.md:88
+msgid ""
+"# Force pointers to the type for C++.\n"
+"DerivePointerAlignment"
+msgstr ""
+
+#: src/languages/cpp.md:90
+msgid "PointerAlignment"
+msgstr ""
+
+#: src/languages/cpp.md:91
+msgid "Left"
+msgstr ""
+
+#: src/languages/cpp.md:95
+msgid ""
+"See [Clang-Format Style Options](https://clang.llvm.org/docs/"
+"ClangFormatStyleOptions.html) for a complete list of options."
+msgstr ""
+
+#: src/languages/cpp.md:97
+msgid ""
+"You can trigger formatting via <kbd class=\"keybinding\">cmd-shift-i\\|ctrl-"
+"shift-i</kbd> or the `editor: format` action from the command palette or by "
+"enabling format on save."
+msgstr ""
+
+#: src/languages/cpp.md:99
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
+"kbd>) under Languages > C++, or add to your settings file:"
+msgstr ""
+
+#: src/languages/cpp.md:102
+msgid "\"languages\""
+msgstr ""
+
+#: src/languages/cpp.md:103
+msgid "\"C++\""
+msgstr ""
+
+#: src/languages/cpp.md:104
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/cpp.md:104
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/cpp.md:105
+msgid "\"tab_size\""
+msgstr ""
+
+#: src/languages/cpp.md:110
+msgid "More server configuration"
+msgstr ""
+
+#: src/languages/cpp.md:112
+msgid ""
+"In the root of your project, it is generally common to create a `.clangd` "
+"file to set extra configuration."
+msgstr ""
+
+#: src/languages/cpp.md:115
+msgid ""
+"# yaml-language-server: $schema=https://json.schemastore.org/clangd.json\n"
+"CompileFlags"
+msgstr ""
+
+#: src/languages/cpp.md:117
+msgid "Add"
+msgstr ""
+
+#: src/languages/cpp.md:118
+msgid "\"--include-directory=/path/to/include\""
+msgstr ""
+
+#: src/languages/cpp.md:118
+msgid "Diagnostics"
+msgstr ""
+
+#: src/languages/cpp.md:120
+msgid "MissingIncludes"
+msgstr ""
+
+#: src/languages/cpp.md:120 src/languages/cpp.md:121
+msgid "Strict"
+msgstr ""
+
+#: src/languages/cpp.md:121
+msgid "UnusedIncludes"
+msgstr ""
+
+#: src/languages/cpp.md:124
+msgid ""
+"For more advanced usage of clangd configuration file, take a look into their "
+"[official page](https://clangd.llvm.org/config.html)."
+msgstr ""
+
+#: src/languages/cpp.md:126
+msgid "Compile Commands"
+msgstr ""
+
+#: src/languages/cpp.md:128
+msgid ""
+"For some projects Clangd requires a `compile_commands.json` file to properly "
+"analyze your project. This file contains the compilation database that tells "
+"clangd how your project should be built."
+msgstr ""
+
+#: src/languages/cpp.md:130
+msgid "CMake Compile Commands"
+msgstr ""
+
+#: src/languages/cpp.md:132
+msgid ""
+"With CMake, you can generate `compile_commands.json` automatically by adding "
+"the following line to your `CMakeLists.txt`:"
+msgstr ""
+
+#: src/languages/cpp.md:138
+msgid ""
+"After building your project, CMake will generate the `compile_commands.json` "
+"file in the build directory and clangd will automatically pick it up."
+msgstr ""
+
+#: src/languages/cpp.md:140
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/cpp.md:142
+msgid ""
+"You can use CodeLLDB or GDB to debug native binaries. (Make sure that your "
+"build process passes `-g` to the C++ compiler, so that debug information is "
+"included in the resulting binary.) See below for examples of debug "
+"configurations that you can add to `.zed/debug.json`."
+msgstr ""
+
+#: src/languages/cpp.md:144
+msgid ""
+"[CodeLLDB configuration documentation](https://github.com/vadimcn/codelldb/"
+"blob/master/MANUAL.md#starting-a-new-debug-session)"
+msgstr ""
+
+#: src/languages/cpp.md:145
+msgid ""
+"[GDB configuration documentation](https://sourceware.org/gdb/current/"
+"onlinedocs/gdb.html/Debugger-Adapter-Protocol.html)"
+msgstr ""
+
+#: src/languages/cpp.md:146
+msgid "GDB needs to be at least v14.1"
+msgstr ""
+
+#: src/languages/cpp.md:148
+msgid "Build and Debug Binary"
+msgstr ""
+
+#: src/languages/cpp.md:153
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/cpp.md:153
+msgid "\"Debug native binary\""
+msgstr ""
+
+#: src/languages/cpp.md:154
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/cpp.md:155
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/cpp.md:155
+msgid "\"make\""
+msgstr ""
+
+#: src/languages/cpp.md:156
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/cpp.md:156
+msgid "\"-j8\""
+msgstr ""
+
+#: src/languages/cpp.md:157
+msgid "\"cwd\""
+msgstr ""
+
+#: src/languages/cpp.md:157
+msgid "\"$ZED_WORKTREE_ROOT\""
+msgstr ""
+
+#: src/languages/cpp.md:159
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/cpp.md:159
+msgid "\"$ZED_WORKTREE_ROOT/build/prog\""
+msgstr ""
+
+#: src/languages/cpp.md:160
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/cpp.md:160
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/cpp.md:161
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/cpp.md:161
+msgid "\"CodeLLDB\""
+msgstr ""
+
+#: src/languages/cpp.md:166
+msgid "Protocol Extensions"
+msgstr ""
+
+#: src/languages/cpp.md:168
+msgid ""
+"Zed currently implements the following `clangd` [extensions](https://clangd."
+"llvm.org/extensions):"
+msgstr ""
+
+#: src/languages/cpp.md:170
+msgid "Inactive Regions"
+msgstr ""
+
+#: src/languages/cpp.md:172
+msgid ""
+"Automatically dims inactive sections of code due to preprocessor directives, "
+"such as `#if`, `#ifdef`, or `#ifndef` blocks that evaluate to false."
+msgstr ""
+
+#: src/languages/cpp.md:174
+msgid "Switch Between Source and Header Files"
+msgstr ""
+
+#: src/languages/cpp.md:176
+msgid ""
+"Allows switching between corresponding C++ source files (e.g., `.cpp`) and "
+"header files (e.g., `.h`). by running the command <code "
+"class=\"hljs\">editor: switch source header</code> from the command palette "
+"or by setting a keybinding for the `editor::SwitchSourceHeader` action."
+msgstr ""
+
+#: src/languages/cpp.md:182
+msgid "\"context\""
+msgstr ""
+
+#: src/languages/cpp.md:182
+msgid "\"Editor\""
+msgstr ""
+
+#: src/languages/cpp.md:183
+msgid "\"bindings\""
+msgstr ""
+
+#: src/languages/cpp.md:184
+msgid "\"alt-enter\""
+msgstr ""
+
+#: src/languages/cpp.md:184
+msgid "\"editor::SwitchSourceHeader\""
+msgstr ""

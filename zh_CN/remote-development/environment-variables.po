@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/environment.md:3
+msgid "Environment Variables"
+msgstr ""
+
+#: src/environment.md:5
+msgid "_**Note**: The following only applies to Zed 0.152.0 and later._"
+msgstr ""
+
+#: src/environment.md:7
+msgid "Multiple features in Zed are affected by environment variables:"
+msgstr ""
+
+#: src/environment.md:9
+msgid "[Tasks](./tasks.md)"
+msgstr ""
+
+#: src/environment.md:10
+msgid "[Built-in terminal](./terminal.md)"
+msgstr ""
+
+#: src/environment.md:11 src/environment.md:72
+msgid "Look-up of language servers"
+msgstr ""
+
+#: src/environment.md:12 src/environment.md:87
+msgid "Language servers"
+msgstr ""
+
+#: src/environment.md:14
+msgid ""
+"To make the best use of these features, it helps to understand where Zed "
+"gets environment variables and how it uses them."
+msgstr ""
+
+#: src/environment.md:16
+msgid "Where does Zed get its environment variables from?"
+msgstr ""
+
+#: src/environment.md:18
+msgid ""
+"How Zed starts affects which environment variables it can use. That includes "
+"launching from the macOS Dock, a Linux window manager, or the `zed` CLI."
+msgstr ""
+
+#: src/environment.md:20
+msgid "Launched from the CLI"
+msgstr ""
+
+#: src/environment.md:22
+msgid ""
+"If Zed is opened via the CLI (`zed`), it will inherit the environment "
+"variables from the surrounding shell session."
+msgstr ""
+
+#: src/environment.md:24
+msgid "That means if you do"
+msgstr ""
+
+#: src/environment.md:31
+msgid ""
+"the environment variable `MY_ENV_VAR` is now available inside Zed. For "
+"example, in the built-in terminal."
+msgstr ""
+
+#: src/environment.md:33
+msgid ""
+"Starting with Zed 0.152.0, the CLI `zed` will _always_ pass along its "
+"environment to Zed, regardless of whether a Zed instance was previously "
+"running or not. Prior to Zed 0.152.0 this was not the case and only the "
+"first Zed instance would inherit the environment variables."
+msgstr ""
+
+#: src/environment.md:35
+msgid "Launched via window manager, Dock, or launcher"
+msgstr ""
+
+#: src/environment.md:37
+msgid ""
+"When Zed has been launched via the macOS Dock, or a GNOME or KDE icon on "
+"Linux, or an application launcher like Alfred or Raycast, it has no "
+"surrounding shell environment from which to inherit its environment "
+"variables."
+msgstr ""
+
+#: src/environment.md:39
+msgid ""
+"To still have a useful environment, Zed spawns a login shell in the user's "
+"home directory and reads its environment. This environment is then set on "
+"the Zed _process_, so all Zed windows and projects inherit it."
+msgstr ""
+
+#: src/environment.md:41
+msgid ""
+"Since that can lead to problems for users who need different environment "
+"variables per project (for example with `direnv`, `asdf`, or `mise`), Zed "
+"spawns another login shell when opening a project. This second shell runs in "
+"the project's directory. The environment from that shell is _not_ set on the "
+"process, because opening a new project would otherwise change the "
+"environment for all Zed windows. Instead, that environment is stored and "
+"passed along when running tasks, opening terminals, or spawning language "
+"servers."
+msgstr ""
+
+#: src/environment.md:43
+msgid "Where and how are environment variables used?"
+msgstr ""
+
+#: src/environment.md:45
+msgid "There are two sets of environment variables:"
+msgstr ""
+
+#: src/environment.md:47
+msgid "Environment variables of the Zed process"
+msgstr ""
+
+#: src/environment.md:48
+msgid "Environment variables stored per project"
+msgstr ""
+
+#: src/environment.md:50
+msgid ""
+"The variables from (1) are always used, since they are stored on the process "
+"itself and every spawned process (tasks, terminals, language servers, ...) "
+"will inherit them by default."
+msgstr ""
+
+#: src/environment.md:52
+msgid "The variables from (2) are used explicitly, depending on the feature."
+msgstr ""
+
+#: src/environment.md:54
+msgid "Tasks"
+msgstr ""
+
+#: src/environment.md:56
+msgid ""
+"Tasks are spawned with a combined environment. In order of precedence (low "
+"to high, with the last overwriting the first):"
+msgstr ""
+
+#: src/environment.md:58 src/environment.md:67
+msgid "the Zed process environment"
+msgstr ""
+
+#: src/environment.md:59 src/environment.md:68 src/environment.md:84
+msgid "if the project was opened from the CLI: the CLI environment"
+msgstr ""
+
+#: src/environment.md:60 src/environment.md:69 src/environment.md:85
+msgid ""
+"if the project was not opened from the CLI: the project environment "
+"variables obtained by running a login shell in the project's root folder"
+msgstr ""
+
+#: src/environment.md:61 src/environment.md:70
+msgid "optional, explicitly configured environment in settings"
+msgstr ""
+
+#: src/environment.md:63
+msgid "Built-in terminal"
+msgstr ""
+
+#: src/environment.md:65
+msgid ""
+"Built-in terminals, like tasks, are spawned with a combined environment. In "
+"order of precedence (low to high):"
+msgstr ""
+
+#: src/environment.md:74
+msgid ""
+"For some languages the language server adapters lookup the binary in the "
+"user's `$PATH`. Examples:"
+msgstr ""
+
+#: src/environment.md:76
+msgid "Go"
+msgstr ""
+
+#: src/environment.md:77
+msgid "Zig"
+msgstr ""
+
+#: src/environment.md:78
+msgid "Rust (if [configured to do so](./languages/rust.md#binary))"
+msgstr ""
+
+#: src/environment.md:79
+msgid "C"
+msgstr ""
+
+#: src/environment.md:80
+msgid "TypeScript"
+msgstr ""
+
+#: src/environment.md:82
+msgid "For this look-up, Zed uses the following environment:"
+msgstr ""
+
+#: src/environment.md:89
+msgid "After looking up a language server, Zed starts them."
+msgstr ""
+
+#: src/environment.md:91
+msgid ""
+"These language server processes always inherit Zed's process environment. "
+"But, depending on the language server look-up, additional environment "
+"variables might be set or overwrite the process environment."
+msgstr ""
+
+#: src/environment.md:93
+msgid ""
+"If the language server was found in the project environment's `$PATH`, then "
+"that project environment is passed along to the language server process. "
+"Where the project environment comes from depends on how the project was "
+"opened (via CLI or not). See the previous section on language server look-up."
+msgstr ""
+
+#: src/environment.md:94
+msgid ""
+"If the language server was not found in the project environment, Zed tries "
+"to install and start it globally. In that case, the process inherits Zed's "
+"process environment and, if the project was opened via CLI, the CLI "
+"environment."
+msgstr ""

@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/yarn.md:3
+msgid "Yarn"
+msgstr ""
+
+#: src/languages/yarn.md:5
+msgid ""
+"[Yarn](https://yarnpkg.com/) is a JavaScript package manager that provides "
+"deterministic dependency resolution and offline caching."
+msgstr ""
+
+#: src/languages/yarn.md:7
+msgid "Setup"
+msgstr ""
+
+#: src/languages/yarn.md:9
+msgid "Run `yarn dlx @yarnpkg/sdks base` to generate a `.yarn/sdks` directory."
+msgstr ""
+
+#: src/languages/yarn.md:10
+msgid ""
+"Set your language server (e.g. VTSLS) to use TypeScript SDK from `.yarn/sdks/"
+"typescript/lib` directory in [LSP initialization options](../reference/all-"
+"settings.md#lsp). The actual setting depends on your language server; for "
+"example, for VTSLS set [`typescript.tsdk`](https://github.com/yioneko/vtsls/"
+"blob/6adfb5d3889ad4b82c5e238446b27ae3ee1e3767/packages/service/configuration."
+"schema.json#L5)."
+msgstr ""
+
+#: src/languages/yarn.md:12
+msgid ""
+"After configuration, language server features (Go to Definition, "
+"completions, hover documentation) should work correctly."
+msgstr ""

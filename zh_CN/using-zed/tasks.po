@@ -1,0 +1,580 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/tasks.md:1
+msgid "Tasks"
+msgstr ""
+
+#: src/tasks.md:3
+msgid ""
+"Zed supports ways to spawn (and rerun) commands using its integrated "
+"terminal to output the results. These commands can read a limited subset of "
+"Zed state (such as a path to the file currently being edited or selected "
+"text)."
+msgstr ""
+
+#: src/tasks.md:8 src/tasks.md:94 src/tasks.md:111 src/tasks.md:120
+#: src/tasks.md:130 src/tasks.md:142 src/tasks.md:151 src/tasks.md:203
+#: src/tasks.md:233
+msgid "\"label\""
+msgstr ""
+
+#: src/tasks.md:8
+msgid "\"Example task\""
+msgstr ""
+
+#: src/tasks.md:9 src/tasks.md:95 src/tasks.md:112 src/tasks.md:121
+#: src/tasks.md:131 src/tasks.md:143 src/tasks.md:152 src/tasks.md:204
+#: src/tasks.md:234
+msgid "\"command\""
+msgstr ""
+
+#: src/tasks.md:9
+msgid "\"for i in {1..5}; do echo \\\"Hello $i/5\\\"; sleep 1; done\""
+msgstr ""
+
+#: src/tasks.md:10
+msgid ""
+"//\"args\": [],\n"
+"    // Env overrides for the command, will be appended to the terminal's "
+"environment from the settings.\n"
+"    \"env\""
+msgstr ""
+
+#: src/tasks.md:12
+msgid "\"foo\""
+msgstr ""
+
+#: src/tasks.md:12
+msgid "\"bar\""
+msgstr ""
+
+#: src/tasks.md:13
+msgid ""
+"// Current working directory to spawn the command into, defaults to current "
+"project root.\n"
+"    //\"cwd\": \"/path/to/working/directory\",\n"
+"    // Whether to use a new terminal tab or reuse the existing one to spawn "
+"the process, defaults to `false`.\n"
+"    \"use_new_terminal\""
+msgstr ""
+
+#: src/tasks.md:17
+msgid ""
+"// Whether to allow multiple instances of the same task to be run, or rather "
+"wait for the existing ones to finish, defaults to `false`.\n"
+"    \"allow_concurrent_runs\""
+msgstr ""
+
+#: src/tasks.md:19
+msgid ""
+"// What to do with the terminal pane and tab, after the command was "
+"started:\n"
+"    // * `always` — always show the task's pane, and focus the corresponding "
+"tab in it (default)\n"
+"    // * `no_focus` — always show the task's pane, add the task's tab in it, "
+"but don't focus it\n"
+"    // * `never` — do not alter focus, but still add/reuse the task's tab in "
+"its pane\n"
+"    \"reveal\""
+msgstr ""
+
+#: src/tasks.md:23
+msgid "\"always\""
+msgstr ""
+
+#: src/tasks.md:24
+msgid ""
+"// What to do with the terminal pane and tab, after the command has "
+"finished:\n"
+"    // * `never` — Do nothing when the command finishes (default)\n"
+"    // * `always` — always hide the terminal tab, hide the pane also if it "
+"was the last tab in it\n"
+"    // * `on_success` — hide the terminal tab on task success only, "
+"otherwise behaves similar to `always`\n"
+"    \"hide\""
+msgstr ""
+
+#: src/tasks.md:28
+msgid "\"never\""
+msgstr ""
+
+#: src/tasks.md:29
+msgid ""
+"// Which shell to use when running a task inside the terminal.\n"
+"    // May take 3 values:\n"
+"    // 1. (default) Use the system's default terminal configuration in /etc/"
+"passwd\n"
+"    //      \"shell\": \"system\"\n"
+"    // 2. A program:\n"
+"    //      \"shell\": {\n"
+"    //        \"program\": \"sh\"\n"
+"    //      }\n"
+"    // 3. A program with arguments:\n"
+"    //     \"shell\": {\n"
+"    //         \"with_arguments\": {\n"
+"    //           \"program\": \"/bin/bash\",\n"
+"    //           \"args\": [\"--login\"]\n"
+"    //         }\n"
+"    //     }\n"
+"    \"shell\""
+msgstr ""
+
+#: src/tasks.md:44
+msgid "\"system\""
+msgstr ""
+
+#: src/tasks.md:45
+msgid ""
+"// Whether to show the task line in the output of the spawned task, defaults "
+"to `true`.\n"
+"    \"show_summary\""
+msgstr ""
+
+#: src/tasks.md:47
+msgid ""
+"// Whether to show the command line in the output of the spawned task, "
+"defaults to `true`.\n"
+"    \"show_command\""
+msgstr ""
+
+#: src/tasks.md:49
+msgid ""
+"// Represents the tags for inline runnable indicators, or spawning multiple "
+"tasks at once.\n"
+"    // \"tags\": []\n"
+msgstr ""
+
+#: src/tasks.md:55
+msgid ""
+"There are two actions that drive the workflow of using tasks: `task: spawn` "
+"and `task: rerun`. `task: spawn` opens a modal with all available tasks in "
+"the current file. `task: rerun` reruns the most recently spawned task. You "
+"can also rerun tasks from the task modal."
+msgstr ""
+
+#: src/tasks.md:59
+msgid ""
+"By default, rerunning tasks reuses the same terminal (due to the "
+"`\"use_new_terminal\": false` default) but waits for the previous task to "
+"finish before starting (due to the `\"allow_concurrent_runs\": false` "
+"default)."
+msgstr ""
+
+#: src/tasks.md:61
+msgid ""
+"Keep `\"use_new_terminal\": false` and set `\"allow_concurrent_runs\": true` "
+"to allow cancelling previous tasks on rerun."
+msgstr ""
+
+#: src/tasks.md:63
+msgid "Task templates"
+msgstr ""
+
+#: src/tasks.md:65
+msgid "Tasks can be defined:"
+msgstr ""
+
+#: src/tasks.md:67
+msgid ""
+"in the global `tasks.json` file; such tasks are available in all Zed "
+"projects you work on. This file is usually located in `~/.config/zed/tasks."
+"json`. You can edit them by using the `zed: open tasks` action."
+msgstr ""
+
+#: src/tasks.md:68
+msgid ""
+"in the worktree-specific (local) `.zed/tasks.json` file; such tasks are "
+"available only when working on a project with that worktree included. You "
+"can edit worktree-specific tasks by using the `zed: open project tasks` "
+"action."
+msgstr ""
+
+#: src/tasks.md:69
+msgid ""
+"on the fly with [oneshot tasks](#oneshot-tasks). These tasks are project-"
+"specific and do not persist across sessions."
+msgstr ""
+
+#: src/tasks.md:70
+msgid "by language extension."
+msgstr ""
+
+#: src/tasks.md:72
+msgid "Variables"
+msgstr ""
+
+#: src/tasks.md:74
+msgid ""
+"Zed tasks act just like your shell; that also means that you can reference "
+"environmental variables via sh-esque `$VAR_NAME` syntax. A couple of "
+"additional environmental variables are set for your convenience. These "
+"variables allow you to pull information from the current editor and use it "
+"in your tasks. The following variables are available:"
+msgstr ""
+
+#: src/tasks.md:77
+msgid "`ZED_COLUMN`: current line column"
+msgstr ""
+
+#: src/tasks.md:78
+msgid "`ZED_ROW`: current line row"
+msgstr ""
+
+#: src/tasks.md:79
+msgid ""
+"`ZED_FILE`: absolute path of the currently opened file (e.g. `/Users/my-user/"
+"path/to/project/src/main.rs`)"
+msgstr ""
+
+#: src/tasks.md:80
+msgid "`ZED_FILENAME`: filename of the currently opened file (e.g. `main.rs`)"
+msgstr ""
+
+#: src/tasks.md:81
+msgid ""
+"`ZED_DIRNAME`: absolute path of the currently opened file with file name "
+"stripped (e.g. `/Users/my-user/path/to/project/src`)"
+msgstr ""
+
+#: src/tasks.md:82
+msgid ""
+"`ZED_RELATIVE_FILE`: path of the currently opened file, relative to "
+"`ZED_WORKTREE_ROOT` (e.g. `src/main.rs`)"
+msgstr ""
+
+#: src/tasks.md:83
+msgid ""
+"`ZED_RELATIVE_DIR`: path of the currently opened file's directory, relative "
+"to `ZED_WORKTREE_ROOT` (e.g. `src`)"
+msgstr ""
+
+#: src/tasks.md:84
+msgid ""
+"`ZED_STEM`: stem (filename without extension) of the currently opened file "
+"(e.g. `main`)"
+msgstr ""
+
+#: src/tasks.md:85
+msgid ""
+"`ZED_SYMBOL`: currently selected symbol; should match the last symbol shown "
+"in a symbol breadcrumb (e.g. `mod tests > fn test_task_contexts`)"
+msgstr ""
+
+#: src/tasks.md:86
+msgid "`ZED_SELECTED_TEXT`: currently selected text"
+msgstr ""
+
+#: src/tasks.md:87
+msgid ""
+"`ZED_WORKTREE_ROOT`: absolute path to the root of the current worktree. (e."
+"g. `/Users/my-user/path/to/project`)"
+msgstr ""
+
+#: src/tasks.md:88
+msgid ""
+"`ZED_CUSTOM_RUST_PACKAGE`: (Rust-specific) name of the parent package of "
+"$ZED_FILE source file."
+msgstr ""
+
+#: src/tasks.md:90
+msgid "To use a variable in a task, prefix it with a dollar sign (`$`):"
+msgstr ""
+
+#: src/tasks.md:94 src/tasks.md:192 src/tasks.md:233
+msgid "\"echo current file's path\""
+msgstr ""
+
+#: src/tasks.md:95 src/tasks.md:234
+msgid "\"echo $ZED_FILE\""
+msgstr ""
+
+#: src/tasks.md:99
+msgid ""
+"You can also use verbose syntax that allows specifying a default if a given "
+"variable is not available: `${ZED_FILE:default_value}`"
+msgstr ""
+
+#: src/tasks.md:101
+msgid ""
+"These environmental variables can also be used in tasks' `cwd`, `args`, and "
+"`label` fields."
+msgstr ""
+
+#: src/tasks.md:103
+msgid "Variable Quoting"
+msgstr ""
+
+#: src/tasks.md:105
+msgid ""
+"When working with paths containing spaces or other special characters, "
+"please ensure variables are properly escaped."
+msgstr ""
+
+#: src/tasks.md:107
+msgid "For example, instead of this (which will fail if the path has a space):"
+msgstr ""
+
+#: src/tasks.md:111 src/tasks.md:120 src/tasks.md:130
+msgid "\"stat current file\""
+msgstr ""
+
+#: src/tasks.md:112
+msgid "\"stat $ZED_FILE\""
+msgstr ""
+
+#: src/tasks.md:116
+msgid "Provide the following:"
+msgstr ""
+
+#: src/tasks.md:121
+msgid "\"stat\""
+msgstr ""
+
+#: src/tasks.md:122
+msgid "\"args\""
+msgstr ""
+
+#: src/tasks.md:122
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/tasks.md:126
+msgid "Or explicitly include escaped quotes like so:"
+msgstr ""
+
+#: src/tasks.md:131
+msgid "\"stat \\\"$ZED_FILE\\\"\""
+msgstr ""
+
+#: src/tasks.md:135
+msgid "Task filtering based on variables"
+msgstr ""
+
+#: src/tasks.md:137
+msgid ""
+"Task definitions with variables which are not present at the moment the task "
+"list is determined are filtered out. For example, the following task will "
+"appear in the spawn modal only if there is a text selection:"
+msgstr ""
+
+#: src/tasks.md:142
+msgid "\"selected text\""
+msgstr ""
+
+#: src/tasks.md:143
+msgid "\"echo \\\"$ZED_SELECTED_TEXT\\\"\""
+msgstr ""
+
+#: src/tasks.md:147
+msgid ""
+"Set default values to such variables to have such tasks always displayed:"
+msgstr ""
+
+#: src/tasks.md:151
+msgid "\"selected text with default\""
+msgstr ""
+
+#: src/tasks.md:152
+msgid "\"echo \\\"${ZED_SELECTED_TEXT:no text selected}\\\"\""
+msgstr ""
+
+#: src/tasks.md:156
+msgid "Oneshot tasks"
+msgstr ""
+
+#: src/tasks.md:158
+msgid ""
+"The same task modal opened via `task: spawn` supports arbitrary bash-like "
+"command execution: type a command inside the modal text field, and use `opt-"
+"enter` to spawn it."
+msgstr ""
+
+#: src/tasks.md:160
+msgid ""
+"The task modal persists these ad-hoc commands for the duration of the "
+"session, `task: rerun` will also rerun such tasks if they were the last ones "
+"spawned."
+msgstr ""
+
+#: src/tasks.md:162
+msgid ""
+"You can also adjust the currently selected task in a modal (`tab` is the "
+"default key binding). Doing so will put its command into a prompt that can "
+"then be edited & spawned as a oneshot task."
+msgstr ""
+
+#: src/tasks.md:164
+msgid "Ephemeral tasks"
+msgstr ""
+
+#: src/tasks.md:166
+msgid ""
+"You can use the `cmd` modifier when spawning a task via a modal; tasks "
+"spawned this way will not have their usage count increased (thus, they will "
+"not be respawned with `task: rerun` and they won't have a high rank in the "
+"task modal). The intended use of ephemeral tasks is to stay in the flow with "
+"continuous `task: rerun` usage."
+msgstr ""
+
+#: src/tasks.md:169
+msgid "More task rerun control"
+msgstr ""
+
+#: src/tasks.md:171
+msgid ""
+"By default, tasks capture their variables into a context once, and this "
+"\"resolved task\" is being rerun always."
+msgstr ""
+
+#: src/tasks.md:173
+msgid ""
+"This can be controlled with the `\"reevaluate_context\"` argument to the "
+"task: setting it to `true` will force the task to be reevaluated before each "
+"run."
+msgstr ""
+
+#: src/tasks.md:177 src/tasks.md:190 src/tasks.md:211
+msgid "\"context\""
+msgstr ""
+
+#: src/tasks.md:177 src/tasks.md:190 src/tasks.md:211
+msgid "\"Workspace\""
+msgstr ""
+
+#: src/tasks.md:178 src/tasks.md:191 src/tasks.md:212
+msgid "\"bindings\""
+msgstr ""
+
+#: src/tasks.md:179
+msgid "\"alt-t\""
+msgstr ""
+
+#: src/tasks.md:179
+msgid "\"task::Rerun\""
+msgstr ""
+
+#: src/tasks.md:179
+msgid "\"reevaluate_context\""
+msgstr ""
+
+#: src/tasks.md:184
+msgid "Custom keybindings for tasks"
+msgstr ""
+
+#: src/tasks.md:186
+msgid ""
+"You can define your own keybindings for your tasks via an additional "
+"argument to `task::Spawn`. If you wanted to bind the aforementioned `echo "
+"current file's path` task to `alt-g`, you would add the following snippet in "
+"your [`keymap.json`](./key-bindings.md) file:"
+msgstr ""
+
+#: src/tasks.md:192 src/tasks.md:213
+msgid "\"alt-g\""
+msgstr ""
+
+#: src/tasks.md:192 src/tasks.md:214
+msgid "\"task::Spawn\""
+msgstr ""
+
+#: src/tasks.md:192 src/tasks.md:215
+msgid "\"task_name\""
+msgstr ""
+
+#: src/tasks.md:197
+msgid ""
+"Note that these tasks can also have a 'target' specified to control where "
+"the spawned task should show up. This could be useful for launching a "
+"terminal application that you want to use in the center area:"
+msgstr ""
+
+#: src/tasks.md:201
+msgid "// In tasks.json\n"
+msgstr ""
+
+#: src/tasks.md:203 src/tasks.md:215
+msgid "\"start lazygit\""
+msgstr ""
+
+#: src/tasks.md:204
+msgid "\"lazygit -p $ZED_WORKTREE_ROOT\""
+msgstr ""
+
+#: src/tasks.md:209
+msgid "// In keymap.json\n"
+msgstr ""
+
+#: src/tasks.md:215
+msgid "\"reveal_target\""
+msgstr ""
+
+#: src/tasks.md:215
+msgid "\"center\""
+msgstr ""
+
+#: src/tasks.md:221
+msgid "Binding runnable tags to task templates"
+msgstr ""
+
+#: src/tasks.md:223
+msgid ""
+"Zed supports overriding the default action for inline runnable indicators "
+"via workspace-local and global `tasks.json` file with the following "
+"precedence hierarchy:"
+msgstr ""
+
+#: src/tasks.md:225
+msgid "Workspace `tasks.json`"
+msgstr ""
+
+#: src/tasks.md:226
+msgid "Global `tasks.json`"
+msgstr ""
+
+#: src/tasks.md:227
+msgid "Language-provided tag bindings (default)."
+msgstr ""
+
+#: src/tasks.md:229
+msgid ""
+"To tag a task, add the runnable tag name to the `tags` field on the task "
+"template:"
+msgstr ""
+
+#: src/tasks.md:235
+msgid "\"tags\""
+msgstr ""
+
+#: src/tasks.md:235
+msgid "\"rust-test\""
+msgstr ""
+
+#: src/tasks.md:239
+msgid ""
+"In doing so, you can change which task is shown in the runnables indicator."
+msgstr ""
+
+#: src/tasks.md:241
+msgid "Keybindings to run tasks bound to runnables"
+msgstr ""
+
+#: src/tasks.md:243
+msgid ""
+"When you have a task definition that is bound to the runnable, you can "
+"quickly run it using [Code Actions](https://zed.dev/docs/configuring-"
+"languages?#code-actions) that you can trigger either via `editor: Toggle "
+"Code Actions` command or by the `cmd-.`/`ctrl-.` shortcut. Your task will be "
+"the first in the dropdown. The task will run immediately if there are no "
+"additional Code Actions for this line."
+msgstr ""
