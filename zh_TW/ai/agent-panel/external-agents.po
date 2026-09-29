@@ -1,0 +1,899 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/external-agents.md:3
+msgid "External Agents"
+msgstr ""
+
+#: src/ai/external-agents.md:5
+msgid ""
+"Zed supports many external agents, including CLI-based ones, through the "
+"[Agent Client Protocol (ACP)](https://agentclientprotocol.com)."
+msgstr ""
+
+#: src/ai/external-agents.md:7
+msgid ""
+"Zed supports [Gemini CLI](https://github.com/google-gemini/gemini-cli) (the "
+"reference ACP implementation), [Claude Agent](https://platform.claude.com/"
+"docs/en/agent-sdk/overview), [Codex](https://developers.openai.com/codex), "
+"[GitHub Copilot](https://github.com/github/copilot-language-server-release), "
+"and [additional agents](#add-more-agents) you can configure."
+msgstr ""
+
+#: src/ai/external-agents.md:9
+msgid ""
+"For Zed's built-in agent and the full list of tools it can use natively, see "
+"[Agent Tools](./tools.md)."
+msgstr ""
+
+#: src/ai/external-agents.md:11
+msgid ""
+"Note that Zed's interaction with external agents is strictly UI-based; the "
+"billing, legal, and terms arrangement is directly between you and the agent "
+"provider. Zed does not charge for use of external agents, and our [zero-data "
+"retention agreements/privacy guarantees](./ai-improvement.md) are **_only_** "
+"applicable for Zed's hosted models."
+msgstr ""
+
+#: src/ai/external-agents.md:14
+msgid "Gemini CLI"
+msgstr ""
+
+#: src/ai/external-agents.md:16
+msgid ""
+"Zed provides the ability to run [Gemini CLI](https://github.com/google-"
+"gemini/gemini-cli) directly in the [agent panel](./agent-panel.md). Under "
+"the hood we run Gemini CLI in the background, and talk to it over ACP."
+msgstr ""
+
+#: src/ai/external-agents.md:19 src/ai/external-agents.md:65
+#: src/ai/external-agents.md:139
+msgid "Getting Started"
+msgstr "開始使用"
+
+#: src/ai/external-agents.md:21
+msgid ""
+"First open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</"
+"kbd>, and then use the `+` button in the top right to start a new Gemini CLI "
+"thread."
+msgstr ""
+
+#: src/ai/external-agents.md:23 src/ai/external-agents.md:69
+#: src/ai/external-agents.md:144
+msgid ""
+"If you'd like to bind this to a keyboard shortcut, you can do so by editing "
+"your `keymap.json` file via the `zed: open keymap file` command to include:"
+msgstr ""
+
+#: src/ai/external-agents.md:28 src/ai/external-agents.md:74
+#: src/ai/external-agents.md:149
+msgid "\"bindings\""
+msgstr ""
+
+#: src/ai/external-agents.md:29
+msgid "\"cmd-alt-g\""
+msgstr ""
+
+#: src/ai/external-agents.md:30 src/ai/external-agents.md:76
+#: src/ai/external-agents.md:151
+msgid "\"agent::NewExternalAgentThread\""
+msgstr ""
+
+#: src/ai/external-agents.md:31 src/ai/external-agents.md:77
+#: src/ai/external-agents.md:152
+msgid "\"agent\""
+msgstr "\"agent\""
+
+#: src/ai/external-agents.md:31 src/ai/external-agents.md:77
+#: src/ai/external-agents.md:152 src/ai/external-agents.md:231
+msgid "\"custom\""
+msgstr ""
+
+#: src/ai/external-agents.md:31 src/ai/external-agents.md:77
+#: src/ai/external-agents.md:152
+msgid "\"name\""
+msgstr ""
+
+#: src/ai/external-agents.md:31
+msgid "\"gemini\""
+msgstr ""
+
+#: src/ai/external-agents.md:38 src/ai/external-agents.md:92
+#: src/ai/external-agents.md:175
+msgid "Installation"
+msgstr ""
+
+#: src/ai/external-agents.md:40
+msgid ""
+"The first time you create a Gemini CLI thread, Zed will install [@google/"
+"gemini-cli](https://github.com/google-gemini/gemini-cli). This installation "
+"is only available to Zed and is kept up to date as you use the agent."
+msgstr ""
+
+#: src/ai/external-agents.md:43 src/ai/external-agents.md:84
+#: src/ai/external-agents.md:159 src/ai/external-agents.md:290
+msgid "Authentication"
+msgstr ""
+
+#: src/ai/external-agents.md:45
+msgid "After you have Gemini CLI running, you'll be prompted to authenticate."
+msgstr ""
+
+#: src/ai/external-agents.md:47
+msgid ""
+"Click the \"Login\" button to open the Gemini CLI interactively, where you "
+"can log in with your Google account or [Vertex AI](https://cloud.google.com/"
+"vertex-ai) credentials. Zed does not see your OAuth or access tokens in this "
+"case."
+msgstr ""
+
+#: src/ai/external-agents.md:50
+msgid ""
+"If the `GEMINI_API_KEY` environment variable (or `GOOGLE_AI_API_KEY`) is "
+"already set, or you have configured a Google AI API key in Zed's [language "
+"model provider settings](./llm-providers.md#google-ai), it will be passed to "
+"Gemini CLI automatically."
+msgstr ""
+
+#: src/ai/external-agents.md:52
+msgid ""
+"For more information, see the [Gemini CLI docs](https://github.com/google-"
+"gemini/gemini-cli/blob/main/docs/index.md)."
+msgstr ""
+
+#: src/ai/external-agents.md:54 src/ai/external-agents.md:114
+#: src/ai/external-agents.md:182
+msgid "Usage"
+msgstr ""
+
+#: src/ai/external-agents.md:56
+msgid ""
+"Gemini CLI supports the same workflows as Zed's first-party agent: code "
+"generation, refactoring, debugging, and Q&A. Add context by @-mentioning "
+"files, recent threads, or symbols."
+msgstr ""
+
+#: src/ai/external-agents.md:58
+msgid ""
+"Some agent panel features are not yet available with Gemini CLI: editing "
+"past messages, resuming threads from history, and checkpointing."
+msgstr ""
+
+#: src/ai/external-agents.md:60 src/ai/external-agents.md:279
+msgid "Claude Agent"
+msgstr ""
+
+#: src/ai/external-agents.md:62
+msgid ""
+"Similar to Gemini CLI, you can also run [Claude Agent](https://platform."
+"claude.com/docs/en/agent-sdk/overview) directly via Zed's [agent panel](./"
+"agent-panel.md). Under the hood, Zed runs the Claude Agent SDK, which runs "
+"Claude Code under the hood, and communicates to it over ACP, through [a "
+"dedicated adapter](https://github.com/zed-industries/claude-agent-acp)."
+msgstr ""
+
+#: src/ai/external-agents.md:67
+msgid ""
+"Open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</kbd>, "
+"and then use the `+` button in the top right to start a new Claude Agent "
+"thread."
+msgstr ""
+
+#: src/ai/external-agents.md:75 src/ai/external-agents.md:150
+msgid "\"cmd-alt-c\""
+msgstr ""
+
+#: src/ai/external-agents.md:77 src/ai/external-agents.md:104
+msgid "\"claude-acp\""
+msgstr ""
+
+#: src/ai/external-agents.md:86
+msgid ""
+"As of version `0.202.7`, authentication to Zed's Claude Agent installation "
+"is decoupled entirely from Zed's agent. That is to say, an Anthropic API key "
+"added via the [Zed Agent's settings](./llm-providers.md#anthropic) will "
+"_not_ be utilized by Claude Agent for authentication and billing."
+msgstr ""
+
+#: src/ai/external-agents.md:89
+msgid ""
+"To ensure you're using your billing method of choice, [open a new Claude "
+"Agent thread](./agent-panel.md#new-thread). Then, run `/login`, and "
+"authenticate either via API key, or via `Log in with Claude Code` to use a "
+"Claude Pro/Max subscription."
+msgstr ""
+
+#: src/ai/external-agents.md:94
+msgid ""
+"The first time you create a Claude Agent thread, Zed will install [@zed-"
+"industries/claude-agent-acp](https://github.com/zed-industries/claude-agent-"
+"acp). This installation is only available to Zed and is kept up to date as "
+"you use the agent."
+msgstr ""
+
+#: src/ai/external-agents.md:97
+msgid ""
+"Zed will always use this managed version of the Claude Agent adapter, which "
+"includes a vendored version of the Claude Code CLI, even if you have it "
+"installed globally."
+msgstr ""
+
+#: src/ai/external-agents.md:99
+msgid ""
+"If you want to override the executable used by the adapter, you can set the "
+"`CLAUDE_CODE_EXECUTABLE` environment variable in your settings to the path "
+"of your preferred executable."
+msgstr ""
+
+#: src/ai/external-agents.md:103 src/ai/external-agents.md:229
+#: src/ai/external-agents.md:310
+msgid "\"agent_servers\""
+msgstr ""
+
+#: src/ai/external-agents.md:105 src/ai/external-agents.md:231
+#: src/ai/external-agents.md:312
+msgid "\"type\""
+msgstr ""
+
+#: src/ai/external-agents.md:105 src/ai/external-agents.md:312
+msgid "\"registry\""
+msgstr ""
+
+#: src/ai/external-agents.md:106 src/ai/external-agents.md:234
+#: src/ai/external-agents.md:313
+msgid "\"env\""
+msgstr "\"env\""
+
+#: src/ai/external-agents.md:107
+msgid "\"CLAUDE_CODE_EXECUTABLE\""
+msgstr ""
+
+#: src/ai/external-agents.md:107
+msgid "\"/path/to/alternate-claude-code-executable\""
+msgstr ""
+
+#: src/ai/external-agents.md:116
+msgid ""
+"Claude Agent supports the same workflows as Zed's first-party agent. Add "
+"context by @-mentioning files, recent threads, diagnostics, or symbols."
+msgstr ""
+
+#: src/ai/external-agents.md:118
+msgid ""
+"In complement to talking to it [over ACP](https://agentclientprotocol.com), "
+"Zed relies on the [Claude Agent SDK](https://platform.claude.com/docs/en/"
+"agent-sdk/overview) to support some of its specific features. However, the "
+"SDK doesn't yet expose everything needed to fully support all of them:"
+msgstr ""
+
+#: src/ai/external-agents.md:121
+msgid ""
+"Slash Commands: [Custom slash commands](https://code.claude.com/docs/en/"
+"slash-commands#custom-slash-commands) are fully supported, and have been "
+"merged into skills. A subset of [built-in commands](https://code.claude.com/"
+"docs/en/slash-commands#built-in-slash-commands) are supported."
+msgstr ""
+
+#: src/ai/external-agents.md:122
+msgid "[Subagents](https://code.claude.com/docs/en/sub-agents) are supported."
+msgstr ""
+
+#: src/ai/external-agents.md:123
+msgid ""
+"[Agent teams](https://code.claude.com/docs/en/agent-teams) are currently "
+"_not_ supported."
+msgstr ""
+
+#: src/ai/external-agents.md:124
+msgid ""
+"[Hooks](https://code.claude.com/docs/en/hooks-guide) are currently _not_ "
+"supported."
+msgstr ""
+
+#: src/ai/external-agents.md:126
+msgid ""
+"Some [agent panel](./agent-panel.md) features are not yet available with "
+"Claude Agent: editing past messages, resuming threads from history, and "
+"checkpointing."
+msgstr ""
+
+#: src/ai/external-agents.md:128
+msgid "CLAUDE.md"
+msgstr ""
+
+#: src/ai/external-agents.md:130
+msgid ""
+"Claude Agent in Zed will automatically use any `CLAUDE.md` file found in "
+"your project root, project subdirectories, or root `.claude` directory."
+msgstr ""
+
+#: src/ai/external-agents.md:132
+msgid ""
+"If you don't have a `CLAUDE.md` file, you can ask Claude Agent to create one "
+"for you through the `init` slash command."
+msgstr ""
+
+#: src/ai/external-agents.md:134
+msgid "Codex CLI"
+msgstr ""
+
+#: src/ai/external-agents.md:136
+msgid ""
+"You can also run [Codex CLI](https://github.com/openai/codex) directly via "
+"Zed's [agent panel](./agent-panel.md). Under the hood, Zed runs Codex CLI "
+"and communicates to it over ACP, through [a dedicated adapter](https://"
+"github.com/zed-industries/codex-acp)."
+msgstr ""
+
+#: src/ai/external-agents.md:141
+msgid ""
+"As of version `0.208`, you should be able to use Codex directly from Zed. "
+"Open the agent panel with <kbd class=\"keybinding\">cmd-?\\|ctrl-?</kbd>, "
+"and then use the `+` button in the top right to start a new Codex thread."
+msgstr ""
+
+#: src/ai/external-agents.md:152 src/ai/external-agents.md:311
+msgid "\"codex-acp\""
+msgstr ""
+
+#: src/ai/external-agents.md:161
+msgid ""
+"Authentication to Zed's Codex installation is decoupled entirely from Zed's "
+"agent. That is to say, an OpenAI API key added via the [Zed Agent's settings]"
+"(./llm-providers.md#openai) will _not_ be utilized by Codex for "
+"authentication and billing."
+msgstr ""
+
+#: src/ai/external-agents.md:164
+msgid ""
+"To ensure you're using your billing method of choice, [open a new Codex "
+"thread](./agent-panel.md#new-thread). The first time you will be prompted to "
+"authenticate with one of three methods:"
+msgstr ""
+
+#: src/ai/external-agents.md:167
+msgid ""
+"Login with ChatGPT - allows you to use your existing, paid ChatGPT "
+"subscription. _Note: This method isn't currently supported in remote "
+"projects_"
+msgstr ""
+
+#: src/ai/external-agents.md:168
+msgid ""
+"`CODEX_API_KEY` - uses an API key you have set in your environment under the "
+"variable `CODEX_API_KEY`."
+msgstr ""
+
+#: src/ai/external-agents.md:169
+msgid ""
+"`OPENAI_API_KEY` - uses an API key you have set in your environment under "
+"the variable `OPENAI_API_KEY`."
+msgstr ""
+
+#: src/ai/external-agents.md:171
+msgid ""
+"If you are already logged in and want to change your authentication method, "
+"type `/logout` in the thread and authenticate again."
+msgstr ""
+
+#: src/ai/external-agents.md:173
+msgid ""
+"If you want to use a third-party provider with Codex, you can configure that "
+"with your [Codex config.toml](https://github.com/openai/codex/blob/main/docs/"
+"config.md#model-selection) or pass extra [args/env variables](https://github."
+"com/openai/codex/blob/main/docs/config.md#model-selection) to your Codex "
+"agent servers settings."
+msgstr ""
+
+#: src/ai/external-agents.md:177
+msgid ""
+"The first time you create a Codex thread, Zed will install [codex-acp]"
+"(https://github.com/zed-industries/codex-acp). This installation is only "
+"available to Zed and is kept up to date as you use the agent."
+msgstr ""
+
+#: src/ai/external-agents.md:180
+msgid ""
+"Zed will always use this managed version of Codex even if you have it "
+"installed globally."
+msgstr ""
+
+#: src/ai/external-agents.md:184
+msgid ""
+"Codex supports the same workflows as Zed's first-party agent. Add context by "
+"@-mentioning files or symbols."
+msgstr ""
+
+#: src/ai/external-agents.md:186
+msgid ""
+"Some agent panel features are not yet available with Codex: editing past "
+"messages, resuming threads from history, and checkpointing."
+msgstr ""
+
+#: src/ai/external-agents.md:188
+msgid "Add More Agents"
+msgstr ""
+
+#: src/ai/external-agents.md:190
+msgid "Via Agent Server Extensions"
+msgstr ""
+
+#: src/ai/external-agents.md:194
+msgid ""
+"Starting from `v0.221.x`, [the ACP Registry](https://agentclientprotocol.com/"
+"registry) is the preferred way to install external agents in Zed. Learn more "
+"about it in [the release blog post](https://zed.dev/blog/acp-registry). At "
+"some point in the near future, Agent Server extensions will be deprecated."
+msgstr ""
+
+#: src/ai/external-agents.md:200
+msgid ""
+"Add more external agents to Zed by installing [Agent Server extensions](../"
+"extensions/agent-servers.md)."
+msgstr ""
+
+#: src/ai/external-agents.md:202
+msgid ""
+"See what agents are available by filtering for \"Agent Servers\" in the "
+"extensions page, which you can access via the command palette with `zed: "
+"extensions`, or the [Zed website](https://zed.dev/extensions?filter=agent-"
+"servers)."
+msgstr ""
+
+#: src/ai/external-agents.md:204
+msgid "Via The ACP Registry"
+msgstr ""
+
+#: src/ai/external-agents.md:206
+msgid "Overview"
+msgstr "概覽"
+
+#: src/ai/external-agents.md:208
+msgid ""
+"As mentioned above, the Agent Server extensions will be deprecated in the "
+"near future to give room to the ACP Registry."
+msgstr ""
+
+#: src/ai/external-agents.md:210
+msgid ""
+"[The ACP Registry](https://github.com/agentclientprotocol/registry) lets "
+"developers distribute ACP-compatible agents to any client that implements "
+"the protocol. Agents installed from the registry update automatically."
+msgstr ""
+
+#: src/ai/external-agents.md:212
+msgid ""
+"At the moment, the registry is a curated set of agents, including only the "
+"ones that [support authentication](https://agentclientprotocol.com/rfds/auth-"
+"methods)."
+msgstr ""
+
+#: src/ai/external-agents.md:214
+msgid "Using it in Zed"
+msgstr ""
+
+#: src/ai/external-agents.md:216
+msgid ""
+"Use the `zed: acp registry` command to quickly go to the ACP Registry page. "
+"There's also a button (\"Add Agent\") that takes you there in the agent "
+"panel's configuration view."
+msgstr ""
+
+#: src/ai/external-agents.md:219
+msgid ""
+"From there, you can click to install your preferred agent and it will become "
+"available right away in the `+` icon button in the agent panel."
+msgstr ""
+
+#: src/ai/external-agents.md:221
+msgid ""
+"If you installed the same agent through both the extension and the registry, "
+"the registry version takes precedence."
+msgstr ""
+
+#: src/ai/external-agents.md:223
+msgid "Custom Agents"
+msgstr ""
+
+#: src/ai/external-agents.md:225
+msgid ""
+"You can also add agents through your settings file ([how to edit](../"
+"configuring-zed.md#settings-files)) by specifying certain fields under "
+"`agent_servers`, like so:"
+msgstr ""
+
+#: src/ai/external-agents.md:230
+msgid "\"My Custom Agent\""
+msgstr ""
+
+#: src/ai/external-agents.md:232
+msgid "\"command\""
+msgstr ""
+
+#: src/ai/external-agents.md:232
+msgid "\"node\""
+msgstr ""
+
+#: src/ai/external-agents.md:233
+msgid "\"args\""
+msgstr "\"args\""
+
+#: src/ai/external-agents.md:233
+msgid "\"~/projects/agent/index.js\""
+msgstr ""
+
+#: src/ai/external-agents.md:233
+msgid "\"--acp\""
+msgstr ""
+
+#: src/ai/external-agents.md:240
+msgid ""
+"This can be useful if you're in the middle of developing a new agent that "
+"speaks the protocol and you want to debug it."
+msgstr ""
+
+#: src/ai/external-agents.md:242
+msgid ""
+"It's also possible to customize environment variables for registry-installed "
+"agents like Claude Agent, Codex, and Gemini CLI by using their registry "
+"names (`claude-acp`, `codex-acp`, `gemini`) with `\"type\": \"registry\"` in "
+"your settings."
+msgstr ""
+
+#: src/ai/external-agents.md:244
+msgid "Debugging Agents"
+msgstr ""
+
+#: src/ai/external-agents.md:246
+msgid ""
+"When using external agents in Zed, you can access the debug view via with "
+"`dev: open acp logs` from the Command Palette. This lets you see the "
+"messages being sent and received between Zed and the agent."
+msgstr ""
+
+#: src/ai/external-agents.md:249
+msgid "![The debug view for ACP logs.](https://zed.dev/img/acp/acp-logs.webp)"
+msgstr ""
+
+#: src/ai/external-agents.md:251
+msgid ""
+"It's helpful to attach data from this view if you're opening issues about "
+"problems with external agents like Claude Agent, Codex, OpenCode, etc."
+msgstr ""
+
+#: src/ai/external-agents.md:253
+msgid "Configuration Boundaries"
+msgstr ""
+
+#: src/ai/external-agents.md:255
+msgid ""
+"External agents run as separate processes that communicate with Zed via the "
+"[Agent Client Protocol (ACP)](https://agentclientprotocol.com). This creates "
+"important boundaries between Zed's configuration and the agent's native "
+"configuration."
+msgstr ""
+
+#: src/ai/external-agents.md:257
+msgid "What Zed Forwards to External Agents"
+msgstr ""
+
+#: src/ai/external-agents.md:259
+msgid "When you start an external agent thread, Zed sends:"
+msgstr ""
+
+#: src/ai/external-agents.md:261
+msgid "Setting"
+msgstr ""
+
+#: src/ai/external-agents.md:261
+msgid "How to Configure"
+msgstr ""
+
+#: src/ai/external-agents.md:263
+msgid "Model selection"
+msgstr ""
+
+#: src/ai/external-agents.md:263
+msgid "`agent_servers.<agent>.default_model` in settings"
+msgstr ""
+
+#: src/ai/external-agents.md:264
+msgid "Mode selection"
+msgstr ""
+
+#: src/ai/external-agents.md:264
+msgid "`agent_servers.<agent>.default_mode` in settings"
+msgstr ""
+
+#: src/ai/external-agents.md:265
+msgid "Environment variables"
+msgstr ""
+
+#: src/ai/external-agents.md:265
+msgid "`agent_servers.<agent>.env` in settings"
+msgstr ""
+
+#: src/ai/external-agents.md:266
+msgid "MCP servers"
+msgstr ""
+
+#: src/ai/external-agents.md:266
+msgid "`context_servers` in settings (see [limitations](#mcp-server-access))"
+msgstr ""
+
+#: src/ai/external-agents.md:267
+msgid "Working directory"
+msgstr ""
+
+#: src/ai/external-agents.md:267
+msgid "Automatically set to project root"
+msgstr ""
+
+#: src/ai/external-agents.md:269
+msgid "**Not forwarded:**"
+msgstr ""
+
+#: src/ai/external-agents.md:271
+msgid ""
+"[Profiles](./agent-panel.md#profiles) — profiles only apply to Zed's first-"
+"party agent"
+msgstr ""
+
+#: src/ai/external-agents.md:272
+msgid ""
+"[Tool permissions](./tool-permissions.md) settings — external agents request "
+"permissions at runtime via UI prompts"
+msgstr ""
+
+#: src/ai/external-agents.md:273
+msgid ""
+"Rules files — Zed's [rules system](./rules.md) only applies to Zed's first-"
+"party agent (external agents read their own rules files directly)"
+msgstr ""
+
+#: src/ai/external-agents.md:275
+msgid "What External Agents Read Directly"
+msgstr ""
+
+#: src/ai/external-agents.md:277
+msgid ""
+"External agents run as CLI tools with full filesystem access. They read "
+"their own configuration files directly — Zed doesn't forward or block these."
+msgstr ""
+
+#: src/ai/external-agents.md:281
+msgid ""
+"Claude Agent runs Claude Code under the hood, which reads its standard "
+"configuration:"
+msgstr ""
+
+#: src/ai/external-agents.md:283 src/ai/external-agents.md:298
+msgid "Config"
+msgstr ""
+
+#: src/ai/external-agents.md:283
+msgid "Read by Claude Agent?"
+msgstr ""
+
+#: src/ai/external-agents.md:285
+msgid "`~/.claude/` directory"
+msgstr ""
+
+#: src/ai/external-agents.md:285
+msgid "Yes — Claude Code reads its own settings and memory"
+msgstr ""
+
+#: src/ai/external-agents.md:286
+msgid "CLAUDE.md files"
+msgstr ""
+
+#: src/ai/external-agents.md:286
+msgid "Yes — Claude Code reads these directly from the project"
+msgstr ""
+
+#: src/ai/external-agents.md:287
+msgid "Skills"
+msgstr ""
+
+#: src/ai/external-agents.md:287
+msgid "Yes — exposed via the Claude Agent SDK"
+msgstr ""
+
+#: src/ai/external-agents.md:288
+msgid "MCP servers from Claude Code config"
+msgstr ""
+
+#: src/ai/external-agents.md:288
+msgid "Yes — but Zed also forwards its own MCP servers via ACP"
+msgstr ""
+
+#: src/ai/external-agents.md:289
+msgid "Hooks"
+msgstr ""
+
+#: src/ai/external-agents.md:289
+msgid "No — [not supported](https://code.claude.com/docs/en/hooks-guide)"
+msgstr ""
+
+#: src/ai/external-agents.md:290
+msgid "Separate — you must authenticate via `/login` in Zed"
+msgstr ""
+
+#: src/ai/external-agents.md:292
+msgid ""
+"**Why separate authentication?** Zed isolates Claude Agent authentication to "
+"give you control over which account and billing method you use."
+msgstr ""
+
+#: src/ai/external-agents.md:294
+msgid "Codex"
+msgstr ""
+
+#: src/ai/external-agents.md:296
+msgid ""
+"Codex runs the Codex CLI under the hood, which reads its standard "
+"configuration:"
+msgstr ""
+
+#: src/ai/external-agents.md:298
+msgid "Read by Codex?"
+msgstr ""
+
+#: src/ai/external-agents.md:300
+msgid "`~/.codex/config.toml`"
+msgstr ""
+
+#: src/ai/external-agents.md:300
+msgid "Yes — Codex CLI reads its own config"
+msgstr ""
+
+#: src/ai/external-agents.md:301
+msgid "MCP servers from Codex config"
+msgstr ""
+
+#: src/ai/external-agents.md:301
+msgid "Yes — but Zed also forwards its own MCP servers"
+msgstr ""
+
+#: src/ai/external-agents.md:302
+msgid "`CODEX_API_KEY` env var"
+msgstr ""
+
+#: src/ai/external-agents.md:302 src/ai/external-agents.md:303
+msgid "Yes — inherited from your shell environment"
+msgstr ""
+
+#: src/ai/external-agents.md:303
+msgid "`OPENAI_API_KEY` env var"
+msgstr ""
+
+#: src/ai/external-agents.md:304
+msgid "ChatGPT OAuth login"
+msgstr ""
+
+#: src/ai/external-agents.md:304
+msgid "Separate — you must re-authenticate in Zed"
+msgstr ""
+
+#: src/ai/external-agents.md:306
+msgid "You can also pass environment variables through Zed settings:"
+msgstr ""
+
+#: src/ai/external-agents.md:314
+msgid "\"CODEX_API_KEY\""
+msgstr ""
+
+#: src/ai/external-agents.md:314
+msgid "\"your-key\""
+msgstr ""
+
+#: src/ai/external-agents.md:315
+msgid "\"CUSTOM_PROVIDER_URL\""
+msgstr ""
+
+#: src/ai/external-agents.md:315
+msgid "\"https://...\""
+msgstr ""
+
+#: src/ai/external-agents.md:322
+msgid "MCP Server Access"
+msgstr ""
+
+#: src/ai/external-agents.md:324
+msgid ""
+"MCP servers configured in Zed's `context_servers` are forwarded to Claude "
+"Agent and Codex via the ACP protocol."
+msgstr ""
+
+#: src/ai/external-agents.md:326
+msgid "**Local stdio-based MCP servers:** Work reliably"
+msgstr ""
+
+#: src/ai/external-agents.md:327
+msgid ""
+"**Remote MCP servers with OAuth:** May have issues ([\\#54410](https://"
+"github.com/zed-industries/zed/issues/54410))"
+msgstr ""
+
+#: src/ai/external-agents.md:329
+msgid ""
+"External agents can access MCP servers from two sources: Zed's "
+"`context_servers` (forwarded via ACP) and their own native configuration "
+"files (`~/.claude/`, `~/.codex/config.toml`)."
+msgstr ""
+
+#: src/ai/external-agents.md:331
+msgid ""
+"For more on configuring MCP servers, see [Model Context Protocol](./mcp.md)."
+msgstr ""
+
+#: src/ai/external-agents.md:333
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#: src/ai/external-agents.md:335
+msgid "**\"I enabled MCP tools in Zed but the agent can't see them\"**"
+msgstr ""
+
+#: src/ai/external-agents.md:337
+msgid "Verify the MCP server is enabled in `context_servers` settings"
+msgstr ""
+
+#: src/ai/external-agents.md:338
+msgid ""
+"For remote MCP servers with OAuth, this is a [known issue](https://github."
+"com/zed-industries/zed/issues/54410) — try local stdio-based servers instead"
+msgstr ""
+
+#: src/ai/external-agents.md:339
+msgid "Open `dev: open acp logs` from the Command Palette to debug"
+msgstr ""
+
+#: src/ai/external-agents.md:341
+msgid "**\"My existing Claude Code / Codex setup isn't working in Zed\"**"
+msgstr ""
+
+#: src/ai/external-agents.md:343
+msgid ""
+"External agents read their own config files, but authentication is handled "
+"separately:"
+msgstr ""
+
+#: src/ai/external-agents.md:345
+msgid ""
+"Re-authenticate via `/login` (Claude Agent) or the authentication prompt "
+"(Codex)"
+msgstr ""
+
+#: src/ai/external-agents.md:346
+msgid ""
+"Your existing MCP servers and settings from `~/.claude/` or `~/.codex/config."
+"toml` should work"
+msgstr ""
+
+#: src/ai/external-agents.md:347
+msgid ""
+"You can also configure additional settings via `agent_servers.<agent>.env` "
+"in Zed"
+msgstr ""
+
+#: src/ai/external-agents.md:349
+msgid "**\"Profiles don't affect my external agent\"**"
+msgstr ""
+
+#: src/ai/external-agents.md:351
+msgid ""
+"Correct — [profiles](./agent-panel.md#profiles) only apply to Zed's first-"
+"party agent. External agents have their own tool sets and don't use Zed's "
+"profile system."
+msgstr ""

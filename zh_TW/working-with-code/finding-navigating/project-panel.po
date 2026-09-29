@@ -1,0 +1,396 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/project-panel.md:3
+msgid "Project Panel"
+msgstr "專案面板"
+
+#: src/project-panel.md:5
+msgid ""
+"The project panel shows a tree view of your workspace's files and "
+"directories. Toggle it with <code class=\"hljs\">project panel: toggle "
+"focus</code> (<kbd class=\"keybinding\">cmd-shift-e\\|ctrl-shift-e</kbd>), "
+"or click the **Project Panel** button in the status bar."
+msgstr ""
+
+#: src/project-panel.md:9
+msgid "![Project Panel](https://images.zed.dev/docs/project-panel/panel.png)"
+msgstr ""
+
+#: src/project-panel.md:11
+msgid "Navigating"
+msgstr ""
+
+#: src/project-panel.md:13
+msgid ""
+"Use the arrow keys to move through entries. <kbd "
+"class=\"keybinding\">right\\|right</kbd> expands a directory and <kbd "
+"class=\"keybinding\">left\\|left</kbd> collapses it. <kbd "
+"class=\"keybinding\">cmd-left\\|ctrl-left</kbd> collapses every directory at "
+"once. Press <kbd class=\"keybinding\">space\\|space</kbd> or click to "
+"preview a selected file, without giving it a permanent tab. Editing the file "
+"or double-clicking it promotes it to a permanent tab."
+msgstr ""
+
+#: src/project-panel.md:16
+msgid "Auto-reveal"
+msgstr ""
+
+#: src/project-panel.md:18
+msgid ""
+"By default, switching files in the editor will automatically highlight it in "
+"the project panel and scroll it into view. This can be disabled with the "
+"`project_panel.auto_reveal_entries` setting."
+msgstr ""
+
+#: src/project-panel.md:22
+msgid "Sticky Scroll"
+msgstr ""
+
+#: src/project-panel.md:24
+msgid ""
+"When `project_panel.sticky_scroll` is enabled (the default), ancestor "
+"directories pin themselves to the top of the panel as you scroll, so you "
+"always know which directory you're on."
+msgstr ""
+
+#: src/project-panel.md:27
+msgid ""
+"![Project Panel: Sticky Scroll Enabled](https://images.zed.dev/docs/project-"
+"panel/sticky-scroll-true.png)"
+msgstr ""
+
+#: src/project-panel.md:29
+msgid ""
+"![Project Panel: Sticky Scroll Disabled](https://images.zed.dev/docs/project-"
+"panel/sticky-scroll-false.png)"
+msgstr ""
+
+#: src/project-panel.md:31
+msgid "Directory Folding"
+msgstr ""
+
+#: src/project-panel.md:33
+msgid ""
+"When `project_panel.auto_fold_dirs` is enabled (the default), chains of "
+"directories that each contain a single child directory are collapsed into "
+"one row (for example, `src/utils/helpers` instead of three separate levels). "
+"Right-click a folded directory and choose **Unfold Directory** to expand the "
+"chain, or **Fold Directory** to collapse it again."
+msgstr ""
+
+#: src/project-panel.md:39
+msgid ""
+"![Project Panel: Auto Fold Directories Enabled](https://images.zed.dev/docs/"
+"project-panel/auto-fold-dirs-true.png)"
+msgstr ""
+
+#: src/project-panel.md:41
+msgid ""
+"![Project Panel: Auto Fold Directories Disabled](https://images.zed.dev/docs/"
+"project-panel/auto-fold-dirs-false.png)"
+msgstr ""
+
+#: src/project-panel.md:43
+msgid "Selecting Multiple Entries"
+msgstr ""
+
+#: src/project-panel.md:45
+msgid ""
+"Hold `shift` while pressing the up/down arrow keys to mark additional "
+"entries. Most file operations, like cut, copy, trash, delete and drag, apply "
+"to the full set of marked entries."
+msgstr ""
+
+#: src/project-panel.md:49
+msgid ""
+"When exactly two files are marked, <code class=\"hljs\">project panel: "
+"compare marked files</code> (<kbd class=\"keybinding\">alt-d\\|alt-d</kbd>) "
+"opens a diff view comparing them."
+msgstr ""
+
+#: src/project-panel.md:52
+msgid ""
+"![Project Panel: Compare Marked Files](https://images.zed.dev/docs/project-"
+"panel/compare-marked-files.png)"
+msgstr ""
+
+#: src/project-panel.md:54
+msgid "File Operations"
+msgstr ""
+
+#: src/project-panel.md:56
+msgid ""
+"Right-click an entry to see the full list of available operations, or use "
+"the keybindings below."
+msgstr ""
+
+#: src/project-panel.md:59
+msgid "Creating Files and Directories"
+msgstr ""
+
+#: src/project-panel.md:61
+msgid ""
+"<code class=\"hljs\">project panel: new file</code> (<kbd "
+"class=\"keybinding\">cmd-n\\|ctrl-n</kbd>) creates a new file inside the "
+"selected directory."
+msgstr ""
+
+#: src/project-panel.md:63
+msgid ""
+"<code class=\"hljs\">project panel: new directory</code> (<kbd "
+"class=\"keybinding\">alt-cmd-n\\|alt-ctrl-n</kbd>) creates a new directory."
+msgstr ""
+
+#: src/project-panel.md:66
+msgid ""
+"An inline editor appears so you can type the name. Press `enter` to confirm "
+"or `escape` to cancel."
+msgstr ""
+
+#: src/project-panel.md:69
+msgid "Renaming"
+msgstr ""
+
+#: src/project-panel.md:71
+msgid ""
+"Press <kbd class=\"keybinding\">f2\\|f2</kbd> to rename the selected entry. "
+"The filename stem is pre-selected so you can type a new name without "
+"accidentally changing the extension. Press `enter` to confirm or `escape` to "
+"cancel."
+msgstr ""
+
+#: src/project-panel.md:76
+msgid "Cut, Copy, and Paste"
+msgstr ""
+
+#: src/project-panel.md:78
+msgid ""
+"<code class=\"hljs\">project panel: cut</code> (<kbd "
+"class=\"keybinding\">cmd-x\\|ctrl-x</kbd>) marks entries for moving."
+msgstr ""
+
+#: src/project-panel.md:80
+msgid ""
+"<code class=\"hljs\">project panel: copy</code> (<kbd "
+"class=\"keybinding\">cmd-c\\|ctrl-c</kbd>) marks entries for copying."
+msgstr ""
+
+#: src/project-panel.md:82
+msgid ""
+"<code class=\"hljs\">project panel: paste</code> (<kbd "
+"class=\"keybinding\">cmd-v\\|ctrl-v</kbd>) places them in the selected "
+"directory."
+msgstr ""
+
+#: src/project-panel.md:85
+msgid ""
+"When pasting would create a name conflict, Zed appends a \"copy\" suffix (e."
+"g., `file copy.txt`, `file copy 2.txt`). If a single file is pasted with a "
+"generated suffix, the rename editor opens automatically so you can adjust "
+"the name."
+msgstr ""
+
+#: src/project-panel.md:89
+msgid "Duplicate"
+msgstr ""
+
+#: src/project-panel.md:91
+msgid ""
+"<code class=\"hljs\">project panel: duplicate</code> (<kbd "
+"class=\"keybinding\">cmd-d\\|</kbd>) copies and pastes the selected entries "
+"in one step."
+msgstr ""
+
+#: src/project-panel.md:94
+msgid "Trash and Delete"
+msgstr ""
+
+#: src/project-panel.md:96
+msgid ""
+"<code class=\"hljs\">project panel: trash</code> (<kbd "
+"class=\"keybinding\">cmd-backspace\\|delete</kbd>) moves entries to the "
+"system trash."
+msgstr ""
+
+#: src/project-panel.md:98
+msgid ""
+"<code class=\"hljs\">project panel: delete</code> (<kbd "
+"class=\"keybinding\">cmd-alt-backspace\\|ctrl-delete</kbd>) permanently "
+"deletes entries."
+msgstr ""
+
+#: src/project-panel.md:101
+msgid ""
+"Both actions show a confirmation prompt listing the affected files. If any "
+"of the files have unsaved changes, the prompt warns you."
+msgstr ""
+
+#: src/project-panel.md:104
+msgid "Drag and Drop"
+msgstr ""
+
+#: src/project-panel.md:106
+msgid ""
+"Drag entries within the panel to move them. Hold `alt` while dropping to "
+"copy instead of move. You can also drag files from your operating system's "
+"file manager into the project panel to copy them into the project. Drag and "
+"drop can be disabled with the `project_panel.drag_and_drop` setting."
+msgstr ""
+
+#: src/project-panel.md:111
+msgid "Git Integration"
+msgstr ""
+
+#: src/project-panel.md:113
+msgid ""
+"When `project_panel.git_status` is enabled (the default), file and directory "
+"names are tinted to reflect their git status—modified, added, deleted, "
+"untracked, or conflicting."
+msgstr ""
+
+#: src/project-panel.md:116
+msgid ""
+"Setting `project_panel.git_status_indicator` to `true` (disabled by default) "
+"adds a letter badge next to each name: **M** (modified), **A** (added), "
+"**D** (deleted), **U** (untracked) or **!** (conflict)."
+msgstr ""
+
+#: src/project-panel.md:120
+msgid ""
+"![Project Panel: Git Integration](https://images.zed.dev/docs/project-panel/"
+"git-status.png)"
+msgstr ""
+
+#: src/project-panel.md:122
+msgid ""
+"Use <code class=\"hljs\">project panel: select next git entry</code> and "
+"{#action project_panel::SelectPrevGitEntry} to jump between tracked files "
+"with uncommitted changes. The right-click menu also offers **Restore File** "
+"to discard changes and **View File History** to browse a file's commit log."
+msgstr ""
+
+#: src/project-panel.md:127
+msgid "Diagnostics"
+msgstr "診斷"
+
+#: src/project-panel.md:129
+msgid ""
+"The `project_panel.show_diagnostics` setting controls whether error and "
+"warning indicators appear on file and folder icons. Set it to `\"all\"` to "
+"see both errors and warnings, `\"errors\"` for errors only, or `\"off\"` to "
+"hide them. Diagnostics propagate upward—if a file deep in a directory has an "
+"error, its ancestor folders show an indicator too."
+msgstr ""
+
+#: src/project-panel.md:135
+msgid ""
+"Enable `project_panel.diagnostic_badges` (disabled by default) to display "
+"numeric error and warning counts next to each entry. Use <code "
+"class=\"hljs\">project panel: select next diagnostic</code> and <code "
+"class=\"hljs\">project panel: select prev diagnostic</code> to navigate "
+"between files that have diagnostics."
+msgstr ""
+
+#: src/project-panel.md:140
+msgid ""
+"See also [Diagnostics & Quick Fixes](./diagnostics.md) for editor and tab "
+"diagnostic settings."
+msgstr ""
+
+#: src/project-panel.md:142
+msgid "Filtering and Sorting"
+msgstr ""
+
+#: src/project-panel.md:144
+msgid "Hiding Files"
+msgstr ""
+
+#: src/project-panel.md:146
+msgid ""
+"`project_panel.hide_gitignore` hides files matched by `.gitignore`. Toggle "
+"this with <code class=\"hljs\">project panel: toggle hide git ignore</code>."
+msgstr ""
+
+#: src/project-panel.md:148
+msgid ""
+"`project_panel.hide_hidden` hides dotfiles and other hidden entries. Toggle "
+"with <code class=\"hljs\">project panel: toggle hide hidden</code>."
+msgstr ""
+
+#: src/project-panel.md:151
+msgid "Sorting"
+msgstr ""
+
+#: src/project-panel.md:153
+msgid "The `project_panel.sort_mode` setting controls grouping:"
+msgstr ""
+
+#: src/project-panel.md:155
+msgid ""
+"`\"directories_first\"` (default) — directories appear before files at each "
+"level."
+msgstr ""
+
+#: src/project-panel.md:157
+msgid "`\"files_first\"` — files appear before directories."
+msgstr ""
+
+#: src/project-panel.md:158
+msgid "`\"mixed\"` — directories and files are sorted together."
+msgstr ""
+
+#: src/project-panel.md:160
+msgid "The `project_panel.sort_order` setting controls name comparison:"
+msgstr ""
+
+#: src/project-panel.md:162
+msgid ""
+"`\"default\"` — case-insensitive natural sort (`file2` before `file10`)."
+msgstr ""
+
+#: src/project-panel.md:163
+msgid "`\"upper\"` — uppercase names grouped first, then lowercase."
+msgstr ""
+
+#: src/project-panel.md:164
+msgid "`\"lower\"` — lowercase names grouped first, then uppercase."
+msgstr ""
+
+#: src/project-panel.md:165
+msgid "`\"unicode\"` — raw Unicode codepoint order with no case folding."
+msgstr ""
+
+#: src/project-panel.md:167
+msgid "Other Actions"
+msgstr ""
+
+#: src/project-panel.md:169
+msgid ""
+"<code class=\"hljs\">project panel: reveal in file manager</code> (<kbd "
+"class=\"keybinding\">alt-cmd-r\\|alt-ctrl-r</kbd>) reveals the selected "
+"entry in Finder / File Explorer."
+msgstr ""
+
+#: src/project-panel.md:171
+msgid ""
+"<code class=\"hljs\">project panel: new search in directory</code> (<kbd "
+"class=\"keybinding\">cmd-alt-shift-f\\|ctrl-alt-shift-f</kbd>) opens a "
+"project search scoped to the selected directory."
+msgstr ""
+
+#: src/project-panel.md:173
+msgid ""
+"<code class=\"hljs\">project panel: remove from project</code> removes a "
+"workspace root folder from the project."
+msgstr ""
