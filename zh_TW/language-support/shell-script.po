@@ -1,0 +1,158 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/sh.md:3
+msgid "Shell Scripts"
+msgstr ""
+
+#: src/languages/sh.md:5
+msgid "Shell Scripts (bash, zsh, dash, sh) are supported natively by Zed."
+msgstr ""
+
+#: src/languages/sh.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-bash](https://github.com/tree-sitter/"
+"tree-sitter-bash)"
+msgstr ""
+
+#: src/languages/sh.md:9
+msgid "Settings"
+msgstr "設定"
+
+#: src/languages/sh.md:11
+msgid ""
+"Configure settings in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
+"kbd>) under Languages > Shell Script, or add to your settings file:"
+msgstr ""
+
+#: src/languages/sh.md:14 src/languages/sh.md:47
+msgid "\"languages\""
+msgstr "\"languages\""
+
+#: src/languages/sh.md:15 src/languages/sh.md:48
+msgid "\"Shell Script\""
+msgstr ""
+
+#: src/languages/sh.md:16
+msgid "\"tab_size\""
+msgstr ""
+
+#: src/languages/sh.md:17
+msgid "\"hard_tabs\""
+msgstr ""
+
+#: src/languages/sh.md:22
+msgid "Formatting"
+msgstr "格式化"
+
+#: src/languages/sh.md:24
+msgid ""
+"Zed supports auto-formatting Shell Scripts using external tools like "
+"[`shfmt`](https://github.com/mvdan/sh)."
+msgstr ""
+
+#: src/languages/sh.md:26
+msgid "Install `shfmt`:"
+msgstr ""
+
+#: src/languages/sh.md:29
+msgid "# macos (homebrew)\n"
+msgstr ""
+
+#: src/languages/sh.md:30
+msgid "# debian/ubuntu\n"
+msgstr ""
+
+#: src/languages/sh.md:31
+msgid "# fedora\n"
+msgstr ""
+
+#: src/languages/sh.md:32
+msgid "# redhat\n"
+msgstr ""
+
+#: src/languages/sh.md:33
+msgid "# archlinux\n"
+msgstr ""
+
+#: src/languages/sh.md:34
+msgid "# windows (chocolatey)\n"
+msgstr ""
+
+#: src/languages/sh.md:37
+msgid "Ensure `shfmt` is available in your path and check the version:"
+msgstr ""
+
+#: src/languages/sh.md:44
+msgid ""
+"Configure formatting in Settings (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</"
+"kbd>) under Languages > Shell Script, or add to your settings file:"
+msgstr ""
+
+#: src/languages/sh.md:49
+msgid "\"format_on_save\""
+msgstr ""
+
+#: src/languages/sh.md:49
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/sh.md:50
+msgid "\"formatter\""
+msgstr ""
+
+#: src/languages/sh.md:51
+msgid "\"external\""
+msgstr ""
+
+#: src/languages/sh.md:52
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/sh.md:52
+msgid "\"shfmt\""
+msgstr ""
+
+#: src/languages/sh.md:53
+msgid ""
+"// Change `--indent 2` to match your preferred tab_size\n"
+"          \"arguments\""
+msgstr ""
+
+#: src/languages/sh.md:54
+msgid "\"--filename\""
+msgstr ""
+
+#: src/languages/sh.md:54
+msgid "\"{buffer_path}\""
+msgstr ""
+
+#: src/languages/sh.md:54
+msgid "\"--indent\""
+msgstr ""
+
+#: src/languages/sh.md:54
+msgid "\"2\""
+msgstr ""
+
+#: src/languages/sh.md:61
+msgid "See also:"
+msgstr ""
+
+#: src/languages/sh.md:63
+msgid "[Zed Docs: Language Support: Bash](./bash.md)"
+msgstr ""
+
+#: src/languages/sh.md:64
+msgid "[Zed Docs: Language Support: Fish](./fish.md)"
+msgstr ""

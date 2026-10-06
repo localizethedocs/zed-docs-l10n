@@ -1,0 +1,701 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/ai/edit-prediction.md:3
+msgid "Edit Prediction"
+msgstr ""
+
+#: src/ai/edit-prediction.md:5
+msgid ""
+"Edit Prediction is how Zed's AI code completions work: an LLM predicts the "
+"code you want to write. Each keystroke sends a new request to the edit "
+"prediction provider, which returns individual or multi-line suggestions you "
+"accept by pressing `tab`."
+msgstr ""
+
+#: src/ai/edit-prediction.md:8
+msgid ""
+"The default provider is [Zeta, an open source model developed by Zed]"
+"(https://zed.dev/blog/zeta2), but you can also use [other providers](#other-"
+"providers) like GitHub Copilot, Mercury Coder, and Codestral."
+msgstr ""
+
+#: src/ai/edit-prediction.md:10
+msgid "Configuring Zeta"
+msgstr ""
+
+#: src/ai/edit-prediction.md:12
+msgid ""
+"To use Zeta, [sign in](../authentication.md#what-features-require-signing-"
+"in). Once signed in, predictions appear as you type."
+msgstr ""
+
+#: src/ai/edit-prediction.md:15
+msgid ""
+"You can confirm that Zeta is properly configured by opening the [Settings "
+"Editor](zed://settings/edit_predictions.providers) (`Cmd+,` on macOS or "
+"`Ctrl+,` on Linux/Windows) and searching for `edit_predictions`. The "
+"`provider` field should be set to `Zed AI`."
+msgstr ""
+
+#: src/ai/edit-prediction.md:17
+msgid "Or verify this in your settings.json:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:21 src/ai/edit-prediction.md:43
+#: src/ai/edit-prediction.md:181 src/ai/edit-prediction.md:193
+#: src/ai/edit-prediction.md:209 src/ai/edit-prediction.md:223
+#: src/ai/edit-prediction.md:258 src/ai/edit-prediction.md:280
+#: src/ai/edit-prediction.md:296
+msgid "\"edit_predictions\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:22 src/ai/edit-prediction.md:194
+#: src/ai/edit-prediction.md:210 src/ai/edit-prediction.md:259
+#: src/ai/edit-prediction.md:281 src/ai/edit-prediction.md:297
+msgid "\"provider\""
+msgstr "\"provider\""
+
+#: src/ai/edit-prediction.md:22
+msgid "\"zed\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:27
+msgid "The Z icon in the status bar also indicates Zeta is active."
+msgstr ""
+
+#: src/ai/edit-prediction.md:29
+msgid "Pricing and Plans"
+msgstr ""
+
+#: src/ai/edit-prediction.md:31
+msgid ""
+"The free plan includes 2,000 Zeta predictions per month. The [Pro plan](../"
+"ai/plans-and-usage.md) removes this limit. See [Zed's pricing page](https://"
+"zed.dev/pricing) for details."
+msgstr ""
+
+#: src/ai/edit-prediction.md:33
+msgid "Switching Modes"
+msgstr ""
+
+#: src/ai/edit-prediction.md:35
+msgid "Edit Prediction has two display modes:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:37
+msgid ""
+"`eager` (default): predictions are displayed inline as long as it doesn't "
+"conflict with language server completions"
+msgstr ""
+
+#: src/ai/edit-prediction.md:38
+msgid ""
+"`subtle`: predictions only appear inline when holding a modifier key (`alt` "
+"by default)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:40
+msgid "Toggle between them via the `mode` key:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:44
+msgid "\"mode\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:44
+msgid "\"eager\" // or \"subtle\"\n"
+msgstr ""
+
+#: src/ai/edit-prediction.md:48
+msgid "Or directly via the UI through the status bar menu:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:50
+msgid ""
+"![Edit Prediction status bar menu, with the modes toggle.](https://zed.dev/"
+"img/edit-prediction/status-bar-menu.webp)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:52
+msgid "Note that edit prediction modes work with any prediction provider."
+msgstr ""
+
+#: src/ai/edit-prediction.md:54
+msgid "Default Key Bindings"
+msgstr ""
+
+#: src/ai/edit-prediction.md:56
+msgid ""
+"On macOS and Windows, you can accept edit predictions with `alt-tab`. On "
+"Linux, `alt-tab` is often used by the window manager for switching windows, "
+"so `alt-l` is the default key binding for edit predictions."
+msgstr ""
+
+#: src/ai/edit-prediction.md:58
+msgid ""
+"In `eager` mode, you can also use the `tab` key to accept edit predictions, "
+"unless the completion menu is open, in which case `tab` accepts LSP "
+"completions. To use `tab` to insert whitespace, you need to dismiss the "
+"prediction with <kbd class=\"keybinding\">escape\\|escape</kbd> before "
+"hitting `tab`."
+msgstr ""
+
+#: src/ai/edit-prediction.md:60
+msgid ""
+"<code class=\"hljs\">editor: accept next word edit prediction</code> (<kbd "
+"class=\"keybinding\">ctrl-cmd-right\\|alt-k</kbd>) can be used to accept the "
+"current edit prediction up to the next word boundary. <code "
+"class=\"hljs\">editor: accept next line edit prediction</code> (<kbd "
+"class=\"keybinding\">ctrl-cmd-down\\|alt-j</kbd>) can be used to accept the "
+"current edit prediction up to the new line boundary."
+msgstr ""
+
+#: src/ai/edit-prediction.md:63
+msgid "Configuring Edit Prediction Keybindings"
+msgstr ""
+
+#: src/ai/edit-prediction.md:65
+msgid "Keybinding Example: Always Use Tab"
+msgstr ""
+
+#: src/ai/edit-prediction.md:67
+msgid ""
+"To always use `tab` for accepting edit predictions, regardless of whether "
+"the LSP completions menu is open, you can add the following to your keymap:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:69
+msgid ""
+"Open the keymap editor with <code class=\"hljs\">zed: open keymap</code> "
+"(<kbd class=\"keybinding\">cmd-k cmd-s\\|ctrl-k ctrl-s</kbd>), search for "
+"`AcceptEditPrediction`, right click on the binding for `tab` and hit `edit`. "
+"Then change the context the binding is active in to just `Editor && "
+"edit_prediction` and save it."
+msgstr ""
+
+#: src/ai/edit-prediction.md:71 src/ai/edit-prediction.md:92
+#: src/ai/edit-prediction.md:113
+msgid "Alternatively, you can put the following in your `keymap.json`:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:76 src/ai/edit-prediction.md:97
+#: src/ai/edit-prediction.md:118
+msgid "\"context\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:76 src/ai/edit-prediction.md:97
+#: src/ai/edit-prediction.md:118
+msgid "\"Editor && edit_prediction\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:77 src/ai/edit-prediction.md:125
+msgid "\"bindings\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:78 src/ai/edit-prediction.md:99
+msgid "\"tab\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:78 src/ai/edit-prediction.md:99
+#: src/ai/edit-prediction.md:120 src/ai/edit-prediction.md:123
+#: src/ai/edit-prediction.md:126
+msgid "\"editor::AcceptEditPrediction\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:84
+msgid ""
+"After that, <kbd class=\"keybinding\">tab\\|tab</kbd> remains available for "
+"accepting LSP completions."
+msgstr ""
+
+#: src/ai/edit-prediction.md:86
+msgid "Keybinding Example: Always Use Alt-Tab"
+msgstr ""
+
+#: src/ai/edit-prediction.md:88
+msgid ""
+"To stop using `tab` for accepting edit predictions and always use `alt-tab` "
+"instead, unbind the default `tab` binding in the eager edit prediction "
+"context:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:90
+msgid ""
+"Open the keymap editor with <code class=\"hljs\">zed: open keymap</code> "
+"(<kbd class=\"keybinding\">cmd-k cmd-s\\|ctrl-k ctrl-s</kbd>), search for "
+"`AcceptEditPrediction`, right click on the binding for `tab` and delete it."
+msgstr ""
+
+#: src/ai/edit-prediction.md:98 src/ai/edit-prediction.md:119
+msgid "\"unbind\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:105
+msgid ""
+"After that, `alt-tab` remains available for accepting edit predictions, and "
+"on Linux `alt-l` does too unless you unbind it."
+msgstr ""
+
+#: src/ai/edit-prediction.md:107
+msgid "Keybinding Example: Rebind Both Tab and Alt-Tab"
+msgstr ""
+
+#: src/ai/edit-prediction.md:109
+msgid ""
+"To move both default accept bindings to something else, unbind them and add "
+"your replacement:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:111
+msgid ""
+"Open the keymap editor with <code class=\"hljs\">zed: open keymap</code> "
+"(<kbd class=\"keybinding\">cmd-k cmd-s\\|ctrl-k ctrl-s</kbd>), search for "
+"`AcceptEditPrediction`, right click on the binding for `tab` and delete it. "
+"Then right click on the binding for `alt-tab`, select \"Edit\", and record "
+"your desired keystrokes before hitting saving."
+msgstr ""
+
+#: src/ai/edit-prediction.md:120
+msgid "\"alt-tab\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:121
+msgid ""
+"// Add this as well on Windows/Linux\n"
+"      // \"alt-l\": \"editor::AcceptEditPrediction\",\n"
+"      \"tab\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:126
+msgid "\"ctrl-enter\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:132
+msgid ""
+"In this case, because the binding contains the modifier `ctrl`, it will be "
+"used to preview the prediction in subtle mode, or when the completions menu "
+"is open."
+msgstr ""
+
+#: src/ai/edit-prediction.md:134
+msgid "Cleaning Up Older Keymap Entries"
+msgstr ""
+
+#: src/ai/edit-prediction.md:136
+msgid ""
+"If you configured edit prediction keybindings before Zed `v0.229.0`, your "
+"`keymap.json` may have entries that are now redundant."
+msgstr ""
+
+#: src/ai/edit-prediction.md:138
+msgid ""
+"**Old tab workaround**: Before `unbind` existed, the only way to prevent "
+"`tab` from accepting edit predictions was to copy all the default non-edit-"
+"prediction `tab` bindings into your keymap alongside a custom "
+"`AcceptEditPrediction` binding. If your keymap still contains those copy-"
+"pasted entries, delete them and use a single `\"unbind\"` entry as shown in "
+"the examples above."
+msgstr ""
+
+#: src/ai/edit-prediction.md:140
+msgid ""
+"**Renamed context**: The `edit_prediction_conflict` context has been "
+"replaced by `edit_prediction && (showing_completions || "
+"in_leading_whitespace)`. Zed automatically migrates any bindings that used "
+"`edit_prediction_conflict`, so no changes are required on your end."
+msgstr ""
+
+#: src/ai/edit-prediction.md:142
+msgid "Disabling Automatic Edit Prediction"
+msgstr ""
+
+#: src/ai/edit-prediction.md:144
+msgid ""
+"You can disable edit predictions at several levels, or turn them off "
+"entirely."
+msgstr ""
+
+#: src/ai/edit-prediction.md:146
+msgid "Alternatively, consider [using Subtle Mode](#switching-modes)."
+msgstr ""
+
+#: src/ai/edit-prediction.md:148
+msgid "On Buffers"
+msgstr ""
+
+#: src/ai/edit-prediction.md:150
+msgid ""
+"To not have predictions appear automatically as you type, set this in your "
+"settings file ([how to edit](../configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/edit-prediction.md:154 src/ai/edit-prediction.md:169
+msgid "\"show_edit_predictions\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:158
+msgid ""
+"This hides every indication that there is a prediction available, regardless "
+"of [the display mode](#switching-modes) you're in. Still, you can trigger "
+"edit predictions manually by executing <code class=\"hljs\">editor: show "
+"edit prediction</code> or hitting <kbd class=\"keybinding\">alt-tab\\|alt-\\"
+"\\</kbd>."
+msgstr ""
+
+#: src/ai/edit-prediction.md:161
+msgid "For Specific Languages"
+msgstr ""
+
+#: src/ai/edit-prediction.md:163
+msgid ""
+"To not have predictions appear automatically as you type when working with a "
+"specific language, set this in your settings file ([how to edit](../"
+"configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/edit-prediction.md:167
+msgid "\"languages\""
+msgstr "\"languages\""
+
+#: src/ai/edit-prediction.md:168
+msgid "\"Python\""
+msgstr "\"Python\""
+
+#: src/ai/edit-prediction.md:175
+msgid "In Specific Directories"
+msgstr ""
+
+#: src/ai/edit-prediction.md:177
+msgid ""
+"To disable edit predictions for specific directories or files, set this in "
+"your settings file ([how to edit](../configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/edit-prediction.md:182
+msgid "\"disabled_globs\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:182
+msgid "\"~/.config/zed/settings.json\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:187
+msgid "Turning Off Completely"
+msgstr ""
+
+#: src/ai/edit-prediction.md:189
+msgid ""
+"To completely turn off edit prediction across all providers, explicitly set "
+"the settings to `none`, like so:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:194
+msgid "\"none\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:199
+msgid "Configuring Other Providers"
+msgstr ""
+
+#: src/ai/edit-prediction.md:201
+msgid "Edit Prediction also works with other providers."
+msgstr ""
+
+#: src/ai/edit-prediction.md:203
+msgid "GitHub Copilot"
+msgstr ""
+
+#: src/ai/edit-prediction.md:205
+msgid ""
+"To use GitHub Copilot as your provider, set this in your settings file ([how "
+"to edit](../configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/edit-prediction.md:210 src/ai/edit-prediction.md:224
+msgid "\"copilot\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:215
+msgid ""
+"To sign in to GitHub Copilot, click on the Copilot icon in the status bar. A "
+"popup window appears displaying a device code. Click the copy button to copy "
+"the code, then click \"Connect to GitHub\" to open the GitHub verification "
+"page in your browser. Paste the code when prompted. The popup window closes "
+"automatically after successful authorization."
+msgstr ""
+
+#: src/ai/edit-prediction.md:217
+msgid "Using GitHub Copilot Enterprise"
+msgstr ""
+
+#: src/ai/edit-prediction.md:219
+msgid ""
+"If your organization uses GitHub Copilot Enterprise, you can configure Zed "
+"to use your enterprise instance by specifying the enterprise URI in your "
+"settings file ([how to edit](../configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/ai/edit-prediction.md:225
+msgid "\"enterprise_uri\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:225
+msgid "\"https://your.enterprise.domain\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:231
+msgid ""
+"Replace `\"https://your.enterprise.domain\"` with the URL provided by your "
+"GitHub Enterprise administrator (e.g., `https://foo.ghe.com`)."
+msgstr ""
+
+#: src/ai/edit-prediction.md:233
+msgid ""
+"Once set, Zed routes Copilot requests through your enterprise endpoint. When "
+"you sign in by clicking the Copilot icon in the status bar, you are "
+"redirected to your configured enterprise URL to complete authentication. All "
+"other Copilot features and usage remain the same."
+msgstr ""
+
+#: src/ai/edit-prediction.md:237
+msgid ""
+"Copilot can provide multiple completion alternatives, and these can be "
+"navigated with the following actions:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:239
+msgid ""
+"<code class=\"hljs\">editor: next edit prediction</code> (<kbd "
+"class=\"keybinding\">alt-tab\\|alt-\\]</kbd>): To cycle to the next edit "
+"prediction"
+msgstr ""
+
+#: src/ai/edit-prediction.md:240
+msgid ""
+"<code class=\"hljs\">editor: previous edit prediction</code> (<kbd "
+"class=\"keybinding\">alt-shift-tab\\|alt-\\[</kbd>): To cycle to the "
+"previous edit prediction"
+msgstr ""
+
+#: src/ai/edit-prediction.md:242
+msgid "Mercury Coder"
+msgstr ""
+
+#: src/ai/edit-prediction.md:244
+msgid ""
+"To use [Mercury Coder](https://www.inceptionlabs.ai/) by Inception Labs as "
+"your provider:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:246
+msgid ""
+"Open the Settings Editor (<kbd class=\"keybinding\">cmd-,\\|ctrl-,</kbd>)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:247 src/ai/edit-prediction.md:269
+msgid "Search for \"Edit Predictions\" and click **Configure Providers**"
+msgstr ""
+
+#: src/ai/edit-prediction.md:248
+msgid ""
+"Find the Mercury section and enter your API key from the [Inception Labs "
+"dashboard](https://platform.inceptionlabs.ai/dashboard/api-keys)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:251 src/ai/edit-prediction.md:273
+msgid ""
+"Alternatively, click the edit prediction icon in the status bar and select "
+"**Configure Providers** from the menu."
+msgstr ""
+
+#: src/ai/edit-prediction.md:254
+msgid ""
+"After adding your API key, Mercury Coder will appear in the provider "
+"dropdown in the status bar menu, where you can select it. You can also set "
+"it directly in your settings file:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:259
+msgid "\"mercury\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:264
+msgid "Codestral"
+msgstr ""
+
+#: src/ai/edit-prediction.md:266
+msgid "To use Mistral's Codestral as your provider:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:268
+msgid "Open the Settings Editor (`Cmd+,` on macOS, `Ctrl+,` on Linux/Windows)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:270
+msgid ""
+"Find the Codestral section and enter your API key from the [Codestral "
+"dashboard](https://console.mistral.ai/codestral)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:276
+msgid ""
+"After adding your API key, Codestral will appear in the provider dropdown in "
+"the status bar menu, where you can select it. You can also set it directly "
+"in your settings file:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:281
+msgid "\"codestral\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:286
+msgid "Self-Hosted OpenAI-compatible servers"
+msgstr ""
+
+#: src/ai/edit-prediction.md:288
+msgid ""
+"You can use any self-hosted server that implements the OpenAI completion API "
+"format. This works with vLLM, llama.cpp server, LocalAI, and other "
+"compatible servers."
+msgstr ""
+
+#: src/ai/edit-prediction.md:290
+msgid "Configuration"
+msgstr "組態"
+
+#: src/ai/edit-prediction.md:292
+msgid ""
+"Set `open_ai_compatible_api` as your provider and configure the API endpoint:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:297 src/ai/edit-prediction.md:298
+msgid "\"open_ai_compatible_api\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:299
+msgid "\"api_url\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:299
+msgid "\"http://localhost:8080/v1/completions\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:300 src/ai/edit-prediction.md:322
+msgid "\"model\""
+msgstr "\"model\""
+
+#: src/ai/edit-prediction.md:300
+msgid "\"deepseek-coder-6.7b-base\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:301
+msgid "\"prompt_format\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:301
+msgid "\"deepseek_coder\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:302
+msgid "\"max_output_tokens\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:308
+msgid ""
+"The `prompt_format` setting controls how code context is formatted for the "
+"model. Use `\"infer\"` to detect the format from the model name, or specify "
+"one explicitly:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:310
+msgid "`code_llama` - CodeLlama format: `<PRE> prefix <SUF> suffix <MID>`"
+msgstr ""
+
+#: src/ai/edit-prediction.md:311
+msgid ""
+"`star_coder` - StarCoder format: "
+"`<fim_prefix>prefix<fim_suffix>suffix<fim_middle>`"
+msgstr ""
+
+#: src/ai/edit-prediction.md:312
+msgid "`deepseek_coder` - DeepSeek format with special unicode markers"
+msgstr ""
+
+#: src/ai/edit-prediction.md:313
+msgid ""
+"`qwen` - Qwen/CodeGemma format: `<|fim_prefix|>prefix<|fim_suffix|>suffix<|"
+"fim_middle|>`"
+msgstr ""
+
+#: src/ai/edit-prediction.md:314
+msgid "`codestral` - Codestral format: `[SUFFIX]suffix[PREFIX]prefix`"
+msgstr ""
+
+#: src/ai/edit-prediction.md:315
+msgid "`glm` - GLM-4 format with code markers"
+msgstr ""
+
+#: src/ai/edit-prediction.md:316
+msgid "`infer` - Auto-detect from model name (default)"
+msgstr ""
+
+#: src/ai/edit-prediction.md:318
+msgid ""
+"Your server must implement the OpenAI `/v1/completions` endpoint. Edit "
+"predictions will send POST requests with this format:"
+msgstr ""
+
+#: src/ai/edit-prediction.md:322
+msgid "\"your-model-name\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:323
+msgid "\"prompt\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:323
+msgid "\"formatted-code-context\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:324
+msgid "\"max_tokens\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:325
+msgid "\"temperature\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:326
+msgid "\"stop\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:326
+msgid "\"<|endoftext|>\""
+msgstr ""
+
+#: src/ai/edit-prediction.md:330
+msgid "See also"
+msgstr "另請參見"
+
+#: src/ai/edit-prediction.md:332
+msgid ""
+"[Agent Panel](./agent-panel.md): Agentic editing with file read/write and "
+"terminal access"
+msgstr ""
+
+#: src/ai/edit-prediction.md:333
+msgid ""
+"[Inline Assistant](./inline-assistant.md): Prompt-driven transformations on "
+"selected code"
+msgstr ""

@@ -1,0 +1,175 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/worktree-trust.md:3
+msgid "Zed and trusted worktrees"
+msgstr ""
+
+#: src/worktree-trust.md:5
+msgid ""
+"A worktree in Zed is either a directory or a single file that Zed opens as a "
+"standalone \"project\". Zed opens a worktree each time you run `zed some/"
+"path`, drag a file or directory into Zed, or open your user settings file."
+msgstr ""
+
+#: src/worktree-trust.md:8
+msgid ""
+"Every worktree opened may contain a `.zed/settings.json` file with extra "
+"configuration options that may require installing and spawning language "
+"servers or MCP servers. To let users choose based on their own threat model "
+"and risk tolerance, all worktrees start in Restricted Mode. Restricted Mode "
+"prevents downloading and running related items from `.zed/settings.json`. "
+"Until a worktree is trusted, Zed does not run related untrusted actions and "
+"waits for user confirmation. This gives users a chance to review project "
+"settings, MCP servers, and language servers."
+msgstr ""
+
+#: src/worktree-trust.md:11
+msgid ""
+"Zed still trusts tools it installs globally. Global MCP servers and global "
+"language servers such as Prettier and Copilot are installed and started as "
+"usual, independent of worktree trust."
+msgstr ""
+
+#: src/worktree-trust.md:13
+msgid ""
+"If a worktree is not trusted, Zed will indicate this with an exclamation "
+"mark icon in the title bar. Clicking this icon or using `workspace::"
+"ToggleWorktreeSecurity` action will bring up the security modal that allows "
+"the user to trust the worktree."
+msgstr ""
+
+#: src/worktree-trust.md:15
+msgid ""
+"Trusting a worktree persists that decision between restarts. You can clear "
+"all trusted worktrees with the `workspace::ClearTrustedWorktrees` command. "
+"This command will restart Zed, to ensure no untrusted settings, language "
+"servers or MCP servers persist."
+msgstr ""
+
+#: src/worktree-trust.md:18
+msgid ""
+"This feature works locally and on SSH and WSL remote hosts. Zed tracks trust "
+"information per host in these cases."
+msgstr ""
+
+#: src/worktree-trust.md:20
+msgid "What is restricted"
+msgstr ""
+
+#: src/worktree-trust.md:22
+msgid "Restricted Mode prevents:"
+msgstr ""
+
+#: src/worktree-trust.md:24
+msgid "Project settings (`.zed/settings.json`) from being parsed and applied"
+msgstr ""
+
+#: src/worktree-trust.md:25
+msgid "Language servers from being installed and spawned"
+msgstr ""
+
+#: src/worktree-trust.md:26
+msgid "MCP servers from being installed and spawned"
+msgstr ""
+
+#: src/worktree-trust.md:28
+msgid "Configuring broad worktree trust"
+msgstr ""
+
+#: src/worktree-trust.md:30
+msgid ""
+"By default, Zed does not trust new worktrees. Users must trust each new "
+"worktree individually. Though not recommended, users can trust all worktrees "
+"with this setting ([how to edit](./configuring-zed.md#settings-files)):"
+msgstr ""
+
+#: src/worktree-trust.md:33
+msgid "\"session\""
+msgstr ""
+
+#: src/worktree-trust.md:34
+msgid "\"trust_all_worktrees\""
+msgstr ""
+
+#: src/worktree-trust.md:38
+msgid ""
+"Auto-trusted worktrees are not persisted between restarts; only manually "
+"trusted worktrees are. This ensures users make new trust decisions if they "
+"later disable `trust_all_worktrees`."
+msgstr ""
+
+#: src/worktree-trust.md:40
+msgid "Trust hierarchy"
+msgstr ""
+
+#: src/worktree-trust.md:42
+msgid ""
+"These are mostly internal details and may change, but they help explain how "
+"multiple trust requests can be approved at once. Zed has multiple layers of "
+"trust, based on the requests, from the least to most trusted level:"
+msgstr ""
+
+#: src/worktree-trust.md:45
+msgid "\"single file worktree\""
+msgstr ""
+
+#: src/worktree-trust.md:47
+msgid ""
+"After opening an empty Zed window, you can open a single file. You can also "
+"open a file outside the current directory after opening a directory. A "
+"common example is `zed: open settings file`, which may start a language "
+"server for that file and create a new single-file worktree."
+msgstr ""
+
+#: src/worktree-trust.md:50
+msgid ""
+"Spawning a language server presents a risk should the language server "
+"experience a supply-chain attack; therefore, Zed restricts that by default. "
+"Each single file worktree requires a separate trust grant, unless the "
+"directory containing it is trusted or all worktrees are trusted."
+msgstr ""
+
+#: src/worktree-trust.md:52
+msgid "\"directory worktree\""
+msgstr ""
+
+#: src/worktree-trust.md:54
+msgid ""
+"If a directory is open in Zed, it is a full worktree. It may spawn multiple "
+"language servers and MCP servers defined in project settings. Each directory "
+"worktree therefore requires a separate trust grant unless a parent-directory "
+"trust grant exists (see below)."
+msgstr ""
+
+#: src/worktree-trust.md:56
+msgid ""
+"When a directory worktree is trusted, language and MCP servers are permitted "
+"to be downloaded and started, hence we also enable single file worktree "
+"trust for the host in question automatically when this occurs: this helps "
+"when opening single files when using language server features in the trusted "
+"directory worktree."
+msgstr ""
+
+#: src/worktree-trust.md:58
+msgid "\"parent directory worktree\""
+msgstr ""
+
+#: src/worktree-trust.md:60
+msgid ""
+"To permit trust decisions for multiple directory worktrees at once, it's "
+"possible to trust all subdirectories of a given parent directory worktree "
+"opened in Zed by checking the appropriate checkbox. This will grant trust to "
+"all its subdirectories, including all current and potential directory "
+"worktrees."
+msgstr ""
