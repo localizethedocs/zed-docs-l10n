@@ -155,8 +155,8 @@ msgstr ""
 
 #: src/extensions/languages.md:64
 msgid ""
-"Zed uses the syntax tree produced by the [Tree-sitter](https://tree-sitter."
-"github.io) query language to implement several features:"
+"Zed uses the syntax tree produced by the [Tree-sitter](https://tree-"
+"sitter.github.io) query language to implement several features:"
 msgstr ""
 
 #: src/extensions/languages.md:67 src/extensions/languages.md:80
@@ -887,8 +887,8 @@ msgstr ""
 msgid ""
 "For example, in JavaScript, we also disable auto-closing of single quotes "
 "within comments. And the comment scope must extend all the way to the "
-"newline after a line comment. To achieve this, the JavaScript `overrides."
-"scm` contains the following pattern:"
+"newline after a line comment. To achieve this, the JavaScript "
+"`overrides.scm` contains the following pattern:"
 msgstr ""
 
 #: src/extensions/languages.md:294
@@ -920,9 +920,9 @@ msgstr ""
 
 #: src/extensions/languages.md:302
 msgid ""
-"For languages with declarations like C, provide queries that match `@class."
-"around` or `@function.around`. The `if` and `ic` text objects will default "
-"to these if there is no inside."
+"For languages with declarations like C, provide queries that match "
+"`@class.around` or `@function.around`. The `if` and `ic` text objects will "
+"default to these if there is no inside."
 msgstr ""
 
 #: src/extensions/languages.md:304
@@ -1096,8 +1096,8 @@ msgstr ""
 msgid ""
 "The `@run` capture specifies where the run button should appear in the "
 "editor. Other captures, except those prefixed with an underscore, are "
-"exposed as environment variables with a prefix of "
-"`ZED_CUSTOM_$(capture_name)` when running the code."
+"exposed as environment variables with a prefix of `ZED_CUSTOM_$"
+"(capture_name)` when running the code."
 msgstr ""
 
 #: src/extensions/languages.md:385
@@ -1392,8 +1392,8 @@ msgstr ""
 #: src/extensions/languages.md:522
 msgid ""
 "`token_type`: The semantic token type as defined by the [LSP specification]"
-"(https://microsoft.github.io/language-server-protocol/specifications/"
-"lsp/3.17/specification/#textDocument_semanticTokens). If omitted, the rule "
+"(https://microsoft.github.io/language-server-protocol/specifications/lsp/"
+"3.17/specification/#textDocument_semanticTokens). If omitted, the rule "
 "matches all token types."
 msgstr ""
 

@@ -43,9 +43,9 @@ msgstr ""
 
 #: src/authentication.md:14
 msgid ""
-"Zed uses GitHub's OAuth flow to authenticate users, requiring only the `read:"
-"user` GitHub scope, which grants read-only access to your GitHub profile "
-"information."
+"Zed uses GitHub's OAuth flow to authenticate users, requiring only the "
+"`read:user` GitHub scope, which grants read-only access to your GitHub "
+"profile information."
 msgstr ""
 
 #: src/authentication.md:16

@@ -108,8 +108,8 @@ msgstr "進階格式化"
 msgid ""
 "Sql-formatter also allows more precise control by providing [sql-formatter "
 "configuration options](https://github.com/sql-formatter-org/sql-"
-"formatter#configuration-options). To provide these, create a `.sql-formatter."
-"json` file in your project:"
+"formatter#configuration-options). To provide these, create a `.sql-"
+"formatter.json` file in your project:"
 msgstr ""
 
 #: src/languages/sql.md:51

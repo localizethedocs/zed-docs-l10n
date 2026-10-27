@@ -35,8 +35,8 @@ msgid ""
 "typescript/lib` directory in [LSP initialization options](../reference/all-"
 "settings.md#lsp). The actual setting depends on your language server; for "
 "example, for VTSLS set [`typescript.tsdk`](https://github.com/yioneko/vtsls/"
-"blob/6adfb5d3889ad4b82c5e238446b27ae3ee1e3767/packages/service/configuration."
-"schema.json#L5)."
+"blob/6adfb5d3889ad4b82c5e238446b27ae3ee1e3767/packages/service/"
+"configuration.schema.json#L5)."
 msgstr ""
 
 #: src/languages/yarn.md:12

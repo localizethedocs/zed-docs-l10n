@@ -477,8 +477,8 @@ msgstr ""
 
 #: src/remote-development.md:199
 msgid ""
-"Alternatively, you can configure the proxy in the remote machine's `~/."
-"config/zed/settings.json` (Linux) or `~/.zed/settings.json` (macOS):"
+"Alternatively, you can configure the proxy in the remote machine's "
+"`~/.config/zed/settings.json` (Linux) or `~/.zed/settings.json` (macOS):"
 msgstr ""
 
 #: src/remote-development.md:203
@@ -650,6 +650,6 @@ msgstr ""
 
 #: src/remote-development.md:255
 msgid ""
-"Please join the #remoting-feedback channel in the [Zed Discord](https://zed."
-"dev/community-links)."
+"Please join the #remoting-feedback channel in the [Zed Discord](https://"
+"zed.dev/community-links)."
 msgstr ""

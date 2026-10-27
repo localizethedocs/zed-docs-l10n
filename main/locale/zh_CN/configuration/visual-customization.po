@@ -36,9 +36,9 @@ msgstr ""
 
 #: src/visual-customization.md:9
 msgid ""
-"You can install many [themes](./themes.md) and [icon themes](./icon-themes."
-"md) in form of extensions by running <code class=\"hljs\">zed: extensions</"
-"code> from the command palette."
+"You can install many [themes](./themes.md) and [icon themes](./icon-"
+"themes.md) in form of extensions by running <code class=\"hljs\">zed: "
+"extensions</code> from the command palette."
 msgstr ""
 
 #: src/visual-customization.md:11

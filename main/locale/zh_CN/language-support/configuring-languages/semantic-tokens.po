@@ -554,8 +554,8 @@ msgstr ""
 #: src/semantic-tokens.md:180
 msgid ""
 "For the complete specification, see the [LSP Semantic Tokens documentation]"
-"(https://microsoft.github.io/language-server-protocol/specifications/"
-"lsp/3.17/specification/#semanticTokenTypes)."
+"(https://microsoft.github.io/language-server-protocol/specifications/lsp/"
+"3.17/specification/#semanticTokenTypes)."
 msgstr ""
 
 #: src/semantic-tokens.md:182

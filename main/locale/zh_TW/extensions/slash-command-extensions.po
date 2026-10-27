@@ -32,8 +32,9 @@ msgstr ""
 
 #: src/extensions/slash-commands.md:11
 msgid ""
-"This extension can be [installed as a dev extension](./developing-extensions."
-"md#developing-an-extension-locally) if you want to try it out for yourself."
+"This extension can be [installed as a dev extension](./developing-"
+"extensions.md#developing-an-extension-locally) if you want to try it out for "
+"yourself."
 msgstr ""
 
 #: src/extensions/slash-commands.md:13

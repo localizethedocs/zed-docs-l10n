@@ -123,9 +123,9 @@ msgstr ""
 
 #: src/troubleshooting.md:42
 msgid ""
-"Xcode Instruments (which comes bundled with your [Xcode](https://apps.apple."
-"com/us/app/xcode/id497799835) download) is the standard tool for profiling "
-"on macOS."
+"Xcode Instruments (which comes bundled with your [Xcode](https://"
+"apps.apple.com/us/app/xcode/id497799835) download) is the standard tool for "
+"profiling on macOS."
 msgstr ""
 
 #: src/troubleshooting.md:44

@@ -18,8 +18,8 @@ msgstr "除錯器擴充功能"
 #: src/extensions/debugger-extensions.md:5
 msgid ""
 "[Debug Adapter Protocol](https://microsoft.github.io/debug-adapter-protocol) "
-"Servers can be exposed as extensions for use in the [debugger](../debugger."
-"md)."
+"Servers can be exposed as extensions for use in the [debugger](../"
+"debugger.md)."
 msgstr ""
 
 #: src/extensions/debugger-extensions.md:7
@@ -75,9 +75,9 @@ msgstr ""
 
 #: src/extensions/debugger-extensions.md:50
 msgid ""
-"These two functions are sufficient to expose your debug adapter in `debug."
-"json`\\-based user workflows, but you should strongly consider implementing "
-"`dap_config_to_scenario` as well."
+"These two functions are sufficient to expose your debug adapter in "
+"`debug.json`\\-based user workflows, but you should strongly consider "
+"implementing `dap_config_to_scenario` as well."
 msgstr ""
 
 #: src/extensions/debugger-extensions.md:61

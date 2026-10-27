@@ -195,9 +195,9 @@ msgstr ""
 
 #: src/project-panel.md:85
 msgid ""
-"When pasting would create a name conflict, Zed appends a \"copy\" suffix (e."
-"g., `file copy.txt`, `file copy 2.txt`). If a single file is pasted with a "
-"generated suffix, the rename editor opens automatically so you can adjust "
+"When pasting would create a name conflict, Zed appends a \"copy\" suffix "
+"(e.g., `file copy.txt`, `file copy 2.txt`). If a single file is pasted with "
+"a generated suffix, the rename editor opens automatically so you can adjust "
 "the name."
 msgstr ""
 

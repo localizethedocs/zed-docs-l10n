@@ -72,8 +72,8 @@ msgstr ""
 
 #: src/languages/scala.md:24
 msgid ""
-"`.scalafix.conf` file - See [Scalafix Configuration](https://scalacenter."
-"github.io/scalafix/docs/users/configuration.html)"
+"`.scalafix.conf` file - See [Scalafix Configuration](https://"
+"scalacenter.github.io/scalafix/docs/users/configuration.html)"
 msgstr ""
 
 #: src/languages/scala.md:25

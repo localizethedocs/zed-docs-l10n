@@ -39,8 +39,8 @@ msgstr ""
 
 #: src/languages/terraform.md:16
 msgid ""
-"The Terraform language server can be configured in your `settings.json`, e."
-"g.:"
+"The Terraform language server can be configured in your `settings.json`, "
+"e.g.:"
 msgstr ""
 
 #: src/languages/terraform.md:20

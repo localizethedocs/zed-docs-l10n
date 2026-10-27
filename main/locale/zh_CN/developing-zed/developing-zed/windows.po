@@ -250,9 +250,9 @@ msgstr ""
 #: src/development/windows.md:117
 msgid ""
 "Zed does not support unofficial MSYS2 Zed packages built for Mingw-w64. "
-"Please report any issues you may have with [mingw-w64-zed](https://packages."
-"msys2.org/base/mingw-w64-zed) to [msys2/MINGW-packages/issues](https://"
-"github.com/msys2/MINGW-packages/issues?q=is%3Aissue+is%3Aopen+zed)."
+"Please report any issues you may have with [mingw-w64-zed](https://"
+"packages.msys2.org/base/mingw-w64-zed) to [msys2/MINGW-packages/issues]"
+"(https://github.com/msys2/MINGW-packages/issues?q=is%3Aissue+is%3Aopen+zed)."
 msgstr ""
 
 #: src/development/windows.md:119
@@ -460,8 +460,8 @@ msgstr ""
 
 #: src/development/windows.md:237
 msgid ""
-"For more information on this, please see [win32 docs](https://learn."
-"microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?"
+"For more information on this, please see [win32 docs](https://"
+"learn.microsoft.com/en-us/windows/win32/fileio/maximum-file-path-limitation?"
 "tabs=powershell)"
 msgstr ""
 

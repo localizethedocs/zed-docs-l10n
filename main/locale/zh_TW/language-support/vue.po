@@ -124,8 +124,8 @@ msgstr ""
 msgid ""
 "You can find the upstream settings configuration schema [`here`](https://"
 "github.com/vuejs/language-tools/blob/"
-"ee5041d27940cf6f9a5150635d3b13140a9dff54/extensions/vscode/package."
-"json#L252)."
+"ee5041d27940cf6f9a5150635d3b13140a9dff54/extensions/vscode/"
+"package.json#L252)."
 msgstr ""
 
 #: src/languages/vue.md:60

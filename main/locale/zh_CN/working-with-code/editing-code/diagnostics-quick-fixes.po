@@ -71,9 +71,10 @@ msgstr ""
 #: src/diagnostics.md:29
 msgid ""
 "The diagnostics could be hovered to display a tooltip with full, rendered "
-"diagnostic message. Or, `editor::GoToDiagnostic` and `editor::"
-"GoToPreviousDiagnostic` could be used to navigate between diagnostics in the "
-"editor, showing a popover for the currently active diagnostic."
+"diagnostic message. Or, `editor::GoToDiagnostic` and "
+"`editor::GoToPreviousDiagnostic` could be used to navigate between "
+"diagnostics in the editor, showing a popover for the currently active "
+"diagnostic."
 msgstr ""
 
 #: src/diagnostics.md:32

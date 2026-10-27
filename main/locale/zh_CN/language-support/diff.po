@@ -21,8 +21,8 @@ msgstr ""
 
 #: src/languages/diff.md:7
 msgid ""
-"Tree-sitter: [zed-industries/the-mikedavis/tree-sitter-diff](https://github."
-"com/the-mikedavis/tree-sitter-diff)"
+"Tree-sitter: [zed-industries/the-mikedavis/tree-sitter-diff](https://"
+"github.com/the-mikedavis/tree-sitter-diff)"
 msgstr ""
 
 #: src/languages/diff.md:9

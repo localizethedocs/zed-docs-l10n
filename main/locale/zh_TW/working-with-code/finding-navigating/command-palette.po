@@ -24,8 +24,8 @@ msgstr ""
 
 #: src/command-palette.md:7
 msgid ""
-"![The opened Command Palette](https://zed.dev/img/features/command-palette."
-"jpg)"
+"![The opened Command Palette](https://zed.dev/img/features/command-"
+"palette.jpg)"
 msgstr ""
 
 #: src/command-palette.md:9

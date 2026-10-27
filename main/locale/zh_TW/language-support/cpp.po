@@ -47,8 +47,8 @@ msgstr ""
 #: src/languages/cpp.md:16
 msgid ""
 "If you want to install a pre-release `clangd` version instead you can "
-"instruct Zed to do so by setting `pre_release` to `true` in your `settings."
-"json`:"
+"instruct Zed to do so by setting `pre_release` to `true` in your "
+"`settings.json`:"
 msgstr ""
 
 #: src/languages/cpp.md:20 src/languages/cpp.md:34 src/languages/cpp.md:48
@@ -135,8 +135,8 @@ msgstr ""
 
 #: src/languages/cpp.md:83
 msgid ""
-"# yaml-language-server: $schema=https://json.schemastore.org/clang-format-21."
-"x.json\n"
+"# yaml-language-server: $schema=https://json.schemastore.org/clang-"
+"format-21.x.json\n"
 msgstr ""
 
 #: src/languages/cpp.md:84
@@ -383,8 +383,8 @@ msgstr "協定擴充功能"
 
 #: src/languages/cpp.md:168
 msgid ""
-"Zed currently implements the following `clangd` [extensions](https://clangd."
-"llvm.org/extensions):"
+"Zed currently implements the following `clangd` [extensions](https://"
+"clangd.llvm.org/extensions):"
 msgstr ""
 
 #: src/languages/cpp.md:170

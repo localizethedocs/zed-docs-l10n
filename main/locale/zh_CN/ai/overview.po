@@ -51,8 +51,8 @@ msgstr ""
 #: src/ai/overview.md:13
 msgid ""
 "**External agents.** Run Claude Agent, Gemini CLI, Codex, and other CLI-"
-"based agents directly in Zed through the [Agent Client Protocol](https://zed."
-"dev/acp). See [External Agents](./external-agents.md)."
+"based agents directly in Zed through the [Agent Client Protocol](https://"
+"zed.dev/acp). See [External Agents](./external-agents.md)."
 msgstr ""
 
 #: src/ai/overview.md:14

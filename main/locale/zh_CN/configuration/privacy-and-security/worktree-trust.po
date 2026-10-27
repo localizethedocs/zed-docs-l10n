@@ -48,17 +48,17 @@ msgstr ""
 #: src/worktree-trust.md:11
 msgid ""
 "If a worktree is not trusted, Zed will indicate this with an exclamation "
-"mark icon in the title bar. Clicking this icon or using `workspace::"
-"ToggleWorktreeSecurity` action will bring up the security modal that allows "
-"the user to trust the worktree."
+"mark icon in the title bar. Clicking this icon or using "
+"`workspace::ToggleWorktreeSecurity` action will bring up the security modal "
+"that allows the user to trust the worktree."
 msgstr ""
 
 #: src/worktree-trust.md:13
 msgid ""
 "Trusting any worktree will persist this information between restarts. It's "
-"possible to clear all trusted worktrees with `workspace::"
-"ClearTrustedWorktrees` command. This command will restart Zed, to ensure no "
-"untrusted settings, language servers or MCP servers persist."
+"possible to clear all trusted worktrees with "
+"`workspace::ClearTrustedWorktrees` command. This command will restart Zed, "
+"to ensure no untrusted settings, language servers or MCP servers persist."
 msgstr ""
 
 #: src/worktree-trust.md:16

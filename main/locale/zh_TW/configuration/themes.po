@@ -45,8 +45,8 @@ msgstr "安裝更多主題"
 #: src/themes.md:13
 msgid ""
 "More themes are available from the Extensions page, which you can access via "
-"the command palette with `zed: extensions` or the [Zed website](https://zed."
-"dev/extensions?filter=themes)."
+"the command palette with `zed: extensions` or the [Zed website](https://"
+"zed.dev/extensions?filter=themes)."
 msgstr ""
 
 #: src/themes.md:15
@@ -182,9 +182,9 @@ msgstr ""
 
 #: src/themes.md:68
 msgid ""
-"To see a comprehensive list of list of captures (like `comment` and `comment."
-"doc`) see [Language Extensions: Syntax highlighting](./extensions/languages."
-"md#syntax-highlighting)."
+"To see a comprehensive list of list of captures (like `comment` and "
+"`comment.doc`) see [Language Extensions: Syntax highlighting](./extensions/"
+"languages.md#syntax-highlighting)."
 msgstr ""
 
 #: src/themes.md:70

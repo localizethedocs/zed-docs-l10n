@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/languages/racket.md:5
 msgid ""
-"Racket support is available through the [Racket extension](https://github."
-"com/zed-extensions/racket)."
+"Racket support is available through the [Racket extension](https://"
+"github.com/zed-extensions/racket)."
 msgstr ""
 
 #: src/languages/racket.md:7

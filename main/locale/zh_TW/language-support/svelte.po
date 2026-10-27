@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/languages/svelte.md:5
 msgid ""
-"Svelte support is available through the [Svelte extension](https://github."
-"com/zed-extensions/svelte)."
+"Svelte support is available through the [Svelte extension](https://"
+"github.com/zed-extensions/svelte)."
 msgstr ""
 
 #: src/languages/svelte.md:7
@@ -164,8 +164,8 @@ msgstr ""
 #: src/languages/svelte.md:75
 msgid ""
 "See [the TypeScript language server `package.json`](https://github.com/"
-"microsoft/vscode/blob/main/extensions/typescript-language-features/package."
-"json) for more information."
+"microsoft/vscode/blob/main/extensions/typescript-language-features/"
+"package.json) for more information."
 msgstr ""
 
 #: src/languages/svelte.md:77

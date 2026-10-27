@@ -40,8 +40,8 @@ msgstr ""
 msgid ""
 "When there is an appropriate language server available, Zed will provide "
 "completions of variable names, functions, and other symbols in the current "
-"file. You can disable these by adding the following to your Zed `settings."
-"json` file:"
+"file. You can disable these by adding the following to your Zed "
+"`settings.json` file:"
 msgstr ""
 
 #: src/completions.md:13

@@ -36,8 +36,8 @@ msgstr ""
 #: src/helix.md:9
 msgid ""
 "To check the current status of Helix mode, or to request a missing Helix "
-"feature, checkout out the [\"Are we Helix yet?\" discussion](https://github."
-"com/zed-industries/zed/discussions/33580)."
+"feature, checkout out the [\"Are we Helix yet?\" discussion](https://"
+"github.com/zed-industries/zed/discussions/33580)."
 msgstr ""
 
 #: src/helix.md:11

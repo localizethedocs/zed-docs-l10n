@@ -72,10 +72,10 @@ msgstr ""
 
 #: src/performance.md:37
 msgid ""
-"Download the profiler: [linux x86_64](https://zed-tracy-import-miniprofiler."
-"nyc3.digitaloceanspaces.com/tracy-profiler-linux-x86_64) [macos aarch64]"
-"(https://zed-tracy-import-miniprofiler.nyc3.digitaloceanspaces.com/tracy-"
-"profiler-0.13.0-macos-aarch64)"
+"Download the profiler: [linux x86_64](https://zed-tracy-import-"
+"miniprofiler.nyc3.digitaloceanspaces.com/tracy-profiler-linux-x86_64) [macos "
+"aarch64](https://zed-tracy-import-miniprofiler.nyc3.digitaloceanspaces.com/"
+"tracy-profiler-0.13.0-macos-aarch64)"
 msgstr ""
 
 #: src/performance.md:41 src/performance.md:109
@@ -92,8 +92,8 @@ msgstr ""
 
 #: src/performance.md:45 src/performance.md:113
 msgid ""
-"Run cmake to generate build files: `cmake -G Ninja -"
-"DCMAKE_BUILD_TYPE=Release ..`"
+"Run cmake to generate build files: `cmake -G Ninja "
+"-DCMAKE_BUILD_TYPE=Release ..`"
 msgstr ""
 
 #: src/performance.md:46
@@ -198,10 +198,11 @@ msgstr ""
 
 #: src/performance.md:105
 msgid ""
-"Download the importer [linux x86_64](https://zed-tracy-import-miniprofiler."
-"nyc3.digitaloceanspaces.com/tracy-import-miniprofiler-linux-x86_64) [mac "
-"aarch64](https://zed-tracy-import-miniprofiler.nyc3.digitaloceanspaces.com/"
-"tracy-import-miniprofiler-macos-aarch64)"
+"Download the importer [linux x86_64](https://zed-tracy-import-"
+"miniprofiler.nyc3.digitaloceanspaces.com/tracy-import-miniprofiler-linux-"
+"x86_64) [mac aarch64](https://zed-tracy-import-"
+"miniprofiler.nyc3.digitaloceanspaces.com/tracy-import-miniprofiler-macos-"
+"aarch64)"
 msgstr ""
 
 #: src/performance.md:111
@@ -235,9 +236,9 @@ msgstr ""
 
 #: src/performance.md:118
 msgid ""
-"If you're on other platforms open it on the website: https://tracy.nereid."
-"pl/ (the version might mismatch so your luck might vary, we need to host our "
-"own ideally..)"
+"If you're on other platforms open it on the website: https://"
+"tracy.nereid.pl/ (the version might mismatch so your luck might vary, we "
+"need to host our own ideally..)"
 msgstr ""
 
 #: src/performance.md:120
@@ -257,8 +258,8 @@ msgstr ""
 #: src/performance.md:124
 msgid ""
 "Convert the profile so it can be imported in tracy using the importer: `./"
-"tracy-import-miniprofiler <path to performance_profile.miniprof.json> output."
-"tracy`"
+"tracy-import-miniprofiler <path to performance_profile.miniprof.json> "
+"output.tracy`"
 msgstr ""
 
 #: src/performance.md:125

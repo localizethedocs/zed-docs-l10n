@@ -168,8 +168,8 @@ msgstr ""
 
 #: src/git.md:58
 msgid ""
-"To disable word diff for specific languages only, add this to your settings."
-"json:"
+"To disable word diff for specific languages only, add this to your "
+"settings.json:"
 msgstr ""
 
 #: src/git.md:62
@@ -737,8 +737,9 @@ msgstr ""
 #: src/git.md:265
 msgid ""
 "Zed currently supports links to the hosted versions of [GitHub](https://"
-"github.com), [GitLab](https://gitlab.com), [Bitbucket](https://bitbucket."
-"org), [SourceHut](https://sr.ht) and [Codeberg](https://codeberg.org)."
+"github.com), [GitLab](https://gitlab.com), [Bitbucket](https://"
+"bitbucket.org), [SourceHut](https://sr.ht) and [Codeberg](https://"
+"codeberg.org)."
 msgstr ""
 
 #: src/git.md:272
@@ -811,10 +812,10 @@ msgid ""
 "snippet on your Git hosting service. These links are useful for sharing a "
 "specific line or range of lines in a file at a specific commit. Trigger this "
 "action via the [Command Palette](./getting-started.md#command-palette) "
-"(search for `permalink`), by creating a [custom key bindings](key-bindings."
-"md#custom-key-bindings) to the `editor::CopyPermalinkToLine` or `editor::"
-"OpenPermalinkToLine` actions or by simply right clicking and selecting `Copy "
-"Permalink` with line(s) selected in your editor."
+"(search for `permalink`), by creating a [custom key bindings](key-"
+"bindings.md#custom-key-bindings) to the `editor::CopyPermalinkToLine` or "
+"`editor::OpenPermalinkToLine` actions or by simply right clicking and "
+"selecting `Copy Permalink` with line(s) selected in your editor."
 msgstr ""
 
 #: src/git.md:303

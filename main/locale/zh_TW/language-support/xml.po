@@ -34,8 +34,8 @@ msgstr "組態"
 #: src/languages/xml.md:11
 msgid ""
 "If you have additional file extensions that are not being automatically "
-"recognized as XML just add them to [file_types](../reference/all-settings."
-"md#file-types) in your Zed settings:"
+"recognized as XML just add them to [file_types](../reference/all-"
+"settings.md#file-types) in your Zed settings:"
 msgstr ""
 
 #: src/languages/xml.md:14

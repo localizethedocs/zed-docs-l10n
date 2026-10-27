@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/languages/erlang.md:5
 msgid ""
-"Erlang support is available through the [Erlang extension](https://github."
-"com/zed-extensions/erlang)."
+"Erlang support is available through the [Erlang extension](https://"
+"github.com/zed-extensions/erlang)."
 msgstr ""
 
 #: src/languages/erlang.md:7

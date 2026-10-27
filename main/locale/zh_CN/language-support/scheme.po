@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/languages/scheme.md:5
 msgid ""
-"Scheme support is available through the [Scheme extension](https://github."
-"com/zed-extensions/scheme)."
+"Scheme support is available through the [Scheme extension](https://"
+"github.com/zed-extensions/scheme)."
 msgstr ""
 
 #: src/languages/scheme.md:7

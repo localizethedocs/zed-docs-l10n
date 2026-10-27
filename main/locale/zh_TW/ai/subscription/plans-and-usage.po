@@ -81,8 +81,8 @@ msgid ""
 "Zed of $20 ($10 for your Pro subscription, $10 in incremental token spend). "
 "This can be set to $0 to limit your spend with Zed to exactly $10/month. If "
 "you adjust this limit _higher_ than $10 and consume more than $10 of "
-"incremental token spend, you'll be billed via [threshold billing](./billing."
-"md#threshold-billing)."
+"incremental token spend, you'll be billed via [threshold billing](./"
+"billing.md#threshold-billing)."
 msgstr ""
 
 #: src/ai/plans-and-usage.md:27

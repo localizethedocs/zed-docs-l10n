@@ -649,9 +649,9 @@ msgstr ""
 
 #: src/migrate/pycharm.md:173
 msgid ""
-"For code inspection similar to PyCharm's \"Inspect Code,\" run `ruff check ."
-"` or check the Diagnostics panel (`Cmd+6`)—basedpyright and Ruff together "
-"catch many of the same issues"
+"For code inspection similar to PyCharm's \"Inspect Code,\" run `ruff "
+"check .` or check the Diagnostics panel (`Cmd+6`)—basedpyright and Ruff "
+"together catch many of the same issues"
 msgstr ""
 
 #: src/migrate/pycharm.md:175
@@ -672,8 +672,8 @@ msgstr ""
 
 #: src/migrate/pycharm.md:181
 msgid ""
-"Zed automatically discovers virtual environments in common locations (`."
-"venv`, `venv`, `.env`, `env`)"
+"Zed automatically discovers virtual environments in common locations "
+"(`.venv`, `venv`, `.env`, `env`)"
 msgstr ""
 
 #: src/migrate/pycharm.md:182

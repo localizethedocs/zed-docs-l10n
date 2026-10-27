@@ -17,8 +17,8 @@ msgstr "Elixir"
 
 #: src/languages/elixir.md:5
 msgid ""
-"Elixir support is available through the [Elixir extension](https://github."
-"com/zed-extensions/elixir)."
+"Elixir support is available through the [Elixir extension](https://"
+"github.com/zed-extensions/elixir)."
 msgstr ""
 
 #: src/languages/elixir.md:7
@@ -134,9 +134,9 @@ msgstr ""
 
 #: src/languages/elixir.md:43
 msgid ""
-"See the official list of [ElixirLS configuration settings](https://github."
-"com/elixir-lsp/elixir-ls#elixirls-configuration-settings) for all available "
-"options."
+"See the official list of [ElixirLS configuration settings](https://"
+"github.com/elixir-lsp/elixir-ls#elixirls-configuration-settings) for all "
+"available options."
 msgstr ""
 
 #: src/languages/elixir.md:45
@@ -379,9 +379,9 @@ msgstr ""
 
 #: src/languages/elixir.md:179
 msgid ""
-"Next LS also has an extension for [Credo](https://hexdocs.pm/credo/overview."
-"html) integration which is enabled by default. You can disable this by "
-"adding the following section to your settings file:"
+"Next LS also has an extension for [Credo](https://hexdocs.pm/credo/"
+"overview.html) integration which is enabled by default. You can disable this "
+"by adding the following section to your settings file:"
 msgstr ""
 
 #: src/languages/elixir.md:185 src/languages/elixir.md:201

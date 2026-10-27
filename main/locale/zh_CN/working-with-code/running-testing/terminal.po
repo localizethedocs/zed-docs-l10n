@@ -697,8 +697,8 @@ msgstr ""
 
 #: src/terminal.md:333
 msgid ""
-"The title can be set by your shell using the escape sequence `\\e]2;"
-"Title\\007`."
+"The title can be set by your shell using the escape sequence "
+"`\\e]2;Title\\007`."
 msgstr ""
 
 #: src/terminal.md:335

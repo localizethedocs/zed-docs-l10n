@@ -127,9 +127,9 @@ msgstr ""
 #: src/ai/llm-providers.md:39
 msgid ""
 "Supports tool use with models that support streaming tool use. More details "
-"can be found in the [Amazon Bedrock's Tool Use documentation](https://docs."
-"aws.amazon.com/bedrock/latest/userguide/conversation-inference-supported-"
-"models-features.html)."
+"can be found in the [Amazon Bedrock's Tool Use documentation](https://"
+"docs.aws.amazon.com/bedrock/latest/userguide/conversation-inference-"
+"supported-models-features.html)."
 msgstr ""
 
 #: src/ai/llm-providers.md:42
@@ -270,8 +270,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:89
 msgid ""
-"Create an IAM User in the [IAM Console](https://us-east-1.console.aws.amazon."
-"com/iam/home?region=us-east-1#/users)."
+"Create an IAM User in the [IAM Console](https://us-"
+"east-1.console.aws.amazon.com/iam/home?region=us-east-1#/users)."
 msgstr ""
 
 #: src/ai/llm-providers.md:90
@@ -304,8 +304,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:98
 msgid ""
-"Create an API Key in the [Amazon Bedrock Console](https://console.aws.amazon."
-"com/bedrock/)"
+"Create an API Key in the [Amazon Bedrock Console](https://"
+"console.aws.amazon.com/bedrock/)"
 msgstr ""
 
 #: src/ai/llm-providers.md:100
@@ -331,10 +331,10 @@ msgstr ""
 #: src/ai/llm-providers.md:117
 msgid ""
 "The Zed implementation of Amazon Bedrock uses [Cross-Region inference]"
-"(https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference."
-"html) to improve availability and throughput. With Cross-Region inference, "
-"you can distribute traffic across multiple AWS Regions, enabling higher "
-"throughput."
+"(https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-"
+"inference.html) to improve availability and throughput. With Cross-Region "
+"inference, you can distribute traffic across multiple AWS Regions, enabling "
+"higher throughput."
 msgstr ""
 
 #: src/ai/llm-providers.md:120
@@ -391,15 +391,16 @@ msgstr ""
 msgid ""
 "We will support Cross-Region inference for each of the models on a best-"
 "effort basis, please refer to the [Cross-Region Inference method Code]"
-"(https://github.com/zed-industries/zed/blob/main/crates/bedrock/src/models."
-"rs#L297)."
+"(https://github.com/zed-industries/zed/blob/main/crates/bedrock/src/"
+"models.rs#L297)."
 msgstr ""
 
 #: src/ai/llm-providers.md:149
 msgid ""
 "For the most up-to-date supported regions and models, refer to the "
-"[Supported Models and Regions for Cross Region inference](https://docs.aws."
-"amazon.com/bedrock/latest/userguide/inference-profiles-support.html)."
+"[Supported Models and Regions for Cross Region inference](https://"
+"docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles-"
+"support.html)."
 msgstr ""
 
 #: src/ai/llm-providers.md:151
@@ -588,10 +589,10 @@ msgstr ""
 
 #: src/ai/llm-providers.md:216
 msgid ""
-"You can configure a model to use [extended thinking](https://docs.anthropic."
-"com/en/docs/about-claude/models/extended-thinking-models) (if it supports "
-"it) by changing the mode in your model's configuration to `thinking`, for "
-"example:"
+"You can configure a model to use [extended thinking](https://"
+"docs.anthropic.com/en/docs/about-claude/models/extended-thinking-models) (if "
+"it supports it) by changing the mode in your model's configuration to "
+"`thinking`, for example:"
 msgstr ""
 
 #: src/ai/llm-providers.md:220
@@ -628,8 +629,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:232
 msgid ""
-"Visit the DeepSeek platform and [create an API key](https://platform."
-"deepseek.com/api_keys)"
+"Visit the DeepSeek platform and [create an API key](https://"
+"platform.deepseek.com/api_keys)"
 msgstr ""
 
 #: src/ai/llm-providers.md:233
@@ -752,8 +753,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:289
 msgid ""
-"Go to the Google AI Studio site and [create an API key](https://aistudio."
-"google.com/app/apikey)."
+"Go to the Google AI Studio site and [create an API key](https://"
+"aistudio.google.com/app/apikey)."
 msgstr ""
 
 #: src/ai/llm-providers.md:290
@@ -780,12 +781,13 @@ msgstr ""
 #: src/ai/llm-providers.md:299
 msgid ""
 "By default, Zed will use `stable` versions of models, but you can use "
-"specific versions of models, including [experimental models](https://ai."
-"google.dev/gemini-api/docs/models/experimental-models). You can configure a "
-"model to use [thinking mode](https://ai.google.dev/gemini-api/docs/thinking) "
-"(if it supports it) by adding a `mode` configuration to your model. This is "
-"useful for controlling reasoning token usage and response speed. If not "
-"specified, Gemini will automatically choose the thinking budget."
+"specific versions of models, including [experimental models](https://"
+"ai.google.dev/gemini-api/docs/models/experimental-models). You can configure "
+"a model to use [thinking mode](https://ai.google.dev/gemini-api/docs/"
+"thinking) (if it supports it) by adding a `mode` configuration to your "
+"model. This is useful for controlling reasoning token usage and response "
+"speed. If not specified, Gemini will automatically choose the thinking "
+"budget."
 msgstr ""
 
 #: src/ai/llm-providers.md:301
@@ -847,8 +849,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:353
 msgid ""
-"Visit the Mistral platform and [create an API key](https://console.mistral."
-"ai/api-keys/)"
+"Visit the Mistral platform and [create an API key](https://"
+"console.mistral.ai/api-keys/)"
 msgstr ""
 
 #: src/ai/llm-providers.md:354
@@ -1115,8 +1117,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:511
 msgid ""
-"Visit the OpenAI platform and [create an API key](https://platform.openai."
-"com/account/api-keys)"
+"Visit the OpenAI platform and [create an API key](https://"
+"platform.openai.com/account/api-keys)"
 msgstr ""
 
 #: src/ai/llm-providers.md:512
@@ -1198,8 +1200,8 @@ msgstr ""
 #: src/ai/llm-providers.md:556
 msgid ""
 "You must provide the model's context window in the `max_tokens` parameter; "
-"this can be found in the [OpenAI model documentation](https://platform."
-"openai.com/docs/models)."
+"this can be found in the [OpenAI model documentation](https://"
+"platform.openai.com/docs/models)."
 msgstr ""
 
 #: src/ai/llm-providers.md:558
@@ -1243,8 +1245,8 @@ msgstr ""
 
 #: src/ai/llm-providers.md:574
 msgid ""
-"To do it via your settings file ([how to edit](../configuring-zed."
-"md#settings-files)), add the following snippet under `language_models`:"
+"To do it via your settings file ([how to edit](../configuring-"
+"zed.md#settings-files)), add the following snippet under `language_models`:"
 msgstr ""
 
 #: src/ai/llm-providers.md:579
@@ -1424,8 +1426,8 @@ msgstr ""
 msgid ""
 "The Zed agent comes pre-configured with OpenCode models. If you wish to use "
 "newer models or models with custom endpoints, you can do so by adding the "
-"following to your Zed settings file ([how to edit](../configuring-zed."
-"md#settings-files)):"
+"following to your Zed settings file ([how to edit](../configuring-"
+"zed.md#settings-files)):"
 msgstr ""
 
 #: src/ai/llm-providers.md:658
@@ -1897,8 +1899,8 @@ msgstr ""
 msgid ""
 "The Zed agent comes pre-configured with common Grok models. If you wish to "
 "use alternate models or customize their parameters, you can do so by adding "
-"the following to your Zed settings file ([how to edit](../configuring-zed."
-"md#settings-files)):"
+"the following to your Zed settings file ([how to edit](../configuring-"
+"zed.md#settings-files)):"
 msgstr ""
 
 #: src/ai/llm-providers.md:859

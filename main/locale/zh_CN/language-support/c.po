@@ -95,8 +95,8 @@ msgstr ""
 
 #: src/languages/c.md:36
 msgid ""
-"# yaml-language-server: $schema=https://json.schemastore.org/clang-format-21."
-"x.json\n"
+"# yaml-language-server: $schema=https://json.schemastore.org/clang-"
+"format-21.x.json\n"
 msgstr ""
 
 #: src/languages/c.md:37

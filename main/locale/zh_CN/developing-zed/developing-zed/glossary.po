@@ -63,9 +63,9 @@ msgstr ""
 #: src/development/glossary.md:31
 msgid ""
 "`Context`: A wrapper around `App` with specialized behavior for a specific "
-"`Entity`. You can think of it as `(&mut App, Entity<V>)`. For example, `App::"
-"spawn` takes `AsyncFnOnce(AsyncApp) -> Ret`, while `Context::spawn` takes "
-"`AsyncFnOnce(WeakEntity<V>, AsyncApp) -> Ret`."
+"`Entity`. You can think of it as `(&mut App, Entity<V>)`. For example, "
+"`App::spawn` takes `AsyncFnOnce(AsyncApp) -> Ret`, while `Context::spawn` "
+"takes `AsyncFnOnce(WeakEntity<V>, AsyncApp) -> Ret`."
 msgstr ""
 
 #: src/development/glossary.md:32
@@ -112,8 +112,8 @@ msgstr ""
 #: src/development/glossary.md:40
 msgid ""
 "`WeakEntity`: A runtime checked reference to an `Entity` which may no longer "
-"exist. Similar to [`std::rc::Weak`](https://doc.rust-lang.org/std/rc/struct."
-"Weak.html)."
+"exist. Similar to [`std::rc::Weak`](https://doc.rust-lang.org/std/rc/"
+"struct.Weak.html)."
 msgstr ""
 
 #: src/development/glossary.md:41

@@ -767,14 +767,14 @@ msgstr ""
 
 #: src/reference/all-settings.md:332
 msgid ""
-"Default: `.ZedMono`. This currently aliases to [Lilex](https://lilex.myrt."
-"co)."
+"Default: `.ZedMono`. This currently aliases to [Lilex](https://"
+"lilex.myrt.co)."
 msgstr ""
 
 #: src/reference/all-settings.md:336
 msgid ""
-"The name of any font family installed on the user's system, or `\"."
-"ZedMono\"`."
+"The name of any font family installed on the user's system, or "
+"`\".ZedMono\"`."
 msgstr ""
 
 #: src/reference/all-settings.md:338
@@ -1316,8 +1316,8 @@ msgstr ""
 
 #: src/reference/all-settings.md:627
 msgid ""
-"Default: `[\"**/.env*\", \"**/*.pem\", \"**/*.key\", \"**/*.cert\", \"**/*."
-"crt\", \"**/.dev.vars\", \"**/secrets.yml\"]`"
+"Default: `[\"**/.env*\", \"**/*.pem\", \"**/*.key\", \"**/*.cert\", \"**/"
+"*.crt\", \"**/.dev.vars\", \"**/secrets.yml\"]`"
 msgstr ""
 
 #: src/reference/all-settings.md:631
@@ -4824,9 +4824,10 @@ msgid ""
 "`NO_PROXY` environment variable. This accepts a comma-separated list of "
 "hostnames, host suffixes, IPv4/IPv6 addresses or blocks that should not use "
 "the proxy. For example if your environment included `NO_PROXY=\"google.com, "
-"192.168.1.0/24\"` all hosts in `192.168.1.*`, `google.com` and `*.google."
-"com` would bypass the proxy. See [reqwest NoProxy docs](https://docs.rs/"
-"reqwest/latest/reqwest/struct.NoProxy.html#method.from_string) for more."
+"192.168.1.0/24\"` all hosts in `192.168.1.*`, `google.com` and "
+"`*.google.com` would bypass the proxy. See [reqwest NoProxy docs](https://"
+"docs.rs/reqwest/latest/reqwest/struct.NoProxy.html#method.from_string) for "
+"more."
 msgstr ""
 
 #: src/reference/all-settings.md:3097
@@ -5297,8 +5298,8 @@ msgstr ""
 
 #: src/reference/all-settings.md:3355
 msgid ""
-"Default: `[\"**/.env*\", \"**/*.pem\", \"**/*.key\", \"**/*.cert\", \"**/*."
-"crt\", \"**/secrets.yml\"]`"
+"Default: `[\"**/.env*\", \"**/*.pem\", \"**/*.key\", \"**/*.cert\", \"**/"
+"*.crt\", \"**/secrets.yml\"]`"
 msgstr ""
 
 #: src/reference/all-settings.md:3359
@@ -6977,10 +6978,10 @@ msgstr ""
 
 #: src/reference/all-settings.md:4468
 msgid ""
-"Description: Activate the [Python Virtual Environment](https://docs.python."
-"org/3/library/venv.html), if one is found, in the terminal's working "
-"directory (as resolved by the working_directory and automatically activating "
-"the virtual environment."
+"Description: Activate the [Python Virtual Environment](https://"
+"docs.python.org/3/library/venv.html), if one is found, in the terminal's "
+"working directory (as resolved by the working_directory and automatically "
+"activating the virtual environment."
 msgstr ""
 
 #: src/reference/all-settings.md:4469
@@ -8314,8 +8315,8 @@ msgstr ""
 
 #: src/reference/all-settings.md:5467
 msgid ""
-"Default: `.ZedSans`. This currently aliases to [IBM Plex](https://www.ibm."
-"com/plex/)."
+"Default: `.ZedSans`. This currently aliases to [IBM Plex](https://"
+"www.ibm.com/plex/)."
 msgstr ""
 
 #: src/reference/all-settings.md:5471

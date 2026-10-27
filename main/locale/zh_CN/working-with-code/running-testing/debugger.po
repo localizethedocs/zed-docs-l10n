@@ -93,8 +93,8 @@ msgstr ""
 #: src/debugger.md:31
 msgid ""
 "If your language isn't listed, you can contribute by adding a debug adapter "
-"for it. Check out our [debugger extensions](./extensions/debugger-extensions."
-"md) documentation for more information."
+"for it. Check out our [debugger extensions](./extensions/debugger-"
+"extensions.md) documentation for more information."
 msgstr ""
 
 #: src/debugger.md:33
@@ -167,15 +167,15 @@ msgstr ""
 #: src/debugger.md:58
 msgid ""
 "Check the documentation for your language for example configurations "
-"covering typical use-cases. Once you've added configurations to `.zed/debug."
-"json`, they'll appear in the list in the new process modal."
+"covering typical use-cases. Once you've added configurations to `.zed/"
+"debug.json`, they'll appear in the list in the new process modal."
 msgstr ""
 
 #: src/debugger.md:60
 msgid ""
 "Zed will also load debug configurations from `.vscode/launch.json`, and show "
-"them in the new process modal if no configurations are found in `.zed/debug."
-"json`."
+"them in the new process modal if no configurations are found in `.zed/"
+"debug.json`."
 msgstr ""
 
 #: src/debugger.md:62

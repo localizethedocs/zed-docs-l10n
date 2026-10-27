@@ -19,8 +19,8 @@ msgstr "AsciiDoc"
 msgid ""
 "AsciiDoc language support in Zed is provided by the community-maintained "
 "[AsciiDoc extension](https://github.com/andreicek/zed-asciidoc). Report "
-"issues to: [https://github.com/andreicek/zed-asciidoc/issues](https://github."
-"com/andreicek/zed-asciidoc/issues)"
+"issues to: [https://github.com/andreicek/zed-asciidoc/issues](https://"
+"github.com/andreicek/zed-asciidoc/issues)"
 msgstr ""
 
 #: src/languages/asciidoc.md:8

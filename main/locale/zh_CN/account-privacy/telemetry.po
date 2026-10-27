@@ -165,9 +165,9 @@ msgstr ""
 
 #: src/telemetry.md:56
 msgid ""
-"For the full list of event types, see the `Event` enum in [telemetry_events."
-"rs](https://github.com/zed-industries/zed/blob/main/crates/telemetry_events/"
-"src/telemetry_events.rs)."
+"For the full list of event types, see the `Event` enum in "
+"[telemetry_events.rs](https://github.com/zed-industries/zed/blob/main/crates/"
+"telemetry_events/src/telemetry_events.rs)."
 msgstr ""
 
 #: src/telemetry.md:58
@@ -193,6 +193,6 @@ msgstr ""
 
 #: src/telemetry.md:66
 msgid ""
-"If you have concerns about telemetry, you can [open an issue](https://github."
-"com/zed-industries/zed/issues/new/choose) or email hi@zed.dev."
+"If you have concerns about telemetry, you can [open an issue](https://"
+"github.com/zed-industries/zed/issues/new/choose) or email hi@zed.dev."
 msgstr ""

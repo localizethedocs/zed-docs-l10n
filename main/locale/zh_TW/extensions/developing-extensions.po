@@ -408,8 +408,8 @@ msgstr ""
 
 #: src/extensions/developing-extensions.md:175
 msgid ""
-"All extension submodules must use HTTPS URLs and not SSH URLS (`git@github."
-"com`)."
+"All extension submodules must use HTTPS URLs and not SSH URLS "
+"(`git@github.com`)."
 msgstr ""
 
 #: src/extensions/developing-extensions.md:177

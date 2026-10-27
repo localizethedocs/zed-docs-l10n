@@ -149,8 +149,8 @@ msgstr ""
 #: src/languages/rust.md:70
 msgid ""
 "If you want to install pre-release `rust-analyzer` version instead you can "
-"instruct Zed to do so by setting `pre_release` to `true` in your `settings."
-"json`:"
+"instruct Zed to do so by setting `pre_release` to `true` in your "
+"`settings.json`:"
 msgstr ""
 
 #: src/languages/rust.md:76

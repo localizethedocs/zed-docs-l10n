@@ -47,9 +47,9 @@ msgstr ""
 
 #: src/modelines.md:19
 msgid ""
-"Zed has some compatibility support for [Emacs file variables](https://www."
-"gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-Variables."
-"html)."
+"Zed has some compatibility support for [Emacs file variables](https://"
+"www.gnu.org/software/emacs/manual/html_node/emacs/Specifying-File-"
+"Variables.html)."
 msgstr ""
 
 #: src/modelines.md:21 src/modelines.md:43

@@ -34,9 +34,9 @@ msgstr ""
 #: src/development/macos.md:13
 msgid ""
 "Install [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) from "
-"the macOS App Store or from the [Apple Developer](https://developer.apple."
-"com/download/all/) website. The Apple Developer download requires a "
-"developer account."
+"the macOS App Store or from the [Apple Developer](https://"
+"developer.apple.com/download/all/) website. The Apple Developer download "
+"requires a developer account."
 msgstr ""
 
 #: src/development/macos.md:15
@@ -313,9 +313,9 @@ msgstr ""
 
 #: src/development/macos.md:191
 msgid ""
-"In System Settings, search for \"Developer Tools\" and add your terminal (e."
-"g. iTerm or Ghostty) to the list under \"Allow applications to use developer "
-"tools\""
+"In System Settings, search for \"Developer Tools\" and add your terminal "
+"(e.g. iTerm or Ghostty) to the list under \"Allow applications to use "
+"developer tools\""
 msgstr ""
 
 #: src/development/macos.md:192

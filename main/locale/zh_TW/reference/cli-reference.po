@@ -237,8 +237,8 @@ msgstr ""
 
 #: src/reference/cli.md:170
 msgid ""
-"Add these lines to your shell configuration file (e.g., `~/.bashrc`, `~/."
-"zshrc`)."
+"Add these lines to your shell configuration file (e.g., `~/.bashrc`, "
+"`~/.zshrc`)."
 msgstr ""
 
 #: src/reference/cli.md:172

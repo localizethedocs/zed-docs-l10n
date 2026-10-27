@@ -19,8 +19,8 @@ msgstr "Julia"
 msgid ""
 "Julia language support in Zed is provided by the community-maintained [Julia "
 "extension](https://github.com/JuliaEditorSupport/zed-julia). Report issues "
-"to: [https://github.com/JuliaEditorSupport/zed-julia/issues](https://github."
-"com/JuliaEditorSupport/zed-julia/issues)"
+"to: [https://github.com/JuliaEditorSupport/zed-julia/issues](https://"
+"github.com/JuliaEditorSupport/zed-julia/issues)"
 msgstr ""
 
 #: src/languages/julia.md:8

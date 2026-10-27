@@ -408,9 +408,9 @@ msgstr ""
 
 #: src/ai/mcp.md:140
 msgid ""
-"**Note:** In Zed v0.224.0 and above, tool approval is controlled by `agent."
-"tool_permissions.default`. In earlier versions, it was controlled by the "
-"`agent.always_allow_tool_actions` boolean (default `false`)."
+"**Note:** In Zed v0.224.0 and above, tool approval is controlled by "
+"`agent.tool_permissions.default`. In earlier versions, it was controlled by "
+"the `agent.always_allow_tool_actions` boolean (default `false`)."
 msgstr ""
 
 #: src/ai/mcp.md:143
@@ -455,9 +455,9 @@ msgstr ""
 #: src/ai/mcp.md:157
 msgid ""
 "MCP servers configured in Zed are forwarded to [external agents](./external-"
-"agents.md) via the [Agent Client Protocol](https://agentclientprotocol."
-"com/). External agents can also access MCP servers from their own native "
-"configuration files."
+"agents.md) via the [Agent Client Protocol](https://"
+"agentclientprotocol.com/). External agents can also access MCP servers from "
+"their own native configuration files."
 msgstr ""
 
 #: src/ai/mcp.md:159

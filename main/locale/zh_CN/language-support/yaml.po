@@ -204,8 +204,8 @@ msgstr ""
 
 #: src/languages/yaml.md:80
 msgid ""
-"# yaml-language-server: $schema=https://www.schemastore.org/github-action."
-"json\n"
+"# yaml-language-server: $schema=https://www.schemastore.org/github-"
+"action.json\n"
 "name"
 msgstr ""
 

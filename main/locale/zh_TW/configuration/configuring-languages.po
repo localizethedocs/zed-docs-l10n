@@ -256,8 +256,8 @@ msgstr ""
 
 #: src/configuring-languages.md:69
 msgid ""
-"To set up custom file associations, use the [`file_types`](./configuring-zed."
-"md#file-types) setting in your `settings.json`:"
+"To set up custom file associations, use the [`file_types`](./configuring-"
+"zed.md#file-types) setting in your `settings.json`:"
 msgstr ""
 
 #: src/configuring-languages.md:72
@@ -705,8 +705,8 @@ msgstr ""
 msgid ""
 "This disables the language server for Markdown files, which can be useful "
 "for performance in large documentation projects. You can configure this "
-"globally in your `~/.config/zed/settings.json` or inside a `.zed/settings."
-"json` in your project directory."
+"globally in your `~/.config/zed/settings.json` or inside a `.zed/"
+"settings.json` in your project directory."
 msgstr ""
 
 #: src/configuring-languages.md:263
@@ -959,8 +959,8 @@ msgstr ""
 #: src/configuring-languages.md:414
 msgid ""
 "Inlay hints provide additional information inline in your code, such as "
-"parameter names or inferred types. Configure inlay hints in your `settings."
-"json`:"
+"parameter names or inferred types. Configure inlay hints in your "
+"`settings.json`:"
 msgstr ""
 
 #: src/configuring-languages.md:417

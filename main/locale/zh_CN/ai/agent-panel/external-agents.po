@@ -175,11 +175,12 @@ msgstr ""
 
 #: src/ai/external-agents.md:62
 msgid ""
-"Similar to Gemini CLI, you can also run [Claude Agent](https://platform."
-"claude.com/docs/en/agent-sdk/overview) directly via Zed's [agent panel](./"
-"agent-panel.md). Under the hood, Zed runs the Claude Agent SDK, which runs "
-"Claude Code under the hood, and communicates to it over ACP, through [a "
-"dedicated adapter](https://github.com/zed-industries/claude-agent-acp)."
+"Similar to Gemini CLI, you can also run [Claude Agent](https://"
+"platform.claude.com/docs/en/agent-sdk/overview) directly via Zed's [agent "
+"panel](./agent-panel.md). Under the hood, Zed runs the Claude Agent SDK, "
+"which runs Claude Code under the hood, and communicates to it over ACP, "
+"through [a dedicated adapter](https://github.com/zed-industries/claude-agent-"
+"acp)."
 msgstr ""
 
 #: src/ai/external-agents.md:67
@@ -390,9 +391,9 @@ msgstr ""
 msgid ""
 "If you want to use a third-party provider with Codex, you can configure that "
 "with your [Codex config.toml](https://github.com/openai/codex/blob/main/docs/"
-"config.md#model-selection) or pass extra [args/env variables](https://github."
-"com/openai/codex/blob/main/docs/config.md#model-selection) to your Codex "
-"agent servers settings."
+"config.md#model-selection) or pass extra [args/env variables](https://"
+"github.com/openai/codex/blob/main/docs/config.md#model-selection) to your "
+"Codex agent servers settings."
 msgstr ""
 
 #: src/ai/external-agents.md:177
@@ -851,8 +852,9 @@ msgstr ""
 
 #: src/ai/external-agents.md:338
 msgid ""
-"For remote MCP servers with OAuth, this is a [known issue](https://github."
-"com/zed-industries/zed/issues/54410) — try local stdio-based servers instead"
+"For remote MCP servers with OAuth, this is a [known issue](https://"
+"github.com/zed-industries/zed/issues/54410) — try local stdio-based servers "
+"instead"
 msgstr ""
 
 #: src/ai/external-agents.md:339
@@ -877,8 +879,8 @@ msgstr ""
 
 #: src/ai/external-agents.md:346
 msgid ""
-"Your existing MCP servers and settings from `~/.claude/` or `~/.codex/config."
-"toml` should work"
+"Your existing MCP servers and settings from `~/.claude/` or `~/.codex/"
+"config.toml` should work"
 msgstr ""
 
 #: src/ai/external-agents.md:347

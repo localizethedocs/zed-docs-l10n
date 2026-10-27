@@ -44,9 +44,9 @@ msgstr ""
 #: src/worktree-trust.md:13
 msgid ""
 "If a worktree is not trusted, Zed will indicate this with an exclamation "
-"mark icon in the title bar. Clicking this icon or using `workspace::"
-"ToggleWorktreeSecurity` action will bring up the security modal that allows "
-"the user to trust the worktree."
+"mark icon in the title bar. Clicking this icon or using "
+"`workspace::ToggleWorktreeSecurity` action will bring up the security modal "
+"that allows the user to trust the worktree."
 msgstr ""
 
 #: src/worktree-trust.md:15

@@ -238,8 +238,8 @@ msgstr ""
 #: src/themes.md:106
 msgid ""
 "To see a comprehensive list of captures (like `comment` and `comment.doc`) "
-"see [Language Extensions: Syntax highlighting](./extensions/languages."
-"md#syntax-highlighting)."
+"see [Language Extensions: Syntax highlighting](./extensions/"
+"languages.md#syntax-highlighting)."
 msgstr ""
 
 #: src/themes.md:108

@@ -43,8 +43,8 @@ msgstr ""
 
 #: src/ai/text-threads.md:17
 msgid ""
-"Therefore, [MCP servers](./mcp.md) and [external agents](./external-agents."
-"md) are also not available in Text Threads."
+"Therefore, [MCP servers](./mcp.md) and [external agents](./external-"
+"agents.md) are also not available in Text Threads."
 msgstr ""
 
 #: src/ai/text-threads.md:19
@@ -212,8 +212,8 @@ msgstr ""
 
 #: src/ai/text-threads.md:74
 msgid ""
-"Read more about `/default` in the [Rules: Editing the Default Rules](./rules."
-"md#default-rules) section."
+"Read more about `/default` in the [Rules: Editing the Default Rules](./"
+"rules.md#default-rules) section."
 msgstr ""
 
 #: src/ai/text-threads.md:76
@@ -617,6 +617,6 @@ msgstr ""
 
 #: src/ai/text-threads.md:258
 msgid ""
-"![Viewing assistant history](https://zed.dev/img/assistant/assistant-history."
-"png)"
+"![Viewing assistant history](https://zed.dev/img/assistant/assistant-"
+"history.png)"
 msgstr ""

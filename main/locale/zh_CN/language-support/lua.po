@@ -49,8 +49,8 @@ msgstr ""
 
 #: src/languages/lua.md:16 src/languages/lua.md:62
 msgid ""
-"\"https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/schema."
-"json\""
+"\"https://raw.githubusercontent.com/LuaLS/vscode-lua/master/setting/"
+"schema.json\""
 msgstr ""
 
 #: src/languages/lua.md:17 src/languages/lua.md:63
@@ -80,8 +80,8 @@ msgid ""
 "available settings options will autocomplete, (e.g `runtime.version` will "
 "show `\"Lua 5.1\"`, `\"Lua 5.2\"`, `\"Lua 5.3\"`, `\"Lua 5.4\"` and "
 "`\"LuaJIT\"` as allowed values). Note when importing settings options from "
-"VS Code, remove the `Lua.` prefix. (e.g. `runtime.version` instead of `Lua."
-"runtime.version`)."
+"VS Code, remove the `Lua.` prefix. (e.g. `runtime.version` instead of "
+"`Lua.runtime.version`)."
 msgstr ""
 
 #: src/languages/lua.md:25
@@ -318,8 +318,8 @@ msgstr ""
 
 #: src/languages/lua.md:120
 msgid ""
-"\"https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/schema."
-"json\""
+"\"https://raw.githubusercontent.com/sumneko/vscode-lua/master/setting/"
+"schema.json\""
 msgstr ""
 
 #: src/languages/lua.md:125 src/languages/lua.md:145
@@ -346,8 +346,8 @@ msgstr ""
 
 #: src/languages/lua.md:138
 msgid ""
-"You can customize various EmmyLuaCodeStyle style options via `."
-"editorconfig`, see [lua.template.editorconfig](https://github.com/CppCXY/"
+"You can customize various EmmyLuaCodeStyle style options via "
+"`.editorconfig`, see [lua.template.editorconfig](https://github.com/CppCXY/"
 "EmmyLuaCodeStyle/blob/master/lua.template.editorconfig) for all available "
 "options."
 msgstr ""

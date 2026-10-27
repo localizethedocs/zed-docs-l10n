@@ -62,8 +62,8 @@ msgid ""
 "Both Nix and Alpine have third-party Zed packages available (though they are "
 "currently a few weeks out of date). If you'd like to use our builds they do "
 "work if you install a glibc compatibility layer. On NixOS you can try [nix-"
-"ld](https://github.com/Mic92/nix-ld), and on Alpine [gcompat](https://wiki."
-"alpinelinux.org/wiki/Running_glibc_programs)."
+"ld](https://github.com/Mic92/nix-ld), and on Alpine [gcompat](https://"
+"wiki.alpinelinux.org/wiki/Running_glibc_programs)."
 msgstr ""
 
 #: src/linux.md:28
@@ -94,8 +94,8 @@ msgstr ""
 
 #: src/linux.md:36
 msgid ""
-"Zed is open source, and [you can install from source](./development/linux."
-"md)."
+"Zed is open source, and [you can install from source](./development/"
+"linux.md)."
 msgstr ""
 
 #: src/linux.md:38
@@ -171,8 +171,8 @@ msgstr ""
 #: src/linux.md:53
 msgid ""
 "Flathub: [`dev.zed.Zed`](https://flathub.org/apps/dev.zed.Zed) (WARNING: "
-"[Sandboxing causes problems](https://github.com/flathub/dev.zed.Zed/"
-"pull/275))"
+"[Sandboxing causes problems](https://github.com/flathub/dev.zed.Zed/pull/"
+"275))"
 msgstr ""
 
 #: src/linux.md:55
@@ -214,8 +214,8 @@ msgstr ""
 
 #: src/linux.md:67
 msgid ""
-"Zed is available in [this community-maintained repository](https://debian."
-"griffo.io/)."
+"Zed is available in [this community-maintained repository](https://"
+"debian.griffo.io/)."
 msgstr ""
 
 #: src/linux.md:69
@@ -281,8 +281,8 @@ msgstr ""
 
 #: src/linux.md:97
 msgid ""
-"\"s|Icon=zed|Icon=$HOME/.local/zed.app/share/icons/hicolor/512x512/apps/zed."
-"png|g\""
+"\"s|Icon=zed|Icon=$HOME/.local/zed.app/share/icons/hicolor/512x512/apps/"
+"zed.png|g\""
 msgstr ""
 
 #: src/linux.md:98
@@ -419,8 +419,8 @@ msgid ""
 "If you see errors like `ERROR_INITIALIZATION_FAILED` or `GPU Crashed` or "
 "`ERROR_SURFACE_LOST_KHR` then you may be able to work around this by "
 "installing different drivers for your GPU, or by selecting a different GPU "
-"to run on. (See [\\#14225](https://github.com/zed-industries/zed/"
-"issues/14225))"
+"to run on. (See [\\#14225](https://github.com/zed-industries/zed/issues/"
+"14225))"
 msgstr ""
 
 #: src/linux.md:161
@@ -495,8 +495,8 @@ msgstr ""
 
 #: src/linux.md:191
 msgid ""
-"Make sure to export the variable if you choose to define it globally in a `."
-"bashrc` or similar."
+"Make sure to export the variable if you choose to define it globally in a "
+"`.bashrc` or similar."
 msgstr ""
 
 #: src/linux.md:193
@@ -833,8 +833,8 @@ msgstr ""
 #: src/linux.md:369
 msgid ""
 "You can use decimal values (e.g., `1.25`, `1.5`, `2.0`) or set "
-"`GPUI_X11_SCALE_FACTOR=randr` to force RandR-based detection even when `Xft."
-"dpi` is set."
+"`GPUI_X11_SCALE_FACTOR=randr` to force RandR-based detection even when "
+"`Xft.dpi` is set."
 msgstr ""
 
 #: src/linux.md:371

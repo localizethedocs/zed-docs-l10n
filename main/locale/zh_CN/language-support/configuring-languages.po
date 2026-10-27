@@ -39,8 +39,8 @@ msgstr ""
 
 #: src/configuring-languages.md:12
 msgid ""
-"For a list of supported languages, see [Supported Languages](./languages."
-"md). To add support for new languages, see [Language Extensions](./"
+"For a list of supported languages, see [Supported Languages](./"
+"languages.md). To add support for new languages, see [Language Extensions](./"
 "extensions/languages.md)."
 msgstr ""
 
@@ -764,8 +764,8 @@ msgstr ""
 msgid ""
 "This disables the language server for Markdown files, which can be useful "
 "for performance in large documentation projects. You can configure this "
-"globally in your `~/.config/zed/settings.json` or inside a `.zed/settings."
-"json` in your project directory."
+"globally in your `~/.config/zed/settings.json` or inside a `.zed/"
+"settings.json` in your project directory."
 msgstr ""
 
 #: src/configuring-languages.md:283
@@ -1089,8 +1089,8 @@ msgstr ""
 
 #: src/configuring-languages.md:461
 msgid ""
-"You can customize token colors and styles through `global_lsp_settings."
-"semantic_token_rules` in your settings."
+"You can customize token colors and styles through "
+"`global_lsp_settings.semantic_token_rules` in your settings."
 msgstr ""
 
 #: src/configuring-languages.md:463
@@ -1104,8 +1104,8 @@ msgstr ""
 #: src/configuring-languages.md:467
 msgid ""
 "Inlay hints provide additional information inline in your code, such as "
-"parameter names or inferred types. Configure inlay hints in your `settings."
-"json`:"
+"parameter names or inferred types. Configure inlay hints in your "
+"`settings.json`:"
 msgstr ""
 
 #: src/configuring-languages.md:470

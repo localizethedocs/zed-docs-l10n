@@ -92,8 +92,8 @@ msgstr ""
 #: src/ai/billing.md:31
 msgid ""
 "If payment of an invoice fails, Zed will block usage of our hosted models "
-"until the payment is complete. Email [billing-support@zed.dev](mailto:"
-"billing-support@zed.dev) for assistance."
+"until the payment is complete. Email [billing-support@zed.dev]"
+"(mailto:billing-support@zed.dev) for assistance."
 msgstr ""
 
 #: src/ai/billing.md:33

@@ -268,8 +268,8 @@ msgstr ""
 
 #: src/ai/agent-settings.md:154
 msgid ""
-"**Note:** In Zed v0.224.0 and above, tool approval uses the `agent."
-"tool_permissions` settings described below."
+"**Note:** In Zed v0.224.0 and above, tool approval uses the "
+"`agent.tool_permissions` settings described below."
 msgstr ""
 
 #: src/ai/agent-settings.md:156
@@ -443,8 +443,8 @@ msgstr ""
 
 #: src/ai/agent-settings.md:220
 msgid ""
-"**Tool-specific `default`** — Per-tool fallback when no patterns match (e."
-"g., `tools.terminal.default`)"
+"**Tool-specific `default`** — Per-tool fallback when no patterns match "
+"(e.g., `tools.terminal.default`)"
 msgstr ""
 
 #: src/ai/agent-settings.md:221
@@ -519,10 +519,10 @@ msgstr ""
 
 #: src/ai/agent-settings.md:275
 msgid ""
-"**Note:** Before Zed v0.224.0, tool approval was controlled by the `agent."
-"always_allow_tool_actions` boolean (default `false`). Set it to `true` to "
-"auto-approve tool actions, or leave it `false` to require confirmation for "
-"edits and tool calls."
+"**Note:** Before Zed v0.224.0, tool approval was controlled by the "
+"`agent.always_allow_tool_actions` boolean (default `false`). Set it to "
+"`true` to auto-approve tool actions, or leave it `false` to require "
+"confirmation for edits and tool calls."
 msgstr ""
 
 #: src/ai/agent-settings.md:277

@@ -91,10 +91,10 @@ msgstr ""
 
 #: src/languages/php.md:42
 msgid ""
-"[Intelephense](https://intelephense.com/) is a [proprietary](https://github."
-"com/bmewburn/vscode-intelephense/blob/master/LICENSE.txt#L29) language "
-"server for PHP operating under a freemium model. Certain features require "
-"purchase of a [premium license](https://intelephense.com/buy)."
+"[Intelephense](https://intelephense.com/) is a [proprietary](https://"
+"github.com/bmewburn/vscode-intelephense/blob/master/LICENSE.txt#L29) "
+"language server for PHP operating under a freemium model. Certain features "
+"require purchase of a [premium license](https://intelephense.com/buy)."
 msgstr ""
 
 #: src/languages/php.md:44 src/languages/php.md:76 src/languages/php.md:112

@@ -353,8 +353,8 @@ msgstr ""
 
 #: src/languages/ruby.md:167
 msgid ""
-"For full configuration options, see the [Ruby LSP website](https://shopify."
-"github.io/ruby-lsp/editors.html)."
+"For full configuration options, see the [Ruby LSP website](https://"
+"shopify.github.io/ruby-lsp/editors.html)."
 msgstr ""
 
 #: src/languages/ruby.md:169

@@ -17,8 +17,8 @@ msgstr ""
 
 #: src/languages/haskell.md:5
 msgid ""
-"Haskell support is available through the [Haskell extension](https://github."
-"com/zed-extensions/haskell)."
+"Haskell support is available through the [Haskell extension](https://"
+"github.com/zed-extensions/haskell)."
 msgstr ""
 
 #: src/languages/haskell.md:7

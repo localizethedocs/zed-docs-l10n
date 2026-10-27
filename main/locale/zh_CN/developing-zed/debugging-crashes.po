@@ -18,8 +18,8 @@ msgstr ""
 #: src/development/debugging-crashes.md:5
 msgid ""
 "When Zed panics or crashes, it sends a message to a sidecar process that "
-"inspects the editor's memory and creates a [minidump](https://chromium."
-"googlesource.com/breakpad/breakpad/+/master/docs/"
+"inspects the editor's memory and creates a [minidump](https://"
+"chromium.googlesource.com/breakpad/breakpad/+/master/docs/"
 "getting_started_with_breakpad.md#the-minidump-file-format) in `~/Library/"
 "Logs/Zed` or `$XDG_DATA_HOME/zed/logs`. You can use this minidump to "
 "generate backtraces for all thread stacks."
@@ -43,8 +43,9 @@ msgstr ""
 
 #: src/development/debugging-crashes.md:16
 msgid ""
-"Alongside the minidump in your logs directory, you should also see a `<uuid>."
-"json` file with metadata such as the panic message, span, and system specs."
+"Alongside the minidump in your logs directory, you should also see a "
+"`<uuid>.json` file with metadata such as the panic message, span, and system "
+"specs."
 msgstr ""
 
 #: src/development/debugging-crashes.md:18

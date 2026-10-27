@@ -213,9 +213,9 @@ msgstr ""
 msgid ""
 "The macOS releases labelled \"Partially Supported\" (Big Sur and Catalina) "
 "do not support screen sharing via Zed Collaboration. These features use the "
-"[LiveKit SDK](https://livekit.io) which relies upon [ScreenCaptureKit."
-"framework](https://developer.apple.com/documentation/screencapturekit/) only "
-"available on macOS 12 (Monterey) and newer."
+"[LiveKit SDK](https://livekit.io) which relies upon "
+"[ScreenCaptureKit.framework](https://developer.apple.com/documentation/"
+"screencapturekit/) only available on macOS 12 (Monterey) and newer."
 msgstr ""
 
 #: src/installation.md:81
@@ -333,6 +333,6 @@ msgstr ""
 
 #: src/installation.md:127
 msgid ""
-"Not supported at this time. See our [Platform Support issue](https://github."
-"com/zed-industries/zed/issues/5391)."
+"Not supported at this time. See our [Platform Support issue](https://"
+"github.com/zed-industries/zed/issues/5391)."
 msgstr ""

@@ -188,8 +188,8 @@ msgstr ""
 #: src/tasks.md:67
 msgid ""
 "in the global `tasks.json` file; such tasks are available in all Zed "
-"projects you work on. This file is usually located in `~/.config/zed/tasks."
-"json`. You can edit them by using the `zed: open tasks` action."
+"projects you work on. This file is usually located in `~/.config/zed/"
+"tasks.json`. You can edit them by using the `zed: open tasks` action."
 msgstr ""
 
 #: src/tasks.md:68
@@ -277,8 +277,8 @@ msgstr ""
 
 #: src/tasks.md:87
 msgid ""
-"`ZED_WORKTREE_ROOT`: absolute path to the root of the current worktree. (e."
-"g. `/Users/my-user/path/to/project`)"
+"`ZED_WORKTREE_ROOT`: absolute path to the root of the current worktree. "
+"(e.g. `/Users/my-user/path/to/project`)"
 msgstr ""
 
 #: src/tasks.md:88

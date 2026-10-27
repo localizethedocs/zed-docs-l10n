@@ -128,8 +128,8 @@ msgstr ""
 #: src/languages/javascript.md:46
 msgid ""
 "Zed supports JSDoc syntax in JavaScript and TypeScript comments that match "
-"the JSDoc syntax. Zed uses [tree-sitter/tree-sitter-jsdoc](https://github."
-"com/tree-sitter/tree-sitter-jsdoc) for parsing and highlighting JSDoc."
+"the JSDoc syntax. Zed uses [tree-sitter/tree-sitter-jsdoc](https://"
+"github.com/tree-sitter/tree-sitter-jsdoc) for parsing and highlighting JSDoc."
 msgstr ""
 
 #: src/languages/javascript.md:49

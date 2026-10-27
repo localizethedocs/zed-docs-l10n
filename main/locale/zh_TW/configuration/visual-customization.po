@@ -36,9 +36,9 @@ msgstr "主題"
 
 #: src/visual-customization.md:9
 msgid ""
-"You can install many [themes](./themes.md) and [icon themes](./icon-themes."
-"md) in form of extensions by running <code class=\"hljs\">zed: extensions</"
-"code> from the command palette."
+"You can install many [themes](./themes.md) and [icon themes](./icon-"
+"themes.md) in form of extensions by running <code class=\"hljs\">zed: "
+"extensions</code> from the command palette."
 msgstr ""
 "您可以透過在命令選擇區中執行 <code class=\"hljs\">zed: extensions</code>，以"
 "擴充功能的形式安裝許多[主題](./themes.md)與[圖示主題](./icon-themes.md)。"
