@@ -1,0 +1,328 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-07T10:13:39Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/appearance.md:3
+msgid "Appearance"
+msgstr ""
+
+#: src/appearance.md:5
+msgid ""
+"Customize Zed's visual appearance to match your preferences. This guide "
+"covers themes, fonts, icons, and other visual settings."
+msgstr ""
+
+#: src/appearance.md:7
+msgid ""
+"For information on how the settings system works, see [All Settings](./"
+"reference/all-settings.md)."
+msgstr ""
+
+#: src/appearance.md:9
+msgid "Customize Zed in 5 Minutes"
+msgstr ""
+
+#: src/appearance.md:11
+msgid "Here's how to make Zed feel like home:"
+msgstr ""
+
+#: src/appearance.md:13
+msgid ""
+"**Pick a theme**: Press <kbd class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-"
+"t</kbd> to open the Theme Selector. Arrow through the list to preview themes "
+"in real time, and press Enter to apply."
+msgstr ""
+
+#: src/appearance.md:15
+msgid ""
+"**Toggle light/dark mode quickly**: Press <kbd class=\"keybinding\">cmd-k "
+"cmd-shift-t\\|ctrl-k ctrl-shift-t</kbd>. If you currently use a static "
+"`\"theme\": \"...\"` value, the first toggle converts it to dynamic mode "
+"settings with default themes."
+msgstr ""
+
+#: src/appearance.md:17
+msgid ""
+"**Choose an icon theme**: Run `icon theme selector: toggle` from the command "
+"palette to browse icon themes."
+msgstr ""
+
+#: src/appearance.md:19
+msgid ""
+"**Set your font**: Open the Settings Editor with <kbd "
+"class=\"keybinding\">cmd-,\\|ctrl-,</kbd> and search for "
+"`buffer_font_family`. Set it to your preferred coding font."
+msgstr ""
+
+#: src/appearance.md:21
+msgid ""
+"**Adjust font size**: In the same Settings Editor, search for "
+"`buffer_font_size` and `ui_font_size` to tweak the editor and interface text "
+"sizes."
+msgstr ""
+
+#: src/appearance.md:23
+msgid "That's it. You now have a personalized Zed setup."
+msgstr ""
+
+#: src/appearance.md:25
+msgid "Themes"
+msgstr ""
+
+#: src/appearance.md:27
+msgid ""
+"Install themes from the Extensions page (<code class=\"hljs\">zed: "
+"extensions</code>), then switch between them with the Theme Selector (<kbd "
+"class=\"keybinding\">cmd-k cmd-t\\|ctrl-k ctrl-t</kbd>)."
+msgstr ""
+
+#: src/appearance.md:29
+msgid ""
+"Zed supports separate themes for light and dark mode with automatic "
+"switching based on your system preference:"
+msgstr ""
+
+#: src/appearance.md:33
+msgid "\"theme\""
+msgstr ""
+
+#: src/appearance.md:34 src/appearance.md:54
+msgid "\"mode\""
+msgstr ""
+
+#: src/appearance.md:34 src/appearance.md:54
+msgid "\"system\""
+msgstr ""
+
+#: src/appearance.md:35 src/appearance.md:55
+msgid "\"light\""
+msgstr ""
+
+#: src/appearance.md:35
+msgid "\"One Light\""
+msgstr ""
+
+#: src/appearance.md:36 src/appearance.md:56
+msgid "\"dark\""
+msgstr ""
+
+#: src/appearance.md:36
+msgid "\"One Dark\""
+msgstr ""
+
+#: src/appearance.md:41
+msgid ""
+"You can also override specific theme attributes for fine-grained control."
+msgstr ""
+
+#: src/appearance.md:43
+msgid "→ [Themes documentation](./themes.md)"
+msgstr ""
+
+#: src/appearance.md:45
+msgid "Icon Themes"
+msgstr ""
+
+#: src/appearance.md:47
+msgid ""
+"Customize file and folder icons in the Project Panel and tabs. Browse "
+"available icon themes with the Icon Theme Selector (`icon theme selector: "
+"toggle` in the command palette)."
+msgstr ""
+
+#: src/appearance.md:49
+msgid ""
+"Like color themes, icon themes support separate light and dark variants:"
+msgstr ""
+
+#: src/appearance.md:53
+msgid "\"icon_theme\""
+msgstr ""
+
+#: src/appearance.md:55 src/appearance.md:56
+msgid "\"Zed (Default)\""
+msgstr ""
+
+#: src/appearance.md:61
+msgid "→ [Icon Themes documentation](./icon-themes.md)"
+msgstr ""
+
+#: src/appearance.md:63
+msgid "Fonts"
+msgstr ""
+
+#: src/appearance.md:65
+msgid "Zed uses three font settings for different contexts:"
+msgstr ""
+
+#: src/appearance.md:67
+msgid "Setting"
+msgstr ""
+
+#: src/appearance.md:67
+msgid "Used for"
+msgstr ""
+
+#: src/appearance.md:69
+msgid "`buffer_font_family`"
+msgstr ""
+
+#: src/appearance.md:69
+msgid "Editor text"
+msgstr ""
+
+#: src/appearance.md:70
+msgid "`ui_font_family`"
+msgstr ""
+
+#: src/appearance.md:70
+msgid "Interface elements"
+msgstr ""
+
+#: src/appearance.md:71
+msgid "`terminal.font_family`"
+msgstr ""
+
+#: src/appearance.md:71
+msgid "[Terminal](./terminal.md)"
+msgstr ""
+
+#: src/appearance.md:73
+msgid "Example configuration:"
+msgstr ""
+
+#: src/appearance.md:77
+msgid "\"buffer_font_family\""
+msgstr ""
+
+#: src/appearance.md:77 src/appearance.md:82
+msgid "\"JetBrains Mono\""
+msgstr ""
+
+#: src/appearance.md:78
+msgid "\"buffer_font_size\""
+msgstr ""
+
+#: src/appearance.md:79
+msgid "\"ui_font_family\""
+msgstr ""
+
+#: src/appearance.md:79
+msgid "\"Inter\""
+msgstr ""
+
+#: src/appearance.md:80
+msgid "\"ui_font_size\""
+msgstr ""
+
+#: src/appearance.md:81
+msgid "\"terminal\""
+msgstr ""
+
+#: src/appearance.md:82
+msgid "\"font_family\""
+msgstr ""
+
+#: src/appearance.md:83
+msgid "\"font_size\""
+msgstr ""
+
+#: src/appearance.md:88
+msgid "Font Ligatures"
+msgstr ""
+
+#: src/appearance.md:90
+msgid "To disable font ligatures:"
+msgstr ""
+
+#: src/appearance.md:94
+msgid "\"buffer_font_features\""
+msgstr ""
+
+#: src/appearance.md:95
+msgid "\"calt\""
+msgstr ""
+
+#: src/appearance.md:100
+msgid "Line Height"
+msgstr ""
+
+#: src/appearance.md:102
+msgid "Adjust line spacing with `buffer_line_height`:"
+msgstr ""
+
+#: src/appearance.md:104
+msgid "`\"comfortable\"` — 1.618 ratio (default)"
+msgstr ""
+
+#: src/appearance.md:105
+msgid "`\"standard\"` — 1.3 ratio"
+msgstr ""
+
+#: src/appearance.md:106
+msgid "`{ \"custom\": 1.5 }` — Custom ratio"
+msgstr ""
+
+#: src/appearance.md:108
+msgid "UI Elements"
+msgstr ""
+
+#: src/appearance.md:110
+msgid "Zed provides extensive control over UI elements including:"
+msgstr ""
+
+#: src/appearance.md:112
+msgid "**Tab bar** — Show/hide, navigation buttons, file icons, git status"
+msgstr ""
+
+#: src/appearance.md:113
+msgid "**Status bar** — Language selector, cursor position, line endings"
+msgstr ""
+
+#: src/appearance.md:114
+msgid "**Scrollbar** — Visibility, git diff indicators, search results"
+msgstr ""
+
+#: src/appearance.md:115
+msgid "**Minimap** — Code overview display"
+msgstr ""
+
+#: src/appearance.md:116
+msgid "**Gutter** — Line numbers, fold indicators, breakpoints"
+msgstr ""
+
+#: src/appearance.md:117
+msgid "**Panels** — Project Panel, Terminal, Agent Panel sizing and docking"
+msgstr ""
+
+#: src/appearance.md:119
+msgid ""
+"→ [Visual Customization documentation](./visual-customization.md) for all UI "
+"element settings"
+msgstr ""
+
+#: src/appearance.md:121
+msgid "What's Next"
+msgstr ""
+
+#: src/appearance.md:123
+msgid ""
+"[All Settings](./reference/all-settings.md) — Complete settings reference"
+msgstr ""
+
+#: src/appearance.md:124
+msgid "[Key bindings](./key-bindings.md) — Customize keyboard shortcuts"
+msgstr ""
+
+#: src/appearance.md:125
+msgid "[Vim Mode](./vim.md) — Enable modal editing"
+msgstr ""

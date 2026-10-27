@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2025-12-24T02:55:43Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/outline-panel.md:1
+msgid "Outline Panel"
+msgstr ""
+
+#: src/outline-panel.md:3
+msgid ""
+"In addition to the modal outline (`cmd-shift-o`), Zed offers an outline "
+"panel. The outline panel can be deployed via `cmd-shift-b` (`outline panel: "
+"toggle focus` via the command palette), or by clicking the `Outline Panel` "
+"button in the status bar."
+msgstr ""
+
+#: src/outline-panel.md:5
+msgid ""
+"When viewing a \"singleton\" buffer (i.e., a single file on a tab), the "
+"outline panel works similarly to that of the outline modal－it displays the "
+"outline of the current buffer's symbols, as reported by tree-sitter. "
+"Clicking on an entry allows you to jump to the associated section in the "
+"file. The outline view will also automatically scroll to the section "
+"associated with the current cursor position within the file."
+msgstr ""
+
+#: src/outline-panel.md:7
+msgid ""
+"![Using the outline panel in a singleton buffer](https://zed.dev/img/outline-"
+"panel/singleton.png)"
+msgstr ""
+
+#: src/outline-panel.md:9
+msgid "Usage with multibuffers"
+msgstr ""
+
+#: src/outline-panel.md:11
+msgid ""
+"The outline panel truly excels when used with multi-buffers. Here are some "
+"examples of its versatility:"
+msgstr ""
+
+#: src/outline-panel.md:13
+msgid "Project Search Results"
+msgstr ""
+
+#: src/outline-panel.md:15
+msgid "Get an overview of search results across your project."
+msgstr ""
+
+#: src/outline-panel.md:17
+msgid ""
+"![Using the outline panel in a project search multi-buffer](https://zed.dev/"
+"img/outline-panel/project-search.png)"
+msgstr ""
+
+#: src/outline-panel.md:19
+msgid "Project Diagnostics"
+msgstr ""
+
+#: src/outline-panel.md:21
+msgid ""
+"View a summary of all errors and warnings reported by the language server."
+msgstr ""
+
+#: src/outline-panel.md:23
+msgid ""
+"![Using the outline panel while viewing project diagnostics multi-buffer]"
+"(https://zed.dev/img/outline-panel/project-diagnostics.png)"
+msgstr ""
+
+#: src/outline-panel.md:25
+msgid "Find All References"
+msgstr ""
+
+#: src/outline-panel.md:27
+msgid ""
+"Quickly navigate through all references when using the `editor: find all "
+"references` action."
+msgstr ""
+
+#: src/outline-panel.md:29
+msgid ""
+"![Using the outline panel while viewing `find all references` multi-buffer]"
+"(https://zed.dev/img/outline-panel/find-all-references.png)"
+msgstr ""
+
+#: src/outline-panel.md:31
+msgid ""
+"The outline view provides a great way to quickly navigate to specific parts "
+"of your code and helps you maintain context when working with large result "
+"sets in multi-buffers."
+msgstr ""
