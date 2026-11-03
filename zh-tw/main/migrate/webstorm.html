@@ -1,0 +1,829 @@
+<!DOCTYPE HTML>
+<html lang="zh_TW" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <style>
+            @view-transition {
+                navigation: auto;
+            }
+            ::view-transition-old(root),
+            ::view-transition-new(root) {
+                animation-duration: 0.05s;
+            }
+        </style>
+        <!-- Theme initialization - must run before any CSS loads to prevent flicker -->
+        <script>
+            (function() {
+                var theme;
+                try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+                if (theme === null || theme === undefined) {
+                    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+                }
+                var html = document.documentElement;
+                html.setAttribute('data-theme', theme);
+                html.setAttribute('data-color-scheme', theme);
+                html.className = theme;
+            })();
+        </script>
+        <title>WebStorm | How to Migrate from WebStorm to Zed</title>
+
+
+        <!-- Custom HTML head -->
+        <script type="text/javascript" src="../ltd-provenance.js"></script>
+        <script type="text/javascript" src="../ltd-current.js"></script>
+        <script type="text/javascript" src="../../../ltd-config.js"></script>
+        <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+
+        <meta name="description" content=""Guide for migrating from WebStorm to Zed, including settings and keybindings."">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/page-toc.css">
+        <link rel="stylesheet" href="../theme/plugins.css">
+        <link rel="stylesheet" href="../theme/highlight.css">
+        <link rel="stylesheet" href="../theme/consent-banner.css">
+
+        <meta name="amplitude-key" content="" />
+        <meta name="consent-io-instance" content="" />
+    </head>
+    <body class="no-js">
+    <div id="body-container">
+        <div class="noise-pattern" style="background-image: url('https://cdn.zed.dev/images/noise.png');"></div>
+
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            // Mark as JS-enabled
+            document.body.classList.remove('no-js');
+            document.body.classList.add('js');
+        </script>
+
+        <header class="header-bar">
+            <div class="left-container">
+                <a href="/" class="logo-nav">
+                    <img src="https://zed.dev/logo_icon.webp" class="icon-logo-img" alt="Zed Industries" style="height: 26px;">
+                </a>
+                <button id="sidebar-toggle" class="icon-button ib-hidden-desktop" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar" aria-expanded="false">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <button id="search-toggle" class="search-button" type="button" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                <i class="icon fa fa-search"></i>
+                <span class="search-content-desktop">
+                    <span class="placeholder">Search docs…</span>
+                    <kbd>S</kbd>
+                </span>
+                <span class="search-content-mobile">
+                    <span class="placeholder">Search…</span>
+                </span>
+            </button>
+            <div class="right-container">
+                <button id="theme-toggle" class="icon-button" type="button" title="Change Theme" aria-label="Change Theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                    <i class="fa fa-paint-brush"></i>
+                </button>
+
+                <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                    <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                    <li role="none"><button role="menuitem" class="theme" id="dark">Dark</button></li>
+                </ul>
+
+                <button id="copy-markdown-toggle" class="icon-button ib-hidden-mobile" type="button" title="Copy Page as Markdown" aria-label="Copy page as markdown">
+                    <i class="fa fa-copy"></i>
+                </button>
+
+                <a class="download-button" href="https://zed.dev/download" title="Download Zed" aria-label="Download Zed">
+                    Download
+                </a>
+            </div>
+        </header>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="search-container">
+                <div id="search-wrapper" class="search-modal hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search…" aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+                <div class="sidebar-scrollbox">
+                    <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Welcome</li><li class="chapter-item expanded "><a href="../getting-started.html">開始使用</a></li><li class="chapter-item expanded "><a href="../installation.html">安裝</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../update.html">更新</a></li><li class="chapter-item expanded "><a href="../uninstall.html">解除安裝</a></li></ol></li><li class="chapter-item expanded "><a href="../troubleshooting.html">疑難排解</a></li><li class="chapter-item expanded affix "><li class="part-title">AI</li><li class="chapter-item expanded "><a href="../ai/overview.html">概覽</a></li><li class="chapter-item expanded "><a href="../ai/agent-panel.html">Agent Panel</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/tools.html">工具</a></li><li class="chapter-item expanded "><a href="../ai/tool-permissions.html">工具權限</a></li><li class="chapter-item expanded "><a href="../ai/external-agents.html">External Agents</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/parallel-agents.html">Parallel Agents</a></li><li class="chapter-item expanded "><a href="../ai/inline-assistant.html">Inline Assistant</a></li><li class="chapter-item expanded "><a href="../ai/edit-prediction.html">Edit Prediction</a></li><li class="chapter-item expanded "><a href="../ai/rules.html">Rules</a></li><li class="chapter-item expanded "><a href="../ai/mcp.html">模型上下文協定</a></li><li class="chapter-item expanded "><a href="../ai/configuration.html">組態</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/llm-providers.html">LLM 供應商</a></li><li class="chapter-item expanded "><a href="../ai/agent-settings.html">Agent Settings</a></li></ol></li><li class="chapter-item expanded "><a href="../ai/subscription.html">訂閱方案</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../ai/models.html">Models</a></li><li class="chapter-item expanded "><a href="../ai/plans-and-usage.html">Plans and Usage</a></li><li class="chapter-item expanded "><a href="../ai/billing.html">Billing</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Working with Code</li><li class="chapter-item expanded "><a href="../editing-code.html">Editing Code</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../completions.html">程式碼補全</a></li><li class="chapter-item expanded "><a href="../snippets.html">Snippets</a></li><li class="chapter-item expanded "><a href="../diagnostics.html">Diagnostics & Quick Fixes</a></li><li class="chapter-item expanded "><a href="../multibuffers.html">Multibuffers</a></li></ol></li><li class="chapter-item expanded "><a href="../finding-navigating.html">Finding & Navigating</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../command-palette.html">命令選擇區</a></li><li class="chapter-item expanded "><a href="../outline-panel.html">大綱面板</a></li><li class="chapter-item expanded "><a href="../project-panel.html">專案面板</a></li><li class="chapter-item expanded "><a href="../tab-switcher.html">頁籤切換器</a></li></ol></li><li class="chapter-item expanded "><a href="../running-testing.html">Running & Testing</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terminal.html">Terminal</a></li><li class="chapter-item expanded "><a href="../tasks.html">Tasks</a></li><li class="chapter-item expanded "><a href="../debugger.html">除錯器</a></li><li class="chapter-item expanded "><a href="../repl.html">REPL</a></li></ol></li><li class="chapter-item expanded "><a href="../git.html">Git</a></li><li class="chapter-item expanded "><a href="../modelines.html">Modelines</a></li><li class="chapter-item expanded affix "><li class="part-title">協作</li><li class="chapter-item expanded "><a href="../collaboration/overview.html">概覽</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../collaboration/channels.html">Channels</a></li><li class="chapter-item expanded "><a href="../collaboration/contacts-and-private-calls.html">Contacts and Private Calls</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">遠端開發</li><li class="chapter-item expanded "><a href="../remote-development.html">概覽</a></li><li class="chapter-item expanded "><a href="../environment.html">環境變數</a></li><li class="chapter-item expanded "><a href="../dev-containers.html">Dev Containers</a></li><li class="chapter-item expanded affix "><li class="part-title">平臺支援</li><li class="chapter-item expanded "><a href="../macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../linux.html">Linux</a></li><li class="chapter-item expanded affix "><li class="part-title">Customization</li><li class="chapter-item expanded "><a href="../appearance.html">Appearance</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../themes.html">主題</a></li><li class="chapter-item expanded "><a href="../icon-themes.html">圖示主題</a></li><li class="chapter-item expanded "><a href="../visual-customization.html">Fonts & Visual Tweaks</a></li></ol></li><li class="chapter-item expanded "><a href="../key-bindings.html">Keybindings</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../vim.html">Vim 模式</a></li><li class="chapter-item expanded "><a href="../helix.html">Helix 模式</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Language Support</li><li class="chapter-item expanded "><a href="../languages.html">所有語言</a></li><li class="chapter-item expanded "><a href="../configuring-languages.html">組態語言</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../toolchains.html">工具鏈</a></li><li class="chapter-item expanded "><a href="../semantic-tokens.html">Semantic Tokens</a></li></ol></li><li class="chapter-item expanded "><a href="../languages/ansible.html">Ansible</a></li><li class="chapter-item expanded "><a href="../languages/asciidoc.html">AsciiDoc</a></li><li class="chapter-item expanded "><a href="../languages/astro.html">Astro</a></li><li class="chapter-item expanded "><a href="../languages/bash.html">Bash</a></li><li class="chapter-item expanded "><a href="../languages/biome.html">Biome</a></li><li class="chapter-item expanded "><a href="../languages/c.html">C</a></li><li class="chapter-item expanded "><a href="../languages/cpp.html">C++</a></li><li class="chapter-item expanded "><a href="../languages/csharp.html">C#</a></li><li class="chapter-item expanded "><a href="../languages/clojure.html">Clojure</a></li><li class="chapter-item expanded "><a href="../languages/css.html">CSS</a></li><li class="chapter-item expanded "><a href="../languages/dart.html">Dart</a></li><li class="chapter-item expanded "><a href="../languages/deno.html">Deno</a></li><li class="chapter-item expanded "><a href="../languages/diff.html">Diff</a></li><li class="chapter-item expanded "><a href="../languages/docker.html">Docker</a></li><li class="chapter-item expanded "><a href="../languages/elixir.html">Elixir</a></li><li class="chapter-item expanded "><a href="../languages/elm.html">Elm</a></li><li class="chapter-item expanded "><a href="../languages/emmet.html">Emmet</a></li><li class="chapter-item expanded "><a href="../languages/erlang.html">Erlang</a></li><li class="chapter-item expanded "><a href="../languages/fish.html">Fish</a></li><li class="chapter-item expanded "><a href="../languages/gdscript.html">GDScript</a></li><li class="chapter-item expanded "><a href="../languages/gleam.html">Gleam</a></li><li class="chapter-item expanded "><a href="../languages/glsl.html">GLSL</a></li><li class="chapter-item expanded "><a href="../languages/go.html">Go</a></li><li class="chapter-item expanded "><a href="../languages/groovy.html">Groovy</a></li><li class="chapter-item expanded "><a href="../languages/haskell.html">Haskell</a></li><li class="chapter-item expanded "><a href="../languages/helm.html">Helm</a></li><li class="chapter-item expanded "><a href="../languages/html.html">HTML</a></li><li class="chapter-item expanded "><a href="../languages/java.html">Java</a></li><li class="chapter-item expanded "><a href="../languages/javascript.html">JavaScript</a></li><li class="chapter-item expanded "><a href="../languages/julia.html">Julia</a></li><li class="chapter-item expanded "><a href="../languages/json.html">JSON</a></li><li class="chapter-item expanded "><a href="../languages/jsonnet.html">Jsonnet</a></li><li class="chapter-item expanded "><a href="../languages/kotlin.html">Kotlin</a></li><li class="chapter-item expanded "><a href="../languages/lua.html">Lua</a></li><li class="chapter-item expanded "><a href="../languages/luau.html">Luau</a></li><li class="chapter-item expanded "><a href="../languages/makefile.html">Makefile</a></li><li class="chapter-item expanded "><a href="../languages/markdown.html">Markdown</a></li><li class="chapter-item expanded "><a href="../languages/nim.html">Nim</a></li><li class="chapter-item expanded "><a href="../languages/ocaml.html">OCaml</a></li><li class="chapter-item expanded "><a href="../languages/opentofu.html">OpenTofu</a></li><li class="chapter-item expanded "><a href="../languages/php.html">PHP</a></li><li class="chapter-item expanded "><a href="../languages/powershell.html">PowerShell</a></li><li class="chapter-item expanded "><a href="../languages/prisma.html">Prisma</a></li><li class="chapter-item expanded "><a href="../languages/proto.html">Proto</a></li><li class="chapter-item expanded "><a href="../languages/purescript.html">PureScript</a></li><li class="chapter-item expanded "><a href="../languages/python.html">Python</a></li><li class="chapter-item expanded "><a href="../languages/r.html">R</a></li><li class="chapter-item expanded "><a href="../languages/rego.html">Rego</a></li><li class="chapter-item expanded "><a href="../languages/rst.html">ReStructuredText</a></li><li class="chapter-item expanded "><a href="../languages/racket.html">Racket</a></li><li class="chapter-item expanded "><a href="../languages/roc.html">Roc</a></li><li class="chapter-item expanded "><a href="../languages/ruby.html">Ruby</a></li><li class="chapter-item expanded "><a href="../languages/rust.html">Rust</a></li><li class="chapter-item expanded "><a href="../languages/scala.html">Scala</a></li><li class="chapter-item expanded "><a href="../languages/scheme.html">Scheme</a></li><li class="chapter-item expanded "><a href="../languages/sh.html">Shell Script</a></li><li class="chapter-item expanded "><a href="../languages/sql.html">SQL</a></li><li class="chapter-item expanded "><a href="../languages/svelte.html">Svelte</a></li><li class="chapter-item expanded "><a href="../languages/swift.html">Swift</a></li><li class="chapter-item expanded "><a href="../languages/tailwindcss.html">Tailwind CSS</a></li><li class="chapter-item expanded "><a href="../languages/terraform.html">Terraform</a></li><li class="chapter-item expanded "><a href="../languages/toml.html">TOML</a></li><li class="chapter-item expanded "><a href="../languages/typescript.html">TypeScript</a></li><li class="chapter-item expanded "><a href="../languages/uiua.html">Uiua</a></li><li class="chapter-item expanded "><a href="../languages/vue.html">Vue</a></li><li class="chapter-item expanded "><a href="../languages/xml.html">XML</a></li><li class="chapter-item expanded "><a href="../languages/yaml.html">YAML</a></li><li class="chapter-item expanded "><a href="../languages/yara.html">Yara</a></li><li class="chapter-item expanded "><a href="../languages/yarn.html">Yarn</a></li><li class="chapter-item expanded "><a href="../languages/zig.html">Zig</a></li><li class="chapter-item expanded affix "><li class="part-title">擴充功能</li><li class="chapter-item expanded "><a href="../extensions.html">概覽</a></li><li class="chapter-item expanded "><a href="../extensions/installing-extensions.html">安裝擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/developing-extensions.html">開發擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/capabilities.html">Extension Capabilities</a></li><li class="chapter-item expanded "><a href="../extensions/languages.html">語言擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/debugger-extensions.html">除錯器擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/themes.html">主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/icon-themes.html">圖示主題擴充功能</a></li><li class="chapter-item expanded "><a href="../extensions/snippets.html">Snippets Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/agent-servers.html">Agent Server Extensions</a></li><li class="chapter-item expanded "><a href="../extensions/mcp-extensions.html">MCP 伺服器擴充功能</a></li><li class="chapter-item expanded affix "><li class="part-title">Coming From…</li><li class="chapter-item expanded "><a href="../migrate/vs-code.html">VS Code</a></li><li class="chapter-item expanded "><a href="../migrate/intellij.html">IntelliJ IDEA</a></li><li class="chapter-item expanded "><a href="../migrate/pycharm.html">PyCharm</a></li><li class="chapter-item expanded "><a href="../migrate/webstorm.html" class="active">WebStorm</a></li><li class="chapter-item expanded "><a href="../migrate/rustrover.html">RustRover</a></li><li class="chapter-item expanded affix "><li class="part-title">Reference</li><li class="chapter-item expanded "><a href="../reference/all-settings.html">All Settings</a></li><li class="chapter-item expanded "><a href="../all-actions.html">All Actions</a></li><li class="chapter-item expanded "><a href="../reference/cli.html">CLI Reference</a></li><li class="chapter-item expanded affix "><li class="part-title">Account & Privacy</li><li class="chapter-item expanded "><a href="../authentication.html">Authenticate</a></li><li class="chapter-item expanded "><a href="../roles.html">Roles</a></li><li class="chapter-item expanded "><a href="../ai/privacy-and-security.html">Privacy and Security</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../worktree-trust.html">Worktree Trust</a></li><li class="chapter-item expanded "><a href="../ai/ai-improvement.html">AI Improvement</a></li></ol></li><li class="chapter-item expanded "><a href="../telemetry.html">Telemetry</a></li><li class="chapter-item expanded affix "><li class="part-title">開發 Zed</li><li class="chapter-item expanded "><a href="../development.html">開發 Zed</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../development/macos.html">macOS</a></li><li class="chapter-item expanded "><a href="../development/linux.html">Linux</a></li><li class="chapter-item expanded "><a href="../development/windows.html">Windows</a></li><li class="chapter-item expanded "><a href="../development/freebsd.html">FreeBSD</a></li><li class="chapter-item expanded "><a href="../development/debuggers.html">使用除錯器</a></li><li class="chapter-item expanded "><a href="../performance.html">Performance</a></li><li class="chapter-item expanded "><a href="../development/glossary.html">Glossary</a></li></ol></li><li class="chapter-item expanded "><a href="../development/release-notes.html">發行備註</a></li><li class="chapter-item expanded "><a href="../development/debugging-crashes.html">Debugging Crashes</a></li></ol>
+                </div>
+                <div style="display: none;" id="sidebar-resize-handle" class="sidebar-resize-handle">
+                    <div class="sidebar-resize-indicator"></div>
+                </div>
+            </nav>
+
+            <!-- Mobile sidebar toggle -->
+            <script>
+                (function() {
+                    var sidebarToggle = document.getElementById('sidebar-toggle');
+                    var sidebar = document.getElementById('sidebar');
+
+                    sidebarToggle.addEventListener('click', function() {
+                        var isOpen = document.body.classList.toggle('sidebar-open');
+                        sidebarToggle.setAttribute('aria-expanded', isOpen);
+                        sidebar.setAttribute('aria-hidden', !isOpen);
+                    });
+
+                    // Close sidebar when clicking a link inside it (on mobile)
+                    sidebar.addEventListener('click', function(e) {
+                        if (e.target.tagName === 'A' && window.innerWidth < 620) {
+                            document.body.classList.remove('sidebar-open');
+                            sidebarToggle.setAttribute('aria-expanded', 'false');
+                            sidebar.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+                })();
+            </script>
+
+            <!-- Search backdrop handlers -->
+            <script>
+                (function() {
+                    var searchWrapper = document.getElementById('search-wrapper');
+                    var searchContainer = document.querySelector('.search-container');
+                    var searchResults = document.getElementById('searchresults');
+
+                    if (!searchWrapper || !searchContainer) return;
+
+                    searchContainer.addEventListener('click', function(e) {
+                        if (e.target === searchContainer) {
+                            searchWrapper.classList.add('hidden');
+                        }
+                    });
+
+                    if (searchResults) {
+                        searchResults.addEventListener('click', function(e) {
+                            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                                searchWrapper.classList.add('hidden');
+                            }
+                        });
+                    }
+                })();
+            </script>
+
+            <!-- Insert section spacers and apply collapsed state before scroll restoration to prevent layout shift/flicker -->
+            <script>
+                (function() {
+                    var chapterList = document.querySelector('#sidebar ol.chapter');
+                    if (!chapterList) return;
+
+                    var collapsedSections = [];
+                    try {
+                        var stored = sessionStorage.getItem('sidebar-collapsed-sections');
+                        if (stored) {
+                            collapsedSections = JSON.parse(stored);
+                        }
+                    } catch (e) {}
+
+                    var partTitles = chapterList.querySelectorAll('li.part-title');
+                    var previousPartTitle = null;
+
+                    partTitles.forEach(function(partTitle, index) {
+                        partTitle._sectionName = partTitle.textContent.trim();
+
+                        // Insert a spacer before this part-title (except for the first one)
+                        if (index > 0) {
+                            var spacer = document.createElement('li');
+                            spacer.className = 'section-spacer';
+                            partTitle.parentNode.insertBefore(spacer, partTitle);
+
+                            if (previousPartTitle) {
+                                previousPartTitle._spacerAfter = spacer;
+                            }
+                        }
+
+                        var isCollapsed = collapsedSections.includes(partTitle._sectionName);
+                        if (isCollapsed) {
+                            // Hide all siblings until next part-title
+                            var sibling = partTitle.nextElementSibling;
+                            while (sibling && !sibling.classList.contains('part-title')) {
+                                sibling.classList.add('section-hidden');
+                                sibling = sibling.nextElementSibling;
+                            }
+                            // Hide the spacer after this section (will be set on next iteration)
+                            partTitle._isCollapsed = true;
+                        }
+
+                        // If previous section was collapsed, hide its spacer
+                        if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                            previousPartTitle._spacerAfter.classList.add('section-hidden');
+                        }
+
+                        previousPartTitle = partTitle;
+                    });
+
+                    // Handle the last section's spacer if it was collapsed
+                    if (previousPartTitle && previousPartTitle._isCollapsed && previousPartTitle._spacerAfter) {
+                        previousPartTitle._spacerAfter.classList.add('section-hidden');
+                    }
+                })();
+            </script>
+
+            <!-- Track and set sidebar scroll position -->
+            <script>
+                var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+                sidebarScrollbox.addEventListener('click', function(e) {
+                    if (e.target.tagName === 'A') {
+                        sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                    }
+                }, { passive: true });
+                var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+                sessionStorage.removeItem('sidebar-scroll');
+                if (sidebarScrollTop) {
+                    // preserve sidebar scroll position when navigating via links within sidebar
+                    sidebarScrollbox.scrollTop = sidebarScrollTop;
+                } else {
+                    // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                    var activeSection = document.querySelector('#sidebar .active');
+                    if (activeSection) {
+                        activeSection.scrollIntoView({ block: 'center' });
+                    }
+                }
+            </script>
+
+            <div class="page">
+                <div id="content" class="content">
+                    <main>
+                      
+<h1 id="how-to-migrate-from-webstorm-to-zed"><a class="header" href="#how-to-migrate-from-webstorm-to-zed">How to Migrate from WebStorm to Zed</a></h1>
+<p>This guide covers how to set up Zed if you're coming from WebStorm, including keybindings, settings, and the differences you should expect as a JavaScript/TypeScript developer.</p>
+<h2 id="安裝-zed"><a class="header" href="#安裝-zed">安裝 Zed</a></h2>
+<p>Zed is available on macOS, Windows, and Linux.</p>
+<p>For macOS, you can download it from zed.dev/download, or install via Homebrew:</p>
+<pre><code class="language-sh">brew install --cask zed
+</code></pre>
+<p>For Windows, download the installer from zed.dev/download, or install via winget:</p>
+<pre><code class="language-sh">winget install Zed.Zed
+</code></pre>
+<p>For most Linux users, the easiest way to install Zed is through our installation script:</p>
+<pre><code class="language-sh">curl -f https://zed.dev/install.sh | sh
+</code></pre>
+<p>After installation, you can launch Zed from your Applications folder (macOS), Start menu (Windows), or directly from the terminal using: <code>zed .</code> This opens the current directory in Zed.</p>
+<h2 id="set-up-the-jetbrains-keymap"><a class="header" href="#set-up-the-jetbrains-keymap">Set Up the JetBrains Keymap</a></h2>
+<p>If you're coming from WebStorm, the fastest way to feel at home is to use the JetBrains keymap. During onboarding, you can select it as your base keymap. If you missed that step, you can change it anytime:</p>
+<ol>
+<li>Open Settings with <kbd class="keybinding">cmd-,|ctrl-,</kbd></li>
+<li>搜尋 <code>Base Keymap</code></li>
+<li>Select <code>JetBrains</code></li>
+</ol>
+<p>This maps familiar shortcuts like <kbd class="keybinding">cmd-o|ctrl-alt-shift-n</kbd> for Go to Class and <kbd class="keybinding">shift shift|shift shift</kbd> for Find Action.</p>
+<h2 id="設定編輯器偏好設定"><a class="header" href="#設定編輯器偏好設定">設定編輯器偏好設定</a></h2>
+<p>You can configure most settings in the Settings Editor (<kbd class="keybinding">cmd-,|ctrl-,</kbd>). For advanced settings, run <code>zed: open settings file</code> from the Command Palette to edit your settings file directly.</p>
+<p>Settings WebStorm users typically configure first:</p>
+<div class="table-wrapper"><table><thead><tr><th>Zed 設定</th><th>What it does</th></tr></thead><tbody>
+<tr><td><code>format_on_save</code></td><td>Auto-format when saving. Set to <code>"on"</code> to enable.</td></tr>
+<tr><td><code>soft_wrap</code></td><td>Wrap long lines. Options: <code>"none"</code>, <code>"editor_width"</code>, <code>"preferred_line_length"</code></td></tr>
+<tr><td><code>preferred_line_length</code></td><td>Column width for wrapping and rulers. Default is 80.</td></tr>
+<tr><td><code>inlay_hints</code></td><td>Show parameter names and type hints inline, like WebStorm's hints.</td></tr>
+<tr><td><code>relative_line_numbers</code></td><td>Useful if you're coming from IdeaVim.</td></tr>
+</tbody></table>
+</div>
+<p>Zed also supports per-project settings. Create a <code>.zed/settings.json</code> file in your project root to override global settings for that project, similar to how you might use <code>.idea</code> folders in WebStorm.</p>
+<blockquote>
+<p><strong>Tip:</strong> If you're joining an existing project, check <code>format_on_save</code> before making your first commit. Otherwise you might accidentally reformat an entire file when you only meant to change one line.</p>
+</blockquote>
+<h2 id="開啟或建立專案"><a class="header" href="#開啟或建立專案">開啟或建立專案</a></h2>
+<p>After setup, use <kbd class="keybinding">cmd-shift-n|ctrl-alt-n</kbd> to open a folder. This becomes your workspace in Zed. Unlike WebStorm, there's no project configuration wizard, no framework selection dialog, and no project structure setup required.</p>
+<p>To start a new project, create a directory using your terminal or file manager, then open it in Zed. The editor will treat that folder as the root of your project. For new projects, you'd typically run <code>npm init</code>, <code>pnpm create</code>, or your framework's CLI tool first, then open the resulting folder in Zed.</p>
+<p>You can also launch Zed from the terminal inside any folder with: <code>zed .</code></p>
+<p>Once inside a project:</p>
+<ul>
+<li>Use <kbd class="keybinding">cmd-shift-n|ctrl-alt-n</kbd> to jump between files quickly (like WebStorm's "Recent Files")</li>
+<li>Use <kbd class="keybinding">shift shift|shift shift</kbd> to open the Command Palette (like WebStorm's "Search Everywhere")</li>
+<li>Use <kbd class="keybinding">cmd-o|ctrl-alt-shift-n</kbd> to search for symbols (like WebStorm's "Go to Symbol")</li>
+</ul>
+<p>Open buffers appear as tabs across the top. The Project Panel shows your file tree and Git status. Toggle it with <kbd class="keybinding">cmd-1|alt-1</kbd> (just like WebStorm's Project tool window).</p>
+<h2 id="differences-in-keybindings"><a class="header" href="#differences-in-keybindings">Differences in Keybindings</a></h2>
+<p>If you chose the JetBrains keymap during onboarding, most of your shortcuts should already feel familiar. Here's a quick reference of common actions and their keybindings with the JetBrains keymap active.</p>
+<h3 id="common-keybindings"><a class="header" href="#common-keybindings">Common Keybindings</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Zed Keybinding</th></tr></thead><tbody>
+<tr><td>命令選擇區</td><td><kbd class="keybinding">shift shift|shift shift</kbd></td></tr>
+<tr><td>前往檔案</td><td><kbd class="keybinding">cmd-shift-n|ctrl-alt-n</kbd></td></tr>
+<tr><td>Go to Symbol</td><td><kbd class="keybinding">cmd-o|ctrl-alt-shift-n</kbd></td></tr>
+<tr><td>檔案大綱</td><td><kbd class="keybinding">cmd-f12|ctrl-f12</kbd></td></tr>
+<tr><td>前往定義</td><td><kbd class="keybinding">cmd-b|ctrl-b</kbd></td></tr>
+<tr><td>Find Usages</td><td><kbd class="keybinding">cmd-alt-f7|ctrl-alt-f7</kbd></td></tr>
+<tr><td>重新命名符號</td><td><kbd class="keybinding">shift-f6|shift-f6</kbd></td></tr>
+<tr><td>重新格式化程式碼</td><td><kbd class="keybinding">cmd-alt-l|ctrl-alt-l</kbd></td></tr>
+<tr><td>Toggle Project Panel</td><td><kbd class="keybinding">cmd-1|alt-1</kbd></td></tr>
+<tr><td>Toggle Terminal</td><td><kbd class="keybinding">alt-f12|alt-f12</kbd></td></tr>
+<tr><td>Duplicate Line</td><td><kbd class="keybinding">cmd-d|ctrl-d</kbd></td></tr>
+<tr><td>Delete Line</td><td><kbd class="keybinding">cmd-backspace|ctrl-y</kbd></td></tr>
+<tr><td>Move Line Up</td><td><kbd class="keybinding">shift-alt-up|shift-alt-up</kbd></td></tr>
+<tr><td>Move Line Down</td><td><kbd class="keybinding">shift-alt-down|shift-alt-down</kbd></td></tr>
+<tr><td>Expand Selection</td><td><kbd class="keybinding">alt-up|ctrl-w</kbd></td></tr>
+<tr><td>Shrink Selection</td><td><kbd class="keybinding">alt-down|ctrl-shift-w</kbd></td></tr>
+<tr><td>Comment Line</td><td><kbd class="keybinding">cmd-/|ctrl-/</kbd></td></tr>
+<tr><td>Go Back</td><td><kbd class="keybinding">cmd-alt-left|ctrl-alt-left</kbd></td></tr>
+<tr><td>Go Forward</td><td><kbd class="keybinding">cmd-alt-right|ctrl-alt-right</kbd></td></tr>
+<tr><td>Toggle Breakpoint</td><td><kbd class="keybinding">ctrl-f8|ctrl-f8</kbd></td></tr>
+<tr><td>Navigate to Next Error</td><td><kbd class="keybinding">f2|f2</kbd></td></tr>
+</tbody></table>
+</div>
+<h3 id="unique-to-zed"><a class="header" href="#unique-to-zed">Unique to Zed</a></h3>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Keybinding</th><th>備註</th></tr></thead><tbody>
+<tr><td>Toggle Right Dock</td><td><kbd class="keybinding">cmd-r|ctrl-alt-b</kbd></td><td>Agent panel, notifications</td></tr>
+<tr><td>Split Pane Right</td><td><kbd class="keybinding">cmd-d|ctrl-shift-5</kbd></td><td>Use other arrow keys to create splits in different directions</td></tr>
+</tbody></table>
+</div>
+<h3 id="how-to-customize-keybindings"><a class="header" href="#how-to-customize-keybindings">How to Customize Keybindings</a></h3>
+<ul>
+<li>Open the Command Palette (<kbd class="keybinding">shift shift|shift shift</kbd>)</li>
+<li>執行 <code>zed: open keymap</code></li>
+</ul>
+<p>This opens a list of all available bindings. You can override individual shortcuts or remove conflicts.</p>
+<p>Zed also supports key sequences (multi-key shortcuts).</p>
+<h2 id="differences-in-user-interfaces"><a class="header" href="#differences-in-user-interfaces">Differences in User Interfaces</a></h2>
+<h3 id="no-indexing"><a class="header" href="#no-indexing">No Indexing</a></h3>
+<p>If you've used WebStorm on large projects, you know the wait. Opening a project with many dependencies can mean watching "Indexing..." for anywhere from 30 seconds to several minutes. WebStorm indexes your entire codebase and <code>node_modules</code> to power its code intelligence, and re-indexes when dependencies change.</p>
+<p>Zed doesn't index. You open a folder and start coding immediately—no progress bars, no "Indexing paused" banners. File search and navigation stay fast regardless of project size or how many <code>node_modules</code> dependencies you have.</p>
+<p>WebStorm's index enables features like finding all usages across your entire codebase, tracking import hierarchies, and flagging unused exports project-wide. Zed relies on language servers for this analysis, which may not cover as much ground.</p>
+<p><strong>How to adapt:</strong></p>
+<ul>
+<li>Search symbols across the project with <kbd class="keybinding">cmd-o|ctrl-alt-shift-n</kbd> (powered by the TypeScript language server)</li>
+<li>Find files by name with <kbd class="keybinding">cmd-shift-n|ctrl-alt-n</kbd></li>
+<li>Use <kbd class="keybinding">cmd-shift-f|ctrl-shift-f</kbd> for text search—it stays fast even in large monorepos</li>
+<li>Run <code>tsc --noEmit</code> or <code>eslint .</code> from the terminal when you need deeper project-wide analysis</li>
+</ul>
+<h3 id="lsp-vs-native-language-intelligence"><a class="header" href="#lsp-vs-native-language-intelligence">LSP vs. Native Language Intelligence</a></h3>
+<p>WebStorm has its own JavaScript and TypeScript analysis engine built by JetBrains. This engine understands your code deeply: it resolves types, tracks data flow, knows about framework-specific patterns, and offers specialized refactorings.</p>
+<p>Zed uses the Language Server Protocol (LSP) for code intelligence. For JavaScript and TypeScript, Zed supports:</p>
+<ul>
+<li><strong>vtsls</strong> (default) — Fast TypeScript language server with excellent performance</li>
+<li><strong>typescript-language-server</strong> — The standard TypeScript LSP implementation</li>
+<li><strong>ESLint</strong> — Linting integration</li>
+<li><strong>Prettier</strong> — Code formatting (built-in)</li>
+</ul>
+<p>The TypeScript LSP experience is well-supported. You get accurate completions, type checking, go-to-definition, and find-references. The experience is comparable to VS Code, which uses the same underlying TypeScript services.</p>
+<p>Where you might notice differences:</p>
+<ul>
+<li>Framework-specific intelligence (Angular templates, Vue SFCs) may be less integrated</li>
+<li>Some complex refactorings (extract component with proper imports) may be less sophisticated</li>
+<li>Auto-import suggestions depend on what the language server knows about your project</li>
+</ul>
+<p><strong>How to adapt:</strong></p>
+<ul>
+<li>Use <kbd class="keybinding">alt-enter|alt-enter</kbd> for available code actions—the list will vary by language server</li>
+<li>Ensure your <code>tsconfig.json</code> is properly configured so the language server understands your project structure</li>
+<li>Use Prettier for consistent formatting (it's enabled by default for JS/TS)</li>
+<li>For code inspection similar to WebStorm's "Inspect Code," check the Diagnostics panel (<kbd class="keybinding">cmd-6|alt-6</kbd>)—ESLint and TypeScript together catch many of the same issues</li>
+</ul>
+<h3 id="no-project-model"><a class="header" href="#no-project-model">No Project Model</a></h3>
+<p>WebStorm manages projects through <code>.idea</code> folders containing XML configuration files, framework detection, and run configurations. This model lets WebStorm remember your project settings, manage npm scripts through the UI, and persist run/debug setups.</p>
+<p>Zed takes a different approach: a project is just a folder. There's no setup wizard, no framework detection dialog, no project structure to configure.</p>
+<p>What this means in practice:</p>
+<ul>
+<li>Run configurations aren't a thing. Define reusable commands in <code>tasks.json</code> instead. Note that your existing <code>.idea/</code> configurations won't carry over—you'll set up the ones you need fresh.</li>
+<li>npm scripts live in the terminal. Run <code>npm run dev</code>, <code>pnpm build</code>, or <code>yarn test</code> directly—there's no dedicated npm panel.</li>
+<li>No framework detection. Zed treats React, Angular, Vue, and vanilla JS/TS the same way.</li>
+</ul>
+<p><strong>How to adapt:</strong></p>
+<ul>
+<li>Create a <code>.zed/settings.json</code> in your project root for project-specific settings</li>
+<li>Define common commands in <code>tasks.json</code> (open via Command Palette: <code>zed: open tasks</code>):</li>
+</ul>
+<pre><code class="language-json">[
+  {
+    "label": "dev",
+    "command": "npm run dev"
+  },
+  {
+    "label": "build",
+    "command": "npm run build"
+  },
+  {
+    "label": "test",
+    "command": "npm test"
+  },
+  {
+    "label": "test current file",
+    "command": "npm test -- $ZED_FILE"
+  }
+]
+</code></pre>
+<ul>
+<li>Use <kbd class="keybinding">shift-f10|shift-f10</kbd> to run tasks quickly</li>
+<li>Lean on your terminal (<kbd class="keybinding">alt-f12|alt-f12</kbd>) for anything tasks don't cover</li>
+</ul>
+<h3 id="no-framework-integration"><a class="header" href="#no-framework-integration">No Framework Integration</a></h3>
+<p>WebStorm's value for web development comes largely from its framework integration. React components get special treatment. Angular has dedicated tooling. Vue single-file components are fully understood. The npm tool window shows all your scripts.</p>
+<p>Zed has none of this built-in. The TypeScript language server sees your code as TypeScript—it doesn't understand that a function is a React component or that a file is an Angular service.</p>
+<p><strong>How to adapt:</strong></p>
+<ul>
+<li>Use grep and file search liberally. <kbd class="keybinding">cmd-shift-f|ctrl-shift-f</kbd> with a regex can find component definitions, route configurations, or API endpoints.</li>
+<li>Rely on your language server's "find references" (<kbd class="keybinding">cmd-alt-f7|ctrl-alt-f7</kbd>) for navigation—it works, just without framework context</li>
+<li>Consider using framework-specific CLI tools (<code>ng</code>, <code>next</code>, <code>vite</code>) from Zed's terminal</li>
+<li>For React, JSX/TSX syntax and TypeScript types still provide good intelligence</li>
+</ul>
+<blockquote>
+<p><strong>Tip:</strong> For projects with complex configurations, keep your framework's documentation handy. Zed's speed comes with less hand-holding for framework-specific features.</p>
+</blockquote>
+<h3 id="tool-windows-vs-docks"><a class="header" href="#tool-windows-vs-docks">Tool Windows vs. Docks</a></h3>
+<p>WebStorm organizes auxiliary views into numbered tool windows. Zed uses a similar concept called "docks":</p>
+<div class="table-wrapper"><table><thead><tr><th>WebStorm 工具視窗</th><th>Zed Equivalent</th><th>Zed Keybinding</th></tr></thead><tbody>
+<tr><td>Project</td><td>專案面板</td><td><kbd class="keybinding">cmd-1|alt-1</kbd></td></tr>
+<tr><td>Git</td><td>Git 面板</td><td><kbd class="keybinding">cmd-0|alt-0</kbd></td></tr>
+<tr><td>Terminal</td><td>終端機面板</td><td><kbd class="keybinding">alt-f12|alt-f12</kbd></td></tr>
+<tr><td>Structure</td><td>大綱面板</td><td><kbd class="keybinding">cmd-7|alt-7</kbd></td></tr>
+<tr><td>Problems</td><td>診斷</td><td><kbd class="keybinding">cmd-6|alt-6</kbd></td></tr>
+<tr><td>Debug</td><td>除錯面板</td><td><kbd class="keybinding">cmd-5|alt-5</kbd></td></tr>
+</tbody></table>
+</div>
+<p>Zed has three dock positions: left, bottom, and right. Panels can be moved between docks by dragging or through settings.</p>
+<p>Note that there's no dedicated npm tool window in Zed. Use the terminal or define tasks for your common npm scripts.</p>
+<h3 id="除錯"><a class="header" href="#除錯">除錯</a></h3>
+<p>Both WebStorm and Zed offer integrated debugging for JavaScript and TypeScript:</p>
+<ul>
+<li>Zed uses <code>vscode-js-debug</code> (the same debug adapter that VS Code uses)</li>
+<li>Set breakpoints with <kbd class="keybinding">ctrl-f8|ctrl-f8</kbd></li>
+<li>Start debugging with <kbd class="keybinding">alt-shift-f9|alt-shift-f9</kbd></li>
+<li>Step through code with <kbd class="keybinding">f7|f7</kbd> (step into), <kbd class="keybinding">f8|f8</kbd> (step over), <kbd class="keybinding">shift-f8|shift-f8</kbd> (step out)</li>
+<li>Continue execution with <kbd class="keybinding">f9|f9</kbd></li>
+</ul>
+<p>Zed can debug:</p>
+<ul>
+<li>Node.js applications and scripts</li>
+<li>Chrome/browser JavaScript</li>
+<li>Jest, Mocha, Vitest, and other test frameworks</li>
+<li>Next.js (both server and client-side)</li>
+</ul>
+<p>For more control, create a <code>.zed/debug.json</code> file:</p>
+<pre><code class="language-json">[
+  {
+    "label": "Debug Current File",
+    "adapter": "JavaScript",
+    "program": "$ZED_FILE",
+    "request": "launch"
+  },
+  {
+    "label": "Debug Node Server",
+    "adapter": "JavaScript",
+    "request": "launch",
+    "program": "${workspaceFolder}/src/server.js"
+  },
+  {
+    "label": "Attach to Chrome",
+    "adapter": "JavaScript",
+    "request": "attach",
+    "port": 9222
+  }
+]
+</code></pre>
+<p>Zed also recognizes <code>.vscode/launch.json</code> configurations, so existing VS Code debug setups often work out of the box.</p>
+<h3 id="執行測試"><a class="header" href="#執行測試">執行測試</a></h3>
+<p>WebStorm has a dedicated test runner with a visual interface showing pass/fail status for each test. Zed provides test running through:</p>
+<ul>
+<li><strong>Gutter icons</strong> — Click the play button next to test functions or describe blocks</li>
+<li><strong>Tasks</strong> — Define test commands in <code>tasks.json</code></li>
+<li><strong>Terminal</strong> — Run <code>npm test</code>, <code>jest</code>, <code>vitest</code>, etc. directly</li>
+</ul>
+<p>Zed supports auto-detection for common test frameworks:</p>
+<ul>
+<li>Jest</li>
+<li>Mocha</li>
+<li>Vitest</li>
+<li>Jasmine</li>
+<li>Bun test</li>
+<li>Node.js test runner</li>
+</ul>
+<p>The test output appears in the terminal panel. For Jest, use <code>--verbose</code> for detailed output or <code>--watch</code> for continuous testing during development.</p>
+<h3 id="extensions-vs-plugins"><a class="header" href="#extensions-vs-plugins">Extensions vs. Plugins</a></h3>
+<p>WebStorm has a plugin catalog covering additional language support, themes, and tool integrations.</p>
+<p>Zed's extension catalog is smaller and more focused:</p>
+<ul>
+<li>語言支援與語法標明</li>
+<li>主題</li>
+<li>上下文伺服器</li>
+</ul>
+<p>Several features that require plugins in WebStorm are built into Zed:</p>
+<ul>
+<li>Real-time collaboration with voice chat</li>
+<li>AI coding assistance</li>
+<li>內建終端機</li>
+<li>Task runner</li>
+<li>LSP-based code intelligence</li>
+<li>Prettier formatting</li>
+<li>ESLint integration</li>
+</ul>
+<h3 id="whats-not-in-zed"><a class="header" href="#whats-not-in-zed">What's Not in Zed</a></h3>
+<p>To set expectations clearly, here's what WebStorm offers that Zed doesn't have:</p>
+<ul>
+<li><strong>npm tool window</strong> — Use the terminal or tasks instead</li>
+<li><strong>HTTP Client</strong> — Use tools like Postman, Insomnia, or curl</li>
+<li><strong>Database tools</strong> — Use DataGrip, DBeaver, or TablePlus</li>
+<li><strong>Framework-specific tooling</strong> (Angular schematics, React refactorings) — Use CLI tools</li>
+<li><strong>Visual package.json editor</strong> — Edit the file directly</li>
+<li><strong>Built-in REST client</strong> — Use external tools or extensions</li>
+<li><strong>Profiler integration</strong> — Use Chrome DevTools or Node.js profiling tools</li>
+</ul>
+<h2 id="collaboration-in-zed-vs-webstorm"><a class="header" href="#collaboration-in-zed-vs-webstorm">Collaboration in Zed vs. WebStorm</a></h2>
+<p>WebStorm offers Code With Me as a separate feature for collaboration. Zed has collaboration built into the core experience.</p>
+<ul>
+<li>Open the Collab Panel in the left dock</li>
+<li>Create a channel and <a href="https://zed.dev/docs/collaboration#inviting-a-collaborator">invite your collaborators</a> to join</li>
+<li><a href="https://zed.dev/docs/collaboration#share-a-project">Share your screen or your codebase</a> directly</li>
+</ul>
+<p>Once connected, you'll see each other's cursors, selections, and edits in real time. Voice chat is included. There's no need for separate tools or third-party logins.</p>
+<h2 id="在-zed-中使用-ai"><a class="header" href="#在-zed-中使用-ai">在 Zed 中使用 AI</a></h2>
+<p>If you're used to AI assistants in WebStorm (like GitHub Copilot, JetBrains AI Assistant, or Junie), Zed offers similar capabilities with more flexibility.</p>
+<h3 id="configuring-github-copilot"><a class="header" href="#configuring-github-copilot">Configuring GitHub Copilot</a></h3>
+<ol>
+<li>Open Settings with <kbd class="keybinding">cmd-,|ctrl-,</kbd></li>
+<li>Navigate to <strong>AI → Edit Predictions</strong></li>
+<li>Click <strong>Configure</strong> next to "Configure Providers"</li>
+<li>Under <strong>GitHub Copilot</strong>, click <strong>Sign in to GitHub</strong></li>
+</ol>
+<p>Once signed in, just start typing. Zed will offer suggestions inline for you to accept.</p>
+<h3 id="additional-ai-options"><a class="header" href="#additional-ai-options">Additional AI Options</a></h3>
+<p>To use other AI models in Zed, you have several options:</p>
+<ul>
+<li>Use Zed's hosted models, with higher rate limits. Requires <a href="https://zed.dev/docs/authentication">authentication</a> and subscription to <a href="https://zed.dev/docs/ai/subscription.html">Zed Pro</a>.</li>
+<li>Bring your own <a href="https://zed.dev/docs/ai/llm-providers.html">API keys</a>, no authentication needed</li>
+<li>Use <a href="https://zed.dev/docs/ai/external-agents.html">external agents like Claude Agent</a></li>
+</ul>
+<h2 id="advanced-config-and-productivity-tweaks"><a class="header" href="#advanced-config-and-productivity-tweaks">Advanced Config and Productivity Tweaks</a></h2>
+<p>Zed exposes advanced settings for power users who want to fine-tune their environment.</p>
+<p>Here are a few useful tweaks for JavaScript/TypeScript developers:</p>
+<p><strong>Format on Save:</strong></p>
+<pre><code class="language-json">"format_on_save": "on"
+</code></pre>
+<p><strong>Configure Prettier as the default formatter</strong> (requires manual JSON editing):</p>
+<pre><code class="language-json">{
+  "formatter": {
+    "external": {
+      "command": "prettier",
+      "arguments": ["--stdin-filepath", "{buffer_path}"]
+    }
+  }
+}
+</code></pre>
+<p><strong>Enable ESLint code actions</strong> (requires manual JSON editing):</p>
+<pre><code class="language-json">{
+  "lsp": {
+    "eslint": {
+      "settings": {
+        "codeActionOnSave": {
+          "rules": ["import/order"]
+        }
+      }
+    }
+  }
+}
+</code></pre>
+<p><strong>Configure TypeScript strict mode hints:</strong></p>
+<p>In your <code>tsconfig.json</code>, enable strict mode for better type checking:</p>
+<pre><code class="language-json">{
+  "compilerOptions": {
+    "strict": true,
+    "noUncheckedIndexedAccess": true
+  }
+}
+</code></pre>
+<p><strong>Enable direnv support (useful for projects using direnv for environment variables):</strong></p>
+<pre><code class="language-json">"load_direnv": "shell_hook"
+</code></pre>
+<h2 id="下一步"><a class="header" href="#下一步">下一步</a></h2>
+<p>Now that you're set up, here are some resources to help you get the most out of Zed:</p>
+<ul>
+<li><a href="../reference/all-settings.html">All Settings</a> — Customize settings, themes, and editor behavior</li>
+<li><a href="../key-bindings.html">Key Bindings</a> — Learn how to customize and extend your keymap</li>
+<li><a href="../tasks.html">Tasks</a> — Set up build and run commands for your projects</li>
+<li><a href="../ai/overview.html">AI Features</a> — Explore Zed's AI capabilities beyond code completion</li>
+<li><a href="../collaboration/overview.html">Collaboration</a> — Share your projects and code together in real time</li>
+<li><a href="../languages/javascript.html">JavaScript in Zed</a> — JavaScript-specific setup and configuration</li>
+<li><a href="../languages/typescript.html">TypeScript in Zed</a> — TypeScript-specific setup and configuration</li>
+</ul>
+
+                        <div class="footer-buttons">
+                            <a rel="prev" href="../migrate/pycharm.html" class="footer-button" title="PyCharm">
+                                <i class="fa fa-angle-left"></i>
+                                PyCharm
+                            </a>
+                            <a rel="next" href="../migrate/rustrover.html" class="footer-button" title="RustRover">
+                                RustRover
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                        <footer class="footer">
+                            <a href="/" class="logo-nav">
+                                <img
+                                    src="https://zed.dev/logo_icon.webp"
+                                    class="footer-logo"
+                                    alt="Zed Industries"
+                                />
+                            </a>
+                            <span class="footer-separator">•</span>
+                            <a class="footer-link" href="https://zed.dev"
+                                >Back to Site</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/releases"
+                                >Releases</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/roadmap"
+                                >Roadmap</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://github.com/zed-industries/zed"
+                                >GitHub</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <a
+                                class="footer-link"
+                                href="https://zed.dev/blog"
+                                >Blog</a
+                            >
+                            <span class="footer-separator">•</span>
+                            <button
+                                id="c15t-manage-consent-btn"
+                                class="footer-link"
+                            >
+                                Manage Site Cookies
+                            </button>
+                        </footer>
+                    </main>
+                    <div class="toc-container">
+                        <nav class="pagetoc"></nav>
+                    </div>
+                    <!-- Immediately detect if page has headins that are not h1 to prevent flicker -->
+                    <script>
+                        (function() {
+                            var tocContainer = document.querySelector('.toc-container');
+                            var headers = document.querySelectorAll('.header');
+                            var hasNonH1Headers = false;
+                            for (var i = 0; i < headers.length; i++) {
+                                var parent = headers[i].parentElement;
+                                if (parent && !parent.tagName.toLowerCase().startsWith('h1')) {
+                                    hasNonH1Headers = true;
+                                    break;
+                                }
+                            }
+                            if (hasNonH1Headers) {
+                                tocContainer.classList.add('has-toc');
+                            } else {
+                                tocContainer.classList.add('no-toc');
+                            }
+                        })();
+                    </script>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script>
+           (function () {
+                // Check for focused search result and bring into the view
+                const ensureVisible = () => {
+                    const focused = document.querySelector("#searchresults li.focus");
+
+                    if (focused) {
+                        focused.scrollIntoView({
+                            block: "nearest",
+                            inline: "nearest"
+                        });
+                    }
+                };
+
+                // 1. Listen for arrow key events
+                // 2. Wait for DOM to update
+                // 3. Call envsureVisible
+                document.addEventListener("keydown", function (e) {
+                    if (e.key === "ArrowDown" || e.key === "ArrowUp") {
+                        requestAnimationFrame(ensureVisible);
+                    }
+                });
+            })();
+        </script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../theme/page-toc.js"></script>
+        <script src="../theme/plugins.js"></script>
+        <script src="../theme/c15t@2.0.0-rc.3.js"></script>
+        <script src="../theme/analytics.js"></script>
+
+
+        <!-- c15t Consent Banner -->
+        <div id="c15t-banner" style="display: none;">
+            <div>
+                <p id="c15t-description">
+                    Zed uses cookies to improve your experience and for marketing. Read <a href="https://zed.dev/cookie-policy">our cookie policy</a> for more details.
+                </p>
+            </div>
+            <div id="c15t-configure-section" style="display: none">
+                <div>
+                    <label for="c15t-toggle-necessary"
+                        >Strictly Necessary</label
+                    >
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-necessary"
+                            checked
+                            disabled
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-measurement">Analytics</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-measurement"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+                <div>
+                    <label for="c15t-toggle-marketing">Marketing</label>
+                    <label class="c15t-switch">
+                        <input
+                            type="checkbox"
+                            id="c15t-toggle-marketing"
+                        />
+                        <span class="c15t-slider"></span>
+                    </label>
+                </div>
+            </div>
+            <div id="c15t-footer">
+                <button
+                    id="c15t-configure-btn"
+                    class="c15t-button icon"
+                    title="Configure"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <path d="M20 7h-9" />
+                        <path d="M14 17H5" />
+                        <circle cx="17" cy="17" r="3" />
+                        <circle cx="7" cy="7" r="3" />
+                    </svg>
+                </button>
+                <div>
+                    <button id="c15t-decline" class="c15t-button">
+                        Reject all
+                    </button>
+                    <button id="c15t-accept" class="c15t-button primary">
+                        Accept all
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
