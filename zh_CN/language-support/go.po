@@ -1,0 +1,515 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-04-28T11:35:30Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/go.md:3
+msgid "Go"
+msgstr ""
+
+#: src/languages/go.md:5
+msgid "Go support is available natively in Zed."
+msgstr ""
+
+#: src/languages/go.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-go](https://github.com/tree-sitter/"
+"tree-sitter-go)"
+msgstr ""
+
+#: src/languages/go.md:8
+msgid ""
+"Language Server: [golang/tools/tree/master/gopls](https://github.com/golang/"
+"tools/tree/master/gopls)"
+msgstr ""
+
+#: src/languages/go.md:9
+msgid "Debug Adapter: [delve](https://github.com/go-delve/delve)"
+msgstr ""
+
+#: src/languages/go.md:11
+msgid "Setup"
+msgstr ""
+
+#: src/languages/go.md:13
+msgid ""
+"We recommend installing gopls via go's package manager and not via Homebrew "
+"or your Linux distribution's package manager."
+msgstr ""
+
+#: src/languages/go.md:15
+msgid ""
+"Make sure you have uninstalled any version of gopls you have installed via "
+"your package manager:"
+msgstr ""
+
+#: src/languages/go.md:18
+msgid "# MacOS homebrew\n"
+msgstr ""
+
+#: src/languages/go.md:19
+msgid "# Ubuntu\n"
+msgstr ""
+
+#: src/languages/go.md:22
+msgid "# Arch\n"
+msgstr ""
+
+#: src/languages/go.md:27
+msgid "Install/Update `gopls` to the latest version using the go module tool:"
+msgstr ""
+
+#: src/languages/go.md:33
+msgid "Ensure that `gopls` is in your path:"
+msgstr ""
+
+#: src/languages/go.md:40
+msgid ""
+"If `gopls` is not found you will likely need to add `export PATH=\"$PATH:"
+"$HOME/go/bin\"` to your `.zshrc` / `.bash_profile`"
+msgstr ""
+
+#: src/languages/go.md:42
+msgid "Inlay Hints"
+msgstr ""
+
+#: src/languages/go.md:44
+msgid "Zed sets the following initialization options for inlay hints:"
+msgstr ""
+
+#: src/languages/go.md:47 src/languages/go.md:66
+msgid "\"hints\""
+msgstr ""
+
+#: src/languages/go.md:48
+msgid "\"assignVariableTypes\""
+msgstr ""
+
+#: src/languages/go.md:49
+msgid "\"compositeLiteralFields\""
+msgstr ""
+
+#: src/languages/go.md:50
+msgid "\"compositeLiteralTypes\""
+msgstr ""
+
+#: src/languages/go.md:51
+msgid "\"constantValues\""
+msgstr ""
+
+#: src/languages/go.md:52
+msgid "\"functionTypeParameters\""
+msgstr ""
+
+#: src/languages/go.md:53
+msgid "\"parameterNames\""
+msgstr ""
+
+#: src/languages/go.md:54
+msgid "\"rangeVariableTypes\""
+msgstr ""
+
+#: src/languages/go.md:58
+msgid ""
+"to make the language server send back inlay hints when Zed has them enabled "
+"in the settings."
+msgstr ""
+
+#: src/languages/go.md:60
+msgid "Use"
+msgstr ""
+
+#: src/languages/go.md:63 src/languages/go.md:92
+msgid "\"lsp\""
+msgstr ""
+
+#: src/languages/go.md:64 src/languages/go.md:93
+msgid "\"gopls\""
+msgstr ""
+
+#: src/languages/go.md:65 src/languages/go.md:94
+msgid "\"initialization_options\""
+msgstr ""
+
+#: src/languages/go.md:67
+msgid "// ....\n"
+msgstr ""
+
+#: src/languages/go.md:74
+msgid "to override these settings."
+msgstr ""
+
+#: src/languages/go.md:76
+msgid ""
+"See [gopls inlayHints documentation](https://github.com/golang/tools/blob/"
+"master/gopls/doc/inlayHints.md) for more information."
+msgstr ""
+
+#: src/languages/go.md:78
+msgid "Code Lens"
+msgstr ""
+
+#: src/languages/go.md:80
+msgid ""
+"Zed enables the `test` code lens for `gopls` by default. This shows \"run "
+"test\" and \"run benchmark\" links above `Test` and `Benchmark` functions in "
+"`*_test.go` files. To use them, enable the `code_lens` setting:"
+msgstr ""
+
+#: src/languages/go.md:84
+msgid "\"code_lens\""
+msgstr ""
+
+#: src/languages/go.md:84
+msgid "\"on\""
+msgstr ""
+
+#: src/languages/go.md:88
+msgid ""
+"You can override the default code lens settings in your `settings.json`:"
+msgstr ""
+
+#: src/languages/go.md:95
+msgid "\"codelenses\""
+msgstr ""
+
+#: src/languages/go.md:96 src/languages/go.md:156 src/languages/go.md:182
+msgid "\"test\""
+msgstr ""
+
+#: src/languages/go.md:97
+msgid "\"generate\""
+msgstr ""
+
+#: src/languages/go.md:98
+msgid "\"regenerate_cgo\""
+msgstr ""
+
+#: src/languages/go.md:99
+msgid "\"tidy\""
+msgstr ""
+
+#: src/languages/go.md:100
+msgid "\"upgrade_dependency\""
+msgstr ""
+
+#: src/languages/go.md:101
+msgid "\"vendor\""
+msgstr ""
+
+#: src/languages/go.md:109
+msgid ""
+"See [gopls code lenses documentation](https://go.dev/gopls/codelenses) for "
+"more information."
+msgstr ""
+
+#: src/languages/go.md:111
+msgid "Debugging"
+msgstr ""
+
+#: src/languages/go.md:113
+msgid ""
+"Zed supports zero-configuration debugging of Go tests and entry points "
+"(`func main`) using Delve. Run <code class=\"hljs\">debugger: start</code> "
+"(<kbd class=\"keybinding\">f4\\|f4</kbd>) to see a contextual list of these "
+"preconfigured debug tasks."
+msgstr ""
+
+#: src/languages/go.md:115
+msgid ""
+"For more control, you can add debug configurations to `.zed/debug.json`. See "
+"below for examples."
+msgstr ""
+
+#: src/languages/go.md:117
+msgid ""
+"[Delve configuration documentation](https://github.com/go-delve/delve/blob/"
+"master/Documentation/api/dap/README.md#launch-and-attach-configurations)"
+msgstr ""
+
+#: src/languages/go.md:119
+msgid "Debug Go Packages"
+msgstr ""
+
+#: src/languages/go.md:121
+msgid ""
+"To debug a specific package, you can do so by setting the Delve mode to "
+"\"debug\". In this case \"program\" should be set to the package name."
+msgstr ""
+
+#: src/languages/go.md:126 src/languages/go.md:133 src/languages/go.md:153
+#: src/languages/go.md:173 src/languages/go.md:204
+msgid "\"label\""
+msgstr ""
+
+#: src/languages/go.md:126
+msgid "\"Go (Delve)\""
+msgstr ""
+
+#: src/languages/go.md:127 src/languages/go.md:134 src/languages/go.md:154
+#: src/languages/go.md:174 src/languages/go.md:203
+msgid "\"adapter\""
+msgstr ""
+
+#: src/languages/go.md:127 src/languages/go.md:134 src/languages/go.md:154
+#: src/languages/go.md:174 src/languages/go.md:203
+msgid "\"Delve\""
+msgstr ""
+
+#: src/languages/go.md:128 src/languages/go.md:157 src/languages/go.md:177
+#: src/languages/go.md:205
+msgid "\"program\""
+msgstr ""
+
+#: src/languages/go.md:128
+msgid "\"$ZED_FILE\""
+msgstr ""
+
+#: src/languages/go.md:129 src/languages/go.md:135 src/languages/go.md:155
+#: src/languages/go.md:175 src/languages/go.md:209
+msgid "\"request\""
+msgstr ""
+
+#: src/languages/go.md:129 src/languages/go.md:135 src/languages/go.md:155
+#: src/languages/go.md:175 src/languages/go.md:209
+msgid "\"launch\""
+msgstr ""
+
+#: src/languages/go.md:130 src/languages/go.md:136 src/languages/go.md:156
+#: src/languages/go.md:176 src/languages/go.md:210
+msgid "\"mode\""
+msgstr ""
+
+#: src/languages/go.md:130 src/languages/go.md:136
+msgid "\"debug\""
+msgstr ""
+
+#: src/languages/go.md:133
+msgid "\"Run server\""
+msgstr ""
+
+#: src/languages/go.md:137
+msgid ""
+"// For Delve, the program can be a package name\n"
+"    \"program\""
+msgstr ""
+
+#: src/languages/go.md:138
+msgid "\"./cmd/server\""
+msgstr ""
+
+#: src/languages/go.md:139
+msgid ""
+"// \"args\": [],\n"
+"    // \"buildFlags\": [],\n"
+msgstr ""
+
+#: src/languages/go.md:145
+msgid "Debug Go Tests"
+msgstr ""
+
+#: src/languages/go.md:147
+msgid ""
+"To debug the tests for a package, set the Delve mode to \"test\". The "
+"\"program\" is still the package name, and you can use the \"buildFlags\" to "
+"do things like set tags, and the \"args\" to set args on the test binary. "
+"(See `go help testflags` for more information on doing that)."
+msgstr ""
+
+#: src/languages/go.md:153
+msgid "\"Run integration tests\""
+msgstr ""
+
+#: src/languages/go.md:157
+msgid "\".\""
+msgstr ""
+
+#: src/languages/go.md:158
+msgid "\"buildFlags\""
+msgstr ""
+
+#: src/languages/go.md:158 src/languages/go.md:184
+msgid "\"-tags\""
+msgstr ""
+
+#: src/languages/go.md:158
+msgid "\"integration\""
+msgstr ""
+
+#: src/languages/go.md:159
+msgid ""
+"// To filter down to just the test your cursor is in:\n"
+"    // \"args\": [\"-test.run\", \"$ZED_SYMBOL\"]\n"
+msgstr ""
+
+#: src/languages/go.md:165
+msgid "Build and debug separately"
+msgstr ""
+
+#: src/languages/go.md:167
+msgid ""
+"If you need to build your application with a specific command, you can use "
+"the \"exec\" mode of Delve. In this case \"program\" should point to an "
+"executable, and the \"build\" command should build that."
+msgstr ""
+
+#: src/languages/go.md:173
+msgid "\"Debug Prebuilt Unit Tests\""
+msgstr ""
+
+#: src/languages/go.md:176 src/languages/go.md:210
+msgid "\"exec\""
+msgstr ""
+
+#: src/languages/go.md:177
+msgid "\"${ZED_WORKTREE_ROOT}/__debug_unit\""
+msgstr ""
+
+#: src/languages/go.md:178 src/languages/go.md:181 src/languages/go.md:207
+msgid "\"args\""
+msgstr ""
+
+#: src/languages/go.md:178
+msgid "\"-test.v\""
+msgstr ""
+
+#: src/languages/go.md:178
+msgid "\"-test.run=${ZED_SYMBOL}\""
+msgstr ""
+
+#: src/languages/go.md:179
+msgid "\"build\""
+msgstr ""
+
+#: src/languages/go.md:180
+msgid "\"command\""
+msgstr ""
+
+#: src/languages/go.md:180
+msgid "\"go\""
+msgstr ""
+
+#: src/languages/go.md:183
+msgid "\"-c\""
+msgstr ""
+
+#: src/languages/go.md:185
+msgid "\"unit\""
+msgstr ""
+
+#: src/languages/go.md:186
+msgid "\"-gcflags\\\"all=-N -l\\\"\""
+msgstr ""
+
+#: src/languages/go.md:187
+msgid "\"-o\""
+msgstr ""
+
+#: src/languages/go.md:188
+msgid "\"__debug_unit\""
+msgstr ""
+
+#: src/languages/go.md:189
+msgid "\"./pkg/...\""
+msgstr ""
+
+#: src/languages/go.md:196
+msgid "Attaching to an existing instance of Delve"
+msgstr ""
+
+#: src/languages/go.md:198
+msgid ""
+"You might find yourself needing to connect to an existing instance of Delve "
+"that's not necessarily running on your machine; in such case, you can use "
+"`tcp_arguments` to instrument Zed's connection to Delve."
+msgstr ""
+
+#: src/languages/go.md:204
+msgid "\"Connect to a running Delve instance\""
+msgstr ""
+
+#: src/languages/go.md:205
+msgid "\"/Users/zed/Projects/language_repositories/golang/hello/hello\""
+msgstr ""
+
+#: src/languages/go.md:206
+msgid "\"cwd\""
+msgstr ""
+
+#: src/languages/go.md:206
+msgid "\"/Users/zed/Projects/language_repositories/golang/hello\""
+msgstr ""
+
+#: src/languages/go.md:208
+msgid "\"env\""
+msgstr ""
+
+#: src/languages/go.md:211
+msgid "\"stopOnEntry\""
+msgstr ""
+
+#: src/languages/go.md:212
+msgid "\"tcp_connection\""
+msgstr ""
+
+#: src/languages/go.md:212
+msgid "\"host\""
+msgstr ""
+
+#: src/languages/go.md:212
+msgid "\"127.0.0.1\""
+msgstr ""
+
+#: src/languages/go.md:212
+msgid "\"port\""
+msgstr ""
+
+#: src/languages/go.md:217
+msgid ""
+"In such case Zed won't spawn a new instance of Delve, as it opts to use an "
+"existing one. The consequence of this is that _there will be no terminal_ in "
+"Zed; you have to interact with the Delve instance directly, as it handles "
+"stdin/stdout of the debuggee."
+msgstr ""
+
+#: src/languages/go.md:219
+msgid "Go Mod"
+msgstr ""
+
+#: src/languages/go.md:221
+msgid ""
+"Tree-sitter: [camdencheek/tree-sitter-go-mod](https://github.com/camdencheek/"
+"tree-sitter-go-mod)"
+msgstr ""
+
+#: src/languages/go.md:222 src/languages/go.md:227 src/languages/go.md:233
+msgid "Language Server: N/A"
+msgstr ""
+
+#: src/languages/go.md:224
+msgid "Go Sum"
+msgstr ""
+
+#: src/languages/go.md:226
+msgid ""
+"Tree-sitter: [amaanq/tree-sitter-go-sum](https://github.com/amaanq/tree-"
+"sitter-go-sum)"
+msgstr ""
+
+#: src/languages/go.md:229
+msgid "Go Work"
+msgstr ""
+
+#: src/languages/go.md:231
+msgid ""
+"Tree-sitter: [tree-sitter-go-work](https://github.com/d1y/tree-sitter-go-"
+"work)"
+msgstr ""
