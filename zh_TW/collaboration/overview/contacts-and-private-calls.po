@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/collaboration/contacts-and-private-calls.md:3
+msgid "Contacts and Private Calls"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:5
+msgid ""
+"Private calls provide ad-hoc collaboration sessions outside of channels. Add "
+"contacts to your list and start calls with one or more people."
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:7
+msgid "Adding a Contact"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:9
+msgid ""
+"In the Collaboration Panel, click the `+` button next to the `Contacts` "
+"section"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:10
+msgid ""
+"Search for the contact using their GitHub handle.  \n"
+"_Note: Your contact must be an existing Zed user who has completed the "
+"GitHub authentication sign-in flow._"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:12
+msgid ""
+"Your contact will receive a notification. Once they accept, you'll both "
+"appear in each other's contact list."
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:15
+msgid "Private Calls"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:17
+msgid "To start a private call:"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:19
+msgid ""
+"Click the `...` menu next to an online contact's name in the Collaboration "
+"Panel."
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:20
+msgid "Click `Call <username>`"
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:22
+msgid ""
+"Once you've begun a private call, you can add other online contacts by "
+"clicking their name in the Collaboration Panel."
+msgstr ""
+
+#: src/collaboration/contacts-and-private-calls.md:26
+msgid ""
+"_Private calls work like [channels](./channels.md), without channel-specific "
+"features such as channel notes._"
+msgstr ""

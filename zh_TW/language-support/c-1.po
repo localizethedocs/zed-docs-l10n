@@ -1,0 +1,378 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zed\n"
+"POT-Creation-Date: 2026-03-14T09:20:26Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/languages/csharp.md:3
+msgid "C\\#"
+msgstr ""
+
+#: src/languages/csharp.md:5
+msgid ""
+"C# support is available through the [C# extension](https://github.com/zed-"
+"extensions/csharp)."
+msgstr ""
+
+#: src/languages/csharp.md:7
+msgid ""
+"Tree-sitter: [tree-sitter/tree-sitter-c-sharp](https://github.com/tree-"
+"sitter/tree-sitter-c-sharp)"
+msgstr ""
+
+#: src/languages/csharp.md:8
+msgid "Language Servers:"
+msgstr ""
+
+#: src/languages/csharp.md:9
+msgid ""
+"[roslyn-language-server](https://www.nuget.org/packages/roslyn-language-"
+"server#readme)"
+msgstr ""
+
+#: src/languages/csharp.md:10
+msgid ""
+"[OmniSharp/omnisharp-roslyn](https://github.com/OmniSharp/omnisharp-roslyn)"
+msgstr ""
+
+#: src/languages/csharp.md:12
+msgid ""
+"Roslyn is enabled by default. To switch back to OmniSharp, add the following "
+"to your Zed settings file:"
+msgstr ""
+
+#: src/languages/csharp.md:16
+msgid "\"languages\""
+msgstr "\"languages\""
+
+#: src/languages/csharp.md:17
+msgid "\"CSharp\""
+msgstr ""
+
+#: src/languages/csharp.md:18
+msgid "\"language_servers\""
+msgstr "\"language_servers\""
+
+#: src/languages/csharp.md:18 src/languages/csharp.md:119
+msgid "\"omnisharp\""
+msgstr ""
+
+#: src/languages/csharp.md:18
+msgid "\"!roslyn\""
+msgstr ""
+
+#: src/languages/csharp.md:18 src/languages/csharp.md:81
+msgid "\"...\""
+msgstr ""
+
+#: src/languages/csharp.md:24
+msgid "Note: the language name used in settings is \"CSharp\", not \"C#\"."
+msgstr ""
+
+#: src/languages/csharp.md:26
+msgid "Configuration"
+msgstr "組態"
+
+#: src/languages/csharp.md:28
+msgid "Roslyn can be configured with the following language server settings:"
+msgstr ""
+
+#: src/languages/csharp.md:32 src/languages/csharp.md:118
+msgid "\"lsp\""
+msgstr "\"lsp\""
+
+#: src/languages/csharp.md:33
+msgid "\"roslyn\""
+msgstr ""
+
+#: src/languages/csharp.md:34
+msgid "\"settings\""
+msgstr "\"settings\""
+
+#: src/languages/csharp.md:35
+msgid ""
+"// Default values are shown below, along with alternative options where "
+"applicable.\n"
+"        \"csharp|symbol_search\""
+msgstr ""
+
+#: src/languages/csharp.md:37
+msgid "\"dotnet_search_reference_assemblies\""
+msgstr ""
+
+#: src/languages/csharp.md:39
+msgid "\"csharp|type_members\""
+msgstr ""
+
+#: src/languages/csharp.md:40
+msgid "\"dotnet_member_insertion_location\""
+msgstr ""
+
+#: src/languages/csharp.md:40
+msgid "\"atTheEnd\""
+msgstr ""
+
+#: src/languages/csharp.md:40
+msgid ""
+"// or \"withOtherMembersOfTheSameKind\"\n"
+"          \"dotnet_property_generation_behavior\""
+msgstr ""
+
+#: src/languages/csharp.md:41
+msgid "\"preferThrowingProperties\" // or \"preferAutoProperties\"\n"
+msgstr ""
+
+#: src/languages/csharp.md:43
+msgid "\"csharp|completion\""
+msgstr ""
+
+#: src/languages/csharp.md:44
+msgid "\"dotnet_show_name_completion_suggestions\""
+msgstr ""
+
+#: src/languages/csharp.md:45
+msgid "\"dotnet_provide_regex_completions\""
+msgstr ""
+
+#: src/languages/csharp.md:46
+msgid "\"dotnet_show_completion_items_from_unimported_namespaces\""
+msgstr ""
+
+#: src/languages/csharp.md:47
+msgid "\"dotnet_trigger_completion_in_argument_lists\""
+msgstr ""
+
+#: src/languages/csharp.md:49
+msgid "\"csharp|quick_info\""
+msgstr ""
+
+#: src/languages/csharp.md:50
+msgid "\"dotnet_show_remarks_in_quick_info\""
+msgstr ""
+
+#: src/languages/csharp.md:52
+msgid "\"csharp|navigation\""
+msgstr ""
+
+#: src/languages/csharp.md:53
+msgid "\"dotnet_navigate_to_decompiled_sources\""
+msgstr ""
+
+#: src/languages/csharp.md:54
+msgid "\"dotnet_navigate_to_source_link_and_embedded_sources\""
+msgstr ""
+
+#: src/languages/csharp.md:56
+msgid "\"csharp|highlighting\""
+msgstr ""
+
+#: src/languages/csharp.md:57
+msgid "\"dotnet_highlight_related_json_components\""
+msgstr ""
+
+#: src/languages/csharp.md:58
+msgid "\"dotnet_highlight_related_regex_components\""
+msgstr ""
+
+#: src/languages/csharp.md:60
+msgid "\"csharp|inlay_hints\""
+msgstr ""
+
+#: src/languages/csharp.md:61
+msgid "\"dotnet_enable_inlay_hints_for_parameters\""
+msgstr ""
+
+#: src/languages/csharp.md:62
+msgid "\"dotnet_enable_inlay_hints_for_literal_parameters\""
+msgstr ""
+
+#: src/languages/csharp.md:63
+msgid "\"dotnet_enable_inlay_hints_for_indexer_parameters\""
+msgstr ""
+
+#: src/languages/csharp.md:64
+msgid "\"dotnet_enable_inlay_hints_for_object_creation_parameters\""
+msgstr ""
+
+#: src/languages/csharp.md:65
+msgid "\"dotnet_enable_inlay_hints_for_other_parameters\""
+msgstr ""
+
+#: src/languages/csharp.md:66
+msgid "\"dotnet_suppress_inlay_hints_for_parameters_that_differ_only_by_suffix\""
+msgstr ""
+
+#: src/languages/csharp.md:67
+msgid "\"dotnet_suppress_inlay_hints_for_parameters_that_match_method_intent\""
+msgstr ""
+
+#: src/languages/csharp.md:68
+msgid "\"dotnet_suppress_inlay_hints_for_parameters_that_match_argument_name\""
+msgstr ""
+
+#: src/languages/csharp.md:69
+msgid "\"csharp_enable_inlay_hints_for_types\""
+msgstr ""
+
+#: src/languages/csharp.md:70
+msgid "\"csharp_enable_inlay_hints_for_implicit_variable_types\""
+msgstr ""
+
+#: src/languages/csharp.md:71
+msgid "\"csharp_enable_inlay_hints_for_lambda_parameter_types\""
+msgstr ""
+
+#: src/languages/csharp.md:72
+msgid "\"csharp_enable_inlay_hints_for_implicit_object_creation\""
+msgstr ""
+
+#: src/languages/csharp.md:73
+msgid "\"csharp_enable_inlay_hints_for_collection_expressions\""
+msgstr ""
+
+#: src/languages/csharp.md:75
+msgid "\"csharp|code_style.formatting.indentation_and_spacing\""
+msgstr ""
+
+#: src/languages/csharp.md:76
+msgid "\"tab_width\""
+msgstr ""
+
+#: src/languages/csharp.md:77
+msgid "\"indent_size\""
+msgstr ""
+
+#: src/languages/csharp.md:78
+msgid "\"indent_style\""
+msgstr ""
+
+#: src/languages/csharp.md:78
+msgid "\"space\" // or \"tab\"\n"
+msgstr ""
+
+#: src/languages/csharp.md:80
+msgid "\"csharp|code_style.formatting.new_line\""
+msgstr ""
+
+#: src/languages/csharp.md:81
+msgid "\"end_of_line\""
+msgstr ""
+
+#: src/languages/csharp.md:81
+msgid ""
+"// platform-specific default\n"
+"          \"insert_final_newline\""
+msgstr ""
+
+#: src/languages/csharp.md:84
+msgid "\"csharp|background_analysis\""
+msgstr ""
+
+#: src/languages/csharp.md:85
+msgid "\"dotnet_analyzer_diagnostics_scope\""
+msgstr ""
+
+#: src/languages/csharp.md:85
+msgid "\"default\""
+msgstr ""
+
+#: src/languages/csharp.md:85
+msgid ""
+"// or \"none\" \"openFiles\" \"fullSolution\"\n"
+"          \"dotnet_compiler_diagnostics_scope\""
+msgstr ""
+
+#: src/languages/csharp.md:86
+msgid "\"openFiles\" // or \"fullSolution\"\n"
+msgstr ""
+
+#: src/languages/csharp.md:88
+msgid "\"csharp|code_lens\""
+msgstr ""
+
+#: src/languages/csharp.md:89
+msgid "\"dotnet_enable_references_code_lens\""
+msgstr ""
+
+#: src/languages/csharp.md:90
+msgid "\"dotnet_enable_tests_code_lens\""
+msgstr ""
+
+#: src/languages/csharp.md:92
+msgid "\"csharp|auto_insert\""
+msgstr ""
+
+#: src/languages/csharp.md:93
+msgid "\"dotnet_enable_auto_insert\""
+msgstr ""
+
+#: src/languages/csharp.md:95
+msgid "\"csharp|projects\""
+msgstr ""
+
+#: src/languages/csharp.md:96
+msgid "\"dotnet_binary_log_path\""
+msgstr ""
+
+#: src/languages/csharp.md:97
+msgid "\"dotnet_enable_automatic_restore\""
+msgstr ""
+
+#: src/languages/csharp.md:98
+msgid "\"dotnet_enable_file_based_programs\""
+msgstr ""
+
+#: src/languages/csharp.md:99
+msgid "\"dotnet_enable_file_based_programs_when_ambiguous\""
+msgstr ""
+
+#: src/languages/csharp.md:101
+msgid "\"csharp|formatting\""
+msgstr ""
+
+#: src/languages/csharp.md:102
+msgid "\"dotnet_organize_imports_on_format\""
+msgstr ""
+
+#: src/languages/csharp.md:105 src/languages/csharp.md:120
+msgid "\"binary\""
+msgstr ""
+
+#: src/languages/csharp.md:106 src/languages/csharp.md:121
+msgid "\"path\""
+msgstr ""
+
+#: src/languages/csharp.md:106
+msgid "\"/path/to/roslyn-language-server\""
+msgstr ""
+
+#: src/languages/csharp.md:107 src/languages/csharp.md:122
+msgid "\"arguments\""
+msgstr ""
+
+#: src/languages/csharp.md:107
+msgid "\"--stdio\""
+msgstr ""
+
+#: src/languages/csharp.md:107
+msgid "\"--autoLoadProjects\" /* add extra arguments */"
+msgstr ""
+
+#: src/languages/csharp.md:114
+msgid "OmniSharp can be configured in a Zed settings file with:"
+msgstr ""
+
+#: src/languages/csharp.md:121
+msgid "\"/path/to/OmniSharp\""
+msgstr ""
+
+#: src/languages/csharp.md:122
+msgid "\"-lsp\" /* add extra arguments */"
+msgstr ""
